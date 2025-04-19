@@ -268,9 +268,126 @@ servicios de manera más efectiva a sus requerimientos.
 El proceso de needfinding nos permite identificar problemas reales que enfrentan los usuarios y descubrir oportunidades de diseño que pueden llevar a soluciones innovadoras y centradas en el usuario.
 
 - ### 2.3.1. User Personas
+  En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista.
 - ### 2.3.2. User Task Matrix
+
+  La User Task Matrix es una herramienta que nos permite identificar las tareas clave que nuestros usuarios necesitan realizar en nuestra aplicación web y móbil. Al mapear estas tareas, podemos comprender mejor las necesidades y expectativas de nuestros usuarios, lo que nos ayuda a diseñar una experiencia de usuario más efectiva y centrada en sus requerimientos.
+  <br><br>
+  <table style="text-align: center; width: 100%;">
+    <thead>
+      <tr>
+        <th rowspan="2">Tareas</th>
+        <th colspan="2">Personas apasionadas por las plantas</th>
+        <th colspan="2">Personas que trabajan en jardinería</th>
+      </tr>
+      <tr>
+        <th>Frecuencia</th>
+        <th>Importancia</th>
+        <th>Frecuencia</th>
+        <th>Importancia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Regar sus plantas</td>
+        <td>Often</td>
+        <td>High</td>
+        <td>Daily</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Revisar si las plantas tienen suficiente luz</td>
+        <td>Sometimes</td>
+        <td>Medium</td>
+        <td>Always</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Consultar sobre el cuidado de una planta específica</td>
+        <td>Often</td>
+        <td>High</td>
+        <td>Sometimes</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Tomar fotos de sus plantas para monitoreo o redes</td>
+        <td>Sometimes</td>
+        <td>Medium</td>
+        <td>Rarely</td>
+        <td>Low</td>
+      </tr>
+      <tr>
+        <td>Registrar en qué estado está cada planta</td>
+        <td>Rarely</td>
+        <td>Medium</td>
+        <td>Sometimes</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Identificar cuándo una planta está en mal estado</td>
+        <td>Often</td>
+        <td>High</td>
+        <td>Always</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Revisar manualmente el nivel de humedad del suelo</td>
+        <td>Sometimes</td>
+        <td>Medium</td>
+        <td>Daily</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Comprar productos o herramientas para plantas</td>
+        <td>Monthly</td>
+        <td>Medium</td>
+        <td>Weekly</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Monitorear múltiples plantas al mismo tiempo</td>
+        <td>Sometimes</td>
+        <td>High</td>
+        <td>Always</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Probar nuevas formas de mejorar el cuidado de las plantas</td>
+        <td>Often</td>
+        <td>Medium</td>
+        <td>Sometimes</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Usar apps web o móviles para llevar seguimiento de sus plantas</td>
+        <td>Rarely</td>
+        <td>Low</td>
+        <td>Never</td>
+        <td>Low</td>
+      </tr>
+    </tbody>
+  </table>
+
 - ### 2.3.3. User Journey Mapping
+
+  El User Journey Mapping es una herramienta para comprender la experiencia del usuario de manera holística, lo que permite a los equipos de diseño crear productos y servicios que se alineen mejor con las necesidades y expectativas de los usuarios.<br><br>
+
+  - **Segmento 1: Personas Apasionadas por las plantas**
+    ![JourneyMap_1](../assets/capitulo2/JourneyMap_Segmento1.png) <br><br>
+
+  - **Segmento 2: Personas dedicadas a la jardineria**
+    ![JourneyMap_2](../assets/capitulo2/JourneyMap_Segmento2.png)
+
 - ### 2.3.4. Empathy Mapping
+  Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo.
 - ### 2.3.5. As-is Scenario Mapping
+
+  El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
+
+  - **Segmento 1: Personas Apasionadas por las plantas**
+    ![As_Is-1](../assets/capitulo2/As_Is-Segmento1.png) <br><br>
+
+  - **Segmento 2: Personas dedicadas a la jardineria**
+    ![As_Is-2](../assets/capitulo2/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
