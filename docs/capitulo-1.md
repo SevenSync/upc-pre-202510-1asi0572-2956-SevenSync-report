@@ -72,7 +72,43 @@ En SevenSync, nuestros principios rectores constituyen el núcleo de nuestra cul
     Nos guiamos por un principio de claridad en todos nuestros procesos, tanto internos como externos. Mantenemos una comunicación abierta con nuestros usuarios, aliados y comunidad, brindando información accesible y verificable sobre el funcionamiento de nuestras herramientas, sus beneficios y limitaciones.
 
 ### 1.1.2. Perfiles de integrantes del equipo
+
+
+
 ## 1.2. Solution Profile
+
+En SevenSync nos dedicamos a diseñar soluciones tecnológicas de última generación que hagan de la jardinería urbana una actividad accesible, eficiente y gratificante. Somos conscientes de los principales obstáculos que enfrentan los jardineros domésticos —falta de tiempo, escaso conocimiento técnico y uso excesivo de recursos hídricos— por lo que hemos creado Macetech, una maceta inteligente que aúna IoT, analítica de datos y automatización para reinventar el cuidado de las plantas en hogares, oficinas y espacios comunitarios.
+
+Macetech integra un conjunto de sensores de alta precisión, montados en un diseño modular disponible en varios tamaños y acabados, que miden de forma continua:
+
+* Humedad del sustrato (sensor capacitivo)
+
+* Temperatura ambiente y del suelo
+
+* pH y conductividad eléctrica (indicadores de nutrientes y salinidad)
+
+Estos datos se envían en tiempo real a nuestra plataforma web y aplicación móvil, donde una serie de algoritmos procesan la información y generan análisis instantáneos. Gracias a esta arquitectura, Macetech ofrece:
+
+* Alertas preventivas basadas en umbrales ajustables para cada especie, que notifican al usuario cuándo regar, fertilizar o reubicar la planta.
+
+* Detección temprana de patologías, como pudrición radicular o estrés térmico, con recomendaciones puntuales para evitar daños mayores.
+
+* Gráficos de tendencia e informes históricos, que facilitan el seguimiento del progreso de las plantas, el consumo de agua y la calidad del sustrato.
+
+* Riego inteligente automatizado, que ajusta la dosificación hídrica según la condición real del suelo y las previsiones climáticas, logrando hasta un 45 % de ahorro de agua (Amir et al., 2024).
+
+La interfaz de Macetech ha sido concebida para ser clara y sencilla:
+
+* Navegación minimalista con iconografía intuitiva.
+  
+* Paneles de control que muestran el estado de cada planta en un vistazo.
+
+* Notificaciones push que indican acciones prioritarias sin abrumar al usuario.
+
+Nuestro modelo de negocio se basa en la venta directa de macetas inteligentes en distintas configuraciones (interiores, exteriores, huertos compactos) y un catálogo de accesorios modulares (p. ej., adaptadores de manguera, kits de expansión de sensores). Esta estrategia nos permite ofrecer un producto escalable y asequible, reducir la tasa de abandono de jardinería urbana y promover prácticas responsables de riego y cuidado vegetal.
+
+Con Macetech, SevenSync aspira a liderar la transformación de la jardinería doméstica en América Latina, capacitando a los usuarios para crear espacios verdes saludables, optimizar recursos y disfrutar de una conexión auténtica con la naturaleza, todo ello respaldado por la precisión y comodidad que solo la tecnología inteligente puede brindar.
+
 ### 1.2.1 Antecedentes y problemática
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
