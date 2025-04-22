@@ -226,17 +226,7 @@ servicios de manera más efectiva a sus requerimientos.
   - **Ocupación:** Ocupación del entrevistado
     <br><br>
 
-- **Preguntas Previas Segmento 1 - Jardinero :**<br><br>
-
-  - Preguntas abiertas:
-    1. ¿Cuántos años de experiencia tiene en jardinería?
-    2. ¿Qué plantas cultiva más frecuentemente?
-    3. ¿Qué desafío enfrenta en el cuidado de sus plantas (todo)?
-    4. ¿Ha utilizado alguna vez tecnología o dispositivos inteligentes en su jardinería?
-    5. Con relación a la pregunta anterior, ¿qué características útiles considera/espera en un dispositivo inteligente de jardinería inteligente?<br><br>
-  - Preguntas después de hablar sobre el producto: 6. ¿Qué opina/crítica/menciona de nuestro producto? ¿Sería una inversión útil? 7. ¿Preferiría un dispositivo que automatice el riego de sus plantas, o brinde de ayuda al cuidado de sus plantas? 8. Qué le convencería para adoptar tecnología de manera regular? 9. ¿Cuánto estaría dispuesto a invertir en nuestra maceta inteligente? <br><br>
-
-- **Preguntas Previas Segmento 2 - Persona Apasionada con las plantas:**<br><br>
+- **Preguntas Previas Segmento 1 - Personas Apasionadas por las plantas:**<br><br>
 
   - Preguntas abiertas:
     1. ¿Cuánto tiempo lleva interesado en el cuidado de las plantas?
@@ -244,7 +234,26 @@ servicios de manera más efectiva a sus requerimientos.
     3. ¿Qué es lo que más disfruta de cuidar plantas y qué retos afronta en su cuidado?
     4. ¿Utiliza alguna herramienta o dispositivo tecnológico actualmente (riego/supervisión/etc)?
     5. ¿Qué piensa sobre el uso de macetas inteligentes que automatizan el riego y el monitoreo de condiciones? <br><br>
-  - Preguntas después de hablar sobre el producto: 6. ¿Qué esperaría de una maceta inteligente? 7. ¿Consideraría el uso de macetas inteligentes como una inversión o un lujo? 8. ¿Cómo imagina que una maceta inteligente se integraría con el estilo de su hogar? 9. ¿Estaría interesado en caracterísitcas adicionales como la integración de aplicación móvil/ aplicación web para un mejor monitoreo de sus plantas? 10. ¿Qué consejos o características recomendaría para mejorar la experiencia de cuidado de plantas con una maceta inteligente? <br><br>
+  - Preguntas después de hablar sobre el producto:
+  - 6. ¿Qué esperaría de una maceta inteligente?
+  - 7. ¿Consideraría el uso de macetas inteligentes como una inversión o un lujo?
+  - 8. ¿Cómo imagina que una maceta inteligente se integraría con el estilo de su hogar?
+  - 9. ¿Estaría interesado en caracterísitcas adicionales como la integración de aplicación móvil/ aplicación web para un mejor monitoreo de sus plantas?
+  - 10. ¿Qué consejos o características recomendaría para mejorar la experiencia de cuidado de plantas con una maceta inteligente? <br><br>
+
+- **Preguntas Previas Segmento 2 - Personas dedicadas a la jardineria :**<br><br>
+
+  - Preguntas abiertas:
+    1. ¿Cuántos años de experiencia tiene en jardinería?
+    2. ¿Qué plantas cultiva más frecuentemente?
+    3. ¿Qué desafío enfrenta en el cuidado de sus plantas (todo)?
+    4. ¿Ha utilizado alguna vez tecnología o dispositivos inteligentes en su jardinería?
+    5. Con relación a la pregunta anterior, ¿qué características útiles considera/espera en un dispositivo inteligente de jardinería inteligente?<br><br>
+  - Preguntas después de hablar sobre el producto:
+  - 6. ¿Qué opina/crítica/menciona de nuestro producto? ¿Sería una inversión útil?
+  - 7. ¿Preferiría un dispositivo que automatice el riego de sus plantas, o brinde de ayuda al cuidado de sus plantas?
+  - 8. Qué le convencería para adoptar tecnología de manera regular?
+  - 9. ¿Cuánto estaría dispuesto a invertir en nuestra maceta inteligente? <br><br>
 
 - **Preguntas después de haber probado el producto - Ambos Segmentos:** <br><br>
 
@@ -260,7 +269,27 @@ servicios de manera más efectiva a sus requerimientos.
   10. ¿Cómo cree que el software podría mejorar su interacción diaria con las plantas?
 
 - ### 2.2.2. Registro de entrevistas
-  El registro de entrevistas es una herramienta fundamental que nos ayuda a recopilar y organizar la información obtenida durante las entrevistas con nuestros usuarios o clientes. Nos permite documentar de manera estructurada las respuestas, comentarios y observaciones relevantes, lo que facilita su análisis posterior y la identificación de patrones o tendencias. Además, nos proporciona un registro histórico de las interacciones con los usuarios, lo que nos ayuda a mantenernos alineados con sus necesidades y expectativas a lo largo del tiempo.
+
+  El registro de entrevistas es una herramienta fundamental que nos ayuda a recopilar y organizar la información obtenida durante las entrevistas con nuestros usuarios o clientes. Nos permite documentar de manera estructurada las respuestas, comentarios y observaciones relevantes, lo que facilita su análisis posterior y la identificación de patrones o tendencias. Además, nos proporciona un registro histórico de las interacciones con los usuarios, lo que nos ayuda a mantenernos alineados con sus necesidades y expectativas a lo largo del tiempo.<br><br>
+
+  #### **Segmento 1 - Personas Apasionadas por las plantas:**
+
+  ***
+
+  - ### **Entrevista #1**
+
+    Nombre y apellidos: Andres Torres
+    Edad: 2 años
+    Distrito: Lince <br>
+    ![Entrevista_Seg01_AndresTorres](../assets/capitulo2/Entrevista_Andres.png) <br>
+    **Resumen De Entrevista**
+    El entrevistado, Andrés, tiene un fuerte interés por las plantas desde su niñez, lo que lo ha llevado a cuidarlas de forma constante a lo largo de su vida. Disfruta especialmente ver su desarrollo y mantenerlas saludables, aunque reconoce que a veces tiene dificultades para saber cuándo regarlas correctamente, lo que ha causado la pérdida de algunas. Actualmente no utiliza herramientas tecnológicas para su cuidado, y se guía principalmente por su experiencia y búsquedas ocasionales en internet. Al conocer la propuesta de una maceta inteligente, mostró interés, resaltando que valoraría recibir alertas claras y que el sistema sea sencillo de usar. Considera que, si tiene un precio accesible y ayuda a prevenir errores, podría ser una inversión útil. También mencionó que el diseño debería integrarse bien con su hogar, y se mostró interesado en funciones como la integración con una app móvil, recomendaciones según el tipo de planta y un registro de seguimiento del estado de cada una. <br> <br>
+
+    **Enlace De Entrevista**
+    https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EZCB8tqmJ2VJonM6eLDw6tsB18mDoG9LXaOPH1SPGW98kQ?e=CJSJVE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+  ***
+
 - ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
@@ -268,7 +297,14 @@ servicios de manera más efectiva a sus requerimientos.
 El proceso de needfinding nos permite identificar problemas reales que enfrentan los usuarios y descubrir oportunidades de diseño que pueden llevar a soluciones innovadoras y centradas en el usuario.
 
 - ### 2.3.1. User Personas
-  En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista.
+
+  En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
+
+  - **Segmento 1: Personas Apasionadas por las plantas**
+    ![UserPerson_1](../assets/capitulo2/UserPerson1.png) <br><br>
+
+  - **Segmento 2: Personas dedicadas a la jardineria**
+
 - ### 2.3.2. User Task Matrix
 
   La User Task Matrix es una herramienta que nos permite identificar las tareas clave que nuestros usuarios necesitan realizar en nuestra aplicación web y móbil. Al mapear estas tareas, podemos comprender mejor las necesidades y expectativas de nuestros usuarios, lo que nos ayuda a diseñar una experiencia de usuario más efectiva y centrada en sus requerimientos.
@@ -379,7 +415,12 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
     ![JourneyMap_2](../assets/capitulo2/JourneyMap_Segmento2.png)
 
 - ### 2.3.4. Empathy Mapping
-  Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo.
+
+  Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo. <br><br>
+
+  - **Segmento 1: Personas Apasionadas por las plantas**
+    ![EmpathyMap_1](../assets/capitulo2/EmpathyMap1.png) <br><br>
+
 - ### 2.3.5. As-is Scenario Mapping
 
   El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
@@ -391,3 +432,16 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
     ![As_Is-2](../assets/capitulo2/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
+
+| **Término**                  | **Definición breve**                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------- |
+| **Maceta Inteligente**       | Dispositivo con sensores que monitorea el estado de una planta en tiempo real.  |
+| **Sensor de Humedad**        | Detecta cuánta agua hay en la tierra.                                           |
+| **Sensor de Luz**            | Mide la cantidad de luz que recibe la planta.                                   |
+| **Notificación Inteligente** | Alerta automática que indica si la planta necesita cuidados (riego, luz, etc.). |
+| **Dashboard**                | Pantalla principal que muestra el estado actual de las plantas.                 |
+| **Usuario Doméstico**        | Persona que cuida plantas en casa (como Laura).                                 |
+| **Usuario Profesional**      | Jardinero que cuida plantas de varios clientes (como Carlos).                   |
+| **App Móvil**                | Aplicación usada en el celular para monitorear o recibir alertas.               |
+| **App Web**                  | Plataforma usada para gestionar múltiples plantas y ver reportes.               |
+| **Estado de la Planta**      | Clasificación visual (saludable, necesita agua, poca luz, etc.).                |
