@@ -10,6 +10,67 @@ En respuesta a los desafíos identificados, un equipo compuesto por estudiantes 
 Con un firme compromiso con la innovación y la excelencia, hemos desarrollado y patentado Macetech, una solución integral innovadora que transforma la forma en que los jardineros gestionan el cuidado de sus plantas. Esta maceta tecnológica avanzada, equipada con sensores, realiza un análisis continuo y en tiempo real del estado de las plantas y el suelo en el que están sembradas, permitiendo una evaluación precisa de su salud. Los datos recopilados son enviados automáticamente a una plataforma móvil y web intuitiva, proporcionando al usuario información detallada sobre posibles amenazas a la salud de las plantas, como desequilibrios en nutrientes, problemas de riego, exceso o falta de agua, y exposición inadecuada al sol. Además, Macetech va más allá de simplemente monitorear, al ofrecer recomendaciones personalizadas y adaptadas a las necesidades específicas de cada planta para garantizar su crecimiento óptimo. Para facilitar aún más el proceso, integra un sistema de riego automático que ajusta la cantidad de agua según las necesidades de cada especie, optimizando el consumo de agua y promoviendo prácticas sostenibles.
 
 ### 1.1.1. Descripción de la Startup
+
+* **Misión**
+
+Desarrollar soluciones tecnológicas inteligentes, accesibles y de alto impacto que transformen la manera en que se cuidan las plantas. Nuestra propuesta busca optimizar el monitoreo, el riego y el mantenimiento, facilitando estos procesos tanto para jardineros experimentados como para aficionados, mediante herramientas intuitivas, automatizadas y sostenibles.
+
+* **Visión**
+  
+Aspiramos a convertirnos en la plataforma líder en innovación aplicada a la jardinería inteligente en América del Sur. Buscamos fomentar el uso de tecnología accesible, eficiente y responsable que potencie la creación y el mantenimiento de espacios verdes más saludables, sostenibles y conectados con el entorno.
+
+* **Valores**
+
+En SevenSync, nuestros principios rectores constituyen el núcleo de nuestra cultura organizacional y guían de forma estratégica cada una de nuestras decisiones, desde la concepción de productos hasta su implementación en el entorno real. Estos valores no solo reflejan nuestro compromiso con la excelencia tecnológica y la responsabilidad ambiental, sino también con la generación de soluciones que promuevan un ecosistema de jardinería inteligente, accesible y sostenible. En este marco, sostenemos los siguientes pilares:
+
+1. Accesibilidad
+
+   Nos comprometemos a ofrecer soluciones tecnológicas que puedan ser utilizadas por cualquier persona, sin importar su edad, nivel técnico o experiencia previa en jardinería. Creemos firmemente que el cuidado vegetal debe estar al alcance de todos, y por ello diseñamos interfaces intuitivas, amigables e inclusivas que eliminan las barreras de entrada al uso de tecnologías avanzadas.
+
+2. Adaptabilidad
+   
+    Desarrollamos herramientas flexibles capaces de ajustarse a una amplia diversidad de especies vegetales, entornos de cultivo y rutinas personales. Esta capacidad de adaptación garantiza que nuestra tecnología responda eficazmente a las necesidades particulares de cada usuario y escenario, permitiendo una experiencia personalizada y funcional en todo momento.
+
+3. Conectividad
+   
+    Fomentamos una conexión armónica entre las personas, las plantas y la tecnología, mediante plataformas digitales que integran datos ambientales en tiempo real. Nuestra solución permite que los usuarios se mantengan informados y en control del estado de sus plantas desde cualquier lugar, fortaleciendo el vínculo entre el entorno natural y el entorno digital.
+
+4. Desarrollo Continuo
+
+    Creemos en la mejora constante de nuestras capacidades, tanto a nivel individual como organizacional. Promovemos un entorno de aprendizaje permanente, donde la retroalimentación, la innovación tecnológica y la investigación aplicada son elementos esenciales para evolucionar y mantenernos a la vanguardia del sector verde-tecnológico.
+
+5. Educación Verde
+   
+    Nos proponemos como agentes de cambio en la promoción del conocimiento ambiental y del uso consciente de la tecnología en el ámbito vegetal. A través de contenidos formativos y funcionalidades educativas, buscamos sensibilizar a nuestros usuarios sobre la importancia del respeto por la naturaleza, el ahorro de recursos y la conservación del ecosistema.
+
+6. Eficiencia
+   
+    Valoramos profundamente la optimización de recursos como el agua, los nutrientes y el tiempo. Nuestro enfoque técnico se basa en el diseño de soluciones precisas y automatizadas que maximizan el rendimiento de cada acción de jardinería, reduciendo significativamente el desperdicio y fomentando prácticas más responsables y productivas.
+
+7. Ética
+   
+    Operamos bajo principios éticos sólidos que rigen el uso de datos, la privacidad del usuario y el impacto de nuestra tecnología en el entorno. Nos regimos por estándares de transparencia, justicia y responsabilidad social, asegurando que nuestras decisiones estén siempre alineadas con el bienestar común y el respeto por el medio ambiente.
+
+8. Integridad
+   
+    Actuamos con coherencia entre lo que decimos y lo que hacemos. Nuestra integridad se refleja en la calidad de nuestros productos, en la precisión de los datos proporcionados y en la fiabilidad de las recomendaciones generadas. Nos esforzamos por brindar información veraz, científica y útil para una toma de decisiones informada.
+
+9. Innovación
+    
+    La búsqueda constante de nuevas soluciones tecnológicas está en el centro de nuestro ADN. Promovemos la creatividad, la experimentación y la investigación aplicada como medios para desarrollar productos disruptivos que transformen el cuidado vegetal y contribuyan activamente al avance de la jardinería inteligente.
+
+10. Sostenibilidad
+    
+    Nuestro compromiso ambiental se traduce en el diseño de herramientas que promueven prácticas ecológicas, conscientes y de bajo impacto. Trabajamos por un futuro donde la tecnología y la naturaleza coexistan en equilibrio, apoyando la creación de espacios verdes resilientes y saludables para las generaciones presentes y futuras.
+
+11. Trabajo en Equipo
+    
+    Valoramos el aporte de cada integrante de nuestro equipo, reconociendo que la colaboración interdisciplinaria potencia la creatividad, la eficiencia y la innovación. Fomentamos un entorno de respeto, escucha activa y apoyo mutuo, donde el trabajo conjunto se convierte en la base del éxito colectivo.
+
+12. Transparencia
+    
+    Nos guiamos por un principio de claridad en todos nuestros procesos, tanto internos como externos. Mantenemos una comunicación abierta con nuestros usuarios, aliados y comunidad, brindando información accesible y verificable sobre el funcionamiento de nuestras herramientas, sus beneficios y limitaciones.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 ## 1.2. Solution Profile
 ### 1.2.1 Antecedentes y problemática
