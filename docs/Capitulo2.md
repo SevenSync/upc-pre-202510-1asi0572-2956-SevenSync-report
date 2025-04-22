@@ -279,7 +279,7 @@ servicios de manera más efectiva a sus requerimientos.
   - ### **Entrevista #1**
 
     Nombre y apellidos: Andres Torres
-    Edad: 2 años
+    Edad: 21 años
     Distrito: Lince <br>
     ![Entrevista_Seg01_AndresTorres](../assets/capitulo2/Entrevista_Andres.png) <br>
     **Resumen De Entrevista**
