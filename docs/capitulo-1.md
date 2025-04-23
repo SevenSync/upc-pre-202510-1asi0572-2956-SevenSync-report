@@ -146,11 +146,67 @@ En contextos urbanos donde el ritmo acelerado y la escasez de áreas verdes difi
 
 Estos desafíos generan prácticas de cuidado inadecuadas, como el riego ineficiente que puede desperdiciar hasta un 45% del agua disponible (Amir et al., 2024), la mala exposición solar que puede causar quemaduras en las hojas, y el deterioro del sustrato, afectando directamente la salud de las plantas (Cherlinka, 2025). La frustración y el abandono son frecuentes: se estima que hasta el 50% de los jardines comunitarios no se mantienen por falta de apoyo (Beavers et al., 2024). Además, la jardinería doméstica presenta una brecha tecnológica de casi ocho años respecto a la agricultura profesional (Bhati et al., 2024), lo que limita su evolución y dificulta la adopción de prácticas más sostenibles y eficientes.
 
-Creemos que los jardineros urbanos principiantes necesitan una solución tecnológica accesible, automatizada y personalizada para cuidar sus plantas de forma eficiente, detectar problemas a tiempo y mantener la motivación a largo plazo. Una herramienta que no solo facilite el proceso, sino que también empodere al usuario mediante gráficos de progreso y asistencia continua basada en datos reales.
+¿Cómo podríamos crear una solución tecnológica accesible, automatizada y personalizada que ayude a los jardineros urbanos principiantes a cuidar sus plantas de forma eficiente, detectar problemas a tiempo y mantener la motivación a largo plazo, de modo que fomentemos comunidades más resilientes y sostenibles, reduzcamos el abandono de espacios verdes y cerremos la brecha tecnológica en la jardinería urbana frente a los retos ambientales del siglo XXI?
 
-Porque si logramos resolver esta necesidad, contribuiremos a reducir el abandono de espacios verdes, fomentar comunidades más resilientes y sostenibles, y cerrar la brecha tecnológica que impide una jardinería urbana saludable, inclusiva y alineada con los retos ambientales de este siglo.
+**Objetivo General**
+
+Desarrollar una solución tecnológica integral de jardinería doméstica mediante una maceta inteligente equipada con sensores ambientales, conectividad Iot, riego automatizado, y una aplicación móvil y web, que asista a nuevos jardineros en el monitoreo, mantenimiento y toma de decisiones para el cuidado óptimo de las plantas, promoviendo la sostenibilidad y el bienestar urbano.
+
+**Objetivos Específicos**
+
+1. Diseñar e implementar una maceta inteligente (Macetech) con sensores capaces de medir variables clave como humedad del sustrato, temperatura, luminosidad, pH y conductividad eléctrica para la salinidad.
+
+2. Desarrollar una aplicación móvil y web con interfaz amigable que permita visualizar en tiempo real los datos recolectados por la maceta, generar alertas y ofrecer recomendaciones personalizadas de cuidado vegetal con el uso de gráficos de progreso constante.
+
+3. Integrar un sistema automatizado de riego, controlado por los datos recolectados y criterios definidos, que optimice el uso del agua y garantice el riego eficiente según las necesidades específicas de cada planta.
+
+4. Incorporar un módulo de análisis fitosanitario básico, basado en reglas heurísticas, que apoye la detección temprana de condiciones adversas del sustrato, con sugerencias de acción correctiva.
+
+5. Validar el prototipo en un entorno urbano controlado, midiendo su eficacia en términos de facilidad de uso, precisión de datos, ahorro de agua y percepción de los usuarios.
+
+**Puntos más importantes para la solución propuesta**
+
+En respuesta a los desafíos detectados en la jardinería doméstica y comunitaria urbana, la solución propuesta debe ofrecer un enfoque integral que no solo mitigue las causas del abandono y el uso ineficiente de recursos, sino que también potencie el desarrollo de espacios verdes sostenibles y accesibles. Para alcanzar este objetivo, es fundamental que la solución aborde los siguientes aspectos clave:
+
+1. Falta de conocimiento técnico en jardinería
+
+    Muchos jardineros principiantes no saben cómo cuidar adecuadamente sus plantas, lo que conduce a riegos mal ejecutados, exposición solar incorrecta y uso inapropiado del sustrato. Macetech debe ofrecer un sistema de progreso del usuario y alertas automatizadas basadas en el estado real de la planta y del entorno. Esto permitirá que incluso usuarios sin experiencia puedan tomar decisiones acertadas y sostenibles.
+
+3. Gestión ineficiente del riego
+
+    El mal manejo del riego genera desperdicio de agua y estrés hídrico en las plantas. Se estima que hasta un 45% del agua se pierde por malas prácticas (Amir et al., 2024). La maceta debe contar con sensores de humedad y temperatura, integrados con un sistema de riego automatizado que ajuste la cantidad y frecuencia del agua según las necesidades específicas de la planta y el clima. Además, debe incorporar una lógica adaptable que prevenga el riego innecesario en días húmedos o lluviosos.
+
+3. Ausencia de tecnologías accesibles para el hogar
+   
+    Las tecnologías inteligentes en agricultura aún no se han adaptado para su uso práctico en la jardinería doméstica, por lo que los usuarios no cuentan con herramientas asequibles ni fáciles de usar. Macetech debe traducir el poder del IoT y la sensorización ambiental en una solución accesible, económica y fácil de instalar, con una interfaz intuitiva que pueda ser utilizada por cualquier persona, sin necesidad de conocimientos técnicos. La aplicación debe funcionar en móviles, páginas web, y permitir monitoreo remoto, configuración de rutinas y seguimiento del estado de la planta.
+
+4. Abandono de jardines por falta de motivación o soporte
+
+    La frustración por fracasos en el cuidado de plantas lleva a muchos usuarios a abandonar jardines y huertos urbanos, generando pérdida de recursos y desmotivación generalizada. La solución debe incorporar un sistema de retroalimentación positiva, mediante reportes visuales del progreso de la planta y consejos útiles. Estas funciones deben fomentar el apego emocional al proceso de jardinería, aumentando la satisfacción del usuario.
+
+5. Escasa disponibilidad de datos para toma de decisiones
+   
+    El cuidado de plantas, especialmente en contextos domésticos y urbanos, suele depender de la intuición del usuario o de recomendaciones generales que no toman en cuenta las condiciones particulares del entorno. Esta falta de información personalizada puede llevar a prácticas inadecuadas que afectan negativamente la salud de las plantas. Macetech debe abordar esta limitación mediante la recopilación continua y precisa de datos ambientales y de comportamiento de cada planta. A través de sensores inteligentes, el sistema podrá monitorear variables como la humedad del suelo, la temperatura, la luz solar y otros indicadores clave. 
+
+6. Baja cobertura de áreas verdes en ciudades
+    
+    Ciudades como Lima tienen muy pocas áreas verdes por habitante, lo que afecta la salud mental y ambiental de la población tanto a corto como a largo plazo.
+Macetech debe ser parte de una estrategia de micro-jardinería urbana, facilitando la creación de espacios verdes personalizados y sostenibles en hogares, balcones o jardines compartidos. Su diseño debe ser compacto, estético y funcional, para adaptarse a distintos tipos de vivienda urbana.
+
+**Restricciones del Proyecto** 
+
+1. Limitación en el tipo de plantas soportadas inicialmente: La versión prototipo se centrará en especies domésticas comunes (como hierbas aromáticas, plantas ornamentales de interior y suculentas), dejando para fases futuras la inclusión de especies con requerimientos más complejos.
+
+2. Cobertura limitada de conectividad IoT: En la fase inicial, la conectividad dependerá de redes Wi-Fi domésticas. No se incluirá soporte para redes móviles (4G/5G) o redes de largo alcance como LoRaWAN.
+
+3. Autonomía energética condicionada: El diseño de Macetech dependerá de una fuente eléctrica doméstica o baterías recargables de capacidad limitada.
+
+4. Escalabilidad restringida al entorno doméstico: La solución está diseñada exclusivamente para jardinería doméstica urbana y no contempla, en esta etapa, adaptaciones para cultivos en exteriores a gran escala, viveros o entornos rurales.
 
 #### 1.2.2.2. Lean UX Assumptions
+
+
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
 ## 1.3. Segmentos objetivo
