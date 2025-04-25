@@ -1,11 +1,8 @@
 # Capítulo II: Requirements Elicitation & Analysis
 
-La recolección y análisis de requisitos es una etapa fundamental en el desarrollo de cualquier proyecto. Este proceso implica
-identificar, comprender y documentar las necesidades y expectativas de los stakeholders, así como los objetivos y restricciones
-del proyecto. Mediante diversas técnicas como entrevistas, encuestas y talleres de trabajo colaborativo, se busca obtener una
-comprensión clara y detallada de lo que se espera lograr con el proyecto. El análisis de estos requisitos permite establecer una
-base sólida para el diseño y desarrollo posterior, asegurando que el producto final satisfaga las necesidades del usuario y
-cumpla con los objetivos del negocio.
+La recolección y análisis de requisitos es una etapa fundamental en el desarrollo de cualquier proyecto. Este proceso implica identificar, comprender y documentar las necesidades y expectativas de los stakeholders, así como los objetivos y restriccionesdel proyecto. Mediante diversas técnicas como entrevistas, encuestas y talleres de trabajo colaborativo, se busca obtener una comprensión clara y detallada de lo que se espera lograr con el proyecto.
+
+El análisis de estos requisitos permite establecer una base sólida para el diseño y desarrollo posterior, asegurando que el producto final satisfaga las necesidades del usuario y cumpla con los objetivos del negocio.
 
 ## 2.1. Competidores
 
@@ -204,19 +201,14 @@ Es una maceta decorativa con sensores básicos y luces LED integradas. Está má
 
 ## 2.2. Entrevistas
 
-El propósito de las entrevistas es adquirir una comprensión profunda de las experiencias, perspectivas y opiniones de los
-segmentos de mercado seleccionados. Nuestro objetivo es obtener información valiosa que nos ayude a entender mejor a
-nuestro público objetivo y así mejorar nuestro conocimiento sobre los usuarios. Estas conversaciones nos permitirán obtener
-una visión más clara de las necesidades y deseos de nuestros usuarios, lo que nos ayudará a adaptar nuestros productos o
+El propósito de las entrevistas es adquirir una comprensión profunda de las experiencias, perspectivas y opiniones de los segmentos de mercado seleccionados. Nuestro objetivo es obtener información valiosa que nos ayude a entender mejor a nuestro público objetivo y así mejorar nuestro conocimiento sobre los usuarios. Estas conversaciones nos permitirán obtener una visión más clara de las necesidades y deseos de nuestros usuarios, lo que nos ayudará a adaptar nuestros productos o
 servicios de manera más efectiva a sus requerimientos.
 
 - ### 2.2.1. Diseño de entrevistas
 
-  El diseño de entrevistas nos permitirá recopilar información valiosa sobre las experiencias, perspectivas y necesidades de
-  nuestro grupo objetivo. Esto nos ayudará a comprender mejor sus preocupaciones y expectativas, lo que a su vez nos permitirá
-  desarrollar soluciones más efectivas y adaptadas a sus requerimientos. Además, nos brindará la oportunidad de establecer una
-  conexión significativa con nuestros usuarios, fortaleciendo así nuestra relación con ellos y mejorando la calidad de nuestro
-  producto o servicio.<br><br>
+  El diseño de entrevistas nos permitirá recopilar información valiosa sobre las experiencias, perspectivas y necesidades de nuestro grupo objetivo. Esto nos ayudará a comprender mejor sus preocupaciones y expectativas, lo que a su vez nos permitirá desarrollar soluciones más efectivas y adaptadas a sus requerimientos.
+
+  Además, nos brindará la oportunidad de establecer una conexión significativa con nuestros usuarios, fortaleciendo así nuestra relación con ellos y mejorando la calidad de nuestro producto o servicio.<br><br>
 
 - **Información general:** <br><br>
 
@@ -304,6 +296,7 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
     ![UserPerson_1](../assets/capitulo2/UserPerson1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
+    ![UserPerson_2](../assets/capitulo2/UserPerson2.png) <br><br>
 
 - ### 2.3.2. User Task Matrix
 
@@ -420,6 +413,9 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 
   - **Segmento 1: Personas Apasionadas por las plantas**
     ![EmpathyMap_1](../assets/capitulo2/EmpathyMap1.png) <br><br>
+
+  - **Segmento 2: Personas dedicadas a la jardineria**
+    ![EmpathyMap_2](../assets/capitulo2/EmpathyMap2.png)
 
 - ### 2.3.5. As-is Scenario Mapping
 
