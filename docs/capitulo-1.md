@@ -331,17 +331,27 @@ Macetech debe ser parte de una estrategia de micro-jardinería urbana, facilitan
 
 6. En el segundo año, proyectamos a que el 20 % de nuestras ventas derive de oficinas verdes, colegios con huertos escolares y comunidades sostenibles, aprovechando el respaldo social y la creciente demanda de espacios colaborativos. En el mundo, el 82,5 % de la población urbana apoya la creación de huertos comunitarios, a pesar de limitaciones de espacio y costo (Bieri et al., 2024), y en el Reino Unido los huertos comunitarios crecieron un 44 % entre 2012 y 2018, manteniendo su resiliencia tras la pandemia. Paralelamente, el mercado global de mobiliario exterior alcanzó 147 300 millones USD en 2024, con previsión de 393 000 millones USD en 2028 (Statista Research Department, 2025), impulsado por la adopción de soluciones sostenibles en entornos laborales y educativos. Gracias a sus funciones colaborativas, como la posibilidad de gestionar múltiples macetas en red, Macetech facilitará la adopción institucional y la creación de alianzas estratégicas con empresas, escuelas y organizaciones comunitarias.
 
-7. Buscamos establecer un precio de venta promedio (ASP) de 120 USD por unidad. Nuestro análisis de mercado muestra que los dispositivos IoT de consumo para el hogar se cotizan típicamente entre 50 y 150 USD, dependiendo de sus funcionalidades y calidad de construcción. Tras realizar un estudio de costos de componentes electrónicos, sensores avanzados y procesos de ensamblaje, hemos determinado que un ASP de 100 USD permite:
+7. Tras un análisis detallado de los componentes necesarios para una maceta inteligente con funcionalidades IoT avanzadas, se ha determinado que un precio de venta promedio de 100 USD es adecuado, sobre todo para macetas para solo una planta. Este precio permite cubrir los costos de fabricación, ofrecer un producto de calidad y mantener un margen bruto competitivo (Ibarra-Cabrera et al., 2024; Statista Research Department, 2025). Desglose de costos de componentes clave:
 
-Cubrir íntegramente los costes directos de fabricación y sourcing de hardware (sensores de humedad, pH, temperatura, microcontrolador y carcasas resistentes).
+  - Sensor de temperatura y humedad: Alrededor de 7.00 USD.
 
-Financiar el desarrollo continuo de firmware, plataforma de datos y actualizaciones OTA.
+  - Sensor de pH del suelo: Alrededor de 21.50 USD.
 
-Mantener un margen bruto del 40 %, alineado con estándares de la industria de dispositivos inteligentes.
+  - Sensor de conductividad eléctrica del suelo: Alrededor 18.50 USD. ​
 
-Este posicionamiento de precio se respalda en la proyección del mercado global de equipos de jardinería inteligente, que crecerá de 7 950 millones USD en 2024 a 17 170 millones USD en 2032 (CAGR 10.1 %) según Data Bridge Market Research (2025). La disposición a pagar de los early adopters latinoamericanos, combinada con el valor percibido de una solución integral IoT + IA para el cuidado de plantas, valida la competitividad y sostenibilidad de este ASP.
+  - Sistema de riego automático: Incluyendo bomba de agua y controladores, estimado en 28.50 USD
 
+Justificación del precio:
 
+  - Cobertura de costos: Un ASP de 100 USD permite cubrir los costos de producción, incluyendo componentes, ensamblaje y pruebas de calidad.​
+
+  - Desarrollo y soporte: Este precio también financia el desarrollo continuo de software, actualizaciones y soporte al cliente.​
+
+  - Margen bruto competitivo: Se mantiene un margen bruto del 40%, alineado con los estándares de la industria de dispositivos inteligentes.​
+
+  - Valor percibido: Los consumidores están dispuestos a pagar por soluciones integradas que faciliten el cuidado de plantas mediante tecnología avanzada.​
+
+Además, según Data Bridge Market Research, el mercado global de equipos de jardinería inteligente se proyecta a crecer de 7,950 millones USD en 2024 a 17,170 millones USD en 2032, con una tasa de crecimiento anual compuesta del 10.1%. Este crecimiento indica una demanda creciente por soluciones como Macetech.​
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
