@@ -235,25 +235,15 @@ En respuesta a los desafíos detectados en la jardinería doméstica y comunitar
 
 **User Outcomes**
 
-- Incremento sostenido en el éxito del cuidado de plantas
+1. Buscamos que los usuarios incrementen en una tasa de 75% su capacidad para mantener plantas sanas y vivas en un plazo mayor a 3 meses dentro de 1 año de uso. Gracias al monitoreo en tiempo real, riego automatizado y reportes visuales de evolución vegetal, los usuarios de Macetech podrán detectar y corregir problemas antes de que afecten gravemente a sus plantas. Este soporte constante facilitará la toma de decisiones informadas, aumentando la tasa de supervivencia de las plantas más allá de los 3 meses de vida saludable en al menos un 75 % dentro de 1 año de uso. Mediremos este progreso mediante el seguimiento del porcentaje de alertas de cuidado atendidas (por ejemplo, notificaciones de estrés por humedad) que resultan en plantas vivas y saludables tras 90 días, comparando segmentos de usuarios a lo largo del tiempo. Esta mejora se alinea con la evidencia de Beavers et al. (2024), que muestra que la tecnología de asistencia puede mejorar en un 50% la efectividad del cuidado en jardineros novatos. El outcome no solo cuantifica la salud vegetal, sino también el avance del usuario en el establecimiento de rutinas de cuidado estables y exitosas, incrementando su confianza y compromiso con la jardinería doméstica.
 
-  Los usuarios de Macetech podrán mantener sus plantas saludables y en crecimiento continuo gracias a un sistema de monitoreo en tiempo real, riego automatizado y gráficos de progreso detallados. Proyectamos que la proporción de plantas que superen los tres meses de vida saludable aumente hasta un 75%. Este acompañamiento constante corrige los errores más comunes de los jardineros novatos y refuerza su motivación, reduciendo drásticamente la tasa de abandono. Beavers et al. (2024) evidencian que la retroalimentación positiva y el sentido de logro personal son fundamentales para la permanencia en la jardinería doméstica, pilares sobre los cuales se sustenta Macetech. Además, la misma investigación sugiere que la incorporación de tecnología puede mejorar la salud de las plantas en un 50 % en comparación con aquellas atendidas por principiantes sin apoyo tecnológico (Beavers et al., 2024).
+2. Proyectamos reducir de forma significativa el desperdicio de recursos, sobre todo el agua, en un 50% frente a métodos manuales en los primeros 6 meses. Mediante sensores de humedad y algoritmos de riego inteligente, Macetech optimiza el consumo de agua y energía, apuntando a reducir el uso de agua en al menos un 50 % frente a métodos manuales tradicionales. Esta estimación se fundamenta en resultados de Siraparapu y Azad (2024), quienes documentaron disminuciones de 120 a 80 litros de agua y de 210 a 160 kWh de energía sin comprometer la salud de las plantas. Además, la Organización de las Naciones Unidas para la Alimentación y la Agricultura (2024) alerta que hasta un 45 % del agua de riego se pierde por evaporación o filtración profunda; Macetech medirá su impacto mediante el porcentaje de ciclos de riego automatizados completados con éxito y la cantidad de agua dispensada por ciclo, comparando estos datos con los consumos reportados por usuarios sin automatización. Con esta métrica, buscamos no solo validar la eficiencia técnica, sino también fomentar hábitos de uso responsable de recursos en los jardineros domésticos.
 
-- Reducción significativa del desperdicio de recursos
+3. Fomentamos un aprendizaje progresivo, proactivo y autónomo en jardinería doméstica para todos nuestros usuarios. Macetech funciona como una plataforma de reportes, pero también con componentes formativos, proporcionando informes visuales y notificaciones personalizadas que capacitan al usuario para diagnosticar estrés vegetal, comprender la dinámica del sustrato y adoptar prácticas de cultivo sostenibles, todo de manera autónoma y proactiva por parte del mismo usuario. Según Beavers et al. (2024), la educación informal es clave para la resiliencia en jardines comunitarios, lo que valida nuestro enfoque de empoderamiento autodidacta. En la actualidad solo un 35% de jardineros se siente motivado en aprender más sobre esas áreas debido a la falta de apoyo y motivación. Mediremos el aprendizaje progresivo a través del porcentaje de usuarios que completan las acciones correctivas sugeridas por Macetech y sin asistencia externa. De este modo, podremos verificar que al menos el 70 % de los usuarios esté autoevaluando y ajustando sus prácticas de riego y fertilización tras interactuar con los gráficos y recomendaciones, reafirmando su compromiso y confianza en la jardinería doméstica.
 
-  Mediante sensores de humedad y algoritmos de riego inteligente, Macetech optimiza el uso de agua y energía. Se espera que esta optimización reduzca el gasto de agua en un 50% con respecto a procesos no tecnológicos. Siraparapu y Azad (2024) documentaron reducciones de consumo de agua de 120 a 80 L y de energía de 210 a 160 kWh sin sacrificar la salud vegetal. Además, la Organización de las Naciones Unidas para la Agricultura y la Alimentación (2024) advierte que hasta un 45 % del agua de riego se pierde por evaporación o filtración profunda, un problema que nuestra maceta inteligente está diseñada para mitigar.
+4. Aumento del bienestar emocional y reducción del estrés a un 20% en los usuarios que utilizan Macetech en los primeros 3 meses. La interacción regular con plantas está asociada a beneficios terapéuticos, incluyendo disminución de la ansiedad y mejora del estado de ánimo. Bieri et al. (2024) documentan que el 82,5 % de la población urbana aprecia los huertos comunitarios por sus ventajas psicológicas. Macetech potencia esta experiencia al ser sencillo, gratificante y orientado al logro, reforzando el vínculo entre el usuario y la naturaleza. Mediremos este User Outcome mediante encuestas de bienestar emocional antes y después de tres meses de uso (utilizando escalas validadas de reducción de estrés) y buscaremos un incremento de al menos 20 % en la puntuación promedio de bienestar. De esta forma, confirmaremos que Macetech no solo optimiza el cuidado de plantas, sino que también actúa como herramienta de bienestar en entornos urbanos.
 
-- Aprendizaje progresivo y autónomo en jardinería doméstica
-
-  Más que un dispositivo, Macetech es una plataforma formativa que, a través de informes visuales y consejos personalizados, habilita al usuario para diagnosticar estrés vegetal, comprender la dinámica del sustrato y adoptar prácticas de cultivo sostenibles, todo de forma autónoma. Beavers et al. (2024) resaltan la importancia de la educación informal en la resiliencia de los jardines comunitarios, validando nuestro enfoque de empoderamiento autodidacta para que el usuario aprenda solo según el seguimiento de los gráficos y se sienta interesado en buscar información por su propia cuenta en la web.
-
-- Aumento del bienestar emocional y reducción del estrés
-
-  La interacción con plantas tiene efectos terapéuticos comprobados. Bieri et al. (2024) señalan que el 82,5 % de la población urbana valora los huertos comunitarios por sus beneficios psicológicos. Al facilitar una experiencia sencilla y gratificante, Macetech refuerza el vínculo del usuario con la naturaleza, contribuyendo a la disminución del estrés y al fortalecimiento del propósito personal en contextos urbanos.
-
-- Fomento de un estilo de vida más consciente y sostenible
-
-  La adopción de Macetech promueve hábitos ecológicos más allá de la jardinería—reciclaje, eficiencia energética y agricultura casera apoyada por la alta aceptación social de iniciativas verdes (Murtagh & Frost, 2023). Nuestra maceta inteligente convierte la intención sostenible en acción cotidiana, impulsando un cambio de comportamiento que beneficia tanto al usuario como al entorno urbano.
+5. Fomento de un estilo de vida más consciente y sostenible. Macetech impulsa hábitos ecológicos más allá de la jardinería, como reciclaje, eficiencia energética y cultivo casero, convirtiendo la intención en práctica diaria. Murtagh & Frost (2023) revelan que 2 de cada 3 personas valoran altamente las iniciativas verdes, lo que respalda nuestro enfoque. Para medir este cambio de comportamiento, realizaremos encuestas de hábitos sostenibles al inicio y tras seis meses de uso, buscando un incremento del 30 % en la adopción de al menos dos prácticas ecológicas adicionales (e.g., compostaje doméstico, reducción de consumo energético). De este modo, demostraremos que Macetech no solo optimiza el cuidado de plantas, sino que también actúa como catalizador de una vida urbana más sostenible.
 
 **Business Assumptions**
 
@@ -356,6 +346,62 @@ Justificación del precio:
 Además, según Data Bridge Market Research, el mercado global de equipos de jardinería inteligente se proyecta a crecer de 7,950 millones USD en 2024 a 17,170 millones USD en 2032, con una tasa de crecimiento anual compuesta del 10.1%. Este crecimiento indica una demanda creciente por soluciones como Macetech.​
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+1. Adopción del producto (Business Outcome 1)
+
+**Creemos que** al lanzar Macetech al mercado peruano, aproximadamente el 8 % de los hogares en Lima Metropolitana lo adoptarán durante los primeros 12 meses, alcanzando un hito intermedio del 4 % a los 6 meses, especialmente entre jóvenes profesionales entre 18 y 45 años con interés en sostenibilidad urbana.
+
+**Si tenemos razón**, las ventas físicas del producto se verán reflejadas en registros analíticos a través de herramientas como Google Analytics, y esto validará tanto la visibilidad como la demanda inicial del producto.
+
+**Sabremos que tenemos razón si** logramos monitorear un crecimiento progresivo hacia el 8 % de adopción anual, sustentado en el contexto de alto dinamismo en el mercado global de IoT doméstico, que alcanzó 155 000 millones de USD en 2023 y proyecta llegar a 231 600 millones para 2028, con 785 millones de hogares conectados a nivel mundial (Statista Research Department, 2025). El éxito en adopción indicará que Macetech responde a una tendencia real y creciente en América Latina, donde países como México ya alcanzan un 94 % de penetración de dispositivos inteligentes en hogares.
+
+2. Retención temprana de usuarios (Business Outcome 2)
+   
+**Creemos que** si diseñamos un proceso de onboarding guiado paso a paso, enviamos notificaciones personalizadas y mostramos métricas visuales de salud vegetal, lograremos reducir la tasa de abandono (churn) a un 20 % o menos en los primeros 3 meses, partiendo desde un hito intermedio del 25 % a los 2 meses.
+
+**Si tenemos razón**, observaremos una mejora significativa en la permanencia de usuarios dentro del ecosistema Macetech, incluso superando la tendencia promedio de churn del 30–35 % en soluciones IoT domésticas (National Institute of Standards and Technology, 2024).
+
+**Sabremos que tenemos razón si** los registros de cancelación descienden por debajo del umbral del 20 %, y nuestros análisis por segmentos reflejan una mejora continua en los puntos de fricción más críticos identificados durante los primeros días de uso.
+
+3. Visibilidad en buscadores (Business Outcome 3)
+
+**Creemos que** si implementamos una estrategia sólida de SEO y marketing digital enfocada en términos clave como “maceta inteligente” y “jardinería IoT”, lograremos alcanzar el top 3 de Google en Perú, México y Colombia dentro del primer año, alcanzando un hito intermedio en el top 10 a los 6 meses.
+
+**Si tenemos razón**, obtendremos un crecimiento sostenido del tráfico orgánico y una mejora en nuestros rankings medidos por herramientas como SEMrush.
+
+**Sabremos que tenemos razón si** observamos un aumento progresivo en clics y conversiones derivadas de búsquedas, validando el interés de una región altamente conectada: el 94 % de los hogares mexicanos y más del 80 % de la población urbana en Colombia ya integran tecnología IoT (Thormundsson, 2024; Statista, 2025).
+
+4. Salud de las plantas y éxito del cuidado (User Outcome 1)
+
+**Creemos que** al integrar monitoreo en tiempo real, riego automatizado y reportes gráficos de progreso, los usuarios de Macetech aumentarán la tasa de supervivencia de sus plantas más allá de los 90 días en al menos un 75 % durante su primer año de uso.
+
+**Si tenemos razón**, los usuarios responderán a las alertas de cuidado y lograrán mantener sus plantas sanas, estableciendo rutinas de jardinería efectivas.
+
+**Sabremos que tenemos razón si** el 75 % de las notificaciones sobre estrés vegetal se atienden exitosamente y las plantas asociadas sobreviven a los primeros 3 meses, apoyando los hallazgos de Beavers et al. (2024), que documentan una mejora del 50 % en la efectividad del cuidado con tecnología de asistencia.
+
+5. Reducción del desperdicio de recursos (User Outcome 2)
+
+**Creemos que** con los sensores de humedad y el sistema de riego inteligente de Macetech, los usuarios reducirán su consumo de agua y energía en un 50 % en los primeros 6 meses, comparado con métodos manuales tradicionales.
+
+**Si tenemos razón**, veremos una disminución sistemática del volumen de agua y energía utilizada por ciclo de riego, sin comprometer la salud de las plantas.
+
+**Sabremos que tenemos razón si** el análisis de los datos recopilados por Macetech demuestra una caída de, por ejemplo, 120 a 80 litros de agua y de 210 a 160 kWh de energía, replicando los hallazgos de Siraparapu y Azad (2024). Además, el control automatizado contribuirá a mitigar el 45 % del agua que, según la Organización de las Naciones Unidas para la Alimentación y la Agricultura (2024), se pierde por evaporación o filtración profunda.
+
+6. Privacidad como factor de retención (Business Outcome 4)
+   
+**Creemos que** si implementamos medidas proactivas como consentimiento explícito, cifrado de datos y políticas de transparencia, podremos reducir el abandono por preocupaciones de privacidad a un máximo del 15 % en los primeros 3 meses.
+
+**Si tenemos razón**, los usuarios confiarán más en la seguridad de Macetech y mostrarán menos rechazo ante las funcionalidades de recopilación y análisis de datos.
+
+**Sabremos que tenemos razón si** las encuestas revelan una alta percepción de confianza y los tickets de soporte por temas de privacidad se mantienen por debajo del 15 %, contrastando con el 45 % de desconfianza promedio en dispositivos inteligentes según Thormundsson (2024).
+
+7. Cambio en hábitos sostenibles (User Outcome 5)
+
+**Creemos que** si los usuarios integran Macetech a su vida cotidiana, al menos un 30 % adoptará dos o más prácticas ecológicas adicionales (como compostaje o eficiencia energética) durante los primeros 6 meses.
+
+**Si tenemos razón**, veremos un cambio conductual significativo en la rutina ecológica de los usuarios, fortalecido por la experiencia positiva con la jardinería inteligente.
+
+**Sabremos que tenemos razón si** las entrevistas post-uso reflejan un crecimiento del 30 % en hábitos sostenibles adquiridos, validando lo observado por Murtagh & Frost (2023), quienes concluyeron que 2 de cada 3 personas valoran altamente las iniciativas verdes, especialmente aquellas que pueden integrar en su hogar.
 
 #### 1.2.2.4. Lean UX Canvas
 
