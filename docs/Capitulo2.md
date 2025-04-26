@@ -326,7 +326,19 @@ servicios de manera más efectiva a sus requerimientos.
     **Enlace De Entrevista**
     https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EZCB8tqmJ2VJonM6eLDw6tsB18mDoG9LXaOPH1SPGW98kQ?e=CJSJVE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-  ***
+#### **Segmento 2:** Personas dedicadas a la jardinería 
+  
+  - ### **Entrevista #1**
+
+    Nombre y apellidos: Yasser Renteria
+    Edad: 25 años
+    Distrito: Chorrillos <br>
+    ![Entrevista_Seg01_YasserRenteria](../assets/capitulo2/Entrevista_Yasser.png) <br>
+    **Resumen De Entrevista**
+    El entrevistado, Yasser, ha trabajado de forma independiente en jardinería desde los 20 años. Él cuenta con 250 plantas a su cuidado, mayormente, ornamentales y aromáticas. Sobre el cuidado de sus plantas, Yasser describe un proceso principalmente manual y basado en la observación. Realiza una inspección diaria de sus 200-250 plantas. El riego se efectúa aproximadamente 2 a 3 veces por semana por la mañana, ajustando la frecuencia y la cantidad según las condiciones climáticas y las necesidades percibidas de las plantas. La fertilización es orgánica y se aplica con una frecuencia quincenal. Para el monitoreo, confía en su observación constante, a menudo a lo largo del día o semanalmente, basándose en su experiencia para identificar signos de problemas. El entrevistado muestra un gran interés en la tecnología y la automatización para facilitar su trabajo. Valora la información en tiempo real y la posibilidad de monitorear variables clave como el suelo y el agua. La confiabilidad y la durabilidad son factores cruciales en su decisión de compra, y está dispuesto a invertir en el producto si el precio es adecuado, especialmente para un volumen grande de plantas.  <br><br>
+    **Enlace De Entrevista**
+    https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213143_upc_edu_pe/EZ216XU7qt9Ht_atvsNF2qkBJWlnc20fYLmQSrFLwcTJtg?e=hIV804&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  
 
 - ### 2.2.3. Análisis de entrevistas
 
