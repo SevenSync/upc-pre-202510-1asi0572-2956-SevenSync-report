@@ -206,59 +206,105 @@ servicios de manera más efectiva a sus requerimientos.
 
 - ### 2.2.1. Diseño de entrevistas
 
-  El diseño de entrevistas nos permitirá recopilar información valiosa sobre las experiencias, perspectivas y necesidades de nuestro grupo objetivo. Esto nos ayudará a comprender mejor sus preocupaciones y expectativas, lo que a su vez nos permitirá desarrollar soluciones más efectivas y adaptadas a sus requerimientos.
+    Información general del participante
 
-  Además, nos brindará la oportunidad de establecer una conexión significativa con nuestros usuarios, fortaleciendo así nuestra relación con ellos y mejorando la calidad de nuestro producto o servicio.<br><br>
+    1. Nombre:
+    2. Edad:
+    3. Ubicación actual con provincia y distrito:
+    4. Ocupación:
+    5. Nivel de experiencia con plantas: [Principante, Intermedio, Avanzado]
 
-- **Información general:** <br><br>
+* **Segmento 1: Personas apasionadas por las plantas**
+      
+    **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.
 
-  - **Nombre:** Nombre del entrevistado
-  - **Edad:** Edad del entrevistado
-  - **Ubicación:** Ubicación del entrevistado
-  - **Ocupación:** Ocupación del entrevistado
-    <br><br>
+    * Preguntas de exploración inicial (contexto general)
 
-- **Preguntas Previas Segmento 1 - Personas Apasionadas por las plantas:**<br><br>
+        1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
+    
+        2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
+    
+        3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?
 
-  - Preguntas abiertas:
-    1. ¿Cuánto tiempo lleva interesado en el cuidado de las plantas?
-    2. ¿Qué tipo de plantas suele cuidar?
-    3. ¿Qué es lo que más disfruta de cuidar plantas y qué retos afronta en su cuidado?
-    4. ¿Utiliza alguna herramienta o dispositivo tecnológico actualmente (riego/supervisión/etc)?
-    5. ¿Qué piensa sobre el uso de macetas inteligentes que automatizan el riego y el monitoreo de condiciones? <br><br>
-  - Preguntas después de hablar sobre el producto:
-  - 6. ¿Qué esperaría de una maceta inteligente?
-  - 7. ¿Consideraría el uso de macetas inteligentes como una inversión o un lujo?
-  - 8. ¿Cómo imagina que una maceta inteligente se integraría con el estilo de su hogar?
-  - 9. ¿Estaría interesado en caracterísitcas adicionales como la integración de aplicación móvil/ aplicación web para un mejor monitoreo de sus plantas?
-  - 10. ¿Qué consejos o características recomendaría para mejorar la experiencia de cuidado de plantas con una maceta inteligente? <br><br>
+    * Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
 
-- **Preguntas Previas Segmento 2 - Personas dedicadas a la jardineria :**<br><br>
+        4. ¿Qué haces exactamente durante ese tiempo?
+    
+        5. ¿Hay momentos del día o del año donde cuidas más de ellas?
 
-  - Preguntas abiertas:
-    1. ¿Cuántos años de experiencia tiene en jardinería?
-    2. ¿Qué plantas cultiva más frecuentemente?
-    3. ¿Qué desafío enfrenta en el cuidado de sus plantas (todo)?
-    4. ¿Ha utilizado alguna vez tecnología o dispositivos inteligentes en su jardinería?
-    5. Con relación a la pregunta anterior, ¿qué características útiles considera/espera en un dispositivo inteligente de jardinería inteligente?<br><br>
-  - Preguntas después de hablar sobre el producto:
-  - 6. ¿Qué opina/crítica/menciona de nuestro producto? ¿Sería una inversión útil?
-  - 7. ¿Preferiría un dispositivo que automatice el riego de sus plantas, o brinde de ayuda al cuidado de sus plantas?
-  - 8. Qué le convencería para adoptar tecnología de manera regular?
-  - 9. ¿Cuánto estaría dispuesto a invertir en nuestra maceta inteligente? <br><br>
+    * Desafíos actuales y soluciones empleadas
+      
+        6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
+    
+        7. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
+    
+    * Actitud frente a la tecnología (antes de presentar el producto)
+    
+        8. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
+    
+        9. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
+    
+    * Reacción tras presentar el concepto de Macetech
+    
+      **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.
+    
+        10. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
+    
+        11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?
+    
+    * Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):
+    
+        12. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
+    
+        13. ¿Cómo imaginas que este dispositivo encajaría en tu hogar? ¿El diseño y tamaño serían importantes para ti?
+    
+        14. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
+    
+        15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?
 
-- **Preguntas después de haber probado el producto - Ambos Segmentos:** <br><br>
+* **Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)
 
-  1. ¿Cómo fue su experiencia general al navegar por la landing page? Le pareció llamativa y vistosa?
-  2. ¿Encontró útil (landing page) para realizar las acciones que deseaba?\
-  3. Sobre nuestra aplicación web, encontró intuitivida la interáz?
-  4. ¿Qué opinion tiene sobre el diseño y la disposición de los elementos de nuestra página?
-  5. ¿Respecto a nuestra aplicación móvil, le resulto útil y eficiente?
-  6. ¿Hubo alguna herramienta o función que no funcionó correctamente o que fue difícil de usar?
-  7. ¿En general, le falta alguna información que esperaba encontrar?
-  8. ¿El software cumplió con sus expectativas en términos de funcionalidad y facilidad de uso?
-  9. ¿Hay alguna característica que no estuvo presente en el software que esparaba ver?
-  10. ¿Cómo cree que el software podría mejorar su interacción diaria con las plantas?
+    **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.
+
+    * Preguntas de contexto y rutina profesional
+    
+        1. ¿Cuántos años de experiencia tienes en jardinería? ¿Trabajas de forma independiente, en viveros, o en proyectos particulares?
+        
+        2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
+        
+        3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
+    
+    * Problemas y recursos actuales
+    
+        4. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+        
+        5. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
+    
+    * Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
+    
+        6. ¿Qué te funciona bien hoy?
+        
+        7. ¿Qué te gustaría que funcione mejor?
+        
+    * Expectativas y percepción frente a soluciones inteligentes
+    
+        8. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
+        
+        9. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
+        
+        10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?
+    
+    * Reacción ante Macetech
+    
+        11. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
+        
+        12. ¿Qué características crees que deben mejorarse o incluirse para ser realmente útil a nivel profesional?
+        
+        13. En una escala del 1 al 5, ¿qué tan probable es que consideres adoptar este tipo de tecnología como parte de tus herramientas de jardinería?
+        
+        14. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
+        
+        15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
 
 - ### 2.2.2. Registro de entrevistas
 
