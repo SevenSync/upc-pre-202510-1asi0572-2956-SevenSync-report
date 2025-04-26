@@ -2,9 +2,9 @@
 ## 3.1. To-Be Scenario Mapping.
 
 *Mapa de Escenario To-Be para nuestro primer user persona.*
-
+<img src="/assets/capitulo-3/to-be scenario-1.jpg">
 *Mapa de Escenario To-Be para nuestro segundo user persona.*
-
+<img src="/assets/capitulo-3/to-be-scenario-2.jpg">
 ## 3.2. User Stories.
 *Tabla de épicas establecidas para las historias de usuarios.*
 <table border="1" style="text-align: left;">
