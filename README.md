@@ -10,7 +10,7 @@
 
 ## STARTUP: SevenSync
 
-## NOMBRE DEL PRODUCTO:
+## NOMBRE DEL PRODUCTO: MaceTech
 
 ---
 
@@ -163,7 +163,38 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
 
 # Student Outcome
 
-| Criterio Específico                                                                                                                                  | Acciones Ralizadas | Conclusiones |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ |
-| Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software. |                    |              |
-| Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software                                                              |                    |              |
+<table border="1" style="width:100%; text-align:left;">
+  <thead>
+    <tr>
+      <th>Criterio Específico</th>
+      <th>Acciones Realizadas</th>
+      <th>Conclusiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+      Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software.
+      </td>
+      <td>
+      <b> TB1</b><br>
+      <u> Fabrizio Sanchez </u>        <br>
+      Participé en el análisis de necesidades para una solución IT, colaborando con diferentes enfoques y usando lenguaje ubicuo para claridad.</td>
+      <td>
+      <b> TB1</b><br>
+      <u> Fabrizio Sanchez </u>        <br>
+      Aprendí a trabajar de forma eficiente y objetiva en un equipo multidisciplinario, enfocándome en las necesidades reales.</td>
+    </tr>
+    <tr>
+      <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software.</td>
+      <td>
+      <b> TB1</b><br>
+      <u> Fabrizio Sanchez </u>        <br>  
+      Realicé entrevistas y análisis en el sector de cuidado de plantas, identificando problemas reales para proponer una solución tecnológica.</td>
+      <td>
+      <b> TB1</b><br>
+      <u> Fabrizio Sanchez </u>        <br>
+      Conocí el sector de soluciones tecnológicas aplicadas al hogar y jardinería, aplicando ingeniería de software en el proceso.</td>
+    </tr>
+  </tbody>
+</table>
