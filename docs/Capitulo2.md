@@ -327,8 +327,8 @@ servicios de manera más efectiva a sus requerimientos.
     El entrevistado, Andrés, tiene un fuerte interés por las plantas desde su niñez, lo que lo ha llevado a cuidarlas de forma constante a lo largo de su vida. Disfruta especialmente ver su desarrollo y mantenerlas saludables, aunque reconoce que a veces tiene dificultades para saber cuándo regarlas correctamente, lo que ha causado la pérdida de algunas. Actualmente no utiliza herramientas tecnológicas para su cuidado, y se guía principalmente por su experiencia y búsquedas ocasionales en internet. Al conocer la propuesta de una maceta inteligente, mostró interés, resaltando que valoraría recibir alertas claras y que el sistema sea sencillo de usar. Considera que, si tiene un precio accesible y ayuda a prevenir errores, podría ser una inversión útil. También mencionó que el diseño debería integrarse bien con su hogar, y se mostró interesado en funciones como la integración con una app móvil, recomendaciones según el tipo de planta y un registro de seguimiento del estado de cada una. <br> <br>
 
     **Tiempo de Entrevista**<br>
-    **Inicio: 06:23** <br>
-    **Fin: 14:51**
+    **Inicio: 00:00** <br>
+    **Fin: 6:22**
   
   - ### **Entrevista #2**
 
@@ -343,7 +343,16 @@ servicios de manera más efectiva a sus requerimientos.
     **Inicio: 14:51** <br>
     **Fin: 22:52**
   - ### **Entrevista #3**
+    Nombre y apellidos: Rosalinda Quispe <br>
+    Edad: 43 años <br>
+    Región: Lima <br>
+    ![Entrevista_Seg01_RosalindaQuispe](../assets/capitulo2/EntrevistaRosalinda.png) <br>
+    **Resumen De Entrevista** <br>
+    La entrevistada, Rosalinda...<br> <br>
 
+    **Tiempo de Entrevista**
+    **Inicio: 48:55** <br>
+    **Fin: 57:30**
 
 
 #### **Segmento 2:** Personas dedicadas a la jardinería 
@@ -357,12 +366,28 @@ servicios de manera más efectiva a sus requerimientos.
     **Resumen De Entrevista** <br>
     El entrevistado, Yasser, ha trabajado de forma independiente en jardinería desde los 20 años. Él cuenta con 250 plantas a su cuidado, mayormente, ornamentales y aromáticas. Sobre el cuidado de sus plantas, Yasser describe un proceso principalmente manual y basado en la observación. Realiza una inspección diaria de sus 200-250 plantas. El riego se efectúa aproximadamente 2 a 3 veces por semana por la mañana, ajustando la frecuencia y la cantidad según las condiciones climáticas y las necesidades percibidas de las plantas. La fertilización es orgánica y se aplica con una frecuencia quincenal. Para el monitoreo, confía en su observación constante, a menudo a lo largo del día o semanalmente, basándose en su experiencia para identificar signos de problemas. El entrevistado muestra un gran interés en la tecnología y la automatización para facilitar su trabajo. Valora la información en tiempo real y la posibilidad de monitorear variables clave como el suelo y el agua. La confiabilidad y la durabilidad son factores cruciales en su decisión de compra, y está dispuesto a invertir en el producto si el precio es adecuado, especialmente para un volumen grande de plantas.  <br><br>
     **Tiempo de Entrevista**
-    **Inicio: 00:00** <br>
-    **Fin: 6:22**
+    **Inicio: 06:23** <br>
+    **Fin: 14:51**
   - ### **Entrevista #2**
-
+    Nombre y apellidos: Javier Hernandez <br>
+    Edad: 27 años <br>
+    Distrito: Lince <br>
+    ![Entrevista_Seg02_JavierHernandez](../assets/capitulo2/EntrevistaJavier.png) <br>
+    **Resumen De Entrevista** <br>
+    El entrevistado ... <br> <br>
+    **Tiempo de Entrevista**
+    **Inicio: 22:53** <br>
+    **Fin: 33:47**
   - ### **Entrevista #3**
-
+    Nombre y apellidos: Betty Magdalena Chumacero <br>
+    Edad: 62 años <br>
+    Distrito: San Juan de Miraflores <br>
+    ![Entrevista_Seg02_BettyChumacero](../assets/capitulo2/EntrevistaBetty.png) <br>
+    **Resumen De Entrevista** <br>
+    La entrevistada ... <br> <br>
+    **Tiempo de Entrevista**
+    **Inicio: 33:47** <br>
+    **Fin: 33:47**
 
 - ### 2.2.3. Análisis de entrevistas
 
