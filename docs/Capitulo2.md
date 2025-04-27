@@ -319,11 +319,11 @@ servicios de manera más efectiva a sus requerimientos.
 
   - ### **Entrevista #1**
 
-    Nombre y apellidos: Andres Torres
-    Edad: 21 años
+    Nombre y apellidos: Andres Torres <br>
+    Edad: 21 años <br>
     Distrito: Lince <br>
     ![Entrevista_Seg01_AndresTorres](../assets/capitulo2/Entrevista_Andres.png) <br>
-    **Resumen De Entrevista**
+    **Resumen De Entrevista** <br>
     El entrevistado, Andrés, tiene un fuerte interés por las plantas desde su niñez, lo que lo ha llevado a cuidarlas de forma constante a lo largo de su vida. Disfruta especialmente ver su desarrollo y mantenerlas saludables, aunque reconoce que a veces tiene dificultades para saber cuándo regarlas correctamente, lo que ha causado la pérdida de algunas. Actualmente no utiliza herramientas tecnológicas para su cuidado, y se guía principalmente por su experiencia y búsquedas ocasionales en internet. Al conocer la propuesta de una maceta inteligente, mostró interés, resaltando que valoraría recibir alertas claras y que el sistema sea sencillo de usar. Considera que, si tiene un precio accesible y ayuda a prevenir errores, podría ser una inversión útil. También mencionó que el diseño debería integrarse bien con su hogar, y se mostró interesado en funciones como la integración con una app móvil, recomendaciones según el tipo de planta y un registro de seguimiento del estado de cada una. <br> <br>
 
     **Tiempo de Entrevista**<br>
@@ -332,11 +332,11 @@ servicios de manera más efectiva a sus requerimientos.
   
   - ### **Entrevista #2**
 
-    Nombre y apellidos: Sirley Zapata
-    Edad: 54 años
+    Nombre y apellidos: Sirley Zapata <br>
+    Edad: 54 años <br>
     Región: Cajamarca <br>
     ![Entrevista_Seg01_SirleyZapata](../assets/capitulo2/EntrevistaSirley.png) <br>
-    **Resumen De Entrevista**
+    **Resumen De Entrevista** <br>
     La entrevistada, Sirley, actualmente no utiliza dispositivos tecnológicos para el cuidado de sus plantas, basándose principalmente en su experiencia personal y en la búsqueda de información, especialmente a través de videos y Google. Al conocer la idea de una maceta inteligente, expresó su interés, destacando que valoraría recibir alertas claras y que el sistema fuera fácil de usar. Considera que si el precio fuera accesible y el producto ayudara a evitar errores en el cuidado, sería una inversión que valdría la pena. Además, comentó que el diseño de la maceta debería armonizar con la decoración de su hogar, y mostró interés por características como la integración con una aplicación móvil, recomendaciones personalizadas según el tipo de planta y la posibilidad de llevar un registro del estado de cada una.<br> <br>
 
     **Tiempo de Entrevista**
@@ -350,11 +350,11 @@ servicios de manera más efectiva a sus requerimientos.
   
   - ### **Entrevista #1**
 
-    Nombre y apellidos: Yasser Renteria
-    Edad: 25 años
+    Nombre y apellidos: Yasser Renteria <br>
+    Edad: 25 años <br>
     Distrito: Chorrillos <br>
     ![Entrevista_Seg01_YasserRenteria](../assets/capitulo2/Entrevista_Yasser.png) <br>
-    **Resumen De Entrevista**
+    **Resumen De Entrevista** <br>
     El entrevistado, Yasser, ha trabajado de forma independiente en jardinería desde los 20 años. Él cuenta con 250 plantas a su cuidado, mayormente, ornamentales y aromáticas. Sobre el cuidado de sus plantas, Yasser describe un proceso principalmente manual y basado en la observación. Realiza una inspección diaria de sus 200-250 plantas. El riego se efectúa aproximadamente 2 a 3 veces por semana por la mañana, ajustando la frecuencia y la cantidad según las condiciones climáticas y las necesidades percibidas de las plantas. La fertilización es orgánica y se aplica con una frecuencia quincenal. Para el monitoreo, confía en su observación constante, a menudo a lo largo del día o semanalmente, basándose en su experiencia para identificar signos de problemas. El entrevistado muestra un gran interés en la tecnología y la automatización para facilitar su trabajo. Valora la información en tiempo real y la posibilidad de monitorear variables clave como el suelo y el agua. La confiabilidad y la durabilidad son factores cruciales en su decisión de compra, y está dispuesto a invertir en el producto si el precio es adecuado, especialmente para un volumen grande de plantas.  <br><br>
     **Tiempo de Entrevista**
     **Inicio: 00:00** <br>
