@@ -450,7 +450,7 @@ El propósito de las entrevistas es adquirir una comprensión profunda de las ex
     Región: Cajamarca <br>
     ![Entrevista_Seg01_SirleyZapata](../assets/capitulo2/EntrevistaSirley.png) <br>
     **Resumen De Entrevista** <br>
-    La entrevistada, Sirley, actualmente no utiliza dispositivos tecnológicos para el cuidado de sus plantas, basándose principalmente en su experiencia personal y en la búsqueda de información, especialmente a través de videos y Google. Al conocer la idea de una maceta inteligente, expresó su interés, destacando que valoraría recibir alertas claras y que el sistema fuera fácil de usar. Considera que si el precio fuera accesible y el producto ayudara a evitar errores en el cuidado, sería una inversión que valdría la pena. Además, comentó que el diseño de la maceta debería armonizar con la decoración de su hogar, y mostró interés por características como la integración con una aplicación móvil, recomendaciones personalizadas según el tipo de planta y la posibilidad de llevar un registro del estado de cada una.<br> <br>
+    La entrevistada, Sirley, actualmente no utiliza dispositivos tecnológicos para el cuidado de sus plantas, basándose principalmente en su experiencia personal y en la búsqueda de información, especialmente a través de videos y Google. Al conocer la idea de una maceta inteligente, expresó su interés, destacando que valoraría recibir alertas claras y que el sistema fuera fácil de usar. Considera que si el precio fuera accesible y el producto ayudara a evitar errores en el cuidado, sería una inversión que valdría la pena. Además, comentó que el diseño de la maceta debería armonizar con la decoración de su hogar, y mostró interés por características como la integración con una aplicación móvil, recomendaciones personalizadas según el tipo de planta y la posibilidad de llevar un registro del estado de cada una. <br> <br>
 
     **Tiempo de Entrevista**
     **Inicio: 14:51** <br>
@@ -487,7 +487,7 @@ El propósito de las entrevistas es adquirir una comprensión profunda de las ex
     Distrito: Lince <br>
     ![Entrevista_Seg02_JavierHernandez](../assets/capitulo2/EntrevistaJavier.png) <br>
     **Resumen De Entrevista** <br>
-    El entrevistado ... <br> <br>
+    La entrevista con Javier revela a un jardinero experto que gestiona de forma autónoma todos los jardines de su hogar—desde parterres ornamentales hasta áreas de huerto urbano—buscando constantemente herramientas que aumenten su eficiencia. Aunque domina técnicas avanzadas de riego, poda y nutrición, considera que las soluciones tecnológicas disponibles están demasiado enfocadas en la agricultura industrial y no cubren las necesidades específicas del paisajismo, la decoración de interiores o los jardines comunitarios de pequeña y mediana escala. Javier muestra plena disposición a invertir en dispositivos de alto costo si estos le ofrecen control remoto, análisis de datos precisos y automatización fiable. Valora especialmente la capacidad de integrar múltiples macetas o parcelas en una sola plataforma, recibir alertas inmediatas sobre anomalías (como cambios bruscos de humedad o temperatura) y disponer de históricos detallados para optimizar sus programas de mantenimiento. Su confianza en la tecnología supera la de los métodos caseros, y requiere interfaces profesionales, robustez en hardware y soporte técnico ágil para adoptar plenamente una maceta inteligente que responda a sus exigencias de calidad y rendimiento. <br> <br>
     **Tiempo de Entrevista**
     **Inicio: 22:53** <br>
     **Fin: 33:47**
@@ -497,14 +497,60 @@ El propósito de las entrevistas es adquirir una comprensión profunda de las ex
     Distrito: San Juan de Miraflores <br>
     ![Entrevista_Seg02_BettyChumacero](../assets/capitulo2/EntrevistaBetty.png) <br>
     **Resumen De Entrevista** <br>
-    La entrevistada ... <br> <br>
+    La entrevistada, Betty, utiliza la jardinería como un refugio para relajarse y embellecer su hogar, sintiéndose plenamente conectada con cada una de sus plantas. Dedica sesiones de cuidado cada dos días: inspecciona hojas y sustrato, ajusta manualmente el riego y aplica remedios caseros (infusiones de ajo para plagas, té de compost para nutrición). A pesar de su dedicación, observa que algunas plantas muestran marchitez o caen gradualmente, lo que le genera frustración. Betty ha explorado consejos en redes y foros de jardinería, pero encuentra que la información suele ser genérica y difícil de adaptar a las necesidades específicas de sus especies. Muestra un fuerte interés por soluciones tecnológicas y ecológicas que le permitan recibir alertas tempranas sobre humedad, nutrientes y salud general, así como automatizar el riego sin perder la conexión artesanal que disfruta. La fiabilidad de los dispositivos y la sencillez de uso son condiciones indispensables para que se sienta cómoda invirtiendo en una maceta inteligente.   <br> <br>
     **Tiempo de Entrevista**
     **Inicio: 33:47** <br>
     **Fin: 33:47**
 
 - ### 2.2.3. Análisis de entrevistas
 
-En general, todos los entrevistados expresaron interés en el uso de una maceta inteligente, especialmente si esta facilita el proceso de cuidado, ofrece recomendaciones personalizadas y se integra bien con sus hogares. La accesibilidad del precio y la capacidad de evitar errores en el cuidado de las plantas son factores comunes en la toma de decisiones de compra. Sin embargo, la disposición para invertir en tecnología varía según el volumen de plantas que cada uno maneja, así como el nivel de experiencia y el enfoque que tienen hacia el cuidado de las plantas.
+1. Segmento: Jardineros Apasionados y Hogareños
+
+* **Características Objetivas:**
+
+- Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
+
+- Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
+
+- Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
+
+- Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
+
+- Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
+
+* **Características Subjetivas:**
+
+- Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
+
+- Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
+
+- Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
+
+- Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
+
+2. Segmento: Jardineros Profesionales y Experimentados
+
+* **Características Objetivas:**
+
+- Cantidad de plantas manejadas: 100% (3/3) cuidan un volumen alto de plantas (más de 200 plantas o múltiples jardines).
+
+- Método de cuidado: 66% (2/3) realizan inspecciones periódicas de forma manual, basadas en experiencia y observación constante.
+
+- Uso actual de tecnología: % utilizan actualmente dispositivos tecnológicos especializados para jardinería, pero ambos muestran alta apertura a adoptarlos.
+
+- Disposición de pago: 100% (3/3) están dispuestos a realizar inversiones significativas en tecnología confiable y de alta calidad.
+
+- Importancia de datos: 33% valoran el acceso a monitoreo en tiempo real, históricos de datos y control remoto.
+
+* **Características Subjetivas:**
+
+- Orientación tecnológica: 66% (2/3) tienen una fuerte orientación hacia la eficiencia tecnológica para optimizar su trabajo (más que en métodos caseros o tutoriales simples).
+
+- Crítica a la tecnología existente: 100% perciben que el mercado tecnológico actual está sobredimensionado hacia agricultura industrial y no tanto a paisajismo, jardinería urbana o interior.
+
+- Alta expectativa de calidad: 100% demandan productos de alto nivel técnico (interfaces profesionales, robustez de hardware, soporte técnico sólido).
+
+- Deseo de automatización: 66% (2/3) buscan sistemas que permitan no solo alertas, sino acciones automáticas que reduzcan su carga de trabajo manual.
 
 ## 2.3. Needfinding
 
