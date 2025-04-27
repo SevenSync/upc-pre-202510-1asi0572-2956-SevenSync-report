@@ -17,6 +17,7 @@
 INTEGRANTES
 
 - Fabrizio Alessandro Sanchez Zamora (U202213652)
+- Luiggi Gianfranco Paredes Zapata (U202218996)
 
 FECHA: ABRIL 2025
 
@@ -179,18 +180,42 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
-      Participé en el análisis de necesidades para una solución IT, colaborando con diferentes enfoques y usando lenguaje ubicuo para claridad.<br><br>
+      Participé en la planificación del proyecto de la maceta inteligente, colaborando con el equipo para definir los diagramas y la estructura inicial del sistema.<br><br>
       <b> TB1</b><br>
       <u> Luiggi Paredes </u><br>
-      Colaboré en la creación del diseño de la maceta inteligente, enfocándome en las interacciones entre la capa física y la de aplicación, asegurando la integración fluida con los servidores.
+      Colaboré en la definición de los componentes clave del sistema, creando diagramas de flujo y de arquitectura para asegurar una integración adecuada en la fase de planificación.<br><br>
+      <b> TB1</b><br>
+      <u> Ruben Mallma </u><br>
+      Participé en la documentación del sistema, contribuyendo con la creación de diagramas de flujo para planificar las interacciones entre los componentes de la maceta inteligente.<br><br>
+      <b> TB1</b><br>
+      <u> Juan Pescoran </u><br>
+      Coordiné la estructuración de los diagramas técnicos que ilustran las relaciones entre los sensores, el software y la parte física del sistema.<br><br>
+      <b> TB1</b><br>
+      <u> Lucio Yen </u><br>
+      Contribuí al diseño de los diagramas técnicos que describen el flujo de datos dentro del sistema de la maceta inteligente y cómo se integrarán los sensores IoT.<br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
+      Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real.
       </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
-      Aprendí a trabajar de forma eficiente y objetiva en un equipo multidisciplinario, enfocándome en las necesidades reales.<br><br>
+      Aprendí sobre la importancia de planificar todos los detalles del sistema, asegurándome de que cada componente tuviera su lugar bien documentado desde el inicio.<br><br>
       <b> TB1</b><br>
       <u> Luiggi Paredes </u><br>
-      Aprendí a coordinar entre las diferentes capas del proyecto, entendiendo la importancia de la comunicación y sincronización entre la capa física, la de aplicación y los servidores.
+      Mejoré mis habilidades en la planificación de sistemas, trabajando en diagramas que permiten prever las interacciones entre los componentes del sistema en desarrollo.<br><br>
+      <b> TB1</b><br>
+      <u> Ruben Mallma </u><br>
+      Aprendí a estructurar y documentar diagramas de flujo, lo que me permitió visualizar claramente el funcionamiento del sistema en la fase de planificación.<br><br>
+      <b> TB1</b><br>
+      <u> Juan Pescoran </u><br>
+      Mejoré mi capacidad para crear diagramas técnicos que sirven como guía para la implementación del sistema, asegurando que todos los componentes funcionen de manera conjunta.<br><br>
+      <b> TB1</b><br>
+      <u> Lucio Yen </u><br>
+      Aprendí sobre la importancia de la documentación técnica, especialmente en la fase de planificación, para asegurar que todos los componentes se integren de manera efectiva.<br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
+      Mejoré mis habilidades en la creación de diagramas y documentación técnica que ayudarán en la correcta implementación del sistema a medida que el proyecto avance.
       </td>
     </tr>
     <tr>
@@ -198,20 +223,45 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>  
-      Realicé entrevistas y análisis en el sector de cuidado de plantas, identificando problemas reales para proponer una solución tecnológica.<br><br>
+      Realicé una investigación sobre las necesidades tecnológicas en el sector de la jardinería, identificando cómo las soluciones IoT pueden ayudar en la automatización del cuidado de las plantas.<br><br>
       <b> TB1</b><br>
       <u> Luiggi Paredes </u><br>
-      Investigamos sobre el mercado de dispositivos IoT para hogares inteligentes, aplicando las lecciones aprendidas para integrar sensores y controladores en la capa física de la maceta inteligente.
+      Investigamos sobre el sector de la tecnología aplicada al hogar inteligente, enfocándonos en cómo los sensores IoT pueden ayudar a gestionar el cuidado de las plantas automáticamente.<br><br>
+      <b> TB1</b><br>
+      <u> Ruben Mallma </u><br>
+      Analicé el mercado de la agricultura inteligente, enfocándome en cómo las tecnologías IoT pueden ser utilizadas para automatizar y optimizar el cuidado de las plantas en el hogar.<br><br>
+      <b> TB1</b><br>
+      <u> Juan Pescoran </u><br>
+      Estudié el sector de la automatización de procesos para el cuidado de plantas, aprendiendo cómo las soluciones IoT pueden mejorar la eficiencia en el riego y la nutrición de las plantas.<br><br>
+      <b> TB1</b><br>
+      <u> Lucio Yen </u><br>
+      Investigamos el uso de tecnologías IoT en la jardinería, analizando cómo estas tecnologías pueden aplicarse para mejorar el rendimiento de los sistemas de riego y control de humedad.<br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
+      Estudiamos el impacto de las soluciones tecnológicas en el sector de la jardinería y cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores.
       </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
-      Conocí el sector de soluciones tecnológicas aplicadas al hogar y jardinería, aplicando ingeniería de software en el proceso.<br><br>
+      Conocí el sector de soluciones tecnológicas aplicadas a la jardinería y cómo las tecnologías IoT pueden mejorar el cuidado de las plantas.<br><br>
       <b> TB1</b><br>
       <u> Luiggi Paredes </u><br>
-      Aprendí cómo las tecnologías de IoT pueden mejorar la eficiencia en el cuidado de plantas, y cómo estas soluciones pueden ser escaladas para aplicaciones más amplias en el hogar.
+      Aprendí sobre las oportunidades que ofrece el mercado de IoT en el hogar inteligente y cómo estos dispositivos pueden mejorar el proceso de cuidado de plantas.<br><br>
+      <b> TB1</b><br>
+      <u> Ruben Mallma </u><br>
+      Mejoré mi comprensión sobre cómo las tecnologías IoT están revolucionando el sector de la agricultura, permitiendo un cuidado más eficiente y automatizado de las plantas.<br><br>
+      <b> TB1</b><br>
+      <u> Juan Pescoran </u><br>
+      Aprendí sobre el potencial de las soluciones IoT en la agricultura, especialmente en la mejora de la eficiencia en el riego y el monitoreo de las condiciones ambientales de las plantas.<br><br>
+      <b> TB1</b><br>
+      <u> Lucio Yen </u><br>
+      Descubrí cómo las tecnologías de IoT están transformando la jardinería y el cuidado de plantas, ayudando a mejorar la eficiencia y reducir los costos.<br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
+      Aumenté mi comprensión sobre cómo IoT puede optimizar la eficiencia del monitoreo de plantas y mejorar la gestión de recursos como agua y fertilizantes.
       </td>
     </tr>
   </tbody>
 </table>
+
 
