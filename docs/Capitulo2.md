@@ -310,7 +310,7 @@ servicios de manera más efectiva a sus requerimientos.
 
   El registro de entrevistas es una herramienta fundamental que nos ayuda a recopilar y organizar la información obtenida durante las entrevistas con nuestros usuarios o clientes. Nos permite documentar de manera estructurada las respuestas, comentarios y observaciones relevantes, lo que facilita su análisis posterior y la identificación de patrones o tendencias. Además, nos proporciona un registro histórico de las interacciones con los usuarios, lo que nos ayuda a mantenernos alineados con sus necesidades y expectativas a lo largo del tiempo.<br><br>
 
-  [Entrevistas](https://www.ejemplo.com)
+  [Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218996_upc_edu_pe/EZRjMMx5nt9Iq_XFp4HD2BwBvPbnMSu6UMO4lDyx8cy1iA?e=gUpCHa&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
   
   #### **Segmento 1 - Personas Apasionadas por las plantas:**
@@ -359,6 +359,10 @@ servicios de manera más efectiva a sus requerimientos.
     **Tiempo de Entrevista**
     **Inicio: 00:00** <br>
     **Fin: 6:22**
+  - ### **Entrevista #2**
+
+  - ### **Entrevista #3**
+
 
 - ### 2.2.3. Análisis de entrevistas
 
