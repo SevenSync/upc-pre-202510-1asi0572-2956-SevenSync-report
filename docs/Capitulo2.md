@@ -310,6 +310,9 @@ servicios de manera más efectiva a sus requerimientos.
 
   El registro de entrevistas es una herramienta fundamental que nos ayuda a recopilar y organizar la información obtenida durante las entrevistas con nuestros usuarios o clientes. Nos permite documentar de manera estructurada las respuestas, comentarios y observaciones relevantes, lo que facilita su análisis posterior y la identificación de patrones o tendencias. Además, nos proporciona un registro histórico de las interacciones con los usuarios, lo que nos ayuda a mantenernos alineados con sus necesidades y expectativas a lo largo del tiempo.<br><br>
 
+  [Entrevistas](https://www.ejemplo.com)
+
+  
   #### **Segmento 1 - Personas Apasionadas por las plantas:**
 
   ***
@@ -323,8 +326,25 @@ servicios de manera más efectiva a sus requerimientos.
     **Resumen De Entrevista**
     El entrevistado, Andrés, tiene un fuerte interés por las plantas desde su niñez, lo que lo ha llevado a cuidarlas de forma constante a lo largo de su vida. Disfruta especialmente ver su desarrollo y mantenerlas saludables, aunque reconoce que a veces tiene dificultades para saber cuándo regarlas correctamente, lo que ha causado la pérdida de algunas. Actualmente no utiliza herramientas tecnológicas para su cuidado, y se guía principalmente por su experiencia y búsquedas ocasionales en internet. Al conocer la propuesta de una maceta inteligente, mostró interés, resaltando que valoraría recibir alertas claras y que el sistema sea sencillo de usar. Considera que, si tiene un precio accesible y ayuda a prevenir errores, podría ser una inversión útil. También mencionó que el diseño debería integrarse bien con su hogar, y se mostró interesado en funciones como la integración con una app móvil, recomendaciones según el tipo de planta y un registro de seguimiento del estado de cada una. <br> <br>
 
-    **Enlace De Entrevista**
-    https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EZCB8tqmJ2VJonM6eLDw6tsB18mDoG9LXaOPH1SPGW98kQ?e=CJSJVE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+    **Tiempo de Entrevista**<br>
+    **Inicio: 06:23** <br>
+    **Fin: 14:51**
+  
+  - ### **Entrevista #2**
+
+    Nombre y apellidos: Sirley Zapata
+    Edad: 54 años
+    Región: Cajamarca <br>
+    ![Entrevista_Seg01_SirleyZapata](../assets/capitulo2/EntrevistaSirley.png) <br>
+    **Resumen De Entrevista**
+    La entrevistada, Sirley, actualmente no utiliza dispositivos tecnológicos para el cuidado de sus plantas, basándose principalmente en su experiencia personal y en la búsqueda de información, especialmente a través de videos y Google. Al conocer la idea de una maceta inteligente, expresó su interés, destacando que valoraría recibir alertas claras y que el sistema fuera fácil de usar. Considera que si el precio fuera accesible y el producto ayudara a evitar errores en el cuidado, sería una inversión que valdría la pena. Además, comentó que el diseño de la maceta debería armonizar con la decoración de su hogar, y mostró interés por características como la integración con una aplicación móvil, recomendaciones personalizadas según el tipo de planta y la posibilidad de llevar un registro del estado de cada una.<br> <br>
+
+    **Tiempo de Entrevista**
+    **Inicio: 14:51** <br>
+    **Fin: 22:52**
+  - ### **Entrevista #3**
+
+
 
 #### **Segmento 2:** Personas dedicadas a la jardinería 
   
@@ -336,11 +356,13 @@ servicios de manera más efectiva a sus requerimientos.
     ![Entrevista_Seg01_YasserRenteria](../assets/capitulo2/Entrevista_Yasser.png) <br>
     **Resumen De Entrevista**
     El entrevistado, Yasser, ha trabajado de forma independiente en jardinería desde los 20 años. Él cuenta con 250 plantas a su cuidado, mayormente, ornamentales y aromáticas. Sobre el cuidado de sus plantas, Yasser describe un proceso principalmente manual y basado en la observación. Realiza una inspección diaria de sus 200-250 plantas. El riego se efectúa aproximadamente 2 a 3 veces por semana por la mañana, ajustando la frecuencia y la cantidad según las condiciones climáticas y las necesidades percibidas de las plantas. La fertilización es orgánica y se aplica con una frecuencia quincenal. Para el monitoreo, confía en su observación constante, a menudo a lo largo del día o semanalmente, basándose en su experiencia para identificar signos de problemas. El entrevistado muestra un gran interés en la tecnología y la automatización para facilitar su trabajo. Valora la información en tiempo real y la posibilidad de monitorear variables clave como el suelo y el agua. La confiabilidad y la durabilidad son factores cruciales en su decisión de compra, y está dispuesto a invertir en el producto si el precio es adecuado, especialmente para un volumen grande de plantas.  <br><br>
-    **Enlace De Entrevista**
-    https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213143_upc_edu_pe/EZ216XU7qt9Ht_atvsNF2qkBJWlnc20fYLmQSrFLwcTJtg?e=hIV804&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
-  
+    **Tiempo de Entrevista**
+    **Inicio: 00:00** <br>
+    **Fin: 6:22**
 
 - ### 2.2.3. Análisis de entrevistas
+
+En general, todos los entrevistados expresaron interés en el uso de una maceta inteligente, especialmente si esta facilita el proceso de cuidado, ofrece recomendaciones personalizadas y se integra bien con sus hogares. La accesibilidad del precio y la capacidad de evitar errores en el cuidado de las plantas son factores comunes en la toma de decisiones de compra. Sin embargo, la disposición para invertir en tecnología varía según el volumen de plantas que cada uno maneja, así como el nivel de experiencia y el enfoque que tienen hacia el cuidado de las plantas.
 
 ## 2.3. Needfinding
 
