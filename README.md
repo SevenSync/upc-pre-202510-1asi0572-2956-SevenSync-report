@@ -178,23 +178,40 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       </td>
       <td>
       <b> TB1</b><br>
-      <u> Fabrizio Sanchez </u>        <br>
-      Participé en el análisis de necesidades para una solución IT, colaborando con diferentes enfoques y usando lenguaje ubicuo para claridad.</td>
+      <u> Fabrizio Sanchez </u><br>
+      Participé en el análisis de necesidades para una solución IT, colaborando con diferentes enfoques y usando lenguaje ubicuo para claridad.<br><br>
+      <b> TB1</b><br>
+      <u> Luiggi Paredes </u><br>
+      Colaboré en la creación del diseño de la maceta inteligente, enfocándome en las interacciones entre la capa física y la de aplicación, asegurando la integración fluida con los servidores.
+      </td>
       <td>
       <b> TB1</b><br>
-      <u> Fabrizio Sanchez </u>        <br>
-      Aprendí a trabajar de forma eficiente y objetiva en un equipo multidisciplinario, enfocándome en las necesidades reales.</td>
+      <u> Fabrizio Sanchez </u><br>
+      Aprendí a trabajar de forma eficiente y objetiva en un equipo multidisciplinario, enfocándome en las necesidades reales.<br><br>
+      <b> TB1</b><br>
+      <u> Luiggi Paredes </u><br>
+      Aprendí a coordinar entre las diferentes capas del proyecto, entendiendo la importancia de la comunicación y sincronización entre la capa física, la de aplicación y los servidores.
+      </td>
     </tr>
     <tr>
       <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software.</td>
       <td>
       <b> TB1</b><br>
-      <u> Fabrizio Sanchez </u>        <br>  
-      Realicé entrevistas y análisis en el sector de cuidado de plantas, identificando problemas reales para proponer una solución tecnológica.</td>
+      <u> Fabrizio Sanchez </u><br>  
+      Realicé entrevistas y análisis en el sector de cuidado de plantas, identificando problemas reales para proponer una solución tecnológica.<br><br>
+      <b> TB1</b><br>
+      <u> Luiggi Paredes </u><br>
+      Investigamos sobre el mercado de dispositivos IoT para hogares inteligentes, aplicando las lecciones aprendidas para integrar sensores y controladores en la capa física de la maceta inteligente.
+      </td>
       <td>
       <b> TB1</b><br>
-      <u> Fabrizio Sanchez </u>        <br>
-      Conocí el sector de soluciones tecnológicas aplicadas al hogar y jardinería, aplicando ingeniería de software en el proceso.</td>
+      <u> Fabrizio Sanchez </u><br>
+      Conocí el sector de soluciones tecnológicas aplicadas al hogar y jardinería, aplicando ingeniería de software en el proceso.<br><br>
+      <b> TB1</b><br>
+      <u> Luiggi Paredes </u><br>
+      Aprendí cómo las tecnologías de IoT pueden mejorar la eficiencia en el cuidado de plantas, y cómo estas soluciones pueden ser escaladas para aplicaciones más amplias en el hogar.
+      </td>
     </tr>
   </tbody>
 </table>
+
