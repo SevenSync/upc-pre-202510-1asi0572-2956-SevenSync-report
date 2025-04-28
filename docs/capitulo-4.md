@@ -18,7 +18,11 @@
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
+<image src=../assets/img/capitulo-4/c4-model/c4-context-diagram.png></image>
+
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
+
+<image src=../assets/img/capitulo-4/c4-model/c4-containers-diagram.png></image>
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
@@ -363,6 +367,12 @@
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
 <image src=../assets/bounded-context-iam/components-diagram.png></image>
+
+<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-edge-application.png></image>
+
+<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-embedded-application.png></image>
+
+<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-single-software-application.png></image>
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
 
