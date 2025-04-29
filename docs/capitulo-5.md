@@ -8,17 +8,37 @@ En el ámbito digital, esto implica el desarrollo sistemático de la arquitectur
 
 ### 5.1.1. General Style Guidelines
 
-En esta sección se detalla el plan integral de diseño visual y experiencia de usuario concebido para el proyecto, orientado a maximizar la eficiencia, accesibilidad y atractivo estético de la interfaz. Este enfoque se fundamenta en la creación de una experiencia de navegación fluida, clara y universalmente comprensible, sin importar el nivel de familiaridad técnica del usuario final. Para alcanzar este objetivo, se han definido lineamientos estilísticos precisos que abarcan la elección estratégica de colores, tipografías, iconografía y componentes visuales, garantizando una estética limpia, funcional y armónica.
+En esta sección se describe el sistema integral de Style Guidelines que abarca todas las plataformas del proyecto: web, móvil (Android e iOS) e interfaces gráficas y modelo físico de dispositivos IoT. Estas guías establecen un marco normativo que garantiza una experiencia de usuario coherente, accesible y visualmente armonizada en todos los entornos, promoviendo la consistencia en la interacción y presentación del sistema.
 
-El diseño se construye sobre principios de usabilidad y percepción visual, con especial énfasis en la coherencia semántica de los elementos gráficos y la optimización de la carga cognitiva. La paleta cromática seleccionada asegura contraste adecuado y jerarquías visuales claras; las tipografías priorizan la legibilidad sin sacrificar identidad visual; y los íconos y recursos gráficos actúan como apoyos funcionales, no meros elementos decorativos. Asimismo, se han definido restricciones explícitas para evitar la inclusión de gráficos innecesarios o disruptivos que comprometan la experiencia del usuario o recarguen la interfaz.
+El diseño se basa en principios de usabilidad, accesibilidad y diseño centrado en el usuario. Se definen paletas cromáticas con jerarquías claras, tipografías legibles con identidad visual y distintos modelos de espaciados, iconografía funcional y componentes reutilizables. Todo ello está alineado bajo una lógica unificada que minimiza la carga cognitiva y mejora la comprensión del usuario, sin elementos gráficos redundantes o distractores.
 
-Un sistema de diseño consistente no solo embellece la interfaz, sino que potencia su funcionalidad, promueve la comprensión y facilita el uso continuo. Tal como destaca Zeldman (2024), una guía de estilos no solo establece parámetros estéticos, sino que actúa como una infraestructura colaborativa entre diseño y desarrollo, permitiendo escalar, mantener y evolucionar productos digitales con mayor eficiencia y alineamiento técnico.
+Más allá del aspecto visual, estas guías fortalecen la escalabilidad y mantenibilidad del sistema. Tal como señala Zeldman (2024), una guía de estilos bien estructurada facilita la colaboración entre diseño y desarrollo, agiliza la evolución del producto y asegura una experiencia consistente, profesional y técnicamente robusta.
+
+**Colores:**
+
+El uso del color en el diseño de interfaces no es únicamente una cuestión estética, sino un elemento estratégico clave para construir una experiencia de usuario sólida, diferenciada y emocionalmente significativa. Como señala Saraswati y Giantari (2022), una elección cromática adecuada en los elementos visuales de una marca, como el logotipo, la interfaz o los materiales promocionales, no solo potencia su visibilidad y reconocimiento, sino que también influye en cómo es percibida por los usuarios a nivel emocional y psicológico. En mercados cada vez más competitivos, el color actúa como un recurso diferenciador, facilitando la recordación de la marca e impulsando la conexión emocional con su audiencia (Wang et al., 2018).
+
+En el caso de MaceTech, se ha optado por una paleta cromática liderada por el verde, que transmite vida, crecimiento, sostenibilidad e innovación, en total coherencia con la naturaleza tecnológica y ecológica de la solución. Esta elección se complementa con el uso estratégico del blanco como color neutro para espacios negativos, aportando limpieza y claridad visual, y del gris, que ofrece equilibrio, sofisticación y soporte visual sin competir por atención.
+
+El sistema de color está estructurado en torno a un conjunto base de cinco tonalidades principales, cuidadosamente seleccionadas para construir una identidad visual coherente, moderna y profesional. A su vez, se ha definido una paleta extendida con colores análogos y complementarios, entre seis y nueve variantes, que permiten flexibilidad visual en distintos contextos de uso, desde interfaces de usuario hasta comunicaciones gráficas.
+
+Este enfoque asegura una estética uniforme, accesible y funcional en todos los canales y dispositivos, fortaleciendo la experiencia del usuario e incrementando el impacto visual de la marca. A continuación, se presentan los colores primarios y secundarios definidos para el sistema:
+
+**Tipografía:**
+
+**Espaciado:**
+
+**Lenguaje utilizado:**
+
+**Iconografía:**
+
+**Logo:**
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
-El presente apartado establece las directrices de diseño visual y experiencia de usuario (UX/UI) que regirán la implementación coherente de la solución en sus tres plataformas principales: web, móvil e IoT. Estas guías aseguran la armonización estética y funcional de la interfaz en distintos entornos tecnológicos, permitiendo una experiencia de usuario homogénea, eficiente y accesible, independientemente del dispositivo utilizado.
+El presente apartado establece las directrices de diseño visual y experiencia de usuario (UX/UI) que regirán la implementación coherente de la solución en sus tres plataformas principales: web, móvil e IoT. Estas guías divididas aseguran la armonización estética y funcional de la interfaz en distintos entornos tecnológicos, permitiendo una experiencia de usuario homogénea, eficiente y accesible, independientemente del dispositivo utilizado.
 
-Cada subapartado aborda de forma específica los principios, estilos y restricciones aplicables a su respectiva plataforma, detallando aspectos clave como paleta cromática, tipografía, iconografía, estructura de interacción y criterios de adaptabilidad. Este enfoque modular permite alinear los estándares de diseño con las capacidades técnicas y expectativas de los usuarios en cada contexto operativo (desktop, smartphone, dispositivos embebidos con interfaz digital).
+Cada subapartado aborda de forma específica los principios, estilos y restricciones aplicables a su respectiva plataforma, detallando aspectos clave como paleta cromática, tipografía, iconografía, estructura de interacción y criterios de adaptabilidad. Este enfoque modular permite alinear los estándares de diseño con las capacidades técnicas y expectativas de los usuarios en cada contexto operativo.
 
 #### 5.1.2.1. Web Style Guidelines
 
