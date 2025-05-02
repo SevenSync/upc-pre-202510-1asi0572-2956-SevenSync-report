@@ -86,7 +86,7 @@ En SevenSync, nuestros principios rectores constituyen el núcleo de nuestra cul
 
 ## 1.2. Solution Profile
 
-En SevenSync nos dedicamos a diseñar soluciones tecnológicas de última generación que hagan de la jardinería urbana una actividad accesible, eficiente y gratificante. Somos conscientes de los principales obstáculos que enfrentan los jardineros domésticos —falta de tiempo, escaso conocimiento técnico y uso excesivo de recursos hídricos— por lo que hemos creado Macetech, una maceta inteligente que aúna IoT, analítica de datos y automatización para reinventar el cuidado de las plantas en hogares, oficinas y espacios comunitarios.
+En SevenSync nos dedicamos a diseñar soluciones tecnológicas de última generación que hagan de la jardinería urbana una actividad accesible, eficiente y gratificante. Somos conscientes de los principales obstáculos que enfrentan los jardineros domésticos, como la falta de tiempo, escaso conocimiento técnico y uso excesivo de recursos hídricos, por lo que hemos creado Macetech, una maceta inteligente que aúna IoT, analítica de datos y automatización para reinventar el cuidado de las plantas en hogares, oficinas y espacios comunitarios.
 
 Macetech integra un conjunto de sensores de alta precisión, montados en un diseño modular disponible en varios tamaños y acabados, que miden de forma continua:
 
@@ -388,6 +388,10 @@ En respuesta a los desafíos detectados en la jardinería doméstica y comunitar
 #### 1.2.2.4. Lean UX Canvas
 
 El Lean UX Canvas, según Gothelf y Seiden (2021), es una herramienta visual de una sola página diseñada para alinear equipos multidisciplinarios en torno a los supuestos clave de un producto o característica. Estructurado en secciones como Problem Statement, Business Outcomes, User Outcomes, Hypotheses y Experiments, permite desglosar rápidamente el contexto del usuario, los objetivos del negocio, las métricas de éxito y las pruebas mínimas necesarias para validar ideas antes de invertir en desarrollo completo. Al fomentar un ciclo continuo de supuestos–experimentación–aprendizaje, el Lean UX Canvas facilita la toma de decisiones basada en datos reales, reduce el desperdicio de esfuerzo y acelera el descubrimiento de soluciones que aporten valor tanto a los usuarios como al negocio.
+
+###### Figura 1
+
+*Lean UX Canvas del proyecto Macetech*
 
 <img src="/assets/img/capitulo-1/lean-ux/lean-ux-canvas.png" alt="Seven Sync's Lean UX Canvas model" width="2000" height="580"> 
 
