@@ -111,10 +111,10 @@ El análisis competitivo nos brinda una visión clara de cómo nos comparamos co
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td><strong>Macetech</strong></td>
-      <td><strong>Click and Grow</strong></td>
-      <td><strong>Xiaomi Mi Flower Care</strong></td>
-      <td><strong>Masdio Flowerpot</strong></td>
+      <td><strong>Macetech</strong><img src="../assets/capitulo2/Macetech-Logo.png" alt="Macetech"></td>
+      <td><strong>Click and Grow</strong> <img src="../assets/capitulo2/Competidor1.jpg" alt="Competitor 1: Click and Grow"></td>
+      <td><strong>Xiaomi Mi Flower Care</strong><img src="../assets/capitulo2/Competidor2.jpg" alt="Competitor 2: Xiaomi Mi Flower Care"></td>
+      <td><strong>Masdio Flowerpot</strong><img src="../assets/capitulo2/Competidor3.jpg" alt="Competitor 3: Masdio Flowerpot"></td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Perfil</strong></td>
