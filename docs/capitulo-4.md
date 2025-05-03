@@ -14,15 +14,39 @@
 
 ### 4.1.3. Software Architecture.
 
+La visión general de la arquitectura describe la estructura fundamental de un sistema, abarcando sus componentes principales y la interacción entre ellos. En el contexto de desarrollo de aplicaciones móviles, una arquitectura sólida es esencial para garantizar que la aplicación sea escalable, segura y eficiente. Este enfoque permite una implementación ordenada, donde cada parte del sistema tiene una responsabilidad clara, y facilita la integración de nuevas funcionalidades o la modificación de las existentes sin afectar la estabilidad general de la plataforma (Richards & Ford, 2021).
+
+El diseño arquitectónico de la aplicación móvil Roademics se basa en una arquitectura modular, donde cada componente del sistema está desacoplado, permitiendo un desarrollo y mantenimiento más flexible. Este enfoque se apoya en patrones de diseño como el Modelo-Vista-Controlador (MVC) y el Modelo-Vista-ViewModel (MVVM), que promueven una clara separación de preocupaciones y mejoran la mantenibilidad del código. Además, se integra con servicios externos de autenticación, bases de datos en la nube, y plataformas de análisis, asegurando que la aplicación pueda manejar grandes volúmenes de datos de manera eficiente y con una alta disponibilidad.
+
+La arquitectura también contempla la seguridad como un aspecto central, con la implementación de técnicas de cifrado para proteger los datos sensibles del usuario y garantizar que las comunicaciones dentro de la aplicación sean seguras. Además, se diseña para ser compatible con diversas plataformas móviles, adaptándose a las especificaciones de iOS y Android, lo que facilita una experiencia de usuario consistente y de alta calidad en ambos entornos.
+
+De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles —Contexto, Contenedores, Componentes y Código—, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view-key.png"></image>
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
+
+El diagrama de landscape (o paisaje del sistema) representa un nivel organizacional dentro del modelo C4, proporcionando una visión holística de todos los sistemas de software relevantes y cómo se relacionan entre sí dentro de un entorno empresarial o tecnológico más amplio. Este diagrama ayuda a comprender la arquitectura distribuida de múltiples sistemas, ya sean internos o externos, y las interacciones clave que sostienen los flujos de información entre ellos.
+
+En el contexto de una plataforma de jardinería inteligente como Macetech, el diagrama de landscape muestra cómo conviven e interactúan los distintos sistemas que conforman el ecosistema completo: desde las aplicaciones cliente (web, móvil), el backend monolítico, y los servicios embebidos en dispositivos IoT, hasta los sistemas externos como APIs de inteligencia artificial. Esta representación permite identificar relaciones críticas entre componentes distribuidos, dependencias tecnológicas y oportunidades de desacoplamiento, facilitando tanto la toma de decisiones arquitectónicas como la evolución escalable del sistema.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-landing-page-components-diagram.png"></image>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
-<image src=../assets/img/capitulo-4/c4-model/c4-context-diagram.png></image>
+El diagrama de contexto, el nivel más alto de abstracción en el modelo C4, proporciona una vista general del sistema y su entorno externo, ilustrando las interacciones de alto nivel entre el sistema y los actores externos. Este diagrama ofrece una representación clara de cómo el sistema se relaciona con sus usuarios, agentes externos y otros componentes ajenos al sistema.
+
+En el caso de una aplicación web inmobiliaria, el diagrama de contexto muestra de manera detallada las interacciones entre los usuarios finales, los agentes inmobiliarios y la plataforma. Además, destaca las conexiones críticas entre la aplicación y diversas API y servicios externos, esenciales para habilitar las funcionalidades clave que la plataforma debe ofrecer a los usuarios. Estas integraciones son fundamentales para garantizar una experiencia fluida y robusta, respondiendo a las necesidades dinámicas del mercado inmobiliario.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-system-context.png"></image>
 
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
 
-<image src=../assets/img/capitulo-4/c4-model/c4-containers-diagram.png></image>
+El diagrama de contenedores ofrece una representación visual detallada de la arquitectura interna de un sistema de software, mostrando los principales contenedores (como aplicaciones, bases de datos o servicios) y cómo estos se comunican para cumplir con los objetivos del sistema. Es una herramienta esencial para facilitar la comprensión de la estructura y las interacciones internas, permitiendo a los miembros del equipo técnico y otras partes interesadas colaborar de manera más eficiente.
+
+En el caso del sistema integrado de Roademics, este diagrama desglosa la arquitectura, revelando las conexiones entre los distintos puntos de desarrollo, así como las interacciones con sistemas externos adyacentes. A través del BackEnd, se establecen conexiones directas con la base de datos, la cual gestiona y almacena la información crítica para el funcionamiento eficiente del sistema. Este enfoque detallado permite una visión clara de cómo cada componente colabora para brindar una experiencia fluida y coherente, asegurando que todas las partes del sistema trabajen en conjunto de manera efectiva.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view.png"></image>
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
@@ -366,18 +390,29 @@
 | **Propósito** | Punto central de acceso a la base de datos     |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
-<image src=../assets/bounded-context-iam/components-diagram.png></image>
 
-<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-edge-application.png></image>
+El diagrama de componentes profundiza aún más en la arquitectura de un sistema, desglosando cada contenedor en sus componentes individuales. Este nivel de análisis permite una representación clara y detallada de la organización interna, así como de la comunicación entre estos componentes dentro de cada contenedor, facilitando una comprensión precisa de cómo interactúan y se interrelacionan para cumplir las funciones del sistema.
 
-<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-embedded-application.png></image>
+En el contexto de Roademics, el diagrama de componentes destaca los elementos clave del backend, con especial énfasis en el controlador principal, que actúa como el núcleo organizador. Este controlador es responsable de coordinar y orquestar las operaciones internas, gestionando los flujos de datos y asegurando la interacción eficiente con componentes especializados, tales como aquellos que manejan la interacción con APIs externas y las conexiones a la base de datos. Al ilustrar estas interacciones, se obtiene una visión detallada de cómo los diferentes componentes colaboran para mantener la integridad y funcionalidad del sistema.
 
-<image src=../assets/img/capitulo-4/c4-model/c4-components-diagram-single-software-application.png></image>
+La utilidad del diagrama de componentes se extiende más allá del simple entendimiento de la arquitectura. Al proporcionar una visualización clara de cómo se gestionan los datos dentro de la aplicación móvil, este diagrama resulta invaluable no solo para los desarrolladores, sino también para los equipos de mantenimiento y actualización del sistema. Al descomponer cada elemento en sus componentes individuales y mapear sus interacciones, el diagrama optimiza el proceso de diseño y desarrollo, facilitando un mantenimiento efectivo y minimizando la complejidad durante el ciclo de vida del software.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-monolith-components-diagram.png"></image>
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-wca-components-diagram.png"></image>
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-mobile-app-components-diagram.png"></image>
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-edge-application-diagram.png"></image>
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-embedded-application-diagram.png"></image>
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src=../assets/bounded-context-iam/class-diagram.png></image>
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+
 <image src=../assets/bounded-context-iam/database-diagram.png></image>
