@@ -39,18 +39,15 @@ En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eli
 
 <image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
 
-Durante esta fase se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
+
+Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
 - Acciones de usuarios (comandos, actores, vistas),
 - Sistemas externos,
 - Procesos de negocio (por ejemplo, condiciones temporales),
 - Otros eventos del dominio (reacciones automáticas).
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
-
-Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
-- Qué comandos disparan qué eventos,
-- Qué usuarios ejecutan qué comandos,
-- Qué eventos activan políticas o modelos de lectura,
 
 <image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-key.jpg"></image>
 
@@ -65,6 +62,34 @@ Finalmente, se reorganizaron los eventos en torno a los agregados identificados.
 <image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-5.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/event-storming-step-3.jpg"></image>
+
+
+Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
+- Qué comandos disparan qué eventos,
+- Qué usuarios ejecutan qué comandos,
+- Qué eventos activan políticas o modelos de lectura,
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-1.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-2.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-3.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-4.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-5.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-6.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-7.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-8.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-9.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-10.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4.jpg"></image>
 
 <a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
 
