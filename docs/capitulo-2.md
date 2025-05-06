@@ -123,10 +123,10 @@ El análisis competitivo nos brinda una visión clara de cómo nos comparamos co
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td><strong>Macetech</strong><img src="../assets/img/capitulo2/competitors/Macetech-Logo.png" alt="Macetech"></td>
-      <td><strong>Click and Grow</strong> <img src="../assets/img/capitulo2/competitors/click-and-grow-smart-garden.png" alt="Competitor 1: Click and Grow"></td>
-      <td><strong>Xiaomi Mi Flower Care</strong><img src="../assets/img/capitulo2/competitors/masdio-flowerpot.png" alt="Competitor 2: Xiaomi Mi Flower Care"></td>
-      <td><strong>Masdio Flowerpot</strong><img src="../assets/img/capitulo2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Competitor 3: Masdio Flowerpot"></td>
+      <td><strong>Macetech</strong><img src="../assets/img/capitulo2/competitors/macetech-logo-product.png" alt="Macetech logo"></td>
+      <td><strong>Click and Grow</strong> <img src="../assets/img/capitulo2/competitors/click-and-grow-smart-garden.png" alt="Competitor 1: Click & Grow smart garden product"></td>
+      <td><strong>Xiaomi Mi Flower Care</strong><img src="../assets/img/capitulo2/competitors/masdio-flowerpot.png" alt="Competitor 2: Xiaomi Mi Flower Care sensor"></td>
+      <td><strong>Masdio Flowerpot</strong><img src="../assets/img/capitulo2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Competitor 3: Masdio Smart Flowerpot"></td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Perfil</strong></td>
@@ -905,7 +905,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
 - ### 2.2.3. Análisis de entrevistas
 
-1. Segmento: Jardineros Apasionados y Hogareños
+**1. Segmento: Jardineros Apasionados y Hogareños**
 
 * **Características Objetivas:**
 
@@ -929,7 +929,86 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
 - Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
 
-2. Segmento: Jardineros Profesionales y Experimentados
+**2. Segmento: Jardineros Profesionales y Experimentados**
+
+En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Especialistas de Jardinería y Áreas Verdes” (Betty Chumacero, Javier Hernández y Yasser Rentería), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
+
+Cabe resaltar que para el proceso de análisis, cada entrevistado representa 33% de la muestra. En todos suma un total de 100%, en dos de tres se suma 67% aproximadamente, y en uno se suma solo 33% aproximado.
+
+**Características objetivas:**
+
+| Característica | Presencia en muestra (n = 3) | Betty (n = 1) | Javier (n = 1) | Yasser (n = 1) | Frecuencia (%) | Implicación para el diseño |
+|----------------|------------------------------|---------------|----------------|----------------|----------------|---------------------------|
+| Sistemas de riego automatizado (goteo o motorizado)	| 2 | No | Sí | Sí | 66.7% | Validar modo híbrido: debe soportar riego automático y manual. |
+| Sensores o medidores de humedad | 2 | No | Sí | Sí | 66.7% | Incluir calibración de sensores y alertas de umbral. |
+| Dependencia exclusiva de riego manual	| 1 | Sí | No | No | 33.3% | Garantizar opción de riego manual para usuarios que aún valoran el riego como actividad hobby. |
+| Uso de remedios naturales para plantas | 1 | Sí | No | No | 33.3% | 
+| Abonado empírico para el cuidado | 1 | Sí |	No | No | 33.3% | Integrar módulo de dosificación de nutrientes y recordatorios. |
+| Programación de abonado con fechas | 3 | Sí | Sí | Sí | 100% | Integrar módulo de dosificación de nutrientes y recordatorios. |
+| Gestión de 100 a más plantas o macetas | 2 | No | Sí | Sí | 66.7% | 
+| Uso de smartphone y aplicación móvil | 2 | No | Sí | Sí | 66.7% |
+| Uso de computadora y aplicación web | 2 | Sí | No | Sí | 66.7% |
+| Preferencia por dashboard de supervisión | 3 | Sí | Sí | Sí | 100% |
+
+**Interpretación de características objetivas:**
+
+  * Automatización y medición: 
+
+    2/3 usan o valoran sistemas de goteo y medidores básicos → necesidad de un sistema híbrido que combine automatización con supervisión manual.
+
+  * Fertilización:
+
+    Todos aplican algún método regular de abonado, desde empírico hasta programado → incluir módulo de recomendaciones de nutrientes.
+
+  * Escala de operación
+
+    2/3 gestionan volúmenes altos (>100 plantas), mientras uno lo hace a escala de hobby → el producto debe escalar desde macetas individuales hasta sistemas de múltiples unidades.
+
+  * Canal principal: 
+
+    Unanimidad en preferencia por un dashboard web local, sin depender exclusivamente de móviles.
+
+**Características subjetivas:**
+
+Interpretación:
+
+Dualidad inversión–lujo y confianza en la fiabilidad son valores universales: el producto debe transmitir solidez y retorno de valor en ahorro de tiempo/recursos.
+
+Interfaz sencilla y modo híbrido (manual + automático): requisito ineludible para cubrir tanto el perfil profesional (Juan, Yasser) como el hobbyista (Betty).
+
+Estética vs funcionalidad: casi todos combinan la búsqueda de un diseño discreto que se integre con el entorno y un enfoque práctico en rendimiento.
+
+1. Arquetipo de User Persona
+De la convergencia de estos datos surge un único arquetipo que integra las necesidades y motivaciones más representativas:
+
+Nombre ficticio: María López
+Edad: 35–45 años
+Ocupación: Profesional de jardinería o aficionada avanzada con ≥100 plantas bajo su cuidado
+Contexto: Opera tanto a escala doméstica como en proyectos pequeños (viveros, residencias), con experiencia en métodos manuales y sistemas básicos de goteo.
+Motivaciones:
+
+Optimizar tiempo y recursos (ahorro de agua, detección temprana de plagas).
+
+Mantener un alto nivel estético y de salud vegetal.
+
+Disfrutar de la jardinería como actividad emocional y profesional.
+Necesidades clave:
+
+Automatización híbrida de riego y fertilización con opción de intervención manual.
+
+Monitoreo en tiempo real de humedad, pH, nutrientes y luminosidad.
+
+Dashboard web intuitivo, instalado en un dispositivo fijo del hogar o el sitio de trabajo.
+
+Alertas confiables sin saturar con notificaciones móviles.
+
+Diseño discreto que se integre con ambientes residenciales o profesionales.
+
+Recomendaciones de acción (cómo corregir pH, detectar plagas, ajustar riego).
+Propuesta de valor:
+“Macetech ofrece a María un sistema de macetas inteligentes escalable, con medición en tiempo real y un dashboard web sencillo, que le permite delegar tareas rutinarias mientras conserva el control manual cuando lo desee, asegurando plantas más sanas, ahorro de agua y un entorno estéticamente armonioso.”
+
+Este User Persona condensa las características objetivas (uso de tecnología, digitalización, escala) y subjetivas (lujo vs inversión, confiabilidad, estética) de los tres entrevistados, sirviendo de base sólida para el diseño de la solución y la comunicación dirigida a su perfil.
 
 * **Características Objetivas:**
 
