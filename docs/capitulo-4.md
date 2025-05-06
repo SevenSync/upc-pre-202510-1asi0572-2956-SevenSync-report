@@ -2,9 +2,77 @@
 
 ## 4.1. Strategic-Level Domain-Driven Design.
 
+Strategic Domain-Driven Design, o DDD estratégico es un enfoque arquitectónico que busca alinear la estructura del software con la lógica del negocio y la organización. Este enfoque es esencial para gestionar la complejidad en sistemas grandes y distribuidos, especialmente cuando múltiples equipos trabajan en diferentes partes del sistema.
+
+Según Eric Evans, quien introdujo el concepto de DDD en su libro Domain-Driven Design: Tackling Complexity in the Heart of Software, el enfoque estratégico se centra en definir límites claros dentro del dominio, conocidos como Bounded Contexts, y en establecer un lenguaje común, o Lenguaje Ubicuo, que facilite la comunicación entre desarrolladores y expertos del dominio.
+
+Vaughn Vernon, en su obra Implementing Domain-Driven Design, amplía esta perspectiva al dividir el dominio en dos espacios: el espacio del problema y el espacio de la solución. El primero se enfoca en entender los problemas del negocio, mientras que el segundo aborda cómo resolverlos mediante soluciones técnicas adecuadas.
+
+Para abordar las decisiones estratégicas en el diseño de software utilizando Domain-Driven Design (DDD), el equipo ha implementado un proceso estructurado que combina técnicas colaborativas y herramientas visuales. Este enfoque facilita la identificación de límites naturales dentro del dominio del negocio, conocidos como Bounded Contexts, y promueve una comprensión compartida entre todos los participantes.
+
 ### 4.1.1. EventStorming.
 
+En esta sección se documenta el proceso realizado mediante la técnica de EventStorming, con el propósito de obtener una comprensión compartida del dominio del problema y definir una primera aproximación al modelo del sistema. Esta técnica, introducida por Alberto Brandolini, permite identificar eventos clave del negocio de manera colaborativa entre expertos del dominio y el equipo técnico, y constituye una base sólida para aplicar Domain-Driven Design (DDD).
+
+> “EventStorming is a workshop format for quickly exploring complex business domains. It is designed to bring together different stakeholders to collaboratively model business processes using domain events.” (Brandolini, 2013)
+
+Como objetivos tuvimos: 
+- Identificar eventos relevantes que ocurren dentro del dominio.
+
+- Establecer relaciones causales y temporales entre eventos.
+
+- Detectar procesos del negocio, comandos y actores implicados.
+
+- Servir como insumo para definir Bounded Contexts posteriormente.
+
+###### Desarrollo de la sesión
+
+ <b>Fase 1: Recolección de Domain Events (Big Picture)</b>
+
+En esta etapa inicial, cada participante propuso eventos profesionales del sistema utilizando notas adhesivas naranjas. Estos eventos representan hechos relevantes que ocurren en el negocio, expresados en pasado.
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-1.jpg"></image>
+
+- Fase 2: Refinamiento de Domain Events
+
+En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eliminaron duplicados, se aclararon ambigüedades y se reorganizaron cronológicamente. También se discutió la terminología para asegurar coherencia y precisión semántica.
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
+
+Durante esta fase se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
+- Acciones de usuarios (comandos, actores, vistas),
+- Sistemas externos,
+- Procesos de negocio (por ejemplo, condiciones temporales),
+- Otros eventos del dominio (reacciones automáticas).
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
+
+Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
+- Qué comandos disparan qué eventos,
+- Qué usuarios ejecutan qué comandos,
+- Qué eventos activan políticas o modelos de lectura,
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-key.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-1.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-2.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-3.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-4.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-5.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3.jpg"></image>
+
+<a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
+
 #### 4.1.1.1 Candidate Context Discovery.
+
+Tras finalizar la sesión de EventStorming, el equipo procedió a la fase de Candidate Context Discovery, cuyo objetivo principal es identificar los posibles Bounded Contexts del sistema. Esta actividad permite avanzar hacia una estructura modular del software alineada con los límites naturales del dominio del negocio.
+
+Según Vernon (2013), “definir correctamente los Bounded Contexts es clave para evitar ambigüedades semánticas, promover la autonomía de los equipos y mantener la cohesión del modelo en crecimiento”. Para este análisis se aplicaron diversas técnicas de segmentación que facilitaron la identificación progresiva de contextos candidatos a partir de los eventos descubiertos.
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
@@ -411,8 +479,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
 
-<image src=../assets/bounded-context-iam/class-diagram.png></image>
+<image src="../assets/img/capitulo-4/bounded-context-iam/class-diagram.png"></image>
+
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
-<image src=../assets/bounded-context-iam/database-diagram.png></image>
+<image src="../assets/img/capitulo-4/bounded-context-plant-registration/database-diagram.png"></image>
