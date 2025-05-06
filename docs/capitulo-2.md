@@ -10,13 +10,13 @@ Nuestro proyecto se centra en el desarrollo de Macetech, una solución de jardin
 
 Partiendo de estas capacidades innovadoras, hemos identificado y analizado a los principales competidores que podrían desafiar nuestra propuesta en el mercado de jardinería doméstica inteligente. Estas empresas representan una amenaza potencial para la adopción y crecimiento de Macetech, ya que cuentan con trayectoria en dispositivos conectados, equipos multidisciplinarios y recursos para escalar rápidamente. A continuación, presentamos los competidores más relevantes y sus puntos fuertes:
 
-**Click & Grow Smart Garden** 
+**Click & Grow Smart Garden**
 
-Página web principal: https://uk.clickandgrow.com/?srsltid=AfmBOop4Wmi3FQCFLOLnTW9ZWkDObAN6YCZseEiBAu6hL1T1ov6BtDX1 
+Página web principal: https://uk.clickandgrow.com/?srsltid=AfmBOop4Wmi3FQCFLOLnTW9ZWkDObAN6YCZseEiBAu6hL1T1ov6BtDX1
 
 ###### Figura 2
 
-*Modelo del producto Smart Garden ofrecido por Click & Grow*
+_Modelo del producto Smart Garden ofrecido por Click & Grow_
 
 <img src="../assets/img/capitulo2/competitors/click-and-grow-smart-garden.png" alt="Una maceta blanca, tecnológica, e inteligente del competidor Click & Grow." width="300" height="300"> <br>
 
@@ -26,21 +26,21 @@ Desde su lanzamiento, Click & Grow ha popularizado el concepto de “jardín de 
 
 Su propuesta de valor se sustenta en los siguientes componentes y funcionalidades:
 
-* **Cartuchos de cultivo patentados (“plant pods”):** Cápsulas presembradas con semillas, sustrato y nutrientes balanceados que simplemente se insertan en la unidad y garantizan un crecimiento óptimo sin necesidad de trasplantes ni fertilizantes adicionales.
+- **Cartuchos de cultivo patentados (“plant pods”):** Cápsulas presembradas con semillas, sustrato y nutrientes balanceados que simplemente se insertan en la unidad y garantizan un crecimiento óptimo sin necesidad de trasplantes ni fertilizantes adicionales.
 
-* **Sistema de riego automático por capilaridad:** Un depósito de agua integrado suministra humedad de forma constante a las raíces de las plantas mediante mechas capilares, evitando tanto el encharcamiento como la sequía.
+- **Sistema de riego automático por capilaridad:** Un depósito de agua integrado suministra humedad de forma constante a las raíces de las plantas mediante mechas capilares, evitando tanto el encharcamiento como la sequía.
 
-* **Iluminación LED de espectro optimizado:** Lámparas de LED que emulan la luz solar necesaria en cada fase de crecimiento, programadas para ciclos de 16 horas de luz y 8 de oscuridad, maximizando la fotosíntesis.
+- **Iluminación LED de espectro optimizado:** Lámparas de LED que emulan la luz solar necesaria en cada fase de crecimiento, programadas para ciclos de 16 horas de luz y 8 de oscuridad, maximizando la fotosíntesis.
 
-* **Plataforma de gestión móvil:** Una aplicación (iOS/Android) permite supervisar el nivel de agua, la fase de crecimiento de cada planta y recibir notificaciones para rellenar el depósito o cambiar los cartuchos.
+- **Plataforma de gestión móvil:** Una aplicación (iOS/Android) permite supervisar el nivel de agua, la fase de crecimiento de cada planta y recibir notificaciones para rellenar el depósito o cambiar los cartuchos.
 
-* **Variedad de kits temáticos:** Desde hierbas culinarias y flores ornamentales hasta microgreens y plantas aromáticas, con más de 60 tipos de “plant pods” disponibles.
+- **Variedad de kits temáticos:** Desde hierbas culinarias y flores ornamentales hasta microgreens y plantas aromáticas, con más de 60 tipos de “plant pods” disponibles.
 
-* **Diseño modular y escalable:** Las unidades se pueden interconectar para crear jardines más grandes, adaptándose a diferentes espacios y necesidades estéticas.
+- **Diseño modular y escalable:** Las unidades se pueden interconectar para crear jardines más grandes, adaptándose a diferentes espacios y necesidades estéticas.
 
-* **Sostenibilidad y conveniencia:** El sistema está diseñado para minimizar el uso de agua (hasta un 90 % menos que el riego convencional) y reducir los desperdicios de nutrientes, al tiempo que facilita la experiencia a usuarios sin conocimientos previos de jardinería.
+- **Sostenibilidad y conveniencia:** El sistema está diseñado para minimizar el uso de agua (hasta un 90 % menos que el riego convencional) y reducir los desperdicios de nutrientes, al tiempo que facilita la experiencia a usuarios sin conocimientos previos de jardinería.
 
-Gracias a su enfoque *plug & play*, Click & Grow atrae a consumidores que buscan combinar tecnología y naturaleza en el hogar sin dedicar tiempo a tareas de mantenimiento complejas. No obstante, su dependencia de cartuchos específicos y la falta de sensores de calidad del aire o la temperatura ambiental constituyen áreas donde soluciones como Macetech pueden diferenciarse.
+Gracias a su enfoque _plug & play_, Click & Grow atrae a consumidores que buscan combinar tecnología y naturaleza en el hogar sin dedicar tiempo a tareas de mantenimiento complejas. No obstante, su dependencia de cartuchos específicos y la falta de sensores de calidad del aire o la temperatura ambiental constituyen áreas donde soluciones como Macetech pueden diferenciarse.
 
 **Xiaomi Mi Flower Care Plant Sensor:**
 
@@ -48,39 +48,39 @@ Página web de venta: https://www.amazon.es/Flower-Care-fertilidad-feuchtigkeits
 
 ###### Figura 3
 
-*Modelo del producto Mi Flower Care Plant Sensor ofrecido por Xiaomi con su línea Mi Ecosystem*
+_Modelo del producto Mi Flower Care Plant Sensor ofrecido por Xiaomi con su línea Mi Ecosystem_
 
 <img src="../assets/img/capitulo2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Un sensor para plantas y flores de Xiaomi Mi Ecosystem." width="300" height="300"> <br>
 
-Xiaomi Mi Flower Care es un dispositivo de la línea *Mi Ecosystem*, lanzado en 2017 por la filial Xiaomi Youpin, con sede en Beijing, China. Su objetivo es ofrecer un sensor compacto y asequible para el cuidado de plantas de interior, integrándose al ecosistema Mi Home de Xiaomi.
+Xiaomi Mi Flower Care es un dispositivo de la línea _Mi Ecosystem_, lanzado en 2017 por la filial Xiaomi Youpin, con sede en Beijing, China. Su objetivo es ofrecer un sensor compacto y asequible para el cuidado de plantas de interior, integrándose al ecosistema Mi Home de Xiaomi.
 
 A la fecha, Xiaomi ha distribuido más de 1 millón de unidades mundialmente, destacándose por su excelente relación calidad-precio y fácil integración con otros dispositivos inteligentes del hogar.
 
 Principales características y funcionalidades:
 
-* **Sensores multiparámetro:** Mide humedad del suelo, temperatura ambiental, intensidad de luz y fertilidad del sustrato utilizando un sensor de conductividad eléctrica (EC).
+- **Sensores multiparámetro:** Mide humedad del suelo, temperatura ambiental, intensidad de luz y fertilidad del sustrato utilizando un sensor de conductividad eléctrica (EC).
 
-* **Conectividad Bluetooth:** Se conecta vía Bluetooth BLE a la aplicación Mi Home (iOS/Android), donde se muestran gráficas históricas y alertas de cuidado.
+- **Conectividad Bluetooth:** Se conecta vía Bluetooth BLE a la aplicación Mi Home (iOS/Android), donde se muestran gráficas históricas y alertas de cuidado.
 
-* **Batería de larga duración:** Funciona con una pila CR2 reemplazable, con autonomía aproximada de 4 a 6 meses según uso y entorno.
+- **Batería de larga duración:** Funciona con una pila CR2 reemplazable, con autonomía aproximada de 4 a 6 meses según uso y entorno.
 
-* **Alertas y recomendaciones:** La app notifica cuándo regar, cuándo aportar fertilizante y si la planta sufre estrés por luz o temperatura, basándose en umbrales preconfigurados para diversas especies.
+- **Alertas y recomendaciones:** La app notifica cuándo regar, cuándo aportar fertilizante y si la planta sufre estrés por luz o temperatura, basándose en umbrales preconfigurados para diversas especies.
 
-* **Compatibilidad con Mi Home:** Permite crear automatizaciones (por ejemplo, encender luces de cultivo o activar sistemas de riego conectados al ecosistema Xiaomi) y agrupar múltiples sensores en escenas inteligentes.
+- **Compatibilidad con Mi Home:** Permite crear automatizaciones (por ejemplo, encender luces de cultivo o activar sistemas de riego conectados al ecosistema Xiaomi) y agrupar múltiples sensores en escenas inteligentes.
 
-* **Diseño minimalista:** Carcasa plástica blanca con varilla metálica de inserción en el sustrato y un indicador LED que cambia de color ante alertas críticas.
+- **Diseño minimalista:** Carcasa plástica blanca con varilla metálica de inserción en el sustrato y un indicador LED que cambia de color ante alertas críticas.
 
-* **Amplia base de datos de plantas:** La app incluye más de 1 000 especies registradas, con rangos de óptimos de humedad, luz y nutrientes para cada una.
+- **Amplia base de datos de plantas:** La app incluye más de 1 000 especies registradas, con rangos de óptimos de humedad, luz y nutrientes para cada una.
 
 Xiaomi Mi Flower Care destaca por democratizar el monitoreo ambiental en jardinería doméstica a bajo costo. Sin embargo, carece de un sistema de riego automático integrado y de conectividad Wi-Fi directa, lo que limita el control remoto sin puente BLE. Soluciones como Macetech pueden diferenciarse al combinar sensores avanzados con riego automatizado y conectividad continua a Internet sin hardware adicional.
 
 **Masdio Ivy Smart Flowerpot:**
 
-Página web principal: https://masdio.com/products/masdio-ivy-smart-flowerpots?srsltid=AfmBOoq5XFcFZDC3qflRMSbY0cfU3VHAFg-Ostn8YsCG320rDy-xm6KE 
+Página web principal: https://masdio.com/products/masdio-ivy-smart-flowerpots?srsltid=AfmBOoq5XFcFZDC3qflRMSbY0cfU3VHAFg-Ostn8YsCG320rDy-xm6KE
 
 ###### Figura 4
 
-*Modelo del producto Ivy Smart Flowerpot ofrecido por Masdio*
+_Modelo del producto Ivy Smart Flowerpot ofrecido por Masdio_
 
 <img src="../assets/img/capitulo2/competitors/masdio-flowerpot.png" alt="Maceta inteligente de Masdio." width="300" height="300"> <br>
 
@@ -88,27 +88,29 @@ Masdio es una startup española que en 2023 lanzó la maceta inteligente Ivy Sma
 
 Principales características y funcionalidades:
 
-* **Diseño modular y estético:** Con acabado cerámico mate y variedad de colores, incluye soporte de madera natural para integrarse a cualquier ambiente de hogar u oficina.
+- **Diseño modular y estético:** Con acabado cerámico mate y variedad de colores, incluye soporte de madera natural para integrarse a cualquier ambiente de hogar u oficina.
 
-* **Sensores integrados:** Mide humedad del sustrato, temperatura y luz ambiental mediante sensores de alta precisión.
+- **Sensores integrados:** Mide humedad del sustrato, temperatura y luz ambiental mediante sensores de alta precisión.
 
-* **Aviso y notificaciones de riego:** Cuando los sensores de humedad indican muy bajos niveles, la maceta le pasará una notificación a la aplicación la cual luego se le presentará al usuario para que pueda actuar ante tal riesgo con facilidad y rapidez.
+- **Aviso y notificaciones de riego:** Cuando los sensores de humedad indican muy bajos niveles, la maceta le pasará una notificación a la aplicación la cual luego se le presentará al usuario para que pueda actuar ante tal riesgo con facilidad y rapidez.
 
-* **Conectividad Wi-Fi y Bluetooth:** Se conecta a la app Masdio (iOS/Android) vía Wi-Fi 2.4 GHz; BLE actúa como fallback local si la señal fluctúa.
+- **Conectividad Wi-Fi y Bluetooth:** Se conecta a la app Masdio (iOS/Android) vía Wi-Fi 2.4 GHz; BLE actúa como fallback local si la señal fluctúa.
 
-* **App Masdio:** Ofrece vistas en tiempo real, historial de datos, notificaciones push (riego, luz insuficiente, temperatura extrema) y consejos para más de 500 especies.
+- **App Masdio:** Ofrece vistas en tiempo real, historial de datos, notificaciones push (riego, luz insuficiente, temperatura extrema) y consejos para más de 500 especies.
 
-* **Integración con asistentes:** Compatible con Amazon Alexa y Google Assistant para consultas de voz como “¿Cuánta agua necesita mi planta?”
+- **Integración con asistentes:** Compatible con Amazon Alexa y Google Assistant para consultas de voz como “¿Cuánta agua necesita mi planta?”
 
-* **Fácil montaje y limpieza:** Sistema plug-and-play sin herramientas; componentes desmontables aptos para lavado manual.
+- **Fácil montaje y limpieza:** Sistema plug-and-play sin herramientas; componentes desmontables aptos para lavado manual.
 
 Macetech puede superar a Ivy Smart Flowerpot al ofrecer depósito de mayor capacidad flexible según modelo, sensores avanzados de pH y salinidad, plataforma abierta de datos IoT (no propietaria), y algoritmos de recomendación basados en aprendizaje automático para diagnóstico de enfermedades.
 
 ### 2.1.1. Análisis competitivo
+
 El análisis competitivo nos brinda una visión clara de cómo nos comparamos con nuestros competidores en el mercado. Nos ayuda a identificar áreas en las que podemos mejorar, así como oportunidades para diferenciarnos y destacar. Esta comprensión nos permite desarrollar estrategias más efectivas como grupo, lo que nos ayuda a alcanzar nuestros objetivos y mantenernos competitivos en el mercado. <br> <br>
 
 ###### Tabla 4
-*Análisis Competitivo organizado para todos los competidores potenciales de Macetech*
+
+_Análisis Competitivo organizado para todos los competidores potenciales de Macetech_
 
 <table border="1" style="text-align: center;">
   <tbody>
@@ -293,41 +295,42 @@ El análisis competitivo nos brinda una visión clara de cómo nos comparamos co
 </table>
 
 - ### 2.1.2. Estrategias y tácticas frente a competidores
-Para destacar frente a competidores y consolidar nuestra posición en el mercado de jardinería inteligente, resulta imprescindible diseñar e implementar un conjunto de estrategias y tácticas coordinadas que refuercen nuestra diferenciación y capten la atención de los segmentos objetivo. A continuación, se presentan las principales líneas de acción:
+
+  Para destacar frente a competidores y consolidar nuestra posición en el mercado de jardinería inteligente, resulta imprescindible diseñar e implementar un conjunto de estrategias y tácticas coordinadas que refuercen nuestra diferenciación y capten la atención de los segmentos objetivo. A continuación, se presentan las principales líneas de acción:
 
 - **Desarrollo de una Propuesta de Valor Distintiva**
 
-    **Estrategia:** Precisar y articular el beneficio central de Macetech: la provisión de un sistema de cuidado de plantas verdaderamente autónomo, basado en monitoreo continuo de variables críticas (humedad, temperatura, pH, conductividad y luz) y en el envío de alertas contextuales.
+  **Estrategia:** Precisar y articular el beneficio central de Macetech: la provisión de un sistema de cuidado de plantas verdaderamente autónomo, basado en monitoreo continuo de variables críticas (humedad, temperatura, pH, conductividad y luz) y en el envío de alertas contextuales.
 
-    **Táctica:** Conducir estudios cualitativos y cuantitativos —entrevistas estructuradas, encuestas y focus groups— con usuarios residenciales de diversos perfiles (urbanos con balcones, oficinas, universidades) para mapear sus principales frustraciones y expectativas. A partir de los hallazgos, enfatizar en nuestros materiales de comunicación características como el disparo automático de riego al superar umbrales críticos de humedad y las recomendaciones inteligentes de iluminación.
+  **Táctica:** Conducir estudios cualitativos y cuantitativos —entrevistas estructuradas, encuestas y focus groups— con usuarios residenciales de diversos perfiles (urbanos con balcones, oficinas, universidades) para mapear sus principales frustraciones y expectativas. A partir de los hallazgos, enfatizar en nuestros materiales de comunicación características como el disparo automático de riego al superar umbrales críticos de humedad y las recomendaciones inteligentes de iluminación.
 
 - **Optimización de la Experiencia de Usuario (UX)**
 
-    **Estrategia:** Garantizar una curva de aprendizaje mínima, así como una interacción fluida desde la instalación inicial del dispositivo hasta la consulta diaria de datos, alineada con los principios de diseño centrado en el usuario y el minimalismo funcional.
+  **Estrategia:** Garantizar una curva de aprendizaje mínima, así como una interacción fluida desde la instalación inicial del dispositivo hasta la consulta diaria de datos, alineada con los principios de diseño centrado en el usuario y el minimalismo funcional.
 
-    **Táctica:** Desarrollar prototipos de la interfaz móvil y web empleando metodologías Agile y Design Thinking; realizar múltiples rondas de pruebas de usabilidad con usuarios sin experiencia en tecnologías IoT, evaluando métricas de éxito como tasa de completitud de tareas, tiempos de respuesta y grado de autonomía al configurar la maceta.
+  **Táctica:** Desarrollar prototipos de la interfaz móvil y web empleando metodologías Agile y Design Thinking; realizar múltiples rondas de pruebas de usabilidad con usuarios sin experiencia en tecnologías IoT, evaluando métricas de éxito como tasa de completitud de tareas, tiempos de respuesta y grado de autonomía al configurar la maceta.
 
 - **Expansión de la Base de Usuarios**
 
-    **Estrategia:** Ampliar el alcance de Macetech a subsegmentos específicos (entusiastas de plantas ornamentales, propietarios de huertos caseros, profesionales de oficina) mediante propuestas de valor adaptadas a sus necesidades y motivaciones particulares.
+  **Estrategia:** Ampliar el alcance de Macetech a subsegmentos específicos (entusiastas de plantas ornamentales, propietarios de huertos caseros, profesionales de oficina) mediante propuestas de valor adaptadas a sus necesidades y motivaciones particulares.
 
-    **Táctica:** Diseñar promociones de lanzamiento (por ejemplo, bundles con fertilizantes inteligentes o descuentos para compras múltiples), además de habilitar una versión freemium de la aplicación que permita a los usuarios explorar la plataforma de monitoreo sin compromiso de compra inmediata de hardware.
+  **Táctica:** Diseñar promociones de lanzamiento (por ejemplo, bundles con fertilizantes inteligentes o descuentos para compras múltiples), además de habilitar una versión freemium de la aplicación que permita a los usuarios explorar la plataforma de monitoreo sin compromiso de compra inmediata de hardware.
 
 - **Marketing Digital de Alta Precisión**
 
-    **Estrategia:** Implementar campañas de performance marketing segmentadas por comportamientos e intereses afines (seguidores de cuentas de jardinería urbana, smart home, sostenibilidad) aprovechando plataformas de Social Ads y Search Ads.
+  **Estrategia:** Implementar campañas de performance marketing segmentadas por comportamientos e intereses afines (seguidores de cuentas de jardinería urbana, smart home, sostenibilidad) aprovechando plataformas de Social Ads y Search Ads.
 
-    **Táctica:** Crear contenidos en video de formato corto (Reels, TikToks) que demuestren casos de uso reales —por ejemplo, la recuperación de una planta marchita gracias al riego programado—, segmentando audiencias mediante lookalike audiences y retargeting dinámico basado en la interacción con landing pages especializadas.
+  **Táctica:** Crear contenidos en video de formato corto (Reels, TikToks) que demuestren casos de uso reales —por ejemplo, la recuperación de una planta marchita gracias al riego programado—, segmentando audiencias mediante lookalike audiences y retargeting dinámico basado en la interacción con landing pages especializadas.
 
 - **Alianzas Comerciales y Cooperaciones Estratégicas**
 
-    **Estrategia:** Forjar sinergias con viveros, cadenas de tiendas de jardinería, estudios de paisajismo y marcas de decoración para ampliar canales de distribución y credibilidad del producto.
+  **Estrategia:** Forjar sinergias con viveros, cadenas de tiendas de jardinería, estudios de paisajismo y marcas de decoración para ampliar canales de distribución y credibilidad del producto.
 
-    **Táctica:** Desarrollar acuerdos de co-branding para incluir Macetech en kits de plantación (“kit inteligente + planta”), organizar workshops conjuntos con influencers y expertos en horticultura, y participar en ferias de sostenibilidad y eventos de tecnología aplicada al hogar, garantizando exhibiciones interactivas y demostraciones en vivo.
+  **Táctica:** Desarrollar acuerdos de co-branding para incluir Macetech en kits de plantación (“kit inteligente + planta”), organizar workshops conjuntos con influencers y expertos en horticultura, y participar en ferias de sostenibilidad y eventos de tecnología aplicada al hogar, garantizando exhibiciones interactivas y demostraciones en vivo.
 
 ## 2.2. Entrevistas
 
-El propósito de las entrevistas personales en Macetech consiste en profundizar en las experiencias y motivaciones de nuestros usuarios clave para fundamentar el diseño y la optimización de la plataforma y dispositivo de jardinería inteligente. Mediante una guía semiestructurada, buscamos identificar patrones de uso y *pain points* específicos, de modo que los módulos de monitoreo, riego automático y seguimiento de progreso de cuidado se ajusten de forma precisa a las necesidades reales (Hair Jr. et al., 2023).
+El propósito de las entrevistas personales en Macetech consiste en profundizar en las experiencias y motivaciones de nuestros usuarios clave para fundamentar el diseño y la optimización de la plataforma y dispositivo de jardinería inteligente. Mediante una guía semiestructurada, buscamos identificar patrones de uso y _pain points_ específicos, de modo que los módulos de monitoreo, riego automático y seguimiento de progreso de cuidado se ajusten de forma precisa a las necesidades reales (Hair Jr. et al., 2023).
 
 Al centrar las conversaciones en la interacción entre el usuario con sus plantas, el uso de tecnología en el cuidado y los conocimientos sobre riego y nutrientes, obtenemos información cualitativa y cuantitativa. Esto nos permite validar y refinar nuestras hipótesis de diseño.
 
@@ -335,107 +338,107 @@ Estas entrevistas generan una base de conocimiento que orienta el desarrollo con
 
 - ### 2.2.1. Diseño de entrevistas
 
-    En esta sección se presenta el diseño de las entrevistas, estructurado en tres fases. En la primera fase se recopilan datos demográficos y contextuales del participante con 5 preguntas; a continuación, las preguntas se organizan según el segmento objetivo al que pertenezca. Cada segmento incluye 15 preguntas específicas, lo que resulta en un total de 20 ítems por entrevista. Cabe señalar que, si el entrevistado profundiza en sus respuestas y aborda de forma espontánea cuestiones aún no planteadas, el entrevistador podrá omitir dichas preguntas y avanzar directamente a los siguientes ítems.
+  En esta sección se presenta el diseño de las entrevistas, estructurado en tres fases. En la primera fase se recopilan datos demográficos y contextuales del participante con 5 preguntas; a continuación, las preguntas se organizan según el segmento objetivo al que pertenezca. Cada segmento incluye 15 preguntas específicas, lo que resulta en un total de 20 ítems por entrevista. Cabe señalar que, si el entrevistado profundiza en sus respuestas y aborda de forma espontánea cuestiones aún no planteadas, el entrevistador podrá omitir dichas preguntas y avanzar directamente a los siguientes ítems.
 
 * **Información general del participante**
 
-    1. Nombre:
-    2. Edad:
-    3. Ubicación actual con provincia y distrito:
-    4. Ocupación:
-    5. Nivel de experiencia con plantas: [Principante, Intermedio, Avanzado]
+  1. Nombre:
+  2. Edad:
+  3. Ubicación actual con provincia y distrito:
+  4. Ocupación:
+  5. Nivel de experiencia con plantas: [Principante, Intermedio, Avanzado]
 
 * **Segmento 1: Personas apasionadas por las plantas**
-      
-    **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.
 
-    * Preguntas de exploración inicial (contexto general)
+  **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.
 
-        1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
-    
-        2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
-    
-        3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?
+  - Preguntas de exploración inicial (contexto general)
 
-    * Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
+    1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
 
-        4. ¿Qué haces exactamente durante ese tiempo?
-    
-        5. ¿Hay momentos del día o del año donde cuidas más de ellas?
+    2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
 
-    * Desafíos actuales y soluciones empleadas
-      
-        6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
-    
-        7. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
-    
-    * Actitud frente a la tecnología (antes de presentar el producto)
-    
-        8. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
-    
-        9. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
-    
-    * Reacción tras presentar el concepto de Macetech
-    
-      **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.
-    
-        10. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
-    
-        11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?
-    
-    * Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):
-    
-        12. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
-    
-        13. ¿Cómo imaginas que este dispositivo encajaría en tu hogar? ¿El diseño y tamaño serían importantes para ti?
-    
-        14. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
-    
-        15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?
+    3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?
+
+  - Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
+
+    4. ¿Qué haces exactamente durante ese tiempo?
+
+    5. ¿Hay momentos del día o del año donde cuidas más de ellas?
+
+  - Desafíos actuales y soluciones empleadas
+
+    6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
+
+    7. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
+
+  - Actitud frente a la tecnología (antes de presentar el producto)
+
+    8. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
+
+    9. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
+
+  - Reacción tras presentar el concepto de Macetech
+
+    **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.
+
+    10. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
+
+    11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?
+
+  - Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):
+
+    12. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
+
+    13. ¿Cómo imaginas que este dispositivo encajaría en tu hogar? ¿El diseño y tamaño serían importantes para ti?
+
+    14. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
+
+    15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?
 
 * **Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)
 
-    **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.
+  **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.
 
-    * Preguntas de contexto y rutina profesional
-    
-        1. ¿Cuántos años de experiencia tienes en jardinería? ¿Trabajas de forma independiente, en viveros, o en proyectos particulares?
-        
-        2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
-        
-        3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
-    
-    * Problemas y recursos actuales
-    
-        4. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
-        
-        5. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
-    
-    * Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
-    
-        6. ¿Qué te funciona bien hoy?
-        
-        7. ¿Qué te gustaría que funcione mejor?
-        
-    * Expectativas y percepción frente a soluciones inteligentes
-    
-        8. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
-        
-        9. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
-        
-        10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?
-    
-    * Reacción ante Macetech
-    
-        11. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
-        
-        12. ¿Qué características crees que deben mejorarse o incluirse para ser realmente útil a nivel profesional?
-        
-        13. En una escala del 1 al 5, ¿qué tan probable es que consideres adoptar este tipo de tecnología como parte de tus herramientas de jardinería?
-        
-        14. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
-        
-        15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
+  - Preguntas de contexto y rutina profesional
+
+    1. ¿Cuántos años de experiencia tienes en jardinería? ¿Trabajas de forma independiente, en viveros, o en proyectos particulares?
+
+    2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
+
+    3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
+
+  - Problemas y recursos actuales
+
+    4. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+
+    5. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
+
+  - Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
+
+    6. ¿Qué te funciona bien hoy?
+
+    7. ¿Qué te gustaría que funcione mejor?
+
+  - Expectativas y percepción frente a soluciones inteligentes
+
+    8. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
+
+    9. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
+
+    10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?
+
+  - Reacción ante Macetech
+
+    11. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
+
+    12. ¿Qué características crees que deben mejorarse o incluirse para ser realmente útil a nivel profesional?
+
+    13. En una escala del 1 al 5, ¿qué tan probable es que consideres adoptar este tipo de tecnología como parte de tus herramientas de jardinería?
+
+    14. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
+
+    15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
 
 - ### 2.2.2. Registro de entrevistas
 
@@ -445,35 +448,35 @@ Estas entrevistas generan una base de conocimiento que orienta el desarrollo con
 
   [Entrevistas de Usuario para el Proyecto Macetech – Equipo de SevenSync](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218996_upc_edu_pe/EcVM5lwBSMdCiN10VPn4zG4BnJzx430mr3skPPjFyVnn6Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VnGTI5)
 
-***
+---
 
 A continuación se presenta la documentación detallada de cada entrevista realizada, complementaria al vídeo previamente mencionado. Para cada caso, se incluyen los datos principales del participante, el minuto exacto de aparición en la grabación y un resumen conciso de los puntos más relevantes tratados.
-  
+
 **Segmento 1 - Jardineros Nuevos e Inexpertos:**
 
-* **Entrevista N°1**
+- **Entrevista N°1**
 
-  * **Nombre y apellidos:** Rosalinda Quispe
-  * **Edad:** 43 años
-  * **Departamento:** Lima
-  * **Distrito:** Villa María del Triunfo
-  * **Ocupación:** Carpintera
+  - **Nombre y apellidos:** Rosalinda Quispe
+  - **Edad:** 43 años
+  - **Departamento:** Lima
+  - **Distrito:** Villa María del Triunfo
+  - **Ocupación:** Carpintera
     <br><br>
-  * **Tiempo de Entrevista:** 8 minutos con 35 segundos
-  * **Inicio de Entrevista:** 0:00
-  * **Final de Entrevista:** 8:35
+  - **Tiempo de Entrevista:** 8 minutos con 35 segundos
+  - **Inicio de Entrevista:** 0:00
+  - **Final de Entrevista:** 8:35
     <br><br>
 
     ###### Figura 5
 
-    *Captura de pantalla de la primera entrevista realizada al primer segmento objetivo de Macetech*
+    _Captura de pantalla de la primera entrevista realizada al primer segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/rosalinda-quispe-interview.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
 
-    *Nota*. En la imagen se puede visualizar a la entrevistada, Rosalinda Quispe, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Ruben Mallma, se encuentra en el lado izquierdo.
+    _Nota_. En la imagen se puede visualizar a la entrevistada, Rosalinda Quispe, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Ruben Mallma, se encuentra en el lado izquierdo.
 
-  * **Resumen De Entrevista**
-  
+  - **Resumen De Entrevista**
+
     La entrevistada, sin experiencia formal en jardinería ni ocupación directa relacionada con plantas, manifestó un vínculo emocional profundo con sus macetas, especialmente aquellas con valor decorativo o productivo. Su interés en el cuidado de plantas comenzó hace 19 años, como una forma de relajación y conexión personal, lo que la ha llevado a establecer una rutina diaria de observación y cuidado sin ningún tipo de especialización técnica. Su nivel de experiencia es empírico, basado en observación constante y métodos caseros como el uso de ajo diluido en agua para tratar enfermedades.
 
     Cuida diversas plantas, con preferencia por aquellas que producen frutos, aunque actualmente cultiva mayormente especies decorativas por su simplicidad. Identifica como principales retos la aparición de plagas y enfermedades, lo cual le genera preocupación y tristeza cuando no puede resolverlo. No utiliza herramientas digitales ni dispositivos tecnológicos, sino remedios caseros, y confía en su intuición para interpretar el estado de sus plantas.
@@ -482,72 +485,73 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual: 
+    - Tecnología actual:
 
       No emplea dispositivos tecnológicos; usa métodos caseros (ajo diluido) para tratar plagas.
 
-    * Dispositivos: 
-    
+    - Dispositivos:
+
       Prefiere usar laptop doméstica; no requiere conexión con smartphone.
 
-    * Canales de interacción deseados:
+    - Canales de interacción deseados:
 
       Dashboard web doméstico. No necesita acceso móvil frecuente. Que muestre la salud general de la planta, humedad del suelo, nutrientes, signos de enfermedad o estrés vegetal.
 
       Guía digital incorporada (explicaciones contextualizadas de alertas, p. ej., cómo corregir pH).
 
-    * Expectativas tecnológicas: 
+    - Expectativas tecnológicas:
 
       Interfaz sencilla en laptop; monitoreo pasivo diario; automatización útil, pero no prioriza conectividad móvil ni funciones complejas.
 
     **Características subjetivas:**
 
-      * Motivaciones: 
+    - Motivaciones:
 
-        Cuidado emocional y afectivo hacia las plantas; satisfacción personal por verlas crecer y florecer.
+      Cuidado emocional y afectivo hacia las plantas; satisfacción personal por verlas crecer y florecer.
 
-      * Diseño y estética: 
-        
-        No especificado, pero acepta un volumen mayor en la maceta si eso implica mayor funcionalidad.
+    - Diseño y estética:
 
-      * Percepción de valor: 
+      No especificado, pero acepta un volumen mayor en la maceta si eso implica mayor funcionalidad.
 
-        Considera que la maceta es una mezcla de lujo e inversión; más inclinada a valorarla por su impacto emocional que por su rentabilidad.
+    - Percepción de valor:
 
-      * Influencia de marcas: 
-        
-        Se enfoca en el bienestar de sus plantas más que en la marca del producto.
+      Considera que la maceta es una mezcla de lujo e inversión; más inclinada a valorarla por su impacto emocional que por su rentabilidad.
 
-      * Personalidad: 
-      
-        Cuidadora emocional; conectada espiritualmente con sus plantas; busca simplicidad, apoyo tecnológico sin dependencia digital y soluciones accesibles.
+    - Influencia de marcas:
 
-***
+      Se enfoca en el bienestar de sus plantas más que en la marca del producto.
+
+    - Personalidad:
+
+      Cuidadora emocional; conectada espiritualmente con sus plantas; busca simplicidad, apoyo tecnológico sin dependencia digital y soluciones accesibles.
+
+---
+
 <br>
 
-* **Entrevista N°2**
+- **Entrevista N°2**
 
-  * **Nombre y apellidos:** Sirley Zapata
-  * **Edad:** 54 años
-  * **Departamento:** Cajamarca
-  * **Distrito:** Cajamarca
-  * **Ocupación:** Ama de casa
+  - **Nombre y apellidos:** Sirley Zapata
+  - **Edad:** 54 años
+  - **Departamento:** Cajamarca
+  - **Distrito:** Cajamarca
+  - **Ocupación:** Ama de casa
     <br><br>
-  * **Tiempo de Entrevista:** 6 minutos con 22 segundos
-  * **Inicio de Entrevista:** 8:36
-  * **Final de Entrevista:** 14:57
+  - **Tiempo de Entrevista:** 6 minutos con 22 segundos
+  - **Inicio de Entrevista:** 8:36
+  - **Final de Entrevista:** 14:57
     <br><br>
 
     ###### Figura 6
 
-    *Captura de pantalla de la segunda entrevista realizada al primer segmento objetivo de Macetech*
+    _Captura de pantalla de la segunda entrevista realizada al primer segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/sirley-zapata-interview.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
 
-    *Nota*. En la imagen se puede visualizar a la entrevistada, Sirley Zapata, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Luiggi Paredes, se encuentra en el lado superior derecho.
+    _Nota_. En la imagen se puede visualizar a la entrevistada, Sirley Zapata, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Luiggi Paredes, se encuentra en el lado superior derecho.
 
-  * **Resumen De Entrevista**
-  
+  - **Resumen De Entrevista**
+
     La entrevistada es una aficionada de larga data al cuidado de plantas ornamentales, actividad que practica desde su infancia, pero no desde un punto profesional, sino más como una aficionada. Se muestra apasionada por el aspecto estético (“disfruto de que una planta se haga bonita a la vista”) y al mismo tiempo preocupada por desafíos prácticos, especialmente el control de plagas y el riego (“a veces olvido regarla o la riego demasiado y se pueden pudrir o ahogar”).
 
     Actualmente no utiliza ningún dispositivo tecnológico para el riego o supervisión, pero valora positivamente la idea de una maceta inteligente que automatice estas tareas. Espera que el sistema le avise precisamente cuándo y cuánta agua necesita cada planta, así como recomendaciones de abonado adecuadas a cada especie. En cuanto al diseño, desea que la maceta combine con la decoración de su hogar, tal como una pieza de cerámica moderna, y que los cables, en caso de haberlos, queden discretos (“no quisiera que tenga un aspecto desagradable”).
@@ -556,13 +560,13 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual: No utiliza ninguna tecnología avanzada o métodos caseros para el cuidado.
+    - Tecnología actual: No utiliza ninguna tecnología avanzada o métodos caseros para el cuidado.
 
-    * Dispositivos: 
-    
+    - Dispositivos:
+
       Smartphone (sin preferencia de sistema operativo), accediendo a través de un navegador estándar.
 
-    * Canales de interacción deseados:
+    - Canales de interacción deseados:
 
       Aplicación móvil con notificaciones push (“avísame cuándo regar” o “mueve la maceta a la sombra”).
 
@@ -570,57 +574,58 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
       Retroalimentación por voz o sonido para no depender exclusivamente de la app.
 
-    * Expectativas tecnológicas: 
+    - Expectativas tecnológicas:
 
       Interfaz intuitiva, mínima curva de aprendizaje para adultos de todas las edades, y alertas claras tanto visuales como auditivas.
 
     **Características subjetivas:**
 
-      * Motivaciones: 
+    - Motivaciones:
 
-        Disfruta de ver sus plantas “bonitas a la vista” y busca tranquilidad frente a plagas y errores de riego (“pueden pudrirse o ahogarse”).
+      Disfruta de ver sus plantas “bonitas a la vista” y busca tranquilidad frente a plagas y errores de riego (“pueden pudrirse o ahogarse”).
 
-      * Diseño y estética: 
-        
-        Prefiere que la maceta tenga un estilo cerámico moderno, sin cables visibles que desentonen con su sala, balcón o hall.
+    - Diseño y estética:
 
-      * Percepción de valor: 
+      Prefiere que la maceta tenga un estilo cerámico moderno, sin cables visibles que desentonen con su sala, balcón o hall.
 
-        Considera la maceta inteligente una inversión a largo plazo si el precio es razonable, aunque teme que un costo elevado la convierta en un lujo.
+    - Percepción de valor:
 
-      * Influencia de marcas: 
-        
-        No menciona marcas específicas, pero su criterio se basa en la simplicidad y durabilidad.
+      Considera la maceta inteligente una inversión a largo plazo si el precio es razonable, aunque teme que un costo elevado la convierta en un lujo.
 
-      * Personalidad: 
-      
-        Se percibe una personalidad pragmática y detallista, enfocada en soluciones que faciliten el mantenimiento sin sacrificar lo estético. Prefiere dispositivos móviles y navegadores web sencillos, sin plataformas avanzadas, siempre que sean intuitivos para cualquier edad.
+    - Influencia de marcas:
 
-***
+      No menciona marcas específicas, pero su criterio se basa en la simplicidad y durabilidad.
+
+    - Personalidad:
+
+      Se percibe una personalidad pragmática y detallista, enfocada en soluciones que faciliten el mantenimiento sin sacrificar lo estético. Prefiere dispositivos móviles y navegadores web sencillos, sin plataformas avanzadas, siempre que sean intuitivos para cualquier edad.
+
+---
+
 <br>
 
-* **Entrevista N°3**
+- **Entrevista N°3**
 
-  * **Nombre y apellidos:** Andrés Torres
-  * **Edad:** 21 años 
-  * **Departamento:** Lima
-  * **Distrito:** Lince 
-  * **Ocupación:** Estudiante universitario
-  <br><br>
-  * **Tiempo de entrevista:** 8 minutos con 28 segundos
-  * **Inicio de entrevista:** 14:58
-  * **Fin de entrevista:** 23:26
+  - **Nombre y apellidos:** Andrés Torres
+  - **Edad:** 21 años
+  - **Departamento:** Lima
+  - **Distrito:** Lince
+  - **Ocupación:** Estudiante universitario
+    <br><br>
+  - **Tiempo de entrevista:** 8 minutos con 28 segundos
+  - **Inicio de entrevista:** 14:58
+  - **Fin de entrevista:** 23:26
 
     ###### Figura 7
 
-    *Captura de pantalla de la tercera entrevista realizada al primer segmento objetivo de Macetech*
+    _Captura de pantalla de la tercera entrevista realizada al primer segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/andres-torres-interview.png" alt="Captura de pantalla del entrevistado Andrés Torres y el entrevistador Fabrizio Sanchez durante el proceso de entrevista virtual." width="600" height="300"> <br>
 
-    *Nota*. En la imagen se puede visualizar al entrevistado, Andrés Torres, en casi toda la pantalla, mientras que el entrevistador y miembro de SevenSync, Fabrizio Sanchez, se encuentra en la esquina inferior derecha.
-    
+    _Nota_. En la imagen se puede visualizar al entrevistado, Andrés Torres, en casi toda la pantalla, mientras que el entrevistador y miembro de SevenSync, Fabrizio Sanchez, se encuentra en la esquina inferior derecha.
+
     **Resumen De Entrevista** <br>
-    
+
     El entrevistado es un apasionado del cuidado de plantas desde que tenía 10 años, con más de una década de práctica no profesional pero aficionada. Se inclina por especies ornamentales y tropicales, como orquídeas (catleyas), palmeras y orejas de elefantes, y encuentra en la jardinería un vínculo emocional con la naturaleza, apreciando su belleza y la sensación de energía que transmiten los seres vivos. Al mismo tiempo, reconoce como principal desafío la diversidad de requerimientos de riego y cuidado: cada planta exige una dosificación exacta de agua y nutrientes, y un manejo inadecuado puede “machucarlas” y comprometer su crecimiento.
 
     Aunque actualmente no emplea dispositivos automatizados, ha explorado aplicaciones de identificación de plantas mediante fotografía, pero sin herramientas que asistan el riego o la supervisión de condiciones. Valora la idea de una maceta inteligente capaz de medir humedad, luz y temperatura, y que ofrezca control centralizado al momento de la siembra. Espera que el sistema le indique cuándo mover la planta de lugar o ajustar el riego, y que canalice esos datos a través de una aplicación móvil y web sencilla de operar, con notificaciones remotas al teléfono (“poder gestionarlo desde cualquier sitio”).
@@ -629,15 +634,15 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual: 
+    - Tecnología actual:
 
       Ninguna (solo apps de identificación visual).
 
-    * Dispositivos: 
+    - Dispositivos:
 
       Smartphone con navegador estándar; acceso deseado a aplicación móvil y web.
 
-    * Canales de interacción:
+    - Canales de interacción:
 
       Notificaciones push al celular (“alerta de riego” o “mover planta”).
 
@@ -645,57 +650,57 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
       Integración con asistentes de hogar inteligente (por ejemplo, Alexa).
 
-    * Expectativas tecnológicas: 
-  
+    - Expectativas tecnológicas:
+
       Interfaz intuitiva, baja curva de aprendizaje, accesible para distintos perfiles de edad.
- 
+
     **Características subjetivas:**
 
-    * Motivaciones: 
+    - Motivaciones:
 
       Conexión emocional con la naturaleza; disfrute estético y sensorial.
 
-    * Diseño y estética: 
+    - Diseño y estética:
 
       Preferencia por minimalismo, ocultar cables y coherencia con decoración moderna.
 
-    * Percepción de valor: 
+    - Percepción de valor:
 
       Considera un gasto justificado como inversión a largo plazo, aunque precio excesivo implica sensación de lujo.
 
-    * Influencia de marcas: 
-     
+    - Influencia de marcas:
+
       No menciona marcas específicas; valor en la simplicidad y eficacia.
 
-    * Personalidad: 
+    - Personalidad:
 
       Emprendedor experimental, orientado a soluciones prácticas, con mentalidad de integrar domótica y automatización en su vida diaria.
 
-***
+---
+
 <br>
 
 **Segmento 2 - Especialistas de Jardinería y Áreas Verdes:**
 
-  
-* **Entrevista N°4**
+- **Entrevista N°4**
 
-  * **Nombre y apellidos:** Yasser Renteria 
-  * **Edad:** 25 años 
-  * **Departamento:** Lima
-  * **Distrito:** Chorrillos
-  * **Ocupación¨:** Jardinero independiente
-  <br><br>
-  * **Tiempo de entrevista:** 8 minutos exactos
-  * **Inicio de entrevista:** 23:27
-  * **Fin de entrevista:** 31:27
+  - **Nombre y apellidos:** Yasser Renteria
+  - **Edad:** 25 años
+  - **Departamento:** Lima
+  - **Distrito:** Chorrillos
+  - **Ocupación¨:** Jardinero independiente
+    <br><br>
+  - **Tiempo de entrevista:** 8 minutos exactos
+  - **Inicio de entrevista:** 23:27
+  - **Fin de entrevista:** 31:27
 
     ###### Figura 8
 
-    *Captura de pantalla de la primera entrevista realizada al segundo segmento objetivo de Macetech*
+    _Captura de pantalla de la primera entrevista realizada al segundo segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/yasser-renteria-interview.png" alt="Captura de pantalla del entrevistado Yasser Rentería y el entrevistador Lucio Yen durante el proceso de entrevista virtual." width="750" height="250"> <br>
 
-    *Nota*. En la imagen se puede visualizar al entrevistado, Yasser Rentería, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Lucio Yen, se encuentra en el lado izquierdo.
+    _Nota_. En la imagen se puede visualizar al entrevistado, Yasser Rentería, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Lucio Yen, se encuentra en el lado izquierdo.
 
     **Resumen De Entrevista** <br>
 
@@ -707,77 +712,78 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual:
+    - Tecnología actual:
 
       Riego por goteo; identificador de plagas básico.
 
-    * Dispositivos:
- 
+    - Dispositivos:
+
       Smartphone con navegador estándar; acceso deseado a aplicación web y móvil.
 
-    * Canales de interacción:
+    - Canales de interacción:
 
       Dashboard web para supervisión remota.
 
       Notificaciones push al celular con alertas de riego o estado de la planta.
 
-    * Variables críticas a monitorizar:
+    - Variables críticas a monitorizar:
 
       Humedad y salud del suelo.
 
       Estado vegetal y uso eficiente del agua.
 
-    * Expectativas tecnológicas:
+    - Expectativas tecnológicas:
 
       Plataforma híbrida que combine automatización continua con capacidad de control manual puntual.
 
     **Características subjetivas:**
 
-    * Motivaciones:
+    - Motivaciones:
 
       Mantener la salud y estética de grandes volúmenes de plantas con mínima intervención manual.
 
-    * Diseño y estética:
+    - Diseño y estética:
 
       Discreto y funcional, compatible con entornos profesionales y residenciales minimalistas.
 
-    * Percepción de valor:
+    - Percepción de valor:
 
       Inversión justificada si el precio y la durabilidad aseguran ahorro de tiempo y recursos; confiere prioridad a la confiabilidad.
 
-    * Influencia de marcas:
+    - Influencia de marcas:
 
       Ninguna en particular; valora soluciones probadas y robustas.
 
-    * Personalidad:
+    - Personalidad:
 
       Profesional metódico y observador, orientado a la eficiencia operativa y a la incorporación gradual de innovaciones en su práctica diaria.
 
-***
+---
+
 <br>
 
-* **Entrevista N°5**
+- **Entrevista N°5**
 
-  * **Nombre y apellidos:** Javier Hernández 
-  * **Edad:** 27 años 
-  * **Departamento:** Lima
-  * **Distrito:** Lince
-  * **Ocupación:** Jardinero independiente
+  - **Nombre y apellidos:** Javier Hernández
+  - **Edad:** 27 años
+  - **Departamento:** Lima
+  - **Distrito:** Lince
+  - **Ocupación:** Jardinero independiente
     <br><br>
-  * **Tiempo de Entrevista:** 10 minutos con 55 segundos
-  * **Inicio de Entrevista:** 31:28
-  * **Final de Entrevista:** 42:23
+  - **Tiempo de Entrevista:** 10 minutos con 55 segundos
+  - **Inicio de Entrevista:** 31:28
+  - **Final de Entrevista:** 42:23
 
     ###### Figura 9
 
-    *Captura de pantalla de la segunda entrevista realizada al segundo segmento objetivo de Macetech*
+    _Captura de pantalla de la segunda entrevista realizada al segundo segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/javier-hernandez-interview.png" alt="Captura de pantalla del entrevistado Javier Hernández y el entrevistador Juan Pescorán durante el proceso de entrevista virtual." width="750" height="350"> <br>
 
-    *Nota*. En la imagen se puede visualizar al entrevistado, Javier Hernández, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Juan Pescorán, se encuentra en el lado inferior derecho.
+    _Nota_. En la imagen se puede visualizar al entrevistado, Javier Hernández, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Juan Pescorán, se encuentra en el lado inferior derecho.
 
     **Resumen De Entrevista**
-    
+
     Juan ejerce como jardinero profesional independiente desde los 22 años, colaborando además en proyectos de paisajismo para clientes residenciales y corporativos. Gestiona alrededor de 150–200 plantas, principalmente ornamentales, suculentas y jardines verticales. Su rutina de cuidado combina riego manual con sistemas de goteo en espacios amplios, fertilización programada mensualmente según cada especie y monitoreo visual del follaje, complementado en ocasiones con medidores básicos de humedad. Identifica como principales dificultades la imposibilidad de supervisar presencialmente todas las áreas de cultivo, las variaciones climáticas y la detección tardía de plagas, lo cual puede comprometer la salud vegetal.
 
     Actualmente usa sensores de humedad de precisión limitada y recordatorios manuales para riego y abonado, y valora la organización que esta técnica le aporta. Sin embargo, siente que estos recursos “funcionan, pero de forma lenta y poco fiable”. Por ello, considera que Macetech, con su capacidad para medir en tiempo real variables críticas como humedad del suelo, pH y luminosidad, y enviar reportes inmediatos al celular, aportaría una ventaja competitiva: “sería increíble no tener que estar siempre allí y solo recibir alertas automáticas”.
@@ -786,70 +792,71 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual:
+    - Tecnología actual:
 
       Sistemas de riego por goteo; medidores de humedad básicos; recordatorios manuales.
 
-    * Dispositivos:
-    
+    - Dispositivos:
+
       Prefiere usar smartphone con navegador estándar; no utiliza equipos como laptops o computadoras al no considerarlas lo suficientemente portátiles para un ambiente de jardinería.
 
-    * Canales de interacción deseados:
+    - Canales de interacción deseados:
 
       Reportes que informen sobre la humedad del suelo; nivel de nutrientes; pH; luminosidad.
 
       Recordatorios push; posible dashboard web para supervisión remota.
 
-    * Expectativas tecnológicas: 
+    - Expectativas tecnológicas:
 
       Interfaz intuitiva; alertas confiables en tiempo real; equilibrio entre automatización y control manual.
 
     **Características subjetivas:**
 
-      * Motivaciones: 
+    - Motivaciones:
 
-        Deseo de garantizar la salud y estética de grandes espacios verdes sin dependencia total de la presencia física.
+      Deseo de garantizar la salud y estética de grandes espacios verdes sin dependencia total de la presencia física.
 
-      * Diseño y estética: 
+    - Diseño y estética:
 
-        Prefiere soluciones discretas que se integren con jardines residenciales y corporativos.
+      Prefiere soluciones discretas que se integren con jardines residenciales y corporativos.
 
-      * Percepción de valor: 
+    - Percepción de valor:
 
-        Considera la tecnología una inversión que elevaría su oferta de servicio, con una probabilidad de adopción de 4/5 si el precio y la usabilidad son adecuados.
+      Considera la tecnología una inversión que elevaría su oferta de servicio, con una probabilidad de adopción de 4/5 si el precio y la usabilidad son adecuados.
 
-      * Influencia de marcas: 
+    - Influencia de marcas:
 
-        No alude a marcas específicas; prioriza la fiabilidad y durabilidad.
+      No alude a marcas específicas; prioriza la fiabilidad y durabilidad.
 
-      * Personalidad: 
+    - Personalidad:
 
-        Profesional metódico, orientado a la eficiencia y a incorporar innovaciones que le permitan delegar tareas rutinarias sin sacrificar la calidad de su trabajo.
+      Profesional metódico, orientado a la eficiencia y a incorporar innovaciones que le permitan delegar tareas rutinarias sin sacrificar la calidad de su trabajo.
 
-*** 
+---
+
 <br>
 
-* **Entrevista N°6**
-  
-  * **Nombre y apellidos:** Betty Chumacero
-  * **Edad:** 62 años 
-  * **Departamento:** Lima
-  * **Distrito:** San Juan de Miraflores
-  * **Ocupación:** Ama de casa
+- **Entrevista N°6**
+
+  - **Nombre y apellidos:** Betty Chumacero
+  - **Edad:** 62 años
+  - **Departamento:** Lima
+  - **Distrito:** San Juan de Miraflores
+  - **Ocupación:** Ama de casa
     <br><br>
-  * **Tiempo de Entrevista:** 15 minutos con 6 segundos
-  * **Inicio de Entrevista:** 42:24
-  * **Final de Entrevista:** 57:30
+  - **Tiempo de Entrevista:** 15 minutos con 6 segundos
+  - **Inicio de Entrevista:** 42:24
+  - **Final de Entrevista:** 57:30
 
     ###### Figura 10
 
-    *Captura de pantalla de la tercera entrevista realizada al segundo segmento objetivo de Macetech*
+    _Captura de pantalla de la tercera entrevista realizada al segundo segmento objetivo de Macetech_
 
     <img src="../assets/img/capitulo2/interviews/betty-chumacero-interview.png" alt="Captura de pantalla del entrevistado Betty Chumacero" width="750" height="450"> <br>
 
-    *Nota*. En la imagen se puede visualizar a la entrevistada, Betty Chumacero, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Flavio Trigueros, no aparece en la captura debido a que se encuentra en una pantalla separada de Zoom. El entrevistador sí aparece en el vídeo, pero en ningún momento el entrevistador y la entrevistada salen al mismo tiempo.
+    _Nota_. En la imagen se puede visualizar a la entrevistada, Betty Chumacero, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Flavio Trigueros, no aparece en la captura debido a que se encuentra en una pantalla separada de Zoom. El entrevistador sí aparece en el vídeo, pero en ningún momento el entrevistador y la entrevistada salen al mismo tiempo.
 
-    **Resumen De Entrevista** 
+    **Resumen De Entrevista**
 
     Betty Chumacero, jardinera que antes trabajaba de forma profesional, pero ahora utiliza la jardinería más como un hobby, cultiva plantas desde hace aproximadamente cinco años como pasatiempo y más de 20 años como profesional. Su interés nació al experimentar la satisfacción de “darles vida” y observa diariamente sus macetas, aplicando métodos caseros de abono (cáscaras de huevo molidas) y hablando con ellas para promover su crecimiento. Aunque disfruta del proceso manual de regar, nutrir y conversar con las plantas, reconoce que, pese a sus cuidados, muchas se marchitan repentinamente, atribuible a su falta de control preciso sobre factores como la plaga de gusanos o la dosificación de agua.
 
@@ -859,15 +866,15 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Características objetivas:**
 
-    * Tecnología actual: 
+    - Tecnología actual:
 
       No emplea dispositivos avanzados; recurre exclusivamente a métodos caseros de abonado (cáscaras de huevo molidas) y al ajo diluido como remedio natural.
 
-    * Dispositivos: 
-    
+    - Dispositivos:
+
       No utiliza smartphone ni aplicaciones móviles; preferiría un dispositivo fijo e integrado en el hogar, que le permita supervisar todas las macetas de forma centralizada.
 
-    * Canales de interacción deseados:
+    - Canales de interacción deseados:
 
       Imagina un dashboard web doméstico sencillo, sin necesidad de notificaciones push, donde pueda consultar el estado de cada planta cuando lo desee, sin interrupciones ni alertas móviles.
 
@@ -875,59 +882,59 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
       Retroalimentación por voz o sonido para no depender exclusivamente de la app.
 
-    * Expectativas tecnológicas: 
+    - Expectativas tecnológicas:
 
       Requiere una interfaz extremadamente intuitiva y estática, accesible preferiblemente desde el hogar; desea que la automatización sea totalmente confiable y que, a la vez, conserve la opción de regar manualmente cuando ella lo prefiera.
 
     **Características subjetivas:**
 
-      * Motivaciones: 
+    - Motivaciones:
 
-        Encuentra en la jardinería un refugio emocional y una fuente de relajación; experimenta un profundo sentido de logro cuando sus plantas florecen y crecen saludables, lo que refuerza su vínculo afectivo con el proceso.
+      Encuentra en la jardinería un refugio emocional y una fuente de relajación; experimenta un profundo sentido de logro cuando sus plantas florecen y crecen saludables, lo que refuerza su vínculo afectivo con el proceso.
 
-      * Diseño y estética: 
-        
-        Está dispuesta a adoptar macetas de mayor volumen o un diseño menos convencional si esto implica una mayor funcionalidad y un mejor cuidado de las plantas; prefiere que la tecnología pase desapercibida y no altere el encanto natural de su entorno.
+    - Diseño y estética:
 
-      * Percepción de valor: 
+      Está dispuesta a adoptar macetas de mayor volumen o un diseño menos convencional si esto implica una mayor funcionalidad y un mejor cuidado de las plantas; prefiere que la tecnología pase desapercibida y no altere el encanto natural de su entorno.
 
-        Considera la maceta inteligente como un “lujo justificable” que bien vale la inversión si le ahorra tiempo y esfuerzo; estima que pagaría entre S/ 50 y 100 por una unidad pequeña, siempre que garantice un funcionamiento fiable y reduzca la pérdida de plantas.
+    - Percepción de valor:
 
-      * Influencia de marcas: 
-        
-        No se ve influenciada por marcas específicas; valora esencialmente la utilidad, la durabilidad y la facilidad de mantenimiento por encima del nombre del fabricante.
+      Considera la maceta inteligente como un “lujo justificable” que bien vale la inversión si le ahorra tiempo y esfuerzo; estima que pagaría entre S/ 50 y 100 por una unidad pequeña, siempre que garantice un funcionamiento fiable y reduzca la pérdida de plantas.
 
-      * Personalidad: 
-      
-        Se muestra como una cuidadora empática y paciente, que alterna técnicas artesanales tradicionales con una curiosidad por soluciones innovadoras; busca optimizar su hobbie sin renunciar al ritual de atención personal que tanto disfruta.
+    - Influencia de marcas:
 
-***
+      No se ve influenciada por marcas específicas; valora esencialmente la utilidad, la durabilidad y la facilidad de mantenimiento por encima del nombre del fabricante.
+
+    - Personalidad:
+
+      Se muestra como una cuidadora empática y paciente, que alterna técnicas artesanales tradicionales con una curiosidad por soluciones innovadoras; busca optimizar su hobbie sin renunciar al ritual de atención personal que tanto disfruta.
+
+---
 
 - ### 2.2.3. Análisis de entrevistas
 
 **1. Segmento: Jardineros Apasionados y Hogareños**
 
-* **Características Objetivas:**
+- **Características Objetivas:**
 
-- Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
+* Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
 
-- Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
+* Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
 
-- Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
+* Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
 
-- Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
+* Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
 
-- Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
+* Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
 
-* **Características Subjetivas:**
+- **Características Subjetivas:**
 
-- Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
+* Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
 
-- Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
+* Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
 
-- Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
+* Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
 
-- Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
+* Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
 
 **2. Segmento: Jardineros Profesionales y Experimentados**
 
@@ -1010,27 +1017,27 @@ Propuesta de valor:
 
 Este User Persona condensa las características objetivas (uso de tecnología, digitalización, escala) y subjetivas (lujo vs inversión, confiabilidad, estética) de los tres entrevistados, sirviendo de base sólida para el diseño de la solución y la comunicación dirigida a su perfil.
 
-* **Características Objetivas:**
+- **Características Objetivas:**
 
-- Cantidad de plantas manejadas: 100% (3/3) cuidan un volumen alto de plantas (más de 200 plantas o múltiples jardines).
+* Cantidad de plantas manejadas: 100% (3/3) cuidan un volumen alto de plantas (más de 200 plantas o múltiples jardines).
 
-- Método de cuidado: 66% (2/3) realizan inspecciones periódicas de forma manual, basadas en experiencia y observación constante.
+* Método de cuidado: 66% (2/3) realizan inspecciones periódicas de forma manual, basadas en experiencia y observación constante.
 
-- Uso actual de tecnología: % utilizan actualmente dispositivos tecnológicos especializados para jardinería, pero ambos muestran alta apertura a adoptarlos.
+* Uso actual de tecnología: % utilizan actualmente dispositivos tecnológicos especializados para jardinería, pero ambos muestran alta apertura a adoptarlos.
 
-- Disposición de pago: 100% (3/3) están dispuestos a realizar inversiones significativas en tecnología confiable y de alta calidad.
+* Disposición de pago: 100% (3/3) están dispuestos a realizar inversiones significativas en tecnología confiable y de alta calidad.
 
-- Importancia de datos: 33% valoran el acceso a monitoreo en tiempo real, históricos de datos y control remoto.
+* Importancia de datos: 33% valoran el acceso a monitoreo en tiempo real, históricos de datos y control remoto.
 
-* **Características Subjetivas:**
+- **Características Subjetivas:**
 
-- Orientación tecnológica: 66% (2/3) tienen una fuerte orientación hacia la eficiencia tecnológica para optimizar su trabajo (más que en métodos caseros o tutoriales simples).
+* Orientación tecnológica: 66% (2/3) tienen una fuerte orientación hacia la eficiencia tecnológica para optimizar su trabajo (más que en métodos caseros o tutoriales simples).
 
-- Crítica a la tecnología existente: 100% perciben que el mercado tecnológico actual está sobredimensionado hacia agricultura industrial y no tanto a paisajismo, jardinería urbana o interior.
+* Crítica a la tecnología existente: 100% perciben que el mercado tecnológico actual está sobredimensionado hacia agricultura industrial y no tanto a paisajismo, jardinería urbana o interior.
 
-- Alta expectativa de calidad: 100% demandan productos de alto nivel técnico (interfaces profesionales, robustez de hardware, soporte técnico sólido).
+* Alta expectativa de calidad: 100% demandan productos de alto nivel técnico (interfaces profesionales, robustez de hardware, soporte técnico sólido).
 
-- Deseo de automatización: 66% (2/3) buscan sistemas que permitan no solo alertas, sino acciones automáticas que reduzcan su carga de trabajo manual.
+* Deseo de automatización: 66% (2/3) buscan sistemas que permitan no solo alertas, sino acciones automáticas que reduzcan su carga de trabajo manual.
 
 ## 2.3. Needfinding
 
@@ -1041,10 +1048,10 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
   En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![UserPerson_1](../assets/capitulo2/UserPerson1.png) <br><br>
+    ![UserPerson_1](../assets/img/capitulo2/needfinding/user-persona/UserPerson1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![UserPerson_2](../assets/capitulo2/UserPerson2.png) <br><br>
+    ![UserPerson_2](../assets/img/capitulo2/needfinding/user-persona/UserPerson2.png) <br><br>
 
 - ### 2.3.2. User Task Matrix
 
@@ -1150,42 +1157,52 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
   El User Journey Mapping es una herramienta para comprender la experiencia del usuario de manera holística, lo que permite a los equipos de diseño crear productos y servicios que se alineen mejor con las necesidades y expectativas de los usuarios.<br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![JourneyMap_1](../assets/capitulo2/JourneyMap_Segmento1.png) <br><br>
+    ![JourneyMap_1](../assets/img/capitulo2/needfinding/journey-mapping/JourneyMap_Segmento1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![JourneyMap_2](../assets/capitulo2/JourneyMap_Segmento2.png)
+    ![JourneyMap_2](../assets/img/capitulo2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
 
 - ### 2.3.4. Empathy Mapping
 
   Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo. <br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![EmpathyMap_1](../assets/capitulo2/EmpathyMap1.png) <br><br>
+    ![EmpathyMap_1](../assets/img/capitulo2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![EmpathyMap_2](../assets/capitulo2/EmpathyMap2.png)
+    ![EmpathyMap_2](../assets/img/capitulo2/needfinding/empathy-mapping/EmpathyMap2.png)
 
 - ### 2.3.5. As-is Scenario Mapping
 
   El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![As_Is-1](../assets/capitulo2/As_Is-Segmento1.png) <br><br>
+    ![As_Is-1](../assets/img/capitulo2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![As_Is-2](../assets/capitulo2/As_Is-Segmento2.png)
+    ![As_Is-2](../assets/img/capitulo2/needfinding/as-is-mapping/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
 
-| **Término**                  | **Definición breve**                                                            |
-| ---------------------------- | ------------------------------------------------------------------------------- |
-| **Maceta Inteligente**       | Dispositivo con sensores que monitorea el estado de una planta en tiempo real.  |
-| **Sensor de Humedad**        | Detecta cuánta agua hay en la tierra.                                           |
-| **Sensor de Luz**            | Mide la cantidad de luz que recibe la planta.                                   |
-| **Notificación Inteligente** | Alerta automática que indica si la planta necesita cuidados (riego, luz, etc.). |
-| **Dashboard**                | Pantalla principal que muestra el estado actual de las plantas.                 |
-| **Usuario Doméstico**        | Persona que cuida plantas en casa (como Laura).                                 |
-| **Usuario Profesional**      | Jardinero que cuida plantas de varios clientes (como Carlos).                   |
-| **App Móvil**                | Aplicación usada en el celular para monitorear o recibir alertas.               |
-| **App Web**                  | Plataforma usada para gestionar múltiples plantas y ver reportes.               |
-| **Estado de la Planta**      | Clasificación visual (saludable, necesita agua, poca luz, etc.).                |
+En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
+
+| **Termino**                                         | **Definición**                                                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Mace Tech** (_Maceta Inteligente_)                | Dispositivo físico con sensores que permite monitorear el estado de una planta en tiempo real.         |
+| **Moisture Sensor** (_Sensor de humedad_)           | Componente que detecta el nivel de humedad en la tierra de la maceta.                                  |
+| **Light Sensor** (_Sensor de luz_)                  | Componente que mide la cantidad de luz que recibe la planta.                                           |
+| **Temperature Sensor** (_Sensor de temperatura_)    | Componente que mide la temperatura ambiental alrededor de la planta.                                   |
+| **Plant Status** (_Estado de la planta_)            | Representación visual y textual del estado actual de la planta (saludable, poca agua, poca luz, etc.). |
+| **Smart Notification** (_Notificación inteligente_) | Alerta automática que avisa al usuario que la planta necesita atención.                                |
+| **Plant History** (_Historial de planta_)           | Registro de datos y acciones realizadas sobre una planta específica.                                   |
+| **Home User** (_Usuario doméstico_)                 | Persona que cuida plantas en casa para fines personales o decorativos.                                 |
+| **Professional User** (_Usuario profesional_)       | Jardinero o técnico que gestiona plantas para terceros o múltiples espacios.                           |
+| **Client** (_Cliente_)                              | Persona o entidad para quien el jardinero profesional ofrece sus servicios.                            |
+| **Maintenance Report** (_Reporte de mantenimiento_) | Documento generado con el estado y acciones aplicadas a las plantas.                                   |
+| **Mobile App** (_App móvil_)                        | Aplicación para celulares donde se visualizan alertas o estados rápidos de las plantas.                |
+| **Web App** (_App web_)                             | Plataforma completa para gestionar plantas, consultar historial y configurar el sistema.               |
+| **Landing Page**                                    | Página inicial del producto donde se explica su valor y se invita a registrarse.                       |
+| **Automatic Watering** (_Riego automático_)         | Función que activa el riego cuando la humedad está por debajo de un valor mínimo.                      |
+| **Monitoring Area** (_Zona de monitoreo_)           | Espacio físico donde están ubicadas una o más macetas inteligentes.                                    |
+| **Alert Level** (_Nivel de alerta_)                 | Clasificación del estado de la planta: normal, advertencia o crítico.                                  |
+| **User Profile** (_Perfil de usuario_)              | Información personal y preferencias del usuario dentro del sistema.                                    |
