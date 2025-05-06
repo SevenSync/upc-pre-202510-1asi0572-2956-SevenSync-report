@@ -336,7 +336,7 @@ Al centrar las conversaciones en la interacción entre el usuario con sus planta
 
 Estas entrevistas generan una base de conocimiento que orienta el desarrollo continuo de Macetech, asegurando que cada nueva funcionalidad responda directamente a los requerimientos y expectativas de nuestros usuarios.
 
-- ### 2.2.1. Diseño de entrevistas
+### 2.2.1. Diseño de entrevistas
 
   En esta sección se presenta el diseño de las entrevistas, estructurado en tres fases. En la primera fase se recopilan datos demográficos y contextuales del participante con 5 preguntas; a continuación, las preguntas se organizan según el segmento objetivo al que pertenezca. Cada segmento incluye 15 preguntas específicas, lo que resulta en un total de 20 ítems por entrevista. Cabe señalar que, si el entrevistado profundiza en sus respuestas y aborda de forma espontánea cuestiones aún no planteadas, el entrevistador podrá omitir dichas preguntas y avanzar directamente a los siguientes ítems.
 
@@ -440,7 +440,7 @@ Estas entrevistas generan una base de conocimiento que orienta el desarrollo con
 
     15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
 
-- ### 2.2.2. Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
   El registro sistemático de las entrevistas constituye una herramienta esencial para la recopilación y organización rigurosa de la información obtenida de nuestros usuarios. Al documentar de manera estructurada las respuestas, comentarios y observaciones relevantes, se facilita el análisis cualitativo y la detección de patrones o tendencias que sustentan la toma de decisiones (Hair Jr. et al., 2023). Asimismo, contar con un historial detallado de las interacciones permite asegurar la coherencia en el seguimiento de las necesidades y expectativas del usuario a lo largo de las distintas fases del proyecto.
 
@@ -487,9 +487,11 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     - Tecnología actual:
 
-      No emplea dispositivos tecnológicos; usa métodos caseros (ajo diluido) para tratar plagas.
+      No emplea dispositivos tecnológicos para el cuidado de sus plantas. En vez de eso utiliza métodos caseros, como el ajo diluido, para tratar plagas y enfermedades. No conoce sobre herramientas externas y modernas relacionadas a riego, fertilizante o exterminio de plagas.
 
     - Dispositivos:
+
+      * Utiliza laptop doméstica de marca 
 
       Prefiere usar laptop doméstica; no requiere conexión con smartphone.
 
@@ -910,80 +912,94 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
 ---
 
-- ### 2.2.3. Análisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
-**1. Segmento: Jardineros Apasionados y Hogareños**
+  **1. Segmento: Jardineros Apasionados y Hogareños**
+  
+  - **Características Objetivas:**
+  
+  * Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
+  
+  * Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
+  
+  * Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
+  
+  * Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
+  
+  * Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
+  
+  - **Características Subjetivas:**
+  
+  * Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
+  
+  * Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
+  
+  * Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
+  
+  * Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
+  
+  **2. Especialistas de Jardinería y Áreas Verdes**
+  
+  En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Especialistas de Jardinería y Áreas Verdes” (Betty Chumacero, Javier Hernández y Yasser Rentería), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
+  
+  **Características objetivas:**
+  
+  | Característica | Presencia en muestra (n = 3) | Betty (n = 1) | Javier (n = 1) | Yasser (n = 1) | Frecuencia (%) | Implicación para el diseño |
+  |----------------|------------------------------|---------------|----------------|----------------|----------------|----------------------------|
+  | Sistemas de riego automatizado (goteo o motorizado)	| 2 | No | Sí | Sí | 66.7% | Validar modo híbrido: debe soportar riego automático y manual. |
+  | Sensores o medidores de humedad | 2 | No | Sí | Sí | 66.7% | Incluir calibración de sensores y alertas de umbral. |
+  | Dependencia exclusiva de riego manual	| 1 | Sí | No | No | 33.3% | Garantizar opción de riego manual para usuarios que aún valoran el riego como actividad hobby. |
+  | Uso de remedios naturales para plantas | 1 | Sí | No | No | 33.3% | Brindar recomendaciones personalizadas con respecto al uso de ciertos remedios comunes. |
+  | Abonado empírico para el cuidado | 1 | Sí |	No | No | 33.3% | Integrar módulo de dosificación de nutrientes y recordatorios. |
+  | Programación de abonado con fechas | 3 | Sí | Sí | Sí | 100% | Integrar módulo de dosificación de nutrientes y recordatorios. |
+  | Gestión de 100 a más plantas o macetas | 2 | No | Sí | Sí | 66.7% | Desarrollar menús adecuados para la gestión de más de 3 plantas en la aplicación. |
+  | Uso de smartphone y aplicación móvil | 2 | No | Sí | Sí | 66.7% | Desarrollar una aplicación móvil que sea fácil y rápida de usar. |
+  | Uso de computadora y aplicación web | 2 | Sí | No | Sí | 66.7% | Desarrollar una aplicación web que muestre información a profundidad de forma organizada. |
+  | Preferencia por dashboard de supervisión | 3 | Sí | Sí | Sí | 100% | Integrar dashboards para la revisión de distintos detalles de progreso y métricas de plantas. |
+  
+  **Interpretación de características objetivas:**
+  
+  1. Adopción tecnológica intermedia-alta
 
-- **Características Objetivas:**
+  * Sistemas de riego automatizado (66.7 %) y sensores de humedad (66.7 %) son usados por la mayoría.
+  * Aplicaciones móviles (66.7 %) y web (66.7 %) también presentan alta adopción.
+  
+    Implicación: El perfil del especialista ya está parcialmente familiarizado con soluciones tecnológicas, por lo que el diseño no necesita partir desde cero en términos de alfabetización digital. Se debe priorizar la interoperabilidad entre tecnologías existentes (por ejemplo, sensores previos) y brindar funcionalidad multiplataforma (web + app móvil).
+  
+  2. Necesidad de un sistema híbrido y personalizable
 
-* Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
-
-* Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
-
-* Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
-
-* Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
-
-* Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
-
-- **Características Subjetivas:**
-
-* Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
-
-* Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
-
-* Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
-
-* Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
-
-**2. Segmento: Jardineros Profesionales y Experimentados**
-
-En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Especialistas de Jardinería y Áreas Verdes” (Betty Chumacero, Javier Hernández y Yasser Rentería), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
-
-Cabe resaltar que para el proceso de análisis, cada entrevistado representa 33% de la muestra. En todos suma un total de 100%, en dos de tres se suma 67% aproximadamente, y en uno se suma solo 33% aproximado.
-
-**Características objetivas:**
-
-| Característica | Presencia en muestra (n = 3) | Betty (n = 1) | Javier (n = 1) | Yasser (n = 1) | Frecuencia (%) | Implicación para el diseño |
-|----------------|------------------------------|---------------|----------------|----------------|----------------|---------------------------|
-| Sistemas de riego automatizado (goteo o motorizado)	| 2 | No | Sí | Sí | 66.7% | Validar modo híbrido: debe soportar riego automático y manual. |
-| Sensores o medidores de humedad | 2 | No | Sí | Sí | 66.7% | Incluir calibración de sensores y alertas de umbral. |
-| Dependencia exclusiva de riego manual	| 1 | Sí | No | No | 33.3% | Garantizar opción de riego manual para usuarios que aún valoran el riego como actividad hobby. |
-| Uso de remedios naturales para plantas | 1 | Sí | No | No | 33.3% | 
-| Abonado empírico para el cuidado | 1 | Sí |	No | No | 33.3% | Integrar módulo de dosificación de nutrientes y recordatorios. |
-| Programación de abonado con fechas | 3 | Sí | Sí | Sí | 100% | Integrar módulo de dosificación de nutrientes y recordatorios. |
-| Gestión de 100 a más plantas o macetas | 2 | No | Sí | Sí | 66.7% | 
-| Uso de smartphone y aplicación móvil | 2 | No | Sí | Sí | 66.7% |
-| Uso de computadora y aplicación web | 2 | Sí | No | Sí | 66.7% |
-| Preferencia por dashboard de supervisión | 3 | Sí | Sí | Sí | 100% |
-
-**Interpretación de características objetivas:**
-
-  * Automatización y medición: 
-
-    2/3 usan o valoran sistemas de goteo y medidores básicos → necesidad de un sistema híbrido que combine automatización con supervisión manual.
-
-  * Fertilización:
-
-    Todos aplican algún método regular de abonado, desde empírico hasta programado → incluir módulo de recomendaciones de nutrientes.
-
-  * Escala de operación
-
-    2/3 gestionan volúmenes altos (>100 plantas), mientras uno lo hace a escala de hobby → el producto debe escalar desde macetas individuales hasta sistemas de múltiples unidades.
-
-  * Canal principal: 
-
-    Unanimidad en preferencia por un dashboard web local, sin depender exclusivamente de móviles.
-
-**Características subjetivas:**
-
-Interpretación:
-
-Dualidad inversión–lujo y confianza en la fiabilidad son valores universales: el producto debe transmitir solidez y retorno de valor en ahorro de tiempo/recursos.
-
-Interfaz sencilla y modo híbrido (manual + automático): requisito ineludible para cubrir tanto el perfil profesional (Juan, Yasser) como el hobbyista (Betty).
-
-Estética vs funcionalidad: casi todos combinan la búsqueda de un diseño discreto que se integre con el entorno y un enfoque práctico en rendimiento.
+  * 33.3 % aún depende exclusivamente del riego manual, y 100 % abona sus plantas, ya sea empíricamente o programando fechas.
+  * Un entrevistado utiliza remedios naturales, reflejando diversidad en prácticas.
+  
+  Implicación: El producto debe ser modular y configurable. Se recomienda incorporar modos híbridos (manual + automático) para adaptarse al nivel de tecnificación del usuario. También es necesario incluir opciones de personalización para prácticas culturales o empíricas (ej. uso de remedios naturales, fertilización tradicional).
+  
+  3. Enfoque en la gestión masiva de plantas
+ 
+  * 66.7 % administra más de 100 macetas o plantas.
+  * 100 % prefiere dashboards para visualización y supervisión de métricas.
+  
+  Implicación: Se requiere una interfaz escalable, con capacidades de agrupación, filtrado y monitoreo simultáneo de múltiples unidades vegetales. Los dashboards deben ofrecer datos relevantes, como humedad, estado nutricional, historial de riego y alertas, con visualizaciones claras y exportables. 
+  
+  4. Integración total entre tareas clave del cuidado
+  El 100 % programa la fertilización, lo cual sugiere una mentalidad planificada y orientada al rendimiento.
+  
+  Sensores y automatización de riego son comunes, y el uso de apps móviles refuerza la tendencia hacia el control digital.
+  
+  Implicación:
+  
+  Se deben implementar módulos de calendario, recordatorios inteligentes y sugerencias automatizadas en base a datos históricos.
+  
+  Incorporar funciones de aprendizaje automático podría mejorar las predicciones sobre necesidades hídricas o nutricionales por planta.
+  
+  **Características subjetivas:**
+  
+  Interpretación:
+  
+  Dualidad inversión–lujo y confianza en la fiabilidad son valores universales: el producto debe transmitir solidez y retorno de valor en ahorro de tiempo/recursos.
+  
+  Interfaz sencilla y modo híbrido (manual + automático): requisito ineludible para cubrir tanto el perfil profesional (Juan, Yasser) como el hobbyista (Betty).
+  
+  Estética vs funcionalidad: casi todos combinan la búsqueda de un diseño discreto que se integre con el entorno y un enfoque práctico en rendimiento.
 
 1. Arquetipo de User Persona
 De la convergencia de estos datos surge un único arquetipo que integra las necesidades y motivaciones más representativas:
@@ -1045,7 +1061,7 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 
 - ### 2.3.1. User Personas
 
-  En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
+En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
     ![UserPerson_1](../assets/img/capitulo2/needfinding/user-persona/UserPerson1.png) <br><br>
