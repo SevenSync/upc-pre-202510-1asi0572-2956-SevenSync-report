@@ -1107,23 +1107,26 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 
 En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
 
-| **Termino**                                         | **Definición**                                                                                         |
+| **Término**                                         | **Definición**                                                                                         |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Mace Tech** (_Maceta Inteligente_)                | Dispositivo físico con sensores que permite monitorear el estado de una planta en tiempo real.         |
-| **Moisture Sensor** (_Sensor de humedad_)           | Componente que detecta el nivel de humedad en la tierra de la maceta.                                  |
-| **Light Sensor** (_Sensor de luz_)                  | Componente que mide la cantidad de luz que recibe la planta.                                           |
-| **Temperature Sensor** (_Sensor de temperatura_)    | Componente que mide la temperatura ambiental alrededor de la planta.                                   |
-| **Plant Status** (_Estado de la planta_)            | Representación visual y textual del estado actual de la planta (saludable, poca agua, poca luz, etc.). |
-| **Smart Notification** (_Notificación inteligente_) | Alerta automática que avisa al usuario que la planta necesita atención.                                |
-| **Plant History** (_Historial de planta_)           | Registro de datos y acciones realizadas sobre una planta específica.                                   |
-| **Home User** (_Usuario doméstico_)                 | Persona que cuida plantas en casa para fines personales o decorativos.                                 |
-| **Professional User** (_Usuario profesional_)       | Jardinero o técnico que gestiona plantas para terceros o múltiples espacios.                           |
+| **Alert Level** (_Nivel de alerta_)                 | Clasificación del estado de la planta: normal, advertencia o crítico.                                  |
+| **Automatic Watering** (_Riego automático_)         | Función que activa el riego cuando la humedad está por debajo de un valor mínimo.                      |
 | **Client** (_Cliente_)                              | Persona o entidad para quien el jardinero profesional ofrece sus servicios.                            |
+| **Dashboard**                                       | Vista central de la plataforma donde el usuario puede monitorear el estado general de sus plantas.     |
+| **Home User** (_Usuario doméstico_)                 | Persona que cuida plantas en casa para fines personales o decorativos.                                 |
+| **IAM** (_Gestión de Identidad y Acceso_)           | Sistema que gestiona quién puede acceder al sistema y qué permisos tiene cada usuario.                 |
+| **Landing Page**                                    | Página inicial del producto donde se explica su valor y se invita a registrarse.                       |
+| **Light Sensor** (_Sensor de luz_)                  | Componente que mide la cantidad de luz que recibe la planta.                                           |
+| **Mace Tech** (_Maceta Inteligente_)                | Dispositivo físico con sensores que permite monitorear el estado de una planta en tiempo real.         |
 | **Maintenance Report** (_Reporte de mantenimiento_) | Documento generado con el estado y acciones aplicadas a las plantas.                                   |
 | **Mobile App** (_App móvil_)                        | Aplicación para celulares donde se visualizan alertas o estados rápidos de las plantas.                |
-| **Web App** (_App web_)                             | Plataforma completa para gestionar plantas, consultar historial y configurar el sistema.               |
-| **Landing Page**                                    | Página inicial del producto donde se explica su valor y se invita a registrarse.                       |
-| **Automatic Watering** (_Riego automático_)         | Función que activa el riego cuando la humedad está por debajo de un valor mínimo.                      |
 | **Monitoring Area** (_Zona de monitoreo_)           | Espacio físico donde están ubicadas una o más macetas inteligentes.                                    |
-| **Alert Level** (_Nivel de alerta_)                 | Clasificación del estado de la planta: normal, advertencia o crítico.                                  |
+| **Moisture Sensor** (_Sensor de humedad_)           | Componente que detecta el nivel de humedad en la tierra de la maceta.                                  |
+| **Plant History** (_Historial de planta_)           | Registro de datos y acciones realizadas sobre una planta específica.                                   |
+| **Plant Status** (_Estado de la planta_)            | Representación visual y textual del estado actual de la planta (saludable, poca agua, poca luz, etc.). |
+| **Professional User** (_Usuario profesional_)       | Jardinero o técnico que gestiona plantas para terceros o múltiples espacios.                           |
+| **Recommendations** (_Recomendaciones_)             | Sugerencias personalizadas generadas según las condiciones actuales de la planta.                      |
+| **Smart Notification** (_Notificación inteligente_) | Alerta automática que avisa al usuario que la planta necesita atención.                                |
+| **Temperature Sensor** (_Sensor de temperatura_)    | Componente que mide la temperatura ambiental alrededor de la planta.                                   |
 | **User Profile** (_Perfil de usuario_)              | Información personal y preferencias del usuario dentro del sistema.                                    |
+| **Web App** (_App web_)                             | Plataforma completa para gestionar plantas, consultar historial y configurar el sistema.               |
