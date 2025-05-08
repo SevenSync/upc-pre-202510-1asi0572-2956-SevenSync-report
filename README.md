@@ -260,7 +260,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       Contribuí al diseño de los diagramas técnicos que describen el flujo de datos dentro del sistema de la maceta inteligente y cómo se integrarán los sensores IoT.<br><br>
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
-      Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real.
+      Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real. <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     <br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
       </td>
       <td>
       <b> TB1</b><br>
@@ -281,6 +298,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Mejoré mis habilidades en la creación de diagramas y documentación técnica que ayudarán en la correcta implementación del sistema a medida que el proyecto avance.
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     <br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
       </td>
     </tr>
     <tr>
@@ -304,6 +339,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Estudiamos el impacto de las soluciones tecnológicas en el sector de la jardinería y cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores.
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     <br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
       </td>
       <td>
       <b> TB1</b><br>
@@ -324,6 +377,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Aumenté mi comprensión sobre cómo IoT puede optimizar la eficiencia del monitoreo de plantas y mejorar la gestión de recursos como agua y fertilizantes.
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     <br><br>
+      <b> TB1</b><br>
+      <u> Flavio Trigeros </u><br>
       </td>
     </tr>
   </tbody>
