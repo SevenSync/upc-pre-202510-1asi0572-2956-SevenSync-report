@@ -18,7 +18,7 @@ Página web principal: https://uk.clickandgrow.com/?srsltid=AfmBOop4Wmi3FQCFLOLn
 
 _Modelo del producto Smart Garden ofrecido por Click & Grow_
 
-<img src="../assets/img/capitulo2/competitors/click-and-grow-smart-garden.png" alt="Una maceta blanca, tecnológica, e inteligente del competidor Click & Grow." width="300" height="300"> <br>
+<img src="/assets/img/capitulo-2/competitors/click-and-grow-smart-garden.png" alt="Una maceta blanca, tecnológica, e inteligente del competidor Click & Grow." width="300" height="300"> <br>
 
 Click & Grow es una compañía estoniana fundada en 2009 por Mattias Lepp y sus colegas, con sede en Tartu, Estonia. Su misión es llevar la jardinería a hogares de todo el mundo mediante sistemas de cultivo inteligentes y de bajo mantenimiento.
 
@@ -50,7 +50,7 @@ Página web de venta: https://www.amazon.es/Flower-Care-fertilidad-feuchtigkeits
 
 _Modelo del producto Mi Flower Care Plant Sensor ofrecido por Xiaomi con su línea Mi Ecosystem_
 
-<img src="../assets/img/capitulo2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Un sensor para plantas y flores de Xiaomi Mi Ecosystem." width="300" height="300"> <br>
+<img src="/assets/img/capitulo-2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Un sensor para plantas y flores de Xiaomi Mi Ecosystem." width="300" height="300"> <br>
 
 Xiaomi Mi Flower Care es un dispositivo de la línea _Mi Ecosystem_, lanzado en 2017 por la filial Xiaomi Youpin, con sede en Beijing, China. Su objetivo es ofrecer un sensor compacto y asequible para el cuidado de plantas de interior, integrándose al ecosistema Mi Home de Xiaomi.
 
@@ -82,7 +82,7 @@ Página web principal: https://masdio.com/products/masdio-ivy-smart-flowerpots?s
 
 _Modelo del producto Ivy Smart Flowerpot ofrecido por Masdio_
 
-<img src="../assets/img/capitulo2/competitors/masdio-flowerpot.png" alt="Maceta inteligente de Masdio." width="300" height="300"> <br>
+<img src="/assets/img/capitulo-2/competitors/masdio-flowerpot.png" alt="Maceta inteligente de Masdio." width="300" height="300"> <br>
 
 Masdio es una startup española que en 2023 lanzó la maceta inteligente Ivy Smart Flowerpot, diseñada para cultivo de interior con enfoque en diseño minimalista y conectividad integral. Se distribuye en Europa y Latinoamérica a través de su web y partners de decoración.
 
@@ -125,10 +125,10 @@ _Análisis Competitivo organizado para todos los competidores potenciales de Mac
     </tr>
     <tr>
       <td colspan="2"></td>
-      <td><strong>Macetech</strong><img src="../assets/img/capitulo2/competitors/macetech-logo-product.png" alt="Macetech logo"></td>
-      <td><strong>Click and Grow</strong> <img src="../assets/img/capitulo2/competitors/click-and-grow-smart-garden.png" alt="Competitor 1: Click & Grow smart garden product"></td>
-      <td><strong>Xiaomi Mi Flower Care</strong><img src="../assets/img/capitulo2/competitors/masdio-flowerpot.png" alt="Competitor 2: Xiaomi Mi Flower Care sensor"></td>
-      <td><strong>Masdio Flowerpot</strong><img src="../assets/img/capitulo2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Competitor 3: Masdio Smart Flowerpot"></td>
+      <td><strong>Macetech</strong><img src="/assets/img/capitulo-2/competitors/macetech-logo-product.png" alt="Macetech logo"></td>
+      <td><strong>Click and Grow</strong> <img src="/assets/img/capitulo-2/competitors/click-and-grow-smart-garden.png" alt="Competitor 1: Click & Grow smart garden product"></td>
+      <td><strong>Xiaomi Mi Flower Care</strong><img src="/assets/img/capitulo-2/competitors/xiaomi-mi-flower-care-plant-sensor.png" alt="Competitor 2: Xiaomi Mi Flower Care sensor"></td>
+      <td><strong>Masdio Flowerpot</strong><img src="/assets/img/capitulo-2/competitors/masdio-flowerpot.png" alt="Competitor 3: Masdio Smart Flowerpot"></td>
     </tr>
     <tr>
       <td rowspan="2"><strong>Perfil</strong></td>
@@ -471,7 +471,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la primera entrevista realizada al primer segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/rosalinda-quispe-interview.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
+    <img src="/assets/img/capitulo-2/interviews/rosalinda-quispe.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
 
     _Nota_. En la imagen se puede visualizar a la entrevistada, Rosalinda Quispe, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Ruben Mallma, se encuentra en el lado izquierdo.
 
@@ -548,7 +548,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la segunda entrevista realizada al primer segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/sirley-zapata-interview.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
+    <img src="/assets/img/capitulo-2/interviews/sirley-zapata-interview.png" alt="Captura de pantalla de la entrevistada Sirley Zapata y el entrevistador Luiggi Paredes durante el proceso de entrevista virtual." width="600" height="320"> <br>
 
     _Nota_. En la imagen se puede visualizar a la entrevistada, Sirley Zapata, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Luiggi Paredes, se encuentra en el lado superior derecho.
 
@@ -622,7 +622,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la tercera entrevista realizada al primer segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/andres-torres-interview.png" alt="Captura de pantalla del entrevistado Andrés Torres y el entrevistador Fabrizio Sanchez durante el proceso de entrevista virtual." width="600" height="300"> <br>
+    <img src="/assets/img/capitulo-2/interviews/andres-torres-interview.png" alt="Captura de pantalla del entrevistado Andrés Torres y el entrevistador Fabrizio Sanchez durante el proceso de entrevista virtual." width="600" height="300"> <br>
 
     _Nota_. En la imagen se puede visualizar al entrevistado, Andrés Torres, en casi toda la pantalla, mientras que el entrevistador y miembro de SevenSync, Fabrizio Sanchez, se encuentra en la esquina inferior derecha.
 
@@ -700,7 +700,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la primera entrevista realizada al segundo segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/yasser-renteria-interview.png" alt="Captura de pantalla del entrevistado Yasser Rentería y el entrevistador Lucio Yen durante el proceso de entrevista virtual." width="750" height="250"> <br>
+    <img src="/assets/img/capitulo-2/interviews/yasser-renteria-interview.png" alt="Captura de pantalla del entrevistado Yasser Rentería y el entrevistador Lucio Yen durante el proceso de entrevista virtual." width="750" height="250"> <br>
 
     _Nota_. En la imagen se puede visualizar al entrevistado, Yasser Rentería, en el lado derecho, mientras que el entrevistador y miembro de SevenSync, Lucio Yen, se encuentra en el lado izquierdo.
 
@@ -780,7 +780,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la segunda entrevista realizada al segundo segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/javier-hernandez-interview.png" alt="Captura de pantalla del entrevistado Javier Hernández y el entrevistador Juan Pescorán durante el proceso de entrevista virtual." width="750" height="350"> <br>
+    <img src="/assets/img/capitulo-2/interviews/javier-hernandez-interview.png" alt="Captura de pantalla del entrevistado Javier Hernández y el entrevistador Juan Pescorán durante el proceso de entrevista virtual." width="750" height="350"> <br>
 
     _Nota_. En la imagen se puede visualizar al entrevistado, Javier Hernández, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Juan Pescorán, se encuentra en el lado inferior derecho.
 
@@ -854,7 +854,7 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     _Captura de pantalla de la tercera entrevista realizada al segundo segmento objetivo de Macetech_
 
-    <img src="../assets/img/capitulo2/interviews/betty-chumacero-interview.png" alt="Captura de pantalla del entrevistado Betty Chumacero" width="750" height="450"> <br>
+    <img src="/assets/img/capitulo-2/interviews/betty-chumacero-interview.png" alt="Captura de pantalla del entrevistado Betty Chumacero" width="750" height="450"> <br>
 
     _Nota_. En la imagen se puede visualizar a la entrevistada, Betty Chumacero, en el centro de la pantalla, mientras que el entrevistador y miembro de SevenSync, Flavio Trigueros, no aparece en la captura debido a que se encuentra en una pantalla separada de Zoom. El entrevistador sí aparece en el vídeo, pero en ningún momento el entrevistador y la entrevistada salen al mismo tiempo.
 
@@ -1064,10 +1064,10 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![UserPerson_1](../assets/img/capitulo2/needfinding/user-persona/UserPerson1.png) <br><br>
+    ![UserPerson_1](/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![UserPerson_2](../assets/img/capitulo2/needfinding/user-persona/UserPerson2.png) <br><br>
+    ![UserPerson_2](/assets/img/capitulo-2/needfinding/user-persona/UserPerson2.png) <br><br>
 
 - ### 2.3.2. User Task Matrix
 
@@ -1168,35 +1168,36 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
     </tbody>
   </table>
 
+PON TU EXPLICACION COMO DICE EN EL STATEMENT
 - ### 2.3.3. User Journey Mapping
 
   El User Journey Mapping es una herramienta para comprender la experiencia del usuario de manera holística, lo que permite a los equipos de diseño crear productos y servicios que se alineen mejor con las necesidades y expectativas de los usuarios.<br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![JourneyMap_1](../assets/img/capitulo2/needfinding/journey-mapping/JourneyMap_Segmento1.png) <br><br>
+    ![JourneyMap_1](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![JourneyMap_2](../assets/img/capitulo2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
+    ![JourneyMap_2](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
 
 - ### 2.3.4. Empathy Mapping
 
   Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo. <br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![EmpathyMap_1](../assets/img/capitulo2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
+    ![EmpathyMap_1](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![EmpathyMap_2](../assets/img/capitulo2/needfinding/empathy-mapping/EmpathyMap2.png)
+    ![EmpathyMap_2](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap2.png)
 
 - ### 2.3.5. As-is Scenario Mapping
 
   El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
 
   - **Segmento 1: Personas Apasionadas por las plantas**
-    ![As_Is-1](../assets/img/capitulo2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
+    ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
 
   - **Segmento 2: Personas dedicadas a la jardineria**
-    ![As_Is-2](../assets/img/capitulo2/needfinding/as-is-mapping/As_Is-Segmento2.png)
+    ![As_Is-2](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
 
