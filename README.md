@@ -1,6 +1,6 @@
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-![UPC](assets/UPC_logo_transparente.png)
+![UPC](assets/img/portada/UPC_logo_transparente.png)
 
 # Desarrollo de Soluciones IOT (2956)
 
@@ -16,10 +16,14 @@
 
 INTEGRANTES
 
-- Fabrizio Alessandro Sanchez Zamora (U202213652)
-- Luiggi Gianfranco Paredes Zapata (U202218996)
+- Paredes Zapata, Luiggi Gianfranco  (U202218996)
+- Pescorán Angulo, Juan Fabritzzio (U20221C936)
+- Mallma Quispe, Rubén Elías (U202214234)
+- Sanchez Zamora, Fabrizio Alessandro  (U202213652)
+- Trigueros Chumacero, Flavio Eduardo (U202210190)
+- Yen Cerna, Lucio Heli (U202213143)
 
-FECHA: ABRIL 2025
+FECHA: MAYO 2025
 
 ---
 
@@ -27,21 +31,95 @@ FECHA: ABRIL 2025
 
 | Versión               | Fecha    | Autores | Descripción de Modificación |
 | --------------------- | -------- | ------- | --------------------------- |
-| Primera entrega (TB1) | -/-/2025 |         |                             |
-
+| 1.0 - TB1 | 27/4/25 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli  | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25 |
+2.0 - TP|16/05/2025|Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli|Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega.|
 ---
 
 # Project Report Collaboration Insights
 
-El siguiente enlace lleva al URL del repositorio que se encuentra en nuestra
-organización pública:
+En esta sección, se registra las colaboraciones realizadas por los miembros del equipo durante el desarrollo del informe del proyecto. En primer lugar, se brinda el enlace del repositorio del reporte del proyecto en la plataforma GitHub.
 
-https://github.com/SevenSync/Report
-
-Aquí se encuentra el resultado del Project Report de la entrega correspondiente.
+**Project Report:** https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-report
 
 A continuación, se explicará todo a cerca del desarrollo de activades para la
-elaboración del informe junto con capturas de los analíticos de colaboración y commits en Github.
+elaboración del informe. Adicionalmente, se presentan las métricas de las acciones del equipo del Project Report de cada entrega correspondiente en forma de contribuciones, commits y network graph registrados en GitHub.
+
+**TB1 Project Report Collaboration Insights**
+
+*Vista general de las contribuciones del equipo*
+<img src="/assets/img/portada/team-contributions-tb1.png" alt="contribuciones del equipo para la TB1">
+*Contribuciones por miembro del equipo*
+<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para la TB1">
+
+
+*Commits*
+
+<img src="/assets/img/portada/commits-tb1.png" alt="commits del equipo para la TB1">
+
+*Network Graph*
+<img src="/assets/img/portada/network-graph-tb1.png" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1-b.png"alt="gráfico de red de ramas del equipo para la TB1">
+
+
+De las contribuciones del equipo y commits se concluye lo siguiente: 
+
+- Para esta entrega, se han realizado un total de 70 commits.
+
+- La mayor concentración de commits estuvo en las ramas capitulo-I y capitulo-II.
+ 
+- El equipo no logró el alcance de la entrega al no finalizar el desarrollo del capítulo III y IV.
+
+- El equipo considera que hubo falta de organización y balance en la repartición de artefactos de los capítulos.
+
+Para el control de versiones, decidimos emplear 6 ramas:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+**capitulo-I, capitulo-II, capitulo-III y capitulo-IV:** Estas ramas permiten integrar los artefactos solicitados por capítulo. Se trabaja de esta manera para asegurar una integración controlada, una colaboración enfocada y un aislamiento de cambios.
+
+En esta entrega no se han utilizado pull requests.
+
+**TP Project Report Collaboration Insights**
+
+*Vista general de las contribuciones del equipo*
+<img src="/assets/img/portada/team-contributions-tp.png" alt="contribuciones del equipo para el trabajo parcial">
+*Contribuciones por miembro del equipo*
+<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
+
+
+*Commits*
+
+<img src="/assets/img/portada/commits-tp.png" alt="commits del equipo para el trabajo parcial">
+
+*Network Graph*
+<img src="/assets/img/portada/network-graph-tp.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+<img src="/assets/img/portada/network-graph-tp-b.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+
+De las contribuciones del equipo y commits se concluye lo siguiente: 
+
+- Para esta entrega, se han realizado un total de (numero) commits.
+
+- La mayor concentración de commits estuvo en la rama develop.
+ 
+- El equipo logró el alcance de la entrega al finalizar el desarrollo del capítulo III, IV, V y VI y aplicar las correcciones brindadas en la retroalimentación con el docente.
+
+- El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
+
+Para el control de versiones, decidimos emplear 2 ramas estables y ramas temporales:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+**ramas temporales**: Estas ramas entregan valor que se integrará posteriomente en develop mediante pull requests, estas ramas aseguran la reversión sencilla. Al ser fusionadas, estas son eliminadas promoviendo la organización y limpieza.
+
+Las otras ramas utilizadas en la TB1 fueron declaradas en desuso al cambiar el manejo de las ramas, por lo tanto, fueron eliminadas. 
+
+En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop.
 
 # Contenido
 
