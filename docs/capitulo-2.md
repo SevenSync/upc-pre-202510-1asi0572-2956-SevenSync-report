@@ -470,6 +470,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Villa María del Triunfo
   - **Ocupación:** Carpintera
+  - **Dispositivo más usado**: Laptop doméstica
+  - **Navegador más usado**: Microsoft Edge
     <br><br>
   - **Tiempo de Entrevista:** 8 minutos con 35 segundos
   - **Inicio de Entrevista:** 0:00
@@ -486,55 +488,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
   - **Resumen De Entrevista**
 
-    La entrevistada, sin experiencia formal en jardinería ni ocupación directa relacionada con plantas, manifestó un vínculo emocional profundo con sus macetas, especialmente aquellas con valor decorativo o productivo. Su interés en el cuidado de plantas comenzó hace 19 años, como una forma de relajación y conexión personal, lo que la ha llevado a establecer una rutina diaria de observación y cuidado sin ningún tipo de especialización técnica. Su nivel de experiencia es empírico, basado en observación constante y métodos caseros como el uso de ajo diluido en agua para tratar enfermedades.
+    ### 🎯 Goals (Objetivos)
 
-    Cuida diversas plantas, con preferencia por aquellas que producen frutos, aunque actualmente cultiva mayormente especies decorativas por su simplicidad. Identifica como principales retos la aparición de plagas y enfermedades, lo cual le genera preocupación y tristeza cuando no puede resolverlo. No utiliza herramientas digitales ni dispositivos tecnológicos, sino remedios caseros, y confía en su intuición para interpretar el estado de sus plantas.
+    - Conservar sus plantas saludables y floreciendo.
+    - Encontrar una forma de cuidar mejor las plantas sin depender únicamente de la intuición.
+    - Tener herramientas que le ayuden a prevenir enfermedades y estrés vegetal.
 
-    La propuesta de Macetech le resulta “tranquilizante” y atractiva. Imagina la maceta inteligente como una solución útil que le permitiría conocer el estado de sus plantas (humedad, nutrientes, pH) y actuar en consecuencia sin depender únicamente de su experiencia empírica. Considera que esta tecnología sería un lujo, pero también una inversión justificada, especialmente si le permite cultivar plantas con frutos de manera más eficiente. Preferiría revisar los datos en una laptop del hogar, sin necesidad de integrar el sistema a su rutina laboral o móvil. Le parece ideal tener una interfaz integrada en la casa que le permita ver el estado de todas sus plantas sin esfuerzo adicional.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Me gusta cuidar mis plantas todos los días, pero a veces no sé si estoy haciendo lo correcto.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      No emplea dispositivos tecnológicos para el cuidado de sus plantas. En vez de eso utiliza métodos caseros, como el ajo diluido, para tratar plagas y enfermedades. No conoce sobre herramientas externas y modernas relacionadas a riego, fertilizante o exterminio de plagas.
+    Su interés por el cuidado de las plantas comenzó hace 19 años como una forma de relajación. Tiene una conexión emocional fuerte con sus macetas y cultiva por gusto, no por profesión. No utiliza tecnología, solo observación y métodos caseros. Valora soluciones sencillas que complementen su intuición sin necesidad de depender de apps móviles.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      - Utiliza laptop doméstica de marca
+    - Sentirse conectada con la naturaleza.
+    - Ver sus plantas florecer y producir frutos.
+    - Prevenir enfermedades sin tener que investigar demasiado.
 
-      Prefiere usar laptop doméstica; no requiere conexión con smartphone.
+    ### 😣 Frustrations
 
-    - Canales de interacción deseados:
+    - No saber con certeza si sus plantas están bien cuidadas.
+    - Frustración ante plagas y enfermedades que no sabe tratar.
+    - No contar con herramientas simples y confiables para orientarse.
 
-      Dashboard web doméstico. No necesita acceso móvil frecuente. Que muestre la salud general de la planta, humedad del suelo, nutrientes, signos de enfermedad o estrés vegetal.
+    ### 💻 Tecnología
 
-      Guía digital incorporada (explicaciones contextualizadas de alertas, p. ej., cómo corregir pH).
-
-    - Expectativas tecnológicas:
-
-      Interfaz sencilla en laptop; monitoreo pasivo diario; automatización útil, pero no prioriza conectividad móvil ni funciones complejas.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Cuidado emocional y afectivo hacia las plantas; satisfacción personal por verlas crecer y florecer.
-
-    - Diseño y estética:
-
-      No especificado, pero acepta un volumen mayor en la maceta si eso implica mayor funcionalidad.
-
-    - Percepción de valor:
-
-      Considera que la maceta es una mezcla de lujo e inversión; más inclinada a valorarla por su impacto emocional que por su rentabilidad.
-
-    - Influencia de marcas:
-
-      Se enfoca en el bienestar de sus plantas más que en la marca del producto.
-
-    - Personalidad:
-
-      Cuidadora emocional; conectada espiritualmente con sus plantas; busca simplicidad, apoyo tecnológico sin dependencia digital y soluciones accesibles.
+    - Usa laptop doméstica.
+    - Prefiere una interfaz sencilla que funcione desde su casa.
 
 ---
 
@@ -547,6 +530,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Cajamarca
   - **Distrito:** Cajamarca
   - **Ocupación:** Ama de casa
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Google Chrome
     <br><br>
   - **Tiempo de Entrevista:** 6 minutos con 22 segundos
   - **Inicio de Entrevista:** 8:36
@@ -563,53 +548,37 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
   - **Resumen De Entrevista**
 
-    La entrevistada es una aficionada de larga data al cuidado de plantas ornamentales, actividad que practica desde su infancia, pero no desde un punto profesional, sino más como una aficionada. Se muestra apasionada por el aspecto estético (“disfruto de que una planta se haga bonita a la vista”) y al mismo tiempo preocupada por desafíos prácticos, especialmente el control de plagas y el riego (“a veces olvido regarla o la riego demasiado y se pueden pudrir o ahogar”).
+    ### 🎯 Goals (Objetivos)
 
-    Actualmente no utiliza ningún dispositivo tecnológico para el riego o supervisión, pero valora positivamente la idea de una maceta inteligente que automatice estas tareas. Espera que el sistema le avise precisamente cuándo y cuánta agua necesita cada planta, así como recomendaciones de abonado adecuadas a cada especie. En cuanto al diseño, desea que la maceta combine con la decoración de su hogar, tal como una pieza de cerámica moderna, y que los cables, en caso de haberlos, queden discretos (“no quisiera que tenga un aspecto desagradable”).
+    - Ver sus plantas estéticamente agradables y saludables.
+    - Recibir recordatorios claros sobre cuándo y cómo regar o mover sus plantas.
+    - Evitar el deterioro de las plantas por errores de riego o falta de conocimiento técnico.
 
-    Respecto al uso de una aplicación móvil o web, la participante solicita una interfaz muy sencilla, con recordatorios automáticos al teléfono (“alertas que me indiquen ‘tu planta necesita agua’ o que mueva la maceta a la sombra”). Sugiere además retroalimentación por voz o sonido para no depender únicamente de la app, y la inclusión de una guía digital que explique, por ejemplo, cómo corregir un pH bajo sin recurrir a múltiples recursos externos.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “A veces olvido regarla o la riego demasiado y se pueden pudrir o ahogar.”
 
-    - Tecnología actual: No utiliza ninguna tecnología avanzada o métodos caseros para el cuidado.
+    ### 🧠 Background
 
-    - Dispositivos:
+    Desde la infancia ha cultivado plantas ornamentales por gusto personal, sin formación profesional. No utiliza dispositivos tecnológicos actualmente, pero está interesada en soluciones que la ayuden a evitar errores comunes como el exceso de agua o el olvido del riego. Aprecia tanto la funcionalidad como la estética en los productos que incorpora a su hogar.
 
-      Smartphone (sin preferencia de sistema operativo), accediendo a través de un navegador estándar.
+    ### 💡 Motivations
 
-    - Canales de interacción deseados:
+    - Tranquilidad al saber que sus plantas están bien cuidadas.
+    - Estética visual: le gusta que sus plantas embellezcan el espacio.
+    - Automatizar sin perder control: recibir indicaciones claras sin necesidad de investigar por su cuenta.
 
-      Aplicación móvil con notificaciones push (“avísame cuándo regar” o “mueve la maceta a la sombra”).
+    ### 😣 Frustrations
 
-      Guía digital incorporada (explicaciones contextualizadas de alertas, p. ej., cómo corregir pH).
+    - Plagas difíciles de manejar.
+    - Riegos incorrectos por falta de precisión.
+    - Sistemas poco estéticos o con muchos cables visibles.
+    - Plataformas o aplicaciones complicadas para personas adultas.
 
-      Retroalimentación por voz o sonido para no depender exclusivamente de la app.
+    ### 💻 Tecnología
 
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva, mínima curva de aprendizaje para adultos de todas las edades, y alertas claras tanto visuales como auditivas.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Disfruta de ver sus plantas “bonitas a la vista” y busca tranquilidad frente a plagas y errores de riego (“pueden pudrirse o ahogarse”).
-
-    - Diseño y estética:
-
-      Prefiere que la maceta tenga un estilo cerámico moderno, sin cables visibles que desentonen con su sala, balcón o hall.
-
-    - Percepción de valor:
-
-      Considera la maceta inteligente una inversión a largo plazo si el precio es razonable, aunque teme que un costo elevado la convierta en un lujo.
-
-    - Influencia de marcas:
-
-      No menciona marcas específicas, pero su criterio se basa en la simplicidad y durabilidad.
-
-    - Personalidad:
-
-      Se percibe una personalidad pragmática y detallista, enfocada en soluciones que faciliten el mantenimiento sin sacrificar lo estético. Prefiere dispositivos móviles y navegadores web sencillos, sin plataformas avanzadas, siempre que sean intuitivos para cualquier edad.
+    - Usa smartphone como principal dispositivo.
+    - No utiliza tecnología actualmente para plantas.
 
 ---
 
@@ -622,6 +591,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Lince
   - **Ocupación:** Estudiante universitario
+  - **Dispositivo más usado**: Laptop
+  - **Navegador más usado**: Opera GX
     <br><br>
   - **Tiempo de entrevista:** 8 minutos con 28 segundos
   - **Inicio de entrevista:** 14:58
@@ -637,55 +608,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista** <br>
 
-    El entrevistado es un apasionado del cuidado de plantas desde que tenía 10 años, con más de una década de práctica no profesional pero aficionada. Se inclina por especies ornamentales y tropicales, como orquídeas (catleyas), palmeras y orejas de elefantes, y encuentra en la jardinería un vínculo emocional con la naturaleza, apreciando su belleza y la sensación de energía que transmiten los seres vivos. Al mismo tiempo, reconoce como principal desafío la diversidad de requerimientos de riego y cuidado: cada planta exige una dosificación exacta de agua y nutrientes, y un manejo inadecuado puede “machucarlas” y comprometer su crecimiento.
+    ### 🎯 Goals (Objetivos)
 
-    Aunque actualmente no emplea dispositivos automatizados, ha explorado aplicaciones de identificación de plantas mediante fotografía, pero sin herramientas que asistan el riego o la supervisión de condiciones. Valora la idea de una maceta inteligente capaz de medir humedad, luz y temperatura, y que ofrezca control centralizado al momento de la siembra. Espera que el sistema le indique cuándo mover la planta de lugar o ajustar el riego, y que canalice esos datos a través de una aplicación móvil y web sencilla de operar, con notificaciones remotas al teléfono (“poder gestionarlo desde cualquier sitio”).
+    - Mantener cada planta con su riego y cuidado óptimos según su especie.
+    - Obtener recomendaciones para mover o ajustar condiciones según el clima o ambiente.
+    - Integrar sus plantas en un hogar inteligente sin comprometer el diseño.
 
-    En cuanto a integración en el hogar, visualiza la maceta inteligente como un componente más de una “casa moderna e inteligente”, capaz de sincronizarse con otros dispositivos de domótica (por ejemplo, Alexa) y de encajar en un entorno minimalista. Para mejorar la experiencia, recomienda que el diseño sea discreto y elegante, sin sobresalir en la decoración; que los cables queden ocultos; y que, además de alertas visuales, incorpore recordatorios sonoros o por voz. Considera la inversión rentable a largo plazo para quien cultiva varias plantas, aunque advierte que un precio elevado podría convertirla en un artículo de lujo.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Si no sabes la dosis justa de agua o nutrientes, puedes machucar a la planta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Ninguna (solo apps de identificación visual).
+    Desde los 10 años, Andres ha cuidado plantas ornamentales y tropicales como orquídeas, palmeras y orejas de elefante. Aunque no tiene formación profesional, su experiencia se basa en observación y ensayo-error. Actualmente no utiliza tecnologías automatizadas, pero ha probado apps de identificación visual. Ve la jardinería como un vínculo emocional y estético con la naturaleza.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Smartphone con navegador estándar; acceso deseado a aplicación móvil y web.
+    - Sensación de energía y paz al convivir con seres vivos.
+    - Cuidado detallado y preciso según necesidades de cada planta.
+    - Integración tecnológica que simplifique su rutina diaria.
 
-    - Canales de interacción:
+    ### 😣 Frustrations
 
-      Notificaciones push al celular (“alerta de riego” o “mover planta”).
+    - Diversidad de requerimientos según especie dificulta el manejo uniforme.
+    - No contar con datos claros que indiquen cuándo regar o mover una planta.
+    - Falta de herramientas que se sincronicen con su estilo de vida conectado.
 
-      Plataforma web para supervisión remota.
+    ### 💻 Tecnología
 
-      Integración con asistentes de hogar inteligente (por ejemplo, Alexa).
-
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva, baja curva de aprendizaje, accesible para distintos perfiles de edad.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Conexión emocional con la naturaleza; disfrute estético y sensorial.
-
-    - Diseño y estética:
-
-      Preferencia por minimalismo, ocultar cables y coherencia con decoración moderna.
-
-    - Percepción de valor:
-
-      Considera un gasto justificado como inversión a largo plazo, aunque precio excesivo implica sensación de lujo.
-
-    - Influencia de marcas:
-
-      No menciona marcas específicas; valor en la simplicidad y eficacia.
-
-    - Personalidad:
-
-      Emprendedor experimental, orientado a soluciones prácticas, con mentalidad de integrar domótica y automatización en su vida diaria.
+    - Usa Laptop y computadora de escritorio.
+    - Desea recibir notificaciones de riego, luz o temperatura vía móvil y web.
 
 ---
 
@@ -700,6 +652,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Chorrillos
   - **Ocupación¨:** Jardinero independiente
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de entrevista:** 8 minutos exactos
   - **Inicio de entrevista:** 23:27
@@ -715,59 +669,35 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista** <br>
 
-    El entrevistado, Yasser Rentería Palacios, acumula cinco años de experiencia como jardinero independiente, gestionando entre 200 y 250 plantas ornamentales y aromáticas. Su nivel de expertise lo considera medio‑alto, basada en inspecciones diarias de riego (dos‑a‑tres veces por semana, ajustadas según clima) y fertilización orgánica quincenal. Identifica como principales retos las variaciones de temperatura y la aparición de nuevas plagas, las cuales actualmente detecta “a puro ojo” tras una observación constante.
+    ### 🎯 Goals (Objetivos)
 
-    Aunque ya emplea un sistema de riego por goteo y algunas herramientas de identificación de plagas, reconoce su carácter “básico y primitivo” y valora la propuesta de Macetech para automatizar riego, humedad y nutrientes. Espera un sistema capaz de monitorizar en tiempo real la salud del suelo y la planta, y de emitir alertas precisas cuando las condiciones requieran intervención. Reclama, además, recomendaciones de acción (“saber qué debo hacer en cada momento”) y la posibilidad de visualizar toda la información desde una plataforma web o móvil, lo que califica de “muy importante” para sus proyectos tanto en interiores como en exteriores.
+    - Monitorear en tiempo real la salud del suelo y las plantas.
+    - Automatizar el riego y reducir la intervención manual sin perder control.
+    - Visualizar el estado de todas sus plantas desde un dashboard profesional.
 
-    Visualiza la maceta inteligente como un complemento natural en su flujo de trabajo, integrándose con otros sistemas de domótica y alineándose con un entorno minimalista. Para su uso profesional, enfatiza la necesidad de confiabilidad, eficiencia en el ahorro de agua y durabilidad del dispositivo. Considera que la automatización híbrida—combinar control automático con supervisión manual—ofrece el equilibrio ideal entre su experiencia práctica y la innovación tecnológica.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Saber qué debo hacer en cada momento es tan importante como recibir la alerta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Riego por goteo; identificador de plagas básico.
+    Cuenta con cinco años de experiencia como jardinero independiente, manejando entre 200 y 250 plantas ornamentales y aromáticas. Utiliza riego por goteo y herramientas básicas para identificación de plagas. Su práctica se basa en observación constante y fertilización orgánica. Ve en la tecnología un aliado para optimizar y automatizar procesos sin perder control experto.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Smartphone con navegador estándar; acceso deseado a aplicación web y móvil.
+    - Garantizar el buen estado vegetal de un alto volumen de plantas.
+    - Ahorrar recursos y tiempo con tecnologías que se ajusten a su flujo profesional.
+    - Mantener la estética y el orden en cada proyecto (interior o exterior).
 
-    - Canales de interacción:
+    ### 😣 Frustrations
 
-      Dashboard web para supervisión remota.
+    - Falta de precisión frente a cambios climáticos y nuevas plagas.
+    - Limitaciones del riego por goteo sin retroalimentación en tiempo real.
+    - Sistemas poco confiables o que no permiten control dual (automático + manual).
 
-      Notificaciones push al celular con alertas de riego o estado de la planta.
+    ### 💻 Tecnología
 
-    - Variables críticas a monitorizar:
-
-      Humedad y salud del suelo.
-
-      Estado vegetal y uso eficiente del agua.
-
-    - Expectativas tecnológicas:
-
-      Plataforma híbrida que combine automatización continua con capacidad de control manual puntual.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Mantener la salud y estética de grandes volúmenes de plantas con mínima intervención manual.
-
-    - Diseño y estética:
-
-      Discreto y funcional, compatible con entornos profesionales y residenciales minimalistas.
-
-    - Percepción de valor:
-
-      Inversión justificada si el precio y la durabilidad aseguran ahorro de tiempo y recursos; confiere prioridad a la confiabilidad.
-
-    - Influencia de marcas:
-
-      Ninguna en particular; valora soluciones probadas y robustas.
-
-    - Personalidad:
-
-      Profesional metódico y observador, orientado a la eficiencia operativa y a la incorporación gradual de innovaciones en su práctica diaria.
+    - Usa móvil y latpop para acceso completo desde cualquier lugar.
 
 ---
 
@@ -780,6 +710,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Lince
   - **Ocupación:** Jardinero independiente
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de Entrevista:** 10 minutos con 55 segundos
   - **Inicio de Entrevista:** 31:28
@@ -795,53 +727,35 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista**
 
-    Juan ejerce como jardinero profesional independiente desde los 22 años, colaborando además en proyectos de paisajismo para clientes residenciales y corporativos. Gestiona alrededor de 150–200 plantas, principalmente ornamentales, suculentas y jardines verticales. Su rutina de cuidado combina riego manual con sistemas de goteo en espacios amplios, fertilización programada mensualmente según cada especie y monitoreo visual del follaje, complementado en ocasiones con medidores básicos de humedad. Identifica como principales dificultades la imposibilidad de supervisar presencialmente todas las áreas de cultivo, las variaciones climáticas y la detección tardía de plagas, lo cual puede comprometer la salud vegetal.
+    ### 🎯 Goals (Objetivos)
 
-    Actualmente usa sensores de humedad de precisión limitada y recordatorios manuales para riego y abonado, y valora la organización que esta técnica le aporta. Sin embargo, siente que estos recursos “funcionan, pero de forma lenta y poco fiable”. Por ello, considera que Macetech, con su capacidad para medir en tiempo real variables críticas como humedad del suelo, pH y luminosidad, y enviar reportes inmediatos al celular, aportaría una ventaja competitiva: “sería increíble no tener que estar siempre allí y solo recibir alertas automáticas”.
+    - Monitorear en tiempo real la salud del suelo y las plantas.
+    - Automatizar el riego y reducir la intervención manual sin perder control.
+    - Visualizar el estado de todas sus plantas desde un dashboard profesional.
 
-    En su percepción, la maceta inteligente debe ofrecer un sistema híbrido que automatice riego, monitoreo y fertilización, pero conserve la posibilidad de intervención manual. Destaca que la humedad del suelo y el nivel de nutrientes son las variables más críticas a vigilar. Asimismo, valora una plataforma web o móvil confiable, con alertas en tiempo real que no fallen ni retrasen la información. Cree que esta herramienta no solo optimizaría su eficiencia operativa, sino que reforzaría su propuesta de servicio frente a la competencia.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Saber qué debo hacer en cada momento es tan importante como recibir la alerta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Sistemas de riego por goteo; medidores de humedad básicos; recordatorios manuales.
+    Cuenta con cinco años de experiencia como jardinero independiente, manejando entre 200 y 250 plantas ornamentales y aromáticas. Utiliza riego por goteo y herramientas básicas para identificación de plagas. Su práctica se basa en observación constante y fertilización orgánica. Ve en la tecnología un aliado para optimizar y automatizar procesos sin perder control experto.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Prefiere usar smartphone con navegador estándar; no utiliza equipos como laptops o computadoras al no considerarlas lo suficientemente portátiles para un ambiente de jardinería.
+    - Garantizar el buen estado vegetal de un alto volumen de plantas.
+    - Ahorrar recursos y tiempo con tecnologías que se ajusten a su flujo profesional.
+    - Mantener la estética y el orden en cada proyecto (interior o exterior).
 
-    - Canales de interacción deseados:
+    ### 😣 Frustrations
 
-      Reportes que informen sobre la humedad del suelo; nivel de nutrientes; pH; luminosidad.
+    - Falta de precisión frente a cambios climáticos y nuevas plagas.
+    - Limitaciones del riego por goteo sin retroalimentación en tiempo real.
+    - Sistemas poco confiables o que no permiten control dual (automático + manual).
 
-      Recordatorios push; posible dashboard web para supervisión remota.
+    ### 💻 Tecnología
 
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva; alertas confiables en tiempo real; equilibrio entre automatización y control manual.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Deseo de garantizar la salud y estética de grandes espacios verdes sin dependencia total de la presencia física.
-
-    - Diseño y estética:
-
-      Prefiere soluciones discretas que se integren con jardines residenciales y corporativos.
-
-    - Percepción de valor:
-
-      Considera la tecnología una inversión que elevaría su oferta de servicio, con una probabilidad de adopción de 4/5 si el precio y la usabilidad son adecuados.
-
-    - Influencia de marcas:
-
-      No alude a marcas específicas; prioriza la fiabilidad y durabilidad.
-
-    - Personalidad:
-
-      Profesional metódico, orientado a la eficiencia y a incorporar innovaciones que le permitan delegar tareas rutinarias sin sacrificar la calidad de su trabajo.
+    - Prefiere dispositivos móviles.
 
 ---
 
@@ -854,6 +768,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** San Juan de Miraflores
   - **Ocupación:** Ama de casa
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de Entrevista:** 15 minutos con 6 segundos
   - **Inicio de Entrevista:** 42:24
@@ -869,55 +785,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista**
 
-    Betty Chumacero, jardinera que antes trabajaba de forma profesional, pero ahora utiliza la jardinería más como un hobby, cultiva plantas desde hace aproximadamente cinco años como pasatiempo y más de 20 años como profesional. Su interés nació al experimentar la satisfacción de “darles vida” y observa diariamente sus macetas, aplicando métodos caseros de abono (cáscaras de huevo molidas) y hablando con ellas para promover su crecimiento. Aunque disfruta del proceso manual de regar, nutrir y conversar con las plantas, reconoce que, pese a sus cuidados, muchas se marchitan repentinamente, atribuible a su falta de control preciso sobre factores como la plaga de gusanos o la dosificación de agua.
+    ### 🎯 Goals (Objetivos)
 
-    Prefiere cultivar plantas frutales y decorativas; ha experimentado con hortensias, enredaderas y, más recientemente, con lengua de suegra en la cochera de su casa. Identifica como principales retos la aparición recurrente de plagas (gusanos) y la variabilidad en la retención de agua, que la lleva a preguntarse si rie­ga demasiado o insuficientemente. No emplea tecnología alguna, sino su intuición y remedios de ajo o cascarillas de huevo, y confía en su observación diaria para detectar problemas.
+    - Evitar la pérdida repentina de plantas por riego o plagas no controladas.
+    - Liberar tiempo sin dejar de involucrarse en el cuidado emocional de las plantas.
+    - Supervisar el estado general de sus macetas desde un lugar fijo en casa.
 
-    La propuesta de Macetech, una maceta inteligente que mida variables como humedad, pH y nutrientes, y que automatice el riego, le resulta “una gran ayuda” para ahorrar tiempo y evitar la frustración de perder plantas. Aunque valora el proceso de regar manualmente como parte de su hobby, considera que delegar esta tarea liberaría tiempo para otras actividades. Imagina un sistema que riegue automáticamente según necesidad, pero que también le permita intervenir manualmente cuando lo desee, adaptándose a las particularidades de cada especie.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “A veces se me mueren aunque las cuide… no sé si les di mucha agua o si fue una plaga.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      No emplea dispositivos avanzados; recurre exclusivamente a métodos caseros de abonado (cáscaras de huevo molidas) y al ajo diluido como remedio natural.
+    Betty cuidó plantas profesionalmente por más de 20 años y actualmente lo hace como hobby. No usa tecnología ni dispositivos móviles; emplea remedios caseros como ajo diluido o cáscaras de huevo. Disfruta del riego manual, pero está abierta a automatizarlo siempre que pueda seguir participando a voluntad. Su enfoque es observacional, paciente y emocionalmente conectado.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      No utiliza smartphone ni aplicaciones móviles; preferiría un dispositivo fijo e integrado en el hogar, que le permita supervisar todas las macetas de forma centralizada.
+    - Experimentar satisfacción emocional al ver florecer sus plantas.
+    - Sentir que las cuida bien sin depender solo de la intuición.
+    - Delegar tareas técnicas para enfocarse en disfrutar la jardinería.
 
-    - Canales de interacción deseados:
+    ### 😣 Frustrations
 
-      Imagina un dashboard web doméstico sencillo, sin necesidad de notificaciones push, donde pueda consultar el estado de cada planta cuando lo desee, sin interrupciones ni alertas móviles.
+    - Incertidumbre sobre si riega demasiado o poco.
+    - Aparición de gusanos u otras plagas difíciles de detectar a tiempo.
+    - Falta de herramientas simples para controlar nutrientes y humedad.
 
-      Busca mantener un registro de la humedad del suelo para evitar tanto la deshidratación como el encharcamiento; detección temprana de plagas antes de que se propaguen, y medición del nivel de nutrientes para optimizar el abonado.
+    ### 💻 Tecnología
 
-      Retroalimentación por voz o sonido para no depender exclusivamente de la app.
-
-    - Expectativas tecnológicas:
-
-      Requiere una interfaz extremadamente intuitiva y estática, accesible preferiblemente desde el hogar; desea que la automatización sea totalmente confiable y que, a la vez, conserve la opción de regar manualmente cuando ella lo prefiera.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Encuentra en la jardinería un refugio emocional y una fuente de relajación; experimenta un profundo sentido de logro cuando sus plantas florecen y crecen saludables, lo que refuerza su vínculo afectivo con el proceso.
-
-    - Diseño y estética:
-
-      Está dispuesta a adoptar macetas de mayor volumen o un diseño menos convencional si esto implica una mayor funcionalidad y un mejor cuidado de las plantas; prefiere que la tecnología pase desapercibida y no altere el encanto natural de su entorno.
-
-    - Percepción de valor:
-
-      Considera la maceta inteligente como un “lujo justificable” que bien vale la inversión si le ahorra tiempo y esfuerzo; estima que pagaría entre S/ 50 y 100 por una unidad pequeña, siempre que garantice un funcionamiento fiable y reduzca la pérdida de plantas.
-
-    - Influencia de marcas:
-
-      No se ve influenciada por marcas específicas; valora esencialmente la utilidad, la durabilidad y la facilidad de mantenimiento por encima del nombre del fabricante.
-
-    - Personalidad:
-
-      Se muestra como una cuidadora empática y paciente, que alterna técnicas artesanales tradicionales con una curiosidad por soluciones innovadoras; busca optimizar su hobbie sin renunciar al ritual de atención personal que tanto disfruta.
+    - Usa smartphone .
+    - Interfaz extremadamente simple, sin alertas móviles.
 
 ---
 
