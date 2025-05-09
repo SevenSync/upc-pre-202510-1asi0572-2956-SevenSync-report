@@ -59,8 +59,7 @@ elaboración del informe. Adicionalmente, se presentan las métricas de las acci
 
 *Network Graph*
 <img src="/assets/img/portada/network-graph-tb1.png" alt="gráfico de red de ramas del equipo para la TB1">
-<img src="/assets/img/portada/network-graph-tb1-b.png"alt="gráfico de red de ramas del equipo para la TB1">
-
+<img src="/assets/img/portada/network-graph-tb1-b.png" alt="gráfico de red de ramas del equipo para la TB1">
 
 De las contribuciones del equipo y commits se concluye lo siguiente: 
 
