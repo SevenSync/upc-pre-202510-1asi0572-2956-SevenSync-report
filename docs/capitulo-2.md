@@ -345,8 +345,10 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
   1. Nombre:
   2. Edad:
   3. Ubicación actual con provincia y distrito:
-  4. Ocupación:
-  5. Nivel de experiencia con plantas: [Principante, Intermedio, Avanzado]
+  4. Estado Civil:
+  5. Ocupación:
+  6. Dispositivo más usado
+  7. Navegador más usado
 
 - **Segmento 1: Personas apasionadas por las plantas**
 
@@ -362,21 +364,25 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
   - Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
 
-    4. ¿Qué haces exactamente durante ese tiempo?
+    1. ¿Qué haces exactamente durante ese tiempo?
 
-    5. ¿Hay momentos del día o del año donde cuidas más de ellas?
+    2. ¿Hay momentos del día o del año donde cuidas más de ellas?
 
   - Desafíos actuales y soluciones empleadas
 
-    6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
+    1. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
 
-    7. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
+    2. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
+
+    3. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
+
+    4. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
 
   - Actitud frente a la tecnología (antes de presentar el producto)
 
-    8. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
+    1. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
 
-    9. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
+    2. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
 
   - Reacción tras presentar el concepto de Macetech
 
@@ -407,12 +413,15 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
     2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
 
     3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
+    4. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
 
   - Problemas y recursos actuales
 
-    4. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+  1. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-    5. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
+  2. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+
+  3. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
 
   - Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
 
