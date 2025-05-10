@@ -218,5 +218,100 @@ _Impact Mapping de los dos user persona del proyecto._
 
 ## 3.4. Product Backlog.
 
-| #Orden | User<br>Story<br>ID | Título                                                                  | Descripción                                                                                                                                                           | Story Points<br>(1/2/3/5/8) |
-| ------ | ------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| #Orden | User<br>Story<br>ID | Título | Descripción| Story Points<br>(1/2/3/5/8) |
+| ------ | ------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| 1 | US014 | Registrar cuenta dentro de la plataforma | **Como** usuario nuevo, **quiero** registrar una cuenta con mi correo electrónico y contraseña **para** acceder a los servicios de la plataforma. | 3 |  
+| 2 | US015 | Iniciar sesión dentro de la plataforma | **Como** usuario registrado, **quiero** iniciar sesión con mi correo y contraseña **para** acceder a mi cuenta. | 2 |  
+| 3 | US016 | Validar usuario con autenticación de dos factores (2FA) | **Como** usuario con 2FA habilitado, **quiero** ingresar un código de verificación **para** asegurar que solo yo pueda acceder a mi cuenta. | 5 |  
+| 4 | US017 | Recuperar Contraseña | **Como** usuario que olvidó su contraseña, **quiero** restablecerla mediante un enlace temporal **para** volver a acceder a mi cuenta. | 3 |  
+| 5 | US018 | Cerrar Sesión | **Como** usuario autenticado, **quiero** cerrar mi sesión **para** proteger mi cuenta cuando termine de usar la plataforma. | 1 |  
+| 6 | US019 | Redirigir cuenta a la página principal | **Como** usuario autenticado, **quiero** ser redirigido automáticamente al dashboard **para** acceder rápidamente a las funcionalidades. | 2 |  
+| 7 | TS020 | Implementación de JWT para gestión de sesiones | **Como** desarrollador, **quiero** usar JWT para manejar sesiones de usuario **para** garantizar autenticación segura y stateless. | 5 |  
+| 8 | TS021 | Integrar Firebase Authentication para 2FA | **Como** desarrollador, **quiero** integrar Firebase Auth para 2FA **para** implementar autenticación en dos pasos con Google. | 5 |  
+| 9 | TS022 | Validar y regenerar tokens JWT | **Como** desarrollador, **quiero** validar y regenerar tokens JWT expirados **para** mantener sesiones activas sin requerir nuevo login. | 5 |  
+| 10 | US001 | Ver introducción atractiva | **Como** visitante de la plataforma, **quiero** ver una sección introductoria concisa sobre Macetech **para** obtener una primera impresión positiva del sistema. | 3 |  
+| 11 | US002 | Entender el valor principal | **Como** visitante de la plataforma, **quiero** identificar y comprender la propuesta de valor central y los beneficios que Macetech me ofrece **para** saber si es de mi interés. | 2 |  
+| 12 | US003 | Conocer las funcionalidades clave | **Como** visitante de la plataforma, **quiero** identificar y comprender las principales funcionalidades que Macetech ofrece **para** analizar si el producto es de utilidad en mi situación. | 2 |  
+| 13 | US004 | Visualizar un video del producto | **Como** visitante de la plataforma, **quiero** ver un video demostrativo del producto **para** entender mejor cómo funciona Macetech y cómo puede ayudarme. | 3 |  
+| 14 | US005 | Conocer las opciones de membresía | **Como** visitante de la plataforma, **quiero** ver un apartado de membresías **para** entender qué beneficios ofrece cada nivel y cuál me conviene adquirir. | 2 |  
+| 15 | US006 | Ver botón de llamado a la acción de inicio de sesión | **Como** visitante de la plataforma, **quiero** ver un llamado a la acción que me permita iniciar sesión **para** acceder a funcionalidades personalizadas del sistema. | 1 |  
+| 16 | US007 | Conocer a los miembros del equipo | **Como** visitante de la plataforma, **quiero** conocer quiénes están detrás del desarrollo de Macetech **para** confiar en el proyecto y entender su propósito. | 1 |  
+| 17 | US008 | Contactar al equipo de SevenSync | **Como** visitante de la plataforma, **quiero** poder contactar al equipo de desarrollo **para** hacer preguntas o enviar comentarios sobre Macetech. | 2 |  
+| 18 | US009 | Descargar la aplicación móvil | **Como** visitante interesado, **quiero** acceder fácilmente al enlace de descarga de la app móvil de Macetech **para** poder instalarla y comenzar a utilizarla desde mi dispositivo. | 2 |  
+| 19 | US010 | Visualizar información útil en el footer | **Como** visitante del sitio, **quiero** acceder a información útil como enlaces rápidos, contacto y redes sociales en el footer **para** facilitar mi navegación final por la web. | 1 |  
+| 20 | TS011 | Implementar diseño responsivo | **Como** developer, **quiero** implementar un diseño responsivo en la landing page **para** asegurarme de que se vea correctamente en cualquier dispositivo. | 5 |  
+| 21 | US023 | Cambiar contraseña | **Como** usuario registrado, **quiero** modificar mi contraseña **para** mantener mi cuenta segura. | 3 |
+| 22 | US024 | Cambiar dirección de email | **Como** usuario, **quiero** actualizar mi email **para** mantener mi información de contacto actualizada. | 3 |
+| 23 | US025 | Cambiar nombre de usuario | **Como** usuario, **quiero** modificar mi nombre de usuario **para** personalizar mi identidad en la plataforma. | 2 |
+| 24 | US026 | Eliminar cuenta | **Como** usuario, **quiero** poder eliminar mi cuenta permanentemente **para** cumplir con derechos de privacidad. | 5 |
+| 25 | US027 | Verificar cambio de email | **Como** usuario, **quiero** confirmar mi nuevo email mediante un código **para** asegurar que tengo acceso a esa cuenta. | 3 |
+| 26 | TS028 | Implementar API CRUD para gestión de cuenta | **Como** desarrollador, **quiero** implementar endpoints para operaciones básicas de cuenta **para** que el frontend pueda gestionar credenciales. | 5 |
+| 27 | TS029 | Implementar servicio de eliminación segura de cuentas | **Como** desarrollador, **quiero** desarrollar el flujo completo de eliminación **para** garantizar borrado conforme a RGPD. | 5 |
+| 28 | US030 | Ver información personal | **Como** usuario, **quiero** ver mis datos personales completos **para** verificar su exactitud. | 2 |
+| 29 | US031 | Editar datos personales | **Como** usuario, **quiero** modificar mi información personal **para** mantenerla actualizada. | 3 |
+| 30 | US032 | Gestionar dirección | **Como** usuario, **quiero** agregar o modificar mi dirección **para** recibir servicios físicos si aplica. | 3 |
+| 31 | US033 | Ver estado de membresía | **Como** usuario, **quiero** conocer mi tipo de membresía actual **para** saber qué funcionalidades tengo disponibles. | 2 |
+| 32 | US034 | Actualizar preferencias de notificación | **Como** usuario, **quiero** elegir cómo recibir notificaciones **para** controlar mi experiencia. | 3 |
+| 33 | TS035 | Integrar servicio de geocodificación de direcciones | **Como** desarrollador, **quiero** integrar un API de geolocalización **para** validar y estandarizar direcciones. | 5 |
+| 34 | TS036 | Implementar sistema de permisos basado en membresía | **Como** desarrollador, **quiero** implementar control de acceso **para** restringir funcionalidades según tipo de usuario. | 5 |
+| 35 | TS037 | Implementar API CRUD para gestión de perfil | **Como** desarrollador, **quiero** implementar endpoints completos para perfil **para** que el frontend pueda gestionar toda la información personal. | 5 |
+| 36 | US038 | Vincular nueva maceta | **Como** usuario, **quiero** registrar mi maceta inteligente via Bluetooth **para** monitorear mis plantas. | 5 |
+| 37 | US039 | Personalizar nombre de maceta | **Como** usuario, **quiero** asignar un nombre único a mi maceta **para** identificarla fácilmente. | 2 |
+| 38 | US040 | Ver estado de sensores | **Como** usuario, **quiero** consultar los datos de humedad y temperatura **para** saber si mi planta necesita atención. | 3 |
+| 39 | US041 | Eliminar maceta | **Como** usuario, **quiero** desvincular una maceta **para** dejar de recibir notificaciones sobre ella. | 3 |
+| 40 | US042 | Reordenar macetas | **Como** usuario con múltiples macetas, **quiero** reorganizarlas por prioridad **para** acceder rápido a las más importantes. | 3 |
+| 41 | TS043 | Implementar stack Bluetooth para sensores | **Como** Maker, **quiero** desarrollar el protocolo BLE **para** que los sensores transmitan datos estandarizados. | 5 |
+| 42 | TS044 | Diseñar controlador unificado de sensores | **Como** Maker, **quiero** crear un módulo central **para** gestionar todas las lecturas de sensores. | 5 |
+| 43 | TS045 | Configurar ACL para riego | **Como** Maker, **quiero** implementar control de acceso **para** que las macetas hereden parámetros de riego. | 5 |
+| 44 | TS046 | Invalidar macetas defectuosas | **Como** Maker, **quiero** implementar un sistema de marcado de macetas inválidas **para** bloquear dispositivos con fallas irreparables. | 5 |
+| 45 | TS047 | Integrar API CRUD para gestión de macetas | **Como** desarrollador, **quiero** implementar endpoints RESTful **para** manejar el ciclo de vida completo de las macetas. | 5 |
+| 46 | TS048 | API CRUD para gestión de macetas | **Como** desarrollador, **quiero** implementar endpoints RESTful **para** manejar el ciclo de vida completo de las macetas. | 5 |
+| 47 | TS049 | Sync estado maceta-dispositivo | **Como** desarrollador, **quiero** mantener consistencia **para** reflejar cambios en tiempo real. | 5 |
+| 48 | US050 | Registrar planta en maceta | **Como** usuario, **quiero** asignar una planta a mi maceta **para** recibir recomendaciones de cuidado personalizadas. | 3 |
+| 49 | US051 | Eliminar planta de maceta | **Como** usuario, **quiero** remover una planta **para** liberar la maceta y dejar de recibir recomendaciones. | 3 |
+| 50 | US052 | Ver parámetros óptimos de planta | **Como** usuario, **quiero** consultar los rangos ideales **para** compararlos con los datos de mis sensores. | 2 |
+| 51 | TS053 | Integración con Plant API | **Como** desarrollador, **quiero** consumir la API externa **para** obtener datos científicos de plantas. | 5 |
+| 52 | TS054 | Servicio CRUD para plantas | **Como** desarrollador, **quiero** implementar endpoints **para** gestionar la relación maceta-planta. | 5 |
+| 53 | US055 | Riego automático por humedad | **Como** usuario, **quiero** que el sistema riegue automáticamente **para** mantener el nivel óptimo de humedad. | 5 |
+| 54 | US056 | Programar riegos recurrentes | **Como** usuario, **quiero** establecer horarios fijos de riego **para** plantas con necesidades predecibles. | 3 |
+| 55 | US057 | Notificaciones de riego | **Como** usuario, **quiero** recibir alertas cuando se realiza un riego **para** monitorear el consumo de agua. | 2 |
+| 56 | US058 | Historial de riego | **Como** usuario, **quiero** consultar registros pasados **para** analizar patrones de consumo. | 3 |
+| 57 | US059 | Programar riego manual | **Como** usuario, **quiero** activar riego inmediato desde el dashboard **para** responder a necesidades puntuales. | 2 |
+| 58 | US060 | Configurar riego automático | **Como** usuario, **quiero** establecer programaciones recurrentes **para** mantener rutinas de cuidado. | 3 |
+| 59 | TS061 | Sistema de activación de bomba con PWM | **Como** Maker, **quiero** controlar velocidad de bomba **para** regular caudal preciso (50-300ml/min). | 5 |
+| 60 | TS062 | Detección de flujo en tiempo real | **Como** Maker, **quiero** integrar sensor de efecto Hall **para** medir ml/s exactos. | 5 |
+| 61 | TS063 | Integrar control de riego | **Como** desarrollador, **quiero** crear endpoints REST **para** gestionar riego manual/automático. | 5 |
+| 62 | TS064 | Servicio de Reglas de Riego | **Como** desarrollador, **quiero** implementar motor de reglas **para** decidir cuándo regar automáticamente. | 5 |
+| 63 | US065 | Alertas prioritarias | **Como** usuario, **quiero** que el sistema distinga urgencias **para** atender primero lo más crítico. | 3 |
+| 64 | US066 | Historial de alertas | **Como** usuario, **quiero** revisar alertas pasadas **para** llevar registro de incidencias. | 2 |
+| 65 | US067 | Configurar notificaciones | **Como** usuario, **quiero** personalizar cómo recibo alertas **para** optimizar mi experiencia. | 3 |
+| 66 | US068 | Alertas de hardware | **Como** usuario, **quiero** ser notificado sobre fallos en dispositivos **para** tomar acción rápida. | 3 |
+| 67 | US069 | Generar reporte semanal automático | **Como** usuario, **quiero** recibir un resumen semanal **para** analizar el estado histórico de mis plantas. | 5 |
+| 68 | TS070 | Gestionar alertas | **Como** desarrollador, **quiero** desarrollar endpoints RESTful **para** manejar ciclo de vida de alertas. | 5 |
+| 69 | TS071 | Consumir Weather API | **Como** desarrollador, **quiero** integrar API meteorológica **para** enriquecer datos ambientales. | 5 |
+| 70 | US072 | Recomendaciones de riego personalizadas | **Como** usuario, **quiero** recibir sugerencias ajustadas **para** optimizar consumo de agua. | 3 |
+| 71 | US073 | Alertas de fertilización | **Como** usuario, **quiero** ser notificado cuando sea momento de fertilizar **para** maximizar crecimiento. | 3 |
+| 72 | US074 | Recomendaciones de luz personalizadas | **Como** usuario, **quiero** recibir sugerencias de ubicación **para** optimizar exposición lumínica. | 3 |
+| 73 | US075 | Manejo de humedad ambiental | **Como** usuario, **quiero** conocer técnicas para ajustar humedad **para** crear microclima ideal. | 2 |
+| 74 | TS076 | Motor de Reglas Agronómicas | **Como** desarrollador, **quiero** implementar sistema basado en parámetros óptimos **para** generar recomendaciones. | 5 |
+| 75 | US077 | Visualizar planes de membresía | **Como** usuario, **quiero** comparar funcionalidades de cada plan **para** decidir qué membresía elegir. | 2 |
+| 76 | US078 | Actualizar a membresía Premium | **Como** usuario, **quiero** mejorar mi plan **para** acceder a funcionalidades avanzadas. | 3 |
+| 77 | US079 | Cancelar renovación automática | **Como** usuario Premium, **quiero** desactivar la renovación **para** controlar mi suscripción. | 2 |
+| 78 | US080 | Ver historial de pagos | **Como** usuario, **quiero** consultar mis transacciones **para** llevar control financiero. | 2 |
+| 79 | US081 | Cambio automático de plan | **Como** sistema, **quiero** ajustar permisos **para** reflejar cambios de membresía inmediatamente. | 3 |
+| 80 | US082 | Notificar vencimiento de membresía | **Como** sistema, **quiero** alertar al usuario **para** evitar interrupciones no deseadas. | 2 |
+| 81 | TS083 | Conexión segura con Stripe | **Como** desarrollador, **quiero** integrar API de pagos **para** procesar transacciones de forma confiable. | 5 |
+| 82 | TS084 | Middleware de verificación de membresía | **Como** desarrollador, **quiero** validar permisos **para** restringir funcionalidades según plan. | 5 |
+| 83 | US085 | Gestionar consentimiento de datos | **Como** usuario, **quiero** controlar qué datos comparto **para** cumplir con mi privacidad. | 3 |
+| 84 | US086 | Acceder a política de privacidad clara | **Como** usuario, **quiero** entender cómo se usan mis datos **para** tomar decisiones informadas. | 2 |
+| 85 | US087 | Solicitar eliminación de datos | **Como** usuario, **quiero** poder borrar mi cuenta **para** ejercer mi "derecho al olvido". | 5 |
+| 86 | US088 | Acceso al Libro de Reclamaciones | **Como** usuario, **quiero** encontrar fácilmente el libro de reclamaciones **para** reportar incidencias. | 2 |
+| 87 | TS089 | Desarrollo de Políticas de Privacidad | **Como** desarrollador, **quiero** implementar políticas accesibles **para** cumplir con regulaciones. | 3 |
+| 88 | TS090 | Sistema de Gestión de Consentimiento | **Como** desarrollador, **quiero** implementar control granular **para** gestionar preferencias de datos. | 5 |
+| 89 | TS091 | Desarrollo del Libro de Reclamaciones Digital | **Como** desarrollador, **quiero** crear sistema completo **para** gestionar reclamos legalmente. | 5 |
+| 90 | US030 | Ver información personal | **Como** usuario, **quiero** ver mis datos personales completos **para** verificar su exactitud. | 2 |
+| 91 | US031 | Editar datos personales | **Como** usuario, **quiero** modificar mi información personal **para** mantenerla actualizada. | 3 |
+
+Como herramienta de gestión de proyectos, hemos seleccionado Jira Software, el product backlog está registrado en el siguiente enlace: https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/MSB/boards/67/backlog?atlOrigin=eyJpIjoiMjA5MDdiNzI5NmIwNDZkNGE5NGY2NDgwOGUzOGRhMzMiLCJwIjoiaiJ9
+
+<img src="/assets/img/capitulo-3/product-backlog.png" alt="Product Backlog for Macetech System Development">
