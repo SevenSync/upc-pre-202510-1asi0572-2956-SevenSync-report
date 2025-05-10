@@ -1,11 +1,78 @@
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping.
+En esta sección se presenta el proceso y resultados del To-Be Scenario Mapping, una herramienta clave para proyectar cómo podría mejorar la experiencia del usuario a través de una solución innovadora. Esta actividad parte del análisis previo del escenario actual (As-Is Scenario) y propone una visión futura deseada de la interacción del usuario con el sistema o producto, considerando mejoras sustanciales en sus acciones, pensamientos y emociones.
+
+El equipo llevó a cabo el proceso mediante las siguientes etapas:
+
+**Preparación:** Se revisaron los escenarios As-Is para cada user persona.
+
+**Lluvia de ideas individual:** Cada miembro del equipo propuso ideas sobre cómo podría transformarse la experiencia del usuario.
+
+**Revisión e identificación de fases:** Se definieron fases clave comunes en el flujo ideal de interacción con el sistema.
+
+**Nombramiento de fases:** Las columnas del mapa se titularon según las nuevas etapas del proceso.
+
+A continuación, se describen los resultados obtenidos para los dos segmentos analizados:
 
 *Mapa de Escenario To-Be para nuestro primer user persona.*
 <img src="/assets/img/capitulo-3/to-be scenario-1.jpg">
+Este escenario propone una experiencia asistida por una aplicación inteligente que acompaña al usuario desde la observación de su planta hasta la verificación de mejoras visibles, guiando sus decisiones mediante datos y recomendaciones automatizadas.
+
+**Fases:**
+
+- Verificar estado de planta
+
+- Recibir información confiable
+
+- Evaluar qué hacer con respaldo
+
+- Tomar acción guiada y sencilla
+
+- Observar mejoras con feedback real
+
+**Doing:**
+Desde usar sensores que alertan sobre el estado de humedad, luz o salud, hasta recibir sugerencias de acción en la app, todo el proceso está automatizado o guiado.
+
+**Thinking:**
+Los usuarios piensan en la facilidad de cuidar sus plantas, en lo valiosa que es la información personalizada, y en lo útil que resulta tomar decisiones basadas en datos reales.
+
+**Feeling:**
+Surgen emociones como esperanza, alivio, satisfacción, inspiración y motivación, evidenciando una experiencia positiva, empoderadora y confiable.
+
+**Comparación con el As-Is**
+En el escenario actual (As-Is), este segmento experimenta mucha incertidumbre, ansiedad y prueba-error. El To-Be propone resolver esos puntos de dolor mediante automatización, personalización y feedback continuo. La emoción dominante pasa de la confusión al alivio y motivación, y las acciones son más eficientes y menos intuitivas.
+
 *Mapa de Escenario To-Be para nuestro segundo user persona.*
+
 <img src="/assets/img/capitulo-3/to-be-scenario-2.jpg">
+
+Para el perfil jardineros, el To-Be Scenario introduce una herramienta tecnológica que facilita el monitoreo masivo, agiliza la toma de decisiones y automatiza la comunicación con clientes.
+
+**Fases:**
+
+- Llegar al espacio/jardín
+
+- Revisar estado planta por planta
+
+- Tomar decisiones rápidas
+
+- Explicar al cliente lo realizado
+
+- Terminar jornada
+
+**Doing:**
+El jardinero inicia su jornada visualizando un resumen del estado de todas las plantas desde la app, actúa solo en los casos prioritarios y deja registros automáticos de su trabajo.
+
+**Thinking:**
+Piensa en cómo organizar su tiempo eficientemente, confía en los datos disponibles y se siente productivo y profesional en su jornada laboral.
+
+**Feeling:**
+Las emociones van desde la organización mental, pasando por seguridad, tranquilidad, hasta orgullo y satisfacción, reflejando una jornada más inteligente y controlada.
+
+**Comparación con el As-Is**
+Mientras que el As-Is evidenciaba un proceso más manual, repetitivo y con ciertas dudas en la toma de decisiones, el To-Be automatiza y agiliza estos pasos. Se reduce el esfuerzo físico y cognitivo, aumentando la confianza en los datos y el rendimiento. La emoción cambia del cansancio a la eficiencia y orgullo profesional.
+
 ## 3.2. User Stories.
 
 En esta sección, procederemos a realizar un análisis exhaustivo de cada una de las historias de usuario asignadas a lo largo de todo el ciclo de vida del proyecto. Nuestro objetivo primordial es asegurar la plena satisfacción de nuestros segmentos de mercado, mediante una comprensión profunda de sus necesidades y expectativas, así como la posterior adecuación de nuestras soluciones a estos requerimientos. Para alcanzar este fin, se especificarán detalladamente los requisitos definidos, junto con el conjunto de User Stories y Epics identificados como elementos clave para el éxito del proyecto. Es crucial destacar que cada User Story estará acompañada de sus correspondientes criterios de aceptación, lo que garantizará una comprensión precisa y compartida de los objetivos a lograr.
