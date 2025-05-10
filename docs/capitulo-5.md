@@ -132,7 +132,7 @@ Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans
 <img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-font-thickness.png" alt="
 Noto Sans font thickness models" width="1000" height="580"> 
 
-Gracias a esta profundidad de cobertura y precisión técnica, Noto Sans no solo evita problemas de sustitución de caracteres, sino que también permite a Macetech presentar contenido con total consistencia visual y legibilidad, sin importar la configuración regional o lingüística del usuario.
+Gracias a esta profundidad de cobertura y precisión técnica, Noto Sans no solo evita problemas de sustitución de caracteres, sino que también permite a Macetech presentar contenido con total consistencia visual y legibilidad, sin importar la configuración regional y/o lingüística del usuario.
 
 * **Soporte multilingüe y consistencia visual**
 
@@ -170,7 +170,7 @@ Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Ta
 <img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-thai.png" alt="
 Noto Sans font thickness models in Thai" width="1000" height="580"> 
 
-###### Figura 39
+###### Figura 39 
 
 Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Japonés
 <img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-japanese.png" alt="
