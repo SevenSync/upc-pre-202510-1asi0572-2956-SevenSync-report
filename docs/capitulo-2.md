@@ -1098,8 +1098,15 @@ PON TU EXPLICACION COMO DICE EN EL STATEMENT
 
 - ### 2.3.5. As-is Scenario Mapping
 
-  El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
+El As-Is Scenario es una herramienta fundamental en el análisis de experiencias de usuario, ya que permite visualizar paso a paso cómo interactúan actualmente los diferentes segmentos de usuarios con un producto, servicio o actividad. A través de esta metodología se identifican los comportamientos, pensamientos y emociones del usuario en cada etapa del proceso, lo que ayuda a detectar puntos de dolor, necesidades no cubiertas, y oportunidades de mejora.
 
+Para la elaboración de estos escenarios, se analizaron los perfiles de dos segmentos de usuarios relacionados con el cuidado de plantas:
+
+- Personas Apasionadas por las Plantas
+
+- Personas Dedicadas a la Jardinería
+
+El proceso consistió en identificar las fases principales (Steps), describir las acciones realizadas (Doing), los pensamientos que surgen (Thinking) y las emociones experimentadas (Feeling), representando una perspectiva empática y detallada del recorrido del usuario.
   - **Segmento 1: Personas Apasionadas por las plantas**
     ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
 
