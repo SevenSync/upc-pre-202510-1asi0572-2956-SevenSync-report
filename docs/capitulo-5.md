@@ -14,19 +14,146 @@ El diseño se basa en principios de usabilidad, accesibilidad y diseño centrado
 
 Más allá del aspecto visual, estas guías fortalecen la escalabilidad y mantenibilidad del sistema. Tal como señala Zeldman (2024), una guía de estilos bien estructurada facilita la colaboración entre diseño y desarrollo, agiliza la evolución del producto y asegura una experiencia consistente, profesional y técnicamente robusta.
 
-#### Colores:
+#### 5.1.1.1. Colores
 
-El uso del color en el diseño de interfaces va más allá de lo meramente estético y se mantiene como un parámetro estratégico capaz de afinar tanto la eficiencia perceptiva como la respuesta emocional del usuario. Estudios recientes han señalado que los esquemas basados en verdes suaves, en contraste con blancos o grises neutros, optimizan la localización de objetivos y reducen errores de identificación incluso bajo alta carga cognitiva (Guo et al., 2025). Asimismo, el verde, un color fuertemente asociado con la vegetación, la seguridad y la salud, genera dilataciones pupilares mínimas cuando el contraste con el blanco circundante es moderado, lo que se traduce en un mayor confort visual y menor esfuerzo oculomotor (Westland & Maggio, 2023).
+El uso del color en el diseño de interfaces va más allá de lo meramente estético y se mantiene como un parámetro estratégico capaz de afinar tanto la eficiencia perceptiva como la respuesta emocional del usuario. Estudios recientes han señalado que los esquemas basados en verdes suaves, en contraste con blancos o grises neutros, optimizan la localización de objetivos y reducen errores de identificación incluso bajo alta carga cognitiva (Westland & Maggio, 2023). 
 
-En MaceTech, la paleta cromática se fundamenta en un verde de baja saturación que refuerza la temática biotecnológica y ecológica de la aplicación. Este verde principal se combina con dos colores neutros estratégicos: el blanco puro, que se utiliza en zonas de descanso visual como espacios informativos y pantallas de lectura, y el gris medio, que organiza los elementos sin llamar demasiado la atención. Esta combinación crea un contraste visual equilibrado que mejora la legibilidad y disminuye la fatiga ocular. Gracias al uso predominante del blanco, el verde resalta como color de acción en botones, íconos y estados de éxito, lo que puede reducir hasta en un 30 % el tiempo que los usuarios tardan en confirmar tareas importantes (Guo et al., 2025).
+En MaceTech, la paleta cromática se fundamenta en un verde de baja saturación que refuerza la temática biotecnológica y ecológica de la aplicación. Este verde principal se combina con dos colores neutros estratégicos: el blanco puro, que se utiliza en zonas de descanso visual como espacios informativos y pantallas de lectura, y el gris medio, que organiza los elementos sin llamar demasiado la atención. Esta combinación crea un contraste visual equilibrado que mejora la legibilidad y disminuye la fatiga ocular. Gracias al uso predominante del blanco, el verde resalta como color de barras de navegación, acción en botones, íconos y estados de éxito, lo que puede reducir hasta en un 30 % el tiempo que los usuarios tardan en confirmar tareas importantes (Guo et al., 2025).
 
-Técnicamente, al diseñar con verde y blanco se controla el contraste, no solo la luminancia, lo que mantiene la dilatación pupilar en rangos óptimos: suficientes para guiar la mirada hacia puntos de interacción sin inducir tensiones por exceso de contraste (Wang et al., 2025). El gris medio, por su parte, sirve de “puente” visual que atenúa transiciones y contribuye a una estética sofisticada, sin activar los mecanismos de alerta asociados a la falta total de color o al rojo, color el cual dispara actividad en el cerebro como percepción de amenaza o incertidumbre (Nissen et al., 2024).
+Para el modelo hemos seleccionado una paleta base y primaria compuesta por tres tonalidades principales, seleccionadas con precisión para transmitir una identidad visual coherente, moderna y profesional. Además, se ha desarrollado una paleta extendida con cuatro variantes análogas y complementarias para el blanco y gris, que aporta versatilidad para adaptar el diseño a distintos entornos de uso, como plataformas web, aplicaciones móviles y materiales gráficos. Finalmente, hemos agregado otros seis colores adicionales para distintos contextos relacionados a métricas y otras funcionalidades, los cuales brindan soporte al resto de colores al ser intuitivos y llamativos. Este enfoque garantiza una estética consistente, accesible y funcional en todos los puntos de contacto, fortaleciendo la experiencia del usuario e incrementando el reconocimiento visual de la marca.
 
-Para el modelo de sistema cromático hemos seleccionado una paleta base compuesta por cinco tonalidades principales, seleccionadas con precisión para transmitir una identidad visual coherente, moderna y profesional. Además, se ha desarrollado una paleta extendida con entre seis y nueve variantes análogas y complementarias para el blanco y gris, que aporta versatilidad para adaptar el diseño a distintos entornos de uso, como plataformas web, aplicaciones móviles y materiales gráficos. Este enfoque garantiza una estética consistente, accesible y funcional en todos los puntos de contacto, fortaleciendo la experiencia del usuario e incrementando el reconocimiento visual de la marca.
+A continuación, se detallan los colores primarios, secundarios y terciarios definidos para el sistema:
 
-A continuación, se detallan los colores primarios y secundarios definidos para el sistema:
+**Color primario:**
 
+###### Figura 30 y algo
+*Listado de colores primarios que se usaran en las aplicaciones de Macetech*
 
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/primary-color-light-mode.png" alt="Listado de todos los colores primarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+El verde es la piedra angular de Macetech porque conecta directamente con la naturaleza, el crecimiento y la salud de las plantas, al mismo tiempo que sugiere innovación tecnológica. Desde el punto de la experiencia del usuario y su percepción, el verde equilibra la respuesta emocional, puesto que relaja la corteza visual y facilita la concentración en los datos de los sensores, reduciendo la fatiga ocular en entornos de uso prolongado (Wang et al., 2025). Asimismo, al seguir las recomendaciones de accesibilidad WCAG 2.1, los tonos escogidos garantizan contraste suficiente para usuarios con baja visión sin sacrificar la riqueza del matiz verde primario (World Wide Web Consortium, 2025). Estos colores no deberían ocupar más del 45% de la pantalla del usuario.
+
+Para mantener coherencia y jerarquía visual, cada tono cumple un rol bien definido. A continuación se describe dónde y por qué se usa cada uno:
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color primario de Macetech*
+
+| Nombre	| Hex	| Uso principal |	Porcentaje de uso | Justificación técnica |
+|---------|-----|---------------|-------------------|----------------------|
+| Verde Bosque |	#296244	| Utilizado en la barra de navegación, encabezados, paneles | 50% con respecto a todos los colores primarios | Ofrece máxima legibilidad y anclaje visual, con un contraste mayor a 7:1 (7.17:1) con el color blanco, el cual se utilizara para la tipografía |
+| Verde Hoja | #2A8050 |	Utilizado en los botones principales y en los enlaces destacados | 25% con respecto a todos los colores primarios | Es bueno para un acento de interacción, con un contraste de 4.48:1 con respecto al color blanco, lo que cumple WCAG AA para texto normal y WCAG AAA para texto grande o en negrita. Guía la atención sin saturar |
+| Verde Brote | #38865D | Utilizado en iconos y en estados hover/activo	| 25% con respecto a todos los colores primarios | Otorga un feedback visual y llama la mirada a acciones secundarias manteniendo armonía con las funciones primarias |
+
+  * **Jerarquía visual:** el tono más oscuro (“Verde Bosque”) sostiene la estructura, mientras que los más claros indican niveles de interacción para el usuario, reduciendo la carga cognitiva al distinguir zonas estáticas de dinámicas.
+
+  * **Consistencia de marca:** los tres verdes comparten la misma temperatura de color, evitando derivaciones que confundan al usuario sobre la identidad de la plataforma (Wheeler y Meyerson, 2024).
+
+  * **Accesibilidad:** todos los contrastes han sido validados según WCAG 2.1 para asegurar cumplimiento AA/AAA en texto y elementos interactivos, protegiendo a usuarios con deficiencias visuales .
+
+**Color secundario:**
+
+###### Figura 30 y algo
+*Listado de colores secundarios que se usaran en las aplicaciones de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/secondary-color-light-mode.png" alt="Listado de todos los colores secundarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+Los colores secundarios en Macetech cumplen la función de “lienzo” y soporte de contenido, al ofrecer un fondo neutro que potencia la legibilidad de los elementos primarios (verdes) y de los indicadores de estado, sin competir visualmente con ellos. El blanco puro garantiza máximo contraste y limpieza, mientras que los tonos grises aportan confort visual y mantienen jerarquía respecto a las barras de navegación y componentes verdes (Westland y Maggio, 2025). 
+
+Además, estos tonos neutros facilitan el enfocado en los datos y reducen la fatiga ocular durante sesiones prolongadas, cumpliendo las recomendaciones de accesibilidad WCAG 2.1 (World Wide Web Consortium, 2025). Estos colores secundarios no deberían ocupar más del 40% de la pantalla del usuario.
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color secundario de Macetech*
+
+| Nombre | Hex | Uso principal | Porcentaje de uso |Justificación técnica |
+|--------|-----|---------------|-------------------|----------------------|
+| Blanco |	#FFFFFF	| Utilizado en área de contenido y página base | 50% con respecto a todos los colores secundarios | El blanco puro maximiza contraste con los colores primarios y ofrece un ratio mayor a 4.5:1 con texto primario y secundarios | 
+| Blanco Cálido | 	#F4F4F5 | Utilizado en tarjetas y paneles secundarios	| 25% con respecto a todos los colores secundarios | El gris claro mantiene la armonía al separar componentes sin generar excesivo ruido visual para los usuarios |
+| Blanco Frío |	#E4E4E7	| Utilizado en líneas de separación y contornos de inputs	| 12.5% con respecto a todos los colores secundarios| Mantiene un tono sutil que cumple con las bases del Non‑Text Contrast (WCAG 1.4.11), puesto que no interfiere con la identificación de componentes, pero define límites |
+| Gris Suave | #6B7280 | Labels, descripciones	| 12.5% con respecto a todos los colores secundarios| Proveé un contraste mayor a 4.5:1 sobre sus respectivos fondos, además de garantizar lectura de información de menor jerarquía sin competir con texto principal | 
+
+* **Jerarquía visual:** Los neutrales crean un lienzo donde los verdes primarios destacan con claridad, evitando distracciones y enfocando la atención en la información clave.
+
+* **Consistencia:** Todos los secundarios comparten matices grises con la misma temperatura de color, garantizando que posibles transiciones entre diseños light y dark sea fluida y predecible (Zeldman, 2024).
+
+* **Accesibilidad:** Cada token ha sido validado contra WCAG 2.1 (niveles AA/AAA) para asegurar lectura cómoda y separación de componentes interactivos, protegiendo a usuarios con dificultades visuales.
+
+**Color terciario:**
+
+###### Figura 30 y algo
+*Listado de colores terciarios que se usaran en las aplicaciones de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/tertiary-color-light-mode.png" alt="Listado de todos los colores terciarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+Para asegurar que los datos de nuestros sensores IoT sean fáciles de interpretar de un vistazo, definimos una paleta de colores terciarios específicamente orientada a la visualización de métricas. Cada tono ha sido elegido no solo por su carácter semántico (asociación intuitiva con humedad, luz, temperatura, pH y salinidad), sino también por su rendimiento en términos de contraste y accesibilidad, tanto en entornos de alta luminosidad como en ambientes oscuros. Esta estrategia refuerza la consistencia de la interfaz y facilita la rápida identificación de cada variable sin necesidad de etiquetas adicionales (Westland y Maggio, 2023).
+
+Su objetivo es garantizar que cada variable sea inmediatamente reconocible, con contrastes validados según WCAG 2.1 y una temperatura de color coherente con nuestros verdes primarios. Aseguramos que las gráficas, barras e indicadores destaquen con claridad, mejorando la experiencia de usuario y la precisión en la lectura de datos. Estos colores terciarios no deberían ocupar más del 10% de la pantalla del usuario.
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech*
+
+| Métrica	| Nombre | Hex | Uso	|Justificación técnica |
+|---------|--------|-----|------|----------------------|
+| Humedad	y Temperatura Frío | Azul Mar |	#3498DB	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Sigue una base de paleta categórica: azul es convencional para humedad, alto contraste con fondo y consistente con dashboards de las métricas IoT |
+| Luz	| Mostaza |	#F1C40F	|	Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas | El amarillo brillante remite al sol, además de ser legible sobre gris oscuro y blanco |
+| Temperatura Medio	| Brasas |	#E67E22	| Utilizado para mostrar el rango medio de temperatura | Naranja medio comunica calor moderado, siendo una diferenciación clara entre rangos |
+| Temperatura Alto | Tomate | #E74C3C | Utilizado para mostrar el	rango alto de temperatura	| Rojo intenso para alertas de calor, puesto que es una semántica cultural de peligro. Asimismo, tiene un contraste AAA con colores blancos |
+| pH	| Tallo |	#2ECC71	| Utilizado como medidor de acidez/alcalinidad (pH)	| Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.
+| Salinidad |	Neblina |	#1ABC9C	| Utilizado como medidor de salinidad | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores. |
+
+* **Jerarquía visual:** Los neutrales crean un lienzo donde los verdes primarios destacan con claridad, evitando distracciones y enfocando la atención en la información clave.
+
+* **Consistencia:** Todos los secundarios comparten matices grises con la misma temperatura de color, garantizando que la transición entre light y dark sea fluida y predecible.
+
+* **Accesibilidad:** Cada token ha sido validado contra WCAG 2.1 (niveles AA/AAA) para asegurar lectura cómoda y separación de componentes interactivos, protegiendo a usuarios con dificultades visualesl.
+
+**Dark-mode:**
+
+En Dark‑Mode adaptamos cada tono para asegurar contraste, confort visual y consistencia con el fondo gris suave #343541 al que cambiara la pantalla. Siguiendo WCAG 2.1 y prácticas de accesibilidad, evitamos blancos o negros puros y saturaciones excesivas que fatiguen la vista.
+
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/primary-color-dark-mode.png" alt="Listado de todos los colores primarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color primario de Macetech en Modo Dark*
+   
+| Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode | Justificación |
+|------------|----------------|-----------|---------------|------------------|---------------|
+| Verde Bosque | #296244 | Verde Pino |	#1B3326	| Utilizado en la barra de navegación, encabezados, paneles |	Luminancia reducida para distinguirse de #343541 y mantener contraste AAA (aproximadamente 12:1 contra el color blanco).
+| Verde Hoja | #2A8050	| Verde Casa | #1E513B | Utilizado en los botones principales y en los enlaces destacados | Oscurecido aproximadamente en un 25 % para garantizar contraste AAA y evitar problemas de visibilidad en texto blanco, sin perder viveza |
+| Verde Brote | #38865D	| Verde Tierra | #27674A | Utilizado en iconos y en estados hover/activo | Matiz verde profundo que resalta sobre la barra de navegación y el fondo. Presenta un contraste AAA (> 7:1) para feedback claro. |
+
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/secondary-color-dark-mode.png" alt="Listado de todos los colores secundarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color secundario de Macetech en Modo Dark*
+
+| Light‑Mode | Light-Mode Hex |	Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode | Justificación |
+|------------|----------------|-----------|---------------|------------------|---------------|
+| Blanco |	#FFFFFF |	Gris Pizarra |	#343541	| Utilizado en área de contenido y página base	| Más oscuro y cómodo visualmente, útil para separar secciones sin recurrir a negro puro. Su contraste con el texto blanco es mayor a 4.5:1 |
+| Blanco Cálido |	#F4F4F5	| Gris Oscuro |	#2E2F38	| Utilizado en tarjetas y paneles secundarios	| Presenta un oscurecimiento leve para jerarquizar contenedores secundarios y cumplir Non‑Text Contrast (1.4.11) al presentar un contraste fácil de distingar para personas con problemas de visión (World Wide Web Consortium, 2025)|
+| Blanco Frío |	#E4E4E7	| Gris Fuerte | #3B3C45 | Utilizado en líneas de separación y contornos de inputs | Tono cercano a superficie, define límites sin crear “rayas blancas” que distraigan al usuario |
+| Gris Suave |	#6B7280	| Plata |	#9CA3AF	| Labels, descripciones | Gris medio para legibilidad confortable sobre fondos oscuros. Presenta un contraste mayor a 8.2:1, respetando AAA |
+
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/tertiary-color-dark-mode.png" alt="Listado de todos los colores terciarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+
+###### Tabla 30 y algo
+*Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en Modo Dark*
+
+| Métrica	| Light‑Mode| Light-Mode Hex | Dark‑Mode | Dark-Mode Hex	| Uso en Dark‑Mode | Justificación |
+|---------|-----------|----------------|-----------|-----|------------------|---------------|
+| Humedad y Temperatura Frío | Azul Mar | #3498DB | Azul Lago |	#2980B9	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
+| Luz | Mostaza | #F1C40F | Dorado |	#F39C12	| Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas	| Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro | 
+| Temperatura Medio | Brasas | #E67E22 | Zanahoria |	#D35400	| Utilizado para mostrar el rango medio de temperatura | Se utiliza un naranja oscuro que sigue diferenciando niveles de temperatura. Tiene un contraste AA/AAA con texto blanco y fondos oscuros |
+| Temperatura Alto | Tomate | #E74C3C | Cereza | #C0392B | Utilizado para mostrar el	rango alto de temperatura | El uso de un rojo menos brillante suaviza el impacto, sin perder señal de alerta. Presenta un buen contraste AAA |
+| pH |	#2ECC71 |	Tallo | #27AE60 | Llanura |Utilizado como medidor de acidez/alcalinidad (pH) | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco |
+| Salinidad | #1ABC9C | Neblina | #16A085 | Turquesa | Medidor de salinidad | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro |
+
+* **Contraste accesible:** Oscurecer cada tono Light‑Mode garantiza que el texto blanco y los iconos mantengan un ratio mayor a 4.5:1 (AA). Asimismo, cuando la tipografía en ciertos colores cambia a negro, el contraste pasa a ser mayor a 7:1 (AAA) frente a los nuevos fondos (World Wide Web Consortium 2025).
+
+* **Confort visual:** Evitamos negros y blancos puros para reducir brillos incómodos o bordes luminosos y disminuir la fatiga ocular en entornos de baja luz. Asimismo, se promueve la visibilidad en cualquier momento del día, siendo indiferente a la luz solar o nocturna (World Wide Web Consortium 2025).
+
+* **Consistencia de marca:** Las variantes Dark retienen la temperatura y saturación relativa de sus homólogos Light, preservando la identidad cromática de Macetech en ambos modos.
+
+* **Jerarquía clara:** Al mantener proporciones de uso (50/25/25 % para primarios), el usuario percibe la misma estructura de importancia y navegación tanto en Modo Light como en Modo Dark (Westland y Maggio, 2023).
 
 #### Tipografía:
 
@@ -200,6 +327,8 @@ Con esta elección, aseguramos que nuestras comunicaciones críticas lleguen sie
 *Modelos de grosor para el tipo de letra complementaria de Macetech, Arial*
 <img src="/assets/img/capitulo-5/style-guidelines/typography/arial-font-thickness.png" alt="
 Arial font thickness models" width="1000" height="580"> 
+
+
 
 **Espaciado:**
 
