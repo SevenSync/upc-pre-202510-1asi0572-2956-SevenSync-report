@@ -155,11 +155,184 @@ En Dark‑Mode adaptamos cada tono para asegurar contraste, confort visual y con
 
 * **Jerarquía clara:** Al mantener proporciones de uso (50/25/25 % para primarios), el usuario percibe la misma estructura de importancia y navegación tanto en Modo Light como en Modo Dark (Westland y Maggio, 2023).
 
-**Tipografía:**
+#### Tipografía:
+
+En Macetech, la tipografía no es solo una herramienta de lectura: es una extensión visual de nuestra identidad. Como señalan estudios como Jay y Lupton (2024), la selección tipográfica genera una respuesta psicológica directa en el usuario, influenciando su percepción de la marca incluso antes de interactuar con el contenido. En nuestro caso, esta elección cumple una función doble: debe comunicar innovación tecnológica con cercanía humana, al tiempo que refuerza el vínculo emocional con quienes utilizan la plataforma.
+
+Una tipografía bien elegida enriquece la experiencia digital, reduce la carga cognitiva y contribuye a la claridad informativa. Para Macetech, que fusiona tecnología IoT con la vida natural de las plantas, es esencial que la fuente transmita modernidad, accesibilidad y confianza sin dejar de ser visualmente armónica con nuestros colores, íconos y componentes de interfaz.
+
+Así, la tipografía en Macetech no solo organiza el contenido, sino que también articula los valores centrales de la marca: innovación sostenible, cercanía digital y precisión confiable. Es un pilar invisible pero esencial para lograr una experiencia coherente, emocionalmente resonante y funcionalmente efectiva (Dopico, 2021).
+
+En el mundo del diseño tipográfico, dos grandes familias destacan: serif y sans-serif. Comprender sus características es esencial para tomar decisiones coherentes con la identidad y la funcionalidad de una marca digital como Macetech:
+
+* **Serif:** 
+
+  Las tipografías serif se distinguen por sus terminaciones ornamentales, conocidas como serifas, en los extremos de los trazos. Estos pequeños detalles, tradicionalmente asociados con elegancia y formalidad, han sido durante décadas una opción predilecta para textos impresos, como libros o publicaciones académicas. Su estructura facilita el seguimiento visual de una letra a otra, lo que favorece la lectura fluida en cuerpos de texto extensos (Jay & Lupton, 2024).
+
+  Aunque su presencia se ha mantenido en entornos digitales, en el caso de Macetech no son recomendadas como tipografía principal, ya que su estilo clásico puede entrar en conflicto con la estética tecnológica y limpia que buscamos transmitir. Ejemplos destacados de este estilo incluyen *Times New Roman* y *Georgia*, tipografías que siguen siendo altamente valoradas por su equilibrio entre legibilidad y tradición.
+
+* **Sans-serif:** 
+    
+  En contraste, las tipografías sans-serif, carentes de adornos o remates, ofrecen una apariencia más moderna, funcional y accesible. Su trazo uniforme y minimalista mejora significativamente la lectura en pantalla, especialmente en interfaces digitales donde la claridad visual y la distribución de formas son fundamentales para la usabilidad (Jay & Lupton, 2024).
+
+  Dado que Macetech está concebido como un sistema tecnológico de uso cotidiano, con múltiples datos y métricas en pantalla, las tipografías sans-serif constituyen la elección natural. Estas fuentes favorecen una lectura rápida, cómoda y visualmente coherente en contextos digitales. Ejemplos ampliamente reconocidos de esta categoría incluyen *Arial*, *Helvetica* y *Roboto*, siendo esta última una excelente opción por su diseño optimizado para pantallas y sistemas de interfaz moderna.
+
+###### Figura 32
+
+Comparación entre los tipos de tipografía serif, utilizando Roboto Slab, y sans-serif, utilizando Roboto
+
+<img src="/assets/img/capitulo-5/style-guidelines/typography/roboto-font-example.png" alt="
+The Roboto font compared to the Roboto Slab font, showing how different they are." width="1000" height="580"> 
+
+En el diseño de interfaces digitales, tanto en aplicaciones móviles como en aplicaciones web, la elección tipográfica juega un rol decisivo en la usabilidad, legibilidad y percepción estética del sistema. En este contexto, las tipografías sans-serif representan la opción más funcional y versátil, especialmente cuando se busca optimizar la experiencia en pantallas pequeñas y variadas resoluciones de visualización. Esta preferencia se fundamenta tanto en principios de diseño centrado en el usuario como en criterios técnicos de rendimiento visual. A continuación, se detallan los principales factores que sustentan esta elección:
+
+1. Legibilidad optimizada en pantallas pequeñas
+
+    Las aplicaciones móviles operan en dispositivos con espacio limitado para el contenido visual. Las fuentes sans-serif, al carecer de adornos o serifas, poseen un trazo uniforme y directo que facilita la lectura incluso en cuerpos tipográficos reducidos. Esto minimiza el esfuerzo visual requerido para interpretar información crítica, mejorando la retención y comprensión del contenido en entornos móviles exigentes (Minakata & Beier, 2022).
+
+2. Claridad y consistencia en múltiples resoluciones y densidades de píxeles
+
+    Uno de los desafíos técnicos en el diseño digital contemporáneo es garantizar que los elementos tipográficos mantengan su nitidez en pantallas con diferentes densidades de píxeles (DPI). Como han señalado González-Rodríguez et al. (2024), las tipografías sans-serif presentan una geometría que se rasteriza de forma eficiente, permitiendo una presentación consistente y legible tanto en pantallas de baja resolución como en dispositivos de gama alta, incluidos smartphones 4K y monitores Retina.
+
+3. Estética alineada con principios de diseño moderno
+
+    La estética visual de interfaces modernas, especialmente en productos tecnológicos como Macetech, privilegia la simplicidad, el orden y la limpieza visual. Las fuentes sans-serif refuerzan estos principios gracias a su estructura sobria y neutral, lo que contribuye a crear interfaces contemporáneas, eficientes y centradas en la funcionalidad, tanto para web y móvil. Su estilo atemporal permite que la identidad visual se mantenga vigente en el tiempo, alineándose con las expectativas del usuario digital actual (Minakata & Beier, 2022).
+
+4. Mejor rendimiento en interfaces dinámicas y responsivas
+
+    En interfaces digitales donde los contenidos cambian constantemente, ya sea por scroll, transiciones animadas o componentes interactivos como sliders o tarjetas, las tipografías sans-serif responden mejor al movimiento, ofreciendo mayor estabilidad visual. Esto evita el desenfoque perceptivo y reduce la fatiga cognitiva, facilitando una navegación continua y fluida (Bhanarkar et al., 2023). Además, su estructura modular mejora la carga y renderización del contenido en sistemas de diseño responsivo tanto móviles como de escritorio.
+
+5. Coherencia entre plataformas móviles y web
+
+    Una aplicación como Macetech, concebida como plataforma multiplataforma, debe mantener una identidad visual coherente tanto en su versión móvil como en su versión web. Las fuentes sans-serif aseguran esta unidad visual sin comprometer la legibilidad ni el rendimiento. Gracias a su versatilidad, pueden ser implementadas fácilmente en frameworks modernos como Vue.js, React o Flutter, sin perder consistencia entre navegadores, sistemas operativos o tamaños de pantalla.
+
+**Tipo de Letra Primaria:**
+
+En el marco del desarrollo de Macetech, una solución tecnológica centrada en la automatización del cuidado de plantas a través de IoT, la elección de una tipografía adecuada resulta esencial para consolidar la identidad visual de la marca y garantizar una experiencia de usuario accesible, moderna y coherente en todos los puntos de contacto. Ya se ha fundamentado previamente la decisión de utilizar una familia sans-serif, debido a su claridad, legibilidad en múltiples resoluciones y alineación con los principios del diseño contemporáneo. A partir de este criterio base, se ha seleccionado la tipografía Rubik como fuente principal del sistema.
+
+Rubik es una fuente sans-serif geométrica con terminaciones suaves y proporciones equilibradas, diseñada originalmente por Philipp Hubert y Sebastian Fischer. Esta fuente se caracteriza por una estética moderna, amigable y ligeramente tecnológica, lo que la convierte en una excelente elección para una marca como Macetech, que busca transmitir simultáneamente confiabilidad, innovación y conexión con la naturaleza (Google, 2025).
+
+1. Geometría funcional y personalidad balanceada
+
+    Rubik presenta una estructura geométrica con ligeras curvas en sus vértices y terminales, lo que le confiere un aspecto visual cálido y accesible, sin sacrificar orden y precisión. Esta combinación de racionalidad visual con suavidad emocional permite que la interfaz de Macetech no resulte ni excesivamente técnica ni completamente informal (Gonzalez-Rodrigueza et al., 2024).
+
+2. Alto rendimiento en pantallas y sistemas responsivos
+  
+    Rubik está optimizada para su uso en plataformas digitales. Sus proporciones abiertas y espaciado generoso aseguran una legibilidad sobresaliente incluso en dispositivos móviles de baja resolución. Esto la convierte en una fuente ideal para interfaces donde conviven dashboards, datos de sensores, etiquetas y botones, sin generar ruido visual ni comprometer la accesibilidad (Google, 2025).
+
+3. Compatibilidad multiplataforma y optimización web
+
+    Al formar parte de Google Fonts, Rubik cuenta con carga rápida desde CDN, amplia compatibilidad entre navegadores y excelente renderizado tanto en Windows como en sistemas basados en UNIX/macOS. Además, su arquitectura tipográfica admite múltiples pesos (light, regular, medium, bold, extra bold), lo que facilita la creación de una jerarquía visual clara y coherente en todas las secciones de la interfaz (Bhanarkar et al., 2023).
+
+4. Coherencia con la identidad visual de Macetech
+
+    La forma suave pero precisa de Rubik se alinea perfectamente con los valores que Macetech busca proyectar, siendo cuidado, inteligencia y armonía. Frente a otras alternativas sans-serif más neutras (como Open Sans o Lato), Rubik añade un matiz distintivo que refuerza la unicidad de la marca sin caer en lo ornamental (Google, 2025).
+
+5. Soporte multilingüe y cobertura técnica
+
+    Rubik ofrece soporte completo para caracteres latinos extendidos, lo cual es relevante para su despliegue en el mercado hispanohablante, y su estructura modular permite adaptarla fácilmente a sistemas tipográficos escalables dentro de frameworks modernos como Tailwind, Bootstrap, Vue.js o React (Google, 2025).
+
+###### Figura 33
+
+Modelos de grosor para el tipo de letra principal de Macetech, Rubik
+
+<img src="/assets/img/capitulo-5/style-guidelines/typography/rubik-font-thickness.png" alt="
+Rubik font thickness models" width="1000" height="580"> 
+
+**Tipo de Letra Secundaria:**
+
+En su compromiso por garantizar una experiencia de usuario verdaderamente inclusiva y adaptada a un público global, Macetech ha integrado Noto Sans como tipografía secundaria especializada para entornos multilingües. Esta familia tipográfica, resultado de la colaboración entre Google y Monotype, ha sido diseñada bajo estándares rigurosos de calidad tipográfica y cobertura Unicode, permitiendo soportar más de 110 000 glifos y 800 idiomas en más de 100 sistemas de escritura (Google, 2025).
+
+El desarrollo de Noto Sans se fundamenta en dos pilares técnicos clave:
+
+* **Interpolación y hinting avanzados:**
+
+    Mediante algoritmos de interpolación paramétrica, cada glifo conserva su fidelidad geométrica en tamaños pequeños y en pantallas de alta densidad (Retina, 4K), garantizando líneas limpias y contornos nítidos en cualquier resolución (Huang, 2019).
+
+* **Métricas tipográficas uniformes:**
+
+    Con interletrajes y alturas de línea coherentes en toda la familia y en sus diferentes pesos (Light, Regular, Bold), Noto Sans facilita la implementación de sistemas de cuadrícula (CSS Grid/Flex) y bibliotecas de componentes, asegurando que el diseño responsivo se mantenga predecible y sin solapamientos de texto (Jay y Lupton, 2024).
+
+###### Figura 34
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-font-thickness.png" alt="
+Noto Sans font thickness models" width="1000" height="580"> 
+
+Gracias a esta profundidad de cobertura y precisión técnica, Noto Sans no solo evita problemas de sustitución de caracteres, sino que también permite a Macetech presentar contenido con total consistencia visual y legibilidad, sin importar la configuración regional y/o lingüística del usuario.
+
+* **Soporte multilingüe y consistencia visual**
+
+    Noto Sans abarca más de 800 idiomas y más de 110.000 caracteres, cubriendo más de 100 sistemas de escritura, lo que la convierte en una herramienta esencial para garantizar que el contenido se muestre de manera clara y legible, independientemente de la configuración lingüística o regional. Según Huang (2019), su diseño versátil asegura una presentación uniforme del texto en diversos contextos internacionales, eliminando los problemas comunes de visualización de caracteres desconocidos.
+
+* **Compromiso con la accesibilidad y la inclusividad**
+
+    La implementación de Noto Sans contribuye significativamente a la accesibilidad y la inclusividad, aspectos fundamentales para ofrecer una experiencia de usuario universal. Al utilizar esta tipografía, Macetech no solo garantiza una presentación coherente del contenido en distintos idiomas, sino que también reafirma su compromiso con la adaptabilidad y la consideración de las necesidades globales de sus usuarios (World Wide Web Consortium, 2025).
+
+* **Integración armoniosa con la identidad de Macetech**
+
+    Aunque Rubik es la tipografía principal de Macetech, Noto Sans se integra de manera armoniosa en situaciones donde se requiere soporte multilingüe, asegurando que la identidad visual de la marca se mantenga coherente y profesional en todos los contextos.
+
+###### Figura 35
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Tradicional
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-traditional-chinese.png" alt="
+Noto Sans font thickness models in Traditional Chinese" width="1000" height="580"> 
+
+###### Figura 36
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Simplificado
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-simplified-chinese.png" alt="
+Noto Sans font thickness models in Simplified Chinese" width="1000" height="580"> 
+
+###### Figura 37
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Coreano
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-korean.png" alt="
+Noto Sans font thickness models in Korean" width="1000" height="580"> 
+
+###### Figura 38
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Tailandés
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-thai.png" alt="
+Noto Sans font thickness models in Thai" width="1000" height="580"> 
+
+###### Figura 39 
+
+Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Japonés
+<img src="/assets/img/capitulo-5/style-guidelines/typography/noto-sans-japanese.png" alt="
+Noto Sans font thickness models in Japanese" width="1000" height="580"> 
+
+**Tipo de Letra Complementaria:**
+
+En aquellos escenarios en los que dependemos exclusivamente de las fuentes instaladas en los dispositivos de los usuarios, por ejemplo, en campañas de correo electrónico, notificaciones SMS o documentos generados localmente, hemos optado por Arial como tipografía complementaria. Arial es una fuente sans-serif de sistema ampliamente disponible en Windows, macOS, Linux y la mayoría de clientes de correo, lo que garantiza que nuestro contenido se renderice de manera uniforme y coherente sin necesidad de descargas adicionales (Jay y Lupton, 2024).
+
+* **Compatibilidad universal:** 
+
+    Arial forma parte de la lista de “web-safe fonts” y está preinstalada en prácticamente todos los entornos de usuario, eliminando posibles inconsistencias o caídas a fuentes de sustitución que podrían afectar la legibilidad (Google, 2025).
+
+* **Claridad en pantalla:**
+
+    Su trazo sencillo y proporciones equilibradas favorecen la lectura en tamaños pequeños, típicos de los visores de correo y pantallas de dispositivos móviles, evitando el “aliasing” excesivo y garantizando una experiencia clara incluso con bajos niveles de zoom (Jay y Lupton, 2024).
+
+* **Rendimiento optimizado:**
+
+    Al no requerir la descarga de recursos externos, reduce la latencia de apertura de correos electrónicos y mejora la entrega de mensajes SMS con texto formateado, asegurando que el usuario reciba y vea el contenido de inmediato.
+
+Con esta elección, aseguramos que nuestras comunicaciones críticas lleguen siempre con la máxima fiabilidad tipográfica, sin comprometer la estética ni la claridad del mensaje.
+
+
+###### Figura 40
+
+*Modelos de grosor para el tipo de letra complementaria de Macetech, Arial*
+<img src="/assets/img/capitulo-5/style-guidelines/typography/arial-font-thickness.png" alt="
+Arial font thickness models" width="1000" height="580"> 
 
 
 
 **Espaciado:**
+
+
 
 **Tono de comunicación y lenguaje aplicado:**
 
