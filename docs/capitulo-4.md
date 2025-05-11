@@ -916,8 +916,10 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams.
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringManagementClassDiagram.png"></image>
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringManagementDbDiagram.png"></image>
 
 
 
@@ -1114,8 +1116,10 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
 #### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
 ##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsClassDiagram.png"></image>
 
 ##### 4.2.7.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
 
 
 ### 4.2.8. Bounded Context: Caring Intelligence
@@ -1303,8 +1307,10 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams.
 #### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams.
 ##### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
 
 ##### 4.2.8.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
 
 
 ### 4.2.9. Bounded Context: Data Insights & Reporting
@@ -1445,6 +1451,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams.
 #### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams.
 ##### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams.
-
+<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingClassDiagram.png"></image>
 ##### 4.2.9.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingDbDiagram.png"></image>
 
