@@ -833,7 +833,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | createWateringSchedule | `void`                | public      | Registra el evento de riego realizado.                  |
 | getWateringHistory     | `List<WateringEvent>` | public      | Obtiene el historial de riego de una maceta específica. |                    
 
-#### 4.2.1.2. Interface Layer.
+#### 4.2.6.2. Interface Layer.
 
 ## WateringScheduleController
 
@@ -855,7 +855,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ---
 
-#### 4.2.1.3. Application Layer.
+#### 4.2.6.3. Application Layer.
 
 ## WateringScheduleService
 
@@ -876,7 +876,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ---
 
-#### 4.2.1.4. Infrastructure Layer.
+#### 4.2.6.4. Infrastructure Layer.
 
 ## WateringScheduleRepository
 
