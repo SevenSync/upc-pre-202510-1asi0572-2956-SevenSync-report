@@ -586,7 +586,6 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 #### 4.2.1.3. Application Layer.
 
-
 ## UserRegisterCommandHandler
 
 | Propiedad     | Valor                        |
@@ -708,7 +707,1186 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/class-diagram.png"></image>
 
-
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
 <image src="../assets/img/capitulo-4/bounded-context-plant-registration/database-diagram.png"></image>
+
+### 4.2.2. Bounded Context: Profile and Personal Data
+
+#### 4.2.2.1. Domain Layer.
+
+## Profile
+
+| Propiedad     | Valor                                                              |
+| ------------- | ------------------------------------------------------------------ |
+| **Nombre**    | Profile                                                            |
+| **Categoría** | Aggregate Root                                                     |
+| **Propósito** | Agrupar y gestionar los datos de perfil y personales de un usuario |
+
+### Atributos
+
+| Nombre           | Tipo de dato    | Visibilidad | Descripción                                         |
+| ---------------- | --------------- | ----------- | --------------------------------------------------- |
+| userUid          | `String`        | private     | Identificador único del usuario                     |
+| name             | `FullName`      | private     | Nombre completo del usuario                         |
+| phoneNumber      | `PhoneNumber`   | private     | Número de teléfono del usuario                      |
+| streetAddress    | `StreetAddress` | private     | Dirección física del usuario                        |
+| profileRole      | `ProfileRole`   | private     | Rol asignado al perfil (Amateur o Gardener)         |
+| imageUrl         | `String`        | private     | URL de la imagen de perfil                          |
+| notifyUsingEmail | `Boolean`       | private     | Indica si el usuario desea notificaciones por email |
+| createdAt        | `DateTime`      | private     | Fecha de creación del perfil                        |
+| updatedAt        | `DateTime`      | private     | Fecha de la última actualización del perfil         |
+
+### Métodos
+
+| Nombre                  | Tipo de retorno | Visibilidad | Descripción                                             |
+| ----------------------- | --------------- | ----------- | ------------------------------------------------------- |
+| changeName              | `void`          | public      | Actualiza el `name` y marca `updatedAt`                 |
+| changePhoneNumber       | `void`          | public      | Actualiza el `phoneNumber` y marca `updatedAt`          |
+| changeStreetAddress     | `void`          | public      | Actualiza el `streetAddress` y marca `updatedAt`        |
+| setProfileImage         | `void`          | public      | Actualiza el `imageUrl` y marca `updatedAt`             |
+| toggleEmailNotification | `void`          | public      | Activa/desactiva `notifyUsingEmail` y marca `updatedAt` |
+| markUpdated             | `void`          | private     | Actualiza internamente el campo `updatedAt`             |
+
+## FullName
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | FullName                                 |
+| **Categoría** | Value Object                             |
+| **Propósito** | Encapsular nombre y apellido del usuario |
+
+### Atributos
+
+| Nombre   | Tipo de dato | Visibilidad | Descripción           |
+| -------- | ------------ | ----------- | --------------------- |
+| name     | `String`     | private     | Nombre propio         |
+| lastName | `String`     | private     | Apellidos del usuario |
+
+### Métodos
+
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
+| --------------- | --------------- | ----------- | --------------------------------------- |
+| fullName        | `String`        | public      | Retorna `name + " " + lastName`         |
+
+## PhoneNumber
+
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | PhoneNumber                               |
+| **Categoría** | Value Object                              |
+| **Propósito** | Validar y almacenar un número de teléfono |
+
+### Atributos
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                |
+| ----------- | ------------ | ----------- | -------------------------- |
+| countryCode | `String`     | private     | Código de país (ej. "+51") |
+| number      | `String`     | private     | Número local del teléfono  |
+
+### Métodos
+
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
+| --------------- | --------------- | ----------- | --------------------------------------- |
+| formatted       | `String`        | public      | Devuelve `countryCode + number`         |
+
+## StreetAddress
+
+| Propiedad     | Valor                                  |
+| ------------- | -------------------------------------- |
+| **Nombre**    | StreetAddress                          |
+| **Categoría** | Value Object                           |
+| **Propósito** | Almacenar datos de la dirección física |
+
+### Atributos
+
+| Nombre       | Tipo de dato | Visibilidad | Descripción                        |
+| ------------ | ------------ | ----------- | ---------------------------------- |
+| street       | `String`     | private     | Nombre de la calle                 |
+| streetNumber | `String`     | private     | Número o identificador de la calle |
+| city         | `String`     | private     | Ciudad                             |
+| postalCode   | `String`     | private     | Código postal                      |
+| country      | `String`     | private     | País                               |
+
+### Métodos
+
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                                               |
+| --------------- | --------------- | ----------- | --------------------------------------------------------- |
+| fullAddress     | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
+
+## ProfileRole
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | ProfileRole                             |
+| **Categoría** | Enum                                    |
+| **Propósito** | Definir los posibles roles de un perfil |
+
+### Valores
+
+| Valor    | Descripción                 |
+| -------- | --------------------------- |
+| Amateur  | Perfil de usuario amateur   |
+| Gardener | Perfil de usuario jardinero |
+
+## ProfileFactory
+
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | ProfileFactory                            |
+| **Categoría** | Factory                                   |
+| **Propósito** | Construir instancias válidas de `Profile` |
+
+### Métodos
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción                                                                                       |
+| ------ | --------------- | ----------- | ------------------------------------------------------------------------------------------------- |
+| create | `Profile`       | public      | Crea un `Profile` a partir de datos primitivos, valida valores y asigna `createdAt` y `updatedAt` |
+
+## IProfileRepository
+
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | IProfileRepository                        |
+| **Categoría** | Repository                                |
+| **Propósito** | Persistir y recuperar entidades `Profile` |
+
+### Métodos
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción                                       |
+| ------------- | --------------- | ----------- | ------------------------------------------------- |
+| findById      | `Profile?`      | public      | Recupera un perfil según su identificador interno |
+| findByUserUid | `Profile?`      | public      | Recupera un perfil según `userUid`                |
+| create        | `Unit`          | public      | Persiste un nuevo `Profile`                       |
+| update        | `Unit`          | public      | Actualiza un `Profile` existente                  |
+| delete        | `Unit`          | public      | Elimina lógicamente un `Profile`                  |
+
+#### 4.2.2.2. Interface Layer.
+
+## ProfileController
+
+| Propiedad     | Valor                             |
+| ------------- | --------------------------------- |
+| **Nombre**    | ProfileController                 |
+| **Categoría** | Controller                        |
+| **Propósito** | Exponer servicios REST de Profile |
+| **Ruta**      | `/api/profile/`                   |
+
+### Métodos
+
+| Nombre                   | Ruta                 | Acción                     | Handle                            |
+| ------------------------ | -------------------- | -------------------------- | --------------------------------- |
+| getProfile               | `/{uid}`             | Obtener perfil             | `GetProfileQuery`                 |
+| updateProfile            | `/{uid}`             | Actualizar perfil completo | `UpdateProfileCommand`            |
+| deleteProfile            | `/{uid}`             | Eliminar perfil            | `DeleteProfileCommand`            |
+| createProfile            | `/create`            | Crear nuevo perfil         | `CreateProfileCommand`            |
+| updateProfilePreferences | `/preferences/{uid}` | Actualizar preferencias    | `UpdateProfilePreferencesCommand` |
+
+#### 4.2.2.3. Application Layer.
+
+## GetProfileQueryHandler
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | GetProfileQueryHandler                   |
+| **Categoría** | Query Handler                            |
+| **Propósito** | Manejar la lógica para `GetProfileQuery` |
+
+## CreateProfileCommandHandler
+
+| Propiedad     | Valor                                                      |
+| ------------- | ---------------------------------------------------------- |
+| **Nombre**    | CreateProfileCommandHandler                                |
+| **Categoría** | Command Handler                                            |
+| **Propósito** | Ejecutar la creación de un perfil (`CreateProfileCommand`) |
+
+## UpdateProfileCommandHandler
+
+| Propiedad     | Valor                                                           |
+| ------------- | --------------------------------------------------------------- |
+| **Nombre**    | UpdateProfileCommandHandler                                     |
+| **Categoría** | Command Handler                                                 |
+| **Propósito** | Ejecutar la actualización de un perfil (`UpdateProfileCommand`) |
+
+## DeleteProfileCommandHandler
+
+| Propiedad     | Valor                                                         |
+| ------------- | ------------------------------------------------------------- |
+| **Nombre**    | DeleteProfileCommandHandler                                   |
+| **Categoría** | Command Handler                                               |
+| **Propósito** | Ejecutar la eliminación de un perfil (`DeleteProfileCommand`) |
+
+## UpdateProfilePreferencesCommandHandler
+
+| Propiedad     | Valor                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------- |
+| **Nombre**    | UpdateProfilePreferencesCommandHandler                                                  |
+| **Categoría** | Command Handler                                                                         |
+| **Propósito** | Ejecutar la actualización de preferencias de perfil (`UpdateProfilePreferencesCommand`) |
+
+## CreatedProfileEventHandler
+
+| Propiedad     | Valor                                                   |
+| ------------- | ------------------------------------------------------- |
+| **Nombre**    | CreatedProfileEventHandler                              |
+| **Categoría** | Event Handler                                           |
+| **Propósito** | Procesar la lógica tras el evento `ProfileCreatedEvent` |
+
+## UpdatedProfileEventHandler
+
+| Propiedad     | Valor                                                   |
+| ------------- | ------------------------------------------------------- |
+| **Nombre**    | UpdatedProfileEventHandler                              |
+| **Categoría** | Event Handler                                           |
+| **Propósito** | Procesar la lógica tras el evento `ProfileUpdatedEvent` |
+
+## DeletedProfileEventHandler
+
+| Propiedad     | Valor                                                   |
+| ------------- | ------------------------------------------------------- |
+| **Nombre**    | DeletedProfileEventHandler                              |
+| **Categoría** | Event Handler                                           |
+| **Propósito** | Procesar la lógica tras el evento `ProfileDeletedEvent` |
+
+#### 4.2.2.4. Infrastructure Layer.
+
+## ProfileRepository
+
+| Propiedad     | Valor                                                  |
+| ------------- | ------------------------------------------------------ |
+| **Nombre**    | ProfileRepository                                      |
+| **Categoría** | Repository Implementation                              |
+| **Propósito** | Implementar `IProfileRepository` usando ORM relacional |
+| **Interfaz**  | `IProfileRepository`                                   |
+
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.
+[missing-res]
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+### 4.2.3. Bounded Context: Pot Management
+
+#### 4.2.3.1. Domain Layer.
+
+## Pot
+
+| Propiedad     | Valor                                                          |
+| ------------- | -------------------------------------------------------------- |
+| **Nombre**    | Pot                                                            |
+| **Categoría** | Aggregate Root                                                 |
+| **Propósito** | Representar una maceta con su ciclo de vida, estado y sensores |
+
+### Atributos
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                             |
+| ----------- | ------------ | ----------- | --------------------------------------- |
+| id          | `Long`       | private     | Identificador único de la maceta        |
+| userUid     | `String`     | private     | Identificador del usuario dueño         |
+| tag         | `String`     | private     | Etiqueta o nombre amigable de la maceta |
+| status      | `PotStatus`  | private     | Estado actual de la maceta              |
+| humidity    | `Sensor`     | private     | Sensor de humedad asociado              |
+| temperature | `Sensor`     | private     | Sensor de temperatura asociado          |
+| water       | `Sensor`     | private     | Sensor de nivel de agua asociado        |
+
+### Métodos
+
+| Nombre            | Tipo de retorno | Visibilidad | Descripción                                    |
+| ----------------- | --------------- | ----------- | ---------------------------------------------- |
+| changeTag         | `void`          | public      | Actualiza la `tag` de la maceta                |
+| changeStatus      | `void`          | public      | Actualiza el `status` de la maceta             |
+| recordHumidity    | `void`          | public      | Actualiza el valor del sensor de `humidity`    |
+| recordTemperature | `void`          | public      | Actualiza el valor del sensor de `temperature` |
+| recordWaterLevel  | `void`          | public      | Actualiza el valor del sensor de `water`       |
+
+## Group
+
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | Group                                       |
+| **Categoría** | Entity                                      |
+| **Propósito** | Agrupar varias macetas bajo un nombre común |
+
+### Atributos
+
+| Nombre  | Tipo de dato | Visibilidad | Descripción                                     |
+| ------- | ------------ | ----------- | ----------------------------------------------- |
+| id      | `Long`       | private     | Identificador único del grupo                   |
+| name    | `String`     | private     | Nombre del grupo                                |
+| userUid | `String`     | private     | Identificador del usuario que creó el grupo     |
+| potUid  | `List<Long>` | private     | Lista de IDs de macetas pertenecientes al grupo |
+
+### Métodos
+
+| Nombre      | Tipo de retorno | Visibilidad | Descripción                         |
+| ----------- | --------------- | ----------- | ----------------------------------- |
+| renameGroup | `void`          | public      | Cambia el nombre del grupo          |
+| addPot      | `void`          | public      | Añade un ID de maceta a `potUid`    |
+| removePot   | `void`          | public      | Elimina un ID de maceta de `potUid` |
+
+## Sensor
+
+| Propiedad     | Valor                                               |
+| ------------- | --------------------------------------------------- |
+| **Nombre**    | Sensor                                              |
+| **Categoría** | Value Object                                        |
+| **Propósito** | Representar la lectura y estado de un sensor físico |
+
+### Atributos
+
+| Nombre           | Tipo de dato | Visibilidad | Descripción                                               |
+| ---------------- | ------------ | ----------- | --------------------------------------------------------- |
+| value            | `Float`      | private     | Valor actual de la medición                               |
+| isMalfunctioning | `Boolean`    | private     | Indica si el sensor está fallando                         |
+| measurementType  | `String`     | private     | Tipo de medición (ej. "humidity", "temperature", "water") |
+
+### Métodos
+
+| Nombre           | Tipo de retorno | Visibilidad | Descripción                             |
+| ---------------- | --------------- | ----------- | --------------------------------------- |
+| updateValue      | `void`          | public      | Asigna un nuevo `value`                 |
+| markMalfunction  | `void`          | public      | Marca el sensor como en fallo           |
+| clearMalfunction | `void`          | public      | Restablece `isMalfunctioning` a `false` |
+
+## PotStatus
+
+| Propiedad     | Valor                                      |
+| ------------- | ------------------------------------------ |
+| **Nombre**    | PotStatus                                  |
+| **Categoría** | Enum                                       |
+| **Propósito** | Definir los posibles estados de una maceta |
+
+### Valores
+
+| Valor    | Descripción |
+| -------- | ----------- |
+| Free     | Disponible  |
+| InUse    | En uso      |
+| Inactive | Inactiva    |
+| Broken   | Dañada      |
+
+## PotFactory
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | PotFactory                               |
+| **Categoría** | Factory                                  |
+| **Propósito** | Crear nuevas instancias válidas de `Pot` |
+
+### Métodos
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción                                                                         |
+| ------ | --------------- | ----------- | ----------------------------------------------------------------------------------- |
+| create | `Pot`           | public      | Construye un `Pot` inicializando `id`, `userUid`, `tag`, `status` y sensores vacíos |
+
+## IPotRepository
+
+| Propiedad     | Valor                                 |
+| ------------- | ------------------------------------- |
+| **Nombre**    | IPotRepository                        |
+| **Categoría** | Repository                            |
+| **Propósito** | Persistir y recuperar entidades `Pot` |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                     |
+| -------------- | --------------- | ----------- | ----------------------------------------------- |
+| findById       | `Pot?`          | public      | Recupera un `Pot` por su `id`                   |
+| findByUserUid  | `List<Pot>`     | public      | Recupera todas las macetas de un usuario        |
+| findByGroupUid | `List<Pot>`     | public      | Recupera todas las macetas asociadas a un grupo |
+| findByTag      | `Pot?`          | public      | Busca una maceta por su `tag`                   |
+| update         | `Unit`          | public      | Actualiza un `Pot` existente                    |
+| create         | `Unit`          | public      | Persiste un nuevo `Pot`                         |
+
+## IGroupRepository
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | IGroupRepository                        |
+| **Categoría** | Repository                              |
+| **Propósito** | Persistir y recuperar entidades `Group` |
+
+## Métodos
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción                                        |
+| ------------- | --------------- | ----------- | -------------------------------------------------- |
+| findById      | `Group?`        | public      | Recupera un `Group` por su `id`                    |
+| findByUserUid | `List<Group>`   | public      | Recupera todos los grupos de un usuario            |
+| findByPotUid  | `List<Group>`   | public      | Recupera todos los grupos que contienen una maceta |
+| update        | `Unit`          | public      | Actualiza un `Group` existente                     |
+| create        | `Unit`          | public      | Persiste un nuevo `Group`                          |
+| delete        | `Unit`          | public      | Elimina un `Group`                                 |
+
+#### 4.2.3.2. Interface Layer.
+
+## PotController
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | PotController                            |
+| **Categoría** | Controller                               |
+| **Propósito** | Exponer API REST para gestión de macetas |
+| **Ruta**      | `/api/pot/`                              |
+
+## Métodos
+
+| Nombre            | Ruta                 | Acción                                  | Handle                   |
+| ----------------- | -------------------- | --------------------------------------- | ------------------------ |
+| getPot            | `/{id}`              | Obtener una maceta por ID               | `GetPotQuery`            |
+| getAllPots        | `/all/{userId}`      | Obtener todas las macetas de un usuario | `GetAllPotsQuery`        |
+| getAllPotsByGroup | `/group/{groupId}`   | Obtener macetas de un grupo             | `GetAllPotsByGroupQuery` |
+| updatePot         | `/{id}`              | Actualizar datos de una maceta          | `UpdatePotCommand`       |
+| linkPot           | `/link-user/{id}`    | Enlazar maceta a un usuario             | `LinkPotCommand`         |
+| unlinkPot         | `/unlink-user/{id}`  | Desenlazar maceta de un usuario         | `UnlinkPotCommand`       |
+| assignPlant       | `/assign-plant/{id}` | Asignar planta a una maceta             | `AssignPlantCommand`     |
+
+## GroupController
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | GroupController                         |
+| **Categoría** | Controller                              |
+| **Propósito** | Exponer API REST para gestión de grupos |
+| **Ruta**      | `/api/group/`                           |
+
+### Métodos
+
+| Nombre       | Ruta            | Acción                                 | Handle               |
+| ------------ | --------------- | -------------------------------------- | -------------------- |
+| getGroup     | `/{id}`         | Obtener un grupo por ID                | `GetGroupQuery`      |
+| getAllGroups | `/all/{userId}` | Obtener todos los grupos de un usuario | `GetAllGroupsQuery`  |
+| updateGroup  | `/{id}`         | Actualizar datos de un grupo           | `UpdateGroupCommand` |
+| createGroup  | `/create`       | Crear un nuevo grupo                   | `CreateGroupCommand` |
+| deleteGroup  | `/{id}`         | Eliminar un grupo                      | `DeleteGroupCommand` |
+
+#### 4.2.3.3. Application Layer.
+
+## GetPotQueryHandler
+
+| Propiedad     | Valor                                                     |
+| ------------- | --------------------------------------------------------- |
+| **Nombre**    | GetPotQueryHandler                                        |
+| **Categoría** | Query Handler                                             |
+| **Propósito** | Manejar la consulta `GetPotQuery` para obtener una maceta |
+
+## GetAllPotsQueryHandler
+
+| Propiedad     | Valor                                                                   |
+| ------------- | ----------------------------------------------------------------------- |
+| **Nombre**    | GetAllPotsQueryHandler                                                  |
+| **Categoría** | Query Handler                                                           |
+| **Propósito** | Manejar la consulta `GetAllPotsQuery` para listar macetas de un usuario |
+
+## GetAllPotsByGroupQueryHandler
+
+| Propiedad     | Valor                                                                      |
+| ------------- | -------------------------------------------------------------------------- |
+| **Nombre**    | GetAllPotsByGroupQueryHandler                                              |
+| **Categoría** | Query Handler                                                              |
+| **Propósito** | Manejar la consulta `GetAllPotsByGroupQuery` para listar macetas por grupo |
+
+## UpdatePotCommandHandler
+
+| Propiedad     | Valor                                                               |
+| ------------- | ------------------------------------------------------------------- |
+| **Nombre**    | UpdatePotCommandHandler                                             |
+| **Categoría** | Command Handler                                                     |
+| **Propósito** | Ejecutar la lógica de `UpdatePotCommand` para actualizar una maceta |
+
+## LinkPotCommandHandler
+
+| Propiedad     | Valor                                                                       |
+| ------------- | --------------------------------------------------------------------------- |
+| **Nombre**    | LinkPotCommandHandler                                                       |
+| **Categoría** | Command Handler                                                             |
+| **Propósito** | Ejecutar la lógica de `LinkPotCommand` para enlazar una maceta a un usuario |
+
+## UnlinkPotCommandHandler
+
+| Propiedad     | Valor                                                                             |
+| ------------- | --------------------------------------------------------------------------------- |
+| **Nombre**    | UnlinkPotCommandHandler                                                           |
+| **Categoría** | Command Handler                                                                   |
+| **Propósito** | Ejecutar la lógica de `UnlinkPotCommand` para desenlazar una maceta de un usuario |
+
+## PotUpdatedEventHandler
+
+| Propiedad     | Valor                                               |
+| ------------- | --------------------------------------------------- |
+| **Nombre**    | PotUpdatedEventHandler                              |
+| **Categoría** | Event Handler                                       |
+| **Propósito** | Procesar la lógica tras el evento `PotUpdatedEvent` |
+
+## PotLinkedEventHandler
+
+| Propiedad     | Valor                                              |
+| ------------- | -------------------------------------------------- |
+| **Nombre**    | PotLinkedEventHandler                              |
+| **Categoría** | Event Handler                                      |
+| **Propósito** | Procesar la lógica tras el evento `PotLinkedEvent` |
+
+## PotUnlinkedEventHandler
+
+| Propiedad     | Valor                                                |
+| ------------- | ---------------------------------------------------- |
+| **Nombre**    | PotUnlinkedEventHandler                              |
+| **Categoría** | Event Handler                                        |
+| **Propósito** | Procesar la lógica tras el evento `PotUnlinkedEvent` |
+
+## PotAssignedPlantEventHandler
+
+| Propiedad     | Valor                                                     |
+| ------------- | --------------------------------------------------------- |
+| **Nombre**    | PotAssignedPlantEventHandler                              |
+| **Categoría** | Event Handler                                             |
+| **Propósito** | Procesar la lógica tras el evento `PotAssignedPlantEvent` |
+
+## GetGroupQueryHandler
+
+| Propiedad     | Valor                                                     |
+| ------------- | --------------------------------------------------------- |
+| **Nombre**    | GetGroupQueryHandler                                      |
+| **Categoría** | Query Handler                                             |
+| **Propósito** | Manejar la consulta `GetGroupQuery` para obtener un grupo |
+
+## GetAllGroupsQueryHandler
+
+| Propiedad     | Valor                                                                              |
+| ------------- | ---------------------------------------------------------------------------------- |
+| **Nombre**    | GetAllGroupsQueryHandler                                                           |
+| **Categoría** | Query Handler                                                                      |
+| **Propósito** | Manejar la consulta `GetAllGroupsQuery` para listar todos los grupos de un usuario |
+
+## UpdateGroupCommandHandler
+
+| Propiedad     | Valor                                                               |
+| ------------- | ------------------------------------------------------------------- |
+| **Nombre**    | UpdateGroupCommandHandler                                           |
+| **Categoría** | Command Handler                                                     |
+| **Propósito** | Ejecutar la lógica de `UpdateGroupCommand` para actualizar un grupo |
+
+## CreateGroupCommandHandler
+
+| Propiedad     | Valor                                                          |
+| ------------- | -------------------------------------------------------------- |
+| **Nombre**    | CreateGroupCommandHandler                                      |
+| **Categoría** | Command Handler                                                |
+| **Propósito** | Ejecutar la lógica de `CreateGroupCommand` para crear un grupo |
+
+## DeleteGroupCommandHandler
+
+| Propiedad     | Valor                                                             |
+| ------------- | ----------------------------------------------------------------- |
+| **Nombre**    | DeleteGroupCommandHandler                                         |
+| **Categoría** | Command Handler                                                   |
+| **Propósito** | Ejecutar la lógica de `DeleteGroupCommand` para eliminar un grupo |
+
+## GroupUpdatedEventHandler
+
+| Propiedad     | Valor                                                 |
+| ------------- | ----------------------------------------------------- |
+| **Nombre**    | GroupUpdatedEventHandler                              |
+| **Categoría** | Event Handler                                         |
+| **Propósito** | Procesar la lógica tras el evento `GroupUpdatedEvent` |
+
+## GroupCreatedEventHandler
+
+| Propiedad     | Valor                                                 |
+| ------------- | ----------------------------------------------------- |
+| **Nombre**    | GroupCreatedEventHandler                              |
+| **Categoría** | Event Handler                                         |
+| **Propósito** | Procesar la lógica tras el evento `GroupCreatedEvent` |
+
+## GroupDeletedEventHandler
+
+| Propiedad     | Valor                                                 |
+| ------------- | ----------------------------------------------------- |
+| **Nombre**    | GroupDeletedEventHandler                              |
+| **Categoría** | Event Handler                                         |
+| **Propósito** | Procesar la lógica tras el evento `GroupDeletedEvent` |
+
+#### 4.2.2.4. Infrastructure Layer.
+
+## PotRepository
+
+| Propiedad     | Valor                                                            |
+| ------------- | ---------------------------------------------------------------- |
+| **Nombre**    | PotRepository                                                    |
+| **Categoría** | Repository Implementation                                        |
+| **Propósito** | Implementar `IPotRepository` usando un mecanismo de persistencia |
+
+## GroupRepository
+
+| Propiedad     | Valor                                                              |
+| ------------- | ------------------------------------------------------------------ |
+| **Nombre**    | GroupRepository                                                    |
+| **Categoría** | Repository Implementation                                          |
+| **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+[missing-res]
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
+### 4.2.4. Bounded Context: Plant Management
+
+#### 4.2.4.1. Domain Layer.
+
+## Plant
+
+| Propiedad     | Valor                                                      |
+| ------------- | ---------------------------------------------------------- |
+| **Nombre**    | Plant                                                      |
+| **Categoría** | Aggregate Root                                             |
+| **Propósito** | Representar la relación planta–maceta con marcas de tiempo |
+
+### Atributos
+
+| Nombre            | Tipo de dato        | Visibilidad | Descripción                         |
+| ----------------- | ------------------- | ----------- | ----------------------------------- |
+| id                | `Long`              | private     | Identificador único de la planta    |
+| potId             | `Long`              | private     | Identificador de la maceta asociada |
+| bestPlantSettings | `BestPlantSettings` | private     | Entorno óptimo para la planta       |
+| plantInformation  | `PlantInformation`  | private     | Información de la planta            |
+| createdAt         | `DateTime`          | private     | Fecha de creación de la entidad     |
+| updatedAt         | `DateTime`          | private     | Fecha de última actualización       |
+
+### Métodos
+
+| Nombre      | Tipo de retorno | Visibilidad | Descripción                                    |
+| ----------- | --------------- | ----------- | ---------------------------------------------- |
+| changePot   | `void`          | public      | Reasigna a otra maceta y actualiza `updatedAt` |
+| markUpdated | `void`          | private     | Actualiza internamente el campo `updatedAt`    |
+
+## BestPlantSettings
+
+| Propiedad     | Valor                                                     |
+| ------------- | --------------------------------------------------------- |
+| **Nombre**    | BestPlantSettings                                         |
+| **Categoría** | Value Object                                              |
+| **Propósito** | Representar la información de entorno óptimo de la planta |
+
+### Atributos
+
+| Nombre                 | Tipo de dato | Visibilidad | Descripción                                    |
+| ---------------------- | ------------ | ----------- | ---------------------------------------------- |
+| humidity               | `Float`      | public      | Nivel de humedad óptimo                        |
+| temperature            | `Float`      | public      | Temperatura óptima                             |
+| waterIntervalInMinutes | `Int`        | public      | Recomendación de riego por intervalo de tiempo |
+
+## PlantInformation
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | PlantInformation                        |
+| **Categoría** | Value Object                            |
+| **Propósito** | Representar la información de la planta |
+
+### Atributos
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                     |
+| ----------- | ------------ | ----------- | ------------------------------- |
+| name        | `String`     | public      | Nombre de la planta             |
+| description | `String`     | public      | Descripción de la planta        |
+| imageUrl    | `String`     | public      | Imagen referencial de la planta |
+| family      | `String`     | public      | Familia de la planta            |
+| genus       | `String`     | public      | Género de la planta             |
+| species     | `String`     | public      | Especie de la planta            |
+
+## PlantFactory
+
+| Propiedad     | Valor                                  |
+| ------------- | -------------------------------------- |
+| **Nombre**    | PlantFactory                           |
+| **Categoría** | Factory                                |
+| **Propósito** | Construir nuevas instancias de `Plant` |
+
+### Métodos
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción                                                        |
+| ------ | --------------- | ----------- | ------------------------------------------------------------------ |
+| create | `Plant`         | public      | Crea un `Plant` dado `potId`, inicializa `createdAt` y `updatedAt` |
+
+## IPlantRepository
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | IPlantRepository                        |
+| **Categoría** | Repository                              |
+| **Propósito** | Persistir y recuperar entidades `Plant` |
+
+### Métodos
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción                          |
+| ------------- | --------------- | ----------- | ------------------------------------ |
+| findById      | `Plant?`        | public      | Busca una planta por su ID           |
+| create        | `Unit`          | public      | Persiste una nueva planta            |
+| update        | `Unit`          | public      | Actualiza una planta existente       |
+| delete        | `Unit`          | public      | Elimina una planta por su ID         |
+
+## IPlantRecommendationService
+
+| Propiedad     | Valor                                               |
+| ------------- | --------------------------------------------------- |
+| **Nombre**    | IPlantRecommendationService                         |
+| **Categoría** | Domain Service                                      |
+| **Propósito** | Proveer la mejor configuración para una planta dada |
+
+### Métodos
+
+| Nombre               | Tipo de retorno | Visibilidad | Descripción                            |
+| -------------------- | --------------- | ----------- | -------------------------------------- |
+| getBestPlantSettings | `String?`       | public      | Retorna ajustes óptimos para la planta |
+
+## PlantRecommendationService
+
+| Propiedad     | Valor                                                   |
+| ------------- | ------------------------------------------------------- |
+| **Nombre**    | PlantRecommendationService                              |
+| **Categoría** | Domain Service Implementation                           |
+| **Propósito** | Implementar la lógica de recomendación de configuración |
+
+#### 4.2.4.2. Interface Layer.
+
+## PlantController
+
+| Propiedad     | Valor                                          |
+| ------------- | ---------------------------------------------- |
+| **Nombre**    | PlantController                                |
+| **Categoría** | Controller                                     |
+| **Propósito** | Exponer endpoints REST para gestión de plantas |
+| **Ruta**      | `/api/plant/`                                  |
+
+## Métodos
+
+| Nombre      | Ruta            | Acción                         | Handle               |
+| ----------- | --------------- | ------------------------------ | -------------------- |
+| getPlant    | `/{id:long}`    | Obtener detalles de una planta | `GetPlantQuery`      |
+| createPlant | `/create`       | Crear nueva planta             | `CreatePlantCommand` |
+| updatePlant | `/update`       | Actualizar planta existente    | `UpdatePlantCommand` |
+| deletePlant | `/delete-plant` | Eliminar planta por su ID      | `DeletePlantCommand` |
+
+#### 4.2.4.3. Application Layer.
+
+## GetPlantQueryHandler
+
+| Propiedad     | Valor                                      |
+| ------------- | ------------------------------------------ |
+| **Nombre**    | GetPlantQueryHandler                       |
+| **Categoría** | Query Handler                              |
+| **Propósito** | Manejar la consulta de obtención de planta |
+
+## CreatePlantCommandHandler
+
+| Propiedad     | Valor                                 |
+| ------------- | ------------------------------------- |
+| **Nombre**    | CreatePlantCommandHandler             |
+| **Categoría** | Command Handler                       |
+| **Propósito** | Ejecutar lógica de creación de planta |
+
+## UpdatePlantCommandHandler
+
+| Propiedad     | Valor                                      |
+| ------------- | ------------------------------------------ |
+| **Nombre**    | UpdatePlantCommandHandler                  |
+| **Categoría** | Command Handler                            |
+| **Propósito** | Ejecutar lógica de actualización de planta |
+
+## DeletePlantCommandHandler
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | DeletePlantCommandHandler                |
+| **Categoría** | Command Handler                          |
+| **Propósito** | Ejecutar lógica de eliminación de planta |
+
+## PlantCreatedEventHandler
+
+| Propiedad     | Valor                                 |
+| ------------- | ------------------------------------- |
+| **Nombre**    | PlantCreatedEventHandler              |
+| **Categoría** | Event Handler                         |
+| **Propósito** | Reaccionar al evento de planta creada |
+
+## PlantUpdatedEventHandler
+
+| Propiedad     | Valor                                      |
+| ------------- | ------------------------------------------ |
+| **Nombre**    | PlantUpdatedEventHandler                   |
+| **Categoría** | Event Handler                              |
+| **Propósito** | Reaccionar al evento de planta actualizada |
+
+## PlantDeletedEventHandler
+
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | PlantDeletedEventHandler                 |
+| **Categoría** | Event Handler                            |
+| **Propósito** | Reaccionar al evento de planta eliminada |
+
+## IPlantInfoProvider
+
+| Propiedad     | Valor                                                        |
+| ------------- | ------------------------------------------------------------ |
+| **Nombre**    | IPlantInfoProvider                                           |
+| **Categoría** | Interface (Application Service)                              |
+| **Propósito** | Obtener especificaciones de planta desde un servicio externo |
+
+#### 4.2.4.4. Infrastructure Layer.
+
+## PlantRepository
+
+| Propiedad     | Valor                                  |
+| ------------- | -------------------------------------- |
+| **Nombre**    | PlantRepository                        |
+| **Categoría** | Repository Implementation              |
+| **Propósito** | Implementar `IPlantRepository` con ORM |
+
+### Métodos
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción                 |
+| ------------- | --------------- | ----------- | --------------------------- |
+| findById      | `Plant?`        | public      | Busca planta por su ID      |
+| findByPotId   | `List<Plant>`   | public      | Lista plantas de una maceta |
+| findByUserUid | `List<Plant>`   | public      | Lista plantas de un usuario |
+| create        | `Unit`          | public      | Persiste nueva planta       |
+| update        | `Unit`          | public      | Actualiza planta existente  |
+| delete        | `Unit`          | public      | Elimina planta por ID       |
+
+## PlantInfoProvider
+
+| Propiedad     | Valor                                                         |
+| ------------- | ------------------------------------------------------------- |
+| **Nombre**    | PlantInfoProvider                                             |
+| **Categoría** | External Service Implementation                               |
+| **Propósito** | Implementar `IPlantInfoProvider` para obtener specs de planta |
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.
+[missing-res]
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+
+### 4.2.7. System Monitoring & Control
+
+#### 4.2.7.1. Domain Layer.
+
+## Alert
+
+| Propiedad     | Valor                                                              |
+| ------------- | ------------------------------------------------------------------ |
+| **Nombre**    | Alert                                                              |
+| **Categoría** | Aggregate Root                                                     |
+| **Propósito** | Representar una alerta crítica generada por sensores de una maceta |
+
+### Atributos
+
+| Nombre   | Tipo de dato   | Visibilidad | Descripción                                        |
+| -------- | -------------- | ----------- | -------------------------------------------------- |
+| id       | `Long`         | private     | Identificador único de la alerta                   |
+| potId    | `Long`         | private     | UID de la maceta asociada                          |
+| content  | `AlertContent` | private     | Detalles de lecturas de sensores y dispositivo IoT |
+| issuedAt | `DateTime`     | private     | Fecha y hora de emisión de la alerta               |
+| resolved | `Boolean`      | private     | Indica si la alerta ha sido resuelta               |
+
+### Métodos
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción                               |
+| ------------- | --------------- | ----------- | ----------------------------------------- |
+| markResolved  | `void`          | public      | Marca la alerta como resuelta             |
+| updateContent | `void`          | public      | Reemplaza el `content` y actualiza estado |
+
+## AlertContent
+
+| Propiedad     | Valor                                                         |
+| ------------- | ------------------------------------------------------------- |
+| **Nombre**    | AlertContent                                                  |
+| **Categoría** | Value Object                                                  |
+| **Propósito** | Agrupar las lecturas de sensores y estado del dispositivo IoT |
+
+### Atributos
+
+| Nombre      | Tipo de dato     | Visibilidad | Descripción                                      |
+| ----------- | ---------------- | ----------- | ------------------------------------------------ |
+| humidity    | `SensorAlert`    | private     | Lectura y estado del sensor de humedad           |
+| temperature | `SensorAlert`    | private     | Lectura y estado del sensor de temperatura       |
+| water       | `SensorAlert`    | private     | Lectura y estado del sensor de nivel de agua     |
+| iotDevice   | `IotDeviceAlert` | private     | Estado del dispositivo IoT (por ejemplo batería) |
+
+## SensorAlert
+
+| Propiedad     | Valor                                                  |
+| ------------- | ------------------------------------------------------ |
+| **Nombre**    | SensorAlert                                            |
+| **Categoría** | Value Object                                           |
+| **Propósito** | Encapsular una medición de sensor y su nivel de alerta |
+
+### Atributos
+
+| Nombre | Tipo de dato   | Visibilidad | Descripción                               |
+| ------ | -------------- | ----------- | ----------------------------------------- |
+| value  | `Float`        | private     | Valor de la medición                      |
+| status | `SensorStatus` | private     | Nivel de alerta (`Low`, `Normal`, `High`) |
+
+### Métodos
+
+| Nombre     | Tipo de retorno | Visibilidad | Descripción                                   |
+| ---------- | --------------- | ----------- | --------------------------------------------- |
+| isCritical | `Boolean`       | public      | Devuelve `true` si `status` es `Low` o `High` |
+
+## SensorStatus
+
+| Propiedad     | Valor                                  |
+| ------------- | -------------------------------------- |
+| **Nombre**    | SensorStatus                           |
+| **Categoría** | Enum                                   |
+| **Propósito** | Definir los posibles estados de alerta |
+
+
+### Valores
+
+| Valor  | Descripción                       |
+| ------ | --------------------------------- |
+| Low    | Nivel por debajo del rango normal |
+| Normal | Dentro del rango esperado         |
+| High   | Nivel por encima del rango normal |
+
+## IotDeviceAlert
+
+| Propiedad     | Valor                                                            |
+| ------------- | ---------------------------------------------------------------- |
+| **Nombre**    | IotDeviceAlert                                                   |
+| **Categoría** | Value Object                                                     |
+| **Propósito** | Representar el estado de un dispositivo IoT asociado a la maceta |
+
+### Atributos
+
+| Nombre       | Tipo de dato | Visibilidad | Descripción                                    |
+| ------------ | ------------ | ----------- | ---------------------------------------------- |
+| batteryLevel | `Float`      | private     | Porcentaje de batería restante del dispositivo |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                     |
+| ------------ | --------------- | ----------- | ----------------------------------------------- |
+| isBatteryLow | `Boolean`       | public      | `true` si `batteryLevel` está por debajo de 15% |
+
+## IAlertRepository
+
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | IAlertRepository                        |
+| **Categoría** | Repository                              |
+| **Propósito** | Persistir y recuperar entidades `Alert` |
+
+### Métodos
+
+| Nombre   | Tipo de retorno | Visibilidad | Descripción                    |
+| -------- | --------------- | ----------- | ------------------------------ |
+| findById | `Alert?`        | public      | Recupera una alerta por su ID  |
+| create   | `Unit`          | public      | Persiste una nueva alerta      |
+| update   | `Unit`          | public      | Actualiza una alerta existente |
+| delete   | `Unit`          | public      | Elimina una alerta por su ID   |
+
+## AlertFactory
+
+| Propiedad     | Valor                               |
+| ------------- | ----------------------------------- |
+| **Nombre**    | AlertFactory                        |
+| **Categoría** | Factory                             |
+| **Propósito** | Crear instancias válidas de `Alert` |
+
+### Métodos
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción                                        |
+| ------ | --------------- | ----------- | -------------------------------------------------- |
+| create | `Alert`         | public      | Construye un `Alert` dado `potId` y `AlertContent` |
+
+## IAlertReportNotePolicy
+
+| Propiedad     | Valor                                                   |
+| ------------- | ------------------------------------------------------- |
+| **Nombre**    | IAlertReportNotePolicy                                  |
+| **Categoría** | Domain Service                                          |
+| **Propósito** | Generar una nota contextual para un conjunto de alertas |
+
+### Métodos
+
+| Nombre  | Tipo de retorno | Visibilidad | Descripción                                         |
+| ------- | --------------- | ----------- | --------------------------------------------------- |
+| noteFor | `String?`       | public      | Devuelve texto explicativo para la lista de alertas |
+
+## AlertReportNotePolicy
+
+| Propiedad     | Valor                                                      |
+| ------------- | ---------------------------------------------------------- |
+| **Nombre**    | AlertReportNotePolicy                                      |
+| **Categoría** | Domain Service Implementation                              |
+| **Propósito** | Implementar la lógica de generación de notas para reportes |
+
+#### 4.2.7.2. Interface Layer.
+
+## AlertController
+
+| Propiedad     | Valor                                          |
+| ------------- | ---------------------------------------------- |
+| **Nombre**    | AlertController                                |
+| **Categoría** | Controller                                     |
+| **Propósito** | Exponer endpoints REST para gestión de alertas |
+| **Ruta**      | `/api/alerts/`                                 |
+
+### Métodos
+
+| Nombre      | Ruta               | Acción                              | Handle                |
+| ----------- | ------------------ | ----------------------------------- | --------------------- |
+| getAlert    | `/{id:long}`       | Obtener alerta por ID               | `GetAlertQuery`       |
+| createAlert | `/create`          | Crear nueva alerta                  | `CreateAlertCommand`  |
+| updateAlert | `/resolved`        | Marcar alerta como resuelta         | `UpdateAlertCommand`  |
+| updateAlert | `/generate-report` | Genera un reporte en base a alertas | `CreateReportCommand` |
+
+#### 4.2.7.3. Application Layer.
+
+## GetAlertQueryHandler
+
+| Propiedad     | Valor                               |
+| ------------- | ----------------------------------- |
+| **Nombre**    | GetAlertQueryHandler                |
+| **Categoría** | Query Handler                       |
+| **Propósito** | Manejar la consulta `GetAlertQuery` |
+
+## CreateAlertCommandHandler
+
+| Propiedad     | Valor                         |
+| ------------- | ----------------------------- |
+| **Nombre**    | CreateAlertCommandHandler     |
+| **Categoría** | Command Handler               |
+| **Propósito** | Ejecutar `CreateAlertCommand` |
+
+## UpdateAlertCommandHandler
+
+| Propiedad     | Valor                         |
+| ------------- | ----------------------------- |
+| **Nombre**    | UpdateAlertCommandHandler     |
+| **Categoría** | Command Handler               |
+| **Propósito** | Ejecutar `UpdateAlertCommand` |
+
+## CreateReportCommandHandler
+
+| Propiedad     | Valor                          |
+| ------------- | ------------------------------ |
+| **Nombre**    | CreateReportCommandHandler     |
+| **Categoría** | Command Handler                |
+| **Propósito** | Ejecutar `CreateReportCommand` |
+
+## AlertCreatedEventHandler
+
+| Propiedad     | Valor                                  |
+| ------------- | -------------------------------------- |
+| **Nombre**    | AlertCreatedEventHandler               |
+| **Categoría** | Event Handler                          |
+| **Propósito** | Reaccionar tras creación de una alerta |
+
+## AlertUpdatedEventHandler
+
+| Propiedad     | Valor                                |
+| ------------- | ------------------------------------ |
+| **Nombre**    | AlertUpdatedEventHandler             |
+| **Categoría** | Event Handler                        |
+| **Propósito** | Reaccionar tras resolución de alerta |
+
+## IAlertService
+
+| Propiedad     | Valor                                              |
+| ------------- | -------------------------------------------------- |
+| **Nombre**    | IAlertService                                      |
+| **Categoría** | Application Service                                |
+| **Propósito** | Definir acciones de notificación según tipo alerta |
+
+### Métodos
+
+| Nombre            | Tipo de retorno | Visibilidad | Descripción                                        |
+| ----------------- | --------------- | ----------- | -------------------------------------------------- |
+| lowBatteryAlert   | `Unit`          | public      | Lógica para alertas de batería baja                |
+| disconnectedAlert | `Unit`          | public      | Lógica para alertas de desconexión del dispositivo |
+
+## AlertService
+
+| Propiedad     | Valor                              |
+| ------------- | ---------------------------------- |
+| **Nombre**    | AlertService                       |
+| **Categoría** | Application Service Implementation |
+| **Propósito** | Implementar `IAlertService`        |
+
+## IAlertReportGenerationService
+
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | IAlertReportGenerationService             |
+| **Categoría** | Application Service                       |
+| **Propósito** | Definir generación de reportes de alertas |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                       |
+| -------------- | --------------- | ----------- | ------------------------------------------------- |
+| generateReport | `String?`       | public      | Compila y devuelve un reporte a partir de alertas |
+
+## IEmailService
+
+| Propiedad     | Valor                    |
+| ------------- | ------------------------ |
+| **Nombre**    | IEmailService            |
+| **Categoría** | Application Service      |
+| **Propósito** | Definir envío de correos |
+
+### Métodos
+
+| Nombre    | Tipo de retorno | Visibilidad | Descripción                         |
+| --------- | --------------- | ----------- | ----------------------------------- |
+| sendEmail | `Unit`          | public      | Envía un correo con asunto y cuerpo |
+
+#### 4.2.7.4. Infrastructure Layer.
+
+## AlertReportGenerationService
+
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | AlertReportGenerationService                |
+| **Categoría** | Service Implementation                      |
+| **Propósito** | Implementar `IAlertReportGenerationService` |
+
+## SendGridService
+
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | SendGridService                             |
+| **Categoría** | Service Implementation                      |
+| **Propósito** | Implementar `IEmailService` usando SendGrid |
+
+## AlertRepository
+
+| Propiedad     | Valor                                                 |
+| ------------- | ----------------------------------------------------- |
+| **Nombre**    | AlertRepository                                       |
+| **Categoría** | Repository Implementation                             |
+| **Propósito** | Implementar `IAlertRepository` con persistencia en BD |
+
+#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
+[missing-res]
+
+#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+
+##### 4.2.7.6.2. Bounded Context Database Design Diagram.
