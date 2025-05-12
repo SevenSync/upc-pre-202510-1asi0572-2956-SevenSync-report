@@ -1,0 +1,464 @@
+# Capítulo VI: Product Implementation, Validation & Deployment.
+
+La implementación, validación y despliegue del producto son esenciales para asegurar que la visión del producto se convierta en una realidad funcional y accesible para nuestros usuarios. Estas etapas nos permiten transformar el diseño conceptual en una aplicación real, probada y lista para su uso, lo que nos ayuda a validar nuestras ideas, identificar posibles problemas y ofrecer una experiencia de usuario óptima.
+
+## 6.1. Software Configuration Management.
+
+La gestión de la configuración del software es crucial para nuestro trabajo, ya que nos permite mantener un control preciso sobre los elementos de nuestro proyecto, como el código fuente, los documentos de diseño y los activos digitales. Esto garantiza que todos los miembros del equipo estén trabajando con la misma versión de los archivos y facilita la colaboración entre desarrolladores, diseñadores y otros profesionales involucrados en el proyecto.
+
+### 6.1.1. Software Development Environment Configuration.
+
+- #### Project Management:
+
+  - ### Trello:
+    Una aplicación de gestión de proyectos que facilita el seguimiento de las tareas individuales de cada miembro del equipo de manera sencilla. <br>
+    [Link De Registro o Inicio De Sesión](https://trello.com/es)<br>
+    Imagen para mostrar evidencia de uso:
+    ![trello-image-grupo](assets/img/project-management-trello.png)
+    - ### Microsoft Teams
+      una plataforma unificada de comunicación y colaboración que combina chat persistente en el lugar de trabajo, reuniones de video, almacenamiento de archivos e integración de aplicaciones. <br>
+      [Link De Registro o Inicio De Sesión](https://www.microsoft.com/es-pe/)
+      Imagen para mostrar evidencia de uso:
+      ![microsoft-teams-image-userpersona](assets/img/evidencia-microsoft-teams.png)
+
+- #### Requirement Management:
+  - ### Miro:
+    Un sistema que ofrece una amplia gama de plantillas diseñadas para abordar diversos aspectos en la creación y gestión de proyectos. <br>
+    [Link De Registro o Inicio De Sesión](https://miro.com/es/login/)
+    Imagen para mostrar evidencia de uso:
+    ![Miro-image-userpersona](assets/img/evidencia-miro.png)
+  - ### UXPressia:
+    Es una herramienta en línea que simplifica el proceso de mapeo y comprensión de las necesidades del cliente en un proyecto determinado. <br>
+    [Link De Registro o Inicio De Sesión](https://uxpressia.com)
+    Imagen para mostrar evidencia de uso:
+    ![uxpressia-image-userpersona](assets/img/evidencia-uxpressia.png)
+  - ### Structurizr:
+    Se trata de una suite de herramientas que posibilita la creación colaborativa de modelos C4 para representar de forma gráfica nuestros productos. <br>
+    [Link De Registro o Inicio De Sesión](https://structurizr.com)
+- #### Product UX/UI Design:
+  - ### Figma:
+    Una herramienta de colaboración que facilita el desarrollo conjunto de wireframes y mockups. <br>
+    [Link De Registro, Inicio De Sesión y Descarga](https://www.figma.com/downloads/)
+  - ### LucidChart:
+    Una herramienta colaborativa que posibilita la creación conjunta de wireframes flow y mockups flow. <br>
+    [Link De Registro o Inicio De Sesión ](https://www.lucidchart.com/pages/es)
+    Imagen para mostrar evidencia de uso:
+    ![lucidchart-image-userpersona](assets/img/evidencia-lucidchart.png)
+- #### Software Development:
+
+  - ### HTML5:
+    Es un lenguaje de etiquetado utilizado para crear la estructura a páginas web. Lo utilizamos para incluir componentes como texto, imágenes, enlaces, botones y videos en nuestras páginas web. <br>
+    [Información Relacionada](https://www.esic.edu/rethink/tecnologia/html5-que-es-caracteristicas-y-como-funciona-c#:~:text=El%20HTML5%20es%20un%20estándar,%2C%20estilo%20de%20letra%2C%20etc.)
+    Imagen para mostrar evidencia de uso:
+    ![uxpressia-image-userpersona](assets/img/html-evidencia.png)
+  - ### CSS:
+    Un lenguaje de diseño gráfico utilizado para dar formato y estilo a la presentación de un documento escrito en HTML. <br>
+    [Información Relacionada](https://developer.mozilla.org/es/docs/Web/CSS)
+    Imagen para mostrar evidencia de uso:
+    ![uxpressia-image-userpersona](assets/img/evidencia-css.png)
+  - ### JavaScript:
+    Un lenguaje de programación orientado a objetos dinámico que utilizamos para implementar funcionalidades en un documento HTML. <br>
+    [Información Relacionada](https://developer.mozilla.org/es/docs/Web/JavaScript)
+    Imagen para mostrar evidencia de uso:
+    ![uxpressia-image-userpersona](assets/img/evidencia-uxpressia.png)
+  - ### WebStorm:
+    Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con JavaScript. <br>
+    [Link De Descarga](https://www.jetbrains.com/es-es/webstorm/)
+  - ### Rider:
+    Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con C#. <br>
+    [Link De Descarga](https://www.jetbrains.com/es-es/rider/)
+
+- #### Software Documentation:
+  - ### Github:
+    Se trata de una plataforma utilizada para el alojamiento de versiones del código fuente de un proyecto. Es una herramienta ampliamente popular en el trabajo colaborativo de programadores. <br>
+    [Link De Descarga](https://desktop.github.com)
+    [Link De Registro o Inicio De Sesión](https://github.com/login)
+- #### Software Deployment:
+  - ### GitHub Pages:
+    Una plataforma que posibilita la realización de despliegues simples directamente desde un repositorio de GitHub. <br>
+
+### 6.1.2. Source Code Management.
+
+Landing Page Repository: [Landing Page Repository](https://github.com/los-seniors-v2/LandingPageFlexPal.git)
+
+- #### GitFlow Implementation:
+
+  Para implementar el flujo de trabajo Gitflow utilizando Git como nuestra herramienta de control de versiones, nos basamos en la entrada de blog "A successful Git branching model" de Vincent Driessen. Esta referencia nos permitió establecer las convenciones detalladas que serán aplicadas en nuestro proyecto
+  ![gitflow](assets/img/team_collab_ins.png)
+
+- ### **Master o Main branch**
+
+  La rama principal de desarrollo del proyecto es la Master branch. En esta rama reside el código que actualmente se encuentra en producción.
+
+  - #### Notación: master o main
+
+- ### **Develop branch**
+
+  La rama "Develop" albergará las más recientes actualizaciones y cambios agregados que serán incluidos en la próxima versión del proyecto. Esta rama sirve como un espacio para la integración y prueba continua de los cambios antes de ser fusionados con la rama principal "Master" para su despliegue en producción.
+
+  - #### Notación: develop
+
+- ### **Feature branch**
+
+  Las ramas de características (Feature branches) serán empleadas para desarrollar nuevas funcionalidades o características del producto que se agregarán en la siguiente versión o en versiones futuras. Estas funcionalidades deberán fusionarse eventualmente con la rama Develop.
+  <br>Debe derivarse de la rama Develop.
+  <br>Debe fusionarse de vuelta a la rama Develop.
+
+  - #### Notación: release
+
+### **Conventional Commits**
+
+"Conventional Commits" es una convención para estructurar los mensajes de confirmación (commits) en un formato estándar y semántico. Este formato ayuda a comunicar claramente los cambios realizados en el código y facilita la generación de registros de cambios automáticos. Los "Conventional Commits" suelen seguir un formato que incluye un encabezado, un cuerpo opcional y un pie de página opcional, y se utilizan para describir de manera sucinta y clara los cambios realizados en el código, lo que facilita su seguimiento y comprensión por parte de los desarrolladores y otros miembros del equipo.
+<br>
+La estructura de un commit debe seguir las siguientes pautas:
+
+```
+git commit -m “<type>[optional scope]: <title>“ -m “<description”
+```
+
+**Tipos De Conventional Commits**
+
+```
+1. feat: Used to describe a new feature or functionality added to the code.
+2. fix: Indicates a bug fix or solution to a problem.
+3. docs: Employed for changes or improvements in code documentation.
+4. style: Describes changes related to the code's formatting, such as whitespace, indentation, etc., that do not affect its functionality.
+5. refactor: Used for modifications to the code that do not fix bugs or add new features, but rather improve its structure or readability.
+6. test: Indicates the addition or modification of unit tests or functional tests.
+7. chore: Used for changes in the build process or maintenance tasks that are not directly related to the code itself.
+8. perf: Describes performance improvements in the code.
+```
+
+### 6.1.3. Source Code Style Guide & Conventions.
+
+Como norma general, se espera que todo el código desarrollado por los miembros del equipo esté completamente redactado en inglés.
+
+- ### HTML
+  - #### Use Lowercase Element Names:
+    Es recomendable utilizar minúsculas o lowercase para los nombres de los elementos HTML.
+    ```
+    <body>
+        <p>This is a paragraph</p>
+    <body>
+    ```
+  - #### Close All HTML Elements:
+    Es recomendable cerrar todos los elementos HTML correctamente.
+    ```
+    <body>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+    <body>
+    ```
+  - #### Use Lowercase Attribute Names:
+    Es recomendable utilizar minúsculas para los nombres de los atributos HTML.
+    ```
+    <a href="https://www.w3schools.com/html/">Visit our HTMLtutorial</a>
+    ```
+  - #### Always Specify alt, width, and height for Images:
+    Es recomendable seguir estas convenciones en caso de que la imagen no se pueda mostrar, lo que ayuda a mejorar la accesibilidad del contenido.
+    ```
+    <img src="html5.gif" alt="HTML5"
+    style="width:128px;height:128px">
+    ```
+  - #### Spaces and Equal Signs:
+    Se recomienda no utilizar espacios en blanco entre las entidades para mejorar la legibilidad.
+    ```
+    <link rel="stylesheet" href="styles.css">
+    ```
+- ### CSS
+  - #### ID and Class Naming
+    Es recomendable utilizar nombres de clases e id's significativos que expresen claramente el propósito del elemento.
+    ```
+    #gallery {}
+    #login {}
+    .video {}
+    ```
+  - #### ID and Class Name Style
+    Se recomienda utilizar nombres cortos para nombrar ids o clases, pero lo suficientemente descriptivos para entender su propósito.
+    ```
+    #nav {}
+    .author {}
+    ```
+  - #### Shorthand Properties
+    Se recomienda utilizar propiedades CSS de forma abreviada siempre que sea posible para hacer el código más eficiente y comprensible.
+    ```
+    border-top: 0;
+    font: 100%/1.6 palatino, georgia, serif;
+    padding: 0 1em 2em;
+    ```
+  - #### 0 and Units
+    Es recomendable evitar especificar la unidad después del valor 0 en propiedades que lo permitan, ya que esto ayuda a reducir el tamaño del código y mejora su legibilidad.
+    ```
+    margin: 0;
+    padding: 0;
+    ```
+  - #### Declaration Order
+    Se recomienda ordenar las declaraciones en orden alfabético para facilitar el mantenimiento y la recordación del código.
+    ```
+     background: fuchsia;
+     border: 1px solid;
+     border-radius: 4px;
+     color: black;
+     text-align: center;
+     text-indent: 2em;
+    ```
+- ### TYPESCRIPT
+  - #### Use expanded syntax
+    Cada línea de TypeScript debería estar en una nueva línea, con la llave de apertura en la misma línea de su declaración y la llave de cierre en una nueva línea al final.
+    ```
+    function myFunc() {
+     console.log('Hello!');
+    };
+    ```
+  - #### Variable naming
+    Para el nombre de las variables, se recomienda utilizar lowerCamelCase.
+    ```
+    let playerScore = 0;
+    let speed = distance / time;
+    ```
+  - #### Declaring variables
+    Para la declaración de variables, es recomendable utilizar las palabras reservadas let y const en lugar de var.
+    ```
+    const myName = 'Chris';
+    console.log(myName);
+    let myAge = '40';
+    myAge++;
+    console.log('Happy birthday!');
+    ```
+  - #### Function naming
+    Para el nombre de las funciones, se recomienda utilizar lowerCamelCase.
+    ```
+    function sayHello() {
+    alert('Hello!');
+    };
+    ```
+- ### C#
+
+  - #### PascalCase
+    Mayúscula al principio de cada palabra para nombres de clases y métodos.
+    ```
+    public class MyClass {
+        public void ExampleMethod() {
+            // Method code
+        }
+    }
+    ```
+  - #### camelCase
+    Minúscula al principio con mayúsculas para cada palabra subsiguiente para variables y parámetros.
+    ```
+    public class MyClass {
+        public void ExampleMethod(int exampleNumber) {
+            string exampleName = "Example";
+            // Method code
+        }
+    }
+    ```
+    - #### Reasonable line length
+      Mantener líneas de código con longitud adecuada para mejorar la legibilidad.
+      ```
+      public class MyClass {
+          public void ExampleMethod() {
+              string message = "This is an example message that spans multiple lines " +
+                               "to demonstrate how to maintain a reasonable length.";
+               Console.WriteLine(message);
+        }
+      }
+      ```
+    - #### Clear comments:
+      Utilizar comentarios para explicar el propósito del código de manera concisa.
+      ```
+      public class MyClass {
+          // This method performs an addition operation and returns the result.
+          public int Add(int a, int b) {
+            return a + b;
+           }
+      }
+      ```
+  - #### Single responsibility:
+
+    Cada clase o método debe tener una única función bien definida.
+
+    ```
+    // Class responsible for handling basic mathematical operations
+    public class MathematicalOperations {
+        // Method to add two numbers
+        public int Add(int a, int b) {
+            return a + b;
+        }
+
+        // Method to subtract two numbers
+        public int Subtract(int a, int b) {
+            return a - b;
+        }
+    }
+    ```
+
+### 6.1.4. Software Deployment Configuration.
+
+- Creación Landing Page:<br>
+
+1. Se crea un repositorio remoto en GitHub
+   ![creation-of-repository-lp](assets/img/Creacion_repo.png)
+2. Agregar a participantes
+   ![adding-members-screenshot-lp](assets/img/miembros_repo.png)
+3. Habilitamos GitHub Pages en branch "master" y ruta "/(root)"
+   ![deploying-repository-in-github-pages-lp](assets/img/Github_pages.png)
+
+- Creación Front End App:<br>
+
+1. Creación de repositorio dentro de nuestra organización:
+   ![creation-of-repository-lp](assets/img/creacion-repositorio-frontendapp.png)
+2. Agregar a participantes:
+   ![adding-members-screenshot-lp](assets/img/miembros_repo.png)
+
+## 6.2. Landing Page, Services & Applications Implementation.
+
+La implementación de la página de inicio, los servicios y las aplicaciones es un paso fundamental en nuestro proceso de desarrollo. Nos permite materializar el diseño y la funcionalidad planificados, transformando los conceptos en productos tangibles y listos para su uso. Esta fase nos permite traducir las especificaciones y requisitos en código, desarrollando la estructura de la página, los servicios y las aplicaciones de acuerdo con las necesidades identificadas.
+
+### 6.2.1. Sprint 1
+
+El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. Durante este período, nos enfocamos en la implementación de las características y funcionalidades prioritarias identificadas en la planificación inicial. Esto implica traducir los requisitos y especificaciones en código funcional, desarrollando las bases de nuestro producto de manera iterativa.
+
+#### 6.2.1.1.Sprint Planning 1.
+
+El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+<table  style="text-align: center;">
+    <tbody>
+        <tr>
+			<td colspan="1">Sprint #</td>
+            <td colspan="1"> Sprint 1  </td>
+		</tr>
+        <tr>
+			<td colspan="2">Sprint Planning Background </td>
+		</tr>
+        <tr>
+			<td colspan="1">Date</td>
+            <td colspan="1">  </td>
+		</tr>
+        <tr>
+			<td colspan="1">Time</td>
+            <td colspan="1">  </td>
+		</tr>
+        <tr>
+			<td colspan="1">Location</td>
+            <td colspan="1">Microsoft Teams (Reunion virtual)</td>
+		</tr>
+        <tr>
+			<td colspan="1">Prepared By</td>
+            <td colspan="1"></td>
+		</tr>
+        <tr>
+			<td colspan="1"> Attendees (to planning meeting)</td>
+            <td colspan="1"> </td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 1 – 1 Review Summary </td>
+            <td colspan="1"></td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 1 – 1 Retrospective Summary </td>
+            <td colspan="1"></td>
+		</tr>
+         <tr>
+			<td colspan="2">Sprint Goal & User Stories </td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 1 Goal</td>
+            <td colspan="1"></td>
+		</tr>
+        <tr>
+			<td colspan="1">Sprint 1 Velocity </td>
+            <td colspan="1"></td>
+		</tr>
+        <tr>
+			<td colspan="1">Sum of Story Points </td>
+            <td colspan="1"></td>
+		</tr>
+</tbody>
+</table>
+
+#### 6.2.1.2.Aspect Leaders and Collaborators.
+
+#### 6.2.1.3.Sprint Backlog 1.
+
+En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
+A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
+
+[Link para ingresar al board del primer sprint](https://trello.com/invite/b/OVQC9ARc/ATTI0aff475a30a66269bb2b8469d3332a14873BB5C1/task-app-web)
+
+![trello-screenshot](assets/img/evidencia-trello-sprint-1.png)
+
+<table>
+	<tbody>
+		<tr>
+			<td>Sprint #</td>
+			<td colspan="7">Sprint 1</td>
+		</tr>
+		<tr>
+			<td colspan="2">User Story</td>
+			<td colspan="6">Work - Item / Task</td>
+		</tr>
+		<tr>
+			<td>Id</td>
+			<td>Title</td>
+			<td>Id</td>
+			<td>Title</td>
+			<td>Description</td>
+			<td>Estimation (Hours)</td>
+			<td>Assigned To</td>
+			<td>Status (To-do / In-Process / To-Review / Done)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>TSK001</td>
+			<td>Remote environment creation for Report and Landing Page</td>
+			<td>Organization, repositories and branch creation in GitHub</td>
+			<td>0</td>
+			<td>All team members</td>
+			<td>Done</td>
+		</tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+    <tbody>
+</table>
+
+#### 6.2.1.4.Development Evidence for Sprint Review.
+
+En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page, Web Applications, Web Services.
+
+Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
+
+| Repository          | Branch  | Commit ID                                | Commit Message                    | Commit Message Body                        | Commited on (Date) |
+| ------------------- | ------- | ---------------------------------------- | --------------------------------- | ------------------------------------------ | ------------------ |
+| JuanPescoran/Report | develop | 98783487238973c5dd4a8097197adb2cf70af00a | feat: added content in chapter IV | added content in all sections of chapter04 | 4/9/2024           |
+| JuanPescoran/Report | master  | 889cdc0229a96aa9fca4641ebfccccd71f0d7a5a | feat(assets)                      | added img to master branch                 | 4/9/2024           |
+
+A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y funcionalidades implementadas en el Sprint 2:
+
+| Repository                      | Branch                | Commit ID                                | Commit Message                   | Commit Message Body                                                                                                                                 | Commited on (Date) |
+| ------------------------------- | --------------------- | ---------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| JDu202012207/LandingPageFlexPal | feat-bienvenida       | 563de4f7bde5ef4a20ce639bc4f6bd881d205856 | feat(welcome-container)          | implemented cta in section home, added slogan and banner.                                                                                           | 4/9/2024           |
+| Fabrizio0711/LandingPageFlexPal | feature-testimonios   | d3d404bfa4c98d4bd3311d54d2edca3c2b7f6f51 | feat: added testimonials section | added testimonials section with user feedback                                                                                                       | 4/9/2024           |
+| JDu202012207/LandingPageFlexPal | feature-header-footer | f8351fb08d1718af912437127ac10d350a6b0d2c | feat(header-footer)              | implemented logo in header and information in footer.                                                                                               | 4/9/2024           |
+| JDu202012207/LandingPageFlexPal | feature-contacto      | c8d979e154ceec2e6b7e924b6aa16137199f743d | feat(contact-us)                 | implemented form, description and labels                                                                                                            | 4/9/2024           |
+| JuanPescoran/LandingPageFlexPal | feature-contenido     | db8e4a108071eeed824a148623bf34e7785ea982 | feat(assets): added images       | feat(assets): added all information for hero content, about us, subscriptions and other sections Also, added images for banners and everything else | 4/9/2024           |
+
+#### 6.2.1.5.Testing Suite Evidence for Sprint Review.
+
+#### 6.2.1.6.Execution Evidence for Sprint Review.
+
+#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
+
+#### 6.2.1.8.Software Deployment Evidence for Sprint Review.
+
+#### 6.2.1.9.Team Collaboration Insights during Sprint.
