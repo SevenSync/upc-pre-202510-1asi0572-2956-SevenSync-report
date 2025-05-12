@@ -1581,9 +1581,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
-### 4.2.7. System Monitoring & Control
+### 4.2.5. System Monitoring & Control
 
-#### 4.2.7.1. Domain Layer.
+#### 4.2.5.1. Domain Layer.
 
 ## Alert
 
@@ -1738,7 +1738,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | Domain Service Implementation                              |
 | **Propósito** | Implementar la lógica de generación de notas para reportes |
 
-#### 4.2.7.2. Interface Layer.
+#### 4.2.5.2. Interface Layer.
 
 ## AlertController
 
@@ -1758,7 +1758,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | updateAlert | `/resolved`        | Marcar alerta como resuelta         | `UpdateAlertCommand`  |
 | updateAlert | `/generate-report` | Genera un reporte en base a alertas | `CreateReportCommand` |
 
-#### 4.2.7.3. Application Layer.
+#### 4.2.5.3. Application Layer.
 
 ## GetAlertQueryHandler
 
@@ -1859,7 +1859,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | --------- | --------------- | ----------- | ----------------------------------- |
 | sendEmail | `Unit`          | public      | Envía un correo con asunto y cuerpo |
 
-#### 4.2.7.4. Infrastructure Layer.
+#### 4.2.5.4. Infrastructure Layer.
 
 ## AlertReportGenerationService
 
@@ -1885,12 +1885,760 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | Repository Implementation                             |
 | **Propósito** | Implementar `IAlertRepository` con persistencia en BD |
 
-#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams.
 [missing-res]
 
-#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams.
 
-##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams.
 <image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
 
+##### 4.2.5.6.2. Bounded Context Database Design Diagram.
+
+
+### 4.2.6. Bounded Context: Watering Management
+
+#### 4.2.6.1. Domain Layer.
+
+## WateringSchedule
+
+| Propiedad     | Valor                                                            |
+|---------------|------------------------------------------------------------------|
+| **Nombre**    | WateringSchedule                                                 |
+| **Categoría** | Aggregate Root                                                   |
+| **Propósito** | Representar una programación de riego para una maceta específica |
+
+### Atributos
+
+| Nombre    | Tipo de dato | Visibilidad | Descripción                                 |
+|-----------|--------------|-------------|---------------------------------------------|
+| potId     | `Long`       | private     | Identificador de la maceta                  |
+| startTime | `DateTime`   | private     | Hora de inicio del riego                    |
+| frequency | `String`     | private     | Frecuencia (diaria, semanal, personalizada) |
+| duration  | `Int`        | private     | Duración en minutos                         |
+| isActive  | `Boolean`    | private     | Si la programación está activa o suspendida |
+| createdAt | `DateTime`   | private     | Fecha de creación                           |
+| updatedAt | `DateTime`   | private     | Última fecha de actualización               |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
+|----------------|-----------------|-------------|---------------------------------------------|
+| updateSchedule | `void`          | public      | Modifica horario, frecuencia o duración     |
+| activate       | `void`          | public      | Activa la programación                      |
+| deactivate     | `void`          | public      | Suspende la programación                    |
+| markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## WateringLog
+
+| Propiedad     | Valor                                          |
+|---------------|------------------------------------------------|
+| **Nombre**    | WateringLog                                    |
+| **Categoría** | Entity                                         |
+| **Propósito** | Registrar una ejecución de riego en una maceta |
+
+### Atributos
+
+| Nombre    | Tipo de dato | Visibilidad | Descripción                             |
+|-----------|--------------|-------------|-----------------------------------------|
+| id        | `Long`       | private     | Identificador del log                   |
+| potId     | `Long`       | private     | Identificador de la maceta              |
+| timestamp | `DateTime`   | private     | Momento de ejecución                    |
+| status    | `String`     | private     | Estado del riego (exitoso, error, etc.) |
+
+## IWateringScheduleRepository
+
+| Propiedad     | Valor                                        |
+|---------------|----------------------------------------------|
+| **Nombre**    | IWateringScheduleRepository                  |
+| **Categoría** | Repository                                   |
+| **Propósito** | Gestionar persistencia de `WateringSchedule` |
+
+### Métodos
+
+| Nombre      | Tipo de retorno     | Descripción                           |
+|-------------|---------------------|---------------------------------------|
+| findByPotId | `WateringSchedule?` | Obtener programación de riego         |
+| create      | `Unit`              | Guardar nueva programación            |
+| update      | `Unit`              | Actualizar una programación existente |
+| delete      | `Unit`              | Eliminar programación por `potId`     |
+
+## IWateringLogRepository
+
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | IWateringLogRepository                    |
+| **Categoría** | Repository                                |
+| **Propósito** | Gestionar registros de ejecución de riego |
+
+### Métodos
+
+| Nombre      | Tipo de retorno     | Descripción                       |
+|-------------|---------------------|-----------------------------------|
+| create      | `Unit`              | Almacenar un nuevo `WateringLog`  |
+| findByPotId | `List<WateringLog>` | Consultar registros de una maceta |
+
+---
+
+#### 4.2.6.2. Interface Layer.
+
+## WateringScheduleController
+
+| Propiedad     | Valor                                                              |
+|---------------|--------------------------------------------------------------------|
+| **Nombre**    | WateringScheduleController                                         |
+| **Categoría** | Controller                                                         |
+| **Propósito** | Exponer los servicios REST para gestionar la programación de riego |
+| **Ruta**      | `/api/watering-schedules/`                                         |
+
+### Métodos
+
+| Nombre             | Ruta          | Acción                             | Handle                              |
+|--------------------|---------------|------------------------------------|-------------------------------------|
+| getSchedule        | `/{id:long}`  | Obtener programación de riego      | `GetWateringScheduleQuery`          |
+| createSchedule     | `/create`     | Crear nueva programación de riego  | `CreateWateringScheduleCommand`     |
+| updateSchedule     | `/update`     | Actualizar programación existente  | `UpdateWateringScheduleCommand`     |
+| deactivateSchedule | `/deactivate` | Suspender la programación de riego | `DeactivateWateringScheduleCommand` |
+| activateSchedule   | `/activate`   | Activar la programación de riego   | `ActivateWateringScheduleCommand`   |
+
+## WateringLogController
+
+| Propiedad     | Valor                                                       |
+|---------------|-------------------------------------------------------------|
+| **Nombre**    | WateringLogController                                       |
+| **Categoría** | Controller                                                  |
+| **Propósito** | Exponer los servicios REST para consultar los logs de riego |
+| **Ruta**      | `/api/watering-logs/`                                       |
+
+### Métodos
+
+| Nombre       | Ruta                | Acción                              | Handle                      |
+|--------------|---------------------|-------------------------------------|-----------------------------|
+| getLog       | `/{id:long}`        | Obtener log de riego por ID         | `GetWateringLogQuery`       |
+| getLogsByPot | `/pot/{potId:long}` | Obtener logs de riego de una maceta | `GetWateringLogsByPotQuery` |
+
+---
+
+#### 4.2.6.3. Application Layer.
+
+## GetWateringScheduleQueryHandler
+
+| Propiedad     | Valor                                                             |
+|---------------|-------------------------------------------------------------------|
+| **Nombre**    | GetWateringScheduleQueryHandler                                   |
+| **Categoría** | Query Handler                                                     |
+| **Propósito** | Manejar la consulta para obtener una programación de riego por ID |
+
+## CreateWateringScheduleCommandHandler
+
+| Propiedad     | Valor                                                  |
+|---------------|--------------------------------------------------------|
+| **Nombre**    | CreateWateringScheduleCommandHandler                   |
+| **Categoría** | Command Handler                                        |
+| **Propósito** | Manejar la creación de una nueva programación de riego |
+
+## UpdateWateringScheduleCommandHandler
+
+| Propiedad     | Valor                                                           |
+|---------------|-----------------------------------------------------------------|
+| **Nombre**    | UpdateWateringScheduleCommandHandler                            |
+| **Categoría** | Command Handler                                                 |
+| **Propósito** | Manejar la actualización de una programación de riego existente |
+
+## DeactivateWateringScheduleCommandHandler
+
+| Propiedad     | Valor                                                 |
+|---------------|-------------------------------------------------------|
+| **Nombre**    | DeactivateWateringScheduleCommandHandler              |
+| **Categoría** | Command Handler                                       |
+| **Propósito** | Manejar la desactivación de una programación de riego |
+
+## ActivateWateringScheduleCommandHandler
+
+| Propiedad     | Valor                                              |
+|---------------|----------------------------------------------------|
+| **Nombre**    | ActivateWateringScheduleCommandHandler             |
+| **Categoría** | Command Handler                                    |
+| **Propósito** | Manejar la activación de una programación de riego |
+
+## GetWateringLogQueryHandler
+
+| Propiedad     | Valor                                       |
+|---------------|---------------------------------------------|
+| **Nombre**    | GetWateringLogQueryHandler                  |
+| **Categoría** | Query Handler                               |
+| **Propósito** | Manejar la consulta de logs de riego por ID |
+
+## GetWateringLogsByPotQueryHandler
+
+| Propiedad     | Valor                                                   |
+|---------------|---------------------------------------------------------|
+| **Nombre**    | GetWateringLogsByPotQueryHandler                        |
+| **Categoría** | Query Handler                                           |
+| **Propósito** | Manejar la consulta de logs de riego por potId (maceta) |
+
+---
+
+#### 4.2.6.4. Infrastructure Layer.
+
+## WateringScheduleRepository
+
+| Propiedad     | Valor                                                                         |
+|---------------|-------------------------------------------------------------------------------|
+| **Nombre**    | WateringScheduleRepository                                                    |
+| **Categoría** | Repository Implementation                                                     |
+| **Propósito** | Implementar `IWateringScheduleRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre      | Tipo de retorno     | Visibilidad | Descripción                                    |
+|-------------|---------------------|-------------|------------------------------------------------|
+| findByPotId | `WateringSchedule?` | public      | Buscar programación de riego por `potId`       |
+| create      | `Unit`              | public      | Persistir una nueva programación de riego      |
+| update      | `Unit`              | public      | Actualizar una programación de riego existente |
+| delete      | `Unit`              | public      | Eliminar programación de riego por `potId`     |
+
+## WateringLogRepository
+
+| Propiedad     | Valor                                                                    |
+|---------------|--------------------------------------------------------------------------|
+| **Nombre**    | WateringLogRepository                                                    |
+| **Categoría** | Repository Implementation                                                |
+| **Propósito** | Implementar `IWateringLogRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre      | Tipo de retorno     | Visibilidad | Descripción                         |
+|-------------|---------------------|-------------|-------------------------------------|
+| create      | `Unit`              | public      | Persistir un nuevo log de riego     |
+| findByPotId | `List<WateringLog>` | public      | Recuperar logs de riego por `potId` |
+
+---
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams.
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams.
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringScheduleClassDiagram.png"></image>
+
+##### 4.2.6.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringManagementDbDiagram.png"></image>
+
+
+
+### 4.2.7. Bounded Context: Subscriptions & Payments
+
+#### 4.2.7.1. Domain Layer.
+
+## Subscription
+
+| Propiedad     | Valor                                              |
+|---------------|----------------------------------------------------|
+| **Nombre**    | Subscription                                       |
+| **Categoría** | Aggregate Root                                     |
+| **Propósito** | Representar una suscripción activa para un usuario |
+
+### Atributos
+
+| Nombre    | Tipo de dato | Visibilidad | Descripción                                  |
+|-----------|--------------|-------------|----------------------------------------------|
+| userId    | `Long`       | private     | Identificador único del usuario              |
+| planId    | `Long`       | private     | Identificador del plan de suscripción        |
+| status    | `String`     | private     | Estado de la suscripción (activa, cancelada) |
+| startDate | `DateTime`   | private     | Fecha de inicio de la suscripción            |
+| endDate   | `DateTime`   | private     | Fecha de expiración de la suscripción        |
+| createdAt | `DateTime`   | private     | Fecha de creación de la suscripción          |
+| updatedAt | `DateTime`   | private     | Fecha de última actualización                |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                 |
+|--------------|-----------------|-------------|---------------------------------------------|
+| activate     | `void`          | public      | Activa la suscripción                       |
+| cancel       | `void`          | public      | Cancela la suscripción                      |
+| updateStatus | `void`          | public      | Actualiza el estado de la suscripción       |
+| markUpdated  | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## SubscriptionPlan
+
+| Propiedad     | Valor                                                         |
+|---------------|---------------------------------------------------------------|
+| **Nombre**    | SubscriptionPlan                                              |
+| **Categoría** | Value Object                                                  |
+| **Propósito** | Representar los detalles de un plan de suscripción disponible |
+
+### Atributos
+
+| Nombre    | Tipo de dato   | Visibilidad | Descripción                              |
+|-----------|----------------|-------------|------------------------------------------|
+| name      | `String`       | public      | Nombre del plan (p.ej., Básico, Premium) |
+| price     | `Decimal`      | public      | Precio mensual del plan                  |
+| duration  | `Int`          | public      | Duración del plan en meses               |
+| features  | `List<String>` | public      | Características que ofrece el plan       |
+| createdAt | `DateTime`     | private     | Fecha de creación del plan               |
+
+## PaymentTransaction
+
+| Propiedad     | Valor                                                                  |
+|---------------|------------------------------------------------------------------------|
+| **Nombre**    | PaymentTransaction                                                     |
+| **Categoría** | Entity                                                                 |
+| **Propósito** | Representar los pagos realizados por un usuario para sus suscripciones |
+
+### Atributos
+
+| Nombre         | Tipo de dato | Visibilidad | Descripción                                    |
+|----------------|--------------|-------------|------------------------------------------------|
+| transactionId  | `String`     | private     | Identificador único de la transacción          |
+| subscriptionId | `Long`       | private     | Identificador de la suscripción                |
+| amount         | `Decimal`    | private     | Monto de la transacción                        |
+| status         | `String`     | private     | Estado de la transacción (completada, fallida) |
+| createdAt      | `DateTime`   | private     | Fecha de la transacción                        |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
+|----------------|-----------------|-------------|---------------------------------------------|
+| processPayment | `void`          | public      | Procesa el pago para una suscripción        |
+| updateStatus   | `void`          | public      | Actualiza el estado de la transacción       |
+| markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## ISubscriptionRepository
+
+| Propiedad     | Valor                                          |
+|---------------|------------------------------------------------|
+| **Nombre**    | ISubscriptionRepository                        |
+| **Categoría** | Repository                                     |
+| **Propósito** | Persistir y recuperar entidades `Subscription` |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                  |
+|--------------|-----------------|-------------|----------------------------------------------|
+| findByUserId | `Subscription?` | public      | Recupera la suscripción activa de un usuario |
+| create       | `Unit`          | public      | Crea una nueva suscripción                   |
+| update       | `Unit`          | public      | Actualiza una suscripción existente          |
+| delete       | `Unit`          | public      | Elimina una suscripción por `userId`         |
+
+## IPaymentTransactionRepository
+
+| Propiedad     | Valor                                       |
+|---------------|---------------------------------------------|
+| **Nombre**    | IPaymentTransactionRepository               |
+| **Categoría** | Repository                                  |
+| **Propósito** | Persistir y recuperar transacciones de pago |
+
+### Métodos
+
+| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
+|----------|-----------------------|-------------|----------------------------------------------|
+| create   | `Unit`                | public      | Crea una nueva transacción de pago           |
+| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
+| update   | `Unit`                | public      | Actualiza una transacción existente          |
+| delete   | `Unit`                | public      | Elimina una transacción                      |
+
+---
+
+#### 4.2.7.2. Interface Layer.
+
+## SubscriptionController
+
+| Propiedad     | Valor                                                              |
+|---------------|--------------------------------------------------------------------|
+| **Nombre**    | SubscriptionController                                             |
+| **Categoría** | Controller                                                         |
+| **Propósito** | Exponer los servicios REST para gestionar suscripciones de usuario |
+| **Ruta**      | `/api/subscriptions/`                                              |
+
+### Métodos
+
+| Nombre             | Ruta             | Acción                               | Handle                      |
+|--------------------|------------------|--------------------------------------|-----------------------------|
+| getSubscription    | `/{userId:long}` | Obtener la suscripción de un usuario | `GetSubscriptionQuery`      |
+| createSubscription | `/create`        | Crear nueva suscripción              | `CreateSubscriptionCommand` |
+| updateSubscription | `/update`        | Actualizar suscripción               | `UpdateSubscriptionCommand` |
+| cancelSubscription | `/cancel`        | Cancelar suscripción                 | `CancelSubscriptionCommand` |
+
+## PaymentTransactionController
+
+| Propiedad     | Valor                                                           |
+|---------------|-----------------------------------------------------------------|
+| **Nombre**    | PaymentTransactionController                                    |
+| **Categoría** | Controller                                                      |
+| **Propósito** | Exponer los servicios REST para gestionar transacciones de pago |
+| **Ruta**      | `/api/payment-transactions/`                                    |
+
+### Métodos
+
+| Nombre            | Ruta                    | Acción                                        | Handle                            |
+|-------------------|-------------------------|-----------------------------------------------|-----------------------------------|
+| getPayment        | `/{transactionId:long}` | Obtener transacción por ID                    | `GetPaymentTransactionQuery`      |
+| createPayment     | `/create`               | Crear una nueva transacción                   | `CreatePaymentTransactionCommand` |
+| updatePayment     | `/update`               | Actualizar estado de la transacción           | `UpdatePaymentTransactionCommand` |
+| getPaymentsByUser | `/user/{userId:long}`   | Obtener todas las transacciones de un usuario | `GetPaymentsByUserQuery`          |
+
+---
+
+#### 4.2.7.3. Application Layer.
+
+## GetSubscriptionQueryHandler
+
+| Propiedad     | Valor                                                         |
+|---------------|---------------------------------------------------------------|
+| **Nombre**    | GetSubscriptionQueryHandler                                   |
+| **Categoría** | Query Handler                                                 |
+| **Propósito** | Manejar la consulta para obtener una suscripción por `userId` |
+
+## CreateSubscriptionCommandHandler
+
+| Propiedad     | Valor                                        |
+|---------------|----------------------------------------------|
+| **Nombre**    | CreateSubscriptionCommandHandler             |
+| **Categoría** | Command Handler                              |
+| **Propósito** | Manejar la creación de una nueva suscripción |
+
+## UpdateSubscriptionCommandHandler
+
+| Propiedad     | Valor                                                 |
+|---------------|-------------------------------------------------------|
+| **Nombre**    | UpdateSubscriptionCommandHandler                      |
+| **Categoría** | Command Handler                                       |
+| **Propósito** | Manejar la actualización de una suscripción existente |
+
+## CancelSubscriptionCommandHandler
+
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | CancelSubscriptionCommandHandler          |
+| **Categoría** | Command Handler                           |
+| **Propósito** | Manejar la cancelación de una suscripción |
+
+## GetPaymentTransactionQueryHandler
+
+| Propiedad     | Valor                                                    |
+|---------------|----------------------------------------------------------|
+| **Nombre**    | GetPaymentTransactionQueryHandler                        |
+| **Categoría** | Query Handler                                            |
+| **Propósito** | Manejar la consulta para obtener una transacción de pago |
+
+## GetPaymentsByUserQueryHandler
+
+| Propiedad     | Valor                                                            |
+|---------------|------------------------------------------------------------------|
+| **Nombre**    | GetPaymentsByUserQueryHandler                                    |
+| **Categoría** | Query Handler                                                    |
+| **Propósito** | Manejar la consulta para obtener las transacciones de un usuario |
+
+---
+
+#### 4.2.7.4. Infrastructure Layer.
+
+## SubscriptionRepository
+
+| Propiedad     | Valor                                                                     |
+|---------------|---------------------------------------------------------------------------|
+| **Nombre**    | SubscriptionRepository                                                    |
+| **Categoría** | Repository Implementation                                                 |
+| **Propósito** | Implementar `ISubscriptionRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                           |
+|--------------|-----------------|-------------|---------------------------------------|
+| findByUserId | `Subscription?` | public      | Recupera la suscripción de un usuario |
+| create       | `Unit`          | public      | Persistir una nueva suscripción       |
+| update       | `Unit`          | public      | Actualiza una suscripción existente   |
+| delete       | `Unit`          | public      | Elimina la suscripción por `userId`   |
+
+## PaymentTransactionRepository
+
+| Propiedad     | Valor                                                                           |
+|---------------|---------------------------------------------------------------------------------|
+| **Nombre**    | PaymentTransactionRepository                                                    |
+| **Categoría** | Repository Implementation                                                       |
+| **Propósito** | Implementar `IPaymentTransactionRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
+|----------|-----------------------|-------------|----------------------------------------------|
+| create   | `Unit`                | public      | Persistir una nueva transacción de pago      |
+| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
+| update   | `Unit`                | public      | Actualiza una transacción existente          |
+| delete   | `Unit`                | public      | Elimina una transacción                      |
+
+---
+
+#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
+##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscription&PaymentsClassDiagram.png"></image>
+
 ##### 4.2.7.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
+
+
+### 4.2.8. Bounded Context: Caring Intelligence
+
+#### 4.2.8.1. Domain Layer.
+
+## Recommendation
+
+| Propiedad     | Valor                                                             |
+|---------------|-------------------------------------------------------------------|
+| **Nombre**    | Recommendation                                                    |
+| **Categoría** | Aggregate Root                                                    |
+| **Propósito** | Generar recomendaciones personalizadas para el cuidado de plantas |
+
+### Atributos
+
+| Nombre             | Tipo de dato | Visibilidad | Descripción                                       |
+|--------------------|--------------|-------------|---------------------------------------------------|
+| plantId            | `Long`       | private     | Identificador de la planta                        |
+| userId             | `Long`       | private     | Identificador del usuario                         |
+| recommendationType | `String`     | private     | Tipo de recomendación (riego, luz, fertilización) |
+| value              | `String`     | private     | Valor o mensaje de la recomendación               |
+| createdAt          | `DateTime`   | private     | Fecha de creación                                 |
+| updatedAt          | `DateTime`   | private     | Fecha de última actualización                     |
+
+### Métodos
+
+| Nombre                 | Tipo de retorno | Visibilidad | Descripción                                            |
+|------------------------|-----------------|-------------|--------------------------------------------------------|
+| generateRecommendation | `void`          | public      | Genera una recomendación personalizada para el usuario |
+| markUpdated            | `void`          | private     | Actualiza internamente el campo `updatedAt`            |
+
+## PlantRecommendation
+
+| Propiedad     | Valor                                                       |
+|---------------|-------------------------------------------------------------|
+| **Nombre**    | PlantRecommendation                                         |
+| **Categoría** | Value Object                                                |
+| **Propósito** | Contener los parámetros de la recomendación para una planta |
+
+### Atributos
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                  |
+|-------------|--------------|-------------|------------------------------|
+| humidity    | `String`     | public      | Recomendación de humedad     |
+| light       | `String`     | public      | Recomendación de luz         |
+| water       | `String`     | public      | Recomendación de riego       |
+| temperature | `String`     | public      | Recomendación de temperatura |
+
+---
+#### 4.2.8.2. Interface Layer.
+
+## RecommendationController
+
+| Propiedad     | Valor                                                     |
+|---------------|-----------------------------------------------------------|
+| **Nombre**    | RecommendationController                                  |
+| **Categoría** | Controller                                                |
+| **Propósito** | Exponer los servicios REST para gestionar recomendaciones |
+| **Ruta**      | `/api/recommendations/`                                   |
+
+### Métodos
+
+| Nombre               | Ruta                            | Acción                            | Handle                        |
+|----------------------|---------------------------------|-----------------------------------|-------------------------------|
+| getRecommendation    | `/{userId:long}/{plantId:long}` | Obtener recomendación para planta | `GetRecommendationQuery`      |
+| createRecommendation | `/create`                       | Crear nueva recomendación         | `CreateRecommendationCommand` |
+| updateRecommendation | `/update`                       | Actualizar recomendación          | `UpdateRecommendationCommand` |
+
+---
+
+#### 4.2.8.3. Application Layer.
+
+## GetRecommendationQueryHandler
+
+| Propiedad     | Valor                                                            |
+|---------------|------------------------------------------------------------------|
+| **Nombre**    | GetRecommendationQueryHandler                                    |
+| **Categoría** | Query Handler                                                    |
+| **Propósito** | Manejar la consulta para obtener una recomendación personalizada |
+
+## CreateRecommendationCommandHandler
+
+| Propiedad     | Valor                                          |
+|---------------|------------------------------------------------|
+| **Nombre**    | CreateRecommendationCommandHandler             |
+| **Categoría** | Command Handler                                |
+| **Propósito** | Manejar la creación de una nueva recomendación |
+
+## UpdateRecommendationCommandHandler
+
+| Propiedad     | Valor                                                   |
+|---------------|---------------------------------------------------------|
+| **Nombre**    | UpdateRecommendationCommandHandler                      |
+| **Categoría** | Command Handler                                         |
+| **Propósito** | Manejar la actualización de una recomendación existente |
+
+---
+
+#### 4.2.8.4. Infrastructure Layer.
+
+## RecommendationRepository
+
+| Propiedad     | Valor                                                                       |
+|---------------|-----------------------------------------------------------------------------|
+| **Nombre**    | RecommendationRepository                                                    |
+| **Categoría** | Repository Implementation                                                   |
+| **Propósito** | Implementar `IRecommendationRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre       | Tipo de retorno   | Visibilidad | Descripción                            |
+|--------------|-------------------|-------------|----------------------------------------|
+| findByUserId | `Recommendation?` | public      | Obtener la recomendación por `userId`  |
+| create       | `Unit`            | public      | Crear una nueva recomendación          |
+| update       | `Unit`            | public      | Actualizar una recomendación existente |
+| delete       | `Unit`            | public      | Eliminar la recomendación              |
+
+---
+#### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams.
+##### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
+
+##### 4.2.8.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
+
+
+### 4.2.9. Bounded Context: Data Insights & Reporting
+
+#### 4.2.9.1. Domain Layer.
+
+## DataReport
+
+| Propiedad     | Valor                                                  |
+|---------------|--------------------------------------------------------|
+| **Nombre**    | DataReport                                             |
+| **Categoría** | Aggregate Root                                         |
+| **Propósito** | Generar y almacenar reportes de datos para su análisis |
+
+### Atributos
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                                   |
+|-------------|--------------|-------------|-----------------------------------------------|
+| reportId    | `Long`       | private     | Identificador único del reporte               |
+| userId      | `Long`       | private     | Identificador del usuario asociado al reporte |
+| data        | `String`     | private     | Datos relevantes del reporte                  |
+| reportType  | `String`     | private     | Tipo de reporte (mensual, anual, etc.)        |
+| generatedAt | `DateTime`   | private     | Fecha de generación del reporte               |
+| createdAt   | `DateTime`   | private     | Fecha de creación                             |
+| updatedAt   | `DateTime`   | private     | Fecha de última actualización                 |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
+|----------------|-----------------|-------------|---------------------------------------------|
+| generateReport | `void`          | public      | Genera un nuevo reporte                     |
+| markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## DataSource
+
+| Propiedad     | Valor                                        |
+|---------------|----------------------------------------------|
+| **Nombre**    | DataSource                                   |
+| **Categoría** | Value Object                                 |
+| **Propósito** | Representar la fuente de datos de un reporte |
+
+### Atributos
+
+| Nombre          | Tipo de dato | Visibilidad | Descripción                                     |
+|-----------------|--------------|-------------|-------------------------------------------------|
+| sourceId        | `Long`       | private     | Identificador de la fuente de datos             |
+| dataType        | `String`     | private     | Tipo de los datos (e.g., sensor, usuario, etc.) |
+| dataDescription | `String`     | private     | Descripción de los datos                        |
+| createdAt       | `DateTime`   | private     | Fecha de creación                               |
+---
+#### 4.2.9.2. Interface Layer.
+
+## DataReportController
+
+| Propiedad     | Valor                                                       |
+|---------------|-------------------------------------------------------------|
+| **Nombre**    | DataReportController                                        |
+| **Categoría** | Controller                                                  |
+| **Propósito** | Exponer los servicios REST para gestionar reportes de datos |
+| **Ruta**      | `/api/data-reports/`                                        |
+
+### Métodos
+
+| Nombre           | Ruta                             | Acción                                      | Handle                    |
+|------------------|----------------------------------|---------------------------------------------|---------------------------|
+| getReport        | `/{userId:long}/{reportId:long}` | Obtener reporte por ID de usuario y reporte | `GetDataReportQuery`      |
+| createReport     | `/create`                        | Crear nuevo reporte                         | `CreateDataReportCommand` |
+| updateReport     | `/update`                        | Actualizar reporte existente                | `UpdateDataReportCommand` |
+| getReportsByUser | `/user/{userId:long}`            | Obtener todos los reportes de un usuario    | `GetReportsByUserQuery`   |
+---
+#### 4.2.9.3. Application Layer.
+
+## GetDataReportQueryHandler
+
+| Propiedad     | Valor                                                |
+|---------------|------------------------------------------------------|
+| **Nombre**    | GetDataReportQueryHandler                            |
+| **Categoría** | Query Handler                                        |
+| **Propósito** | Manejar la consulta para obtener un reporte de datos |
+
+## CreateDataReportCommandHandler
+
+| Propiedad     | Valor                                            |
+|---------------|--------------------------------------------------|
+| **Nombre**    | CreateDataReportCommandHandler                   |
+| **Categoría** | Command Handler                                  |
+| **Propósito** | Manejar la creación de un nuevo reporte de datos |
+
+## UpdateDataReportCommandHandler
+
+| Propiedad     | Valor                                           |
+|---------------|-------------------------------------------------|
+| **Nombre**    | UpdateDataReportCommandHandler                  |
+| **Categoría** | Command Handler                                 |
+| **Propósito** | Manejar la actualización de un reporte de datos |
+
+---
+#### 4.2.9.4. Infrastructure Layer.
+
+## DataReportRepository
+
+| Propiedad     | Valor                                                                   |
+|---------------|-------------------------------------------------------------------------|
+| **Nombre**    | DataReportRepository                                                    |
+| **Categoría** | Repository Implementation                                               |
+| **Propósito** | Implementar `IDataReportRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                      |
+|--------------|-----------------|-------------|----------------------------------|
+| findByUserId | `DataReport?`   | public      | Recupera un reporte por `userId` |
+| create       | `Unit`          | public      | Crear un nuevo reporte           |
+| update       | `Unit`          | public      | Actualiza un reporte existente   |
+| delete       | `Unit`          | public      | Elimina un reporte               |
+
+## DataSourceRepository
+
+| Propiedad     | Valor                                                                   |
+|---------------|-------------------------------------------------------------------------|
+| **Nombre**    | DataSourceRepository                                                    |
+| **Categoría** | Repository Implementation                                               |
+| **Propósito** | Implementar `IDataSourceRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                |
+|----------------|-----------------|-------------|--------------------------------------------|
+| findBySourceId | `DataSource?`   | public      | Recupera la fuente de datos por `sourceId` |
+| create         | `Unit`          | public      | Crear una nueva fuente de datos            |
+| update         | `Unit`          | public      | Actualiza una fuente de datos existente    |
+| delete         | `Unit`          | public      | Elimina una fuente de datos                |
+
+---
+#### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams.
+##### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingClassDiagram.png"></image>
+##### 4.2.9.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingDbDiagram.png"></image>
