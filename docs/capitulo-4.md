@@ -31,16 +31,17 @@ Como objetivos tuvimos:
 
 En esta etapa inicial, cada participante propuso eventos profesionales del sistema utilizando notas adhesivas naranjas. Estos eventos representan hechos relevantes que ocurren en el negocio, expresados en pasado.
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-1.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-1-collect-domain-events.jpg"></image>
 
 - Fase 2: Refinamiento de Domain Events
 
 En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eliminaron duplicados, se aclararon ambigüedades y se reorganizaron cronológicamente. También se discutió la terminología para asegurar coherencia y precisión semántica.
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-timeline-and-refine-domain-events.jpg"></image>
 
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-1-collect-domain-events.jpg"></image>
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-2.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-2-collect-domain-events.jpg.jpg"></image>
 
 Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
 - Acciones de usuarios (comandos, actores, vistas),
@@ -48,48 +49,42 @@ Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para i
 - Procesos de negocio (por ejemplo, condiciones temporales),
 - Otros eventos del dominio (reacciones automáticas).
 
+Para esta sección, se necesitará identificar el color de los post-its de Miro para mantener el orden. Se usará esta convención:
+ 
+ <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-key.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes.jpg"></image>
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-1.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-2.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-3.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-4.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3-part-5.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-3.jpg"></image>
-
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-alerts.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-iam.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-plant-management.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-pot-management.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-recommendations.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-reports.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-subscriptions.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-watering.jpg"></image>
 
 Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
 - Qué comandos disparan qué eventos,
 - Qué usuarios ejecutan qué comandos,
 - Qué eventos activan políticas o modelos de lectura,
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-1.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-2.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-3.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-4.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-5.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-6.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-7.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-8.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-9.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4-part-10.jpg"></image>
-
-<image src="../assets/img/capitulo-4/event-storming/event-storming-step-4.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ingestion.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot-management.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recommendations.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
 
 <a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
 
