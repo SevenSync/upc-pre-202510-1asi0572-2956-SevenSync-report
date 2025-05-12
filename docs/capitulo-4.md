@@ -709,7 +709,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
-<image src="../assets/img/capitulo-4/bounded-context-plant-registration/database-diagram.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-iam/database-diagram.png"></image>
 
 ### 4.2.2. Bounded Context: Profile and Personal Data
 
@@ -969,6 +969,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/datbase-diagram-profile-and-personal-data.png"></image>
 
 ### 4.2.3. Bounded Context: Pot Management
 
@@ -1337,6 +1338,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
 ### 4.2.4. Bounded Context: Plant Management
 
@@ -1580,8 +1582,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/class-diagram-plant-management.png"></image>
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-plant-management/database-diagram-plant-management.png"></image>
 
-### 4.2.5. System Monitoring & Control
+### 4.2.5. Bounded Context: System Monitoring & Control
 
 #### 4.2.5.1. Domain Layer.
 
@@ -1894,7 +1897,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 <image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram.
-
+<image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/database-diagram-system-monitoring-and-control.png"></image>
 
 ### 4.2.6. Bounded Context: Watering Management
 
