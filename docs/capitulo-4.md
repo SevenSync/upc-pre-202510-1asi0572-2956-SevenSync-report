@@ -969,7 +969,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/datbase-diagram-profile-and-personal-data.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
 ### 4.2.3. Bounded Context: Pot Management
 
