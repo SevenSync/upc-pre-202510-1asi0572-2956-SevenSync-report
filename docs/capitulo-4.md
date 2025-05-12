@@ -966,6 +966,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram.
 
@@ -1333,6 +1334,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
@@ -1575,6 +1577,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-plant-management/class-diagram-plant-management.png"></image>
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
@@ -1888,5 +1891,6 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
 
 ##### 4.2.7.6.2. Bounded Context Database Design Diagram.
