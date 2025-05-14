@@ -890,10 +890,24 @@ Macetech emplea un conjunto coherente de patrones de navegación que permiten a 
 Con este sistema unificado, los usuarios pueden cumplir sus objetivos como monitorear plantas, revisar alertas o modificar datos de riego de forma clara, rápida y sin pérdida de contexto tanto desde web como desde dispositivos móviles.
 
 ## 5.3. Landing Page UI Design
-
 ### 5.3.1. Landing Page Wireframe
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding1.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding2.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding3.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding4.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding5.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding6.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding7.png" alt="WireFrame" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding8.png" alt="WireFrame" width="600" height="300"> <br>
 
 ### 5.3.2. Landing Page Mock-up
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding1.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding2.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding3.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding4.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding5.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding6.png" alt="MockUp" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding7.png" alt="MockUp" width="600" height="300"> <br>
 
 ## 5.4. Applications UX/UI Design
 
