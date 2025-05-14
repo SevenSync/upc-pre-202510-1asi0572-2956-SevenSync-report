@@ -299,6 +299,16 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 #### 4.1.1.2 Domain Message Flows Modeling.
 
 #### 4.1.1.3 Bounded Context Canvases.
+### Identity and Access Management
+<image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png"></image>
+### Profile and Personal Data
+<image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png"></image>
+### Pot Management
+<image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png"></image>
+### Plant Management
+<image src="../assets/img/capitulo-4/bounded-context-canvases/plant-management.png"></image>
+### System Monitoring & Control
+<image src="../assets/img/capitulo-4/bounded-context-canvases/system-monitoring-and-control.png"></image>
 
 ### 4.1.2. Context Mapping.
 
