@@ -222,16 +222,16 @@ _Impact Mapping de los dos user persona del proyecto._
 12 | US014 | Registrar cuenta | **Como** usuario nuevo, **quiero** registrar una cuenta **para** acceder a los servicios | 3
 13 | US015 | Iniciar sesión | **Como** usuario registrado, **quiero** iniciar sesión con mis credenciales **para** acceder a mi cuenta | 3
 14 | US036 | Vincular nueva maceta | **Como** usuario, **quiero** registrar maceta vía Bluetooth **para** monitorear plantas | 5
-15 | US038 | Ver estado de sensores | **Como** usuario, **quiero** consultar humedad/temperatura **para** saber si planta necesita atención | 3
+15 | US038 | Ver estado de parámetros de sensores | **Como** usuario, **quiero** consultar parámetros de sensor **para** saber si planta necesita atención | 3
 16 | US059 | Riego automático por humedad | **Como** usuario, **quiero** riego automático **para** mantener humedad óptima | 5
 17 | US037 | Personalizar nombre de maceta | **Como** usuario, **quiero** asignar nombre único **para** identificar fácilmente | 2
 18 | US054 | Registrar planta en maceta | **Como** usuario, **quiero** asignar planta a maceta **para** recibir recomendaciones | 3
 19 | US017 | Recuperar contraseña | **Como** usuario que olvidó su contraseña, **quiero** restablecerla mediante enlace temporal **para** volver a acceder | 3
-20 | US016 | Validar usuario con 2FA | **Como** usuario con 2FA habilitado, **quiero** ingresar código de verificación **para** asegurar mi cuenta | 3
+20 | US075 | Recibir recomendaciones de riego personalizadas | **Como** usuario, **quiero** sugerencias ajustadas **para** optimizar consumo de agua | 3
 21 | US060 | Programar riegos recurrentes | **Como** usuario, **quiero** horarios fijos **para** plantas con necesidades predecibles | 5
 22 | US063 | Riego manual | **Como** usuario, **quiero** activar riego inmediato **para** necesidades puntuales | 2
 23 | US069 | Recibir alertas prioritarias | **Como** usuario, **quiero** que distinga urgencias **para** atender lo crítico | 3
-24 | US075 | Recibir recomendaciones de riego personalizadas | **Como** usuario, **quiero** sugerencias ajustadas **para** optimizar consumo de agua | 3
+24| US016 | Validar usuario con 2FA | **Como** usuario con 2FA habilitado, **quiero** ingresar código de verificación **para** asegurar mi cuenta | 3
 25 | US028 | Ver información personal | **Como** usuario, **quiero** ver mis datos completos **para** verificar exactitud | 2
 26 | US029 | Editar datos personales | **Como** usuario, **quiero** modificar mi información **para** mantenerla actualizada | 3
 27 | US030 | Gestionar dirección | **Como** usuario, **quiero** agregar/modificar dirección **para** recibir servicios físicos | 3
