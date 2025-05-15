@@ -212,15 +212,15 @@ _Impact Mapping de los dos user persona del proyecto._
 2 | US002 | Entender el valor principal | **Como** visitante de la plataforma, **quiero** identificar y comprender la propuesta de valor central **para** saber si es de mi interés | 3
 3 | US006 | Iniciar sesión desde un CTA visible | **Como** visitante, **quiero** ver un llamado a la acción claro **para** acceder a funcionalidades personalizadas | 2
 4 | US003 | Conocer las funcionalidades clave | **Como** visitante, **quiero** identificar las principales funcionalidades **para** analizar si el producto es útil en mi situación | 3
-5 | US004 | Visualizar un video del producto | **Como** visitante, **quiero** ver un video demostrativo **para** entender mejor cómo funciona Macetech | 5
+5 | US004 | Visualizar un video del producto | **Como** visitante, **quiero** ver un video demostrativo **para** entender mejor cómo funciona Macetech | 3
 6 | US005 | Conocer las opciones de membresía | **Como** visitante, **quiero** ver un apartado de membresías **para** entender beneficios por nivel | 3
-7 | US014 | Registrar cuenta | **Como** usuario nuevo, **quiero** registrar una cuenta **para** acceder a los servicios | 5
-8 | US015 | Iniciar sesión | **Como** usuario registrado, **quiero** iniciar sesión con mis credenciales **para** acceder a mi cuenta | 3
-9 | US009 | Descargar la aplicación móvil | **Como** visitante interesado, **quiero** acceder al enlace de descarga **para** instalar la app | 2
-10 | US007 | Conocer a los miembros del equipo | **Como** visitante, **quiero** conocer quiénes desarrollan Macetech **para** confiar en el proyecto | 1
-11 | US008 | Contactar al equipo de SevenSync | **Como** visitante, **quiero** poder contactar al equipo **para** hacer preguntas o enviar comentarios | 2
-12 | US010 | Visualizar información útil en el footer | **Como** visitante, **quiero** acceder a información útil en el footer **para** facilitar mi navegación | 1
-13 | TS011 | Implementar diseño responsivo | **Como** developer, **quiero** implementar diseño responsivo **para** que la página se vea bien en cualquier dispositivo | 5
+7 | US009 | Descargar la aplicación móvil | **Como** visitante interesado, **quiero** acceder al enlace de descarga **para** instalar la app | 2
+8 | US007 | Conocer a los miembros del equipo | **Como** visitante, **quiero** conocer quiénes desarrollan Macetech **para** confiar en el proyecto | 1
+9 | US008 | Contactar al equipo de SevenSync | **Como** visitante, **quiero** poder contactar al equipo **para** hacer preguntas o enviar comentarios | 2
+10 | US010 | Visualizar información útil en el footer | **Como** visitante, **quiero** acceder a información útil en el footer **para** facilitar mi navegación | 1
+11 | TS011 | Implementar diseño responsivo | **Como** developer, **quiero** implementar diseño responsivo **para** que la página se vea bien en cualquier dispositivo | 5
+12 | US014 | Registrar cuenta | **Como** usuario nuevo, **quiero** registrar una cuenta **para** acceder a los servicios | 3
+13 | US015 | Iniciar sesión | **Como** usuario registrado, **quiero** iniciar sesión con mis credenciales **para** acceder a mi cuenta | 3
 14 | US036 | Vincular nueva maceta | **Como** usuario, **quiero** registrar maceta vía Bluetooth **para** monitorear plantas | 5
 15 | US038 | Ver estado de sensores | **Como** usuario, **quiero** consultar humedad/temperatura **para** saber si planta necesita atención | 3
 16 | US059 | Riego automático por humedad | **Como** usuario, **quiero** riego automático **para** mantener humedad óptima | 5
