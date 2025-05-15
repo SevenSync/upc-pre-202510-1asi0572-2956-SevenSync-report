@@ -372,11 +372,11 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 		</tr>
         <tr>
 			<td colspan="1">Sprint 1 Velocity </td>
-            <td colspan="1">64</td>
+            <td colspan="1">79</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1">64</td>
+            <td colspan="1">79</td>
 		</tr>
 </tbody>
 </table>
