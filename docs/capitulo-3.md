@@ -149,7 +149,7 @@ Por lo tanto, la presentación de la tabla inicia con la lista de Epics, el cual
 | **TS051** | Invalidar macetas defectuosas | **Como** Maker, **quiero** sistema de marcado **para** bloquear dispositivos con fallas | **Escenario 1:** Invalidación manual<br>**Dado que** recibe reporte, **cuando** ingresa ID, **entonces** actualiza estado a "INACTIVO".<br><br>**Escenario 2:** Autodetección<br>**Dado que** firmware detecta 5 fallos, **cuando** supera umbral, **entonces** autoreporta "DEFECTUOSO". | EP005 |
 | **TS052** | Integrar CRUD para macetas | **Como** desarrollador, **quiero** endpoints RESTful **para** manejar ciclo de vida | **Escenario 1:** Creación (POST /macetas)<br>**Dado que** recibe datos válidos, **cuando** llama endpoint, **entonces** crea registro.<br><br>**Escenario 2:** Error de validación (PUT /macetas/{id})<br>**Dado que** nombre excede 50 caracteres, **cuando** intenta actualizar, **entonces** responde con 400. | EP005 |
 | **TS053** | Sincronizar estado maceta-dispositivo | **Como** desarrollador, **quiero** mantener consistencia **para** reflejar cambios | **Escenario 1:** Actualización remota<br>**Dado que** usuario cambia nombre, **cuando** guarda, **entonces** notifica via MQTT en <1s.<br><br>**Escenario 2:** Reconexión<br>**Dado que** dispositivo estuvo offline, **cuando** vuelve a conectar, **entonces** sincroniza. | EP005 |
-| **US054** | Registrar planta en maceta | **Como** usuario, **quiero** asignar planta a maceta **para** recibir recomendaciones | **Escenario 1:** Registro exitoso<br>**Dado que** selecciona planta de biblioteca, **cuando** asigna a maceta, **entonces** ajusta umbrales.<br><br>**Escenario 2:** Maceta ocupada<br>**Dado que** maceta tiene otra planta, **cuando** intenta asignar nueva, **entonces** pregunta por reemplazo. | EP006 |
+| **US054** | Registrar planta en maceta | **Como** usuario, **quiero** asignar planta a maceta **para** recibir recomendaciones | **Escenario 1:** Registro exitoso<br>**Dado que** selecciona planta de biblioteca, **cuando** asigna a maceta, **entonces** ajusta umbrales **y** se muestran los datos de la planta registrada.<br><br>**Escenario 2:** Maceta ocupada<br>**Dado que** maceta tiene otra planta, **cuando** intenta asignar nueva, **entonces** pregunta por reemplazo. | EP006 |
 | **US055** | Eliminar planta de maceta | **Como** usuario, **quiero** remover planta **para** liberar maceta | **Escenario 1:** Eliminación confirmada<br>**Dado que** selecciona "Eliminar planta", **cuando** confirma, **entonces** restablece umbrales.<br><br>**Escenario 2:** Con historial<br>**Dado que** planta tiene historial, **cuando** elimina, **entonces** conserva datos históricos. | EP006 |
 | **US056** | Ver parámetros óptimos de planta | **Como** usuario, **quiero** consultar rangos ideales **para** comparar con sensores | **Escenario 1:** Visualización completa<br>**Dado que** planta tiene parámetros, **cuando** accede a sección, **entonces** muestra rangos.<br><br>**Escenario 2:** Parámetros incompletos<br>**Dado que** API no tiene datos, **cuando** carga parámetros, **entonces** marca "No disponible". | EP006 |
 | **TS057** | Integrar Plant API | **Como** desarrollador, **quiero** consumir API externa **para** datos científicos | **Escenario 1:** Búsqueda por especie<br>**Dado que** consulta "Rosa damascena", **cuando** llama API, **entonces** devuelve JSON válido.<br><br>**Escenario 2:** Cache<br>**Dado que** planta ya fue consultada, **cuando** busca nuevamente, **entonces** devuelve datos locales. | EP006 |
@@ -214,88 +214,88 @@ _Impact Mapping de los dos user persona del proyecto._
 4 | US003 | Conocer las funcionalidades clave | **Como** visitante, **quiero** identificar las principales funcionalidades **para** analizar si el producto es útil en mi situación | 3
 5 | US004 | Visualizar un video del producto | **Como** visitante, **quiero** ver un video demostrativo **para** entender mejor cómo funciona Macetech | 3
 6 | US005 | Conocer las opciones de membresía | **Como** visitante, **quiero** ver un apartado de membresías **para** entender beneficios por nivel | 3
-7 | US009 | Descargar la aplicación móvil | **Como** visitante interesado, **quiero** acceder al enlace de descarga **para** instalar la app | 2
-8 | US007 | Conocer a los miembros del equipo | **Como** visitante, **quiero** conocer quiénes desarrollan Macetech **para** confiar en el proyecto | 1
-9 | US008 | Contactar al equipo de SevenSync | **Como** visitante, **quiero** poder contactar al equipo **para** hacer preguntas o enviar comentarios | 2
-10 | US010 | Visualizar información útil en el footer | **Como** visitante, **quiero** acceder a información útil en el footer **para** facilitar mi navegación | 1
-11 | TS011 | Implementar diseño responsivo | **Como** developer, **quiero** implementar diseño responsivo **para** que la página se vea bien en cualquier dispositivo | 5
-12 | US014 | Registrar cuenta | **Como** usuario nuevo, **quiero** registrar una cuenta **para** acceder a los servicios | 3
-13 | US015 | Iniciar sesión | **Como** usuario registrado, **quiero** iniciar sesión con mis credenciales **para** acceder a mi cuenta | 3
-14 | US036 | Vincular nueva maceta | **Como** usuario, **quiero** registrar maceta vía Bluetooth **para** monitorear plantas | 5
-15 | US038 | Ver estado de parámetros de sensores | **Como** usuario, **quiero** consultar parámetros de sensor **para** saber si planta necesita atención | 3
-16 | US059 | Riego automático por humedad | **Como** usuario, **quiero** riego automático **para** mantener humedad óptima | 5
-17 | US037 | Personalizar nombre de maceta | **Como** usuario, **quiero** asignar nombre único **para** identificar fácilmente | 2
-18 | US054 | Registrar planta en maceta | **Como** usuario, **quiero** asignar planta a maceta **para** recibir recomendaciones | 3
-19 | US017 | Recuperar contraseña | **Como** usuario que olvidó su contraseña, **quiero** restablecerla mediante enlace temporal **para** volver a acceder | 3
-20 | US075 | Recibir recomendaciones de riego personalizadas | **Como** usuario, **quiero** sugerencias ajustadas **para** optimizar consumo de agua | 3
-21 | US060 | Programar riegos recurrentes | **Como** usuario, **quiero** horarios fijos **para** plantas con necesidades predecibles | 5
-22 | US063 | Riego manual | **Como** usuario, **quiero** activar riego inmediato **para** necesidades puntuales | 2
-23 | US069 | Recibir alertas prioritarias | **Como** usuario, **quiero** que distinga urgencias **para** atender lo crítico | 3
-24| US016 | Validar usuario con 2FA | **Como** usuario con 2FA habilitado, **quiero** ingresar código de verificación **para** asegurar mi cuenta | 3
-25 | US028 | Ver información personal | **Como** usuario, **quiero** ver mis datos completos **para** verificar exactitud | 2
-26 | US029 | Editar datos personales | **Como** usuario, **quiero** modificar mi información **para** mantenerla actualizada | 3
-27 | US030 | Gestionar dirección | **Como** usuario, **quiero** agregar/modificar dirección **para** recibir servicios físicos | 3
-28 | US079 | Visualizar planes de membresía | **Como** usuario, **quiero** comparar funcionalidades **para** decidir membresía | 2
-29 | US080 | Actualizar a Premium | **Como** usuario, **quiero** mejorar mi plan **para** funcionalidades avanzadas | 5
-30 | TS012 | Crear endpoint para contacto | **Como** developer, **quiero** desarrollar un endpoint RESTful **para** procesar formularios de contacto | 5
-31 | US018 | Cerrar sesión | **Como** usuario autenticado, **quiero** cerrar sesión **para** proteger mi cuenta | 1
-32 | US021 | Cambiar contraseña | **Como** usuario, **quiero** modificar mi contraseña **para** mantener mi cuenta segura | 2
-33 | US022 | Cambiar email | **Como** usuario, **quiero** actualizar mi email **para** mantener mi información actualizada | 3
-34 | US023 | Cambiar nombre de usuario | **Como** usuario, **quiero** modificar mi nombre **para** personalizar mi identidad | 2
-35 | US024 | Eliminar cuenta | **Como** usuario, **quiero** eliminar mi cuenta permanentemente **para** cumplir con privacidad | 5
-36 | US025 | Verificar cambio de email | **Como** usuario, **quiero** confirmar nuevo email mediante código **para** asegurar acceso | 3
-37 | US031 | Ver estado de membresía | **Como** usuario, **quiero** conocer mi tipo de membresía **para** saber funcionalidades disponibles | 2
-38 | US032 | Actualizar preferencias de notificación | **Como** usuario, **quiero** elegir cómo recibir notificaciones **para** controlar experiencia | 3
-39 | US039 | Eliminar maceta | **Como** usuario, **quiero** desvincular maceta **para** dejar de recibir notificaciones | 2
-40 | US040 | Reordenar macetas | **Como** usuario con múltiples macetas, **quiero** reorganizarlas **para** acceder rápido a importantes | 3
-41 | US041 | Controlar encendido/apagado físicamente | **Como** usuario, **quiero** botón para encender/apagar **para** conservar energía | 3
+7 | TS013 | Integrar enlace de descarga con app stores | **Como** developer, **quiero** integrar enlaces a tiendas oficiales **para** descargas seguras | 3
+8 | US009 | Descargar la aplicación móvil | **Como** visitante interesado, **quiero** acceder al enlace de descarga **para** instalar la app | 2
+9 | US007 | Conocer a los miembros del equipo | **Como** visitante, **quiero** conocer quiénes desarrollan Macetech **para** confiar en el proyecto | 1
+10 | TS012 | Crear endpoint para contacto | **Como** developer, **quiero** desarrollar un endpoint RESTful **para** procesar formularios de contacto | 5
+11 | US008 | Contactar al equipo de SevenSync | **Como** visitante, **quiero** poder contactar al equipo **para** hacer preguntas o enviar comentarios | 2
+12 | US010 | Visualizar información útil en el footer | **Como** visitante, **quiero** acceder a información útil en el footer **para** facilitar mi navegación | 1
+13 | TS011 | Implementar diseño responsivo | **Como** developer, **quiero** implementar diseño responsivo **para** que la página se vea bien en cualquier dispositivo | 5
+14 | US014 | Registrar cuenta | **Como** usuario nuevo, **quiero** registrar una cuenta **para** acceder a los servicios | 3
+15 | US015 | Iniciar sesión | **Como** usuario registrado, **quiero** iniciar sesión con mis credenciales **para** acceder a mi cuenta | 3
+16 | US018 | Cerrar sesión | **Como** usuario autenticado, **quiero** cerrar sesión **para** proteger mi cuenta | 1
+17 | US036 | Vincular nueva maceta | **Como** usuario, **quiero** registrar maceta vía Bluetooth **para** monitorear plantas | 5
+18 | US039 | Eliminar maceta | **Como** usuario, **quiero** desvincular maceta **para** dejar de recibir notificaciones | 2
+19 | US040 | Reordenar macetas | **Como** usuario con múltiples macetas, **quiero** reorganizarlas **para** acceder rápido a importantes | 3
+20 | US054 | Registrar planta en maceta | **Como** usuario, **quiero** asignar planta a maceta **para** recibir recomendaciones | 3
+21 | US055 | Eliminar planta de maceta | **Como** usuario, **quiero** remover planta **para** liberar maceta | 2
+22 | US056 | Ver parámetros óptimos de planta | **Como** usuario, **quiero** consultar rangos ideales **para** comparar con sensores | 3
+23 | US038 | Ver estado de parámetros de sensores | **Como** usuario, **quiero** consultar parámetros de sensor **para** saber si planta necesita atención | 3
+24 | US037 | Personalizar nombre de maceta | **Como** usuario, **quiero** asignar nombre único **para** identificar fácilmente | 2
+25 | US069 | Recibir alertas prioritarias | **Como** usuario, **quiero** que distinga urgencias **para** atender lo crítico | 3
+26 | US075 | Recibir recomendaciones de riego personalizadas | **Como** usuario, **quiero** sugerencias ajustadas **para** optimizar consumo de agua | 3
+27 | US060 | Programar riegos recurrentes | **Como** usuario, **quiero** horarios fijos **para** plantas con necesidades predecibles | 5
+28 | US063 | Riego manual | **Como** usuario, **quiero** activar riego inmediato **para** necesidades puntuales | 2
+29 | US059 | Riego automático por humedad | **Como** usuario, **quiero** riego automático **para** mantener humedad óptima | 5
+30 | US017 | Recuperar contraseña | **Como** usuario que olvidó su contraseña, **quiero** restablecerla mediante enlace temporal **para** volver a acceder | 3
+31| US016 | Validar usuario con 2FA | **Como** usuario con 2FA habilitado, **quiero** ingresar código de verificación **para** asegurar mi cuenta | 3
+32 | US028 | Ver información personal | **Como** usuario, **quiero** ver mis datos completos **para** verificar exactitud | 2
+33 | US029 | Editar datos personales | **Como** usuario, **quiero** modificar mi información **para** mantenerla actualizada | 3
+34 | US030 | Gestionar dirección | **Como** usuario, **quiero** agregar/modificar dirección **para** recibir servicios físicos | 3
+35 | US079 | Visualizar planes de membresía | **Como** usuario, **quiero** comparar funcionalidades **para** decidir membresía | 2
+36 | US021 | Cambiar contraseña | **Como** usuario, **quiero** modificar mi contraseña **para** mantener mi cuenta segura | 2
+37 | US022 | Cambiar email | **Como** usuario, **quiero** actualizar mi email **para** mantener mi información actualizada | 3
+38 | US025 | Verificar cambio de email | **Como** usuario, **quiero** confirmar nuevo email mediante código **para** asegurar acceso | 3
+39 | US023 | Cambiar nombre de usuario | **Como** usuario, **quiero** modificar mi nombre **para** personalizar mi identidad | 2
+40 | US024 | Eliminar cuenta | **Como** usuario, **quiero** eliminar mi cuenta permanentemente **para** cumplir con privacidad | 5
+41 | TS057 | Integrar Plant API | **Como** desarrollador, **quiero** consumir API externa **para** datos científicos | 5
 42 | US042 | Activar Bluetooth manualmente | **Como** usuario, **quiero** botón de emparejamiento **para** conectar sin configuraciones complejas | 2
 43 | US043 | Riego manual con botón dedicado | **Como** usuario, **quiero** botón para riego manual **para** intervenir urgentemente | 3
-44 | US055 | Eliminar planta de maceta | **Como** usuario, **quiero** remover planta **para** liberar maceta | 2
-45 | US056 | Ver parámetros óptimos de planta | **Como** usuario, **quiero** consultar rangos ideales **para** comparar con sensores | 3
-46 | US061 | Recibir notificaciones de riego | **Como** usuario, **quiero** alertas **para** monitorear consumo de agua | 2
-47 | US062 | Visualizar historial de riego | **Como** usuario, **quiero** consultar registros **para** analizar patrones | 5
-48 | US064 | Configurar riego automático | **Como** usuario, **quiero** programaciones recurrentes **para** mantener rutinas | 5
-49 | US070 | Visualizar historial de alertas | **Como** usuario, **quiero** revisar alertas pasadas **para** registro de incidencias | 3
-50 | US071 | Configurar notificaciones | **Como** usuario, **quiero** personalizar alertas **para** optimizar experiencia | 3
-51 | US072 | Recibir alertas de hardware | **Como** usuario, **quiero** notificaciones sobre fallos **para** acción rápida | 3
-52 | US073 | Generar reporte semanal automático | **Como** usuario, **quiero** resumen semanal **para** análisis histórico | 5
-53 | US076 | Recibir alertas de fertilización | **Como** usuario, **quiero** notificaciones **para** fertilizar en momento óptimo | 3
-54 | US077 | Recibir recomendaciones de luz | **Como** usuario, **quiero** sugerencias de ubicación **para** optimizar exposición lumínica | 3
-55 | US081 | Cancelar renovación automática | **Como** usuario Premium, **quiero** desactivar renovación **para** controlar suscripción | 2
-56 | US082 | Ver historial de pagos | **Como** usuario, **quiero** consultar transacciones **para** control financiero | 3
-57 | US083 | Automatizar cambio de plan | **Como** sistema, **quiero** ajustar permisos **para** reflejar cambios de membresía | 5
-58 | US084 | Notificar vencimiento de membresía | **Como** sistema, **quiero** alertar al usuario **para** evitar interrupciones | 2
-59 | US087 | Gestionar consentimiento de datos | **Como** usuario, **quiero** controlar qué datos comparto **para** privacidad | 3
-60 | US088 | Acceder a política de privacidad clara | **Como** usuario, **quiero** entender uso de datos **para** decisiones informadas | 2
-61 | US089 | Solicitar eliminación de datos | **Como** usuario, **quiero** borrar mi cuenta **para** "derecho al olvido" | 5
-62 | US090 | Acceder al libro de reclamaciones | **Como** usuario, **quiero** encontrar fácilmente el libro **para** reportar incidencias | 2
-63 | TS013 | Integrar enlace de descarga con app stores | **Como** developer, **quiero** integrar enlaces a tiendas oficiales **para** descargas seguras | 3
-64 | TS019 | Implementar JWT para sesiones | **Como** desarrollador, **quiero** usar JWT **para** manejar sesiones de forma segura | 5
-65 | TS020 | Integrar Firebase Auth para 2FA | **Como** desarrollador, **quiero** integrar Firebase Auth **para** implementar autenticación en dos pasos | 5
-66 | TS026 | Implementar API CRUD para cuenta | **Como** desarrollador, **quiero** implementar endpoints **para** gestionar credenciales | 5
-67 | TS027 | Implementar eliminación segura de cuentas | **Como** desarrollador, **quiero** desarrollar flujo completo **para** cumplir con RGPD | 5
-68 | TS033 | Integrar API de geolocalización | **Como** desarrollador, **quiero** integrar API **para** obtener información climática | 5
-69 | TS034 | Implementar permisos por membresía | **Como** desarrollador, **quiero** implementar control de acceso **para** restringir funcionalidades | 5
-70 | TS035 | Implementar API CRUD para perfil | **Como** desarrollador, **quiero** implementar endpoints **para** gestionar información personal | 5
-71 | TS044 | Implementar circuito de control de energía | **Como** fabricante, **necesito** circuito seguro **para** transiciones estables | 5
-72 | TS045 | Integrar módulo BLE | **Como** fabricante, **requiero** chip BLE con antena **para** alcance mínimo de 10m | 5
-73 | TS046 | Diseñar sistema de riego con retroalimentación | **Como** fabricante, **debo** implementar circuito **para** prevenir riegos excesivos | 5
-74 | TS047 | Integrar carga solar | **Como** fabricante, **quiero** carga solar con batería **para** autonomía | 5
-75 | TS048 | Implementar stack Bluetooth para sensores | **Como** Maker, **quiero** protocolo BLE **para** transmitir datos estandarizados | 5
-76 | TS049 | Diseñar controlador de sensores | **Como** Maker, **quiero** módulo central **para** gestionar lecturas | 5
-77 | TS050 | Configurar ACL para riego | **Como** Desarrollador, **quiero** control de acceso **para** herencia de parámetros | 5
-78 | TS051 | Invalidar macetas defectuosas | **Como** Maker, **quiero** sistema de marcado **para** bloquear dispositivos con fallas | 3
-79 | TS052 | Integrar CRUD para macetas | **Como** desarrollador, **quiero** endpoints RESTful **para** manejar ciclo de vida | 5
-80 | TS053 | Sincronizar estado maceta-dispositivo | **Como** desarrollador, **quiero** mantener consistencia **para** reflejar cambios | 5
-81 | TS057 | Integrar Plant API | **Como** desarrollador, **quiero** consumir API externa **para** datos científicos | 5
-82 | TS058 | Implementar CRUD para plantas | **Como** desarrollador, **quiero** endpoints **para** gestionar relación maceta-planta | 5
-83 | TS065 | Integrar activación de bomba con PWM | **Como** Maker, **quiero** controlar velocidad **para** caudal preciso | 5
-84 | TS066 | Integrar sensor de flujo | **Como** Maker, **quiero** sensor de efecto Hall **para** medir ml/s exactos | 5
-85 | TS067 | Integrar control de riego | **Como** desarrollador, **quiero** endpoints REST **para** gestionar riego | 5
-86 | TS068 | Implementar motor de Reglas de Riego | **Como** desarrollador, **quiero** sistema de reglas **para** decidir riego automático | 5
-87 | TS074 | Gestionar alertas | **Como** desarrollador, **quiero** endpoints RESTful **para** ciclo de vida de alertas | 5
-88 | TS078 | Implementar motor de Reglas Agronómicas | **Como** desarrollador, **quiero** sistema basado en parámetros **para** recomendaciones | 5
+44 | US080 | Actualizar a Premium | **Como** usuario, **quiero** mejorar mi plan **para** funcionalidades avanzadas | 5
+45 | US031 | Ver estado de membresía | **Como** usuario, **quiero** conocer mi tipo de membresía **para** saber funcionalidades disponibles | 2
+46 | US032 | Actualizar preferencias de notificación | **Como** usuario, **quiero** elegir cómo recibir notificaciones **para** controlar experiencia | 3
+47 | TS078 | Implementar motor de Reglas Agronómicas | **Como** desarrollador, **quiero** sistema basado en parámetros **para** recomendaciones | 5
+48 | US061 | Recibir notificaciones de riego | **Como** usuario, **quiero** alertas **para** monitorear consumo de agua | 2
+49 | US062 | Visualizar historial de riego | **Como** usuario, **quiero** consultar registros **para** analizar patrones | 5
+50 | US064 | Configurar riego automático | **Como** usuario, **quiero** programaciones recurrentes **para** mantener rutinas | 5
+51 | US070 | Visualizar historial de alertas | **Como** usuario, **quiero** revisar alertas pasadas **para** registro de incidencias | 3
+52 | US071 | Configurar notificaciones | **Como** usuario, **quiero** personalizar alertas **para** optimizar experiencia | 3
+53 | US072 | Recibir alertas de hardware | **Como** usuario, **quiero** notificaciones sobre fallos **para** acción rápida | 3
+54 | US073 | Generar reporte semanal automático | **Como** usuario, **quiero** resumen semanal **para** análisis histórico | 5
+55 | US076 | Recibir alertas de fertilización | **Como** usuario, **quiero** notificaciones **para** fertilizar en momento óptimo | 3
+56 | US077 | Recibir recomendaciones de luz | **Como** usuario, **quiero** sugerencias de ubicación **para** optimizar exposición lumínica | 3
+57 | US081 | Cancelar renovación automática | **Como** usuario Premium, **quiero** desactivar renovación **para** controlar suscripción | 2
+58 | US082 | Ver historial de pagos | **Como** usuario, **quiero** consultar transacciones **para** control financiero | 3
+59 | US083 | Automatizar cambio de plan | **Como** sistema, **quiero** ajustar permisos **para** reflejar cambios de membresía | 5
+60 | US084 | Notificar vencimiento de membresía | **Como** sistema, **quiero** alertar al usuario **para** evitar interrupciones | 2
+61 | US087 | Gestionar consentimiento de datos | **Como** usuario, **quiero** controlar qué datos comparto **para** privacidad | 3
+62 | US088 | Acceder a política de privacidad clara | **Como** usuario, **quiero** entender uso de datos **para** decisiones informadas | 2
+63 | US089 | Solicitar eliminación de datos | **Como** usuario, **quiero** borrar mi cuenta **para** "derecho al olvido" | 5
+64 | US090 | Acceder al libro de reclamaciones | **Como** usuario, **quiero** encontrar fácilmente el libro **para** reportar incidencias | 2
+65 | TS019 | Implementar JWT para sesiones | **Como** desarrollador, **quiero** usar JWT **para** manejar sesiones de forma segura | 5
+66 | TS020 | Integrar Firebase Auth para 2FA | **Como** desarrollador, **quiero** integrar Firebase Auth **para** implementar autenticación en dos pasos | 5
+67 | TS026 | Implementar API CRUD para cuenta | **Como** desarrollador, **quiero** implementar endpoints **para** gestionar credenciales | 5
+68 | TS027 | Implementar eliminación segura de cuentas | **Como** desarrollador, **quiero** desarrollar flujo completo **para** cumplir con RGPD | 5
+69 | TS033 | Integrar API de geolocalización | **Como** desarrollador, **quiero** integrar API **para** obtener información climática | 5
+70 | TS034 | Implementar permisos por membresía | **Como** desarrollador, **quiero** implementar control de acceso **para** restringir funcionalidades | 5
+71 | TS035 | Implementar API CRUD para perfil | **Como** desarrollador, **quiero** implementar endpoints **para** gestionar información personal | 5
+72 | TS044 | Implementar circuito de control de energía | **Como** fabricante, **necesito** circuito seguro **para** transiciones estables | 5
+73 | TS045 | Integrar módulo BLE | **Como** fabricante, **requiero** chip BLE con antena **para** alcance mínimo de 10m | 5
+74 | TS046 | Diseñar sistema de riego con retroalimentación | **Como** fabricante, **debo** implementar circuito **para** prevenir riegos excesivos | 5
+75 | TS047 | Integrar carga solar | **Como** fabricante, **quiero** carga solar con batería **para** autonomía | 5
+76 | TS048 | Implementar stack Bluetooth para sensores | **Como** Maker, **quiero** protocolo BLE **para** transmitir datos estandarizados | 5
+77 | TS049 | Diseñar controlador de sensores | **Como** Maker, **quiero** módulo central **para** gestionar lecturas | 5
+78 | TS050 | Configurar ACL para riego | **Como** Desarrollador, **quiero** control de acceso **para** herencia de parámetros | 5
+79 | TS051 | Invalidar macetas defectuosas | **Como** Maker, **quiero** sistema de marcado **para** bloquear dispositivos con fallas | 3
+80 | TS052 | Integrar CRUD para macetas | **Como** desarrollador, **quiero** endpoints RESTful **para** manejar ciclo de vida | 5
+81 | TS053 | Sincronizar estado maceta-dispositivo | **Como** desarrollador, **quiero** mantener consistencia **para** reflejar cambios | 5
+82 | US041 | Controlar encendido/apagado físicamente | **Como** usuario, **quiero** botón para encender/apagar **para** conservar energía | 5
+83 | TS058 | Implementar CRUD para plantas | **Como** desarrollador, **quiero** endpoints **para** gestionar relación maceta-planta | 5
+84 | TS065 | Integrar activación de bomba con PWM | **Como** Maker, **quiero** controlar velocidad **para** caudal preciso | 5
+85 | TS066 | Integrar sensor de flujo | **Como** Maker, **quiero** sensor de efecto Hall **para** medir ml/s exactos | 5
+86 | TS067 | Integrar control de riego | **Como** desarrollador, **quiero** endpoints REST **para** gestionar riego | 5
+87 | TS068 | Implementar motor de Reglas de Riego | **Como** desarrollador, **quiero** sistema de reglas **para** decidir riego automático | 5
+88 | TS074 | Gestionar alertas | **Como** desarrollador, **quiero** endpoints RESTful **para** ciclo de vida de alertas | 5
 89 | TS085 | Integrar API de Stripe | **Como** desarrollador, **quiero** integrar API de pagos **para** transacciones confiables | 5
 90 | TS086 | Implementar middleware de membresía | **Como** desarrollador, **quiero** validar permisos **para** restringir funcionalidades | 5
 91 | TS091 | Desarrollar políticas de privacidad | **Como** desarrollador, **quiero** implementar políticas accesibles **para** cumplir regulaciones | 3
