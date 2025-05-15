@@ -890,7 +890,9 @@ Macetech emplea un conjunto coherente de patrones de navegación que permiten a 
 Con este sistema unificado, los usuarios pueden cumplir sus objetivos como monitorear plantas, revisar alertas o modificar datos de riego de forma clara, rápida y sin pérdida de contexto tanto desde web como desde dispositivos móviles.
 
 ## 5.3. Landing Page UI Design
+
 ### 5.3.1. Landing Page Wireframe
+
 <img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding1.png" alt="WireFrame" width="600" height="300"> <br>
 <img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding2.png" alt="WireFrame" width="600" height="300"> <br>
 <img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding3.png" alt="WireFrame" width="600" height="300"> <br>
@@ -901,6 +903,7 @@ Con este sistema unificado, los usuarios pueden cumplir sus objetivos como monit
 <img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding8.png" alt="WireFrame" width="600" height="300"> <br>
 
 ### 5.3.2. Landing Page Mock-up
+
 <img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding1.png" alt="MockUp" width="600" height="300"> <br>
 <img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding2.png" alt="MockUp" width="600" height="300"> <br>
 <img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding3.png" alt="MockUp" width="600" height="300"> <br>
@@ -917,6 +920,62 @@ Con este sistema unificado, los usuarios pueden cumplir sus objetivos como monit
 
 ### 5.4.2. Applications Mock-ups
 
+Los siguientes mockups representan las interfaces clave de una plataforma de gestión de macetas inteligentes. Estas vistas han sido diseñadas para facilitar la experiencia del usuario en procesos como el registro e inicio de sesión, visualización del estado de las macetas, gestión de notificaciones, y administración de cuenta y membresía. Cada pantalla refleja una parte esencial del recorrido del usuario, alineada con los objetivos y necesidades definidos para cada User Persona.
+
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-1.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-2.1.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-2.2.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-3.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-4.1.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-4.2.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-5.1.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5//style-guidelines/mockups/Mockup-5.1.png" alt="MockUp" width="700" height="400"> <br>
+
 ### 5.4.3. Applications User Flow Diagrams
 
+#### 5.4.3.1. Web Applications User Flow Diagrams
+
+Los siguientes User Flows representan los principales recorridos que un usuario puede seguir dentro de la aplicación, desde el acceso inicial hasta la personalización de su experiencia. Cada flujo responde a un objetivo específico del usuario (User Goal) y está basado en los mockups desarrollados. Se abordan procesos clave como el registro e inicio de sesión, la interacción con macetas inteligentes, la actualización de membresía, y la configuración de cuenta y notificaciones, asegurando una experiencia intuitiva, eficiente y centrada en las necesidades del usuario.
+
+- **1. Registro e Inicio de Sesión del Usuario**
+  Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
+  <img src="/assets/img/capitulo-5//style-guidelines/userflows/UserFlow-1.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **2. Visualización y Gestión de Macetas Inteligentes**
+  Este flujo permite a los usuarios acceder al panel principal donde visualizan todas sus macetas inteligentes, consultar detalles individuales como estado de sensores, historial de riego, recomendaciones, y ejecutar acciones como regar la planta manualmente.
+  <img src="/assets/img/capitulo-5//style-guidelines/userflows/UserFlow-2.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **3. Actualización de Membresía y Proceso de Pago**
+  Este flujo guía al usuario desde la comparación de planes hasta el proceso de pago para actualizar su cuenta gratuita a una suscripción Premium, permitiéndole acceder a funcionalidades avanzadas como reportes detallados y riego automático programado.
+  <img src="/assets/img/capitulo-5//style-guidelines/userflows/UserFlow-3.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **4. Configuración de Cuenta y Preferencias de Notificación**
+  Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
+  <img src="/assets/img/capitulo-5//style-guidelines/userflows/UserFlow-3.png" alt="MockUp" width="1000" height="700"> <br>
+
 ## 5.5. Applications Prototyping
+
+## 5.5.1 Web Applications Prototyping
+
+La presente sección incluye los prototipos interactivos desarrollados para representar el comportamiento funcional de la aplicación web en sus principales vistas. Estos prototipos permiten simular la navegación entre pantallas, validar la lógica de interacción y evaluar la experiencia del usuario antes del desarrollo final. Se han construido a partir de los mockups previamente diseñados, asegurando coherencia visual y funcional con los User Flows definidos.
+
+- **Criterios de interacción seleccionados:**
+  - Se utilizó un sistema de navegación lateral persistente que permite moverse fácilmente entre secciones clave como Dashboard, Perfil, Membresías y Notificaciones.
+  - Las interacciones siguen un enfoque secuencial y jerárquico, facilitando tareas críticas como registrar una cuenta, revisar el estado de una maceta o actualizar el plan de membresía.
+  - Se priorizó la claridad visual con botones de acción directa (“Regar ahora”, “Actualizar plan”, “Guardar cambios”) que reducen la fricción del usuario.
+- **Relación con la arquitectura de información:**
+
+  - **Sistema de navegación:** jerárquico en versión escritorio con íconos y etiquetas claras en un menú lateral.
+  - **Organización visual:** disposición de contenido en tarjetas, uso de títulos, subtítulos y agrupaciones para mejorar la escaneabilidad.
+  - **Tipos de categorización:** por tópicos (Macetas, Membresías, Perfil) y por audiencia (usuarios registrados o premium).
+
+- **Pantallas incluidas en el prototipo:**
+  - Registro y Login
+  - Dashboard de macetas
+  - Detalle de maceta inteligente
+  - Panel de membresía y proceso de pago
+  - Sección de perfil y notificaciones
+- **Screenshot representativo del prototipo en acción:**
+  <img src="/assets/img/capitulo-5//style-guidelines/prototyping/Web_Prototyping.png" alt="MockUp" width="1000" height="700"> <br>
+- **Enlace al video de navegación en Microsoft Stream:**
+  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
