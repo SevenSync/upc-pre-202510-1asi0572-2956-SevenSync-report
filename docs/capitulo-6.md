@@ -313,7 +313,7 @@ Como norma general, se espera que todo el código desarrollado por los miembros 
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
-La implementación de la página de inicio, los servicios y las aplicaciones es un paso fundamental en nuestro proceso de desarrollo. Nos permite materializar el diseño y la funcionalidad planificados, transformando los conceptos en productos tangibles y listos para su uso. Esta fase nos permite traducir las especificaciones y requisitos en código, desarrollando la estructura de la página, los servicios y las aplicaciones de acuerdo con las necesidades identificadas.
+La implementación de la página estática de negocio, los servicios y las aplicaciones es un paso fundamental en nuestro proceso de desarrollo. Nos permite materializar el diseño y la funcionalidad planificados, transformando los conceptos en productos tangibles y listos para su uso. Esta fase nos permite traducir las especificaciones y requisitos en código, desarrollando la estructura de la página, los servicios y las aplicaciones de acuerdo con las necesidades identificadas.
 
 ### 6.2.1. Sprint 1
 
@@ -334,46 +334,49 @@ El sprint planning es una reunión en la metodología ágil donde el equipo plan
 		</tr>
         <tr>
 			<td colspan="1">Date</td>
-            <td colspan="1">  </td>
+            <td colspan="1"> 2025-05-09 </td>
 		</tr>
         <tr>
 			<td colspan="1">Time</td>
-            <td colspan="1">  </td>
+            <td colspan="1"> 01:00 PM </td>
 		</tr>
         <tr>
 			<td colspan="1">Location</td>
-            <td colspan="1">Microsoft Teams (Reunion virtual)</td>
+            <td colspan="1">Discord (Reunion virtual)</td>
 		</tr>
         <tr>
 			<td colspan="1">Prepared By</td>
-            <td colspan="1"></td>
+            <td colspan="1"> Yen Cerna, Lucio Heli - Team Leader</td>
 		</tr>
         <tr>
 			<td colspan="1"> Attendees (to planning meeting)</td>
-            <td colspan="1"> </td>
+            <td colspan="1">Mallma Quispe, Rubén Elías; Pescorán Ángulo, Juan Fabritzzio; Paredes Zapata, Luiggi Gianfranco; Sanchez Zamora,
+Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
+ </td>
 		</tr>
          <tr>
 			<td colspan="1">Sprint 1 – 1 Review Summary </td>
-            <td colspan="1"></td>
+            <td colspan="1">El sprint 1 se enfocó en establecer las bases iniciales de la plataforma web. Durante este periodo fundacional, el equipo logró completar la página de aterrizaje, implementar las funcionalidades esenciales de registro e inicio de sesión integradas con un fake API en Beeceptor, asegurar que el diseño fuera adaptable a diversos dispositivos y desarrollar las primeras pantallas para interactuar con la maceta inteligente. Los miembros del equipo encontraron el sprint productivo y motivador al ver el progreso inicial, mientras que el Team Leader (Prooduct Owner) se mostró muy satisfecho con los resultados, destacando la solidez de la base construida y la efectividad del enfoque adoptado para este inicio de proyecto.</td>
 		</tr>
          <tr>
 			<td colspan="1">Sprint 1 – 1 Retrospective Summary </td>
-            <td colspan="1"></td>
+            <td colspan="1">Tras completar el primer Sprint, el equipo sintió que colaboraron bien y se adaptaron a los desafíos iniciales del proyecto, lo cual fue un comienzo coomplicado pero con buen descenlace. Sin embargo, también identificaron áreas clave para mejorar la forma de trabajar en el futuro, como organizar mejor los tiempos, coordinar las tareas compartidas de manera más eficiente, asegurar que siempre se enfoquen en entregar lo más valioso para el producto, y tener más reuniones cortas para mantenerse mejor comunicados y alineados en los próximos sprints.</td>
 		</tr>
          <tr>
 			<td colspan="2">Sprint Goal & User Stories </td>
 		</tr>
          <tr>
-			<td colspan="1">Sprint 1 Goal</td>
-            <td colspan="1"></td>
+			<td>Sprint 1 Goal</td>
+            <td><strong>Nuestro enfoque es</strong> entregar una experiencia digital unificada que comunique efectivamente el valor de Macetech desde el primer contacto hasta la interacción inicial con la plataforma. <strong>Creemos que esto proporciona</strong> claridad inmediata sobre los beneficios del producto a través de una Landing Page persuasiva, y empodera a los usuarios mediante dashboards funcionales con datos simulados que generan confianza en la solución. <strong>Esto se confirmará cuando</strong> los visitantes completen acciones clave en la Landing Page (registro o descarga), los usuarios registrados naveguen intuitivamente entre los dashboards de macetas y métricas simuladas, y las pruebas de usuario demuestren comprensión del valor propuesto y capacidad para interpretar los datos presentados.
+</td>
 		</tr>
         <tr>
 			<td colspan="1">Sprint 1 Velocity </td>
-            <td colspan="1"></td>
+            <td colspan="1">64</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1"></td>
+            <td colspan="1">64</td>
 		</tr>
 </tbody>
 </table>
