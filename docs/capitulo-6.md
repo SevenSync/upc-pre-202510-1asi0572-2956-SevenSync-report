@@ -388,9 +388,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
 A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
 
-[Link para ingresar al board del primer sprint](https://trello.com/invite/b/OVQC9ARc/ATTI0aff475a30a66269bb2b8469d3332a14873BB5C1/task-app-web)
+Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9 )
 
-![trello-screenshot](assets/img/evidencia-trello-sprint-1.png)
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-1.png" alt="Evidencia de Sprint Backlog para sprint 1">
 
 <table>
 	<tbody>
@@ -412,26 +412,336 @@ A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajo
 			<td>Assigned To</td>
 			<td>Status (To-do / In-Process / To-Review / Done)</td>
 		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>TSK001</td>
-			<td>Remote environment creation for Report and Landing Page</td>
-			<td>Organization, repositories and branch creation in GitHub</td>
-			<td>0</td>
-			<td>All team members</td>
-			<td>Done</td>
-		</tr>
-        <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+<tr>
+        <td>US001</td>
+        <td>Ver introducción atractiva</td>
+        <td>T001</td>
+        <td>Implementar sección hero completa</td>
+        <td><strong>Como</strong> visitante de la plataforma, <strong>quiero</strong> ver una sección introductoria concisa sobre Macetech <strong>para</strong> obtener una primera impresión positiva</td>
+        <td>6</td>
+        <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US002</td>
+        <td>Entender el valor principal</td>
+        <td>T002</td>
+        <td>Implementar sección valor completa</td>
+        <td><strong>Como</strong> visitante de la plataforma, <strong>quiero</strong> identificar y comprender la propuesta de valor central <strong>para</strong> saber si es de mi interés</td>
+        <td>6</td>
+        <td>Fabrizio Sanchez</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US006</td>
+        <td>Iniciar sesión desde CTA visible</td>
+        <td>T003</td>
+        <td>Implementar CTA login completo</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> ver un llamado a la acción claro <strong>para</strong> acceder a funcionalidades personalizadas</td>
+        <td>5</td>
+        <td>Flavio Trigueros</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US003</td>
+        <td>Conocer funcionalidades clave</td>
+        <td>T004</td>
+        <td>Implementar sección features completa</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> identificar las principales funcionalidades <strong>para</strong> analizar si el producto es útil en mi situación</td>
+        <td>7</td>
+        <td>Ruben Mallma</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US004</td>
+        <td>Visualizar video producto</td>
+        <td>T005</td>
+        <td>Implementar reproductor completo</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> ver un video demostrativo <strong>para</strong> entender mejor cómo funciona Macetech</td>
+        <td>5</td>
+        <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US005</td>
+        <td>Conocer opciones membresía</td>
+        <td>T006</td>
+        <td>Implementar sección membresías completa</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> ver un apartado de membresías <strong>para</strong> entender beneficios por nivel</td>
+        <td>6</td>
+        <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US007</td>
+        <td>Conocer miembros equipo</td>
+        <td>T008</td>
+        <td>Implementar sección equipo completo</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> conocer quiénes desarrollan Macetech <strong>para</strong> confiar en el proyecto</td>
+        <td>5</td>
+        <td>Fabrizio Sanchez</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US008</td>
+        <td>Contactar equipo</td>
+        <td>T009</td>
+        <td>Implementar formulario contacto completo</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> poder contactar al equipo <strong>para</strong> hacer preguntas o enviar comentarios</td>
+        <td>6</td>
+        <td>Flavio Trigueros</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US009</td>
+        <td>Descargar aplicación móvil</td>
+        <td>T007</td>
+        <td>Implementar banners descarga completo</td>
+        <td><strong>Como</strong> visitante interesado, <strong>quiero</strong> acceder al enlace de descarga <strong>para</strong> instalar la app</td>
+        <td>5</td>
+        <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US010</td>
+        <td>Visualizar info footer</td>
+        <td>T010</td>
+        <td>Implementar footer completo</td>
+        <td><strong>Como</strong> visitante, <strong>quiero</strong> acceder a información útil en el footer <strong>para</strong> facilitar mi navegación</td>
+        <td>5</td>
+        <td>Ruben Mallma</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>TS011</td>
+        <td>Implementar diseño responsivo</td>
+        <td>T011</td>
+        <td>Asegurar responsividad completa</td>
+        <td><strong>Como</strong> developer, <strong>quiero</strong> implementar diseño responsivo <strong>para</strong> que la página se vea bien en cualquier dispositivo</td>
+        <td>8</td>
+        <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T011.1</td>
+        <td>Ajustar puntos de ruptura CSS</td>
+        <td>Implementar media queries y ajustar estilos para diferentes tamaños de pantalla.</td>
+        <td>4</td>         <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T011.2</td>
+        <td>Probar en dispositivos</td>
+        <td>Probar la interfaz en emuladores y dispositivos reales (móvil, tablet, desktop).</td>
+        <td>4</td>         <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US014</td>
+        <td>Registrar cuenta</td>
+        <td>T012</td>
+        <td>Formulario registro</td>
+        <td><strong>Como</strong> usuario nuevo, <strong>quiero</strong> registrar una cuenta <strong>para</strong> acceder a los servicios</td>
+        <td>6</td>
+        <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T012.1</td>
+        <td>Estructura formulario</td>
+        <td>Crear la estructura HTML y estilos básicos para el formulario de registro.</td>
+        <td>2</td>         <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T012.2</td>
+        <td>Implementar validación</td>
+        <td>Añadir validaciones de entrada del usuario en el cliente (JavaScript).</td>
+        <td>2</td>         <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T012.3</td>
+        <td>Integrar con API</td>
+        <td>Conectar el formulario con el endpoint de registro del fake API en Beeceptor.</td>
+        <td>2</td>         <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US015</td>
+        <td>Iniciar sesión</td>
+        <td>T013</td>
+        <td>Formulario login</td>
+        <td><strong>Como</strong> usuario registrado, <strong>quiero</strong> iniciar sesión con mis credenciales <strong>para</strong> acceder a mi cuenta</td>
+        <td>5</td>
+        <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+     <tr>
+        <td></td>         <td></td>         <td>T013.1</td>
+        <td>Estructura formulario</td>
+        <td>Crear la estructura HTML y estilos básicos para el formulario de inicio de sesión.</td>
+        <td>1</td>         <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T013.2</td>
+        <td>Implementar validación</td>
+        <td>Añadir validaciones de entrada del usuario en el cliente (JavaScript).</td>
+        <td>2</td>         <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T013.3</td>
+        <td>Integrar con API</td>
+        <td>Conectar el formulario con el endpoint de inicio de sesión del fake API en Beeceptor.</td>
+        <td>2</td>         <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US038</td>
+        <td>Ver parámetros sensores</td>
+        <td>T014</td>
+        <td>Dashboard sensores</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> consultar parámetros de sensor <strong>para</strong> saber si planta necesita atención</td>
+        <td>7</td>
+        <td>Fabrizio Sanchez</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T014.1</td>
+        <td>Obtener datos sensores</td>
+        <td>Obtener los datos de los sensores desde el API del fake API en Beeceptor.</td>
+        <td>3</td>         <td>Fabrizio Sanchez</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T014.2</td>
+        <td>Mostrar datos</td>
+        <td>Renderizar los datos de los sensores en el dashboard (tabla o gráfico).</td>
+        <td>4</td>         <td>Fabrizio Sanchez</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US037</td>
+        <td>Personalizar nombre maceta</td>
+        <td>T015</td>
+        <td>Editor nombre</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> asignar nombre único <strong>para</strong> identificar fácilmente</td>
+        <td>5</td>
+        <td>Flavio Trigueros</td>
+        <td>Done</td>
+    </tr>
+     <tr>
+        <td></td>         <td></td>         <td>T015.1</td>
+        <td>Crear campo entrada</td>
+        <td>Añadir un campo de texto para editar el nombre de la maceta.</td>
+        <td>2</td>         <td>Flavio Trigueros</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T015.2</td>
+        <td>Implementar guardar</td>
+        <td>Añadir la funcionalidad para guardar el nuevo nombre via API.</td>
+        <td>3</td>         <td>Flavio Trigueros</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US054</td>
+        <td>Registrar planta</td>
+        <td>T016</td>
+        <td>Selector plantas</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> asignar planta a maceta <strong>para</strong> recibir recomendaciones</td>
+        <td>6</td>
+        <td>Ruben Mallma</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T016.1</td>
+        <td>Obtener lista plantas</td>
+        <td>Obtener la lista de plantas disponibles desde el API.</td>
+        <td>3</td>         <td>Ruben Mallma</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T016.2</td>
+        <td>Implementar selector</td>
+        <td>Crear la interfaz para seleccionar una planta de la lista.</td>
+        <td>3</td>         <td>Ruben Mallma</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US063</td>
+        <td>Riego manual</td>
+        <td>T017</td>
+        <td>Botón riego manual</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> activar riego inmediato <strong>para</strong> necesidades puntuales</td>
+        <td>5</td>
+        <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T017.1</td>
+        <td>Crear botón</td>
+        <td>Añadir el botón para activar el riego manual en la interfaz.</td>
+        <td>2</td>         <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T017.2</td>
+        <td>Implementar llamada API</td>
+        <td>Configurar la llamada al API para enviar la solicitud de riego.</td>
+        <td>3</td>         <td>Juan Pescorán</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US060</td>
+        <td>Programar riegos</td>
+        <td>T018</td>
+        <td>Programador riegos</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> horarios fijos <strong>para</strong> plantas con necesidades predecibles</td>
+        <td>7</td>
+        <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T018.1</td>
+        <td>Construir UI programación</td>
+        <td>Crear los selectores de día y hora para programar riegos.</td>
+        <td>3</td>         <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>          <td>T018.2</td>
+        <td>Implementar guardar programación</td>
+        <td>Añadir la funcionalidad para guardar los horarios programados via API.</td>
+        <td>4</td>         <td>Lucio Yen</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US075</td>
+        <td>Recomendaciones riego</td>
+        <td>T019</td>
+        <td>Panel recomendaciones</td>
+        <td><strong>Como</strong> usuario, <strong>quiero</strong> sugerencias ajustadas <strong>para</strong> optimizar consumo de agua</td>
+        <td>6</td>
+        <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T019.1</td>
+        <td>Obtener recomendaciones</td>
+        <td>Obtener las recomendaciones de riego desde el fake API en Beeceptor.</td>
+        <td>3</td>         <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td></td>         <td></td>         <td>T019.2</td>
+        <td>Mostrar recomendaciones</td>
+        <td>Mostrar las recomendaciones de manera clara en la interfaz.</td>
+        <td>3</td>         <td>Luiggi Paredes</td>
+        <td>Done</td>
+    </tr>
     <tbody>
 </table>
 
