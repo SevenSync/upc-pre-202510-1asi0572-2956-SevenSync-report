@@ -18,7 +18,7 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     <img src="/assets/img/capitulo-6/logos/jira-logo.png" width="200px" height="200px" alt="Jira Software Logo"></img> 
     <br>
     En SevenSync se utilizó Jira Software a partir de la plantilla "Scrum". Esta plantilla nos permitió elaborar el product backlog priorizado y planear las historias de usuario que se incluyen en cada iteración de sprint. Debido a que Jira cuenta con un dashboard accesible y de claro entendimiento, se agilizaron los procesos de designación de tareas entre los miembros del equipo lo cuál permitió un desarrollo ágil de software.
-    <img src="" alt="Evidencia de Uso en Jira"></img>
+    <img src="/assets/img/capitulo-6/evidence/jira-evidence.png" alt="Evidencia de Uso en Jira"></img>
     <br>Referencia: Atlassian. (s.f.). Get Started with Jira - Comprehensive Beginner's Guide. Recuperado de https://www.atlassian.com/software/jira/guides/getting-started/introduction <br>
   - ### Discord:
     Discord es una aplicación de comunicación gratuita que permite a decenas de millones de personas hablar y pasar el rato con sus comunidades, creadores y amigos favoritos. Está centrada en la gestión de comunidades y ofrece herramientas de comunicación como llamadas de voz y video, salas de chat persistentes, mensajes directos, grupos personales e integraciones con otros servicios.
@@ -26,7 +26,7 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     <img src="/assets/img/capitulo-6/logos/discord-logo.jpg" width="250px" height="200px" alt="Discord Logo"></img>
   <br>
     Discord fue el medio de comunicación principal del equipo al contar con canales de texto y voz. En el grupo de discord "SevenSync - IOT", se recuerda constantemente las tareas pendientes, se marcan pautas y guías para desarrollar artefactos de calidad y se realiza el desarrollo de la documentación y software de forma simultánea. De esta manera, aseguramos la comunicación del equipo en todo momento para que todos estén al tanto del ciclo de vida del proyecto.
-         <img src="" alt="Evidencia de Uso en Discord"></img>
+         <img src="/assets/img/capitulo-6/evidence/discord-evidence.png" alt="Evidencia de Uso en Discord"></img>
     <br>Referencia: Discord. (s.f.). What is Discord?. Recuperado de https://discord.com/creators/what-is-discord 
 
   - ### Excalidraw: 
@@ -35,7 +35,7 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     <img src="/assets/img/capitulo-6/logos/excalidraw-logo.jpg" width="200px" height="200px" alt="Excalidraw Logo"></img> <br>
 
     Se utilizó esta herramienta para que el equipo realice sesiones de brainstorming, diseño colaborativo y explicación visual de ideas o conceptos complejos.
-       <img src="" alt="Evidencia de Uso en Excalidraw"></img>
+       <img src="/assets/img/capitulo-6/evidence/excalidraw-evidence.png" alt="Evidencia de Uso en Excalidraw"></img>
     <br>Referencia: Excalidraw. (s.f.). Excalidraw | Online whiteboard collaboration made easy. Recuperado de https://excalidraw.com/
    
   - ### Whatsapp: 
@@ -43,7 +43,7 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     <br>
     <img src="/assets/img/capitulo-6/logos/whatsapp-logo.png" width="200px" height="200px" alt="Whatsapp Logo"></img> <br>
     El equipo creó un grupo de Whatsapp para la comunicación rápida y accesible fuera del entorno de trabajo principal, coordinaciones y para avisos urgentes.
-    <img src="" alt="Evidencia de Uso en Whatsapp"></img>
+    <img src="/assets/img/capitulo-6/evidence/whatsapp-evidence.png" alt="Evidencia de Uso en Whatsapp"></img>
 
     <br> Referencia: WhatsApp. (s.f.). Acerca de nosotros. Recuperado de https://www.whatsapp.com/about?lang=es
 
@@ -54,40 +54,74 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     
     Hemos utilizado Google Docs para hacer seguimiento de las responsabilidades del equipo y poder asignar una calificación correspodiente en base a la entrega a tiempo, la colaboración constante y las entregas realizadas.<br>
 
-     <img src="" alt="Evidencia de Uso en Google Docs"></img>
+     <img src="/assets/img/capitulo-6/evidence/google-docs-evidence.png" alt="Evidencia de Uso en Google Docs"></img>
     Referencia: Google Workspace. (s.f.). Google Docs: Online Document & PDF Editor. Recuperado de https://workspace.google.com/products/docs/
 - #### Requirement Management:
   - ### Miro:
        <br>
-    <img src="" alt="Evidencia de Uso en Miro"></img>
+       Miro es una plataforma de pizarra colaborativa en línea que permite a los equipos trabajar juntos en tiempo real. Ofrece una variedad de plantillas y herramientas para brainstorming, mapeo mental, diagramación, planificación ágil, gestión de proyectos y más, funcionando como un espacio visual centralizado para la colaboración.
+
+      <img src="/assets/img/capitulo-6/logos/miro-logo.jpg" width="200px" height="200px" alt="Miro Logo"></img>
+      Hemos utilizado Miro para sesiones de brainstorming iniciales, mapeo de funcionalidades relacionadas con los Bounded Contexts y quizás para estructurar flujos de usuario o diagramas de planificación visual.
+<img src="/assets/img/capitulo-6/evidence/miro-evidence.png" alt="Evidencia de Uso en Miro"></img>
+      Referencia: Miro. (s.f.). The online collaborative whiteboard platform. Recuperado de https://miro.com/
+
+
+    
   - ### UXPressia:
        <br>
-    <img src="" alt="Evidencia de Uso en UXPressia"></img>
+       UXPressia es una plataforma de experiencia del cliente (CX) y experiencia del usuario (UX) que se especializa en la creación de Customer Journey Maps, Personas de Usuario e Impact Maps. Permite visualizar y comprender la experiencia del usuario a través de diferentes puntos de contacto.
+      
+      <img src="/assets/img/capitulo-6/logos/uxpressia-logo.jpg" width="200px" height="200px" alt="Ux Pressia Logo"></img>
+    
+      Hemos utilizado UXPressia para definir a nuestros usuarios objetivo creando Personas detalladas y para mapear sus interacciones clave con el sistema a través de Customer Journey Maps, ayudando a centrar el diseño en las necesidades del usuario.
+    <img src="/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png" alt="Evidencia de Uso en UXPressia"></img>
+
+Referencia: UXPressia. (s.f.). Customer Experience & User Experience Platform. Recuperado de https://uxpressia.com/
+
   - ### Structurizr:
-     <img src="" alt="Evidencia de Uso en Structurizr"></img>
+  Structurizr es una herramienta diseñada para crear modelos de software utilizando el enfoque C4 (Context, Container, Component, Code). Permite visualizar la arquitectura de un sistema en diferentes niveles de abstracción, facilitando la comunicación arquitectónica dentro del equipo.
+      <img src="/assets/img/capitulo-6/logos/structurizr-logo.jpg" width="200px" height="200px" alt="Structurizr Logo"></img>
+Hemos utilizado Structurizr para modelar y documentar la arquitectura del sistema, representando cómo interactúan los distintos Bounded Contexts (como IAM, Pot Management, etc.) y sus componentes internos.
+
+Referencia: Structurizr. (s.f.). Visualise, document and explore your software architecture. Recuperado de https://structurizr.com/
+     <img src="/assets/img/capitulo-6/evidence/Structurizr-evidence.jpeg" alt="Evidencia de Uso en Structurizr"></img>
 - #### Product UX/UI Design:
   - ### Figma:
-      <img src="" alt="Evidencia de Uso en Figma"></img>
+  Figma es un editor de diseño de interfaces colaborativo basado en la nube. Permite a los equipos diseñar, prototipar y compartir interfaces de usuario para aplicaciones web y móviles en tiempo real. Ofrece herramientas vectoriales, componentes reutilizables y capacidades de prototipado interactivo.
+    <img src="/assets/img/capitulo-6/logos/figma-logo.jpg" width="200px" height="200px" alt="Figma Logo"></img>
+Hemos utilizado Figma para diseñar las interfaces de usuario de la aplicación, incluyendo wireframes, mockups y prototipos interactivos para funcionalidades como el registro, inicio de sesión, gestión de macetas y visualización de datos.
+      <img src="/assets/img/capitulo-6/evidence/figma-evidence.png" alt="Evidencia de Uso en Figma"></img>
+
+Referencia: Figma. (s.f.). The Collaborative Interface Design Tool. Recuperado de https://www.figma.com/
+
   - ### LucidChart:
-     <img src="" alt="Evidencia de Uso en Lucidchart"></img>
+  Lucidchart es un espacio de trabajo visual que permite crear diagramas de flujo, diagramas de red, organigramas, mapas mentales y otros tipos de diagramas para visualizar ideas, sistemas y procesos. Ofrece funcionalidades de colaboración y una amplia biblioteca de formas.
+<img src="/assets/img/capitulo-6/logos/lucidchart-logo.jpg" width="200px" height="200px" alt="Structurizr Logo"></img>
+Hemos utilizado Lucidchart para crear diagramas complementarios al diseño UX/UI y a la arquitectura, como flujos de usuario detallados, diagramas de procesos o diagramas conceptuales del sistema.
+     <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/UserFlow-1.png"></img>
+Referencia: Lucidchart. (s.f.). Your visual workspace. Recuperado de https://www.lucidchart.com/
+
 - #### Software Development:
 
   - ### HTML5:
-    Es un lenguaje de etiquetado utilizado para crear la estructura de páginas web. Lo utilizamos para incluir componentes como texto, imágenes, enlaces, botones y videos en nuestras páginas web. <br>
-
-    <img src="" alt="Evidencia de Uso de HTML5"></img>
+    Es un lenguaje de etiquetado utilizado para crear la estructura de páginas web. Lo utilizamos para incluir componentes como texto, imágenes, enlaces, botones y videos en nuestras páginas web. En este proyecto, HTML5 fue utilizado para definir la estructura y los elementos de las interfaces de usuario en el frontend, como formularios, dashboards y listas de macetas o plantas.
+    
+    <img src="/assets/img/capitulo-6/evidence/html-evidence.png" alt="Evidencia de Uso de HTML5"></img>
   - ### CSS:
-    Un lenguaje de diseño gráfico utilizado para dar formato y estilo a la presentación de un documento escrito en HTML. <br>
-     <img src="" alt="Evidencia de Uso de CSS"></img>
+    Un lenguaje de diseño gráfico utilizado para dar formato y estilo a la presentación de un documento escrito en HTML.Hemos utilizado CSS para aplicar estilos visuales a los elementos HTML, asegurando que la interfaz de usuario se vea limpia y coherente con el diseño establecido. <br>
+     <img src="/assets/img/capitulo-6/evidence/css-evidence.png" alt="Evidencia de Uso de CSS"></img>
   - ### JavaScript:
-    Un lenguaje de programación orientado a objetos dinámico que utilizamos para implementar funcionalidades en un documento HTML. <br>
-    <img src="" alt="Evidencia de Uso de JavScript"></img>
+     Un lenguaje de programación orientado a objetos dinámico que utilizamos para implementar funcionalidades en un documento HTML. JavaScript ha sido fundamental para añadir interactividad a la aplicación, manejar eventos del usuario, realizar validaciones en el cliente y comunicarse con los servicios backend a través de APIs.
+    <img src="/assets/img/capitulo-6/evidence/js-evidence.png" alt="Evidencia de Uso de JavScript"></img>
   - ### WebStorm:
-    Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con JavaScript. <br>
+    Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con JavaScript.
+    Utilizamos WebStorm como nuestro IDE principal para el desarrollo frontend, aprovechando sus herramientas de edición, depuración y gestión de código para HTML, CSS y JavaScript.
     [Link De Descarga](https://www.jetbrains.com/es-es/webstorm/)
-    <img src="" alt="Evidencia de Uso de WebStorm"></img>
+    <img src="/assets/img/capitulo-6/evidence/webstorm-evidence.png" alt="Evidencia de Uso de WebStorm"></img>
 
   - ### Rider
+    Rider es un entorno de desarrollo integrado (IDE) creado por JetBrains, diseñado específicamente para el desarrollo .NET utilizando lenguajes como C#, F# y VB.NET, y también soporta desarrollo con Unity. Ofrece un conjunto completo de herramientas para codificación, depuración, pruebas unitarias y refactorización.
 
 - #### Software Documentation:
   - ### Github:
@@ -99,25 +133,24 @@ A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos 
     
     GitHub es fundamental como repositorio centralizado para el código fuente y documentación. Nos permitió manejar el control de versiones, la colaboración segura entre múltiples mimebros del equipo trabajando en paralelo (mediante ramas y pull requests), la revisión de código y el seguimiento de cambios. Es la herramienta clave para mantener el código del equipo sincronizado y gestionado de forma colaborativa.
     <br>
-    <img src="" alt="Evidencia de Uso en Github">
+    <img src="/assets/img/capitulo-6/evidence/github-evidence.png" alt="Evidencia de Uso en Github">
     <br>Referencia: GitHub Docs. (s.f.). About GitHub and Git. Recuperado de https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
 
 - #### Software Deployment:
   - ### GitHub Pages:
     Una plataforma que posibilita la realización de despliegues simples directamente desde un repositorio de GitHub. <br>
 
-    <img src="" alt="Github Pages logo">
     Referencia:       
-    <img src="" alt="Evidencia de Uso de Github Pages">
+    <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
 
 ### 6.1.2. Source Code Management.
 
-Landing Page Repository: [Landing Page Repository](https://github.com/los-seniors-v2/LandingPageFlexPal.git)
+
 
 - #### GitFlow Implementation:
 
   Para implementar el flujo de trabajo Gitflow utilizando Git como nuestra herramienta de control de versiones, nos basamos en la entrada de blog "A successful Git branching model" de Vincent Driessen. Esta referencia nos permitió establecer las convenciones detalladas que serán aplicadas en nuestro proyecto
-  ![gitflow](assets/img/team_collab_ins.png)
+   <img src="/assets/img/capitulo-6/evidence/gitflow-evidence.png" alt="Evidencia de GitFlow">
 
 - ### **Master o Main branch**
 
@@ -266,22 +299,39 @@ Como norma general, se espera que todo el código desarrollado por los miembros 
     };
     ```
 - ### C#
- llenar
-- ### .NET CORe
-  llenar
-
+  #### Nomenclatura:
+  PascalCase: Tipos (Clases, Enums, Interfaces I), Miembros Públicos/Internos (Propiedades, Métodos, Eventos), Namespaces, Constantes.
+  camelCase: Variables locales, Parámetros de método, Campos privados (sin _).
+  Nombres de archivo: Coincidir con el tipo público principal.
+  Formato:
+  #### Indentación: 4 espacios (no tabuladores).
+  Llaves {}: En nueva línea (estilo Allman o similar).
+  Espaciado: Un espacio alrededor de operadores, después de comas, antes de { en control de flujo. No espacios después de ( o antes de ).
+  Líneas en blanco: Para separar secciones lógicas.
+  Longitud de línea: Idealmente <= 120 caracteres.
+  ##### Comentarios:
+  ///: Documentación XML para tipos y miembros públicos/internos.
+  //: Aclarar lógica compleja.
+  ##### Organización:
+  using: Arriba, fuera del namespace, ordenadas alfabéticamente.
+  Miembros de tipo: Campos -> Constructores -> Propiedades -> Métodos -> Eventos (ordenar por visibilidad dentro de cada grupo).
+  #### Buenas Prácticas:
+   Usar var apropiadamente, interpolación $"", LINQ, manejo de excepciones, async/await, operadores ?. y ??.
+  Herramientas: Usar .editorconfig y Analizadores Roslyn (ej. StyleCop) para automatizar y verificar el estilo.
 
 
 ### 6.1.4. Software Deployment Configuration.
 
-- Despliegue Landing Page:<br>
+- Despliegue Landing Page:<br> 
+   <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
+
+- Despliegue Front End App:<br> Microsoft azure
 
 
-- Despliegue Front End App:<br>
+- Despligue de FAKE API: 
+   <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia de Beeceptor API ">
 
-
-- Despligue de FAKE API:
-
+Enlace: https://macetech.free.beeceptor.com
 ## 6.2. Landing Page, Services & Applications Implementation.
 
 La implementación de la página estática de negocio, los servicios y las aplicaciones es un paso fundamental en nuestro proceso de desarrollo. Nos permite materializar el diseño y la funcionalidad planificados, transformando los conceptos en productos tangibles y listos para su uso. Esta fase nos permite traducir las especificaciones y requisitos en código, desarrollando la estructura de la página, los servicios y las aplicaciones de acuerdo con las necesidades identificadas.
@@ -1162,36 +1212,29 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 
 | Repository          | Branch  | Commit ID                                | Commit Message                    | Commit Message Body                        | Commited on (Date) |
 | ------------------- | ------- | ---------------------------------------- | --------------------------------- | ------------------------------------------ | ------------------ |
-| JuanPescoran/Report | develop | 98783487238973c5dd4a8097197adb2cf70af00a | feat: added content in chapter IV | added content in all sections of chapter04 | 4/9/2024           |
-| JuanPescoran/Report | master  | 889cdc0229a96aa9fca4641ebfccccd71f0d7a5a | feat(assets)                      | added img to master branch                 | 4/9/2024           |
 
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y funcionalidades implementadas en el Sprint 1:
 
-| Repository                      | Branch                | Commit ID                                | Commit Message                   | Commit Message Body                                                                                                                                 | Commited on (Date) |
-| ------------------------------- | --------------------- | ---------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| JDu202012207/LandingPageFlexPal | feat-bienvenida       | 563de4f7bde5ef4a20ce639bc4f6bd881d205856 | feat(welcome-container)          | implemented cta in section home, added slogan and banner.                                                                                           | 4/9/2024           |
-| Fabrizio0711/LandingPageFlexPal | feature-testimonios   | d3d404bfa4c98d4bd3311d54d2edca3c2b7f6f51 | feat: added testimonials section | added testimonials section with user feedback                                                                                                       | 4/9/2024           |
-| JDu202012207/LandingPageFlexPal | feature-header-footer | f8351fb08d1718af912437127ac10d350a6b0d2c | feat(header-footer)              | implemented logo in header and information in footer.                                                                                               | 4/9/2024           |
-| JDu202012207/LandingPageFlexPal | feature-contacto      | c8d979e154ceec2e6b7e924b6aa16137199f743d | feat(contact-us)                 | implemented form, description and labels                                                                                                            | 4/9/2024           |
-| JuanPescoran/LandingPageFlexPal | feature-contenido     | db8e4a108071eeed824a148623bf34e7785ea982 | feat(assets): added images       | feat(assets): added all information for hero content, about us, subscriptions and other sections Also, added images for banners and everything else | 4/9/2024           |
-
-FRONT tambien
 #### 6.2.1.5.Testing Suite Evidence for Sprint Review.
 
 Para front es Specs de angular
 
 #### 6.2.1.6.Execution Evidence for Sprint Review.
 
-Landing page desarrollada
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page ">
 
-Front desarrollada
+
 #### 6.2.1.7.Services Documentation Evidence for Sprint Review.
-Evidencias
+En el alcance de este sprint, no se realizó un web service, sin embargo, a modo de simulación de datos, desplegamos una FAKE API en Beeceptor con los siguientes endpoints:
+<img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia Landing page ">
+<img src="/assets/img/capitulo-6/evidence/service-fake-1.jpeg" alt="Evidencia Landing page ">
+<img src="/assets/img/capitulo-6/evidence/service-fake-2.jpeg" alt="Evidencia Landing page ">
+<img src="/assets/img/capitulo-6/evidence/service-fake-3.jpeg" alt="Evidencia Landing page ">
+<img src="/assets/img/capitulo-6/evidence/service-fake-4.jpeg" alt="Evidencia Landing page ">
+<img src="/assets/img/capitulo-6/evidence/service-fake-5.jpeg" alt="Evidencia Landing page ">
 #### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
-Github pages para landing
-Front deployada 
-#### 6.2.1.9.Team Collaboration Insights during Sprint.
-Commits de luiggi de la landing (cunando ya lo cierre)
+Enlace de Landing Page: https://sevensync.github.io/macetech-landing/ 
+<img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia Landing page ">
 
-Commits de front
+#### 6.2.1.9.Team Collaboration Insights during Sprint.
+<img src="/assets/img/capitulo-6/evidence/landing-page-commits-evidence.jpeg" alt="Evidencia Landing page ">

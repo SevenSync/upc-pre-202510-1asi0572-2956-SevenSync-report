@@ -29,10 +29,10 @@ FECHA: MAYO 2025
 
 # Registro de Versiones del Informe
 
-| Versión               | Fecha    | Autores | Descripción de Modificación |
-| --------------------- | -------- | ------- | --------------------------- |
-| 1.0 - TB1 | 27/4/25 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli  | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25 |
-2.0 - TP|16/05/2025|Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli|Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega.|
+| Versión   | Fecha      | Autores                                                                                                                                                                                                          | Descripción de Modificación                                                                                                                                              |
+|-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25                           |
+| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. |
 ---
 
 # Project Report Collaboration Insights
@@ -262,22 +262,23 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real. <br><br>
      <b> TP</b><br>
       <u> Fabrizio Sanchez </u><br>
-      <br><br>
-      <b> TP</b><br>
+      Trabajé activamente en la planificación y estructuración del sistema, colaborando estrechamente con los diferentes miembros del equipo para definir y actualizar los diagramas de arquitectura y flujo de datos. Además, participé en las subsanaciones que ayudaron a mejorar la integración de los componentes del sistema. <br><br>
+    <b> TP</b><br>
       <u> Luiggi Paredes </u><br>
-      <br><br>
+      Fomenté la integración de componentes clave del sistema mediante diagramas técnicos. Trabajé con los miembros del equipo para revisar y ajustar los diagramas de flujo y arquitectura, asegurando que todos los componentes estuvieran correctamente alineados para garantizar la cohesión del sistema. <br><br>
       <b> TP</b><br>
       <u> Ruben Mallma </u><br>
-      <br><br>
+      Me centré en la documentación del sistema, colaborando con el equipo en la creación de diagramas de flujo detallados para representar las interacciones entre los componentes. Ayudé a organizar las actualizaciones que surgieron en el proceso de subsanación. <br><br>
       <b> TP</b><br>
       <u> Juan Pescoran </u><br>
-      <br><br>
+      Coordiné la estructuración de diagramas técnicos y trabajé con el equipo para asegurarme de que todos los componentes estuvieran correctamente representados. Colaboré en la identificación de los posibles problemas y propuse soluciones efectivas durante la fase de subsanación. <br><br>
       <b> TP</b><br>
       <u> Lucio Yen </u><br>
-     <br><br>
-      <b> TB1</b><br>
+     Trabajé en los diagramas técnicos, asegurando que el flujo de datos estuviera bien documentado. Colaboré estrechamente con otros miembros del equipo para realizar las subsanaciones necesarias, optimizando la estructura técnica. <br><br>
+      <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
-      </td>
+        Desarrollé diagramas detallados de arquitectura técnica, asegurando que el sistema estuviera bien documentado. Trabajé en la subsanación de problemas relacionados con la integración de sensores y componentes físicos, colaborando estrechamente con el equipo.
+        </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -300,21 +301,27 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <br><br>
      <b> TP</b><br>
       <u> Fabrizio Sanchez </u><br>
+        Mejoré mis habilidades de trabajo en equipo al colaborar con diferentes áreas, desde la documentación hasta la implementación técnica, comprendiendo cómo las contribuciones individuales impactan el progreso global del proyecto. Aprendí a integrar diversas perspectivas y enfoques en la creación de un sistema más robusto.
       <br><br>
       <b> TP</b><br>
       <u> Luiggi Paredes </u><br>
+        Este proceso me permitió mejorar mi capacidad para trabajar de manera colaborativa y eficaz, comunicando ideas y asegurando que las diferentes partes del sistema estuvieran bien integradas. Aprendí a sintetizar información técnica para mejorar el diseño del proyecto.
       <br><br>
       <b> TP</b><br>
       <u> Ruben Mallma </u><br>
+        A través de mi participación en la documentación y el análisis del sistema, entendí cómo la eficacia en la documentación contribuye a la claridad del proyecto. Aprendí a colaborar con los demás para asegurar que las ideas y detalles técnicos fueran accesibles para todos.
       <br><br>
       <b> TP</b><br>
       <u> Juan Pescoran </u><br>
+        A través de mi participación, comprendí la importancia de mantener una visión holística del proyecto, equilibrando todos los componentes técnicos para lograr una integración exitosa. Mejoré mi capacidad para tomar decisiones técnicas basadas en la colaboración.
       <br><br>
       <b> TP</b><br>
       <u> Lucio Yen </u><br>
+        Mi participación en la creación de los diagramas de flujo de datos me permitió comprender cómo las pequeñas mejoras técnicas pueden tener un gran impacto en el funcionamiento global del sistema. Aprendí a adaptar mis aportes a las necesidades del equipo, manteniendo una comunicación efectiva.
      <br><br>
-      <b> TB1</b><br>
+      <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
+        La experiencia me permitió fortalecer mi capacidad de colaboración multidisciplinaria. Aprendí a manejar la información técnica compleja de manera efectiva y a compartirla con otros miembros para tomar decisiones informadas.
       </td>
     </tr>
     <tr>
@@ -341,22 +348,23 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <br><br>
      <b> TP</b><br>
       <u> Fabrizio Sanchez </u><br>
-      <br><br>
+      Realicé una investigación sobre el sector de la jardinería inteligente y cómo la tecnología IoT puede optimizar el cuidado de las plantas. Analicé cómo las soluciones tecnológicas pueden adaptarse a este sector, mejorando la eficiencia del riego y monitoreo. <br><br>
       <b> TP</b><br>
       <u> Luiggi Paredes </u><br>
-      <br><br>
+        Investigamos el sector de tecnología aplicada al hogar inteligente, específicamente sobre el uso de sensores IoT en la jardinería. Exploramos cómo esta tecnología puede mejorar la automatización del cuidado de las plantas, a través de la integración con sistemas inteligentes. <br><br>
       <b> TP</b><br>
       <u> Ruben Mallma </u><br>
-      <br><br>
+      Analicé el mercado de la agricultura inteligente, enfocándome en cómo la tecnología IoT puede ser utilizada para automatizar y optimizar el cuidado de las plantas. Investigué las necesidades y tendencias en el sector agrícola y cómo las soluciones tecnológicas pueden ayudar a resolver problemas comunes. <br><br>
       <b> TP</b><br>
       <u> Juan Pescoran </u><br>
-      <br><br>
+      Estudié el sector de automatización en la jardinería, particularmente cómo los sistemas IoT pueden mejorar el riego y nutrición de las plantas, optimizando los recursos y mejorando la eficiencia en el mantenimiento de jardines. <br><br>
       <b> TP</b><br>
       <u> Lucio Yen </u><br>
-     <br><br>
-      <b> TB1</b><br>
+     Investigamos el uso de tecnologías IoT en la jardinería, analizando cómo estos sistemas pueden mejorar el rendimiento del riego y la gestión de la humedad. Estudiamos las aplicaciones de estas tecnologías para optimizar el uso de agua en jardines y huertos. <br><br>
+      <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
-      </td>
+        Estudié el impacto de las soluciones tecnológicas en la jardinería, enfocándome en cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores y sistemas automáticos. Investigamos el mercado de la jardinería inteligente y sus aplicaciones comerciales. <br><br>
+</td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -379,22 +387,23 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <br><br>
      <b> TP</b><br>
       <u> Fabrizio Sanchez </u><br>
-      <br><br>
+      Mi investigación me permitió obtener una visión más profunda del sector de la jardinería inteligente y cómo las soluciones de software pueden aplicarse de manera efectiva en él. Esto me permitió integrar mejor la solución tecnológica al proyecto, comprendiendo sus posibles aplicaciones en el mundo real. <br><br>
       <b> TP</b><br>
       <u> Luiggi Paredes </u><br>
-      <br><br>
+      Aprendí sobre el potencial de IoT en el hogar inteligente y cómo estas soluciones pueden mejorar la vida diaria. Esta comprensión me ayudó a conceptualizar mejor las características del sistema que estábamos desarrollando, considerando su aplicabilidad en el mercado. <br><br>
       <b> TP</b><br>
       <u> Ruben Mallma </u><br>
-      <br><br>
+      Mi investigación en el sector agrícola me permitió ver las oportunidades que ofrece la tecnología para transformar procesos tradicionales. Esta comprensión me ayudó a adaptar nuestra solución tecnológica a un mercado con una demanda real de eficiencia y automatización. <br><br>
       <b> TP</b><br>
       <u> Juan Pescoran </u><br>
-      <br><br>
+      Mi investigación sobre la automatización en la jardinería me permitió comprender cómo las soluciones de software pueden aplicarse en la vida cotidiana de los usuarios. Esto me ayudó a diseñar una solución más centrada en las necesidades del usuario y en la sostenibilidad. <br><br>
       <b> TP</b><br>
       <u> Lucio Yen </u><br>
-     <br><br>
-      <b> TB1</b><br>
+        Este análisis me permitió comprender cómo las soluciones de IoT pueden mejorar la eficiencia de los sistemas de riego, lo que es crucial en áreas con limitaciones de agua. Aprendí cómo el software puede contribuir a la sostenibilidad en el sector agrícola. <br><br>
+      <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
-      </td>
+        Mi investigación me permitió ampliar mis conocimientos sobre la industria de la jardinería inteligente y cómo las soluciones tecnológicas pueden satisfacer una necesidad real de automatización y eficiencia en este sector. Esto enriqueció nuestra solución tecnológica, alineándola con las demandas actuales del mercado. <br><br>
+    </td>
     </tr>
   </tbody>
 </table>
