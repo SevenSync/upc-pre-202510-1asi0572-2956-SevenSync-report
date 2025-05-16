@@ -75,13 +75,12 @@ Finalmente, se reorganizaron los eventos en torno a los agregados identificados.
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ingestion.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recommendations.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recom.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
@@ -696,7 +695,7 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 | **Categoría** | ORM Context                                    |
 | **Propósito** | Punto central de acceso a la base de datos     |
 
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.1.5. IAM Bounded Context Software Architecture Component Level Diagrams.
 
 El diagrama de componentes profundiza aún más en la arquitectura de un sistema, desglosando cada contenedor en sus componentes individuales. Este nivel de análisis permite una representación clara y detallada de la organización interna, así como de la comunicación entre estos componentes dentro de cada contenedor, facilitando una comprensión precisa de cómo interactúan y se interrelacionan para cumplir las funciones del sistema.
 
@@ -704,23 +703,19 @@ En el contexto de Roademics, el diagrama de componentes destaca los elementos cl
 
 La utilidad del diagrama de componentes se extiende más allá del simple entendimiento de la arquitectura. Al proporcionar una visualización clara de cómo se gestionan los datos dentro de la aplicación móvil, este diagrama resulta invaluable no solo para los desarrolladores, sino también para los equipos de mantenimiento y actualización del sistema. Al descomponer cada elemento en sus componentes individuales y mapear sus interacciones, el diagrama optimiza el proceso de diseño y desarrollo, facilitando un mantenimiento efectivo y minimizando la complejidad durante el ciclo de vida del software.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-monolith-components-diagram.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-iam-component.png"></image>
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-wca-components-diagram.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-mobile-iam-component.png"></image>
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-mobile-app-components-diagram.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-wcac-iam-component.png"></image>
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-edge-application-diagram.png"></image>
+#### 4.2.1.6. IAM Bounded Context Software Architecture Code Level Diagrams.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-embedded-application-diagram.png"></image>
-
-#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
-
-##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
+##### 4.2.1.6.1. IAM Bounded Context Domain Layer Class Diagrams.
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/class-diagram.png"></image>
 
-##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+##### 4.2.1.6.2. IAM Bounded Context Database Design Diagram.
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/database-diagram.png"></image>
 
@@ -973,15 +968,22 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Interfaz**  | `IProfileRepository`                                   |
 
 
-#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.
-[missing-res]
+#### 4.2.2.5. Profile and Personal Data Bounded Context Software Architecture Component Level Diagrams.
 
-#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-profile-component.png"></image>
 
-##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-wcac-profile-component.png"></image>
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-mobile-profile-component.png"></image>
+
+
+#### 4.2.2.6. Profile and Personal Data Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.2.6.1. Profile and Personal Data Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
-##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+##### 4.2.2.6.2. Profile and Personal Data Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
 ### 4.2.3. Bounded Context: Pot Management
@@ -1342,15 +1344,19 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | Repository Implementation                                          |
 | **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
 
-#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
-[missing-res]
+#### 4.2.3.5. Pot Management Bounded Context Software Architecture Component Level Diagrams.
 
-#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-pot-component.png"></image>
 
-##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-pot-component.png"></image>
+
+#### 4.2.3.6. Pot Management Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.3.6.1. Pot Management Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
-##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+##### 4.2.3.6.2. Pot Management Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
 ### 4.2.4. Bounded Context: Plant Management
@@ -1586,12 +1592,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | External Service Implementation                               |
 | **Propósito** | Implementar `IPlantInfoProvider` para obtener specs de planta |
 
-#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.
-[missing-res]
+#### 4.2.4.5. Plant Management Bounded Context Software Architecture Component Level Diagrams.
+ 
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-plant-component.png"></image>
 
-#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.4.6. Plant Management Bounded Context Software Architecture Code Level Diagrams.
 
-##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+##### 4.2.4.6.1. Plant Management Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/class-diagram-plant-management.png"></image>
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
@@ -1901,12 +1909,13 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | Repository Implementation                             |
 | **Propósito** | Implementar `IAlertRepository` con persistencia en BD |
 
-#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams.
-[missing-res]
+#### 4.2.5.5. System Monitoring & Control Bounded Context Software Architecture Component Level Diagrams.
 
-#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-monitoring-component.png"></image>
 
-##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams.
+#### 4.2.5.6. System Monitoring & Control Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.5.6.1. System Monitoring & Control Bounded Context Domain Layer Class Diagrams.
 <image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram.
@@ -2131,10 +2140,13 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ---
 
-#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.6.5. Watering Management Bounded Context Software Architecture Component Level Diagrams.
 
-#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams.
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-watering-component.png"></image>
+
+#### 4.2.6.6. Watering Management Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.6.6.1. Watering Management Bounded Context Domain Layer Class Diagrams.
 <image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringScheduleClassDiagram.png"></image>
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram.
@@ -2385,9 +2397,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ---
 
-#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
-#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+#### 4.2.7.5. Subscriptions & Payments Bounded Context Software Architecture Component Level Diagrams.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-subscription--component.png"></image>
+
+#### 4.2.7.6. Subscriptions & Payments Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.7.6.1. Subscriptions & Payments Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscription&PaymentsClassDiagram.png"></image>
 
 ##### 4.2.7.6.2. Bounded Context Database Design Diagram.
@@ -2511,9 +2528,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | delete       | `Unit`            | public      | Eliminar la recomendación              |
 
 ---
-#### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams.
-#### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams.
+#### 4.2.8.5. Caring Intelligence Bounded Context Software Architecture Component Level Diagrams.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-recommendation-component.png"></image>
+
+#### 4.2.8.6. Caring Intelligence Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.8.6.1. Caring Intelligence Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
 
 ##### 4.2.8.6.2. Bounded Context Database Design Diagram.
@@ -2652,9 +2674,16 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | delete         | `Unit`          | public      | Elimina una fuente de datos                |
 
 ---
-#### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams.
-#### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams.
+#### 4.2.9.5. Data Insights & Reporting Bounded Context Software Architecture Component Level Diagrams.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-reporting-component.png"></image>
+
+#### 4.2.9.6. Data Insights & Reporting Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.9.6.1. Data Insights & Reporting Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingClassDiagram.png"></image>
+
 ##### 4.2.9.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingDbDiagram.png"></image>
