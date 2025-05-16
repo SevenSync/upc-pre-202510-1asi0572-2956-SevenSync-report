@@ -1739,61 +1739,6 @@ Espaciado mínimo	8 pt entre elementos	Evita sobrecarga visual
 Grosor sugerido	regular o semibold	Balance entre legibilidad y neutralidad visual
 Color	Ligado a label, secondaryLabel o paleta de acento (tint)	Coherencia visual en modo claro/oscuro
 
-📌 Ejemplo: Para representar un estado de riego activo, usar drop.fill con estilo palette y colores tintColorPrimary (verde) y tintColorSecondary (azul agua).
-
-🧱 2. UIKit: Sistema clásico para componentes nativos (iOS 9–13+)
-UIKit sigue siendo el motor más maduro y estable para aplicaciones que requieren compatibilidad, control total de ciclo de vida, y una integración más granular.
-
-🧩 Componentes clave recomendados:
-Componente	Uso sugerido en Macetech	Métricas recomendadas
-UICollectionView	Dashboard de plantas/sensores	Tamaño celda mínimo: 160×160 pt
-UITableView	Listas de historial, recomendaciones	Altura fila: 56–72 pt
-UIAlertController	Confirmaciones de riego, eliminaciones	Usar estilo .alert o .actionSheet con botones accesibles (≥44 pt)
-UISwitch	Activación de sensores o riego manual	Altura mínima: 31 pt
-UIStackView	Composición vertical/horizontal adaptable	Spacing: 8–16 pt según nivel visual
-
-📌 Accesibilidad: Todos los componentes deben tener etiquetas (accessibilityLabel) y agrupaciones lógicas (accessibilityTraits) para VoiceOver.
-
-🍃 3. SwiftUI: Enfoque declarativo y moderno (iOS 13+)
-SwiftUI permite construir interfaces adaptativas y reactivas con menos código, ideal para prototipos rápidos o interfaces con transiciones fluidas entre estados.
-
-🧰 Ventajas clave:
-Adaptabilidad automática a Dark Mode y Dynamic Type.
-
-Composición visual más intuitiva.
-
-Animaciones integradas y expresivas (withAnimation, matchedGeometryEffect).
-
-Uso directo de SF Symbols y tipografías del sistema (.title2, .caption).
-
-📐 Recomendaciones UI específicas:
-Elemento SwiftUI	Recomendación de uso	Métricas
-NavigationStack	Jerarquía clara en flujos de detalle	Altura mínima barra: 44 pt
-List	Recomendado para historial o sugerencias	Separación entre filas: 12 pt mínimo
-Button(style: .bordered)	Acciones secundarias (ej. cancelar riego)	Tacto mínimo: 44×44 pt
-Toggle	Activación rápida con retroalimentación	Espaciado interno de 16 pt
-Form	Configuración rápida de sensores o alertas	Adaptativa a entorno
-
-🧭 Comparativa visual y de rendimiento (UIKit vs SwiftUI)
-Criterio	UIKit	SwiftUI
-Control granular de layouts	Alto	Medio
-Soporte para apps antiguas	iOS 9+	iOS 13+
-Composición declarativa	❌	✅
-Transiciones avanzadas (Hero)	Requiere librerías externas	Integrado (matchedGeometry)
-Rendimiento en views complejas	Más eficiente	Requiere tuning
-Integración con Storyboard	Total	Limitada o nula
-
-📌 Recomendación: Para la app de Macetech, usar SwiftUI como motor principal en iOS 14+, especialmente en pantallas de usuario final. Usar UIKit solo en componentes específicos que necesiten más control, como la visualización dinámica de gráficos o dashboards con múltiples celdas.
-
-🎯 Buenas prácticas para lograr consistencia visual
-Colores: usar Color.primary, Color.accentColor, Color.secondaryBackground para mantener la coherencia con los temas del sistema.
-
-Tipografía: San Francisco, escalada dinámica (.title2, .body, .caption).
-
-Iconos: solo SF Symbols o custom symbols con equivalencia semántica (.accessibilityLabel).
-
-Espaciados: múltiplos de 4 pt (4, 8, 12, 16, 24, 32) para armonía visual.
-
 #### 5.1.2.3. IoT Style Guidelines
 
 En los dispositivos IoT de Macetech (módulos de maceta inteligente, estaciones de monitoreo, unidades edge), la interacción primaria se realiza a través de señales físicas: LEDs, vibración y sonidos. Estas señales deben diseñarse como un sistema coherente de patrones sensoriales, con métricas precisas, codificación semántica y comportamientos previsibles que refuercen la usabilidad y la confianza del usuario.
@@ -1843,66 +1788,6 @@ La retroalimentación visual mediante diodos emisores de luz (LEDs) constituye u
 Alerta crítica: secuencia de 3 pulsos (300 ms ON / 100 ms OFF), repetidos 2 veces, con pausa de 500 ms entre secuencias.
 
 Emparejamiento: pulso breve de 100 ms cada 1 s durante 10 s máximo.
-
-B.3. Integración mecánica
-Montar el actuador sobre un sustrato rígido con amortiguadores de espuma siliconada (2 mm) para transmitir la vibración sin dañar componentes adyacentes.
-
-Verificar resonancias estructurales del recinto con análisis modal (FEA) para evitar timbres no deseados.
-
-C. Retroalimentación sonora
-C.1. Elementos acústicos
-Buzzer piezoeléctrico: diámetro 12 mm, altura ≤ 5 mm.
-
-Frecuencia de operación: 2 kHz ± 200 Hz, rango óptimo para captar atención en 1 m de distancia.
-
-Nivel de sonido: 60 – 70 dB SPL @ 1 m.
-
-C.2. Patrones sonoros
-Notificación estándar: tono simple de 150 ms.
-
-Alerta crítica: dos tonos de 300 ms, separados por 200 ms, con frecuencia constante (2 kHz).
-
-Duración máxima continua: 5 s (para no sobresaturar).
-
-C.3. Disposición y recinto
-Ubicar el buzzer con salida directa al exterior o a una cavidad acústica (guide channel) para amplificar sonido.
-
-Incluir rejillas o aberturas mínimas de 10 mm² frente al buzzer para transmisión efectiva.
-
-D. Asociación de estados con colores fijos
-Para sintetizar la información y facilitar la memorización, cada estado del dispositivo se codifica con un color LED y, cuando sea posible, con patrón de parpadeo:
-
-Estado	Color LED	Patrón	Justificación de diseño
-Funcionamiento correcto	Verde #43AA8B	Continuo	Color asociado a “bien” o “saludable” en semiótica; comunica estabilidad.
-Advertencia leve	Amarillo #F9C74F	Parpadeo lento (1 Hz)	Ampliamente reconocido como “precaución”, parpadeo moderado evita alarma innecesaria.
-Alerta crítica	Rojo #F94144	Parpadeo rápido (2 Hz)	El rojo intenso llama la atención y el parpadeo veloz transmite urgencia máxima.
-Proceso en curso	Azul #2D6CDF	Pulso breve cada 1 s	El azul se asocia a “actividad en progreso” sin connotación de error.
-Emparejamiento / Setup	Blanco neutro	Alternancia 200 ms ON/OFF	Color neutro y patrón distintivo para diferenciar de estados operativos.
-
-Métricas de implementación
-
-Tiempo de ciclo: precisión de ± 10 ms en temporización de parpadeos.
-
-Intensidad luminosa: ajustar PWM para reducir a 50 % en entornos oscuros, manteniendo relación de contraste suficiente para distinguir estados.
-
-E. Justificaciones de diseño y usabilidad
-Redundancia sensorial
-
-Combinar LED, vibración y sonido permite que, si un canal falla (por ejemplo, vibrador deshabilitado), el usuario reciba la alerta por otra vía.
-
-Consistencia semántica
-
-El uso de colores y patrones está alineado con normativas de semiótica universales (rojo=error, verde=éxito) y estudios de percepción (Goldstein, 2019).
-
-Optimización de energía
-
-Limitar parpadeos y duraciones sonoras a los mínimos efectivos reduce consumo y extiende la vida de la batería en módulos edge.
-
-Manufacturabilidad y pruebas de calidad
-
-Especificar tolerancias de componentes (± 10 % en luminosidad, ± 5 % en frecuencia de vibración) facilita la inspección de línea.
-
-Incluir pruebas automáticas de “LED blink test” y “vibration response test” en la cadena de montaje para validar conformidad.
 
 ## 5.2. Information Architecture
 
