@@ -167,9 +167,9 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
   
       Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
 
-###### Tabla 40 y algo
+###### Tabla de Flujo de valor identificado en el proceso de EventStorming de Macetech
 
-*Flujo de valor identificado en el proceso de EventStorming de Macetech*
+
 
 | Paso	| Descripción	| Artefactos de Dominio / Evento Pivotal |
 |------|-------------|----------------------------------------|
@@ -187,9 +187,7 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
    Con el propósito de delimitar con precisión los contextos, se identificaron eventos de transición. Un evento de transición, según Khononov (2021), no solo marca un cambio de estado significativo, por ejemplo el paso de “usuario anónimo” a “usuario registrado” o de “maceta sin configurar” a “maceta lista para monitoreo”, sino que también permite priorizar de forma rigurosa el modelado y el desarrollo. Al centrarse en aquellos eventos de mayor impacto, el equipo puede determinar con claridad qué áreas requieren atención inmediata y cuáles funcionalidades deben implementarse primero, garantizando así que las decisiones de diseño estén siempre alineadas con los objetivos de negocio y el valor aportado al usuario.
 
-###### Tabla 40 y algo
-
-*Lista de transiciones identificadas en el proceso de EventStorming de Macetech*
+###### Tabla de Lista de transiciones identificadas en el proceso de EventStorming de Macetech
 
 | Transición | Descripción |
 |--------------------|-------------|
@@ -253,9 +251,9 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
 A continuación presentamos la sección de Candidatos a Bounded Contexts, donde listamos todos los contextos identificados en la sesión inicial (incluyendo aquellos que finalmente no se consolidaron) y la justificación de su inclusión o exclusión en el conjunto definitivo.
 
-###### Tabla 40 y algo
+###### Tabla Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech
 
-*Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech*
+
 
 | Contexto	| Responsabilidades clave	| ¿Pasa al diseño final? |
 |----------|-------------------------|------------------------|
@@ -278,9 +276,9 @@ A continuación presentamos la sección de Candidatos a Bounded Contexts, donde 
 
 Como resultado de la sesión de Candidate Context Discovery y con base en los eventos pivotal identificados, se definieron y refinaron los siguientes diez Bounded Contexts ante todos los candidatos iniciales. Cada uno incluye sus responsabilidades principales, lenguaje ubicuo y contratos de integración.
 
-###### Tabla 40 y algo
+###### Tabla Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech
 
-*Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech*
+
 
 | Contexto  | Responsabilidades clave   | Ubiquitous Language    |
 |-----------|---------------------------|------------------------|
@@ -353,9 +351,25 @@ El diagrama de contenedores ofrece una representación visual detallada de la ar
 
 En el caso del sistema integrado de Roademics, este diagrama desglosa la arquitectura, revelando las conexiones entre los distintos puntos de desarrollo, así como las interacciones con sistemas externos adyacentes. A través del BackEnd, se establecen conexiones directas con la base de datos, la cual gestiona y almacena la información crítica para el funcionamiento eficiente del sistema. Este enfoque detallado permite una visión clara de cómo cada componente colabora para brindar una experiencia fluida y coherente, asegurando que todas las partes del sistema trabajen en conjunto de manera efectiva.
 
+#### Containers Diagram
+
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Containers.png"></image>
 
+#### Edge Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EdgeComponents.png"></image>
+
+#### Monolith Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MonolithComponents.png"></image>
+
+#### Embedded Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EmbeddedComponents.png"></image>
+
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Deployment-001.png"></image>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
