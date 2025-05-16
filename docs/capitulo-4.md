@@ -115,15 +115,13 @@ La arquitectura también contempla la seguridad como un aspecto central, con la 
 
 De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles —Contexto, Contenedores, Componentes y Código—, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view-key.png"></image>
-
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
 
 El diagrama de landscape (o paisaje del sistema) representa un nivel organizacional dentro del modelo C4, proporcionando una visión holística de todos los sistemas de software relevantes y cómo se relacionan entre sí dentro de un entorno empresarial o tecnológico más amplio. Este diagrama ayuda a comprender la arquitectura distribuida de múltiples sistemas, ya sean internos o externos, y las interacciones clave que sostienen los flujos de información entre ellos.
 
 En el contexto de una plataforma de jardinería inteligente como Macetech, el diagrama de landscape muestra cómo conviven e interactúan los distintos sistemas que conforman el ecosistema completo: desde las aplicaciones cliente (web, móvil), el backend monolítico, y los servicios embebidos en dispositivos IoT, hasta los sistemas externos como APIs de inteligencia artificial. Esta representación permite identificar relaciones críticas entre componentes distribuidos, dependencias tecnológicas y oportunidades de desacoplamiento, facilitando tanto la toma de decisiones arquitectónicas como la evolución escalable del sistema.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-landing-page-components-diagram.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MacetechLandscape.png"></image>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
@@ -131,7 +129,7 @@ El diagrama de contexto, el nivel más alto de abstracción en el modelo C4, pro
 
 En el caso de una aplicación web inmobiliaria, el diagrama de contexto muestra de manera detallada las interacciones entre los usuarios finales, los agentes inmobiliarios y la plataforma. Además, destaca las conexiones críticas entre la aplicación y diversas API y servicios externos, esenciales para habilitar las funcionalidades clave que la plataforma debe ofrecer a los usuarios. Estas integraciones son fundamentales para garantizar una experiencia fluida y robusta, respondiendo a las necesidades dinámicas del mercado inmobiliario.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-system-context.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-SystemContext.png"></image>
 
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
 
@@ -139,7 +137,7 @@ El diagrama de contenedores ofrece una representación visual detallada de la ar
 
 En el caso del sistema integrado de Roademics, este diagrama desglosa la arquitectura, revelando las conexiones entre los distintos puntos de desarrollo, así como las interacciones con sistemas externos adyacentes. A través del BackEnd, se establecen conexiones directas con la base de datos, la cual gestiona y almacena la información crítica para el funcionamiento eficiente del sistema. Este enfoque detallado permite una visión clara de cómo cada componente colabora para brindar una experiencia fluida y coherente, asegurando que todas las partes del sistema trabajen en conjunto de manera efectiva.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Containers.png"></image>
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
