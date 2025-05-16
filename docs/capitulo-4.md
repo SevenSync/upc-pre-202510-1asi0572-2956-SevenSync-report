@@ -93,11 +93,213 @@ Finalmente, se reorganizaron los eventos en torno a los agregados identificados.
 
 <a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
 
-#### 4.1.1.1 Candidate Context Discovery.
+#### 4.1.1.1 Candidate Context Discovery
 
-Tras finalizar la sesión de EventStorming, el equipo procedió a la fase de Candidate Context Discovery, cuyo objetivo principal es identificar los posibles Bounded Contexts del sistema. Esta actividad permite avanzar hacia una estructura modular del software alineada con los límites naturales del dominio del negocio.
+En esta sección, el equipo describe detalladamente el proceso seguido para la sesión de Candidate Context Discovery, partiendo del modelo de dominio previamente construido mediante EventStorming, con el propósito de identificar y delimitar los Bounded Contexts que compondrán la arquitectura de Macetech. Según Khononov (2021), este enfoque estratégico de Domain‑Driven Design (DDD) requiere una combinación de análisis colaborativo y técnicas sistemáticas para aislar fragmentos del dominio que posean coherencia interna y aporten el mayor valor al negocio 
 
-Según Vernon (2013), “definir correctamente los Bounded Contexts es clave para evitar ambigüedades semánticas, promover la autonomía de los equipos y mantener la cohesión del modelo en crecimiento”. Para este análisis se aplicaron diversas técnicas de segmentación que facilitaron la identificación progresiva de contextos candidatos a partir de los eventos descubiertos.
+Para asegurar una exploración efectiva de los límites contextuales, se combinaron tres técnicas complementarias, tal como recomienda Khononov (2021):
+
+* Start‑with‑Value: consiste en identificar primero aquellos subdominios o flujos de negocio cuyo impacto en la propuesta de valor sea más significativo, de modo que las decisiones de acotamiento prioricen las funcionalidades críticas para el usuario y el negocio 
+
+* Start‑with‑Simple: implica descomponer el proceso principal en un conjunto mínimo de pasos secuenciales, desde el registro de usuario hasta la generación de recomendaciones, lo cual facilita la visualización y evita solapamientos entre candidatos de contexto 
+
+* Look‑for‑Pivotal‑Events: se centra en detectar aquellos eventos de dominio que representan cambios de estado fundamentales, ya que estos hitos indefectiblemente marcan fronteras naturales entre contextos 
+
+La sesión de Candidate Context Discovery, cuya duración no excedió las dos horas, se organizó como un taller interactivo en el que participaron todos los miembros de nuestro equipo de SevenSync, empleando una herramienta colaborativa de EventStorming, Miro. Durante la misma, se capturaron iterativamente pantallazos que documentan la evolución del modelo de eventos, desde la visión inicial hasta la estructuración final de los contextos. Estas imágenes se incorporarán en la sección para evidenciar la progresión metodológica y facilitar la trazabilidad de las decisiones tomadas.
+
+A partir del modelo de dominio generado con EventStorming, el equipo explica y evidencia el proceso realizado para la sesión de Candidate Context Discovery, en la que se busca identificar los Bounded Contexts. Durante la sesión se siguieron estos pasos:
+
+1. **Preparación y definición de alcance**
+
+    Para garantizar una sesión estructurada y productiva, se llevaron a cabo las siguientes actividades previas:
+
+    * Convocatoria y roles de los participantes
+
+      Se conformó un grupo interdisciplinario bajo la coordinación de SevenSync, integrado por:
+  
+        - Desarrolladores backend y frontend, responsables de la viabilidad técnica.
+    
+        - Diseñadores UX/UI, encargados de asegurar la coherencia en la experiencia de usuario.
+
+    * Definición de objetivos y alcance
+
+      - **Propósito principal:** Descomponer el dominio de Macetech, desde el registro inicial del usuario hasta la emisión de recomendaciones y reportes personalizados.
+  
+      - **Alcance temporal:** Taller de mínimo dos horas y máximo tres horas en la plataforma Miro utilizando la técnica de EventStorming.
+
+    * Herramientas y materiales de trabajo
+  
+      - Lienzo colaborativo en Miro: para la colocación y organización dinámica de eventos y comandos.
+  
+      - Post‑its codificados por color: diferenciando eventos de dominio, comandos de acción e integraciones externas.
+  
+      - Marcadores y cámaras: para anotar aclaraciones y capturar iteraciones de la evolución del modelo.
+  
+    * Asignación de responsabilidades
+  
+      - Facilitador: orientó la dinámica del taller, gestionó los tiempos y promovió la participación activa.
+  
+      - Escritor: trasladó al lienzo digital las notas y agrupaciones, asegurando la trazabilidad de cada modificación.
+  
+      - Expertos de dominio: validaron definiciones, aclararon términos y garantizaron la precisión del lenguaje ubicuo.
+
+2. **Técnica Start‑with‑Value**
+
+    Con el fin de enfocar el análisis en las áreas de mayor impacto, se realizó:
+
+    * Identificación de “valores núcleo”
+  
+      Cada integrante propuso los flujos de negocio que, a su juicio, aportan el mayor valor a usuario y organización:
+  
+        - Gestión inicial de macetas y parámetros de configuración.
+  
+        - Generación de recomendaciones inteligentes para maximizar la tasa de éxito en el cuidado.
+  
+        - Monitoreo en tiempo real, evitando pérdidas derivadas de riegos inadecuados.
+  
+    * Priorización de eventos
+  
+      Se listaron todos los eventos detectados y se clasificaron según su impacto (alto, medio, bajo). Solo los catalogados como alto impacto se trasladaron a la siguiente etapa, garantizando que la sesión permaneciera centrada en las funciones críticas.
+
+3. **Técnica Start‑with‑Simple**
+
+    Para clarificar la secuencia de operaciones esenciales, se procedió a:
+
+    *  Modelado visual con post‑its
+ 
+       Cada uno de los nueve pasos se representó con post‑its de un único color, evitando superposiciones y facilitando la delimitación de responsabilidades entre los distintos subdominios.
+
+    * Descomposición en pasos mínimos
+  
+      Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
+
+###### Tabla 40 y algo
+
+*Flujo de valor identificado en el proceso de EventStorming de Macetech*
+
+| Paso	| Descripción	| Artefactos de Dominio / Evento Pivotal |
+|------|-------------|----------------------------------------|
+| 1	| Registro del usuario en la plataforma.	| Comando: RegisterUser, Evento: UserRegistered |
+| 2	| Creación de perfil con datos de contacto y preferencias.	|Comando: CreateProfile, Evento: ProfileCreated|
+| 3	| Autenticación del usuario, incluyendo verificación 2FA.	|Comando: AuthenticateUser, Evento: UserAuthenticated|
+| 4	| Pago de suscripción a Macetech (plan seleccionado).	|Comando: ProcessSubscriptionPayment, Evento: SubscriptionPaid|
+| 5	| Registro y configuración inicial de la maceta (Pot).	|Comando: RegisterPot, Evento: PotRegistered|
+| 6	| Definición de riego automático y programación de reportes periódicos.	|Comando: SelectWatering, Evento: AutomaticWateringProgrammed|
+| 7	| Identificación de la planta asociada a la maceta (catálogo de especies).	|Comando: AddNewPlant, Evento: NewPlantAdded|
+| 8	| Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API.	|SensorDataCollected + Evento: ExternalClimateDataFetched|
+| 9	| Generación de recomendaciones y notificaciones de alertas.	|Comando: SelectRecommendation, Evento: RecommendationDisplayed|
+
+4. **Técnica Look‑for‑Pivotal‑Events**
+
+   Con el propósito de delimitar con precisión los contextos, se identificaron eventos de transición. Un evento de transición, según Khononov (2021), no solo marca un cambio de estado significativo, por ejemplo el paso de “usuario anónimo” a “usuario registrado” o de “maceta sin configurar” a “maceta lista para monitoreo”, sino que también permite priorizar de forma rigurosa el modelado y el desarrollo. Al centrarse en aquellos eventos de mayor impacto, el equipo puede determinar con claridad qué áreas requieren atención inmediata y cuáles funcionalidades deben implementarse primero, garantizando así que las decisiones de diseño estén siempre alineadas con los objetivos de negocio y el valor aportado al usuario.
+
+###### Tabla 40 y algo
+
+*Lista de transiciones identificadas en el proceso de EventStorming de Macetech*
+
+| Transición | Descripción |
+|--------------------|-------------|
+| UserRegistered	| Un usuario anónimo se convierte en un usuario registrado, creando una cuenta válida en el sistema. | 
+| UserProfileCreated	| Un usuario sin perfil asocia y configura su perfil con datos de contacto y preferencias personales. | 
+| UserProfileDeleted	| Un usuario con perfil configurado elimina su perfil, quedando sin datos personales asociados. | 
+| UserAuthenticated	| Una sesión no iniciada se valida exitosamente, incluyendo la verificación de dos factores (2FA). | 
+| SubscriptionPaid	| Un usuario con plan inactivo activa su suscripción mediante el pago correspondiente, habilitando acceso a funcionalidades premium. | 
+| SubscriptionCancelled	| Un usuario con suscripción activa cancela su plan, desactivando el acceso a servicios asociados. | 
+| ExternalClimateDataFetched	| El sistema integra datos climáticos externos (vía API) según la ubicación del usuario, aportando contexto ambiental a los sensores. | 
+| PotRegistered	| Una maceta previamente no asociada se registra y vincula a un usuario, quedando disponible para su gestión. | 
+| PotSelected	| El usuario selecciona una maceta de la lista de macetas registradas, estableciéndola como activa para operaciones. | 
+| PotDeleted	| El usuario elimina una maceta registrada, desvinculándola completamente de su cuenta. | 
+| BluetoothDevicesPaired	| Se establece una conexión Bluetooth entre la maceta y la red del dispositivo, habilitando la comunicación inalámbrica. |
+| IrrigationConfigured	| Una maceta sin parámetros de riego definidos adquiere reglas y periodicidad de riego configuradas. |
+| PlantIdentified	| Se reconoce la especie de la planta en la maceta y se asignan rangos óptimos de riego, temperatura, pH y salinidad. |
+| PlantRegistered	| Una planta identificada en maceta se vincula formalmente al usuario, completando su registro en el sistema. |
+| PlantWatered	| Una planta con baja humedad recibe riego, aumentando su nivel de humedad a parámetros saludables. | 
+| PlantDeleted	| El usuario elimina la asociación de la planta en la maceta, quedando ésta vacía nuevamente. | 
+| WateringProgrammed	| Un sistema de riego manual se transforma en un programa de riego automático para la planta especificada. | 
+| NotificationDisplayed	| El sistema muestra una notificación en la bandeja del usuario sobre un evento relevante (alerta, recomendación). | 
+| NotificationChecked	| El usuario marca una notificación como leída, cambiando su estado a “checada” en la bandeja de notificaciones. | 
+| NotificationDeleted	| El usuario elimina una notificación leída, removiéndola de la bandeja de notificaciones. |
+| SensorDataCaptured	| Los sensores recaban datos brutos (humedad, temperatura, pH, salinidad) y los registran para su procesamiento. | 
+| SensorDataDelivered	| Los datos capturados por los sensores se envían al sistema de la aplicación, quedando disponibles para el usuario. | 
+| SensorDataCollected	| Un sensor pasa de no tener datos almacenados a disponer de registros de las métricas capturadas. |
+| SensorHistoryDisplayed	| El sistema presenta al usuario el historial de datos de sensores, permitiendo aplicar filtros y explorar tendencias a lo largo del tiempo. |
+| RecommendationGenerated	| Con los datos recopilados, el sistema elabora recomendaciones y alertas personalizadas para el usuario. |
+| RecommendationDisplayed	| El usuario visualiza en su bandeja de recomendaciones las acciones sugeridas para optimizar el cuidado de su planta. | 
+| ConsentDelivered	| El sistema muestra al usuario los documentos de términos y condiciones, dejando constancia de su presentación. |
+| ConsentAccepted	| El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema. |
+| ConsentRejected	| El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema. |
+
+  * Agrupación por afinidad de eventos
+
+    Sobre el lienzo, los post‑its se reagruparon alrededor de cada evento pivotal, permitiendo visualizar con claridad los límites naturales entre posibles contextos.
+
+5. Visualización evolutiva
+
+    Para documentar el progreso y facilitar la trazabilidad:
+
+    * Capturas iterativas
+
+    Se realizaron screenshots en Miro cada 30 minutos, mostrando:
+
+     - Estado inicial: eventos sin ordenar.
+   
+     - Tras Start‑with‑Value: solo eventos de alto impacto.
+   
+     - Tras Start‑with‑Simple: disposición cronológica.
+   
+     - Tras Look‑for‑Pivotal‑Events: primeros agrupamientos.
+   
+     - Versión final: consolidación de los candidatos a contextos.
+
+    * Registro meticuloso
+    
+  Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes realizados, asegurando que el informe refleje con exactitud la evolución metodológica, y facilitando la inclusión de estas evidencias en la sección correspondiente.
+
+6. Candidatos a Bounded Context
+
+A continuación presentamos la sección de Candidatos a Bounded Contexts, donde listamos todos los contextos identificados en la sesión inicial (incluyendo aquellos que finalmente no se consolidaron) y la justificación de su inclusión o exclusión en el conjunto definitivo.
+
+###### Tabla 40 y algo
+
+*Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech*
+
+| Contexto	| Responsabilidades clave	| ¿Pasa al diseño final? |
+|----------|-------------------------|------------------------|
+| IAM	| Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles	| **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. Además, comparte modelo con “User Management” para evitar duplicación de lógica de usuario. |
+| Account Management	| CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto	| **Consolidado:** Es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría. Al estar separado de IAM, mantiene independencia entre identidad y gestión de recursos de usuario. |
+| Profile & Personal Data |	Almacenamiento/actualización de datos de perfil, preferencias, integración Geo API, normalización de direcciones	| **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos. Al abstraer el manejo de datos de contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. 
+| Pot Management	| CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica	| **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica. |
+| Plant Management |	Catálogo de especies (PlantSpecies), rangos óptimos (pH, luminosidad, temperatura, salinidad), validación planta–maceta | **Consolidado:** Permite evolucionar el modelo botánico de forma independiente al hardware. Separar la lógica de especies y rangos óptimos facilita incorporar nuevas plantas o proveedores de datos externos, y garantiza que la capa de riego no dependa de cambios en el catálogo ni en los esquemas de las APIs externas. |
+| Watering Management	| Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT |	**Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Pot Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control. |
+| Subscriptions & Payments	| Definición y gestión de planes (SubscriptionPlan), procesamiento de transacciones, gestión de facturas (Invoice), integración con pasarelas y webhooks. | **Consolidado:** Soporta el modelo de negocio freemium/pago. Mantener un contexto dedicado a facturación garantiza que cambios en pasarelas, planes o flujos de cobro no afecten la lógica de usuario ni de riego. La separación da flexibilidad para adaptar políticas de precio y métodos de pago con mínima fricción. |
+| System Monitoring & Control |	Health checks, registro de logs críticos, generación/envío de alertas (push, email, SMS), dashboard operativo. | **Consolidado:** Integra supervisión y notificaciones en un único lugar, evitando fragmentar la lógica de alertas. Concentra la detección de fallos y la notificación al usuario o al equipo de operaciones, garantizando coherencia en umbrales y canales de comunicación, y favoreciendo la medición de uptime. |
+| Data Insights & Reporting | Ingesta, normalización y almacenamiento de SensorRecord; procesamiento batch/stream; dashboards	| **Consolidado:** Proporciona visibilidad de operación y resultados. Mantenerlo separado de la capa de control permite escalar pipelines de datos y ajustar retención sin impactar los servicios transaccionales, favoreciendo la adopción de nuevas herramientas de analítica. |
+| Caring Intelligence	| Motor de recomendaciones, generación de Recommendation, reportes personalizados (ReportTemplate), aprendizaje continuo. | **Consolidado:** Corazón del valor añadido de Macetech. Al separar el procesamiento de la ingesta de datos, se posibilita iterar en modelos de reglas de negocio sin afectar flujos de riego ni analítica básica, y se facilita la experimentación y el versionado de algoritmos. |
+| Notifying System	| Envío y gestión de notificaciones genéricas	sin información adicional o relacionada a recomendaciones o alertas | **Excluido:** Su responsabilidad acotada (solo envíos) carecía de un modelo de datos robusto y se solapaba con alertas críticas. Se integró dentro de System Monitoring & Control para centralizar tanto la supervisión como los canales de comunicación y evitar duplicación de lógica. | 
+| Critical Alert System |	Detección y disparo de alertas críticas según umbrales muy concretos para las métricas de las plantas |	**Excluido:** Solapaba responsabilidades con el contexto de monitoreo general y carecía de un dominio propio (no gestionaba datos ni reglas de negocio distintos). Su funcionalidad se migró a System Monitoring & Control, que unifica alertas de todo tipo. |
+| AI Service | Servicio genérico de IA para procesamiento de datos sin enfoque claro	en las recomendaciones de cada planta y las alertas no definidas | **Excluido:** Era excesivamente genérico y no alineado con casos de uso concretos o con los propios ideales del proyecto. Se reemplazó por integraciones enfocadas: Plant Management usa Plant API y Caring Intelligence alberga la lógica de recomendaciones y aprendizaje automático plenamente contextualizadas. |
+| SensorState	| Gestión de estados físicos del sensor (calibración, fallos, ciclos de vida)	de forma remota. | **Excluido:** La complejidad de manejar calibraciones y ciclos de vida requería un dominio especializado de ingeniería de hardware. Decidimos evitar la complejidad de este Bounded Context para no perder nuestro enfoque en el software y el funcionamiento del propio sistema IoT. |
+
+7. Bounded Contexts finales
+
+Como resultado de la sesión de Candidate Context Discovery y con base en los eventos pivotal identificados, se definieron y refinaron los siguientes diez Bounded Contexts ante todos los candidatos iniciales. Cada uno incluye sus responsabilidades principales, lenguaje ubicuo y contratos de integración.
+
+###### Tabla 40 y algo
+
+*Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech*
+
+| Contexto  | Responsabilidades clave   | Ubiquitous Language    |
+|-----------|---------------------------|------------------------|
+| **1. IAM**                       | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco  - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles | User, Credentials, Session, Token, 2FA |
+| **2. Account Management**           | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas  <br>  - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br>  - Validación de datos de contacto y cumplimiento de políticas de seguridad  | User, PasswordRecoveryToken, AccountStatus |
+| **3. Profile & Personal Data**   | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br>  - Gestión de preferencias de usuario (idioma, notificaciones)  <br>  - Integración con **Geo API** para catálogo de países y ciudades <br>  - Normalización y validación de direcciones  | Profile, Address, PhoneNumber, Preference, Country   |                                                                                                 |
+| **4. Pot Management** | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br>  - Gestión de metadatos (nombre, identificador único, etiquetas) <br>  - Persistencia de configuraciones históricas para auditoría | Pot, PotConfiguration, Threshold  |
+| **5. Plant Management**          | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br>  - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies     | PlantSpecies, OptimalRange, Compatibility  |                                                                                                |
+| **6. Watering Management**       | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos)  <br> - Coordinación con servicios de control de dispositivos IoT  | IrrigationJob, ValveCommand, SensorData               |                                                                                          |
+| **7. Subscriptions & Payments**  | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br>  - Gestión de **Invoice** y seguimiento de estado de pago <br>  - Integración con pasarelas externas y webhooks  | SubscriptionPlan, Invoice, PaymentTransaction  |                             
+| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (`health checks`) <br> - Registro y almacenamiento de logs críticos <br>  - Generación y envío de alertas (push, email, SMS) ante umbrales o fallos <br> - Dashboard operativo para visualización de métricas de disponibilidad | SystemHealth, Alert, NotificationChannel |  
+| **9. Data Insights & Reporting** | - Ingesta, normalización y almacenamiento de **SensorRecord**  <br> - Procesamiento batch/stream para generación de métricas agregadas  <br> - Exposición de dashboards y endpoints de consulta  <br> - Exportación de datos a formatos CSV/JSON para análisis externo   | SensorRecord, InsightReport, Dashboard   |                 
+| **10. Caring Intelligence**      | - Motor de recomendación basado en reglas y modelos ML/IA  <br> - Generación de **Recommendation** y mapeo a patrones de usuario  <br> - Creación de reportes personalizados (**ReportTemplate**)  <br> - Aprendizaje continuo a partir de retroalimentación del usuario   | Recommendation, ReportTemplate, Rule, Feedback  |  
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
