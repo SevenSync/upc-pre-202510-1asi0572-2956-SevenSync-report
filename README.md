@@ -1,6 +1,6 @@
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-![UPC](assets/UPC_logo_transparente.png)
+![UPC](assets/img/portada/UPC_logo_transparente.png)
 
 # Desarrollo de Soluciones IOT (2956)
 
@@ -16,151 +16,215 @@
 
 INTEGRANTES
 
-- Fabrizio Alessandro Sanchez Zamora (U202213652)
-- Luiggi Gianfranco Paredes Zapata (U202218996)
+- Paredes Zapata, Luiggi Gianfranco  (U202218996)
+- Pescorán Angulo, Juan Fabritzzio (U20221C936)
+- Mallma Quispe, Rubén Elías (U202214234)
+- Sanchez Zamora, Fabrizio Alessandro  (U202213652)
+- Trigueros Chumacero, Flavio Eduardo (U202210190)
+- Yen Cerna, Lucio Heli (U202213143)
 
-FECHA: ABRIL 2025
+FECHA: MAYO 2025
 
 ---
 
 # Registro de Versiones del Informe
 
-| Versión               | Fecha    | Autores | Descripción de Modificación |
-| --------------------- | -------- | ------- | --------------------------- |
-| Primera entrega (TB1) | -/-/2025 |         |                             |
-
+| Versión   | Fecha      | Autores                                                                                                                                                                                                          | Descripción de Modificación                                                                                                                                              |
+|-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25                           |
+| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. |
 ---
 
 # Project Report Collaboration Insights
 
-El siguiente enlace lleva al URL del repositorio que se encuentra en nuestra
-organización pública:
+En esta sección, se registra las colaboraciones realizadas por los miembros del equipo durante el desarrollo del informe del proyecto. En primer lugar, se brinda el enlace del repositorio del reporte del proyecto en la plataforma GitHub.
 
-https://github.com/SevenSync/Report
-
-Aquí se encuentra el resultado del Project Report de la entrega correspondiente.
+**Project Report:** https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-report
 
 A continuación, se explicará todo a cerca del desarrollo de activades para la
-elaboración del informe junto con capturas de los analíticos de colaboración y commits en Github.
+elaboración del informe. Adicionalmente, se presentan las métricas de las acciones del equipo del Project Report de cada entrega correspondiente en forma de contribuciones, commits y network graph registrados en GitHub.
+
+**TB1 Project Report Collaboration Insights**
+
+*Vista general de las contribuciones del equipo*
+<img src="/assets/img/portada/team-contributions-tb1.png" alt="contribuciones del equipo para la TB1">
+*Contribuciones por miembro del equipo*
+<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para la TB1">
+
+
+*Commits*
+
+<img src="/assets/img/portada/commits-tb1.png" alt="commits del equipo para la TB1">
+
+*Network Graph*
+<img src="/assets/img/portada/network-graph-tb1.png" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1-b.png" alt="gráfico de red de ramas del equipo para la TB1">
+
+De las contribuciones del equipo y commits se concluye lo siguiente: 
+
+- Para esta entrega, se han realizado un total de 70 commits.
+
+- La mayor concentración de commits estuvo en las ramas capitulo-I y capitulo-II.
+ 
+- El equipo no logró el alcance de la entrega al no finalizar el desarrollo del capítulo III y IV.
+
+- El equipo considera que hubo falta de organización y balance en la repartición de artefactos de los capítulos.
+
+Para el control de versiones, decidimos emplear 6 ramas:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+**capitulo-I, capitulo-II, capitulo-III y capitulo-IV:** Estas ramas permiten integrar los artefactos solicitados por capítulo. Se trabaja de esta manera para asegurar una integración controlada, una colaboración enfocada y un aislamiento de cambios.
+
+En esta entrega no se han utilizado pull requests.
+
+**TP Project Report Collaboration Insights**
+
+*Vista general de las contribuciones del equipo*
+<img src="/assets/img/portada/team-contributions-tp.png" alt="contribuciones del equipo para el trabajo parcial">
+*Contribuciones por miembro del equipo*
+<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
+
+
+*Commits*
+
+<img src="/assets/img/portada/commits-tp.png" alt="commits del equipo para el trabajo parcial">
+
+*Network Graph*
+<img src="/assets/img/portada/network-graph-tp.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+<img src="/assets/img/portada/network-graph-tp-b.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+
+De las contribuciones del equipo y commits se concluye lo siguiente: 
+
+- Para esta entrega, se han realizado un total de (numero) commits.
+
+- La mayor concentración de commits estuvo en la rama develop.
+ 
+- El equipo logró el alcance de la entrega al finalizar el desarrollo del capítulo III, IV, V y VI y aplicar las correcciones brindadas en la retroalimentación con el docente.
+
+- El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
+
+Para el control de versiones, decidimos emplear 2 ramas estables y ramas temporales:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+**ramas temporales**: Estas ramas entregan valor que se integrará posteriomente en develop mediante pull requests, estas ramas aseguran la reversión sencilla. Al ser fusionadas, estas son eliminadas promoviendo la organización y limpieza.
+
+Las otras ramas utilizadas en la TB1 fueron declaradas en desuso al cambiar el manejo de las ramas, por lo tanto, fueron eliminadas. 
+
+En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop.
 
 # Contenido
+## Tabla de Contenidos
+* [Capítulo I: Introducción](#capítulo-i-introducción)
+    * [1.1. Startup Profile](#11-startup-profile)
+        * [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+        * [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    * [1.2. Solution Profile](#12-solution-profile)
+        * [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+        * [1.2.2. Lean UX Process](#122-lean-ux-process)
+            * [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+            * [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+            * [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+            * [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+    * [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-## Tabla de contenidos
+* [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+    * [2.1. Competidores](#21-competidores)
+        * [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+        * [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    * [2.2. Entrevistas](#22-entrevistas)
+        * [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+        * [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+        * [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+    * [2.3. Needfinding](#23-needfinding)
+        * [2.3.1. User Personas](#231-user-personas)
+        * [2.3.2. User Task Matrix](#232-user-task-matrix)
+        * [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+        * [2.3.4. Empathy Mapping](#234-empathy-mapping)
+        * [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+    * [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
-```markdown
-# Capítulo I: Introducción
+* [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+    * [3.1. To-Be Scenario Mappin](#31-to-be-scenario-mappin)
+    * [3.2. User Storie](#32-user-storie)
+    * [3.3. Impact Mappin](#33-impact-mappin)
+    * [3.4. Product Backlog](#34-product-backlog)
 
-    1.1. Startup Profile
-         1.1.1. Descripción de la Startup
-         1.1.2. Perfiles de integrantes del equipo
-    1.2. Solution Profile
-         1.2.1. Antecedentes y problemática
-         1.2.2. Lean UX Process
-        	 1.2.2.1. Lean UX Problem Statements
-        	 1.2.2.2. Lean UX Assumptions
-        	 1.2.2.3. Lean UX Hypothesis Statements
-        	 1.2.2.4. Lean UX Canvas
-    1.3. Segmentos objetivo
+* [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+    * [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+        * [4.1.1. EventStorming](#411-eventstorming)
+            * [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+            * [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+            * [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+        * [4.1.2. Context Mapping](#412-context-mapping)
+        * [4.1.3. Software Architecture](#413-software-architecture)
+            * [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+            * [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+            * [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+            * [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+    * [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+        * [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
+            * [4.2.X.1. Domain Layer](#42x1-domain-layer)
+            * [4.2.X.2. Interface Layer](#42x2-interface-layer)
+            * [4.2.X.3. Application Layer](#42x3-application-layer)
+            * [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
+            * [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
+            * [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
+                * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
+                * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
 
-# Capítulo II: Requirements Elicitation & Analysis
+* [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+    * [5.1. Style Guidelines](#51-style-guidelines)
+        * [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+        * [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+    * [5.2. Information Architecture](#52-information-architecture)
+        * [5.2.1. Organization Systems](#521-organization-systems)
+        * [5.2.2. Labeling Systems](#522-labeling-systems)
+        * [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+        * [5.2.4. Searching Systems](#524-searching-systems)
+        * [5.2.5. Navigation Systems](#525-navigation-systems)
+    * [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+        * [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+        * [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+    * [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+        * [5.4.1. Applications Wireframes](#541-applications-wireframes)
+        * [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+        * [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+        * [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+    * [5.5. Applications Prototyping](#55-applications-prototyping)
 
-    2.1. Competidores
-         2.1.1. Análisis competitivo
-         2.1.2. Estrategias y tácticas frente a competidores
-     2.2. Entrevistas
-         2.2.1. Diseño de entrevistas
-         2.2.2. Registro de entrevistas
-         2.2.3. Análisis de entrevistas
-     2.3. Needfinding
-         2.3.1. User Personas
-         2.3.2. User Task Matrix
-         2.3.3. User Journey Mapping
-         2.3.4. Empathy Mapping
-         2.3.5. As-is Scenario Mapping
-     2.4. Ubiquitous Language
+* [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+    * [6.1. Software Configuration Management](#61-software-configuration-management)
+        * [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+        * [6.1.2. Source Code Management](#612-source-code-management)
+        * [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+        * [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+    * [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+        * [6.2.X. Sprint n](#62x-sprint-n)
+            * [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
+            * [6.2.X.2. Sprint Backlog n](#62x2-sprint-backlog-n)
+            * [6.2.X.3. Development Evidence for Sprint Review](#62x3-development-evidence-for-sprint-review)
+            * [6.2.X.4. Testing Suite Evidence for Sprint Review](#62x4-testing-suite-evidence-for-sprint-review)
+            * [6.2.X.5. Execution Evidence for Sprint Review](#62x5-execution-evidence-for-sprint-review)
+            * [6.2.X.6. Services Documentation Evidence for Sprint Review](#62x6-services-documentation-evidence-for-sprint-review)
+            * [6.2.X.7. Software Deployment Evidence for Sprint Review](#62x7-software-deployment-evidence-for-sprint-review)
+            * [6.2.X.8. Team Collaboration Insights during Sprint](#62x8-team-collaboration-insights-during-sprint)
+    * [6.3. Validation Interviews](#63-validation-interviews)
+        * [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+        * [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+        * [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+    * [6.4. Video About-the-Product](#64-video-about-the-product)
 
-# Capítulo III: Requirements Specification
+* [Conclusiones](#conclusiones)
 
-    3.1. To-Be Scenario Mappin
-    3.2. User Storie
-    3.3. Impact Mappin
-    3.4. Product Backlog
-
-# Capítulo IV: Solution Software Design
-
-     4.1. Strategic-Level Domain-Driven Design
-        4.1.1. EventStorming
-        	 4.1.1.1. Candidate Context Discovery
-        	 4.1.1.2. Domain Message Flows Modeling
-        	 4.1.1.3. Bounded Context Canvases
-        4.1.2. Context Mapping
-        4.1.3. Software Architecture
-        	 4.1.3.1. Software Architecture System Landscape Diagram
-        	 4.1.3.2. Software Architecture Context Level Diagrams
-        	 4.1.3.3. Software Architecture Container Level Diagrams
-        	 4.1.3.4. Software Architecture Deployment Diagrams
-
-     4.2. Tactical-Level Domain-Driven Design
-        4.2.X. Bounded Context: <Bounded Context Name>
-        	 4.2.X.1. Domain Layer
-        	 4.2.X.2. Interface Layer
-        	 4.2.X.3. Application Layer
-        	 4.2.X.4. Infrastructure Layer
-        	 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-        	 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-        		 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-        		 4.2.X.6.2. Bounded Context Database Design Diagram
-
-# Capítulo V: Solution UI/UX Design
-
-    5.1. Style Guidelines
-         5.1.1. General Style Guidelines
-         5.1.2. Web, Mobile and IoT Style Guidelines
-    5.2. Information Architecture
-         5.2.1. Organization Systems
-         5.2.2. Labeling Systems
-         5.2.3. SEO Tags and Meta Tags
-         5.2.4. Searching Systems
-         5.2.5. Navigation Systems
-    5.3. Landing Page UI Design
-         5.3.1. Landing Page Wireframe
-         5.3.2. Landing Page Mock-up
-    5.4. Applications UX/UI Design
-         5.4.1. Applications Wireframes
-         5.4.2. Applications Wireflow Diagrams
-         5.4.3. Applications Mock-ups
-         5.4.4. Applications User Flow Diagrams
-    5.5. Applications Prototyping
-
-# Capítulo VI: Product Implementation, Validation & Deployment
-
-    6.1. Software Configuration Management
-         6.1.1. Software Development Environment Configuration
-         6.1.2. Source Code Management
-         6.1.3. Source Code Style Guide & Conventions
-         6.1.4. Software Deployment Configuration
-    6.2. Landing Page, Services & Applications Implementation
-         6.2.X. Sprint n
-        	 6.2.X.1. Sprint Planning n
-        	 6.2.X.2. Sprint Backlog n
-        	 6.2.X.3. Development Evidence for Sprint Review
-        	 6.2.X.4. Testing Suite Evidence for Sprint Review
-        	 6.2.X.5. Execution Evidence for Sprint Review
-        	 6.2.X.6. Services Documentation Evidence for Sprint Review
-        	 6.2.X.7. Software Deployment Evidence for Sprint Review
-        	 6.2.X.8. Team Collaboration Insights during Sprint
-    6.3. Validation Interviews
-         6.3.1. Diseño de Entrevistas
-         6.3.2. Registro de Entrevistas
-         6.3.3. Evaluaciones según heurísticas
-    6.4. Video About-the-Product
-
-# Conclusiones
-
-# Bibliografía
-
-# Anexos
-```
+* [Bibliografía](#bibliografía)
 
 # Student Outcome
 
@@ -195,8 +259,26 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       Contribuí al diseño de los diagramas técnicos que describen el flujo de datos dentro del sistema de la maceta inteligente y cómo se integrarán los sensores IoT.<br><br>
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
-      Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real.
-      </td>
+      Desarrollé diagramas técnicos detallados que especifican la interacción entre la parte física y el software de la maceta, y cómo se manejarán los datos de sensores en tiempo real. <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      Trabajé activamente en la planificación y estructuración del sistema, colaborando estrechamente con los diferentes miembros del equipo para definir y actualizar los diagramas de arquitectura y flujo de datos. Además, participé en las subsanaciones que ayudaron a mejorar la integración de los componentes del sistema. <br><br>
+    <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      Fomenté la integración de componentes clave del sistema mediante diagramas técnicos. Trabajé con los miembros del equipo para revisar y ajustar los diagramas de flujo y arquitectura, asegurando que todos los componentes estuvieran correctamente alineados para garantizar la cohesión del sistema. <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      Me centré en la documentación del sistema, colaborando con el equipo en la creación de diagramas de flujo detallados para representar las interacciones entre los componentes. Ayudé a organizar las actualizaciones que surgieron en el proceso de subsanación. <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      Coordiné la estructuración de diagramas técnicos y trabajé con el equipo para asegurarme de que todos los componentes estuvieran correctamente representados. Colaboré en la identificación de los posibles problemas y propuse soluciones efectivas durante la fase de subsanación. <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     Trabajé en los diagramas técnicos, asegurando que el flujo de datos estuviera bien documentado. Colaboré estrechamente con otros miembros del equipo para realizar las subsanaciones necesarias, optimizando la estructura técnica. <br><br>
+      <b> TP</b><br>
+      <u> Flavio Trigeros </u><br>
+        Desarrollé diagramas detallados de arquitectura técnica, asegurando que el sistema estuviera bien documentado. Trabajé en la subsanación de problemas relacionados con la integración de sensores y componentes físicos, colaborando estrechamente con el equipo.
+        </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -216,6 +298,30 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Mejoré mis habilidades en la creación de diagramas y documentación técnica que ayudarán en la correcta implementación del sistema a medida que el proyecto avance.
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+        Mejoré mis habilidades de trabajo en equipo al colaborar con diferentes áreas, desde la documentación hasta la implementación técnica, comprendiendo cómo las contribuciones individuales impactan el progreso global del proyecto. Aprendí a integrar diversas perspectivas y enfoques en la creación de un sistema más robusto.
+      <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+        Este proceso me permitió mejorar mi capacidad para trabajar de manera colaborativa y eficaz, comunicando ideas y asegurando que las diferentes partes del sistema estuvieran bien integradas. Aprendí a sintetizar información técnica para mejorar el diseño del proyecto.
+      <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+        A través de mi participación en la documentación y el análisis del sistema, entendí cómo la eficacia en la documentación contribuye a la claridad del proyecto. Aprendí a colaborar con los demás para asegurar que las ideas y detalles técnicos fueran accesibles para todos.
+      <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+        A través de mi participación, comprendí la importancia de mantener una visión holística del proyecto, equilibrando todos los componentes técnicos para lograr una integración exitosa. Mejoré mi capacidad para tomar decisiones técnicas basadas en la colaboración.
+      <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+        Mi participación en la creación de los diagramas de flujo de datos me permitió comprender cómo las pequeñas mejoras técnicas pueden tener un gran impacto en el funcionamiento global del sistema. Aprendí a adaptar mis aportes a las necesidades del equipo, manteniendo una comunicación efectiva.
+     <br><br>
+      <b> TP</b><br>
+      <u> Flavio Trigeros </u><br>
+        La experiencia me permitió fortalecer mi capacidad de colaboración multidisciplinaria. Aprendí a manejar la información técnica compleja de manera efectiva y a compartirla con otros miembros para tomar decisiones informadas.
       </td>
     </tr>
     <tr>
@@ -239,7 +345,26 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Estudiamos el impacto de las soluciones tecnológicas en el sector de la jardinería y cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores.
-      </td>
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      Realicé una investigación sobre el sector de la jardinería inteligente y cómo la tecnología IoT puede optimizar el cuidado de las plantas. Analicé cómo las soluciones tecnológicas pueden adaptarse a este sector, mejorando la eficiencia del riego y monitoreo. <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+        Investigamos el sector de tecnología aplicada al hogar inteligente, específicamente sobre el uso de sensores IoT en la jardinería. Exploramos cómo esta tecnología puede mejorar la automatización del cuidado de las plantas, a través de la integración con sistemas inteligentes. <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      Analicé el mercado de la agricultura inteligente, enfocándome en cómo la tecnología IoT puede ser utilizada para automatizar y optimizar el cuidado de las plantas. Investigué las necesidades y tendencias en el sector agrícola y cómo las soluciones tecnológicas pueden ayudar a resolver problemas comunes. <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      Estudié el sector de automatización en la jardinería, particularmente cómo los sistemas IoT pueden mejorar el riego y nutrición de las plantas, optimizando los recursos y mejorando la eficiencia en el mantenimiento de jardines. <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+     Investigamos el uso de tecnologías IoT en la jardinería, analizando cómo estos sistemas pueden mejorar el rendimiento del riego y la gestión de la humedad. Estudiamos las aplicaciones de estas tecnologías para optimizar el uso de agua en jardines y huertos. <br><br>
+      <b> TP</b><br>
+      <u> Flavio Trigeros </u><br>
+        Estudié el impacto de las soluciones tecnológicas en la jardinería, enfocándome en cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores y sistemas automáticos. Investigamos el mercado de la jardinería inteligente y sus aplicaciones comerciales. <br><br>
+</td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -259,9 +384,26 @@ elaboración del informe junto con capturas de los analíticos de colaboración 
       <b> TB1</b><br>
       <u> Flavio Trigeros </u><br>
       Aumenté mi comprensión sobre cómo IoT puede optimizar la eficiencia del monitoreo de plantas y mejorar la gestión de recursos como agua y fertilizantes.
-      </td>
+      <br><br>
+     <b> TP</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      Mi investigación me permitió obtener una visión más profunda del sector de la jardinería inteligente y cómo las soluciones de software pueden aplicarse de manera efectiva en él. Esto me permitió integrar mejor la solución tecnológica al proyecto, comprendiendo sus posibles aplicaciones en el mundo real. <br><br>
+      <b> TP</b><br>
+      <u> Luiggi Paredes </u><br>
+      Aprendí sobre el potencial de IoT en el hogar inteligente y cómo estas soluciones pueden mejorar la vida diaria. Esta comprensión me ayudó a conceptualizar mejor las características del sistema que estábamos desarrollando, considerando su aplicabilidad en el mercado. <br><br>
+      <b> TP</b><br>
+      <u> Ruben Mallma </u><br>
+      Mi investigación en el sector agrícola me permitió ver las oportunidades que ofrece la tecnología para transformar procesos tradicionales. Esta comprensión me ayudó a adaptar nuestra solución tecnológica a un mercado con una demanda real de eficiencia y automatización. <br><br>
+      <b> TP</b><br>
+      <u> Juan Pescoran </u><br>
+      Mi investigación sobre la automatización en la jardinería me permitió comprender cómo las soluciones de software pueden aplicarse en la vida cotidiana de los usuarios. Esto me ayudó a diseñar una solución más centrada en las necesidades del usuario y en la sostenibilidad. <br><br>
+      <b> TP</b><br>
+      <u> Lucio Yen </u><br>
+        Este análisis me permitió comprender cómo las soluciones de IoT pueden mejorar la eficiencia de los sistemas de riego, lo que es crucial en áreas con limitaciones de agua. Aprendí cómo el software puede contribuir a la sostenibilidad en el sector agrícola. <br><br>
+      <b> TP</b><br>
+      <u> Flavio Trigeros </u><br>
+        Mi investigación me permitió ampliar mis conocimientos sobre la industria de la jardinería inteligente y cómo las soluciones tecnológicas pueden satisfacer una necesidad real de automatización y eficiencia en este sector. Esto enriqueció nuestra solución tecnológica, alineándola con las demandas actuales del mercado. <br><br>
+    </td>
     </tr>
   </tbody>
 </table>
-
-
