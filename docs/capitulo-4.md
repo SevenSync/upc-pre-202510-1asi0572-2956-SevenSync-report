@@ -297,6 +297,16 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 | **10. Caring Intelligence**      | - Motor de recomendación basado en reglas y modelos ML/IA  <br> - Generación de **Recommendation** y mapeo a patrones de usuario  <br> - Creación de reportes personalizados (**ReportTemplate**)  <br> - Aprendizaje continuo a partir de retroalimentación del usuario   | Recommendation, ReportTemplate, Rule, Feedback  |  
 
 #### 4.1.1.2 Domain Message Flows Modeling.
+### Scenario: Account Creation
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/0.png"></image>
+### Scenario: Create Profile On First Sign In
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/1.png"></image>
+### Scenario: Pot Linking With User
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png"></image>
+### Scenario: Assign Plant to Linked Pot
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png"></image>
+### Scenario: Send Alert Based On Pot
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/4.png"></image>
 
 #### 4.1.1.3 Bounded Context Canvases.
 ### Identity and Access Management
