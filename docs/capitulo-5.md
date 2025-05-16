@@ -315,7 +315,7 @@ Noto Sans font thickness models in Simplified Chinese" width="1000" height="580"
 ###### Figura 37
 
 Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Coreano
-<img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-korean.pngg"  alt="
+<img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-korean.png"  alt="
 Noto Sans font thickness models in Korean" width="1000" height="580">
 
 ###### Figura 38
