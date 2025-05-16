@@ -26,8 +26,11 @@ A continuación, se detallan los colores primarios, secundarios y terciarios def
 
 **Color primario:**
 
+<<<<<<< Updated upstream
 **Tipografía:**
 
+=======
+>>>>>>> Stashed changes
 ###### Figura 30 y algo
 
 _Listado de colores primarios que se usaran en las aplicaciones de Macetech_
@@ -97,7 +100,18 @@ Su objetivo es garantizar que cada variable sea inmediatamente reconocible, con 
 
 ###### Tabla 30 y algo
 
+<<<<<<< Updated upstream
 _Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech_
+=======
+| Métrica	| Nombre | Hex | Uso	| Justificación técnica |
+|---------|--------|-----|------|----------------------|
+| Humedad	y Temperatura Fría | Azul Mar |	#3498DB	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Sigue una base de paleta categórica: azul es convencional para humedad, alto contraste con fondo y consistente con dashboards de las métricas IoT |
+| Luz	y Alerta Moderada | Mostaza |	#F1C40F	|	Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas en un nivel moderada | El amarillo brillante remite al sol, además de ser legible sobre gris oscuro y blanco |
+| Temperatura Media	| Brasas |	#E67E22	| Utilizado para mostrar el rango medio de temperatura | Naranja medio comunica calor moderado, siendo una diferenciación clara entre rangos |
+| Temperatura Alta y Alerta Alta | Tomate | #E74C3C | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto	| Rojo intenso para alertas de calor, puesto que es una semántica cultural de peligro. Asimismo, tiene un contraste AAA con colores blancos |
+| pH	| Tallo |	#2ECC71	| Utilizado como medidor de acidez/alcalinidad (pH)	| Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.
+| Salinidad |	Neblina |	#1ABC9C	| Utilizado como medidor de salinidad | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores. |
+>>>>>>> Stashed changes
 
 | Métrica                    | Nombre   | Hex     | Uso                                                                                                                                                                                        | Justificación técnica                                                                                                                             |
 | -------------------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -147,7 +161,18 @@ _Descripción de usos y justificación para cada uno de los tonos del color secu
 
 ###### Tabla 30 y algo
 
+<<<<<<< Updated upstream
 _Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en Modo Dark_
+=======
+| Métrica	| Light‑Mode| Light-Mode Hex | Dark‑Mode | Dark-Mode Hex	| Uso en Dark‑Mode | Justificación |
+|---------|-----------|----------------|-----------|-----|------------------|---------------|
+| Humedad y Temperatura Fría | Azul Mar | #3498DB | Azul Lago |	#2980B9	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
+| Luz y Alerta Moderada | Mostaza | #F1C40F | Dorado |	#F39C12	| Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas	| Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro | 
+| Temperatura Media | Brasas | #E67E22 | Zanahoria |	#D35400	| Utilizado para mostrar el rango medio de temperatura | Se utiliza un naranja oscuro que sigue diferenciando niveles de temperatura. Tiene un contraste AA/AAA con texto blanco y fondos oscuros |
+| Temperatura Alta y Alerta Alta | Tomate | #E74C3C | Cereza | #C0392B | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto | El uso de un rojo menos brillante suaviza el impacto, sin perder señal de alerta. Presenta un buen contraste AAA |
+| pH |	#2ECC71 |	Tallo | #27AE60 | Llanura |Utilizado como medidor de acidez/alcalinidad (pH) | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco |
+| Salinidad | #1ABC9C | Neblina | #16A085 | Turquesa | Medidor de salinidad | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro |
+>>>>>>> Stashed changes
 
 | Métrica                    | Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode                                                                                                                                                                           | Justificación                                                                                                                                                   |
 | -------------------------- | ---------- | -------------- | --------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -166,7 +191,7 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 
 - **Jerarquía clara:** Al mantener proporciones de uso (50/25/25 % para primarios), el usuario percibe la misma estructura de importancia y navegación tanto en Modo Light como en Modo Dark (Westland y Maggio, 2023).
 
-#### Tipografía:
+#### 5.1.1.2. Tipografía:
 
 En Macetech, la tipografía no es solo una herramienta de lectura: es una extensión visual de nuestra identidad. Como señalan estudios como Jay y Lupton (2024), la selección tipográfica genera una respuesta psicológica directa en el usuario, influenciando su percepción de la marca incluso antes de interactuar con el contenido. En nuestro caso, esta elección cumple una función doble: debe comunicar innovación tecnológica con cercanía humana, al tiempo que refuerza el vínculo emocional con quienes utilizan la plataforma.
 
@@ -336,11 +361,159 @@ Con esta elección, aseguramos que nuestras comunicaciones críticas lleguen sie
 
 _Modelos de grosor para el tipo de letra complementaria de Macetech, Arial_
 <img src="/assets/img/capitulo-5/style-guidelines/typography/arial-font-thickness.png" alt="
+<<<<<<< Updated upstream
 Arial font thickness models" width="1000" height="580">
+=======
+Arial font thickness models" width="1000" height="580"> 
 
-**Espaciado:**
+#### 5.1.1.3. Espaciado
+>>>>>>> Stashed changes
 
+El espaciado es un pilar imprescindible para garantizar una óptima legibilidad, establecer una jerarquía visual sólida y proporcionar al usuario una experiencia de lectura fluida y confortable en todas las plataformas de Macetech. Con el fin de alcanzar estos objetivos, hemos implementado un sistema modular fundamentado en una unidad base de 8 px y sus múltiplos (8 px, 16 px, 24 px, 32 px, etc.).
+
+<<<<<<< Updated upstream
 **Tono de comunicación y lenguaje aplicado:**
+=======
+Este enfoque ofrece varias ventajas técnicas y de usabilidad:
+
+* **Consistencia de diseño:** Al ceñirnos a valores uniformes, eliminamos discrepancias arbitrarias entre márgenes y rellenos, logrando divisiones homogéneas en cada vista.
+
+* **Escalabilidad y mantenimiento:** Definir espaciados como variables o tokens facilita la creación de una cuadrícula (CSS Grid) coherente y simplifica futuras ampliaciones o ajustes, reduciendo el tiempo de desarrollo y el riesgo de errores (Wang et al., 2025).
+
+* **Previsibilidad y eficiencia:** Tanto diseñadores como desarrolladores pueden predecir con precisión el impacto de cada valor de espaciado en el conjunto de la interfaz, lo que mejora la productividad y la calidad del código.
+
+* **Optimización de respuesta:** En entornos responsivos, los múltiplos de 8 px permiten adaptar rápidamente los layouts a distintos breakpoints sin comprometer la armonía espacial ni generar cambios bruscos en la composición (Kuleszo, 2024).
+
+* **Reducción de la carga cognitiva:** Un espaciado predecible facilita la navegación y la comprensión del contenido, al crear “vías visuales” claras que guían naturalmente la mirada del usuario (Wang et al., 2025).
+
+Macetech logra una experiencia visualmente equilibrada y técnicamente robusta, manteniendo la coherencia entre tipografía, componentes de UI y distintos contextos de uso.
+
+**Principios Generales de Espaciado**
+
+* **Unidad Base de 8 px**
+
+    Todos los márgenes, rellenos (padding) y gutters del sistema de diseño se establecen en múltiplos exactos de 8 px (8, 16, 24, 32 px, etc.). Esto permite la construcción de una cuadrícula modular uniforme, evitando la proliferación de valores arbitrarios que puedan romper la coherencia visual. Asimismo, simplifica la implementación en CSS mediante variables o design tokens, reduciendo la complejidad del mantenimiento y facilitando ajustes globales de espaciado (Wang et al., 2025).
+
+* **Consistencia Vertical**
+
+    El espaciado vertical que separa bloques de texto, secciones y componentes se rige por la escala de 8 px -> 16 px -> 24 px -> 32 px. Esto establece un ritmo visual coherente que orienta al usuario de manera intuitiva a lo largo del contenido. Además, refuerza la jerarquía de información, diferenciando claramente los niveles de importancia sin recurrir a cambios bruscos de estilo (Kuleszo, 2024).
+
+* **Jerarquía Tipográfica**
+
+    Cada nivel de encabezado (H1, H2, H3 ...) y párrafo aplica un line-height proporcional al tamaño de fuente. Este debe ser entre 1.3× y 1.5× su tamaño base. Esto optimiza la legibilidad al garantizar un espacio vertical suficiente entre líneas, reduciendo la tensión ocular y facilitando la lectura continua.Asimismo, define con precisión los límites de cada bloque de texto, evitando la sensación de agrupamiento excesivo y mejorando la escaneabilidad de la página (Kuleszo, 2024).
+
+**Espaciado Tipográfico**
+
+A continuación se presenta la pauta de espaciado para los distintos elementos de texto en Macetech, optimizada para legibilidad, jerarquía y mantenibilidad. Además del line-height interno, se indica que el espaciado entre bloques de texto (márgenes inferiores) debe ser equivalente a un doble interlineado, garantizando una separación clara y uniforme.
+
+| Elemento | Tamaño de fuente | Altura de línea | Espacio entre letras | Margen inferior (2× altura de línea) |
+|----------|-----------|-------------|----------------|--------------------------------|
+| H1 (Título principal) |	32 px |	40 px (1.25×) |	–0.5 px	| 80 px |
+| H2 | 24 px | 32 px (1.33×) |	–0.4 px |	64 px |
+| H3 | 20 px | 28 px (1.4×)	| –0.3 px	| 56 px |
+| Párrafo (cuerpo) | 16 px	| 24 px (1.5×) | 0 px | 48 px |
+| Texto auxiliar | 14 px	| 20 px (1.43×) |	0 px | 40 px | 
+
+###### Figura 41
+
+*Distribución de las alturas de línea con el margen inferior para la tipografía de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/spacing/line-heights-distribution-with-bottom-spacing.png" alt="
+Line heights distribution with the bottom spacing" width="1000" height="580"> 
+
+* **Altura de línea interna (1.5–2.0x)**
+
+    Proporciona suficiente espacio entre líneas para minimizar la tensión ocular y facilitar el seguimiento de la lectura, sin dispersar visualmente cada bloque de texto (Budarina, 2023).
+
+* **Espaciado negativo para letras en encabezados**
+
+    Un espaciado ligeramente negativo ayuda a compensar la menor densidad aparente de los títulos grandes, mejorando la cohesión de las palabras y el bloque tipográfico (Budarina, 2023).
+
+* **Margen inferior es igual al doble de la altura de línea**
+
+    Establecer el espaciado entre bloques de texto al doble de la altura de línea garantiza:
+
+    1. Separación clara de secciones, evitando la acumulación visual de párrafos y encabezados.
+
+    2. Ritmo de lectura coherente, pues la proporción se adapta automáticamente a cada tamaño tipográfico.
+
+    3. Mantenimiento sencillo en CSS, al derivar los márgenes directos de los valores de line-height mediante variables o cálculos.
+
+Con estas directrices, Macetech consigue una estructuración tipográfica técnica y elegante, en la que cada texto se distribuye adecuadamente y la jerarquía de la información resulta inmediatamente evidente.
+
+**Espaciado de Componentes**
+
+En Macetech, el espaciado de los componentes de interfaz se define para garantizar usabilidad, legibilidad y coherencia visual. A continuación se detallan las métricas de padding interno, margen externo vertical y gutter horizontal, así como su justificación:
+
+| Componente | Padding Interno | Margen Externo Vertical | Gutter Horizontal | Justificación |
+|------------|-----------------|----------------------------|--------------|-----------|
+| Botón | 12 px (vertical) × 24 px (horizontal) | 8 px | - | Proveé un área táctil confortable (mínimo 44 × 44 px recomendado por accesibilidad) y otorga una separación adecuada con elementos vecinos para clics precisos (World Wide Web Consortium, 2025) |
+| Campo de entrada (Input) | 10 px (vertical) × 16 px (horizontal) | 12 px | - | Es un espacio interno óptimo para texto y placeholder. Tiene un margen que evita solapamientos en formularios densos y mejora el foco visual para el usuario |
+| Tarjeta (Card) | 16 px | 24 px | 16 px | Otorga un espacio y distribución interna para contenido múltiple. Ocupa un margen generoso para diferenciar cards, junto a un gutter igual al padding para tener un grid coherente |
+| Grid / Container | - | - | 16 px | Otorga una separación uniforme entre columnas en layouts de varias columnas, mantiene consistencia con el gutter de tarjetas y favorece la lectura escaneable |
+| Navbar / Sidebar | 24 px | - | - | Otorga un relleno amplio para iconos y etiquetas, además asegura zonas de interacción espaciosas y otorga claridad en la navegación |
+
+###### Figura 42
+
+*Distribución de los componentes funcionales utilizados en la interfaz de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/spacing/components-distribution-with-padding.png" alt="
+Components distribution with padding" width="1000" height="580"> 
+
+* **Padding interno:** Brindamos un espacio mínimo alrededor del contenido dentro de cada componente, lo que es esencial para que los componentes “respiren” sin comprometer el alineamiento (Zeldman, 2024).
+
+* **Margen externo vertical:** Hay una distancia entre un componente y el siguiente en el flujo de la página, lo que previene la sensación de aglomeración y refuerza la separación semántica (Budarina, 2023).
+
+* **Gutter horizontal:** Lo utilizamos como un separador constante entre columnas o tarjetas en un grid. Asegura un ritmo visual uniforme y facilita el escaneo lateral de información (Zeldman, 2024).
+
+Este sistema de espaciado promueve una interfaz equilibrada, accesible y fácil de mantener, alineada con los principios de diseño modular en múltiplos de 8 px.
+
+**Directrices de Agrupamiento, Alineación y Adaptabilidad**
+
+Para maximizar la coherencia visual y la eficiencia en la interpretación de la interfaz de Macetech, se establecen las siguientes pautas de espaciado general, basadas en principios de diseño de sistemas escalables y prácticas de interacción centradas en el usuario.
+
+* **Agrupamiento Semántico:** El agrupamiento semántico consiste en utilizar el espaciado como mecanismo de señalización para definir relaciones lógicas entre elementos:
+
+  * **Márgenes internos reducidos (8 px)**
+      
+      Se emplean entre componentes funcionalmente relacionados (por ejemplo, icono con etiqueta, campo de formulario con ayuda contextual) para indicar unidad de pertenencia.
+
+  * **Márgenes externos ampliados (24–32 px)**
+
+      Se reservan para separar secciones independientes (bloques de contenido, paneles de navegación, áreas de análisis de datos), creando zonas abiertas que ayudan al usuario a identificar claramente el inicio y el fin de cada módulo de información.
+
+  El contraste de espacios facilita el agrupamiento perceptivo (Principio de proximidad de Gestalt), reduciendo la carga cognitiva al segmentar visualmente la pantalla en áreas de interés (Zeldman, 2024).
+
+* **Alineación Consistente:** La alineación de todos los elementos de la interfaz se fundamenta en una cuadrícula modular de 8 px, aplicada tanto en ejes verticales(eje y) como horizontales(eje x):
+
+  * **Ejes verticales:** márgenes superiores e inferiores, altura de línea y gutters de contenedores siguen múltiplos de 8 px para asegurar un flujo de lectura fluido.
+
+  * **Ejes horizontales:** gutters entre columnas y padding lateral de contenedores se ajustan a la misma unidad, manteniendo una división homogénea.
+
+  El empleo de un grid consistente optimiza la formalización de CSS Grid, facilita alineaciones responsivas y reduce las discrepancias derivadas de cálculos manuales, mejorando la mantenibilidad del código (Budarina, 2023).
+
+* **Escalado Responsivo:** Para garantizar una experiencia óptima en distintos dispositivos y tamaños de pantalla, el espaciado se adapta mediante breakpoints manteniendo siempre la base de 8 px. Según Zeldman(2024), los breakpoints son los puntos donde el diseño cambia para adaptarse a diferentes tamaños de pantalla y dispositivos. Son las medidas de ancho de pantalla en las que se aplican estilos CSS específicos, creando diferentes layouts para diferentes dispositivos, como móviles, tablets y escritorios:
+
+  * **Móviles (En promedio, menor a 768 px):** se conserva la unidad base de 8 px y sus primeros múltiplos (8, 16, 24 px), optimizando la densidad de información sin sacrificar la claridad.
+
+  * **Tablets y Escritorio (Mayor a 768 px):** se introducen múltiplos superiores (32, 40, 48 px) para incrementar zonas de descanso visual y aprovechar el espacio adicional de forma equitativa para los usuarios. No se invalidan o modifican las reglas de espaciado indicadas en este guía.
+
+  Este enfoque en el que planteamos el diseño principal para móviles primero, aseguramos que la interfaz escale de forma progresiva, evitando saltos abruptos en el layout y manteniendo un ritmo visual coherente a través de los breakpoints definidos.
+
+* **Beneficios del Sistema de Espaciado Modular**
+
+  * **Orden y legibilidad:** cada elemento dispone de espacio suficiente para evitar la sensación de aglomeración.
+
+  * **Accesibilidad:** agrandar márgenes entre secciones reduce el riesgo de errores de interacción táctil y mejora la escaneabilidad para usuarios con baja visión.
+
+  * **Coherencia de marca:** un espaciado uniforme refuerza la identidad visual de Macetech, ofreciendo una experiencia profesional y sólida.
+
+  * **Eficiencia de implementación:** la definición de variables de espaciado simplifica el mantenimiento y posibilita ajustes globales con un mínimo esfuerzo de desarrollo.
+
+Con estas directrices, Macetech garantiza una interfaz ordenada, accesible y cohesiva, en la que cada componente encuentra su espacio natural sin perder armonía ni estructura.
+
+#### 5.1.1.4. Tono de comunicación y lenguaje aplicado
+>>>>>>> Stashed changes
 
 De acuerdo con Smith y Zook (2024), el tono de comunicación es un componente esencial en el diseño de las secciones de una aplicación. No solo moldea la percepción emocional de los usuarios sobre textos e íconos, sino que también contribuye a forjar una identidad de marca coherente y memorable. Un tono bien calibrado genera en el usuario sensaciones de cercanía y confianza, al tiempo que un lenguaje claro y accesible refuerza la visibilidad en buscadores y facilita su navegación interna.
 
@@ -560,9 +733,389 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
       Se debe utilizar un formato FAQ: preguntas en negrita y respuestas concisas (1–2 oraciones). Asimismo, se deben ingresar instrucciones paso a paso numeradas junto screenshots con bordes grises para enfocar la atención.
 
-**Iconografía:**
+#### 5.1.1.5. Logo
 
-**Logo:**
+En esta sección se establecen las directrices detalladas para el uso, las variaciones permitidas y las restricciones del logotipo de Macetech, con el propósito de salvaguardar su integridad gráfica, garantizar su óptima legibilidad y mantener una coherencia de marca homogénea en todos los medios, formatos y plataformas (Wheeler y Meyerson, 2024).
+
+**Versión Principal del Logotipo**
+
+La versión principal del logo de Macetech combina un símbolo icónico con la denominación de la marca, garantizando reconocimiento inmediato y coherencia visual.
+
+* **Composición:** Para comprender la esencia de nuestro producto Macetech, cada elemento del logotipo ha sido concebido con un propósito simbólico y funcional:
+
+  * **Símbolo**
+
+    * **Forma:** Una maceta minimalista de líneas suaves que contiene un brote naciente, aludiendo directamente al crecimiento vegetal que obtendran las plantas por usar nuestro producto.
+
+    * **Corazón interno:** Integrado sutilmente en la base del brote, representa el compromiso humano y emocional con el cuidado de las plantas. Su presencia simboliza tanto la pasión de nuestros usuarios como la “inteligencia” tecnológica que Macetech aporta.
+
+    La superposición de naturaleza y tecnología sintetiza la propuesta de valor de Macetech: facilitar un cuidado preciso y afectivo de de las plantas mediante nuestras macetas inteligentes.
+
+  * **Logotipo textual (Wordmark)**
+
+    * **Tipografía:** DynaPuff. Es una fuente sans-serif con trazos redondeados, generosos contrates y terminaciones suaves que evocan cercanía y calidez visual.
+
+    * **Legibilidad:** Sus formas abiertas y claras aseguran lectura instantánea en tamaños reducidos, esencial para interfaces y materiales digitales en los que se usara Macetech.
+
+    * **Personalidad de marca:** Las curvas orgánicas de DynaPuff conectan con el mundo natural de las plantas, aportando un matiz amistoso que reduce la frialdad típica de las tipografías puramente geométricas (Zeldman, 2024).
+
+    * **Coherencia visual:** Combina modernidad y accesibilidad, reflejando la dualidad de Macetech: tecnología avanzada al servicio de la vida vegetal (Zeldman, 2024).
+
+    * **Posicionamiento:** La palabra “MaceTech” se sitúa debajo del símbolo, con un espacio horizontal equivalente al 40 % de la altura del ícono.
+
+  * **Función del espacio**
+
+    * **Jerarquía:** Refuerza la importancia del símbolo como identificador visual mientras mantiene la legibilidad del nombre en todo momento para nuestros usuarios.
+
+    * **Distribución gráfica:** Garantiza un margen suficiente para evitar sensación de aglomeración, facilitando el uso del logotipo en contextos de distintos tamaños sin perder integridad.
+
+    * **Alineación:** La línea de base de la palabra “MaceTech” queda perfectamente alineada con el centro geométrico del símbolo, generando un eje horizontal de equilibrio. Esta alineación transmite estabilidad y unidad, reforzando la confianza del usuario en la marca y su solución tecnológica.
+
+    ###### Figura 43
+
+    *Presentación del logotipo de Macetech*
+
+    <img src="/assets/img/capitulo-5/style-guidelines/logo/logo-model-macetech.png" alt="Macetech's Logo" width="1000" height="580"> 
+
+* **Proporciones:** Las proporciones del logo tienen una distribución que debe respetarse en todo momento, sin excepción. Las proporciones utilizadas en el logo se ven en el siguiente apartado. 
+
+  * **Relación de aspecto:** Relación con respecto a "Altura del ícono : Anchura total", lo que es igual a "1 : 1.2". La configuración del símbolo y la tipografía en relación 1:1.2 promueve una estructura visual equilibrada que refuerza el impacto de marca en cualquier tamaño (Bhanarkar et al., 2023).
+
+  * **Escalado:** Al redimensionar, siempre se debe mantener esta proporción para evitar distorsiones y preservar la legibilidad de la tipografía en todo momento, sin importar el tamaño de la pantalla del dispositivo en el que se presenta.
+
+* **Paleta de Color Autorizada** Usamos un modelo de paleta de color único que se guía de nuestro modelo de colores mencionados anteriormente en esta guía de diseño.
+
+  * **Full Color (predeterminada)**
+
+    * **Maceta y texto:** Verde Bosque  #296244. Este refleja la identidad ecológica y tecnológica de Macetech.
+
+    * **Hojas:** degradado vertical de Verde Bosque #38865D (parte superior) a Verde Hoja #2A8050 (parte inferior). 
+
+    * **Corazón:** Rojo Tomate #E74C3C. El Rojo Tomate destaca el elemento humano (corazón) y aporta energía visual.
+
+    * **Uso:**
+
+      Sitios web, presentaciones, materiales de marketing y cualquier superficie de marca donde se disponga de color completo de tonalidad verdosa clara.
+
+  * **Versión en Blanco** 
+
+    * **Símbolo y texto:** Blanco #FFFFFF
+
+    * **Uso:** 
+
+      Sobre fondos oscuros o fotografías de alta complejidad, siempre que el contraste cumpla con WCAG 2.1 AA (mínimo 4.5:1) para garantizar visibilidad (World Wide Web Consortium, 2025).
+
+  * **Versión en Negro**
+
+    * **Símbolo y texto:** Negro #000000
+
+    * **Uso:**
+
+      Aplicaciones monocromas en documentos impresos, grabados o interiores de menor colorido, siempre sobre fondos claros que aseguren legibilidad (World Wide Web Consortium, 2025).
+
+  Las versiones blanca y negra aseguran flexibilidad de uso en contextos de contraste limitado, manteniendo la coherencia y el reconocimiento de la marca.
+
+* **Zona de Protección (Clear Space):** Para preservar la integridad visual y la legibilidad del logotipo de Macetech en cualquier entorno, es imprescindible respetar un área libre de interferencias alrededor de su contorno.
+
+  La zona de protección es el área mínima libre de texto, gráficos, bordes o cualquier otro elemento que pueda competir por la atención del espectador o dificultar la percepción del logotipo. Este espacio garantiza que el logotipo “respire” y mantenga su presencia y jerarquía visual (Zeldman, 2024).
+
+  El valor de la zona de protección se define como el doble de la altura de la letra “M” en la palabra “MaceTech” del logotipo. La “M” es el carácter de mayor ancho y altura dentro de la palabra “MaceTech” y, por tanto, representa la dimensión más restrictiva para asegurar espacio libre. Al basar la distancia en esta medida interna, el área de protección se ajusta automáticamente a cualquier escala del logo sin requerir cálculos adicionales. Dado que la “M” forma parte del propio logotipo, este método funciona con la misma unidad (px, mm, pt) en la que se reproduzca y se puede referenciar con facilidad en CSS para el diseño (Kuleszo, 2024).
+
+  Este valor se aplica uniformemente a los cuatro costados (superior, inferior, izquierdo y derecho). Si la “M” mide h (en mm, px o la unidad correspondiente), la zona de protección será un cuadrado de lado 2h adyacente a cada borde del logotipo.
+
+  Esto nos otorga distintos beneficios, como: 
+
+  * **Visibilidad y legibilidad:** Evita que elementos gráficos o tipográficos cercanos distraigan la vista o distorsionen la silueta del logotipo.
+
+  * **Jerarquía de marca:** Mantiene el logotipo como punto focal, asegurando que su reconocimiento no se vea afectado por componentes adyacentes.
+
+  * **Adaptabilidad:** Al basar la medición en la propia geometría del logotipo, la zona de protección escala de forma consistente en todos los usos y formatos.
+
+  ###### Figura 43
+
+  *Presentación del área de protección indicada para la buena distribución del logo
+
+  <img src="/assets/img/capitulo-5/style-guidelines/logo/protection-area-for-logo.png" alt="Macetech's Logo Protection Area" width="1000" height="580"> 
+
+* **Tamaño Mínimo:** Establecer dimensiones mínimas para el logotipo garantiza que sus detalles, tanto en el símbolo como en la tipografía, se reproduzcan con fidelidad en distintos medios y resoluciones.
+
+  * **Ancho mínimo recomendado: 100 px**
+
+  * Optimizado para pantallas de baja densidad (72 ppi) y alta densidad (Retina).
+
+  * Asegura un espaciado mínimo de píxeles para las líneas del ícono y los contornos de la tipografía, evitando el “pixel snapping” que degrada la forma (Kuleszo, 2024). Por debajo de este umbral, los contornos de la fuente pueden perderse, afectando la legibilidad en dispositivos móviles y navegadores de escritorio.
+
+  * Para tamaños superiores a los mínimos, mantenga la proporción 1:1.2 (altura : anchura) y la zona de protección predeterminada, escalándolas de manera proporcional.
+
+  * En entornos de baja resolución (por ejemplo, pantallas 1×), verifique en mockups reales que el logotipo se perciba con claridad antes de su despliegue masivo.
+
+  Con estas directrices formales y técnicas, se asegura que el logotipo de Macetech conserve su fuerza gráfica y su capacidad de comunicación en cualquier soporte, sin perder legibilidad ni detalle.
+
+* **Usos Incorrectos del Logotipo**
+
+  Para garantizar la integridad visual, coherencia de marca y reconocimiento consistente del logotipo de Macetech, es imprescindible evitar cualquier alteración que comprometa su estructura, colorimetría o legibilidad. A continuación se detallan los usos que están estrictamente prohibidos:
+
+  * **Alteraciones de forma o proporción**
+  
+    No se permite estirar, comprimir, distorsionar ni modificar la relación de aspecto del logotipo bajo ninguna circunstancia. El logotipo debe mantenerse en su proporción original (1:1.2 entre ícono y texto) en todas las escalas.
+
+  * **Modificaciones cromáticas no autorizadas**
+
+    Está prohibido modificar los colores institucionales definidos (verde primario, rojo tomate, blanco o negro según fondo). No se deben aplicar degradados arbitrarios, filtros de color, transparencias o esquemas no contemplados en la guía oficial.
+
+  * **Adición de efectos visuales**
+
+    No se permite el uso de sombras paralelas, biseles, relieves, brillos, contornos ni texturas que alteren la apariencia original del logotipo. Estos efectos comprometen la claridad del diseño y afectan la percepción profesional de la marca.
+
+  * **Aplicación sobre fondos inadecuados**
+
+    El logotipo no debe colocarse sobre fondos de bajo contraste, imágenes complejas, patrones ruidosos o superficies que dificulten su visibilidad.
+
+    En tales casos, se debe utilizar la versión blanca o negra del logotipo, según el contraste necesario, o añadir una caja de color de fondo que garantice su legibilidad.
+
+  * **Manipulación del contenido del logotipo**
+
+    Está prohibido rotar, inclinar, recortar, animar parcialmente o reemplazar elementos del logotipo, ya sea el ícono, la tipografía o ambos. No deben integrarse frases, eslóganes ni elementos externos dentro del área de seguridad definida.
+
+    ###### Figura 44
+
+    *Presentación de los usos incorrects del logotipo de Macetech*
+
+    <img src="/assets/img/capitulo-5/style-guidelines/logo/logo-incorrect-uses.png" alt="Macetech's Logo Incorrect Uses" width="1000" height="580"> 
+
+* **Formatos de Archivo del Logotipo**
+
+  Para asegurar su correcta implementación en distintos medios y soportes, el logotipo de Macetech se distribuye en formatos optimizados según el tipo de uso. A continuación se especifican los formatos oficiales autorizados:
+
+  * **Formatos vectoriales (uso escalable y profesional)**
+    
+    * **.SVG (Scalable Vector Graphics):** Uso recomendado para entornos digitales responsivos como sitios web, aplicaciones móviles o interfaces UI. Ofrece alta escalabilidad sin pérdida de calidad. Es de peso liviano y es editable por código (Budarina, 2023).
+
+  * **Formatos rasterizados (uso fijo en pantalla o documentos)**
+  
+    * **.PNG (Portable Network Graphics):** Formato ideal para presentaciones, interfaces digitales o recursos web. Ofrece un fondo transparente, buena resolución, y tiene un peso moderado (Budarina, 2023).
+
+    * **.PDF (Portable Document Format):** Recomendado para documentación oficial, entregables corporativos, presentaciones o reportes. Es un formato universal con alta fidelidad de reproducción. Proveé una alta integridad gráfica en todos los dispositivos (Budarina, 2023).
+
+  * **Consideraciones generales**
+  
+    * No se debe reconstruir manualmente el logotipo ni exportarlo desde capturas de pantalla o plataformas de terceros.
+
+    * Todos los formatos deben obtenerse exclusivamente desde el repositorio oficial de identidad visual de Macetech.
+  
+    * Para asegurar la correcta aplicación, se recomienda validar la resolución, contraste y proporción del logotipo en el medio destino antes de su publicación.
+
+#### 5.1.1.6 Iconografía
+
+La iconografía de Macetech es fundamental para transmitir estados, acciones y atributos de forma visual, clara y accesible a todos nuestros usuarios sin excepción. No solo deben ser visualmente atrayentes, sino también rápidamente identificables, intuitivos y correctamente distribuidos. La consistencia en el uso de íconos refuerza la identidad visual de la aplicación y mejora la experiencia del usuario en plataformas Web, iOS y Android (Zeldman, 2024).
+
+**Principios Generales de Iconografía**
+
+| Principio	| Descripción |
+|-----------|-------------|
+| Claridad	| Cada ícono debe transmitir un único concepto reconocible al primer vistazo, evitando cualquier ambigüedad semántica. Para ello, se recomienda emplear metáforas visuales universales y contrastar la silueta con el fondo siguiendo un espaciado mínimo de 1 px alrededor de la forma principal, de modo que la figura no se confunda con elementos vecinos <br><br> Además, los pictogramas deben diseñarse a partir de formas geométricas básicas (círculos, rectángulos, triángulos), simplificando trazos innecesarios para maximizar su legibilidad en tamaños reducidos |
+| Consistencia |El sistema de íconos debe compartir un conjunto homogéneo de parámetros: grosor de trazo constante (2 px en viewport estándar), terminaciones (cap ends) uniformes, ángulos de esquinas (Esquinas redondeadas de radio entre 2 y 4 px) y paleta de rellenos o contornos predefinida <br><br> Este enfoque garantiza que, aunque cada ícono represente conceptos distintos, la familia remita a una misma identidad visual y facilite la percepción de agrupamiento dentro de la interfaz |
+| Escalabilidad	| Los íconos deben mantener integridad visual desde 16 px hasta 64 px sin pérdida de detalle ni “ruido” gráfico. Para ello, se emplea diseño vectorial (SVG) con hinting en píxel grid cuando sea necesario, ajustando vértices a límites de 1 px para preservar la nitidez en pantallas de baja densidad <br><br>. Además, se definen versiones intermedias (ej. 24 px, 32 px, 48 px) en las que, de ser preciso, se eliminan detalles menores y se refuerzan los trazos principales para optimizar la legibilidad en dispositivos pequeños |
+| Accesibilidad	| Nunca utilizar un ícono como único recurso informativo ante usuarios con discapacidades visuales; siempre acompañarlo de texto alternativo (atributo aria-label) y/o tooltip descriptivo. <br><br> Se garantiza contraste suficiente entre el ícono y su fondo (ratio mínimo 3:1 para componentes no críticos y 4.5:1 para textos e íconos interactivos) <br><br>  Para usuarios de lector de pantalla, cada ícono debe incluir un role="img" y un aria-hidden="false" junto con su etiqueta textual (World Wide Web Consortium, 2025). |
+
+**Detalles de implementación**
+
+Los siguientes detalles siempre deben ser aplicados antes de agregar un ícono en el programa por parte del diseño de experiencia de usuario e interfaz de usuario:
+
+* **Formato:**
+
+    **SVG:** Se recomienda el uso de SVG como formato principal para todos los íconos, exportados sin metadatos innecesarios y optimizados con herramientas como SVGO (v2+) para minimizar peso de archivo.
+
+    **Web Components:** Incluir los íconos como componentes reutilizables que expongan propiedades de tamaño (width, height) y color (fill, stroke) para facilitar tokens de tema.
+
+* **Naming y Organización:**
+
+    Seguir la convención icono-concepto-estado (por ejemplo, icono-humedad-activo, icono-agua-desactivado), agrupando los SVG en carpetas semánticas por dominio funcional (sensores, acciones, estados) 
+
+    Mantener un archivo maestro (sprite o símbolo SVG) que permita cargar solo los íconos necesarios y simplifique la gestión de versiones 
+
+* **Safe Area y Padding:**
+
+    Definir una “zona segura” interna de 1–2 px (según tamaño) alrededor de cada ícono para evitar clipping en diferentes motores de renderizado (browsers, apps móviles) 
+
+    Alinear siempre el centro geométrico del trazo principal con el centro del canvas (viewBox) para asegurar transiciones y animaciones fluidas.
+
+**Estilo de Íconos**
+El sistema de iconografía de Macetech adopta un enfoque visual coherente y funcional, fundamentado en principios de diseño minimalista, jerarquía cromática y semiótica contextual. A continuación se describen los elementos fundamentales que definen su estilo gráfico:
+
+* **Estilo Gráfico**
+
+  * **Trazado:**
+  
+      Se emplea un estilo lineal (outline) con trazos de grosor uniforme (2 px), lo que facilita la escalabilidad y la consistencia visual en todos los tamaños.
+      <br>
+      Los extremos de línea (stroke caps) deben ser redondeados para transmitir una estética amigable, alineada con los valores de sostenibilidad y bienestar de la marca.
+      <br>
+      Las uniones (stroke-linejoin) también deben ser redondeadas para evitar vértices agresivos.
+
+  * **Simplicidad formal:**
+
+      Las figuras deben construirse a partir de formas geométricas básicas y evitar ornamentos o detalles superfluos. Se prioriza la silueta reconocible y la armonía visual con otros elementos de interfaz.
+
+* **Uso de Relleno**
+
+  * **Relleno contextual (semifilled icons):**
+
+    En casos específicos de señalización o alertas, se permite el uso de relleno plano parcial o total para aumentar la notoriedad del ícono y reforzar su carga semántica. Ejemplos incluyen:
+
+      * Íconos de advertencia o estados críticos (por ejemplo, alerta, advertencia de riego) con relleno rojo si es una alerta grave o amarillo si es moderado. Recuerde utilizar los colores asignados según la guía de colores.
+
+      * Indicadores de condición (necesita agua, exceso de luz) con uso combinado de contorno y relleno según el nivel de urgencia.
+
+    El relleno debe seguir el mismo esquema de color institucional y estar limitado a un máximo del 60% del área del ícono, para mantener la legibilidad del contorno principal.
+
+* **Paleta Cromática** 
+
+  El color cumple una función semántica y jerárquica, guiando al usuario en la interpretación rápida del estado o función del ícono. La paleta ha sido seleccionada con base en criterios de contraste, accesibilidad (WCAG AA mínimo) y coherencia con la identidad visual de Macetech:
+
+  ###### Tabla 30 y algo
+  *Descripción de usos de colores para los íconos de Macetech en modo light*
+
+  | Métrica	| Nombre | Hex | Uso	| Justificación técnica |
+  |---------|--------|-----|------|----------------------|
+  | Humedad	y Temperatura Fría | Azul Mar |	#3498DB	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Sigue una base de paleta categórica: azul es convencional para humedad, alto contraste con fondo y consistente con dashboards de las métricas IoT |
+  | Luz	y Alerta Moderada | Mostaza |	#F1C40F	|	Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas en un nivel moderada | El amarillo brillante remite al sol, además de ser legible sobre gris oscuro y blanco |
+  | Temperatura Media	| Brasas |	#E67E22	| Utilizado para mostrar el rango medio de temperatura | Naranja medio comunica calor moderado, siendo una diferenciación clara entre rangos |
+  | Temperatura Alta y Alerta Alta | Tomate | #E74C3C | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto	| Rojo intenso para alertas de calor, puesto que es una semántica cultural de peligro. Asimismo, tiene un contraste AAA con colores blancos |
+  | pH	| Tallo |	#2ECC71	| Utilizado como medidor de acidez/alcalinidad (pH)	| Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.
+  | Salinidad |	Neblina |	#1ABC9C	| Utilizado como medidor de salinidad | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores. |
+
+  ###### Tabla 30 y algo
+  *Descripción de usos de colores para los íconos de Macetech en modo Dark*
+
+  | Métrica	| Nombre | Hex | Uso | Justificación |
+  |---------|-----------|----------------|-----------|-----|------------------|---------------|
+  | Humedad y Temperatura Fría | Azul Lago |	#2980B9	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
+  | Luz y Alerta Moderada | Mostaza |	#F39C12	| Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas en un nivel moderada | Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro | 
+  | Temperatura Media | Zanahoria |	#D35400	| Utilizado para mostrar el rango medio de temperatura | Se utiliza un naranja oscuro que sigue diferenciando niveles de temperatura. Tiene un contraste AA/AAA con texto blanco y fondos oscuros |
+  | Temperatura Alta y Alerta Alta | Tomate | #C0392B | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto | El uso de un rojo menos brillante suaviza el impacto, sin perder señal de alerta. Presenta un buen contraste AAA |
+  | pH | #27AE60 | Llanura |Utilizado como medidor de acidez/alcalinidad (pH) | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco |
+  | Salinidad | #16A085 | Turquesa | Medidor de salinidad | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro |
+
+Todos los colores deben cumplir un ratio de contraste mínimo de 4.5:1 sobre fondo blanco o claro para garantizar su legibilidad y accesibilidad (World Wide Web Consortium, 2025).
+
+No se deben utilizar gradientes ni sombras en los íconos para mantener la claridad visual y facilitar la integración en sistemas oscuros o de alto contraste. Los íconos deben mantenerse monocromáticos por defecto, aplicando color mediante propiedades de estilo (stroke, fill) en CSS o mediante tokens de diseño.
+
+De ser necesario, en estados de desactivación o elementos inactivos, se recomienda aplicar una opacidad del 40% al ícono y su color de base.
+
+**Íconos Utilizados en el Dashboard**
+
+La iconografía implementada en el dashboard de Macetech cumple una función clave en la comunicación visual de estados, acciones e interacciones del sistema. Cada ícono ha sido seleccionado y diseñado para maximizar la legibilidad, semántica intuitiva, y coherencia funcional con el ecosistema visual de la plataforma.
+
+A continuación se detalla el conjunto base de íconos con su función específica, estilo requerido y consideraciones de implementación. Primero se mostraran emojis de ejemplo y después se mostrara la hoja con todos los íconos respectivos:
+
+###### Tabla 30 y algo
+
+*Listado de íconos de estado de planta y sensores ambientales utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji*
+
+| Emoji de ejemplo | Uso | Descripción Técnica |
+|------------------|-----|---------------------|
+| 🍃 Hoja |	Indicador general del estado de la planta	| Representación abstracta de la hoja de una planta con bordes suaves. Es grande y abierta. Sirve como ícono de estado de salud de las plantas o resumen del estado vegetal |
+| 🌡️ Termómetro | Temperatura ambiente o del sustrato | Ícono de termómetro lineal con escala. Se vincula a una métrica numérica y una barra de color que refleja la temperatura |
+| 💧 (dos gotas) |	Humedad del sustrato | Conjunto de dos gotas en disposición cercana para indicar nivel de humedad. Estilo lineal, acompañado por barra de progreso y etiqueta textual | 
+| 🌞 Sol | Nivel de exposición lumínica	| Sol minimalista de 10 rayos, indica el nivel de luz percibido por el sensor. Se acompaña de lectura numérica e indicador visual |
+| 🧪 Ácido (pH) | Nivel de acidez del sustrato | Representación de tubo de ensayo o símbolo de pH. Refleja el nivel ácido-básico, visualizado en escala de color |
+| 🧂 Salinidad | Nivel de sales en el suelo	| Ícono representando un cristal o salero simplificado. Asociado a valores de conductividad eléctrica | 
+| ♻️ Proceso activo | Activación de procesos automáticos (como el riego) | Ícono de carga circular o animación de progreso. Se muestra durante la ejecución de tareas automáticas del sistema IoT | 
+
+###### Tabla 30 y algo
+
+*Listado de íconos de alerta utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji*
+
+| Emoji de ejemplo|	Nivel de Alerta	| Descripción Técnica |
+|-----------------|-----------------|---------------------|
+| 🔴 ❗ (Círculo rojo con exclamación)	| Crítica	| Se utiliza cuando múltiples variables de la planta están fuera de los rangos óptimos. Prioriza acción inmediata del usuario |
+| 🟡 ❗ (Círculo amarillo con exclamación) |	Media	| Indica una sola condición anómala o en advertencia. Permite intervención preventiva | 
+
+###### Tabla 30 y algo
+
+*Listado de íconos de interacción y navegación utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji*
+
+| Emoji de ejemplo | Uso	| Descripción Técnica | 
+|------------------|------|---------------------|
+| ➕	| Añadir elemento	| Ícono de suma con trazo lineal. Se utiliza en botones para agregar macetas, sensores o programar tareas de riego |
+| 🔔	| Notificaciones	| Campana estilizada, sin relleno. Puede presentar un badge rojo cuando hay alertas pendientes con el número de alertas | 
+| 👤	| Perfil de usuario	| Ícono de busto humano genérico, se emplea para acceder a opciones de cuenta y configuración personal | 
+| 🪴	| Gestión de macetas | Ícono de maceta cilíndrica, representa el acceso a la vista general de todas las plantas o unidades registradas | 
+| 👑	| Membresía | Corona minimalista de tres puntas. Utilizada para representar planes avanzados del sistema |
+| ⬅️➡️	| Movimiento | Flechas dobles horizontales o verticales para representar acciones de navegación o desplazamiento entre vistas |
+
+###### Figura 30?
+
+*Listado de íconos utilizados en las plataformas de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/icons/macetech-icons.png" alt="Macetech's Icon List" width="1000" height="580"> 
+
+**Adaptaciones a distintos dispositivos**
+
+La iconografía debe adaptarse cuidadosamente a las convenciones de diseño, comportamientos esperados y características técnicas de cada plataforma objetivo. Esto garantiza una experiencia de usuario coherente, accesible y optimizada tanto en entornos móviles como web.
+
+* **Plataforma Móvil (Android / iOS):**
+
+    * **Estándares de diseño por sistema operativo:**
+
+      * **Android:** Se recomienda utilizar la familia de íconos Material Symbols, siguiendo las guías de Material Design 3 (Google, 2025).
+
+      * **iOS:** Para interfaces desarrolladas en entornos Apple, emplear íconos del sistema SF Symbols (versión 4 o superior), respetando las pautas de uso definidas por Human Interface Guidelines (Apple Inc., 2025).
+
+    * **Compatibilidad con modo oscuro:** 
+
+      Los íconos deben ser vectoriales y adaptarse automáticamente al modo claro u oscuro, empleando tonos neutros o variantes automáticas (dynamic system colors) en cada sistema. Recordar los colores dark mode revisados en el apartado de colores del Style Guidelines.
+
+    * **Tamaños sugeridos:**
+
+      * **Navegación y barra de herramientas:** 24 px
+
+      * **Íconos destacados o interactivos principales:** 32 px
+
+    * **Ubicación y jerarquía:**
+
+      Acciones primarias (como "Añadir Maceta") deben implementarse como Floating Action Button (FAB), centradas en la parte inferior de la pantalla según patrón de diseño de la plataforma. Se debe asegurar un mínimo de 48×48 dp como área táctil efectiva por ícono interactivo, incluso si el ícono visual mide menos.
+
+* **Plataforma Web:**
+
+    * **Estándares y recursos recomendados:**
+
+        Utilizar íconos vectoriales en formato SVG, optimizados para escalabilidad, contraste y compatibilidad con navegadores modernos. Se debe emplear la biblioteca Angular Material para todo tipo de diseño (Google, 2025).
+        
+    * **Tamaños sugeridos:**
+
+      * **Menús de navegación lateral o superior:** 24 px
+
+      * **Paneles principales, tarjetas de contenido o widgets:** 32 px
+
+    * **Tooltips y accesibilidad:**
+
+      Todo ícono interactivo debe mostrar un tooltip contextual al pasar el cursor (hover). Implementar atributos aria-label para garantizar el cumplimiento de pautas WCAG 2.1 y facilitar el acceso mediante lectores de pantalla (World Wide Web Consortium, 2025)
+
+    * **Modo oscuro:**
+
+      Integrar íconos SVG con color dinámico mediante clases de CSS (currentColor) para que se ajusten automáticamente al tema del sistema o preferencia del usuario.
+
+**Buenas Prácticas de Iconografía**
+
+Para garantizar una comunicación visual efectiva, accesible y coherente, es fundamental seguir principios de diseño centrados en la usabilidad, la legibilidad y la consistencia contextual. A continuación se detallan las buenas prácticas para el uso de iconografía en el ecosistema de Macetech:
+
+* **Prácticas no recomendadas:**
+
+  * Evitar el uso de íconos puramente decorativos que no aportan valor semántico o funcional. Estos elementos pueden generar ruido visual, distraer al usuario o aumentar la carga cognitiva innecesariamente.
+
+  * No utilizar íconos genéricos o ambiguos para estados críticos o alertas, como simples signos de exclamación sin contexto visual o semántico. Esto dificulta la interpretación inmediata y puede afectar la respuesta del usuario ante eventos importantes.
+
+* **Prácticas recomendadas:**
+
+  * Acompañar siempre los íconos con etiquetas textuales, especialmente en botones, indicadores de métricas, tarjetas o elementos interactivos. Esto mejora la accesibilidad, apoya la comprensión inmediata del usuario y facilita la navegación, especialmente para usuarios con discapacidades visuales o cognitivas.
+
+  * Personalizar íconos representativos del sistema, como los de humedad, luz o salud vegetal. Su diseño debe reflejar visualmente su funcionalidad específica, manteniendo una identidad visual coherente con la marca. Esto contribuye a generar familiaridad y una curva de aprendizaje más corta.
+
+  * Diseñar íconos con intención semántica, es decir, cada ícono debe representar con claridad la acción, estado o entidad asociada. Evitar simbolismos abstractos o culturalmente ambiguos.
+
+  * Mantener la coherencia visual en cuanto al estilo (lineal, grosor uniforme), proporciones y alineación con los elementos de la interfaz.
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
