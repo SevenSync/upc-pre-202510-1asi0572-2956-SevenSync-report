@@ -345,8 +345,10 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
   1. Nombre:
   2. Edad:
   3. Ubicación actual con provincia y distrito:
-  4. Ocupación:
-  5. Nivel de experiencia con plantas: [Principante, Intermedio, Avanzado]
+  4. Estado Civil:
+  5. Ocupación:
+  6. Dispositivo más usado
+  7. Navegador más usado
 
 - **Segmento 1: Personas apasionadas por las plantas**
 
@@ -362,21 +364,25 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
   - Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
 
-    4. ¿Qué haces exactamente durante ese tiempo?
+    1. ¿Qué haces exactamente durante ese tiempo?
 
-    5. ¿Hay momentos del día o del año donde cuidas más de ellas?
+    2. ¿Hay momentos del día o del año donde cuidas más de ellas?
 
   - Desafíos actuales y soluciones empleadas
 
-    6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
+    1. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
 
-    7. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
+    2. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
+
+    3. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
+
+    4. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
 
   - Actitud frente a la tecnología (antes de presentar el producto)
 
-    8. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
+    1. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
 
-    9. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
+    2. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
 
   - Reacción tras presentar el concepto de Macetech
 
@@ -407,12 +413,15 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
     2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
 
     3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
+    4. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
 
   - Problemas y recursos actuales
 
-    4. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+  1. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-    5. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
+  2. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+
+  3. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
 
   - Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
 
@@ -461,6 +470,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Villa María del Triunfo
   - **Ocupación:** Carpintera
+  - **Dispositivo más usado**: Laptop doméstica
+  - **Navegador más usado**: Microsoft Edge
     <br><br>
   - **Tiempo de Entrevista:** 8 minutos con 35 segundos
   - **Inicio de Entrevista:** 0:00
@@ -477,55 +488,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
   - **Resumen De Entrevista**
 
-    La entrevistada, sin experiencia formal en jardinería ni ocupación directa relacionada con plantas, manifestó un vínculo emocional profundo con sus macetas, especialmente aquellas con valor decorativo o productivo. Su interés en el cuidado de plantas comenzó hace 19 años, como una forma de relajación y conexión personal, lo que la ha llevado a establecer una rutina diaria de observación y cuidado sin ningún tipo de especialización técnica. Su nivel de experiencia es empírico, basado en observación constante y métodos caseros como el uso de ajo diluido en agua para tratar enfermedades.
+    ### 🎯 Goals (Objetivos)
 
-    Cuida diversas plantas, con preferencia por aquellas que producen frutos, aunque actualmente cultiva mayormente especies decorativas por su simplicidad. Identifica como principales retos la aparición de plagas y enfermedades, lo cual le genera preocupación y tristeza cuando no puede resolverlo. No utiliza herramientas digitales ni dispositivos tecnológicos, sino remedios caseros, y confía en su intuición para interpretar el estado de sus plantas.
+    - Conservar sus plantas saludables y floreciendo.
+    - Encontrar una forma de cuidar mejor las plantas sin depender únicamente de la intuición.
+    - Tener herramientas que le ayuden a prevenir enfermedades y estrés vegetal.
 
-    La propuesta de Macetech le resulta “tranquilizante” y atractiva. Imagina la maceta inteligente como una solución útil que le permitiría conocer el estado de sus plantas (humedad, nutrientes, pH) y actuar en consecuencia sin depender únicamente de su experiencia empírica. Considera que esta tecnología sería un lujo, pero también una inversión justificada, especialmente si le permite cultivar plantas con frutos de manera más eficiente. Preferiría revisar los datos en una laptop del hogar, sin necesidad de integrar el sistema a su rutina laboral o móvil. Le parece ideal tener una interfaz integrada en la casa que le permita ver el estado de todas sus plantas sin esfuerzo adicional.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Me gusta cuidar mis plantas todos los días, pero a veces no sé si estoy haciendo lo correcto.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      No emplea dispositivos tecnológicos para el cuidado de sus plantas. En vez de eso utiliza métodos caseros, como el ajo diluido, para tratar plagas y enfermedades. No conoce sobre herramientas externas y modernas relacionadas a riego, fertilizante o exterminio de plagas.
+    Su interés por el cuidado de las plantas comenzó hace 19 años como una forma de relajación. Tiene una conexión emocional fuerte con sus macetas y cultiva por gusto, no por profesión. No utiliza tecnología, solo observación y métodos caseros. Valora soluciones sencillas que complementen su intuición sin necesidad de depender de apps móviles.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      - Utiliza laptop doméstica de marca
+    - Sentirse conectada con la naturaleza.
+    - Ver sus plantas florecer y producir frutos.
+    - Prevenir enfermedades sin tener que investigar demasiado.
 
-      Prefiere usar laptop doméstica; no requiere conexión con smartphone.
+    ### 😣 Frustrations
 
-    - Canales de interacción deseados:
+    - No saber con certeza si sus plantas están bien cuidadas.
+    - Frustración ante plagas y enfermedades que no sabe tratar.
+    - No contar con herramientas simples y confiables para orientarse.
 
-      Dashboard web doméstico. No necesita acceso móvil frecuente. Que muestre la salud general de la planta, humedad del suelo, nutrientes, signos de enfermedad o estrés vegetal.
+    ### 💻 Tecnología
 
-      Guía digital incorporada (explicaciones contextualizadas de alertas, p. ej., cómo corregir pH).
-
-    - Expectativas tecnológicas:
-
-      Interfaz sencilla en laptop; monitoreo pasivo diario; automatización útil, pero no prioriza conectividad móvil ni funciones complejas.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Cuidado emocional y afectivo hacia las plantas; satisfacción personal por verlas crecer y florecer.
-
-    - Diseño y estética:
-
-      No especificado, pero acepta un volumen mayor en la maceta si eso implica mayor funcionalidad.
-
-    - Percepción de valor:
-
-      Considera que la maceta es una mezcla de lujo e inversión; más inclinada a valorarla por su impacto emocional que por su rentabilidad.
-
-    - Influencia de marcas:
-
-      Se enfoca en el bienestar de sus plantas más que en la marca del producto.
-
-    - Personalidad:
-
-      Cuidadora emocional; conectada espiritualmente con sus plantas; busca simplicidad, apoyo tecnológico sin dependencia digital y soluciones accesibles.
+    - Usa laptop doméstica.
+    - Prefiere una interfaz sencilla que funcione desde su casa.
 
 ---
 
@@ -538,6 +530,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Cajamarca
   - **Distrito:** Cajamarca
   - **Ocupación:** Ama de casa
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Google Chrome
     <br><br>
   - **Tiempo de Entrevista:** 6 minutos con 22 segundos
   - **Inicio de Entrevista:** 8:36
@@ -554,53 +548,37 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
   - **Resumen De Entrevista**
 
-    La entrevistada es una aficionada de larga data al cuidado de plantas ornamentales, actividad que practica desde su infancia, pero no desde un punto profesional, sino más como una aficionada. Se muestra apasionada por el aspecto estético (“disfruto de que una planta se haga bonita a la vista”) y al mismo tiempo preocupada por desafíos prácticos, especialmente el control de plagas y el riego (“a veces olvido regarla o la riego demasiado y se pueden pudrir o ahogar”).
+    ### 🎯 Goals (Objetivos)
 
-    Actualmente no utiliza ningún dispositivo tecnológico para el riego o supervisión, pero valora positivamente la idea de una maceta inteligente que automatice estas tareas. Espera que el sistema le avise precisamente cuándo y cuánta agua necesita cada planta, así como recomendaciones de abonado adecuadas a cada especie. En cuanto al diseño, desea que la maceta combine con la decoración de su hogar, tal como una pieza de cerámica moderna, y que los cables, en caso de haberlos, queden discretos (“no quisiera que tenga un aspecto desagradable”).
+    - Ver sus plantas estéticamente agradables y saludables.
+    - Recibir recordatorios claros sobre cuándo y cómo regar o mover sus plantas.
+    - Evitar el deterioro de las plantas por errores de riego o falta de conocimiento técnico.
 
-    Respecto al uso de una aplicación móvil o web, la participante solicita una interfaz muy sencilla, con recordatorios automáticos al teléfono (“alertas que me indiquen ‘tu planta necesita agua’ o que mueva la maceta a la sombra”). Sugiere además retroalimentación por voz o sonido para no depender únicamente de la app, y la inclusión de una guía digital que explique, por ejemplo, cómo corregir un pH bajo sin recurrir a múltiples recursos externos.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “A veces olvido regarla o la riego demasiado y se pueden pudrir o ahogar.”
 
-    - Tecnología actual: No utiliza ninguna tecnología avanzada o métodos caseros para el cuidado.
+    ### 🧠 Background
 
-    - Dispositivos:
+    Desde la infancia ha cultivado plantas ornamentales por gusto personal, sin formación profesional. No utiliza dispositivos tecnológicos actualmente, pero está interesada en soluciones que la ayuden a evitar errores comunes como el exceso de agua o el olvido del riego. Aprecia tanto la funcionalidad como la estética en los productos que incorpora a su hogar.
 
-      Smartphone (sin preferencia de sistema operativo), accediendo a través de un navegador estándar.
+    ### 💡 Motivations
 
-    - Canales de interacción deseados:
+    - Tranquilidad al saber que sus plantas están bien cuidadas.
+    - Estética visual: le gusta que sus plantas embellezcan el espacio.
+    - Automatizar sin perder control: recibir indicaciones claras sin necesidad de investigar por su cuenta.
 
-      Aplicación móvil con notificaciones push (“avísame cuándo regar” o “mueve la maceta a la sombra”).
+    ### 😣 Frustrations
 
-      Guía digital incorporada (explicaciones contextualizadas de alertas, p. ej., cómo corregir pH).
+    - Plagas difíciles de manejar.
+    - Riegos incorrectos por falta de precisión.
+    - Sistemas poco estéticos o con muchos cables visibles.
+    - Plataformas o aplicaciones complicadas para personas adultas.
 
-      Retroalimentación por voz o sonido para no depender exclusivamente de la app.
+    ### 💻 Tecnología
 
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva, mínima curva de aprendizaje para adultos de todas las edades, y alertas claras tanto visuales como auditivas.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Disfruta de ver sus plantas “bonitas a la vista” y busca tranquilidad frente a plagas y errores de riego (“pueden pudrirse o ahogarse”).
-
-    - Diseño y estética:
-
-      Prefiere que la maceta tenga un estilo cerámico moderno, sin cables visibles que desentonen con su sala, balcón o hall.
-
-    - Percepción de valor:
-
-      Considera la maceta inteligente una inversión a largo plazo si el precio es razonable, aunque teme que un costo elevado la convierta en un lujo.
-
-    - Influencia de marcas:
-
-      No menciona marcas específicas, pero su criterio se basa en la simplicidad y durabilidad.
-
-    - Personalidad:
-
-      Se percibe una personalidad pragmática y detallista, enfocada en soluciones que faciliten el mantenimiento sin sacrificar lo estético. Prefiere dispositivos móviles y navegadores web sencillos, sin plataformas avanzadas, siempre que sean intuitivos para cualquier edad.
+    - Usa smartphone como principal dispositivo.
+    - No utiliza tecnología actualmente para plantas.
 
 ---
 
@@ -613,6 +591,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Lince
   - **Ocupación:** Estudiante universitario
+  - **Dispositivo más usado**: Laptop
+  - **Navegador más usado**: Opera GX
     <br><br>
   - **Tiempo de entrevista:** 8 minutos con 28 segundos
   - **Inicio de entrevista:** 14:58
@@ -628,55 +608,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista** <br>
 
-    El entrevistado es un apasionado del cuidado de plantas desde que tenía 10 años, con más de una década de práctica no profesional pero aficionada. Se inclina por especies ornamentales y tropicales, como orquídeas (catleyas), palmeras y orejas de elefantes, y encuentra en la jardinería un vínculo emocional con la naturaleza, apreciando su belleza y la sensación de energía que transmiten los seres vivos. Al mismo tiempo, reconoce como principal desafío la diversidad de requerimientos de riego y cuidado: cada planta exige una dosificación exacta de agua y nutrientes, y un manejo inadecuado puede “machucarlas” y comprometer su crecimiento.
+    ### 🎯 Goals (Objetivos)
 
-    Aunque actualmente no emplea dispositivos automatizados, ha explorado aplicaciones de identificación de plantas mediante fotografía, pero sin herramientas que asistan el riego o la supervisión de condiciones. Valora la idea de una maceta inteligente capaz de medir humedad, luz y temperatura, y que ofrezca control centralizado al momento de la siembra. Espera que el sistema le indique cuándo mover la planta de lugar o ajustar el riego, y que canalice esos datos a través de una aplicación móvil y web sencilla de operar, con notificaciones remotas al teléfono (“poder gestionarlo desde cualquier sitio”).
+    - Mantener cada planta con su riego y cuidado óptimos según su especie.
+    - Obtener recomendaciones para mover o ajustar condiciones según el clima o ambiente.
+    - Integrar sus plantas en un hogar inteligente sin comprometer el diseño.
 
-    En cuanto a integración en el hogar, visualiza la maceta inteligente como un componente más de una “casa moderna e inteligente”, capaz de sincronizarse con otros dispositivos de domótica (por ejemplo, Alexa) y de encajar en un entorno minimalista. Para mejorar la experiencia, recomienda que el diseño sea discreto y elegante, sin sobresalir en la decoración; que los cables queden ocultos; y que, además de alertas visuales, incorpore recordatorios sonoros o por voz. Considera la inversión rentable a largo plazo para quien cultiva varias plantas, aunque advierte que un precio elevado podría convertirla en un artículo de lujo.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Si no sabes la dosis justa de agua o nutrientes, puedes machucar a la planta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Ninguna (solo apps de identificación visual).
+    Desde los 10 años, Andres ha cuidado plantas ornamentales y tropicales como orquídeas, palmeras y orejas de elefante. Aunque no tiene formación profesional, su experiencia se basa en observación y ensayo-error. Actualmente no utiliza tecnologías automatizadas, pero ha probado apps de identificación visual. Ve la jardinería como un vínculo emocional y estético con la naturaleza.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Smartphone con navegador estándar; acceso deseado a aplicación móvil y web.
+    - Sensación de energía y paz al convivir con seres vivos.
+    - Cuidado detallado y preciso según necesidades de cada planta.
+    - Integración tecnológica que simplifique su rutina diaria.
 
-    - Canales de interacción:
+    ### 😣 Frustrations
 
-      Notificaciones push al celular (“alerta de riego” o “mover planta”).
+    - Diversidad de requerimientos según especie dificulta el manejo uniforme.
+    - No contar con datos claros que indiquen cuándo regar o mover una planta.
+    - Falta de herramientas que se sincronicen con su estilo de vida conectado.
 
-      Plataforma web para supervisión remota.
+    ### 💻 Tecnología
 
-      Integración con asistentes de hogar inteligente (por ejemplo, Alexa).
-
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva, baja curva de aprendizaje, accesible para distintos perfiles de edad.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Conexión emocional con la naturaleza; disfrute estético y sensorial.
-
-    - Diseño y estética:
-
-      Preferencia por minimalismo, ocultar cables y coherencia con decoración moderna.
-
-    - Percepción de valor:
-
-      Considera un gasto justificado como inversión a largo plazo, aunque precio excesivo implica sensación de lujo.
-
-    - Influencia de marcas:
-
-      No menciona marcas específicas; valor en la simplicidad y eficacia.
-
-    - Personalidad:
-
-      Emprendedor experimental, orientado a soluciones prácticas, con mentalidad de integrar domótica y automatización en su vida diaria.
+    - Usa Laptop y computadora de escritorio.
+    - Desea recibir notificaciones de riego, luz o temperatura vía móvil y web.
 
 ---
 
@@ -691,6 +652,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Chorrillos
   - **Ocupación¨:** Jardinero independiente
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de entrevista:** 8 minutos exactos
   - **Inicio de entrevista:** 23:27
@@ -706,59 +669,35 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista** <br>
 
-    El entrevistado, Yasser Rentería Palacios, acumula cinco años de experiencia como jardinero independiente, gestionando entre 200 y 250 plantas ornamentales y aromáticas. Su nivel de expertise lo considera medio‑alto, basada en inspecciones diarias de riego (dos‑a‑tres veces por semana, ajustadas según clima) y fertilización orgánica quincenal. Identifica como principales retos las variaciones de temperatura y la aparición de nuevas plagas, las cuales actualmente detecta “a puro ojo” tras una observación constante.
+    ### 🎯 Goals (Objetivos)
 
-    Aunque ya emplea un sistema de riego por goteo y algunas herramientas de identificación de plagas, reconoce su carácter “básico y primitivo” y valora la propuesta de Macetech para automatizar riego, humedad y nutrientes. Espera un sistema capaz de monitorizar en tiempo real la salud del suelo y la planta, y de emitir alertas precisas cuando las condiciones requieran intervención. Reclama, además, recomendaciones de acción (“saber qué debo hacer en cada momento”) y la posibilidad de visualizar toda la información desde una plataforma web o móvil, lo que califica de “muy importante” para sus proyectos tanto en interiores como en exteriores.
+    - Monitorear en tiempo real la salud del suelo y las plantas.
+    - Automatizar el riego y reducir la intervención manual sin perder control.
+    - Visualizar el estado de todas sus plantas desde un dashboard profesional.
 
-    Visualiza la maceta inteligente como un complemento natural en su flujo de trabajo, integrándose con otros sistemas de domótica y alineándose con un entorno minimalista. Para su uso profesional, enfatiza la necesidad de confiabilidad, eficiencia en el ahorro de agua y durabilidad del dispositivo. Considera que la automatización híbrida—combinar control automático con supervisión manual—ofrece el equilibrio ideal entre su experiencia práctica y la innovación tecnológica.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Saber qué debo hacer en cada momento es tan importante como recibir la alerta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Riego por goteo; identificador de plagas básico.
+    Cuenta con cinco años de experiencia como jardinero independiente, manejando entre 200 y 250 plantas ornamentales y aromáticas. Utiliza riego por goteo y herramientas básicas para identificación de plagas. Su práctica se basa en observación constante y fertilización orgánica. Ve en la tecnología un aliado para optimizar y automatizar procesos sin perder control experto.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Smartphone con navegador estándar; acceso deseado a aplicación web y móvil.
+    - Garantizar el buen estado vegetal de un alto volumen de plantas.
+    - Ahorrar recursos y tiempo con tecnologías que se ajusten a su flujo profesional.
+    - Mantener la estética y el orden en cada proyecto (interior o exterior).
 
-    - Canales de interacción:
+    ### 😣 Frustrations
 
-      Dashboard web para supervisión remota.
+    - Falta de precisión frente a cambios climáticos y nuevas plagas.
+    - Limitaciones del riego por goteo sin retroalimentación en tiempo real.
+    - Sistemas poco confiables o que no permiten control dual (automático + manual).
 
-      Notificaciones push al celular con alertas de riego o estado de la planta.
+    ### 💻 Tecnología
 
-    - Variables críticas a monitorizar:
-
-      Humedad y salud del suelo.
-
-      Estado vegetal y uso eficiente del agua.
-
-    - Expectativas tecnológicas:
-
-      Plataforma híbrida que combine automatización continua con capacidad de control manual puntual.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Mantener la salud y estética de grandes volúmenes de plantas con mínima intervención manual.
-
-    - Diseño y estética:
-
-      Discreto y funcional, compatible con entornos profesionales y residenciales minimalistas.
-
-    - Percepción de valor:
-
-      Inversión justificada si el precio y la durabilidad aseguran ahorro de tiempo y recursos; confiere prioridad a la confiabilidad.
-
-    - Influencia de marcas:
-
-      Ninguna en particular; valora soluciones probadas y robustas.
-
-    - Personalidad:
-
-      Profesional metódico y observador, orientado a la eficiencia operativa y a la incorporación gradual de innovaciones en su práctica diaria.
+    - Usa móvil y latpop para acceso completo desde cualquier lugar.
 
 ---
 
@@ -771,6 +710,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** Lince
   - **Ocupación:** Jardinero independiente
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de Entrevista:** 10 minutos con 55 segundos
   - **Inicio de Entrevista:** 31:28
@@ -786,53 +727,35 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista**
 
-    Juan ejerce como jardinero profesional independiente desde los 22 años, colaborando además en proyectos de paisajismo para clientes residenciales y corporativos. Gestiona alrededor de 150–200 plantas, principalmente ornamentales, suculentas y jardines verticales. Su rutina de cuidado combina riego manual con sistemas de goteo en espacios amplios, fertilización programada mensualmente según cada especie y monitoreo visual del follaje, complementado en ocasiones con medidores básicos de humedad. Identifica como principales dificultades la imposibilidad de supervisar presencialmente todas las áreas de cultivo, las variaciones climáticas y la detección tardía de plagas, lo cual puede comprometer la salud vegetal.
+    ### 🎯 Goals (Objetivos)
 
-    Actualmente usa sensores de humedad de precisión limitada y recordatorios manuales para riego y abonado, y valora la organización que esta técnica le aporta. Sin embargo, siente que estos recursos “funcionan, pero de forma lenta y poco fiable”. Por ello, considera que Macetech, con su capacidad para medir en tiempo real variables críticas como humedad del suelo, pH y luminosidad, y enviar reportes inmediatos al celular, aportaría una ventaja competitiva: “sería increíble no tener que estar siempre allí y solo recibir alertas automáticas”.
+    - Monitorear en tiempo real la salud del suelo y las plantas.
+    - Automatizar el riego y reducir la intervención manual sin perder control.
+    - Visualizar el estado de todas sus plantas desde un dashboard profesional.
 
-    En su percepción, la maceta inteligente debe ofrecer un sistema híbrido que automatice riego, monitoreo y fertilización, pero conserve la posibilidad de intervención manual. Destaca que la humedad del suelo y el nivel de nutrientes son las variables más críticas a vigilar. Asimismo, valora una plataforma web o móvil confiable, con alertas en tiempo real que no fallen ni retrasen la información. Cree que esta herramienta no solo optimizaría su eficiencia operativa, sino que reforzaría su propuesta de servicio frente a la competencia.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “Saber qué debo hacer en cada momento es tan importante como recibir la alerta.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      Sistemas de riego por goteo; medidores de humedad básicos; recordatorios manuales.
+    Cuenta con cinco años de experiencia como jardinero independiente, manejando entre 200 y 250 plantas ornamentales y aromáticas. Utiliza riego por goteo y herramientas básicas para identificación de plagas. Su práctica se basa en observación constante y fertilización orgánica. Ve en la tecnología un aliado para optimizar y automatizar procesos sin perder control experto.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      Prefiere usar smartphone con navegador estándar; no utiliza equipos como laptops o computadoras al no considerarlas lo suficientemente portátiles para un ambiente de jardinería.
+    - Garantizar el buen estado vegetal de un alto volumen de plantas.
+    - Ahorrar recursos y tiempo con tecnologías que se ajusten a su flujo profesional.
+    - Mantener la estética y el orden en cada proyecto (interior o exterior).
 
-    - Canales de interacción deseados:
+    ### 😣 Frustrations
 
-      Reportes que informen sobre la humedad del suelo; nivel de nutrientes; pH; luminosidad.
+    - Falta de precisión frente a cambios climáticos y nuevas plagas.
+    - Limitaciones del riego por goteo sin retroalimentación en tiempo real.
+    - Sistemas poco confiables o que no permiten control dual (automático + manual).
 
-      Recordatorios push; posible dashboard web para supervisión remota.
+    ### 💻 Tecnología
 
-    - Expectativas tecnológicas:
-
-      Interfaz intuitiva; alertas confiables en tiempo real; equilibrio entre automatización y control manual.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Deseo de garantizar la salud y estética de grandes espacios verdes sin dependencia total de la presencia física.
-
-    - Diseño y estética:
-
-      Prefiere soluciones discretas que se integren con jardines residenciales y corporativos.
-
-    - Percepción de valor:
-
-      Considera la tecnología una inversión que elevaría su oferta de servicio, con una probabilidad de adopción de 4/5 si el precio y la usabilidad son adecuados.
-
-    - Influencia de marcas:
-
-      No alude a marcas específicas; prioriza la fiabilidad y durabilidad.
-
-    - Personalidad:
-
-      Profesional metódico, orientado a la eficiencia y a incorporar innovaciones que le permitan delegar tareas rutinarias sin sacrificar la calidad de su trabajo.
+    - Prefiere dispositivos móviles.
 
 ---
 
@@ -845,6 +768,8 @@ A continuación se presenta la documentación detallada de cada entrevista reali
   - **Departamento:** Lima
   - **Distrito:** San Juan de Miraflores
   - **Ocupación:** Ama de casa
+  - **Dispositivo más usado**: Smartphone
+  - **Navegador más usado**: Chrome
     <br><br>
   - **Tiempo de Entrevista:** 15 minutos con 6 segundos
   - **Inicio de Entrevista:** 42:24
@@ -860,55 +785,36 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
     **Resumen De Entrevista**
 
-    Betty Chumacero, jardinera que antes trabajaba de forma profesional, pero ahora utiliza la jardinería más como un hobby, cultiva plantas desde hace aproximadamente cinco años como pasatiempo y más de 20 años como profesional. Su interés nació al experimentar la satisfacción de “darles vida” y observa diariamente sus macetas, aplicando métodos caseros de abono (cáscaras de huevo molidas) y hablando con ellas para promover su crecimiento. Aunque disfruta del proceso manual de regar, nutrir y conversar con las plantas, reconoce que, pese a sus cuidados, muchas se marchitan repentinamente, atribuible a su falta de control preciso sobre factores como la plaga de gusanos o la dosificación de agua.
+    ### 🎯 Goals (Objetivos)
 
-    Prefiere cultivar plantas frutales y decorativas; ha experimentado con hortensias, enredaderas y, más recientemente, con lengua de suegra en la cochera de su casa. Identifica como principales retos la aparición recurrente de plagas (gusanos) y la variabilidad en la retención de agua, que la lleva a preguntarse si rie­ga demasiado o insuficientemente. No emplea tecnología alguna, sino su intuición y remedios de ajo o cascarillas de huevo, y confía en su observación diaria para detectar problemas.
+    - Evitar la pérdida repentina de plantas por riego o plagas no controladas.
+    - Liberar tiempo sin dejar de involucrarse en el cuidado emocional de las plantas.
+    - Supervisar el estado general de sus macetas desde un lugar fijo en casa.
 
-    La propuesta de Macetech, una maceta inteligente que mida variables como humedad, pH y nutrientes, y que automatice el riego, le resulta “una gran ayuda” para ahorrar tiempo y evitar la frustración de perder plantas. Aunque valora el proceso de regar manualmente como parte de su hobby, considera que delegar esta tarea liberaría tiempo para otras actividades. Imagina un sistema que riegue automáticamente según necesidad, pero que también le permita intervenir manualmente cuando lo desee, adaptándose a las particularidades de cada especie.
+    ### 💬 Quote
 
-    **Características objetivas:**
+    > “A veces se me mueren aunque las cuide… no sé si les di mucha agua o si fue una plaga.”
 
-    - Tecnología actual:
+    ### 🧠 Background
 
-      No emplea dispositivos avanzados; recurre exclusivamente a métodos caseros de abonado (cáscaras de huevo molidas) y al ajo diluido como remedio natural.
+    Betty cuidó plantas profesionalmente por más de 20 años y actualmente lo hace como hobby. No usa tecnología ni dispositivos móviles; emplea remedios caseros como ajo diluido o cáscaras de huevo. Disfruta del riego manual, pero está abierta a automatizarlo siempre que pueda seguir participando a voluntad. Su enfoque es observacional, paciente y emocionalmente conectado.
 
-    - Dispositivos:
+    ### 💡 Motivations
 
-      No utiliza smartphone ni aplicaciones móviles; preferiría un dispositivo fijo e integrado en el hogar, que le permita supervisar todas las macetas de forma centralizada.
+    - Experimentar satisfacción emocional al ver florecer sus plantas.
+    - Sentir que las cuida bien sin depender solo de la intuición.
+    - Delegar tareas técnicas para enfocarse en disfrutar la jardinería.
 
-    - Canales de interacción deseados:
+    ### 😣 Frustrations
 
-      Imagina un dashboard web doméstico sencillo, sin necesidad de notificaciones push, donde pueda consultar el estado de cada planta cuando lo desee, sin interrupciones ni alertas móviles.
+    - Incertidumbre sobre si riega demasiado o poco.
+    - Aparición de gusanos u otras plagas difíciles de detectar a tiempo.
+    - Falta de herramientas simples para controlar nutrientes y humedad.
 
-      Busca mantener un registro de la humedad del suelo para evitar tanto la deshidratación como el encharcamiento; detección temprana de plagas antes de que se propaguen, y medición del nivel de nutrientes para optimizar el abonado.
+    ### 💻 Tecnología
 
-      Retroalimentación por voz o sonido para no depender exclusivamente de la app.
-
-    - Expectativas tecnológicas:
-
-      Requiere una interfaz extremadamente intuitiva y estática, accesible preferiblemente desde el hogar; desea que la automatización sea totalmente confiable y que, a la vez, conserve la opción de regar manualmente cuando ella lo prefiera.
-
-    **Características subjetivas:**
-
-    - Motivaciones:
-
-      Encuentra en la jardinería un refugio emocional y una fuente de relajación; experimenta un profundo sentido de logro cuando sus plantas florecen y crecen saludables, lo que refuerza su vínculo afectivo con el proceso.
-
-    - Diseño y estética:
-
-      Está dispuesta a adoptar macetas de mayor volumen o un diseño menos convencional si esto implica una mayor funcionalidad y un mejor cuidado de las plantas; prefiere que la tecnología pase desapercibida y no altere el encanto natural de su entorno.
-
-    - Percepción de valor:
-
-      Considera la maceta inteligente como un “lujo justificable” que bien vale la inversión si le ahorra tiempo y esfuerzo; estima que pagaría entre S/ 50 y 100 por una unidad pequeña, siempre que garantice un funcionamiento fiable y reduzca la pérdida de plantas.
-
-    - Influencia de marcas:
-
-      No se ve influenciada por marcas específicas; valora esencialmente la utilidad, la durabilidad y la facilidad de mantenimiento por encima del nombre del fabricante.
-
-    - Personalidad:
-
-      Se muestra como una cuidadora empática y paciente, que alterna técnicas artesanales tradicionales con una curiosidad por soluciones innovadoras; busca optimizar su hobbie sin renunciar al ritual de atención personal que tanto disfruta.
+    - Usa smartphone .
+    - Interfaz extremadamente simple, sin alertas móviles.
 
 ---
 
@@ -1192,8 +1098,15 @@ PON TU EXPLICACION COMO DICE EN EL STATEMENT
 
 - ### 2.3.5. As-is Scenario Mapping
 
-  El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
+El As-Is Scenario es una herramienta fundamental en el análisis de experiencias de usuario, ya que permite visualizar paso a paso cómo interactúan actualmente los diferentes segmentos de usuarios con un producto, servicio o actividad. A través de esta metodología se identifican los comportamientos, pensamientos y emociones del usuario en cada etapa del proceso, lo que ayuda a detectar puntos de dolor, necesidades no cubiertas, y oportunidades de mejora.
 
+Para la elaboración de estos escenarios, se analizaron los perfiles de dos segmentos de usuarios relacionados con el cuidado de plantas:
+
+- Personas Apasionadas por las Plantas
+
+- Personas Dedicadas a la Jardinería
+
+El proceso consistió en identificar las fases principales (Steps), describir las acciones realizadas (Doing), los pensamientos que surgen (Thinking) y las emociones experimentadas (Feeling), representando una perspectiva empática y detallada del recorrido del usuario.
   - **Segmento 1: Personas Apasionadas por las plantas**
     ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
 
@@ -1204,33 +1117,58 @@ PON TU EXPLICACION COMO DICE EN EL STATEMENT
 
 En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
 
-| **Término**                     | **Definición**                                                                                    |
-| ------------------------------- | ------------------------------------------------------------------------------------------------- | --- |
-| **Alert Level**                 | Clasificación del estado de la planta: normal, advertencia o crítico.                             |
-| **Automatic Watering**          | Activación automática del riego cuando el sensor detecta humedad por debajo de un umbral.         |
-| **Caring Intelligence**         | Sistema de generación de recomendaciones personalizadas y reportes a partir de datos de sensores. |     |
-| **Dashboard**                   | Vista central para monitorear el estado general de las plantas y acceder a configuraciones clave. |
-| **Gardener**                    | Usuario con experiencia profesional/informal en jardineria.                                       |
-| **Geo API**                     | Servicio externo para obtener la localización (ciudad/país) del usuario o de la planta.           |
-| **IAM**                         | Módulo que controla la autenticación y permisos de los usuarios.                                  |
-| **Landing Page**                | Página inicial del sistema que explica el producto y permite registrarse.                         |
-| **Light Sensor**                | Componente que mide la cantidad de luz que recibe la planta.                                      |
-| **Maintenance Report**          | Documento generado con el estado, alertas y acciones aplicadas a una planta.                      |
-| **MaceTech**                    | Dispositivo físico con sensores que recopilan datos de una planta en tiempo real.                 |
-| **Mobile App**                  | Aplicación para móviles que permite gestionar plantas y recibir notificaciones.                   |     |
-| **Moisture Sensor**             | Sensor que detecta el nivel de humedad en la tierra.                                              |
-| **Plant API**                   | Servicio externo que permite identificar y obtener condiciones óptimas para una planta.           |
-| **Plant Enthusiastic**          | Usuario que gestiona plantas en su hogar con fines personales o decorativos.                      |
-| **Plant Management**            | CRUD de plantas y macetas, incluyendo identificación, configuración y detalles.                   |
-| **Plant Profile**               | Conjunto de datos asociados a una planta: nombre, especie, condiciones ideales, etc.              |
-| **Plant Status**                | Representación visual/textual del estado actual (saludable, poca agua, exceso de luz, etc.).      |
-| **Recommendations**             | Sugerencias automáticas según condiciones actuales para mejorar el estado de la planta.           |
-| **Smart Notification**          | Alerta automática enviada al usuario cuando la planta requiere atención.                          |
-| **Temperature Sensor**          | Sensor que mide la temperatura ambiente alrededor de la planta.                                   |
-| **User Management**             | Módulo para CRUD de usuarios, gestión de cuenta, recuperación de contraseña, etc.                 |
-| **User Profile**                | Preferencias y datos personales del usuario.                                                      |
-| **Watering Management**         | Configuración del sistema de riego (manual o automático), incluyendo tiempos y reportes.          |
-| **Web App**                     | Plataforma web donde se puede consultar, configurar y visualizar el estado de las plantas.        |
-| **Subscriptions & Payments**    | Gestión de membresías, tarifas y pagos recurrentes por el servicio.                               |
-| **System Monitoring & Control** | Alertas y control en tiempo real del estado del sistema y sensores.                               |
-| **Data Insights & Reporting**   | Recolección y análisis de datos para visualizaciones y toma de decisiones.                        |
+
+## Glosario de Ubiquitous Language
+
+| Término                     | Definición                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2FA                         | Mecanismo de autenticación que agrega una segunda capa de seguridad, requiriendo al usuario un código temporal (por SMS, app de autenticación o email) además de la contraseña habitual. Garantiza que, incluso si las credenciales son comprometidas, el atacante no pueda acceder sin el segundo factor.                                                                                                                                                                                                                                                                          |
+| AccountStatus               | Estado actual de la cuenta de usuario dentro del sistema (por ejemplo: activo, suspendido, eliminado o pendiente de verificación). Se utiliza para controlar el acceso a los recursos y activar flujos de negocio como notificaciones de expiración o reactivación de cuenta.                                                                                                                                                                                                                                                                                              |
+| Address                     | Objeto que representa la dirección física del usuario, incluyendo elementos como calle, número, ciudad, código postal y país. Se valida y normaliza a través de la Geo API para asegurar la coherencia y evitar duplicados.                                                                                                                                                                                                                                                                                                                                        |
+| Alert                       | Evento generado cuando uno o varios indicadores del sistema o de la planta superan un umbral configurado. Puede desencadenar flujos automáticos de notificación o acciones correctivas programadas.                                                                                                                                                                                                                                                                                                                                                                 |
+| Alert Level                 | Clasificación del estado de la planta en categorías predefinidas (normal, advertencia o crítico), basada en parámetros como humedad, temperatura o pH. Permite priorizar la atención y escalabilidad de notificaciones.                                                                                                                                                                                                                                                                                                                                             |
+| Automatic Watering          | Funcionalidad que permite que el sistema inicie de forma autónoma un ciclo de riego cuando los valores de humedad caen por debajo de un umbral configurado. Incluye validaciones de seguridad para evitar el riego excesivo y coordinación con las válvulas físicas.                                                                                                                                                                                                                                                                                                     |
+| Caring Intelligence         | Subsistema responsable de analizar datos históricos y en tiempo real (sensores, climatología, comportamiento del usuario), además de reglas de negocio, y generar recomendaciones y reportes personalizados que optimizan la salud de las plantas a lo largo del tiempo.                                                                                                                                                                                                                                                       |
+| Compatibility               | Evaluación de la idoneidad entre una especie vegetal y el contenedor (maceta) que la alberga. Se basa en factores como tamaño, profundidad, capacidad de retención de agua y requisitos de crecimiento, garantizando que la planta disponga de las condiciones mínimas para desarrollarse correctamente.                                                                                                                                                                                                                                                            |
+| Country                     | Identificador de país conforme a estándares ISO (3166‑1 alfa‑2 o alfa‑3). Utilizado para normalizar direcciones y permitir configuraciones regionales (idioma, moneda, formatos de fecha).                                                                                                                                                                                                                                                                                                                                                                        |
+| Credentials                 | Conjunto de datos secretos (usuario, contraseña y/o tokens) que acreditan la identidad de un usuario ante el sistema. Incluye metodologías de almacenamiento seguro (hash + salt) y políticas de renovación de tokens.                                                                                                                                                                                                                                                                                                                                              |
+| Dashboard                   | Interfaz gráfica que integra múltiples visualizaciones (gráficos, tablas, indicadores) para mostrar el estado global de las plantas, métricas de uso y alertas críticas. Permite al usuario filtrar información, acceder a detalles y configurar notificaciones de forma centralizada.                                                                                                                                                                                                                                                                              |
+| Data Insights & Reporting   | Proceso y conjunto de componentes encargados de la ingesta, transformación y almacenamiento de grandes volúmenes de datos de sensores, así como de la generación de informes y dashboards. Facilita la toma de decisiones y el análisis histórico de tendencias.                                                                                                                                                                                                                                                     |
+| Feedback                    | Información proporcionada por el usuario o por el sistema (por ejemplo: validación de una recomendación) que retroalimenta el motor de Caring Intelligence, permitiéndole ajustar reglas y modelos de predicción para mejorar la calidad de futuras recomendaciones.                                                                                                                                                                                                                                                                                                 |
+| Gardener                    | Usuario que, con diversos grados de experiencia (desde aficionados hasta profesionales), interactúa con Macetech para gestionar el cuidado de sus plantas. Sus preferencias y comportamientos sirven de input para personalizar recomendaciones y configuraciones.                                                                                                                                                                                                                                                                                                  |
+| Geo API                     | Servicio externo que proporciona información geográfica (países, ciudades) y, en algunos casos, datos climáticos básicos asociados a la ubicación. Se utiliza para normalizar direcciones, adaptar unidades de medida y enriquecer el contexto de los datos de sensores.                                                                                                                                                                                                                                                                                           |
+| InsightReport               | Documento o conjunto de datos generados tras el análisis de grandes volúmenes de información de sensores y uso, que resumen métricas clave, tendencias y sugerencias de actuación.                                                                                                                                                                                                                                                                                                                                                                                 |
+| Invoice                     | Comprobante fiscal o registro de factura que detalla los importes cobrados al usuario por concepto de suscripción o servicios adicionales. Incluye fechas, descripciones de productos/planes y estado de pago.                                                                                                                                                                                                                                                                                                                                                  |
+| IrrigationJob               | Objeto que describe una tarea de riego programada, incluyendo fecha, hora, duración, volumen de agua y válvula asignada. Se genera tras la evaluación de condiciones y puede ser replanificado o cancelado ante fallos.                                                                                                                                                                                                                                                                                                                                           |
+| Landing Page                | Página de entrada al servicio web que presenta la propuesta de valor de Macetech, sus características más relevantes y un formulario de registro o login. Optimizada para convertir visitantes en usuarios registrados.                                                                                                                                                                                                                                                                                                                                        |
+| Light Sensor                | Dispositivo electrónico encargado de medir la intensidad luminosa en lux o lúmenes que recibe la planta. Sus lecturas son fundamentales para evaluar el estado de crecimiento y generar alertas de exceso o falta de luz.                                                                                                                                                                                                                                                                                                                                          |
+| Maintenance Report          | Documento detallado que recoge el historial de acciones realizadas sobre una planta o maceta (riego, fertilización, limpieza), así como el estado de los sensores, niveles de alertas y recomendaciones previas. Se exporta en PDF o formatos compatibles para auditoría.                                                                                                                                                                                                                                                                                        |
+| MaceTech                    | Hardware IoT autónomo equipado con sensores de humedad, temperatura, pH y salinidad, además de una unidad de control que procesa datos localmente y se comunica con la plataforma en la nube para sincronizar información.                                                                                                                                                                                                                                                                                                                                         |
+| Mobile App                  | Aplicación nativa para dispositivos móviles (iOS/Android) que ofrece acceso a todas las funcionalidades de Macetech: registro, configuración de macetas, monitorización en tiempo real, visualización de dashboards y recepción de notificaciones push.                                                                                                                                                                                                                                                                                                         |
+| Moisture Sensor             | Sensor especializado en medir el contenido de agua en el sustrato o tierra de la maceta. Proporciona lecturas periódicas que alimentan los algoritmos de riego automático y alertas de déficit de humedad.                                                                                                                                                                                                                                                                                                                                                     |
+| OptimalRange                | Rango de valores aceptables para variables críticas de cultivo (por ejemplo: pH entre 5.5 y 6.5, luz entre 200 y 800 lx). Definido para cada especie vegetal y utilizado por Plant Management y Caring Intelligence para evaluar condiciones y generar recomendaciones.                                                                                                                                                                                                                                                                                     |
+| PasswordRecoveryToken        | Token temporal que se emite cuando un usuario solicita recuperación de contraseña. Se envía por correo o SMS y tiene un tiempo de vida limitado para garantizar la seguridad del proceso.                                                                                                                                                                                                                                                                                                                                                                       |
+| PaymentTransaction          | Registro de una operación de pago en la plataforma, que incluye monto, método (tarjeta, PayPal, etc.), estado (pendiente, completado, fallido) y marca temporal. Utilizado para conciliaciones y gestión de facturación.                                                                                                                                                                                                                                                                                                                                       |
+| PhoneNumber                 | Formato estructurado y validado de números telefónicos internacionales, que incluye código de país, área y dígitos locales. Usado en procesos de verificación y envío de notificaciones SMS.                                                                                                                                                                                                                                                                                                                                                                  |
+| Plant API                   | Servicio externo que ofrece catálogo de especies vegetales, datos técnicos y recomendaciones de cultivo. Consumido por los contextos de Plant Management y Caring Intelligence para enriquecer la información de las plantas registradas.                                                                                                                                                                                                                                                                                                                     |
+| Plant Enthusiastic          | Segmento de usuarios que cultivan plantas en sus hogares o espacios personales con fines de esparcimiento o decoración. Sus patrones de uso y necesidades difieren de los jardineros profesionales, por lo que el sistema adapta recomendaciones y lenguaje.                                                                                                                                                                                                                                                                                                       |
+| Plant Management            | Contexto responsable del catálogo y administración de especies y macetas, identificación de plantas, gestión de condiciones óptimas y sincronización con fuentes externas de datos sobre especies.                                                                                                                                                                                                                                                                                                                                                         |
+| Plant Profile               | Estructura de datos que agrupa todas las características relevantes de una planta específica: nombre común y científico, requerimientos (pH, humedad, luz), fecha de plantación y etiquetas de usuario.                                                                                                                                                                                                                                                                                                                                                    |
+| Plant Status                | Representación del estado actual de la planta, combinando lecturas de sensores con reglas definidas (por ejemplo: “saludable”, “baja humedad”, “exceso de luz”). Puede mostrarse en interfaz gráfica o en reportes.                                                                                                                                                                                                                                                                                                                                      |
+| Preference                  | Configuración individual del usuario que determina aspectos como idioma, unidades de medida, frecuencia de notificaciones y temas de interfaz. Permite personalizar la experiencia según hábitos y gustos.                                                                                                                                                                                                                                                                                                                                                    |
+| Recommendation              | Instrucción específica generada por el motor de Caring Intelligence, que sugiere al usuario una acción concreta (por ejemplo: “regar 200 ml en 5 minutos” o “aumentar exposición lumínica dos horas al día”).                                                                                                                                                                                                                                                                                                                                             |
+| ReportTemplate              | Formato predefinido que establece la estructura de los reportes generados (encabezados, secciones, gráficos) para asegurar consistencia en la presentación de datos y recomendaciones.                                                                                                                                                                                                                                                                                                                                                                  |
+| Rule                        | Regla de negocio o algoritmo que define la lógica de evaluación de condiciones (por ejemplo: si humedad menor a 20 %, se debe generar alerta) y que sirve de base para el motor de recomendaciones y alertas.                                                                                                                                                                                                                                                                                                                                                         |
+| SensorData                   | Conjunto de lecturas capturadas por los sensores de MaceTech (humedad, temperatura, pH, salinidad), procesadas y normalizadas para su análisis y almacenamiento.                                                                                                                                                                                                                                                                                                                                                                                           |
+| SensorRecord                 | Registro persistente e inmutable de una instancia de SensorData, con marca de tiempo y metadatos (identificador de planta, versión de firmware, ubicación geográfica).                                                                                                                                                                                                                                                                                                                                                                                        |
+| Session                      | Objeto que representa la sesión activa de un usuario, incluyendo token de acceso, token de refresco, fecha de expiración y permisos asociados.                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Smart Notification          | Mensaje proactivo (push, email o SMS) enviado al usuario cuando se detecta una condición que requiere atención inmediata (por ejemplo, humedad crítica o fallo de sensor).                                                                                                                                                                                                                                                                                                                                                                                    |
+| Subscriptions & Payments     | Conjunto de flujos y componentes que gestionan la adquisición de planes de suscripción, facturación recurrente, historial de cobros y métodos de pago asociados a cada usuario.                                                                                                                                                                                                                                                                                                                                                                            |
+| System Monitoring & Control  | Subsistema encargado de verificar la disponibilidad y salud de todos los servicios y dispositivos (health checks), recolectar logs de eventos críticos y generar alertas operativas ante cualquier anomalía.                                                                                                                                                                                                                                                                                                                                              |
+| Threshold                    | Valor límite definido para disparar acciones automáticas o alertas (por ejemplo: humedad mínima del 15 %). Se puede configurar de forma individual para cada maceta o especie.                                                                                                                                                                                                                                                                                                                                                                           |
+| Token                        | Cadena cifrada (por ejemplo, JSON Web Token) que certifica la identidad de un usuario o servicio en cada petición, con fecha de expiración y lista de permisos (claims).                                                                                                                                                                                                                                                                                                                                                                                   |
+| User                         | Representación de una persona que interactúa con el sistema, con atributos como identificación, credenciales, roles y estado de cuenta.                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| User Management              | Contexto que agrupa la lógica de negocio para la creación, actualización y eliminación de usuarios, así como la recuperación de contraseña y la verificación de datos de contacto.                                                                                                                                                                                                                                                                                                                                                                        |
+| User Profile                 | Estructura que contiene las preferencias y datos personales del usuario (dirección, teléfono, idioma) y que influye en la personalización de la interfaz y las recomendaciones.                                                                                                                                                                                                                                                                                                                                                                            |
+| Watering Management          | Subsistema responsable de planificar y ejecutar tareas de riego automáticas o manuales, basándose en los parámetros definidos en PotConfiguration y en los datos suministrados por los sensores.                                                                                                                                                                                                                                                                                                                                                         |
+| Web App                      | Plataforma web responsiva que ofrece acceso completo a las funcionalidades del sistema: gestión de macetas, visualización de dashboards, configuración de alertas y administración de suscripciones.                                                                                                                                                                                                                                                                                                                                                        |
