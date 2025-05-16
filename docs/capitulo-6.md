@@ -4,78 +4,111 @@ La implementación, validación y despliegue del producto son esenciales para as
 
 ## 6.1. Software Configuration Management.
 
-La gestión de la configuración del software es crucial para nuestro trabajo, ya que nos permite mantener un control preciso sobre los elementos de nuestro proyecto, como el código fuente, los documentos de diseño y los activos digitales. Esto garantiza que todos los miembros del equipo estén trabajando con la misma versión de los archivos y facilita la colaboración entre desarrolladores, diseñadores y otros profesionales involucrados en el proyecto.
+La gestión de la configuración del software es crucial para nuestro trabajo, ya que nos permite mantener un control preciso sobre los elementos de nuestro proyecto, como el código fuente, los documentos de diseño y los activos digitales. Esto garantiza que todos los miembros del equipo estén trabajando con la misma versión de los archivos y facilita la colaboración entre desarrolladores, diseñadores y otros profesionales involucrados en el proyecto. En esta sección, se detalla la configuración de ambiente de desarrollo del software, como también el planeamiento, desarrollo y evidencia de los sprints.
 
 ### 6.1.1. Software Development Environment Configuration.
 
+A modo de asegurar un ciclo de vida de nuestro producto de Software, utilizamos una gran cantidad de instrumentos para asegurar un buen manejo del projecto, especificación de requerimientos de forma detallada y ordenada, un diseño de producto responsivo y coherente, y un desarrollo de software con buenas prácticas y colaborativo. A continuación, se presentan y justifican las herramientas adoptadas para el desarrollo de Macetech:
+
 - #### Project Management:
 
-  - ### Trello:
-    Una aplicación de gestión de proyectos que facilita el seguimiento de las tareas individuales de cada miembro del equipo de manera sencilla. <br>
-    [Link De Registro o Inicio De Sesión](https://trello.com/es)<br>
-    Imagen para mostrar evidencia de uso:
-    ![trello-image-grupo](assets/img/project-management-trello.png)
-    - ### Microsoft Teams
-      una plataforma unificada de comunicación y colaboración que combina chat persistente en el lugar de trabajo, reuniones de video, almacenamiento de archivos e integración de aplicaciones. <br>
-      [Link De Registro o Inicio De Sesión](https://www.microsoft.com/es-pe/)
-      Imagen para mostrar evidencia de uso:
-      ![microsoft-teams-image-userpersona](assets/img/evidencia-microsoft-teams.png)
+  - ### Jira Software:
+    Jira Software es una herramienta de gestión de proyectos ágil utilizada por equipos para planificar, rastrear, lanzar y dar soporte a software. Funciona como una fuente centralizada de información para el ciclo de vida completo del desarrollo, permitiendo a los equipos autónomos trabajar rápidamente mientras se mantienen conectados con los objetivos generales del negocio. Es ampliamente utilizada para el seguimiento de incidencias y la gestión de proyectos, ofreciendo funcionalidades como tableros Scrum y Kanban, líneas de tiempo para planificación y seguimiento, informes integrados e integraciones con miles de aplicaciones.
+    <br>
+    <img src="/assets/img/capitulo-6/logos/jira-logo.png" width="200px" height="200px" alt="Jira Software Logo"></img> 
+    <br>
+    En SevenSync se utilizó Jira Software a partir de la plantilla "Scrum". Esta plantilla nos permitió elaborar el product backlog priorizado y planear las historias de usuario que se incluyen en cada iteración de sprint. Debido a que Jira cuenta con un dashboard accesible y de claro entendimiento, se agilizaron los procesos de designación de tareas entre los miembros del equipo lo cuál permitió un desarrollo ágil de software.
+    <img src="" alt="Evidencia de Uso en Jira"></img>
+    <br>Referencia: Atlassian. (s.f.). Get Started with Jira - Comprehensive Beginner's Guide. Recuperado de https://www.atlassian.com/software/jira/guides/getting-started/introduction <br>
+  - ### Discord:
+    Discord es una aplicación de comunicación gratuita que permite a decenas de millones de personas hablar y pasar el rato con sus comunidades, creadores y amigos favoritos. Está centrada en la gestión de comunidades y ofrece herramientas de comunicación como llamadas de voz y video, salas de chat persistentes, mensajes directos, grupos personales e integraciones con otros servicios.
+  <br>
+    <img src="/assets/img/capitulo-6/logos/discord-logo.jpg" width="250px" height="200px" alt="Discord Logo"></img>
+  <br>
+    Discord fue el medio de comunicación principal del equipo al contar con canales de texto y voz. En el grupo de discord "SevenSync - IOT", se recuerda constantemente las tareas pendientes, se marcan pautas y guías para desarrollar artefactos de calidad y se realiza el desarrollo de la documentación y software de forma simultánea. De esta manera, aseguramos la comunicación del equipo en todo momento para que todos estén al tanto del ciclo de vida del proyecto.
+         <img src="" alt="Evidencia de Uso en Discord"></img>
+    <br>Referencia: Discord. (s.f.). What is Discord?. Recuperado de https://discord.com/creators/what-is-discord 
 
+  - ### Excalidraw: 
+    Excalidraw es una pizarra colaborativa en línea, de código abierto y gratuita, diseñada para crear diagramas, ilustraciones y diagramas de flujo con un estilo dibujado a mano. Se caracteriza por su simplicidad, facilidad de uso y enfoque en la privacidad y seguridad. Ofrece un lienzo infinito y herramientas esenciales para esbozar ideas rápidamente, siendo útil para reuniones, brainstorming, diagramación y prototipos rápidos.   
+    <br>
+    <img src="/assets/img/capitulo-6/logos/excalidraw-logo.jpg" width="200px" height="200px" alt="Excalidraw Logo"></img> <br>
+
+    Se utilizó esta herramienta para que el equipo realice sesiones de brainstorming, diseño colaborativo y explicación visual de ideas o conceptos complejos.
+       <img src="" alt="Evidencia de Uso en Excalidraw"></img>
+    <br>Referencia: Excalidraw. (s.f.). Excalidraw | Online whiteboard collaboration made easy. Recuperado de https://excalidraw.com/
+   
+  - ### Whatsapp: 
+    WhatsApp es una aplicación de mensajería y llamadas utilizada por más de 2 mil millones de personas en más de 180 países para mantenerse en contacto con amigos y familiares. Permite enviar y recibir una variedad de archivos multimedia (texto, fotos, videos, documentos y ubicación), así como realizar llamadas de 1  voz. Se caracteriza por ser simple, segura y confiable, ofreciendo cifrado de extremo a extremo en las comunicaciones.
+    <br>
+    <img src="/assets/img/capitulo-6/logos/whatsapp-logo.png" width="200px" height="200px" alt="Whatsapp Logo"></img> <br>
+    El equipo creó un grupo de Whatsapp para la comunicación rápida y accesible fuera del entorno de trabajo principal, coordinaciones y para avisos urgentes.
+    <img src="" alt="Evidencia de Uso en Whatsapp"></img>
+
+    <br> Referencia: WhatsApp. (s.f.). Acerca de nosotros. Recuperado de https://www.whatsapp.com/about?lang=es
+
+  - ### Google docs:
+    Google Docs es un procesador de texto en línea que permite crear y editar documentos, así como colaborar en tiempo real con otros usuarios. Almacena los documentos en la nube (Google Drive), ahorrando espacio en el dispositivo local. Ofrece funcionalidades de formato de texto y párrafo, inserción de imágenes, tablas, enlaces, revisión ortográfica y gramatical, control de cambios y la posibilidad de trabajar sin conexión.
+    <br>
+    <img src="/assets/img/capitulo-6/logos/google-docs-logo.jpg" width="200px" height="200px" alt="Google docs Logo"></img> <br>
+    
+    Hemos utilizado Google Docs para hacer seguimiento de las responsabilidades del equipo y poder asignar una calificación correspodiente en base a la entrega a tiempo, la colaboración constante y las entregas realizadas.<br>
+
+     <img src="" alt="Evidencia de Uso en Google Docs"></img>
+    Referencia: Google Workspace. (s.f.). Google Docs: Online Document & PDF Editor. Recuperado de https://workspace.google.com/products/docs/
 - #### Requirement Management:
   - ### Miro:
-    Un sistema que ofrece una amplia gama de plantillas diseñadas para abordar diversos aspectos en la creación y gestión de proyectos. <br>
-    [Link De Registro o Inicio De Sesión](https://miro.com/es/login/)
-    Imagen para mostrar evidencia de uso:
-    ![Miro-image-userpersona](assets/img/evidencia-miro.png)
+       <br>
+    <img src="" alt="Evidencia de Uso en Miro"></img>
   - ### UXPressia:
-    Es una herramienta en línea que simplifica el proceso de mapeo y comprensión de las necesidades del cliente en un proyecto determinado. <br>
-    [Link De Registro o Inicio De Sesión](https://uxpressia.com)
-    Imagen para mostrar evidencia de uso:
-    ![uxpressia-image-userpersona](assets/img/evidencia-uxpressia.png)
+       <br>
+    <img src="" alt="Evidencia de Uso en UXPressia"></img>
   - ### Structurizr:
-    Se trata de una suite de herramientas que posibilita la creación colaborativa de modelos C4 para representar de forma gráfica nuestros productos. <br>
-    [Link De Registro o Inicio De Sesión](https://structurizr.com)
+     <img src="" alt="Evidencia de Uso en Structurizr"></img>
 - #### Product UX/UI Design:
   - ### Figma:
-    Una herramienta de colaboración que facilita el desarrollo conjunto de wireframes y mockups. <br>
-    [Link De Registro, Inicio De Sesión y Descarga](https://www.figma.com/downloads/)
+      <img src="" alt="Evidencia de Uso en Figma"></img>
   - ### LucidChart:
-    Una herramienta colaborativa que posibilita la creación conjunta de wireframes flow y mockups flow. <br>
-    [Link De Registro o Inicio De Sesión ](https://www.lucidchart.com/pages/es)
-    Imagen para mostrar evidencia de uso:
-    ![lucidchart-image-userpersona](assets/img/evidencia-lucidchart.png)
+     <img src="" alt="Evidencia de Uso en Lucidchart"></img>
 - #### Software Development:
 
   - ### HTML5:
-    Es un lenguaje de etiquetado utilizado para crear la estructura a páginas web. Lo utilizamos para incluir componentes como texto, imágenes, enlaces, botones y videos en nuestras páginas web. <br>
-    [Información Relacionada](https://www.esic.edu/rethink/tecnologia/html5-que-es-caracteristicas-y-como-funciona-c#:~:text=El%20HTML5%20es%20un%20estándar,%2C%20estilo%20de%20letra%2C%20etc.)
-    Imagen para mostrar evidencia de uso:
-    ![uxpressia-image-userpersona](assets/img/html-evidencia.png)
+    Es un lenguaje de etiquetado utilizado para crear la estructura de páginas web. Lo utilizamos para incluir componentes como texto, imágenes, enlaces, botones y videos en nuestras páginas web. <br>
+
+    <img src="" alt="Evidencia de Uso de HTML5"></img>
   - ### CSS:
     Un lenguaje de diseño gráfico utilizado para dar formato y estilo a la presentación de un documento escrito en HTML. <br>
-    [Información Relacionada](https://developer.mozilla.org/es/docs/Web/CSS)
-    Imagen para mostrar evidencia de uso:
-    ![uxpressia-image-userpersona](assets/img/evidencia-css.png)
+     <img src="" alt="Evidencia de Uso de CSS"></img>
   - ### JavaScript:
     Un lenguaje de programación orientado a objetos dinámico que utilizamos para implementar funcionalidades en un documento HTML. <br>
-    [Información Relacionada](https://developer.mozilla.org/es/docs/Web/JavaScript)
-    Imagen para mostrar evidencia de uso:
-    ![uxpressia-image-userpersona](assets/img/evidencia-uxpressia.png)
+    <img src="" alt="Evidencia de Uso de JavScript"></img>
   - ### WebStorm:
     Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con JavaScript. <br>
     [Link De Descarga](https://www.jetbrains.com/es-es/webstorm/)
-  - ### Rider:
-    Un entorno de desarrollo integrado (IDE) que emplearemos para trabajar con C#. <br>
-    [Link De Descarga](https://www.jetbrains.com/es-es/rider/)
+    <img src="" alt="Evidencia de Uso de WebStorm"></img>
+
+  - ### Rider
 
 - #### Software Documentation:
   - ### Github:
-    Se trata de una plataforma utilizada para el alojamiento de versiones del código fuente de un proyecto. Es una herramienta ampliamente popular en el trabajo colaborativo de programadores. <br>
-    [Link De Descarga](https://desktop.github.com)
-    [Link De Registro o Inicio De Sesión](https://github.com/login)
+  
+    GitHub es una plataforma basada en la nube que permite almacenar, compartir y colaborar en la escritura de código con otras personas. Utiliza el sistema de control de versiones Git y facilita el seguimiento y la gestión de cambios en el código a lo largo del tiempo. Es un espacio centralizado para proyectos de desarrollo de software que fomenta la colaboración entre equipos.
+    <br>
+
+    <img src="/assets/img/capitulo-6/logos/github-logo.jpg" width="200px" height="200px" alt="Github Logo"></img> <br>
+    
+    GitHub es fundamental como repositorio centralizado para el código fuente y documentación. Nos permitió manejar el control de versiones, la colaboración segura entre múltiples mimebros del equipo trabajando en paralelo (mediante ramas y pull requests), la revisión de código y el seguimiento de cambios. Es la herramienta clave para mantener el código del equipo sincronizado y gestionado de forma colaborativa.
+    <br>
+    <img src="" alt="Evidencia de Uso en Github">
+    <br>Referencia: GitHub Docs. (s.f.). About GitHub and Git. Recuperado de https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
+
 - #### Software Deployment:
   - ### GitHub Pages:
     Una plataforma que posibilita la realización de despliegues simples directamente desde un repositorio de GitHub. <br>
+
+    <img src="" alt="Github Pages logo">
+    Referencia:       
+    <img src="" alt="Evidencia de Uso de Github Pages">
 
 ### 6.1.2. Source Code Management.
 
@@ -202,7 +235,7 @@ Como norma general, se espera que todo el código desarrollado por los miembros 
      text-align: center;
      text-indent: 2em;
     ```
-- ### TYPESCRIPT
+- ### Typescript
   - #### Use expanded syntax
     Cada línea de TypeScript debería estar en una nueva línea, con la llave de apertura en la misma línea de su declaración y la llave de cierre en una nueva línea al final.
     ```
@@ -233,83 +266,21 @@ Como norma general, se espera que todo el código desarrollado por los miembros 
     };
     ```
 - ### C#
+ llenar
+- ### .NET CORe
+  llenar
 
-  - #### PascalCase
-    Mayúscula al principio de cada palabra para nombres de clases y métodos.
-    ```
-    public class MyClass {
-        public void ExampleMethod() {
-            // Method code
-        }
-    }
-    ```
-  - #### camelCase
-    Minúscula al principio con mayúsculas para cada palabra subsiguiente para variables y parámetros.
-    ```
-    public class MyClass {
-        public void ExampleMethod(int exampleNumber) {
-            string exampleName = "Example";
-            // Method code
-        }
-    }
-    ```
-    - #### Reasonable line length
-      Mantener líneas de código con longitud adecuada para mejorar la legibilidad.
-      ```
-      public class MyClass {
-          public void ExampleMethod() {
-              string message = "This is an example message that spans multiple lines " +
-                               "to demonstrate how to maintain a reasonable length.";
-               Console.WriteLine(message);
-        }
-      }
-      ```
-    - #### Clear comments:
-      Utilizar comentarios para explicar el propósito del código de manera concisa.
-      ```
-      public class MyClass {
-          // This method performs an addition operation and returns the result.
-          public int Add(int a, int b) {
-            return a + b;
-           }
-      }
-      ```
-  - #### Single responsibility:
 
-    Cada clase o método debe tener una única función bien definida.
-
-    ```
-    // Class responsible for handling basic mathematical operations
-    public class MathematicalOperations {
-        // Method to add two numbers
-        public int Add(int a, int b) {
-            return a + b;
-        }
-
-        // Method to subtract two numbers
-        public int Subtract(int a, int b) {
-            return a - b;
-        }
-    }
-    ```
 
 ### 6.1.4. Software Deployment Configuration.
 
-- Creación Landing Page:<br>
+- Despliegue Landing Page:<br>
 
-1. Se crea un repositorio remoto en GitHub
-   ![creation-of-repository-lp](assets/img/Creacion_repo.png)
-2. Agregar a participantes
-   ![adding-members-screenshot-lp](assets/img/miembros_repo.png)
-3. Habilitamos GitHub Pages en branch "master" y ruta "/(root)"
-   ![deploying-repository-in-github-pages-lp](assets/img/Github_pages.png)
 
-- Creación Front End App:<br>
+- Despliegue Front End App:<br>
 
-1. Creación de repositorio dentro de nuestra organización:
-   ![creation-of-repository-lp](assets/img/creacion-repositorio-frontendapp.png)
-2. Agregar a participantes:
-   ![adding-members-screenshot-lp](assets/img/miembros_repo.png)
+
+- Despligue de FAKE API:
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
@@ -382,7 +353,14 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 </table>
 
 #### 6.2.1.2.Aspect Leaders and Collaborators.
-
+| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Pot Management - Leader (L) / Collaborator (C) | Plant Management - Leader (L) / Collaborator (C) | Watering Management - Leader (L) / Collaborator (C) | System Monitoring & Control - Leader (L) / Collaborator (C) | Data Insights & Reporting - Leader (L) / Collaborator (C) | Caring Intelligence - Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|---|---|
+| Mallma, Ruben | RubDaShen | - | C | L | - | - | - | C |
+| Paredes, Luiggi | DevLuiggi | C | - | - | - | - | C | L |
+| Pescorán, Juan | JuanPescoran | - | - | - | L | - | - | - |
+| Sanchez, Fabrizio | Fabrizio0711 | - | L | - | - | L | C | - |
+| Trigueros, Flavio | FlavioTrigueros | C | C | - | - | - | L | C |
+| Yen, Lucio | LucioY250 | L | - | C | C | - | - | - |
 #### 6.2.1.3.Sprint Backlog 1.
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
@@ -412,7 +390,7 @@ Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https:
 			<td>Assigned To</td>
 			<td>Status (To-do / In-Process / To-Review / Done)</td>
 		</tr>
-  <tbody>
+  </tbody>
     <tr>
       <td>US001</td>
       <td>Ver introducción atractiva</td>
@@ -1173,36 +1151,6 @@ Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https:
         <td>Juan Pescorán</td>
         <td>Done</td>
     </tr>
-    <tr>
-      <td>US075</td>
-      <td>Recibir recomendaciones de riego personalizadas</td>
-      <td>T029</td>
-      <td>Panel recomendaciones</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> sugerencias ajustadas <strong>para</strong> optimizar consumo de agua </td>
-      <td>6</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T029.1</td>
-      <td>Obtener recomendaciones</td>
-      <td>Obtener las recomendaciones de riego desde el fake API en Beeceptor.</td>
-      <td>3</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T029.2</td>
-      <td>Mostrar recomendaciones</td>
-      <td>Mostrar las recomendaciones de manera clara en la interfaz.</td>
-      <td>3</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
     <tbody>
 </table>
 
@@ -1217,7 +1165,7 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 | JuanPescoran/Report | develop | 98783487238973c5dd4a8097197adb2cf70af00a | feat: added content in chapter IV | added content in all sections of chapter04 | 4/9/2024           |
 | JuanPescoran/Report | master  | 889cdc0229a96aa9fca4641ebfccccd71f0d7a5a | feat(assets)                      | added img to master branch                 | 4/9/2024           |
 
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y funcionalidades implementadas en el Sprint 2:
+A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y funcionalidades implementadas en el Sprint 1:
 
 | Repository                      | Branch                | Commit ID                                | Commit Message                   | Commit Message Body                                                                                                                                 | Commited on (Date) |
 | ------------------------------- | --------------------- | ---------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -1227,12 +1175,23 @@ A continuación se presentan los commits más importantes para la Landing Page, 
 | JDu202012207/LandingPageFlexPal | feature-contacto      | c8d979e154ceec2e6b7e924b6aa16137199f743d | feat(contact-us)                 | implemented form, description and labels                                                                                                            | 4/9/2024           |
 | JuanPescoran/LandingPageFlexPal | feature-contenido     | db8e4a108071eeed824a148623bf34e7785ea982 | feat(assets): added images       | feat(assets): added all information for hero content, about us, subscriptions and other sections Also, added images for banners and everything else | 4/9/2024           |
 
+FRONT tambien
 #### 6.2.1.5.Testing Suite Evidence for Sprint Review.
+
+Para front es Specs de angular
 
 #### 6.2.1.6.Execution Evidence for Sprint Review.
 
-#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
+Landing page desarrollada
 
+Front desarrollada
+#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
+Evidencias
 #### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
+Github pages para landing
+Front deployada 
 #### 6.2.1.9.Team Collaboration Insights during Sprint.
+Commits de luiggi de la landing (cunando ya lo cierre)
+
+Commits de front
