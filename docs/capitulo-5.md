@@ -26,11 +26,6 @@ A continuación, se detallan los colores primarios, secundarios y terciarios def
 
 **Color primario:**
 
-<<<<<<< Updated upstream
-**Tipografía:**
-
-=======
->>>>>>> Stashed changes
 ###### Figura 30 y algo
 
 _Listado de colores primarios que se usaran en las aplicaciones de Macetech_
@@ -100,9 +95,8 @@ Su objetivo es garantizar que cada variable sea inmediatamente reconocible, con 
 
 ###### Tabla 30 y algo
 
-<<<<<<< Updated upstream
-_Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech_
-=======
+*Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech*
+
 | Métrica	| Nombre | Hex | Uso	| Justificación técnica |
 |---------|--------|-----|------|----------------------|
 | Humedad	y Temperatura Fría | Azul Mar |	#3498DB	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Sigue una base de paleta categórica: azul es convencional para humedad, alto contraste con fondo y consistente con dashboards de las métricas IoT |
@@ -111,7 +105,6 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 | Temperatura Alta y Alerta Alta | Tomate | #E74C3C | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto	| Rojo intenso para alertas de calor, puesto que es una semántica cultural de peligro. Asimismo, tiene un contraste AAA con colores blancos |
 | pH	| Tallo |	#2ECC71	| Utilizado como medidor de acidez/alcalinidad (pH)	| Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.
 | Salinidad |	Neblina |	#1ABC9C	| Utilizado como medidor de salinidad | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores. |
->>>>>>> Stashed changes
 
 | Métrica                    | Nombre   | Hex     | Uso                                                                                                                                                                                        | Justificación técnica                                                                                                                             |
 | -------------------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,9 +154,8 @@ _Descripción de usos y justificación para cada uno de los tonos del color secu
 
 ###### Tabla 30 y algo
 
-<<<<<<< Updated upstream
-_Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en Modo Dark_
-=======
+*Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en Modo Dark*
+
 | Métrica	| Light‑Mode| Light-Mode Hex | Dark‑Mode | Dark-Mode Hex	| Uso en Dark‑Mode | Justificación |
 |---------|-----------|----------------|-----------|-----|------------------|---------------|
 | Humedad y Temperatura Fría | Azul Mar | #3498DB | Azul Lago |	#2980B9	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
@@ -172,9 +164,8 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 | Temperatura Alta y Alerta Alta | Tomate | #E74C3C | Cereza | #C0392B | Utilizado para mostrar el rango alto de temperatura y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas a un nivel alto | El uso de un rojo menos brillante suaviza el impacto, sin perder señal de alerta. Presenta un buen contraste AAA |
 | pH |	#2ECC71 |	Tallo | #27AE60 | Llanura |Utilizado como medidor de acidez/alcalinidad (pH) | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco |
 | Salinidad | #1ABC9C | Neblina | #16A085 | Turquesa | Medidor de salinidad | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro |
->>>>>>> Stashed changes
 
-| Métrica                    | Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode                                                                                                                                                                           | Justificación                                                                                                                                                   |
+| Métrica  | Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode                                                                                                                                                                           | Justificación                                                                                                                                                   |
 | -------------------------- | ---------- | -------------- | --------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Humedad y Temperatura Frío | Azul Mar   | #3498DB        | Azul Lago | #2980B9       | Utilizado en barras/áreas de visualización de humedad y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
 | Luz                        | Mostaza    | #F1C40F        | Dorado    | #F39C12       | Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas                                                          | Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro                         |
@@ -359,21 +350,16 @@ Con esta elección, aseguramos que nuestras comunicaciones críticas lleguen sie
 
 ###### Figura 40
 
-_Modelos de grosor para el tipo de letra complementaria de Macetech, Arial_
-<img src="/assets/img/capitulo-5/style-guidelines/typography/arial-font-thickness.png" alt="
-<<<<<<< Updated upstream
-Arial font thickness models" width="1000" height="580">
-=======
-Arial font thickness models" width="1000" height="580"> 
+*Modelos de grosor para el tipo de letra complementaria de Macetech, Arial*
+
+<img src="/assets/img/capitulo-5/style-guidelines/typography/arial-font-thickness.png" alt=" Arial font thickness models" width="1000" height="580">
 
 #### 5.1.1.3. Espaciado
->>>>>>> Stashed changes
 
 El espaciado es un pilar imprescindible para garantizar una óptima legibilidad, establecer una jerarquía visual sólida y proporcionar al usuario una experiencia de lectura fluida y confortable en todas las plataformas de Macetech. Con el fin de alcanzar estos objetivos, hemos implementado un sistema modular fundamentado en una unidad base de 8 px y sus múltiplos (8 px, 16 px, 24 px, 32 px, etc.).
 
-<<<<<<< Updated upstream
 **Tono de comunicación y lenguaje aplicado:**
-=======
+
 Este enfoque ofrece varias ventajas técnicas y de usabilidad:
 
 * **Consistencia de diseño:** Al ceñirnos a valores uniformes, eliminamos discrepancias arbitrarias entre márgenes y rellenos, logrando divisiones homogéneas en cada vista.
@@ -513,7 +499,6 @@ Para maximizar la coherencia visual y la eficiencia en la interpretación de la 
 Con estas directrices, Macetech garantiza una interfaz ordenada, accesible y cohesiva, en la que cada componente encuentra su espacio natural sin perder armonía ni estructura.
 
 #### 5.1.1.4. Tono de comunicación y lenguaje aplicado
->>>>>>> Stashed changes
 
 De acuerdo con Smith y Zook (2024), el tono de comunicación es un componente esencial en el diseño de las secciones de una aplicación. No solo moldea la percepción emocional de los usuarios sobre textos e íconos, sino que también contribuye a forjar una identidad de marca coherente y memorable. Un tono bien calibrado genera en el usuario sensaciones de cercanía y confianza, al tiempo que un lenguaje claro y accesible refuerza la visibilidad en buscadores y facilita su navegación interna.
 
@@ -989,7 +974,7 @@ El sistema de iconografía de Macetech adopta un enfoque visual coherente y func
   *Descripción de usos de colores para los íconos de Macetech en modo Dark*
 
   | Métrica	| Nombre | Hex | Uso | Justificación |
-  |---------|-----------|----------------|-----------|-----|------------------|---------------|
+  |---------|--------|-----|-----|---------------|
   | Humedad y Temperatura Fría | Azul Lago |	#2980B9	| Utilizado en barras/áreas de visualización de humedad	y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
   | Luz y Alerta Moderada | Mostaza |	#F39C12	| Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas en un nivel moderada | Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro | 
   | Temperatura Media | Zanahoria |	#D35400	| Utilizado para mostrar el rango medio de temperatura | Se utiliza un naranja oscuro que sigue diferenciando niveles de temperatura. Tiene un contraste AA/AAA con texto blanco y fondos oscuros |
@@ -1125,7 +1110,534 @@ Cada subapartado aborda de forma específica los principios, estilos y restricci
 
 #### 5.1.2.1. Web Style Guidelines
 
+##### 5.1.2.1.1. Sistema de cuadrícula y espaciado
+
+A continuación se detalla de forma exhaustiva el Sistema de cuadrícula y espaciado para la Web Application de Macetech, con definición de columnas, márgenes, gutters y puntos de quiebre basados en estándares de la industria y mejores prácticas.
+
+El sistema emplea un grid de 12 columnas fluido, márgenes laterales adaptados y gutters uniformes en múltiplos de 8 px, ajustados a tres rangos de breakpoint para garantizar legibilidad y consistencia en pantallas desde móviles hasta escritorio (Google, 2025).
+
+**Columnas**
+
+* **Rejilla de 12 columnas:**
+
+    Cada columna dispone de un ancho equivalente que, al combinarse, permite construir diseños de 4, 8 o 12 fracciones.
+
+  * **Ancho unitario aproximado:**
+
+      * En **escritorio** (≥ 1024 px) cada columna mide un aproximado de 86 px 
+  
+            (((1366 px – 2×32 px) – 11×24 px) / 12 )
+
+      * En **tableta** (600–1023 px) cada columna mide un aproximado de 80 px 
+
+            (((800 px – 2×24 px) – 7×16 px) / 8)
+
+      * En **móvil** (≤ 599 px) el diseño adopta una sola columna adaptable al ancho disponible menos *2×16 px* de margen lateral.
+
+  * **Ancho máximo de contenedor:**
+
+    Para pantallas muy anchas, el contenedor principal se limita a 1366 px, centrado mediante márgenes automáticos, evitando que el contenido se extienda en exceso y pierda legibilidad.
+
+  La unidad de medida interna emplea *grid-template-columns*, con "repeat(12, 1fr)" en CSS Grid, facilitando la asignación de spans variables a los elementos contenidos. Para diseños centrados, se limita el contenedor principal a un ancho máximo (max-width) de 1366 px, con laterales rellenos (padding-inline) proporcionales para mantener el contenido centrado en pantallas muy anchas.
+
+**Márgenes y Gutters**
+
+Los gutters (espacio entre columnas) se definen en múltiplos de 8 px, recomendando 24 px en escritorio y 16 px en tabletas para mantener un ritmo visual coherente.
+
+* **Escritorio: 24 px**
+
+* **Tableta: 16 px**
+
+* **Móvil: n/a (columna única)**
+
+Márgenes laterales (padding‑inline del contenedor):
+
+* **Móvil: 16 px**
+
+* **Tableta: 24 px**
+
+* **Escritorio: 32 px** 
+
+Los márgenes laterales (padding-inline del contenedor) arrancan en 16 px en móviles, suben a 24 px en tabletas y 32 px en escritorio, garantizando que el contenido no quede pegado al borde de la ventana.
+
+Estos valores deben implementarse como variables de espacio (design tokens), garantizando actualización global y coherencia en todos los componentes.
+
+Tanto gutters como márgenes deben definirse mediante la propiedad CSS gap y variables (CSS custom properties o design tokens), favoreciendo la mantenibilidad y adaptabilidad.
+
+**Breakpoints**
+
+El sistema admite tres rangos de anchura, ajustándose en cada caso el número de columnas, gutters y márgenes:
+
+| Rango	| Ancho de pantalla	| Columnas | Gutters | Márgenes laterales | Comentario | 
+|-------|-------------------|----------|---------|-------------------|------------|
+| Móvil	| 0 px – 599 px	| 1	| - | 16 px | Contenido apilado verticalmente |
+| Tableta |	600 px – 1023 px	| 8	| 16 px	| 24 px | Columnas combinables para secciones principales y secundarias con gutters de 16 px | 
+| Escritorio | ≥ 1024 px | 12 | 24 px	| 32 px | Permite layouts multicolumnas y dashboards complejos |
+
+Cada punto de quiebre se define mediante media queries para adaptar la cuadrícula y mantener el ritmo visual en todas las resoluciones.
+
+###### Figura 30?
+
+*Modelo de cuadrícula con columnas, gutters y márgenes laterales utilizados por la aplicación web y su relación en distintos dispositivos*
+
+<img src="/assets/img/capitulo-5/style-guidelines/web/grid/grid-and-spacing-system-for-app.png" alt="Grid and spacing system used for the web app interface" width="1000" height="580"> 
+
+##### 5.1.2.1.2. Responsividad y Adaptabilidad
+
+**Rangos de Anchura y Puntos de Quiebre**
+
+| Dispositivo	| Ancho de ventana	| Columnas efectivas | Márgenes | Gutters |
+|-------------|-------------------|--------------------|----------|---------|
+| XS – Móvil	| 320 px – 599 px	| 1 columna full‑width | 16 px | - |
+| SM – Tableta	| 600 px – 767 px	| 4 columnas | 24 px | 16 px |
+| MD – Desktop	| 768 px – 1023 px | 8 columnas	| 24 px	| 16 px |
+| LG – Desktop	| 1024 px – 1365 px	| 12 columnas	| 32 px	| 24 px | 
+| XL – Ultra‑wide	| ≥ 1366 px	| 12 columnas + centering	| 32 px	| 24 px |
+
+* En XS, todo el contenido (tarjetas, formularios, menús) ocupa la única columna disponible, apilándose verticalmente con separaciones de 16 px.
+
+* En SM, las tarjetas de sensores y formularios pueden disponerse en un grid de 2×2 (span de 2 columnas cada una), manteniendo gutters de 16 px.
+
+* En MD y LG, la rejilla de 8 o 12 columnas permite distribuciones más complejas con menús laterales (span ≥ 2 columnas), dashboard principal (span ≥ 6–8 columnas) y paneles secundarios.
+
+* En XL, se mantiene el máximo de 12 columnas pero centrándose el contenedor en un ancho máximo de 1366 px, con márgenes automáticos a izquierda y derecha.
+
+**Comportamiento de Tarjetas, Menús y Formularios**
+
+* **Tarjetas (Cards)**
+
+  * **XS:** full‑width con padding interno de 16 px y margen inferior de 24 px.
+
+  * **SM:** tarjetas apiladas en dos columnas con un total de cálculo de píxeles de:
+  
+        ((100% − 2×24 px)/2)
+        
+    Usa un gutter de 16 px y padding interno de 16 px.
+
+  * **MD–LG:** tarjetas configurables en grids de 3–4 columnas (span de 2–3 fracciones), con gutter de 24 px en LG. Altura mínima uniforme de 200 px para consistencia.
+
+**Menús de Navegación**
+
+* **XS–SM:** menú colapsable (de tipo hamburger), desplegable full‑width con items apilados y separación vertical de 16 px.
+
+* **MD–LG:** menú horizontal en header, ítems con padding lateral de 16 px y separación de 24 px. En dashboards, sidebar sticky (obligatorio) de span 2–3 columnas con padding interno de 24 px.
+
+**Formularios y Controles**
+
+* **Inputs:** ancho 100% en XS, span de 4–6 columnas en SM–MD, span de 3 columnas en LG. Padding interno de 12 px × 16 px, margen inferior de 16 px entre campos.
+
+* **Selects y Dropdowns:** anchos alineados con inputs, comportamiento full‑width en XS, y agrupados junto a labels en MD–LG con gutter de 16 px.
+
+* **Botones de formulario:** ancho 100% en XS, fit‑content en SM–LG con padding 12 px × 24 px, margen superior de 24 px.
+
+###### Figura 30?
+
+*Modelo de responsividad y adaptabilidad distribuida a las cuadrículas y los puntos de quiebre identificados en la aplicación web*
+
+<img src="/assets/img/capitulo-5/style-guidelines/web/responsibility/responsibility-and-adaptability-grids-and-breakpoints-for-app.png" alt="Responsibility and adaptability gris with breakpoints for Macetech's web app" width="1000" height="580"> 
+
+##### 5.1.2.1.3. Tipografía Adaptativa
+
+Implementar una tipografía adaptativa no solo mejora la estética del sitio, sino que también fortalece la usabilidad y la percepción de profesionalismo del producto. Este enfoque va más allá del uso de unidades relativas como "em", "rem" o "vw"; implica pensar en escalas tipográficas fluidas, breakpoints estratégicos y una correcta combinación entre tipo y propósito del texto (títulos, párrafos, botones, etc.).
+
+En esta sección se detallan las mejores prácticas, tecnologías recomendadas y criterios de accesibilidad para aplicar una tipografía verdaderamente adaptativa en nuestros productos digitales.
+
+**Unidades Relativas (rem y em)**
+
+Las unidades relativas permiten que todos los tamaños de fuente se comporten de forma proporcional al contexto:
+
+  * **"rem (root em)"** toma como referencia el tamaño base definido en el elemento raíz (html), garantizando coherencia global.
+
+  * **"em"** se basa en el tamaño de la fuente del propio contenedor, ideal para componentes independientes (botones, modales, tooltips) que requieran escalado interno sin alterar la jerarquía global.
+
+**Métricas a utilizar**
+
+* **Tamaño base:** 16 px (párrafo) → 1 rem (100% en html).
+
+* **Títulos principales (H1–H3):** 2 rem – 1.5 rem - 1.25 rem (32 px - 24 px - 20px).
+
+* **Cuerpo de texto:** 1 rem (16 px).
+
+* **Texto auxiliar (captions, leyendas):** 0.875 rem (14 px).
+
+* **Proporciones de contenedor:**
+
+    En tarjetas o modales, ajustar el texto interno con "em" para mantener márgenes y espaciados proporcionales al tamaño de la fuente local utilizada.
+
+**Uso de la función clamp()**
+
+* **Rango fluido controlado**
+
+    clamp() permite definir tres valores: 
+    
+    * Un mínimo (fuente legible en móviles)
+    * Un ideal (valor intermedio que crece con la pantalla)
+    * Un máximo (evitando tipografías excesivamente grandes).
+
+    ###### Tabla 40 y algo
+
+    *Modelo de valores de la función clamp() asignados a cada uno de nuestros tipos de texto y encabezados*
+
+    | Nivel tipográfico |	Mínimo | Ideal (fórmula) | Máximo |
+    |-------------------|--------|-----------------|--------|
+    | Texto auxiliar |	0.75 rem (12 px)	| 0.75 rem + 0.2 vw	| 0.875 rem (14 px) |
+    | Cuerpo de texto	| 1 rem (16 px)	| 1 rem + 0.5 vw	| 1.125 rem (18 px) |
+    | H3	| 1.25 rem (20 px)	| 1.25 rem + 1 vw	| 1.375 rem (22 px) |
+    | H2	| 1.5 rem (24 px)	| 1.5 rem + 1.5 vw |	1.75 rem (28 px) |
+    | H1	| 2 rem (32 px)	| 2 rem + 2 vw	2.25 |  rem (36 px) |
+
+* **Texto auxiliar (caption)**
+
+    clamp(0.75 rem, 0.75 rem + 0.2 vw, 0.875 rem). Crece suavemente de 12 px en móviles hasta un máximo de 14 px en desktop, manteniendo claridad en leyendas y notas.
+
+* **Cuerpo de texto**
+
+    clamp(1 rem, 1 rem + 0.5 vw, 1.125 rem). Parte de 16 px en smartphones, escala hasta 18 px en pantallas anchas, asegurando una lectura cómoda sin saturar.
+
+* **Encabezados**
+
+    * **H3:** clamp(1.25 rem, 1.25 rem + 1 vw, 1.375 rem) (20 px a 22 px)
+
+    * **H2:** clamp(1.5 rem, 1.5 rem + 1.5 vw, 1.75 rem) (24 px a 28 px)
+
+    * **H1:** clamp(2 rem, 2 rem + 2 vw, 2.25 rem) (32 px a 36 px)
+
+* **Beneficios**
+
+    * **Sin saltos bruscos:** Los cambios son proporcionales al viewport, evitando “picos” de tamaño al pasar un breakpoint.
+
+    * **Mayor control de jerarquía:** Cada nivel tipográfico mantiene su relación de proporción (Major Third) incluso al escalar.
+
+    * **Legibilidad garantizada:** Los valores mínimos y máximos están dentro de rangos óptimos para lectura continua según estudios de usabilidad tipográfica.
+
+  ###### Figura 30?
+
+  *Modelo de responsividad y adaptabilidad distribuida a las cuadrículas y los puntos de quiebre identificados en la aplicación web*
+
+  <img src="/assets/img/capitulo-5/style-guidelines/web/adaptive-typography/adaptive-typography-with-clamp.png" alt="Model of adaptive typography with the clamp() function" width="1000" height="580"> 
+
+**Líneas base y altura de línea**
+
+La altura de línea y el espaciado entre bloques de texto son tan importantes como el tamaño de la fuente para garantizar una experiencia de lectura cómoda:
+
+* **Altura de línea (line-height):**
+
+    Para cuerpo de texto, emplear un valor entre 1.4× y 1.6× el tamaño de fuente. Esto equivale a 22 px – 24 px cuando la tipografía es de 16 px, y mejora la separación visual entre líneas sin fragmentar el párrafo.
+
+    Para encabezados, se puede reducir ligeramente a 1.2× – 1.3× para reforzar la unidad del bloque.
+
+* **Espacio entre bloques:**
+
+    Definir un margen inferior equivalente a 2× la altura de línea del bloque anterior. Así, un párrafo con line-height: 24px tendrá un margin-bottom: 48px, creando una separación proporcional que facilita la escaneo visual y evita la congestión de texto.
+
+* **Medida óptima de línea (measure):**
+
+    Mantener entre 45 y 75 caracteres por línea para maximizar la legibilidad. Ajustar el ancho de los contenedores o la tipografía si este rango se supera, evitando que las líneas sean demasiado largas o demasiado cortas.
+
+##### 5.1.2.1.4. Accesibilidad Web
+
+Para garantizar que la Web Application de Macetech sea plenamente utilizable por la mayor cantidad de usuarios, incluyendo aquellos con discapacidades visuales, motoras o cognitivas, se implementa un conjunto de métricas cuantitativas y buenas prácticas de diseño alineadas con las pautas WCAG 2.1. A continuación se detallan con rigor técnico y semántico.
+
+**Contraste de color**
+
+El contraste cromático es esencial para la percepción nítida del contenido en pantalla. Se establecen los siguientes umbrales:
+
+###### Tabla 40
+
+*Modelo de contraste crómatico para la percepción nítida de las pantallas de los usuarios de Macetech*
+
+| Tipo de elemento | Ratio mínimo	| Justificación técnica |
+|------------------|--------------|-----------------------|
+| Texto y elementos interactivos pequeños |	4.5 : 1	| Asegura legibilidad de letras de hasta 18 pt y componentes táctiles pequeños (≥ 44×44 px).
+| Texto grande (≥ 18 pt o ≥ 14 pt en negrita) | 3 : 1	Permite que títulos y encabezados destacados sean legibles con menor contraste. |
+| Iconografía y bordes | 3 : 1	| Garantiza que íconos de estado y contornos de cajas se distingan del fondo sin ser intrusivos. |
+| Estados de foco	| 3 : 1	| El anillo de foco debe destacarse sobre el fondo y el elemento subyacente para no perderse. |
+
+* **Herramientas de verificación:**
+
+    * **WebAIM Contrast Checker:** permite validar ratios exactos de la paleta crómatica.
+
+    * **axe DevTools y Lighthouse (extensiones de navegador):** análisis automatizado de accesibilidad.
+
+    * **Flujo de trabajo de diseño:** incorporar pruebas de contraste en etapas tempranas de prototipado (Figma, Sketch) mediante plugins especializados, evitando iteraciones costosas en desarrollo.
+
+**Etiquetado semántico y ARIA**
+
+El empleo de roles y atributos ARIA dota a la interfaz de una estructura semántica comprensible por lectores de pantalla:
+
+###### Tabla 40
+
+*Listado de atributos ARIA con distintas funciones utilizadas en el proyecto de Macetech*
+
+| Componente	| Rol ARIA	| Atributos adicionales | 
+|-------------|-----------|-----------------------|
+| Íconos e imágenes	| *role="img"* | *aria-label="Descripción precisa"* o *aria-labelledby* vinculado a texto descriptivo cercano | 
+| Botones de acción	| *role="button"* |	*aria-pressed* para toggles, *aria-expanded* para menús desplegables |
+| Navegación principal	| *role="navigation"* |	*aria-label="Menú principal"* |
+| Diálogos / modales	| *role="dialog"* y *aria-modal="true"* |	*aria-labelledby* (ID del encabezado del modal), *aria-describedby* (ID de la descripción) | 
+| Tablas de datos	| *role="table"* |	Encabezados con *role="columnheader"* y celdas con *role="cell"* |
+
+* **Texto alternativo:** todos los iconos que transmiten información o acción deben llevar un *aria-label* claro (por ejemplo: “Añadir nueva maceta”).
+
+* **Agrupaciones lógicas:** emplear contenedores semánticos (<main>, <aside>, <header>, <footer>) junto con roles ARIA para reforzar jerarquías de contenido.
+
+**Navegación con teclado**
+
+Operar la interfaz íntegramente sin ratón responde a la necesidad de incluir a usuarios con limitaciones motrices, visuales o cognitivas que dependen de teclados, pulsadores adaptados o lectores de pantalla. Según el criterio 2.1.1 de WCAG 2.1 (World Wide Web Consortium, 2025), toda funcionalidad debe ser accesible mediante teclado, lo cual no solo cumple requisitos legales y normativos, sino que además mejora la experiencia de usuarios avanzados y facilita el uso en entornos donde el ratón no está disponible.
+
+* **Objetivos de área de enfoque (hit target):** Mínimo 44 × 44 px por elemento interactivo (botones, enlaces, iconos táctiles). Espaciado adicional de 8 px alrededor para evitar activaciones accidentales.
+
+* **Orden de tabulación lógico:** El índice de tabulación (tabindex) debe seguir el flujo Z patter (de izquierda a derecha, de arriba a abajo), también relativo a la pantalla. Elementos decorativos o informativos (sin acción) deben ser excluidos del tabulado (tabindex="-1").
+
+* **Indicadores de foco claramente visibles:** Personalizar el estilo :focus con un outline de al menos 3 px de grosor y un offset de 2 px, usando el color de marca (verde #2A8050) para reforzar la coherencia visual. El contorno debe respetar el contraste mínimo 3 : 1 sobre el fondo y el elemento subyacente.
+
+**Tipografía legible y escalable**
+
+Si bien el apartado de tipografía adaptativa, ya visto en la sección anterior, profundiza en unidades y escalas, aquí recalcamos su papel en la accesibilidad para fomentar su uso y mantenerlo en cada una de nuestra plataformas:
+
+* **Escala de lectura óptima:** garantizar que el cuerpo de texto pueda aumentar hasta un 200 % sin romper el layout, manteniendo líneas de entre 45 y 75 caracteres para evitar fatiga visual.
+
+* **Altura de línea:** mínima de 1.5× para cuerpo de texto y 1.3× para encabezados, asegurando separación suficiente y evitando agrupamientos.
+
+* **Distancias mínimas:** establecer un espaciado interbloque de al menos 24 px entre párrafos y secciones, facilitando la orientación de usuarios con baja visión.
+
 #### 5.1.2.2. Mobile Style Guidelines
+
+##### 5.1.2.2.1 Principios Generales de Interacción Móvil
+La aplicación móvil de Macetech debe ofrecer interacciones táctiles naturales, rápidas y predecibles. Para ello, se incorporan métricas precisas de dimensiones de toque y patrones gestuales coherentes con las convenciones de plataforma, garantizando una experiencia cómoda y accesible.
+
+**Tamaños de toque (Touch Targets)**
+
+  * **Dimensiones mínimas y áreas seguras:** 
+
+      48 × 48 dp es el área de toque mínima recomendada para botones, íconos interactivos y elementos de control. Esta dimensión asegura una zona táctil suficiente para la mayoría de usuarios, incluyendo aquellos con movilidad reducida o dedos de mayor tamaño.
+
+      Siempre que sea posible, ampliar el área activa a 56 × 56 dp o 64 × 64 dp en elementos primarios (por ejemplo, botones de acción flotante, íconos clave del dashboard), aumentando la precisión y reduciendo errores de selección.
+
+  * **Padding invisible:** 
+
+      Se aconseja aplicar un “padding” interno extendido alrededor del visual del ícono para alcanzar el área mínima, sin alterar su tamaño gráfico.
+
+  * **Espaciado entre elementos**
+
+      Mantener un espacio mínimo de 8 dp entre touch targets adyacentes para evitar activaciones accidentales.
+
+      En listas o tarjetas, dejar un margen vertical de 16 dp entre filas, de modo que el usuario perciba claramente cada elemento como una unidad independiente.
+
+      Los elementos críticos (como “Regar ahora” o “Añadir Maceta”) deben situarse en zonas “thumb‑friendly” de la pantalla (esquinas inferiores), considerando un radio de accesibilidad de al menos 90 dp desde los bordes.
+
+  ###### Figura 30?
+
+  *Modelo de áreas de toque y espacios seguros asignados a los distintos elementos de la aplicación móvil de Macetech*
+
+  <img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/touch-areas-for-mobile-and-safe-space.png" alt="Touch areas and safe space for components in mobile application" width="1000" height="580"> 
+
+**Gestos y Patrones de Interacción**
+
+* **Tap**
+
+    Acción primaria para seleccionar ítems, abrir detalles o activar comandos inmediatos (p. ej., tocar una tarjeta de planta para ver su historial).
+
+    **Respuesta visual:** cambio de fondo o “ripple” inmediato (< 100 ms) para reforzar la acción.
+
+* **Double‑Tap**
+
+    Reservado para funcionalidades avanzadas (p. ej., hacer “zoom” rápido en un gráfico de sensor). Debe usarse con moderación y siempre ofrecer alternativa de gesto único o botón secundario para accesibilidad.
+
+* **Long‑Press**
+
+    Invoca menús contextuales o acciones adicionales sin sobrecargar la interfaz principal
+
+    **Respuesta visual:** 500 ms de presión constante. Mostrar feedback táctil (vibración breve) y visual (ligero cambio de opacidad) al activar.
+
+* **Swipe horizontal**
+
+    Navegación entre pestañas secundarias (Gráfico -> Historial -> Recomendaciones -> Alertas -> Reportes -> Programación).Debe requerir un desplazamiento de al menos 16 dp y terminar con un rebote suave si se alcanza el límite.
+
+* **Swipe vertical:**
+
+    Actualización de contenido (Pull‑to‑Refresh) en listas de alertas o notificaciones. El umbral de disparo es al arrastrar 60 dp hacia abajo, mostrando indicador de carga a 30 dp.
+
+* **Drag & Drop**
+
+    Uso puntual para reordenar listas de programación de riego o recomendaciones. Elemento arrastrado debe seguir el dedo con un shadow sutil y un scale de 1.05× para indicar estado activo.
+
+###### Figura 30?
+
+*Listado de patrones gestuales disponibles junto a sus directrices para el uso de la aplicación móvil de Macetech*
+
+<img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/gesture-patterns-and-animations-in-mobile.png" alt="Gesture patterns and animations in Macetech's mobile application" width="1000" height="580"> 
+
+**Transiciones y Animaciones**
+
+* **Duración estándar:**
+
+  * 200 ms – 300 ms para transiciones de pantalla (push/pull de vistas).
+
+  * 150 ms – 200 ms para microinteracciones (botones, íconos).
+
+* **Curvas de easing:**
+
+  * Material Design recomienda el uso de Cubic‑Bezier(0.4, 0.0, 0.2, 1). Es una función de tiempo de animación CSS que define un ritmo específico para una transición o animación. En este caso, representa una curva de Bézier cúbica que se acelera lentamente al principio y luego acelera rápidamente, dando la impresión de un movimiento que se acelera gradualmente (Google, 2025).
+
+* **Tipos de transiciones**
+
+  * **Push / Pop de vistas**
+
+    * **iOS:** Animación deslizante horizontal (“push” y “pop”) conforme a las Human Interface Guidelines, que simula el apilamiento y desempilamiento de vistas en una navegación jerárquica, reforzando la pila de pantallas (Apple Inc., 2025).
+
+    * **Android:** Animación de “slide-in/out” vertical, característico de Material Design, que otorga una sensación de continuidad desde la parte inferior de la pantalla, acorde a la dirección natural del pulgar en dispositivos móviles (Google, 2025).
+
+  * **Visibilidad de contexto**
+
+    Durante la transición, mantener al menos el 80 % de la vista anterior visible durante el 50 % de la duración de la animación. Esta superposición parcial cumple dos funciones clave:
+
+      * **Orientación espacial:** El usuario percibe simultáneamente el punto de partida y de llegada, reduciendo la sensación de “pérdida” al cambiar de contexto.
+
+      * **Consistencia cognitiva:** Facilita el seguimiento mental del flujo de navegación, reforzando la relación entre las pantallas en términos de progresión de tareas.
+
+      * **Duración recomendada:** 250 ms – 300 ms. Este intervalo se sitúa en el “sweet spot” de las transiciones fluidas (200 ms – 350 ms) identificado por investigaciones en experiencia de usuario, que equilibran rapidez y claridad sin generar sensación de lentitud ni brusquedad (Apple Inc., 2025)
+
+  * **Bottom Sheets**
+
+    * **Desplazamiento inicial:** 30 px de avance antes de soltar el elemento (threshold), siguiendo Material Design, para que el sistema distinga entre un gesto involuntario y la intención de abrir el panel (Google, 2025).
+
+    * **Animación completa:** Deslizamiento hasta cubrir el 100 % de la altura de la zona designada (parcial o total) en 250 ms, optimizando la sensación de ligereza y respuesta inmediata. Esto mejora la relevancia de la información secundaria (programación de riego, historial) sin abandonar la vista subyacente.
+
+  * **Modales centrados**
+
+    * **Efecto de escala:** Crecimiento de 0.95× a 1.0× en 200 ms, complementado con un fade-in de opacidad desde 0 % a 100 %. El ligero “zoom” apela a la percepción táctil de enfoque, atrayendo la atención hacia el contenido modal sin desconectar bruscamente de la pantalla de fondo.
+
+    * **Duración:** 180 ms – 220 ms, rango óptimo para indicar prioridad alta del modal y permitir a la interfaz reaccionar sin demoras perceptibles (Apple Inc., 2025).
+
+  * **Feedback en acciones**
+
+    * **Efecto de “ripple” o tinta**
+
+        Radio inicial de 10 dp, expandiéndose hasta 24 dp en 300 ms con una opacidad máxima de 0.3 después de una interacción. Esto refuerza la certeza de que la pulsación ha sido registrada, aportando un feedback inmediato y localizado.
+
+        Los valores de radio y opacidad reflejan los márgenes y la paleta cromática de Macetech, integrándose armoniosamente con el resto de microinteracciones.
+
+    * **Variantes:**
+
+        Para elementos de alto contraste (alertas, controles críticos), ajustar la opacidad al 0.5 para asegurar visibilidad.
+
+        En modo oscuro, emplear colores invertidos o degradados sutiles para conservar el contraste y la percepción del efecto de tinta.
+
+La navegación en dispositivos móviles debe organizarse de forma clara, predecible y accesible, respetando los patrones de interacción nativa de cada sistema y las limitaciones de espacio táctil. A continuación se desglosan tres componentes esenciales: Bottom Navigation vs. Drawer, Floating Action Buttons (FAB) y Headers Adaptativos, con sus métricas, justificaciones de diseño y recomendaciones de uso en Macetech.
+
+##### 5.1.2.2.2 Jerarquía Visual y Navegación
+
+La navegación en dispositivos móviles debe organizarse de forma clara, predecible y accesible, respetando los patrones de interacción nativa de cada sistema y las limitaciones de espacio táctil. A continuación se desglosan cuatro componentes esenciales: Bottom Navigation, Drawer, Floating Action Buttons (FAB) y Headers Adaptativos, con sus métricas, justificaciones de diseño y recomendaciones de uso en Macetech.
+
+* **Bottom Navigation**
+
+    Es una barra fija en la parte inferior de la pantalla que muestra entre 3 y 5 ítems principales de navegación. Es una opción clásica y adecuada para el desarrollo de aplicaciones móviles entre distintos sistemas operativos. Ocupa un espacio razonable y fomenta de forma activa la navegación con el usuario (Google, 2025).
+
+    * **Altura recomendada:** 56 dp (Material Design) / 50 pt (iOS).
+
+    * **Touch targets:** cada ícono ocupa al menos 48 × 48 dp, con un margen lateral mínimo de 16 dp entre ítems.
+
+    * **Las principales ventajas de usar Bottom Navigation son:**
+
+      * Visibilidad constante de las rutas primarias, reduciendo la carga cognitiva al usuario.
+
+      * Posición “thumb‑friendly”, por lo que es accesible para pulgares en teléfonos de hasta 6.5″.
+
+    * **Usos en la aplicación:**
+
+      * Secciones de alto nivel (p. ej., Dashboard, Macetas, Membresías, Perfil).
+
+      * Ideal para accesos frecuentes: “Mis Macetas”, “Alertas” y “Programación”.
+
+      Según la ley de Fitts, los objetivos cercanos al borde inferior requieren menos tiempo de selección y ofrecen mayor precisión en un pulgar centrado o desviado ligeramente hacia un lado.
+
+* **Navigation Drawer (Hamburger Menu)**
+
+    Es un panel lateral deslizante que muestra rutas secundarias o poco frecuentes.
+
+    * **Ancho mínimo:** 280 dp (Material) / 320 pt (iOS).
+
+    * **Spacing interno:** 16 dp entre ítems, icono-texto 8 dp de separación.
+
+    * **Las principales ventajas de usar Navigation Drawer son:**
+
+      * Permite organizar un mayor número de destinos sin saturar la interfaz principal.
+
+      * Adecuado para funciones avanzadas o configuraciones (p. ej., Ajustes, Ayuda, Términos).
+
+    * **Usos en la aplicación:**
+
+      Aunque es menos visible que la Bottom Navigation, su uso aún puede limitarse a tareas de baja frecuencia.Siempre asegurar un icono de acceso (hamburger) de 32 × 32 dp en la esquina superior izquierda del header.
+
+      * Menús de configuración para datos de macetas o datos de perfil.
+
+      * Menús de reportes para seleccionar distintas métricas para cada tipo de reporte necesario.
+
+**Floating Action Buttons (FAB)**
+
+  Son botones circulares que representan la acción principal de la pantalla para el usuario.
+
+  * **Diámetro estándar:** 56 dp (Android) / 60 pt (iOS Adaptativo).
+
+  * **Área de toque efectivo:** 72 dp (12 dp de padding invisible).
+
+  * **Posicionamiento:** Esquinas inferiores, derecha en LTR (Left-To-Right), izquierda en RTL (Right-To-Left), situados a 16 dp del borde y 16 dp por encima de la Bottom Navigation o teclado incrustado. El FAB, al “flotar” sobre el contenido, atrae la atención y comunica prioridad, reduciendo ruido al aislar la acción más relevante para el contexto actual según Material Design Guidelines (Google, 2025).
+
+  * **Uso en Macetech:**
+
+    * **Acción destacada:** “Añadir Maceta” o “Regar Ahora”.
+
+    * En vistas de listado, permite agregar nuevos sensores o programaciones.
+
+  * Variantes:**
+
+    * **Extended FAB:** botón alargado con icono y texto, mínimo 88 dp de ancho, para mejorar la claridad en acciones complejas (p. ej., “Programar Riego”).
+
+**Headers Adaptativos**
+
+  Son encabezados flexibles que responden a cambios de contexto, scroll y jerarquía de la pantalla.
+
+Dimensiones:
+
+Altura inicial: 56 dp (Android) / 44 pt (iOS Safe Area + 44 pt).
+
+Altura contraída al hacer scroll: reducir a 48 dp–50 dp, optimizando espacio.
+
+Componentes habituales:
+
+Icono de navegación (back or menu), título de pantalla, iconos de acción (perfil, notificaciones).
+
+Espaciado interno: 16 dp de padding horizontal, 8 dp entre iconos, 24 dp entre icono y título.
+
+Comportamiento adaptativo:
+
+Shrink on Scroll: el header contrae su altura y puede ocultar el subtítulo o buscar, manteniendo solo el título principal.
+
+Collapsing Toolbar: en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
+
+Justificación:
+
+Permite maximizar el área de contenido sin perder rastreo de la navegación. La dinámica de expansión y contracción mejora la orientación espacial del usuario y prioriza la información según contexto (Apple Human Interface Guidelines).
+
+D. Recomendaciones Generales
+Consistencia entre plataformas
+
+Aunque Material Design y Human Interface Guidelines difieren en detalles, la estructura de navegación debe mantenerse coherente en iOS y Android, adaptando solo los matices de estilo y gestos nativos.
+
+Claridad en el estado activo
+
+En la Bottom Navigation y Drawer, resaltar el ítem activo con un cambio de color de icono y texto (por ejemplo, verde #43AA8B) y un subrayado o fondo semitransparente.
+
+Accesibilidad
+
+Todos los elementos de navegación deben ser focuseables y cumplir con las áreas de toque mínimas.
+
+Proveer etiquetas descriptivas (aria-label, accessibilityLabel) para lectores de pantalla.
+
+Pruebas de usabilidad
+
+Realizar tests con usuarios en dispositivos reales, evaluando la facilidad para alcanzar elementos y comprender la jerarquía.
 
 ##### 5.1.2.2.1. Android Style Guidelines
 
