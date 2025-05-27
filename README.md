@@ -239,7 +239,7 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
   <tbody>
     <tr>
       <td>
-      Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software.
+      Trabaja en equipo para proporcionar liderazgo en forma conjunta.
       </td>
       <td>
       <b> TB1</b><br>
@@ -325,7 +325,7 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       </td>
     </tr>
     <tr>
-      <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software.</td>
+      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>  
