@@ -403,14 +403,18 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 </table>
 
 #### 6.2.1.2.Aspect Leaders and Collaborators.
-| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Pot Management - Leader (L) / Collaborator (C) | Plant Management - Leader (L) / Collaborator (C) | Watering Management - Leader (L) / Collaborator (C) | System Monitoring & Control - Leader (L) / Collaborator (C) | Data Insights & Reporting - Leader (L) / Collaborator (C) | Caring Intelligence - Leader (L) / Collaborator (C) |
+
+La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
+
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
-| Mallma, Ruben | RubDaShen | - | C | L | - | - | - | C |
-| Paredes, Luiggi | DevLuiggi | C | - | - | - | - | C | L |
-| Pescorán, Juan | JuanPescoran | - | - | - | L | - | - | - |
-| Sanchez, Fabrizio | Fabrizio0711 | - | L | - | - | L | C | - |
-| Trigueros, Flavio | FlavioTrigueros | C | C | - | - | - | L | C |
-| Yen, Lucio | LucioY250 | L | - | C | C | - | - | - |
+| Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
+| Paredes, Luiggi | DevLuiggi | - | C | - | L | - | C | - |
+| Pescorán, Juan | JuanPescoran | - | - | - | C | C | L | L |
+| Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
+| Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
+| Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 #### 6.2.1.3.Sprint Backlog 1.
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
