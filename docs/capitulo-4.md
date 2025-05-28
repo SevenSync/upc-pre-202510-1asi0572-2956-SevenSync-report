@@ -16,7 +16,8 @@ En esta sección se documenta el proceso realizado mediante la técnica de Event
 
 > “EventStorming is a workshop format for quickly exploring complex business domains. It is designed to bring together different stakeholders to collaboratively model business processes using domain events.” (Brandolini, 2013)
 
-Como objetivos tuvimos: 
+Como objetivos tuvimos:
+
 - Identificar eventos relevantes que ocurren dentro del dominio.
 
 - Establecer relaciones causales y temporales entre eventos.
@@ -27,7 +28,7 @@ Como objetivos tuvimos:
 
 ###### Desarrollo de la sesión
 
- <b>Fase 1: Recolección de Domain Events (Big Picture)</b>
+<b>Fase 1: Recolección de Domain Events (Big Picture)</b>
 
 En esta etapa inicial, cada participante propuso eventos profesionales del sistema utilizando notas adhesivas naranjas. Estos eventos representan hechos relevantes que ocurren en el negocio, expresados en pasado.
 
@@ -44,14 +45,15 @@ En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eli
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-2-collect-domain-events.jpg.jpg"></image>
 
 Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
+
 - Acciones de usuarios (comandos, actores, vistas),
 - Sistemas externos,
 - Procesos de negocio (por ejemplo, condiciones temporales),
 - Otros eventos del dominio (reacciones automáticas).
 
 Para esta sección, se necesitará identificar el color de los post-its de Miro para mantener el orden. Se usará esta convención:
- 
- <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
+
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes.jpg"></image>
 
@@ -68,6 +70,7 @@ Para esta sección, se necesitará identificar el color de los post-its de Miro 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-watering.jpg"></image>
 
 Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
+
 - Qué comandos disparan qué eventos,
 - Qué usuarios ejecutan qué comandos,
 - Qué eventos activan políticas o modelos de lectura,
@@ -75,13 +78,12 @@ Finalmente, se reorganizaron los eventos en torno a los agregados identificados.
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ingestion.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ing.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot-management.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recommendations.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot.jpg"></image>
+<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recom.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
@@ -90,15 +92,15 @@ Finalmente, se reorganizaron los eventos en torno a los agregados identificados.
 
 #### 4.1.1.1 Candidate Context Discovery
 
-En esta sección, el equipo describe detalladamente el proceso seguido para la sesión de Candidate Context Discovery, partiendo del modelo de dominio previamente construido mediante EventStorming, con el propósito de identificar y delimitar los Bounded Contexts que compondrán la arquitectura de Macetech. Según Khononov (2021), este enfoque estratégico de Domain‑Driven Design (DDD) requiere una combinación de análisis colaborativo y técnicas sistemáticas para aislar fragmentos del dominio que posean coherencia interna y aporten el mayor valor al negocio 
+En esta sección, el equipo describe detalladamente el proceso seguido para la sesión de Candidate Context Discovery, partiendo del modelo de dominio previamente construido mediante EventStorming, con el propósito de identificar y delimitar los Bounded Contexts que compondrán la arquitectura de Macetech. Según Khononov (2021), este enfoque estratégico de Domain‑Driven Design (DDD) requiere una combinación de análisis colaborativo y técnicas sistemáticas para aislar fragmentos del dominio que posean coherencia interna y aporten el mayor valor al negocio
 
 Para asegurar una exploración efectiva de los límites contextuales, se combinaron tres técnicas complementarias, tal como recomienda Khononov (2021):
 
-* Start‑with‑Value: consiste en identificar primero aquellos subdominios o flujos de negocio cuyo impacto en la propuesta de valor sea más significativo, de modo que las decisiones de acotamiento prioricen las funcionalidades críticas para el usuario y el negocio 
+- Start‑with‑Value: consiste en identificar primero aquellos subdominios o flujos de negocio cuyo impacto en la propuesta de valor sea más significativo, de modo que las decisiones de acotamiento prioricen las funcionalidades críticas para el usuario y el negocio
 
-* Start‑with‑Simple: implica descomponer el proceso principal en un conjunto mínimo de pasos secuenciales, desde el registro de usuario hasta la generación de recomendaciones, lo cual facilita la visualización y evita solapamientos entre candidatos de contexto 
+- Start‑with‑Simple: implica descomponer el proceso principal en un conjunto mínimo de pasos secuenciales, desde el registro de usuario hasta la generación de recomendaciones, lo cual facilita la visualización y evita solapamientos entre candidatos de contexto
 
-* Look‑for‑Pivotal‑Events: se centra en detectar aquellos eventos de dominio que representan cambios de estado fundamentales, ya que estos hitos indefectiblemente marcan fronteras naturales entre contextos 
+- Look‑for‑Pivotal‑Events: se centra en detectar aquellos eventos de dominio que representan cambios de estado fundamentales, ya que estos hitos indefectiblemente marcan fronteras naturales entre contextos
 
 La sesión de Candidate Context Discovery, cuya duración no excedió las dos horas, se organizó como un taller interactivo en el que participaron todos los miembros de nuestro equipo de SevenSync, empleando una herramienta colaborativa de EventStorming, Miro. Durante la misma, se capturaron iterativamente pantallazos que documentan la evolución del modelo de eventos, desde la visión inicial hasta la estructuración final de los contextos. Estas imágenes se incorporarán en la sección para evidenciar la progresión metodológica y facilitar la trazabilidad de las decisiones tomadas.
 
@@ -106,83 +108,83 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
 1. **Preparación y definición de alcance**
 
-    Para garantizar una sesión estructurada y productiva, se llevaron a cabo las siguientes actividades previas:
+   Para garantizar una sesión estructurada y productiva, se llevaron a cabo las siguientes actividades previas:
 
-    * Convocatoria y roles de los participantes
+   - Convocatoria y roles de los participantes
 
-      Se conformó un grupo interdisciplinario bajo la coordinación de SevenSync, integrado por:
-  
-        - Desarrolladores backend y frontend, responsables de la viabilidad técnica.
-    
-        - Diseñadores UX/UI, encargados de asegurar la coherencia en la experiencia de usuario.
+     Se conformó un grupo interdisciplinario bajo la coordinación de SevenSync, integrado por:
 
-    * Definición de objetivos y alcance
+     - Desarrolladores backend y frontend, responsables de la viabilidad técnica.
 
-      - **Propósito principal:** Descomponer el dominio de Macetech, desde el registro inicial del usuario hasta la emisión de recomendaciones y reportes personalizados.
-  
-      - **Alcance temporal:** Taller de mínimo dos horas y máximo tres horas en la plataforma Miro utilizando la técnica de EventStorming.
+     - Diseñadores UX/UI, encargados de asegurar la coherencia en la experiencia de usuario.
 
-    * Herramientas y materiales de trabajo
-  
-      - Lienzo colaborativo en Miro: para la colocación y organización dinámica de eventos y comandos.
-  
-      - Post‑its codificados por color: diferenciando eventos de dominio, comandos de acción e integraciones externas.
-  
-      - Marcadores y cámaras: para anotar aclaraciones y capturar iteraciones de la evolución del modelo.
-  
-    * Asignación de responsabilidades
-  
-      - Facilitador: orientó la dinámica del taller, gestionó los tiempos y promovió la participación activa.
-  
-      - Escritor: trasladó al lienzo digital las notas y agrupaciones, asegurando la trazabilidad de cada modificación.
-  
-      - Expertos de dominio: validaron definiciones, aclararon términos y garantizaron la precisión del lenguaje ubicuo.
+   - Definición de objetivos y alcance
+
+     - **Propósito principal:** Descomponer el dominio de Macetech, desde el registro inicial del usuario hasta la emisión de recomendaciones y reportes personalizados.
+
+     - **Alcance temporal:** Taller de mínimo dos horas y máximo tres horas en la plataforma Miro utilizando la técnica de EventStorming.
+
+   - Herramientas y materiales de trabajo
+
+     - Lienzo colaborativo en Miro: para la colocación y organización dinámica de eventos y comandos.
+
+     - Post‑its codificados por color: diferenciando eventos de dominio, comandos de acción e integraciones externas.
+
+     - Marcadores y cámaras: para anotar aclaraciones y capturar iteraciones de la evolución del modelo.
+
+   - Asignación de responsabilidades
+
+     - Facilitador: orientó la dinámica del taller, gestionó los tiempos y promovió la participación activa.
+
+     - Escritor: trasladó al lienzo digital las notas y agrupaciones, asegurando la trazabilidad de cada modificación.
+
+     - Expertos de dominio: validaron definiciones, aclararon términos y garantizaron la precisión del lenguaje ubicuo.
 
 2. **Técnica Start‑with‑Value**
 
-    Con el fin de enfocar el análisis en las áreas de mayor impacto, se realizó:
+   Con el fin de enfocar el análisis en las áreas de mayor impacto, se realizó:
 
-    * Identificación de “valores núcleo”
-  
-      Cada integrante propuso los flujos de negocio que, a su juicio, aportan el mayor valor a usuario y organización:
-  
-        - Gestión inicial de macetas y parámetros de configuración.
-  
-        - Generación de recomendaciones inteligentes para maximizar la tasa de éxito en el cuidado.
-  
-        - Monitoreo en tiempo real, evitando pérdidas derivadas de riegos inadecuados.
-  
-    * Priorización de eventos
-  
-      Se listaron todos los eventos detectados y se clasificaron según su impacto (alto, medio, bajo). Solo los catalogados como alto impacto se trasladaron a la siguiente etapa, garantizando que la sesión permaneciera centrada en las funciones críticas.
+   - Identificación de “valores núcleo”
+
+     Cada integrante propuso los flujos de negocio que, a su juicio, aportan el mayor valor a usuario y organización:
+
+     - Gestión inicial de macetas y parámetros de configuración.
+
+     - Generación de recomendaciones inteligentes para maximizar la tasa de éxito en el cuidado.
+
+     - Monitoreo en tiempo real, evitando pérdidas derivadas de riegos inadecuados.
+
+   - Priorización de eventos
+
+     Se listaron todos los eventos detectados y se clasificaron según su impacto (alto, medio, bajo). Solo los catalogados como alto impacto se trasladaron a la siguiente etapa, garantizando que la sesión permaneciera centrada en las funciones críticas.
 
 3. **Técnica Start‑with‑Simple**
 
-    Para clarificar la secuencia de operaciones esenciales, se procedió a:
+   Para clarificar la secuencia de operaciones esenciales, se procedió a:
 
-    *  Modelado visual con post‑its
- 
-       Cada uno de los nueve pasos se representó con post‑its de un único color, evitando superposiciones y facilitando la delimitación de responsabilidades entre los distintos subdominios.
+   - Modelado visual con post‑its
 
-    * Descomposición en pasos mínimos
-  
-      Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
+     Cada uno de los nueve pasos se representó con post‑its de un único color, evitando superposiciones y facilitando la delimitación de responsabilidades entre los distintos subdominios.
+
+   - Descomposición en pasos mínimos
+
+     Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
 
 ###### Tabla 40 y algo
 
-*Flujo de valor identificado en el proceso de EventStorming de Macetech*
+_Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
-| Paso	| Descripción	| Artefactos de Dominio / Evento Pivotal |
-|------|-------------|----------------------------------------|
-| 1	| Registro del usuario en la plataforma.	| Comando: RegisterUser, Evento: UserRegistered |
-| 2	| Creación de perfil con datos de contacto y preferencias.	|Comando: CreateProfile, Evento: ProfileCreated|
-| 3	| Autenticación del usuario, incluyendo verificación 2FA.	|Comando: AuthenticateUser, Evento: UserAuthenticated|
-| 4	| Pago de suscripción a Macetech (plan seleccionado).	|Comando: ProcessSubscriptionPayment, Evento: SubscriptionPaid|
-| 5	| Registro y configuración inicial de la maceta (Pot).	|Comando: RegisterPot, Evento: PotRegistered|
-| 6	| Definición de riego automático y programación de reportes periódicos.	|Comando: SelectWatering, Evento: AutomaticWateringProgrammed|
-| 7	| Identificación de la planta asociada a la maceta (catálogo de especies).	|Comando: AddNewPlant, Evento: NewPlantAdded|
-| 8	| Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API.	|SensorDataCollected + Evento: ExternalClimateDataFetched|
-| 9	| Generación de recomendaciones y notificaciones de alertas.	|Comando: SelectRecommendation, Evento: RecommendationDisplayed|
+| Paso | Descripción                                                                                                   | Artefactos de Dominio / Evento Pivotal                         |
+| ---- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | Registro del usuario en la plataforma.                                                                        | Comando: RegisterUser, Evento: UserRegistered                  |
+| 2    | Creación de perfil con datos de contacto y preferencias.                                                      | Comando: CreateProfile, Evento: ProfileCreated                 |
+| 3    | Autenticación del usuario, incluyendo verificación 2FA.                                                       | Comando: AuthenticateUser, Evento: UserAuthenticated           |
+| 4    | Pago de suscripción a Macetech (plan seleccionado).                                                           | Comando: ProcessSubscriptionPayment, Evento: SubscriptionPaid  |
+| 5    | Registro y configuración inicial de la maceta (Pot).                                                          | Comando: RegisterPot, Evento: PotRegistered                    |
+| 6    | Definición de riego automático y programación de reportes periódicos.                                         | Comando: SelectWatering, Evento: AutomaticWateringProgrammed   |
+| 7    | Identificación de la planta asociada a la maceta (catálogo de especies).                                      | Comando: AddNewPlant, Evento: NewPlantAdded                    |
+| 8    | Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API. | SensorDataCollected + Evento: ExternalClimateDataFetched       |
+| 9    | Generación de recomendaciones y notificaciones de alertas.                                                    | Comando: SelectRecommendation, Evento: RecommendationDisplayed |
 
 4. **Técnica Look‑for‑Pivotal‑Events**
 
@@ -190,65 +192,65 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
 ###### Tabla 40 y algo
 
-*Lista de transiciones identificadas en el proceso de EventStorming de Macetech*
+_Lista de transiciones identificadas en el proceso de EventStorming de Macetech_
 
-| Transición | Descripción |
-|--------------------|-------------|
-| UserRegistered	| Un usuario anónimo se convierte en un usuario registrado, creando una cuenta válida en el sistema. | 
-| UserProfileCreated	| Un usuario sin perfil asocia y configura su perfil con datos de contacto y preferencias personales. | 
-| UserProfileDeleted	| Un usuario con perfil configurado elimina su perfil, quedando sin datos personales asociados. | 
-| UserAuthenticated	| Una sesión no iniciada se valida exitosamente, incluyendo la verificación de dos factores (2FA). | 
-| SubscriptionPaid	| Un usuario con plan inactivo activa su suscripción mediante el pago correspondiente, habilitando acceso a funcionalidades premium. | 
-| SubscriptionCancelled	| Un usuario con suscripción activa cancela su plan, desactivando el acceso a servicios asociados. | 
-| ExternalClimateDataFetched	| El sistema integra datos climáticos externos (vía API) según la ubicación del usuario, aportando contexto ambiental a los sensores. | 
-| PotRegistered	| Una maceta previamente no asociada se registra y vincula a un usuario, quedando disponible para su gestión. | 
-| PotSelected	| El usuario selecciona una maceta de la lista de macetas registradas, estableciéndola como activa para operaciones. | 
-| PotDeleted	| El usuario elimina una maceta registrada, desvinculándola completamente de su cuenta. | 
-| BluetoothDevicesPaired	| Se establece una conexión Bluetooth entre la maceta y la red del dispositivo, habilitando la comunicación inalámbrica. |
-| IrrigationConfigured	| Una maceta sin parámetros de riego definidos adquiere reglas y periodicidad de riego configuradas. |
-| PlantIdentified	| Se reconoce la especie de la planta en la maceta y se asignan rangos óptimos de riego, temperatura, pH y salinidad. |
-| PlantRegistered	| Una planta identificada en maceta se vincula formalmente al usuario, completando su registro en el sistema. |
-| PlantWatered	| Una planta con baja humedad recibe riego, aumentando su nivel de humedad a parámetros saludables. | 
-| PlantDeleted	| El usuario elimina la asociación de la planta en la maceta, quedando ésta vacía nuevamente. | 
-| WateringProgrammed	| Un sistema de riego manual se transforma en un programa de riego automático para la planta especificada. | 
-| NotificationDisplayed	| El sistema muestra una notificación en la bandeja del usuario sobre un evento relevante (alerta, recomendación). | 
-| NotificationChecked	| El usuario marca una notificación como leída, cambiando su estado a “checada” en la bandeja de notificaciones. | 
-| NotificationDeleted	| El usuario elimina una notificación leída, removiéndola de la bandeja de notificaciones. |
-| SensorDataCaptured	| Los sensores recaban datos brutos (humedad, temperatura, pH, salinidad) y los registran para su procesamiento. | 
-| SensorDataDelivered	| Los datos capturados por los sensores se envían al sistema de la aplicación, quedando disponibles para el usuario. | 
-| SensorDataCollected	| Un sensor pasa de no tener datos almacenados a disponer de registros de las métricas capturadas. |
-| SensorHistoryDisplayed	| El sistema presenta al usuario el historial de datos de sensores, permitiendo aplicar filtros y explorar tendencias a lo largo del tiempo. |
-| RecommendationGenerated	| Con los datos recopilados, el sistema elabora recomendaciones y alertas personalizadas para el usuario. |
-| RecommendationDisplayed	| El usuario visualiza en su bandeja de recomendaciones las acciones sugeridas para optimizar el cuidado de su planta. | 
-| ConsentDelivered	| El sistema muestra al usuario los documentos de términos y condiciones, dejando constancia de su presentación. |
-| ConsentAccepted	| El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema. |
-| ConsentRejected	| El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema. |
+| Transición                 | Descripción                                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| UserRegistered             | Un usuario anónimo se convierte en un usuario registrado, creando una cuenta válida en el sistema.                                         |
+| UserProfileCreated         | Un usuario sin perfil asocia y configura su perfil con datos de contacto y preferencias personales.                                        |
+| UserProfileDeleted         | Un usuario con perfil configurado elimina su perfil, quedando sin datos personales asociados.                                              |
+| UserAuthenticated          | Una sesión no iniciada se valida exitosamente, incluyendo la verificación de dos factores (2FA).                                           |
+| SubscriptionPaid           | Un usuario con plan inactivo activa su suscripción mediante el pago correspondiente, habilitando acceso a funcionalidades premium.         |
+| SubscriptionCancelled      | Un usuario con suscripción activa cancela su plan, desactivando el acceso a servicios asociados.                                           |
+| ExternalClimateDataFetched | El sistema integra datos climáticos externos (vía API) según la ubicación del usuario, aportando contexto ambiental a los sensores.        |
+| PotRegistered              | Una maceta previamente no asociada se registra y vincula a un usuario, quedando disponible para su gestión.                                |
+| PotSelected                | El usuario selecciona una maceta de la lista de macetas registradas, estableciéndola como activa para operaciones.                         |
+| PotDeleted                 | El usuario elimina una maceta registrada, desvinculándola completamente de su cuenta.                                                      |
+| BluetoothDevicesPaired     | Se establece una conexión Bluetooth entre la maceta y la red del dispositivo, habilitando la comunicación inalámbrica.                     |
+| IrrigationConfigured       | Una maceta sin parámetros de riego definidos adquiere reglas y periodicidad de riego configuradas.                                         |
+| PlantIdentified            | Se reconoce la especie de la planta en la maceta y se asignan rangos óptimos de riego, temperatura, pH y salinidad.                        |
+| PlantRegistered            | Una planta identificada en maceta se vincula formalmente al usuario, completando su registro en el sistema.                                |
+| PlantWatered               | Una planta con baja humedad recibe riego, aumentando su nivel de humedad a parámetros saludables.                                          |
+| PlantDeleted               | El usuario elimina la asociación de la planta en la maceta, quedando ésta vacía nuevamente.                                                |
+| WateringProgrammed         | Un sistema de riego manual se transforma en un programa de riego automático para la planta especificada.                                   |
+| NotificationDisplayed      | El sistema muestra una notificación en la bandeja del usuario sobre un evento relevante (alerta, recomendación).                           |
+| NotificationChecked        | El usuario marca una notificación como leída, cambiando su estado a “checada” en la bandeja de notificaciones.                             |
+| NotificationDeleted        | El usuario elimina una notificación leída, removiéndola de la bandeja de notificaciones.                                                   |
+| SensorDataCaptured         | Los sensores recaban datos brutos (humedad, temperatura, pH, salinidad) y los registran para su procesamiento.                             |
+| SensorDataDelivered        | Los datos capturados por los sensores se envían al sistema de la aplicación, quedando disponibles para el usuario.                         |
+| SensorDataCollected        | Un sensor pasa de no tener datos almacenados a disponer de registros de las métricas capturadas.                                           |
+| SensorHistoryDisplayed     | El sistema presenta al usuario el historial de datos de sensores, permitiendo aplicar filtros y explorar tendencias a lo largo del tiempo. |
+| RecommendationGenerated    | Con los datos recopilados, el sistema elabora recomendaciones y alertas personalizadas para el usuario.                                    |
+| RecommendationDisplayed    | El usuario visualiza en su bandeja de recomendaciones las acciones sugeridas para optimizar el cuidado de su planta.                       |
+| ConsentDelivered           | El sistema muestra al usuario los documentos de términos y condiciones, dejando constancia de su presentación.                             |
+| ConsentAccepted            | El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema.                            |
+| ConsentRejected            | El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema.                                                 |
 
-  * Agrupación por afinidad de eventos
+- Agrupación por afinidad de eventos
 
-    Sobre el lienzo, los post‑its se reagruparon alrededor de cada evento pivotal, permitiendo visualizar con claridad los límites naturales entre posibles contextos.
+  Sobre el lienzo, los post‑its se reagruparon alrededor de cada evento pivotal, permitiendo visualizar con claridad los límites naturales entre posibles contextos.
 
 5. Visualización evolutiva
 
-    Para documentar el progreso y facilitar la trazabilidad:
+   Para documentar el progreso y facilitar la trazabilidad:
 
-    * Capturas iterativas
+   - Capturas iterativas
 
-    Se realizaron screenshots en Miro cada 30 minutos, mostrando:
+   Se realizaron screenshots en Miro cada 30 minutos, mostrando:
 
-     - Estado inicial: eventos sin ordenar.
-   
-     - Tras Start‑with‑Value: solo eventos de alto impacto.
-   
-     - Tras Start‑with‑Simple: disposición cronológica.
-   
-     - Tras Look‑for‑Pivotal‑Events: primeros agrupamientos.
-   
-     - Versión final: consolidación de los candidatos a contextos.
+   - Estado inicial: eventos sin ordenar.
 
-    * Registro meticuloso
-    
-  Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes realizados, asegurando que el informe refleje con exactitud la evolución metodológica, y facilitando la inclusión de estas evidencias en la sección correspondiente.
+   - Tras Start‑with‑Value: solo eventos de alto impacto.
+
+   - Tras Start‑with‑Simple: disposición cronológica.
+
+   - Tras Look‑for‑Pivotal‑Events: primeros agrupamientos.
+
+   - Versión final: consolidación de los candidatos a contextos.
+
+   * Registro meticuloso
+
+Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes realizados, asegurando que el informe refleje con exactitud la evolución metodológica, y facilitando la inclusión de estas evidencias en la sección correspondiente.
 
 6. Candidatos a Bounded Context
 
@@ -256,24 +258,24 @@ A continuación presentamos la sección de Candidatos a Bounded Contexts, donde 
 
 ###### Tabla 40 y algo
 
-*Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech*
+_Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech_
 
-| Contexto	| Responsabilidades clave	| ¿Pasa al diseño final? |
-|----------|-------------------------|------------------------|
-| IAM	| Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles	| **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. Además, comparte modelo con “User Management” para evitar duplicación de lógica de usuario. |
-| Account Management	| CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto	| **Consolidado:** Es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría. Al estar separado de IAM, mantiene independencia entre identidad y gestión de recursos de usuario. |
-| Profile & Personal Data |	Almacenamiento/actualización de datos de perfil, preferencias, integración Geo API, normalización de direcciones	| **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos. Al abstraer el manejo de datos de contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. 
-| Pot Management	| CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica	| **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica. |
-| Plant Management |	Catálogo de especies (PlantSpecies), rangos óptimos (pH, luminosidad, temperatura, salinidad), validación planta–maceta | **Consolidado:** Permite evolucionar el modelo botánico de forma independiente al hardware. Separar la lógica de especies y rangos óptimos facilita incorporar nuevas plantas o proveedores de datos externos, y garantiza que la capa de riego no dependa de cambios en el catálogo ni en los esquemas de las APIs externas. |
-| Watering Management	| Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT |	**Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Pot Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control. |
-| Subscriptions & Payments	| Definición y gestión de planes (SubscriptionPlan), procesamiento de transacciones, gestión de facturas (Invoice), integración con pasarelas y webhooks. | **Consolidado:** Soporta el modelo de negocio freemium/pago. Mantener un contexto dedicado a facturación garantiza que cambios en pasarelas, planes o flujos de cobro no afecten la lógica de usuario ni de riego. La separación da flexibilidad para adaptar políticas de precio y métodos de pago con mínima fricción. |
-| System Monitoring & Control |	Health checks, registro de logs críticos, generación/envío de alertas (push, email, SMS), dashboard operativo. | **Consolidado:** Integra supervisión y notificaciones en un único lugar, evitando fragmentar la lógica de alertas. Concentra la detección de fallos y la notificación al usuario o al equipo de operaciones, garantizando coherencia en umbrales y canales de comunicación, y favoreciendo la medición de uptime. |
-| Data Insights & Reporting | Ingesta, normalización y almacenamiento de SensorRecord; procesamiento batch/stream; dashboards	| **Consolidado:** Proporciona visibilidad de operación y resultados. Mantenerlo separado de la capa de control permite escalar pipelines de datos y ajustar retención sin impactar los servicios transaccionales, favoreciendo la adopción de nuevas herramientas de analítica. |
-| Caring Intelligence	| Motor de recomendaciones, generación de Recommendation, reportes personalizados (ReportTemplate), aprendizaje continuo. | **Consolidado:** Corazón del valor añadido de Macetech. Al separar el procesamiento de la ingesta de datos, se posibilita iterar en modelos de reglas de negocio sin afectar flujos de riego ni analítica básica, y se facilita la experimentación y el versionado de algoritmos. |
-| Notifying System	| Envío y gestión de notificaciones genéricas	sin información adicional o relacionada a recomendaciones o alertas | **Excluido:** Su responsabilidad acotada (solo envíos) carecía de un modelo de datos robusto y se solapaba con alertas críticas. Se integró dentro de System Monitoring & Control para centralizar tanto la supervisión como los canales de comunicación y evitar duplicación de lógica. | 
-| Critical Alert System |	Detección y disparo de alertas críticas según umbrales muy concretos para las métricas de las plantas |	**Excluido:** Solapaba responsabilidades con el contexto de monitoreo general y carecía de un dominio propio (no gestionaba datos ni reglas de negocio distintos). Su funcionalidad se migró a System Monitoring & Control, que unifica alertas de todo tipo. |
-| AI Service | Servicio genérico de IA para procesamiento de datos sin enfoque claro	en las recomendaciones de cada planta y las alertas no definidas | **Excluido:** Era excesivamente genérico y no alineado con casos de uso concretos o con los propios ideales del proyecto. Se reemplazó por integraciones enfocadas: Plant Management usa Plant API y Caring Intelligence alberga la lógica de recomendaciones y aprendizaje automático plenamente contextualizadas. |
-| SensorState	| Gestión de estados físicos del sensor (calibración, fallos, ciclos de vida)	de forma remota. | **Excluido:** La complejidad de manejar calibraciones y ciclos de vida requería un dominio especializado de ingeniería de hardware. Decidimos evitar la complejidad de este Bounded Context para no perder nuestro enfoque en el software y el funcionamiento del propio sistema IoT. |
+| Contexto                    | Responsabilidades clave                                                                                                                                              | ¿Pasa al diseño final?                                                                                                                                                                                                                                                                                                                                                                     |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. Además, comparte modelo con “User Management” para evitar duplicación de lógica de usuario. |
+| Account Management          | CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                                                                 | **Consolidado:** Es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría. Al estar separado de IAM, mantiene independencia entre identidad y gestión de recursos de usuario.                                                                                                   |
+| Profile & Personal Data     | Almacenamiento/actualización de datos de perfil, preferencias, integración Geo API, normalización de direcciones                                                     | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos. Al abstraer el manejo de datos de contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación.                                                           |
+| Pot Management              | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica                                 | **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica.                                                                            |
+| Plant Management            | Catálogo de especies (PlantSpecies), rangos óptimos (pH, luminosidad, temperatura, salinidad), validación planta–maceta                                              | **Consolidado:** Permite evolucionar el modelo botánico de forma independiente al hardware. Separar la lógica de especies y rangos óptimos facilita incorporar nuevas plantas o proveedores de datos externos, y garantiza que la capa de riego no dependa de cambios en el catálogo ni en los esquemas de las APIs externas.                                                              |
+| Watering Management         | Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT | **Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Pot Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control.                                                                          |
+| Subscriptions & Payments    | Definición y gestión de planes (SubscriptionPlan), procesamiento de transacciones, gestión de facturas (Invoice), integración con pasarelas y webhooks.              | **Consolidado:** Soporta el modelo de negocio freemium/pago. Mantener un contexto dedicado a facturación garantiza que cambios en pasarelas, planes o flujos de cobro no afecten la lógica de usuario ni de riego. La separación da flexibilidad para adaptar políticas de precio y métodos de pago con mínima fricción.                                                                   |
+| System Monitoring & Control | Health checks, registro de logs críticos, generación/envío de alertas (push, email, SMS), dashboard operativo.                                                       | **Consolidado:** Integra supervisión y notificaciones en un único lugar, evitando fragmentar la lógica de alertas. Concentra la detección de fallos y la notificación al usuario o al equipo de operaciones, garantizando coherencia en umbrales y canales de comunicación, y favoreciendo la medición de uptime.                                                                          |
+| Data Insights & Reporting   | Ingesta, normalización y almacenamiento de SensorRecord; procesamiento batch/stream; dashboards                                                                      | **Consolidado:** Proporciona visibilidad de operación y resultados. Mantenerlo separado de la capa de control permite escalar pipelines de datos y ajustar retención sin impactar los servicios transaccionales, favoreciendo la adopción de nuevas herramientas de analítica.                                                                                                             |
+| Caring Intelligence         | Motor de recomendaciones, generación de Recommendation, reportes personalizados (ReportTemplate), aprendizaje continuo.                                              | **Consolidado:** Corazón del valor añadido de Macetech. Al separar el procesamiento de la ingesta de datos, se posibilita iterar en modelos de reglas de negocio sin afectar flujos de riego ni analítica básica, y se facilita la experimentación y el versionado de algoritmos.                                                                                                          |
+| Notifying System            | Envío y gestión de notificaciones genéricas sin información adicional o relacionada a recomendaciones o alertas                                                      | **Excluido:** Su responsabilidad acotada (solo envíos) carecía de un modelo de datos robusto y se solapaba con alertas críticas. Se integró dentro de System Monitoring & Control para centralizar tanto la supervisión como los canales de comunicación y evitar duplicación de lógica.                                                                                                   |
+| Critical Alert System       | Detección y disparo de alertas críticas según umbrales muy concretos para las métricas de las plantas                                                                | **Excluido:** Solapaba responsabilidades con el contexto de monitoreo general y carecía de un dominio propio (no gestionaba datos ni reglas de negocio distintos). Su funcionalidad se migró a System Monitoring & Control, que unifica alertas de todo tipo.                                                                                                                              |
+| AI Service                  | Servicio genérico de IA para procesamiento de datos sin enfoque claro en las recomendaciones de cada planta y las alertas no definidas                               | **Excluido:** Era excesivamente genérico y no alineado con casos de uso concretos o con los propios ideales del proyecto. Se reemplazó por integraciones enfocadas: Plant Management usa Plant API y Caring Intelligence alberga la lógica de recomendaciones y aprendizaje automático plenamente contextualizadas.                                                                        |
+| SensorState                 | Gestión de estados físicos del sensor (calibración, fallos, ciclos de vida) de forma remota.                                                                         | **Excluido:** La complejidad de manejar calibraciones y ciclos de vida requería un dominio especializado de ingeniería de hardware. Decidimos evitar la complejidad de este Bounded Context para no perder nuestro enfoque en el software y el funcionamiento del propio sistema IoT.                                                                                                      |
 
 7. Bounded Contexts finales
 
@@ -281,20 +283,20 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 
 ###### Tabla 40 y algo
 
-*Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech*
+_Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech_
 
-| Contexto  | Responsabilidades clave   | Ubiquitous Language    |
-|-----------|---------------------------|------------------------|
-| **1. IAM**                       | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco  - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles | User, Credentials, Session, Token, 2FA |
-| **2. Account Management**           | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas  <br>  - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br>  - Validación de datos de contacto y cumplimiento de políticas de seguridad  | User, PasswordRecoveryToken, AccountStatus |
-| **3. Profile & Personal Data**   | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br>  - Gestión de preferencias de usuario (idioma, notificaciones)  <br>  - Integración con **Geo API** para catálogo de países y ciudades <br>  - Normalización y validación de direcciones  | Profile, Address, PhoneNumber, Preference, Country   |                                                                                                 |
-| **4. Pot Management** | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br>  - Gestión de metadatos (nombre, identificador único, etiquetas) <br>  - Persistencia de configuraciones históricas para auditoría | Pot, PotConfiguration, Threshold  |
-| **5. Plant Management**          | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br>  - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies     | PlantSpecies, OptimalRange, Compatibility  |                                                                                                |
-| **6. Watering Management**       | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos)  <br> - Coordinación con servicios de control de dispositivos IoT  | IrrigationJob, ValveCommand, SensorData               |                                                                                          |
-| **7. Subscriptions & Payments**  | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br>  - Gestión de **Invoice** y seguimiento de estado de pago <br>  - Integración con pasarelas externas y webhooks  | SubscriptionPlan, Invoice, PaymentTransaction  |                             
-| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (`health checks`) <br> - Registro y almacenamiento de logs críticos <br>  - Generación y envío de alertas (push, email, SMS) ante umbrales o fallos <br> - Dashboard operativo para visualización de métricas de disponibilidad | SystemHealth, Alert, NotificationChannel |  
-| **9. Data Insights & Reporting** | - Ingesta, normalización y almacenamiento de **SensorRecord**  <br> - Procesamiento batch/stream para generación de métricas agregadas  <br> - Exposición de dashboards y endpoints de consulta  <br> - Exportación de datos a formatos CSV/JSON para análisis externo   | SensorRecord, InsightReport, Dashboard   |                 
-| **10. Caring Intelligence**      | - Motor de recomendación basado en reglas y modelos ML/IA  <br> - Generación de **Recommendation** y mapeo a patrones de usuario  <br> - Creación de reportes personalizados (**ReportTemplate**)  <br> - Aprendizaje continuo a partir de retroalimentación del usuario   | Recommendation, ReportTemplate, Rule, Feedback  |  
+| Contexto                           | Responsabilidades clave                                                                                                                                                                                                                                                                                     | Ubiquitous Language                                |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --- |
+| **1. IAM**                         | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles                                                                              | User, Credentials, Session, Token, 2FA             |
+| **2. Account Management**          | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas <br> - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br> - Validación de datos de contacto y cumplimiento de políticas de seguridad                                                       | User, PasswordRecoveryToken, AccountStatus         |
+| **3. Profile & Personal Data**     | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br> - Gestión de preferencias de usuario (idioma, notificaciones) <br> - Integración con **Geo API** para catálogo de países y ciudades <br> - Normalización y validación de direcciones                                | Profile, Address, PhoneNumber, Preference, Country |     |
+| **4. Pot Management**              | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br> - Gestión de metadatos (nombre, identificador único, etiquetas) <br> - Persistencia de configuraciones históricas para auditoría                                         | Pot, PotConfiguration, Threshold                   |
+| **5. Plant Management**            | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br> - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies                         | PlantSpecies, OptimalRange, Compatibility          |     |
+| **6. Watering Management**         | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos) <br> - Coordinación con servicios de control de dispositivos IoT | IrrigationJob, ValveCommand, SensorData            |     |
+| **7. Subscriptions & Payments**    | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br> - Gestión de **Invoice** y seguimiento de estado de pago <br> - Integración con pasarelas externas y webhooks                                                                         | SubscriptionPlan, Invoice, PaymentTransaction      |
+| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (`health checks`) <br> - Registro y almacenamiento de logs críticos <br> - Generación y envío de alertas (push, email, SMS) ante umbrales o fallos <br> - Dashboard operativo para visualización de métricas de disponibilidad                          | SystemHealth, Alert, NotificationChannel           |
+| **9. Data Insights & Reporting**   | - Ingesta, normalización y almacenamiento de **SensorRecord** <br> - Procesamiento batch/stream para generación de métricas agregadas <br> - Exposición de dashboards y endpoints de consulta <br> - Exportación de datos a formatos CSV/JSON para análisis externo                                         | SensorRecord, InsightReport, Dashboard             |
+| **10. Caring Intelligence**        | - Motor de recomendación basado en reglas y modelos ML/IA <br> - Generación de **Recommendation** y mapeo a patrones de usuario <br> - Creación de reportes personalizados (**ReportTemplate**) <br> - Aprendizaje continuo a partir de retroalimentación del usuario                                       | Recommendation, ReportTemplate, Rule, Feedback     |
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
@@ -348,32 +350,32 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 ## User
 
-| Propiedad   | Valor                         |
-|-------------|-------------------------------|
-| **Nombre**  | User                          |
-| **Categoría** | Aggregate Root             |
+| Propiedad     | Valor                       |
+| ------------- | --------------------------- |
+| **Nombre**    | User                        |
+| **Categoría** | Aggregate Root              |
 | **Propósito** | Almacenar datos del usuario |
 
 ---
 
 ### Atributos
 
-| Nombre       | Tipo de dato   | Visibilidad | Descripción                                  |
-|--------------|----------------|-------------|----------------------------------------------|
-| Id           | `unsigned long`| private     | Identificador irrepetible del usuario        |
-| FullName     | `FullName`     | private     | Nombres del usuario                          |
-| Email        | `Email`        | private     | Correo electrónico del usuario               |
-| Password     | `PasswordHash` | private     | Lógica de hashing/verificación de contraseña |
-| Role         | `List<Role>`   | private     | Rol del usuario                              |
-| CreatedDate  | `DateTime`     | private     | Fecha de creación del usuario                |
-| Status       | `Status` (enum)| private     | Estado del usuario                           |
+| Nombre      | Tipo de dato    | Visibilidad | Descripción                                  |
+| ----------- | --------------- | ----------- | -------------------------------------------- |
+| Id          | `unsigned long` | private     | Identificador irrepetible del usuario        |
+| FullName    | `FullName`      | private     | Nombres del usuario                          |
+| Email       | `Email`         | private     | Correo electrónico del usuario               |
+| Password    | `PasswordHash`  | private     | Lógica de hashing/verificación de contraseña |
+| Role        | `List<Role>`    | private     | Rol del usuario                              |
+| CreatedDate | `DateTime`      | private     | Fecha de creación del usuario                |
+| Status      | `Status` (enum) | private     | Estado del usuario                           |
 
 ---
 
 ### Métodos
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                            |
-|----------------|-----------------|-------------|----------------------------------------|
+| -------------- | --------------- | ----------- | -------------------------------------- |
 | ChangeName     | `void`          | public      | Cambiar nombre del usuario             |
 | ChangeEmail    | `void`          | public      | Cambiar correo electrónico del usuario |
 | ChangePassword | `void`          | public      | Cambiar contraseña del usuario         |
@@ -384,99 +386,99 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 ## UserId
 
-| Propiedad    | Valor                                         |
-|--------------|-----------------------------------------------|
-| **Nombre**   | UserId                                        |
-| **Categoría**| Value Object                                  |
-| **Propósito**| Encapsular el identificador único de usuario  |
+| Propiedad     | Valor                                        |
+| ------------- | -------------------------------------------- |
+| **Nombre**    | UserId                                       |
+| **Categoría** | Value Object                                 |
+| **Propósito** | Encapsular el identificador único de usuario |
 
 ### Atributos
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                         |
-|--------|--------------|-------------|-------------------------------------|
-| Value  | `Long`       | private     | Identificador único de usuario      |
+| Nombre | Tipo de dato | Visibilidad | Descripción                    |
+| ------ | ------------ | ----------- | ------------------------------ |
+| Value  | `Long`       | private     | Identificador único de usuario |
 
 ---
 
 ## FullName
 
-| Propiedad    | Valor                                   |
-|--------------|-----------------------------------------|
-| **Nombre**   | FullName                                |
-| **Categoría**| Value Object                            |
-| **Propósito**| Almacenar nombres de usuario            |
+| Propiedad     | Valor                        |
+| ------------- | ---------------------------- |
+| **Nombre**    | FullName                     |
+| **Categoría** | Value Object                 |
+| **Propósito** | Almacenar nombres de usuario |
 
 ### Atributos
 
-| Nombre     | Tipo de dato | Visibilidad | Descripción               |
-|------------|--------------|-------------|---------------------------|
-| name       | `string`     | private     | Nombre del usuario        |
-| LastNames  | `string`     | private     | Apellidos del usuario     |
+| Nombre    | Tipo de dato | Visibilidad | Descripción           |
+| --------- | ------------ | ----------- | --------------------- |
+| name      | `string`     | private     | Nombre del usuario    |
+| LastNames | `string`     | private     | Apellidos del usuario |
 
 ---
 
 ## Email
 
-| Propiedad    | Valor                                  |
-|--------------|----------------------------------------|
-| **Nombre**   | Email                                  |
-| **Categoría**| Value Object                           |
-| **Propósito**| Almacenar el correo electrónico del usuario |
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | Email                                       |
+| **Categoría** | Value Object                                |
+| **Propósito** | Almacenar el correo electrónico del usuario |
 
 ### Atributos
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                   |
-|--------|--------------|-------------|-------------------------------|
+| Nombre | Tipo de dato | Visibilidad | Descripción                    |
+| ------ | ------------ | ----------- | ------------------------------ |
 | Email  | `string`     | private     | Correo electrónico del usuario |
 
 ## PasswordHash
 
-| Propiedad    | Valor                                              |
-|--------------|----------------------------------------------------|
-| **Nombre**   | PasswordHash                                       |
-| **Categoría**| Value Object                                       |
-| **Propósito**| Almacenar el correo electrónico del usuario        |
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | PasswordHash                                |
+| **Categoría** | Value Object                                |
+| **Propósito** | Almacenar el correo electrónico del usuario |
 
 ### Atributos
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                         |
-|--------|--------------|-------------|-------------------------------------|
-| email  | `string`     | private     | Correo electrónico del usuario      |
+| Nombre | Tipo de dato | Visibilidad | Descripción                    |
+| ------ | ------------ | ----------- | ------------------------------ |
+| email  | `string`     | private     | Correo electrónico del usuario |
 
 ### Métodos
 
-| Nombre  | Tipo de retorno | Visibilidad | Descripción                                       |
-|---------|-----------------|-------------|---------------------------------------------------|
-| Matches | `bool`          | public      | Verificar si un texto coincide con este hash      |
+| Nombre  | Tipo de retorno | Visibilidad | Descripción                                  |
+| ------- | --------------- | ----------- | -------------------------------------------- |
+| Matches | `bool`          | public      | Verificar si un texto coincide con este hash |
 
 ---
 
 ## UserFactory
 
-| Propiedad    | Valor                                      |
-|--------------|--------------------------------------------|
-| **Nombre**   | UserFactory                                |
-| **Categoría**| Factory                                    |
-| **Propósito**| Crear nuevas instancias de `User`          |
+| Propiedad     | Valor                             |
+| ------------- | --------------------------------- |
+| **Nombre**    | UserFactory                       |
+| **Categoría** | Factory                           |
+| **Propósito** | Crear nuevas instancias de `User` |
 
 ### Métodos
 
-| Nombre | Tipo de retorno | Visibilidad | Descripción                      |
-|--------|-----------------|-------------|----------------------------------|
-| Create | `User`          | public      | Crear una instancia de `User`    |
+| Nombre | Tipo de retorno | Visibilidad | Descripción                   |
+| ------ | --------------- | ----------- | ----------------------------- |
+| Create | `User`          | public      | Crear una instancia de `User` |
 
 ## IUserRepository
 
-| Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
-| **Nombre**    | IUserRepository                           |
-| **Categoría** | Repository                                |
-| **Propósito** | Persistir y consultar entidades de User   |
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | IUserRepository                         |
+| **Categoría** | Repository                              |
+| **Propósito** | Persistir y consultar entidades de User |
 
 ### Métodos
 
 | Nombre               | Tipo de retorno | Visibilidad | Descripción                                                   |
-|----------------------|-----------------|-------------|---------------------------------------------------------------|
+| -------------------- | --------------- | ----------- | ------------------------------------------------------------- |
 | GetByIdAsync         | `User?`         | public      | Obtener un usuario por identificador                          |
 | FindByEmailAsync     | `User?`         | public      | Buscar un usuario por correo                                  |
 | ExistsByEmailAsync   | `bool`          | public      | Verificar si hay un usuario con dicho email ya registrado     |
@@ -489,126 +491,126 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 ## ISessionRepository
 
-| Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
-| **Nombre**    | ISessionRepository                          |
-| **Categoría** | Repository                                  |
-| **Propósito** | Persistir y consultar entidades de User     |
+| Propiedad     | Valor                                   |
+| ------------- | --------------------------------------- |
+| **Nombre**    | ISessionRepository                      |
+| **Categoría** | Repository                              |
+| **Propósito** | Persistir y consultar entidades de User |
 
 ### Métodos
 
-| Nombre                  | Tipo de retorno   | Visibilidad | Descripción                                      |
-|-------------------------|-------------------|-------------|--------------------------------------------------|
-| FindByTokenId           | `SessionToken?`   | public      | Obtener un SessionToken por identificador        |
-| Store                   | `void`            | public      | Guardar un SessionToken activo                   |
-| Revoke                  | `void`            | public      | Revocar un token                                 |
-| RevokeAllSessionForUser | `void`            | public      | Revocar todas los SessionToken de un usuario     |
+| Nombre                  | Tipo de retorno | Visibilidad | Descripción                                  |
+| ----------------------- | --------------- | ----------- | -------------------------------------------- |
+| FindByTokenId           | `SessionToken?` | public      | Obtener un SessionToken por identificador    |
+| Store                   | `void`          | public      | Guardar un SessionToken activo               |
+| Revoke                  | `void`          | public      | Revocar un token                             |
+| RevokeAllSessionForUser | `void`          | public      | Revocar todas los SessionToken de un usuario |
 
 ## Authenticator
 
-| Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
-| **Nombre**    | Authenticator                                |
-| **Categoría** | Domain Service                               |
-| **Propósito** | Verificar las credenciales de un usuario     |
+| Propiedad     | Valor                                    |
+| ------------- | ---------------------------------------- |
+| **Nombre**    | Authenticator                            |
+| **Categoría** | Domain Service                           |
+| **Propósito** | Verificar las credenciales de un usuario |
 
 ### Métodos
 
-| Nombre       | Tipo de retorno  | Visibilidad | Descripción                  |
-|--------------|------------------|-------------|------------------------------|
-| authenticate | `SessionToken`   | public      | Valida las credenciales de un usuario y devuelve un token de sesión |
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                                         |
+| ------------ | --------------- | ----------- | ------------------------------------------------------------------- |
+| authenticate | `SessionToken`  | public      | Valida las credenciales de un usuario y devuelve un token de sesión |
 
 ---
 
 ## SessionToken
 
-| Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
-| **Nombre**    | SessionToken                                   |
-| **Categoría** | Entity                                         |
-| **Propósito** | Representar una sesión activa de un usuario     |
+| Propiedad     | Valor                                       |
+| ------------- | ------------------------------------------- |
+| **Nombre**    | SessionToken                                |
+| **Categoría** | Entity                                      |
+| **Propósito** | Representar una sesión activa de un usuario |
 
 ### Atributos
 
-| Nombre      | Tipo de dato | Visibilidad | Descripción                                 |
-|-------------|--------------|-------------|---------------------------------------------|
-| TokenId     | `string`     | private     | Identificador único del token               |
-| userId      | `UserId`     | private     | Identificador del usuario                   |
-| createdAt   | `DateTime`   | private     | Fecha y hora de creación del token          |
-| expiresAt   | `DateTime`   | private     | Fecha y hora de expiración del token        |
-| revoked     | `bool`       | private     | Indica si el token ha sido revocado         |
+| Nombre    | Tipo de dato | Visibilidad | Descripción                          |
+| --------- | ------------ | ----------- | ------------------------------------ |
+| TokenId   | `string`     | private     | Identificador único del token        |
+| userId    | `UserId`     | private     | Identificador del usuario            |
+| createdAt | `DateTime`   | private     | Fecha y hora de creación del token   |
+| expiresAt | `DateTime`   | private     | Fecha y hora de expiración del token |
+| revoked   | `bool`       | private     | Indica si el token ha sido revocado  |
 
 #### 4.2.1.2. Interface Layer.
 
 ## UserController
 
-| Propiedad     | Valor                   |
-|---------------|-------------------------|
-| **Nombre**    | UserController          |
-| **Categoría** | Controller              |
-| **Propósito** | Gestionar usuarios      |
-| **Ruta**      | `/api/users`            |
+| Propiedad     | Valor              |
+| ------------- | ------------------ |
+| **Nombre**    | UserController     |
+| **Categoría** | Controller         |
+| **Propósito** | Gestionar usuarios |
+| **Ruta**      | `/api/users`       |
 
 ### Métodos
 
-| Nombre         | Ruta                    | Acción                      | Handle                                           |
-|----------------|-------------------------|-----------------------------|--------------------------------------------------|
-| GetById        | `/{userId}`             | Obtiene información del usuario | `GetUserByIdQuery`                              |
-| ChangeName     | `/{userId}/name`        | Cambia `FullName`           | `ChangeUserNameCommand`                          |
-| ChangeEmail    | `/{userId}/email`       | Cambia `Email`              | `ChangeUserEmailCommand`                         |
-| ChangePassword | `/{userId}/password`    | Cambia `PasswordHash`       | `ChangeUserPasswordCommand`                      |
-| ChangeStatus   | `/{userId}/status`      | Cambia `Status`             | `ActivateUserCommand`, `SuspendUserCommand`, `DeleteUserCommand` |
+| Nombre         | Ruta                 | Acción                          | Handle                                                           |
+| -------------- | -------------------- | ------------------------------- | ---------------------------------------------------------------- |
+| GetById        | `/{userId}`          | Obtiene información del usuario | `GetUserByIdQuery`                                               |
+| ChangeName     | `/{userId}/name`     | Cambia `FullName`               | `ChangeUserNameCommand`                                          |
+| ChangeEmail    | `/{userId}/email`    | Cambia `Email`                  | `ChangeUserEmailCommand`                                         |
+| ChangePassword | `/{userId}/password` | Cambia `PasswordHash`           | `ChangeUserPasswordCommand`                                      |
+| ChangeStatus   | `/{userId}/status`   | Cambia `Status`                 | `ActivateUserCommand`, `SuspendUserCommand`, `DeleteUserCommand` |
 
 ---
 
 ## AuthController
 
-| Propiedad     | Valor                                                                 |
-|---------------|-----------------------------------------------------------------------|
-| **Nombre**    | AuthController                                                        |
-| **Categoría** | Controller                                                            |
-| **Propósito** | Encargado de todo lo relacionado con registro y autenticación         |
-| **Ruta**      | `/api/auth`                                                           |
+| Propiedad     | Valor                                                         |
+| ------------- | ------------------------------------------------------------- |
+| **Nombre**    | AuthController                                                |
+| **Categoría** | Controller                                                    |
+| **Propósito** | Encargado de todo lo relacionado con registro y autenticación |
+| **Ruta**      | `/api/auth`                                                   |
 
 ### Métodos
 
-| Nombre   | Ruta         | Acción                                    | Handle                     |
-|----------|--------------|-------------------------------------------|----------------------------|
-| Register | `/register`  | Crea un nuevo usuario                     | `RegisterUserCommand`      |
-| Login    | `/login`     | Valida credenciales y devuelve token      | `LoginUserCommand`         |
-| Refresh  | `/refresh`   | Renueva el acceso; nuevo token            | `~`                        |
-| Logout   | `/logout`    | Revoca el token activo                    | `RevokeSessionCommand`     |
+| Nombre   | Ruta        | Acción                               | Handle                 |
+| -------- | ----------- | ------------------------------------ | ---------------------- |
+| Register | `/register` | Crea un nuevo usuario                | `RegisterUserCommand`  |
+| Login    | `/login`    | Valida credenciales y devuelve token | `LoginUserCommand`     |
+| Refresh  | `/refresh`  | Renueva el acceso; nuevo token       | `~`                    |
+| Logout   | `/logout`   | Revoca el token activo               | `RevokeSessionCommand` |
 
 #### 4.2.1.3. Application Layer.
 
 ## UserRegisterCommandHandler
 
-| Propiedad     | Valor                        |
-|---------------|------------------------------|
-| **Nombre**    | UserRegisterCommandHandler   |
-| **Categoría** | Command Handler             |
-| **Propósito** | Registrar un usuario         |
-| **Comando**   | RegisterUserCommand          |
+| Propiedad     | Valor                      |
+| ------------- | -------------------------- |
+| **Nombre**    | UserRegisterCommandHandler |
+| **Categoría** | Command Handler            |
+| **Propósito** | Registrar un usuario       |
+| **Comando**   | RegisterUserCommand        |
 
 ---
 
 ## UserLoginCommandHandler
 
-| Propiedad     | Valor                      |
-|---------------|----------------------------|
-| **Nombre**    | UserLoginCommandHandler    |
-| **Categoría** | Command Handler           |
-| **Propósito** | Iniciar sesión a un usuario|
-| **Comando**   | LoginUserCommand           |
+| Propiedad     | Valor                       |
+| ------------- | --------------------------- |
+| **Nombre**    | UserLoginCommandHandler     |
+| **Categoría** | Command Handler             |
+| **Propósito** | Iniciar sesión a un usuario |
+| **Comando**   | LoginUserCommand            |
 
 ---
 
 ## UserLogoutCommandHandler
 
 | Propiedad     | Valor                       |
-|---------------|-----------------------------|
+| ------------- | --------------------------- |
 | **Nombre**    | UserLogoutCommandHandler    |
-| **Categoría** | Command Handler            |
+| **Categoría** | Command Handler             |
 | **Propósito** | Cerrar sesión de un usuario |
 | **Comando**   | LogoutUserCommand           |
 
@@ -616,30 +618,30 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 ## RegisteredUserEventHandler
 
-| Propiedad     | Valor                    |
-|---------------|--------------------------|
-| **Nombre**    | RegisteredUserEventHandler |
-| **Categoría** | Event Handler           |
+| Propiedad     | Valor                               |
+| ------------- | ----------------------------------- |
+| **Nombre**    | RegisteredUserEventHandler          |
+| **Categoría** | Event Handler                       |
 | **Propósito** | Gestionar el registro de un usuario |
-| **Evento**    | UserRegisteredEvent     |
+| **Evento**    | UserRegisteredEvent                 |
 
 ---
 
 ## UserLoggedInEventHandler
 
-| Propiedad     | Valor                        |
-|---------------|------------------------------|
-| **Nombre**    | UserLoggedInEventHandler     |
-| **Categoría** | Event Handler              |
+| Propiedad     | Valor                               |
+| ------------- | ----------------------------------- |
+| **Nombre**    | UserLoggedInEventHandler            |
+| **Categoría** | Event Handler                       |
 | **Propósito** | Gestionar el registro de un usuario |
-| **Evento**    | UserLoggedInEvent           |
+| **Evento**    | UserLoggedInEvent                   |
 
 ---
 
 ## UserLoggedOutEventHandler
 
 | Propiedad     | Valor                               |
-|---------------|-------------------------------------|
+| ------------- | ----------------------------------- |
 | **Nombre**    | UserLoggedOutEventHandler           |
 | **Categoría** | Event Handler                       |
 | **Propósito** | Gestionar el registro de un usuario |
@@ -647,36 +649,35 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 #### 4.2.1.4. Infrastructure Layer.
 
-
 ## UserRepository
 
 | Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
+| ------------- | ----------------------------------------- |
 | **Nombre**    | UserRepository                            |
 | **Categoría** | Repositorio                               |
 | **Propósito** | Persistir y consultar entidades de `User` |
-| **Interfaz**  | `IUserRepository`                        |
+| **Interfaz**  | `IUserRepository`                         |
 
 ---
 
 ## SessionRepository
 
-| Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
-| **Nombre**    | SessionRepository                           |
-| **Categoría** | Repositorio                                 |
-| **Propósito** | Persistir y consultar entidades de `User`   |
-| **Interfaz**  | `ISessionRepository`                       |
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | SessionRepository                         |
+| **Categoría** | Repositorio                               |
+| **Propósito** | Persistir y consultar entidades de `User` |
+| **Interfaz**  | `ISessionRepository`                      |
 
 ---
 
 ## AppDbContext
 
-| Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
-| **Nombre**    | AppDbContext                                   |
-| **Categoría** | ORM Context                                    |
-| **Propósito** | Punto central de acceso a la base de datos     |
+| Propiedad     | Valor                                      |
+| ------------- | ------------------------------------------ |
+| **Nombre**    | AppDbContext                               |
+| **Categoría** | ORM Context                                |
+| **Propósito** | Punto central de acceso a la base de datos |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
 
@@ -760,9 +761,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ### Métodos
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
-| --------------- | --------------- | ----------- | --------------------------------------- |
-| fullName        | `String`        | public      | Retorna `name + " " + lastName`         |
+| Nombre   | Tipo de retorno | Visibilidad | Descripción                     |
+| -------- | --------------- | ----------- | ------------------------------- |
+| fullName | `String`        | public      | Retorna `name + " " + lastName` |
 
 ## PhoneNumber
 
@@ -781,9 +782,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ### Métodos
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
-| --------------- | --------------- | ----------- | --------------------------------------- |
-| formatted       | `String`        | public      | Devuelve `countryCode + number`         |
+| Nombre    | Tipo de retorno | Visibilidad | Descripción                     |
+| --------- | --------------- | ----------- | ------------------------------- |
+| formatted | `String`        | public      | Devuelve `countryCode + number` |
 
 ## StreetAddress
 
@@ -805,9 +806,9 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ### Métodos
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                                               |
-| --------------- | --------------- | ----------- | --------------------------------------------------------- |
-| fullAddress     | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
+| Nombre      | Tipo de retorno | Visibilidad | Descripción                                               |
+| ----------- | --------------- | ----------- | --------------------------------------------------------- |
+| fullAddress | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
 
 ## ProfileRole
 
@@ -954,16 +955,18 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Propósito** | Implementar `IProfileRepository` usando ORM relacional |
 | **Interfaz**  | `IProfileRepository`                                   |
 
-
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.
+
 [missing-res]
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
 ### 4.2.3. Bounded Context: Pot Management
@@ -1325,14 +1328,17 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+
 [missing-res]
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
 ### 4.2.4. Bounded Context: Plant Management
@@ -1424,12 +1430,12 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ### Métodos
 
-| Nombre        | Tipo de retorno | Visibilidad | Descripción                          |
-| ------------- | --------------- | ----------- | ------------------------------------ |
-| findById      | `Plant?`        | public      | Busca una planta por su ID           |
-| create        | `Unit`          | public      | Persiste una nueva planta            |
-| update        | `Unit`          | public      | Actualiza una planta existente       |
-| delete        | `Unit`          | public      | Elimina una planta por su ID         |
+| Nombre   | Tipo de retorno | Visibilidad | Descripción                    |
+| -------- | --------------- | ----------- | ------------------------------ |
+| findById | `Plant?`        | public      | Busca una planta por su ID     |
+| create   | `Unit`          | public      | Persiste una nueva planta      |
+| update   | `Unit`          | public      | Actualiza una planta existente |
+| delete   | `Unit`          | public      | Elimina una planta por su ID   |
 
 ## IPlantRecommendationService
 
@@ -1569,14 +1575,17 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Propósito** | Implementar `IPlantInfoProvider` para obtener specs de planta |
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.
+
 [missing-res]
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/class-diagram-plant-management.png"></image>
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/database-diagram-plant-management.png"></image>
 
 ### 4.2.5. Bounded Context: System Monitoring & Control
@@ -1653,7 +1662,6 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Nombre**    | SensorStatus                           |
 | **Categoría** | Enum                                   |
 | **Propósito** | Definir los posibles estados de alerta |
-
 
 ### Valores
 
@@ -1884,14 +1892,17 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Propósito** | Implementar `IAlertRepository` con persistencia en BD |
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams.
+
 [missing-res]
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams.
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/database-diagram-system-monitoring-and-control.png"></image>
 
 ### 4.2.6. Bounded Context: Watering Management
@@ -1901,7 +1912,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringSchedule
 
 | Propiedad     | Valor                                                            |
-|---------------|------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------- |
 | **Nombre**    | WateringSchedule                                                 |
 | **Categoría** | Aggregate Root                                                   |
 | **Propósito** | Representar una programación de riego para una maceta específica |
@@ -1909,7 +1920,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre    | Tipo de dato | Visibilidad | Descripción                                 |
-|-----------|--------------|-------------|---------------------------------------------|
+| --------- | ------------ | ----------- | ------------------------------------------- |
 | potId     | `Long`       | private     | Identificador de la maceta                  |
 | startTime | `DateTime`   | private     | Hora de inicio del riego                    |
 | frequency | `String`     | private     | Frecuencia (diaria, semanal, personalizada) |
@@ -1921,7 +1932,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------|-----------------|-------------|---------------------------------------------|
+| -------------- | --------------- | ----------- | ------------------------------------------- |
 | updateSchedule | `void`          | public      | Modifica horario, frecuencia o duración     |
 | activate       | `void`          | public      | Activa la programación                      |
 | deactivate     | `void`          | public      | Suspende la programación                    |
@@ -1930,7 +1941,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringLog
 
 | Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
+| ------------- | ---------------------------------------------- |
 | **Nombre**    | WateringLog                                    |
 | **Categoría** | Entity                                         |
 | **Propósito** | Registrar una ejecución de riego en una maceta |
@@ -1938,7 +1949,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre    | Tipo de dato | Visibilidad | Descripción                             |
-|-----------|--------------|-------------|-----------------------------------------|
+| --------- | ------------ | ----------- | --------------------------------------- |
 | id        | `Long`       | private     | Identificador del log                   |
 | potId     | `Long`       | private     | Identificador de la maceta              |
 | timestamp | `DateTime`   | private     | Momento de ejecución                    |
@@ -1947,7 +1958,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## IWateringScheduleRepository
 
 | Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
+| ------------- | -------------------------------------------- |
 | **Nombre**    | IWateringScheduleRepository                  |
 | **Categoría** | Repository                                   |
 | **Propósito** | Gestionar persistencia de `WateringSchedule` |
@@ -1955,7 +1966,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre      | Tipo de retorno     | Descripción                           |
-|-------------|---------------------|---------------------------------------|
+| ----------- | ------------------- | ------------------------------------- |
 | findByPotId | `WateringSchedule?` | Obtener programación de riego         |
 | create      | `Unit`              | Guardar nueva programación            |
 | update      | `Unit`              | Actualizar una programación existente |
@@ -1964,7 +1975,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## IWateringLogRepository
 
 | Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
+| ------------- | ----------------------------------------- |
 | **Nombre**    | IWateringLogRepository                    |
 | **Categoría** | Repository                                |
 | **Propósito** | Gestionar registros de ejecución de riego |
@@ -1972,7 +1983,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre      | Tipo de retorno     | Descripción                       |
-|-------------|---------------------|-----------------------------------|
+| ----------- | ------------------- | --------------------------------- |
 | create      | `Unit`              | Almacenar un nuevo `WateringLog`  |
 | findByPotId | `List<WateringLog>` | Consultar registros de una maceta |
 
@@ -1983,7 +1994,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringScheduleController
 
 | Propiedad     | Valor                                                              |
-|---------------|--------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------ |
 | **Nombre**    | WateringScheduleController                                         |
 | **Categoría** | Controller                                                         |
 | **Propósito** | Exponer los servicios REST para gestionar la programación de riego |
@@ -1992,7 +2003,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre             | Ruta          | Acción                             | Handle                              |
-|--------------------|---------------|------------------------------------|-------------------------------------|
+| ------------------ | ------------- | ---------------------------------- | ----------------------------------- |
 | getSchedule        | `/{id:long}`  | Obtener programación de riego      | `GetWateringScheduleQuery`          |
 | createSchedule     | `/create`     | Crear nueva programación de riego  | `CreateWateringScheduleCommand`     |
 | updateSchedule     | `/update`     | Actualizar programación existente  | `UpdateWateringScheduleCommand`     |
@@ -2002,7 +2013,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringLogController
 
 | Propiedad     | Valor                                                       |
-|---------------|-------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------- |
 | **Nombre**    | WateringLogController                                       |
 | **Categoría** | Controller                                                  |
 | **Propósito** | Exponer los servicios REST para consultar los logs de riego |
@@ -2011,7 +2022,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Ruta                | Acción                              | Handle                      |
-|--------------|---------------------|-------------------------------------|-----------------------------|
+| ------------ | ------------------- | ----------------------------------- | --------------------------- |
 | getLog       | `/{id:long}`        | Obtener log de riego por ID         | `GetWateringLogQuery`       |
 | getLogsByPot | `/pot/{potId:long}` | Obtener logs de riego de una maceta | `GetWateringLogsByPotQuery` |
 
@@ -2022,7 +2033,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetWateringScheduleQueryHandler
 
 | Propiedad     | Valor                                                             |
-|---------------|-------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------- |
 | **Nombre**    | GetWateringScheduleQueryHandler                                   |
 | **Categoría** | Query Handler                                                     |
 | **Propósito** | Manejar la consulta para obtener una programación de riego por ID |
@@ -2030,7 +2041,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## CreateWateringScheduleCommandHandler
 
 | Propiedad     | Valor                                                  |
-|---------------|--------------------------------------------------------|
+| ------------- | ------------------------------------------------------ |
 | **Nombre**    | CreateWateringScheduleCommandHandler                   |
 | **Categoría** | Command Handler                                        |
 | **Propósito** | Manejar la creación de una nueva programación de riego |
@@ -2038,7 +2049,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## UpdateWateringScheduleCommandHandler
 
 | Propiedad     | Valor                                                           |
-|---------------|-----------------------------------------------------------------|
+| ------------- | --------------------------------------------------------------- |
 | **Nombre**    | UpdateWateringScheduleCommandHandler                            |
 | **Categoría** | Command Handler                                                 |
 | **Propósito** | Manejar la actualización de una programación de riego existente |
@@ -2046,7 +2057,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## DeactivateWateringScheduleCommandHandler
 
 | Propiedad     | Valor                                                 |
-|---------------|-------------------------------------------------------|
+| ------------- | ----------------------------------------------------- |
 | **Nombre**    | DeactivateWateringScheduleCommandHandler              |
 | **Categoría** | Command Handler                                       |
 | **Propósito** | Manejar la desactivación de una programación de riego |
@@ -2054,7 +2065,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## ActivateWateringScheduleCommandHandler
 
 | Propiedad     | Valor                                              |
-|---------------|----------------------------------------------------|
+| ------------- | -------------------------------------------------- |
 | **Nombre**    | ActivateWateringScheduleCommandHandler             |
 | **Categoría** | Command Handler                                    |
 | **Propósito** | Manejar la activación de una programación de riego |
@@ -2062,7 +2073,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetWateringLogQueryHandler
 
 | Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
+| ------------- | ------------------------------------------- |
 | **Nombre**    | GetWateringLogQueryHandler                  |
 | **Categoría** | Query Handler                               |
 | **Propósito** | Manejar la consulta de logs de riego por ID |
@@ -2070,7 +2081,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetWateringLogsByPotQueryHandler
 
 | Propiedad     | Valor                                                   |
-|---------------|---------------------------------------------------------|
+| ------------- | ------------------------------------------------------- |
 | **Nombre**    | GetWateringLogsByPotQueryHandler                        |
 | **Categoría** | Query Handler                                           |
 | **Propósito** | Manejar la consulta de logs de riego por potId (maceta) |
@@ -2082,7 +2093,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringScheduleRepository
 
 | Propiedad     | Valor                                                                         |
-|---------------|-------------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------------- |
 | **Nombre**    | WateringScheduleRepository                                                    |
 | **Categoría** | Repository Implementation                                                     |
 | **Propósito** | Implementar `IWateringScheduleRepository` usando un mecanismo de persistencia |
@@ -2090,7 +2101,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre      | Tipo de retorno     | Visibilidad | Descripción                                    |
-|-------------|---------------------|-------------|------------------------------------------------|
+| ----------- | ------------------- | ----------- | ---------------------------------------------- |
 | findByPotId | `WateringSchedule?` | public      | Buscar programación de riego por `potId`       |
 | create      | `Unit`              | public      | Persistir una nueva programación de riego      |
 | update      | `Unit`              | public      | Actualizar una programación de riego existente |
@@ -2099,7 +2110,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## WateringLogRepository
 
 | Propiedad     | Valor                                                                    |
-|---------------|--------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------ |
 | **Nombre**    | WateringLogRepository                                                    |
 | **Categoría** | Repository Implementation                                                |
 | **Propósito** | Implementar `IWateringLogRepository` usando un mecanismo de persistencia |
@@ -2107,7 +2118,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre      | Tipo de retorno     | Visibilidad | Descripción                         |
-|-------------|---------------------|-------------|-------------------------------------|
+| ----------- | ------------------- | ----------- | ----------------------------------- |
 | create      | `Unit`              | public      | Persistir un nuevo log de riego     |
 | findByPotId | `List<WateringLog>` | public      | Recuperar logs de riego por `potId` |
 
@@ -2116,13 +2127,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams.
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams.
+
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringScheduleClassDiagram.png"></image>
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringManagementDbDiagram.png"></image>
-
-
 
 ### 4.2.7. Bounded Context: Subscriptions & Payments
 
@@ -2131,7 +2143,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## Subscription
 
 | Propiedad     | Valor                                              |
-|---------------|----------------------------------------------------|
+| ------------- | -------------------------------------------------- |
 | **Nombre**    | Subscription                                       |
 | **Categoría** | Aggregate Root                                     |
 | **Propósito** | Representar una suscripción activa para un usuario |
@@ -2139,7 +2151,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre    | Tipo de dato | Visibilidad | Descripción                                  |
-|-----------|--------------|-------------|----------------------------------------------|
+| --------- | ------------ | ----------- | -------------------------------------------- |
 | userId    | `Long`       | private     | Identificador único del usuario              |
 | planId    | `Long`       | private     | Identificador del plan de suscripción        |
 | status    | `String`     | private     | Estado de la suscripción (activa, cancelada) |
@@ -2151,7 +2163,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Tipo de retorno | Visibilidad | Descripción                                 |
-|--------------|-----------------|-------------|---------------------------------------------|
+| ------------ | --------------- | ----------- | ------------------------------------------- |
 | activate     | `void`          | public      | Activa la suscripción                       |
 | cancel       | `void`          | public      | Cancela la suscripción                      |
 | updateStatus | `void`          | public      | Actualiza el estado de la suscripción       |
@@ -2160,7 +2172,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## SubscriptionPlan
 
 | Propiedad     | Valor                                                         |
-|---------------|---------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------- |
 | **Nombre**    | SubscriptionPlan                                              |
 | **Categoría** | Value Object                                                  |
 | **Propósito** | Representar los detalles de un plan de suscripción disponible |
@@ -2168,7 +2180,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre    | Tipo de dato   | Visibilidad | Descripción                              |
-|-----------|----------------|-------------|------------------------------------------|
+| --------- | -------------- | ----------- | ---------------------------------------- |
 | name      | `String`       | public      | Nombre del plan (p.ej., Básico, Premium) |
 | price     | `Decimal`      | public      | Precio mensual del plan                  |
 | duration  | `Int`          | public      | Duración del plan en meses               |
@@ -2178,7 +2190,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## PaymentTransaction
 
 | Propiedad     | Valor                                                                  |
-|---------------|------------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------------- |
 | **Nombre**    | PaymentTransaction                                                     |
 | **Categoría** | Entity                                                                 |
 | **Propósito** | Representar los pagos realizados por un usuario para sus suscripciones |
@@ -2186,7 +2198,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre         | Tipo de dato | Visibilidad | Descripción                                    |
-|----------------|--------------|-------------|------------------------------------------------|
+| -------------- | ------------ | ----------- | ---------------------------------------------- |
 | transactionId  | `String`     | private     | Identificador único de la transacción          |
 | subscriptionId | `Long`       | private     | Identificador de la suscripción                |
 | amount         | `Decimal`    | private     | Monto de la transacción                        |
@@ -2196,7 +2208,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------|-----------------|-------------|---------------------------------------------|
+| -------------- | --------------- | ----------- | ------------------------------------------- |
 | processPayment | `void`          | public      | Procesa el pago para una suscripción        |
 | updateStatus   | `void`          | public      | Actualiza el estado de la transacción       |
 | markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
@@ -2204,7 +2216,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## ISubscriptionRepository
 
 | Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
+| ------------- | ---------------------------------------------- |
 | **Nombre**    | ISubscriptionRepository                        |
 | **Categoría** | Repository                                     |
 | **Propósito** | Persistir y recuperar entidades `Subscription` |
@@ -2212,7 +2224,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Tipo de retorno | Visibilidad | Descripción                                  |
-|--------------|-----------------|-------------|----------------------------------------------|
+| ------------ | --------------- | ----------- | -------------------------------------------- |
 | findByUserId | `Subscription?` | public      | Recupera la suscripción activa de un usuario |
 | create       | `Unit`          | public      | Crea una nueva suscripción                   |
 | update       | `Unit`          | public      | Actualiza una suscripción existente          |
@@ -2221,7 +2233,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## IPaymentTransactionRepository
 
 | Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
+| ------------- | ------------------------------------------- |
 | **Nombre**    | IPaymentTransactionRepository               |
 | **Categoría** | Repository                                  |
 | **Propósito** | Persistir y recuperar transacciones de pago |
@@ -2229,7 +2241,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
-|----------|-----------------------|-------------|----------------------------------------------|
+| -------- | --------------------- | ----------- | -------------------------------------------- |
 | create   | `Unit`                | public      | Crea una nueva transacción de pago           |
 | findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
 | update   | `Unit`                | public      | Actualiza una transacción existente          |
@@ -2242,7 +2254,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## SubscriptionController
 
 | Propiedad     | Valor                                                              |
-|---------------|--------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------ |
 | **Nombre**    | SubscriptionController                                             |
 | **Categoría** | Controller                                                         |
 | **Propósito** | Exponer los servicios REST para gestionar suscripciones de usuario |
@@ -2251,7 +2263,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre             | Ruta             | Acción                               | Handle                      |
-|--------------------|------------------|--------------------------------------|-----------------------------|
+| ------------------ | ---------------- | ------------------------------------ | --------------------------- |
 | getSubscription    | `/{userId:long}` | Obtener la suscripción de un usuario | `GetSubscriptionQuery`      |
 | createSubscription | `/create`        | Crear nueva suscripción              | `CreateSubscriptionCommand` |
 | updateSubscription | `/update`        | Actualizar suscripción               | `UpdateSubscriptionCommand` |
@@ -2260,7 +2272,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## PaymentTransactionController
 
 | Propiedad     | Valor                                                           |
-|---------------|-----------------------------------------------------------------|
+| ------------- | --------------------------------------------------------------- |
 | **Nombre**    | PaymentTransactionController                                    |
 | **Categoría** | Controller                                                      |
 | **Propósito** | Exponer los servicios REST para gestionar transacciones de pago |
@@ -2269,7 +2281,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre            | Ruta                    | Acción                                        | Handle                            |
-|-------------------|-------------------------|-----------------------------------------------|-----------------------------------|
+| ----------------- | ----------------------- | --------------------------------------------- | --------------------------------- |
 | getPayment        | `/{transactionId:long}` | Obtener transacción por ID                    | `GetPaymentTransactionQuery`      |
 | createPayment     | `/create`               | Crear una nueva transacción                   | `CreatePaymentTransactionCommand` |
 | updatePayment     | `/update`               | Actualizar estado de la transacción           | `UpdatePaymentTransactionCommand` |
@@ -2282,7 +2294,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetSubscriptionQueryHandler
 
 | Propiedad     | Valor                                                         |
-|---------------|---------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------- |
 | **Nombre**    | GetSubscriptionQueryHandler                                   |
 | **Categoría** | Query Handler                                                 |
 | **Propósito** | Manejar la consulta para obtener una suscripción por `userId` |
@@ -2290,7 +2302,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## CreateSubscriptionCommandHandler
 
 | Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
+| ------------- | -------------------------------------------- |
 | **Nombre**    | CreateSubscriptionCommandHandler             |
 | **Categoría** | Command Handler                              |
 | **Propósito** | Manejar la creación de una nueva suscripción |
@@ -2298,7 +2310,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## UpdateSubscriptionCommandHandler
 
 | Propiedad     | Valor                                                 |
-|---------------|-------------------------------------------------------|
+| ------------- | ----------------------------------------------------- |
 | **Nombre**    | UpdateSubscriptionCommandHandler                      |
 | **Categoría** | Command Handler                                       |
 | **Propósito** | Manejar la actualización de una suscripción existente |
@@ -2306,7 +2318,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## CancelSubscriptionCommandHandler
 
 | Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
+| ------------- | ----------------------------------------- |
 | **Nombre**    | CancelSubscriptionCommandHandler          |
 | **Categoría** | Command Handler                           |
 | **Propósito** | Manejar la cancelación de una suscripción |
@@ -2314,7 +2326,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetPaymentTransactionQueryHandler
 
 | Propiedad     | Valor                                                    |
-|---------------|----------------------------------------------------------|
+| ------------- | -------------------------------------------------------- |
 | **Nombre**    | GetPaymentTransactionQueryHandler                        |
 | **Categoría** | Query Handler                                            |
 | **Propósito** | Manejar la consulta para obtener una transacción de pago |
@@ -2322,7 +2334,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetPaymentsByUserQueryHandler
 
 | Propiedad     | Valor                                                            |
-|---------------|------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------- |
 | **Nombre**    | GetPaymentsByUserQueryHandler                                    |
 | **Categoría** | Query Handler                                                    |
 | **Propósito** | Manejar la consulta para obtener las transacciones de un usuario |
@@ -2334,7 +2346,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## SubscriptionRepository
 
 | Propiedad     | Valor                                                                     |
-|---------------|---------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------- |
 | **Nombre**    | SubscriptionRepository                                                    |
 | **Categoría** | Repository Implementation                                                 |
 | **Propósito** | Implementar `ISubscriptionRepository` usando un mecanismo de persistencia |
@@ -2342,7 +2354,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Tipo de retorno | Visibilidad | Descripción                           |
-|--------------|-----------------|-------------|---------------------------------------|
+| ------------ | --------------- | ----------- | ------------------------------------- |
 | findByUserId | `Subscription?` | public      | Recupera la suscripción de un usuario |
 | create       | `Unit`          | public      | Persistir una nueva suscripción       |
 | update       | `Unit`          | public      | Actualiza una suscripción existente   |
@@ -2351,7 +2363,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## PaymentTransactionRepository
 
 | Propiedad     | Valor                                                                           |
-|---------------|---------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------- |
 | **Nombre**    | PaymentTransactionRepository                                                    |
 | **Categoría** | Repository Implementation                                                       |
 | **Propósito** | Implementar `IPaymentTransactionRepository` usando un mecanismo de persistencia |
@@ -2359,7 +2371,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
-|----------|-----------------------|-------------|----------------------------------------------|
+| -------- | --------------------- | ----------- | -------------------------------------------- |
 | create   | `Unit`                | public      | Persistir una nueva transacción de pago      |
 | findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
 | update   | `Unit`                | public      | Actualiza una transacción existente          |
@@ -2368,13 +2380,16 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ---
 
 #### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams.
+
 #### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
+
 ##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscription&PaymentsClassDiagram.png"></image>
 
 ##### 4.2.7.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
 
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
 
 ### 4.2.8. Bounded Context: Caring Intelligence
 
@@ -2383,7 +2398,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## Recommendation
 
 | Propiedad     | Valor                                                             |
-|---------------|-------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------- |
 | **Nombre**    | Recommendation                                                    |
 | **Categoría** | Aggregate Root                                                    |
 | **Propósito** | Generar recomendaciones personalizadas para el cuidado de plantas |
@@ -2391,7 +2406,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre             | Tipo de dato | Visibilidad | Descripción                                       |
-|--------------------|--------------|-------------|---------------------------------------------------|
+| ------------------ | ------------ | ----------- | ------------------------------------------------- |
 | plantId            | `Long`       | private     | Identificador de la planta                        |
 | userId             | `Long`       | private     | Identificador del usuario                         |
 | recommendationType | `String`     | private     | Tipo de recomendación (riego, luz, fertilización) |
@@ -2402,14 +2417,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre                 | Tipo de retorno | Visibilidad | Descripción                                            |
-|------------------------|-----------------|-------------|--------------------------------------------------------|
+| ---------------------- | --------------- | ----------- | ------------------------------------------------------ |
 | generateRecommendation | `void`          | public      | Genera una recomendación personalizada para el usuario |
 | markUpdated            | `void`          | private     | Actualiza internamente el campo `updatedAt`            |
 
 ## PlantRecommendation
 
 | Propiedad     | Valor                                                       |
-|---------------|-------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------- |
 | **Nombre**    | PlantRecommendation                                         |
 | **Categoría** | Value Object                                                |
 | **Propósito** | Contener los parámetros de la recomendación para una planta |
@@ -2417,19 +2432,20 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                  |
-|-------------|--------------|-------------|------------------------------|
+| ----------- | ------------ | ----------- | ---------------------------- |
 | humidity    | `String`     | public      | Recomendación de humedad     |
 | light       | `String`     | public      | Recomendación de luz         |
 | water       | `String`     | public      | Recomendación de riego       |
 | temperature | `String`     | public      | Recomendación de temperatura |
 
 ---
+
 #### 4.2.8.2. Interface Layer.
 
 ## RecommendationController
 
 | Propiedad     | Valor                                                     |
-|---------------|-----------------------------------------------------------|
+| ------------- | --------------------------------------------------------- |
 | **Nombre**    | RecommendationController                                  |
 | **Categoría** | Controller                                                |
 | **Propósito** | Exponer los servicios REST para gestionar recomendaciones |
@@ -2438,7 +2454,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre               | Ruta                            | Acción                            | Handle                        |
-|----------------------|---------------------------------|-----------------------------------|-------------------------------|
+| -------------------- | ------------------------------- | --------------------------------- | ----------------------------- |
 | getRecommendation    | `/{userId:long}/{plantId:long}` | Obtener recomendación para planta | `GetRecommendationQuery`      |
 | createRecommendation | `/create`                       | Crear nueva recomendación         | `CreateRecommendationCommand` |
 | updateRecommendation | `/update`                       | Actualizar recomendación          | `UpdateRecommendationCommand` |
@@ -2450,7 +2466,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## GetRecommendationQueryHandler
 
 | Propiedad     | Valor                                                            |
-|---------------|------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------- |
 | **Nombre**    | GetRecommendationQueryHandler                                    |
 | **Categoría** | Query Handler                                                    |
 | **Propósito** | Manejar la consulta para obtener una recomendación personalizada |
@@ -2458,7 +2474,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## CreateRecommendationCommandHandler
 
 | Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
+| ------------- | ---------------------------------------------- |
 | **Nombre**    | CreateRecommendationCommandHandler             |
 | **Categoría** | Command Handler                                |
 | **Propósito** | Manejar la creación de una nueva recomendación |
@@ -2466,7 +2482,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## UpdateRecommendationCommandHandler
 
 | Propiedad     | Valor                                                   |
-|---------------|---------------------------------------------------------|
+| ------------- | ------------------------------------------------------- |
 | **Nombre**    | UpdateRecommendationCommandHandler                      |
 | **Categoría** | Command Handler                                         |
 | **Propósito** | Manejar la actualización de una recomendación existente |
@@ -2478,7 +2494,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## RecommendationRepository
 
 | Propiedad     | Valor                                                                       |
-|---------------|-----------------------------------------------------------------------------|
+| ------------- | --------------------------------------------------------------------------- |
 | **Nombre**    | RecommendationRepository                                                    |
 | **Categoría** | Repository Implementation                                                   |
 | **Propósito** | Implementar `IRecommendationRepository` usando un mecanismo de persistencia |
@@ -2486,21 +2502,25 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Tipo de retorno   | Visibilidad | Descripción                            |
-|--------------|-------------------|-------------|----------------------------------------|
+| ------------ | ----------------- | ----------- | -------------------------------------- |
 | findByUserId | `Recommendation?` | public      | Obtener la recomendación por `userId`  |
 | create       | `Unit`            | public      | Crear una nueva recomendación          |
 | update       | `Unit`            | public      | Actualizar una recomendación existente |
 | delete       | `Unit`            | public      | Eliminar la recomendación              |
 
 ---
+
 #### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams.
+
 #### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams.
+
 ##### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
 
 ##### 4.2.8.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
 
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
 
 ### 4.2.9. Bounded Context: Data Insights & Reporting
 
@@ -2509,7 +2529,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## DataReport
 
 | Propiedad     | Valor                                                  |
-|---------------|--------------------------------------------------------|
+| ------------- | ------------------------------------------------------ |
 | **Nombre**    | DataReport                                             |
 | **Categoría** | Aggregate Root                                         |
 | **Propósito** | Generar y almacenar reportes de datos para su análisis |
@@ -2517,7 +2537,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                                   |
-|-------------|--------------|-------------|-----------------------------------------------|
+| ----------- | ------------ | ----------- | --------------------------------------------- |
 | reportId    | `Long`       | private     | Identificador único del reporte               |
 | userId      | `Long`       | private     | Identificador del usuario asociado al reporte |
 | data        | `String`     | private     | Datos relevantes del reporte                  |
@@ -2529,14 +2549,14 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------|-----------------|-------------|---------------------------------------------|
+| -------------- | --------------- | ----------- | ------------------------------------------- |
 | generateReport | `void`          | public      | Genera un nuevo reporte                     |
 | markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
 
 ## DataSource
 
 | Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
+| ------------- | -------------------------------------------- |
 | **Nombre**    | DataSource                                   |
 | **Categoría** | Value Object                                 |
 | **Propósito** | Representar la fuente de datos de un reporte |
@@ -2544,18 +2564,20 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Atributos
 
 | Nombre          | Tipo de dato | Visibilidad | Descripción                                     |
-|-----------------|--------------|-------------|-------------------------------------------------|
+| --------------- | ------------ | ----------- | ----------------------------------------------- |
 | sourceId        | `Long`       | private     | Identificador de la fuente de datos             |
 | dataType        | `String`     | private     | Tipo de los datos (e.g., sensor, usuario, etc.) |
 | dataDescription | `String`     | private     | Descripción de los datos                        |
 | createdAt       | `DateTime`   | private     | Fecha de creación                               |
+
 ---
+
 #### 4.2.9.2. Interface Layer.
 
 ## DataReportController
 
 | Propiedad     | Valor                                                       |
-|---------------|-------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------- |
 | **Nombre**    | DataReportController                                        |
 | **Categoría** | Controller                                                  |
 | **Propósito** | Exponer los servicios REST para gestionar reportes de datos |
@@ -2564,18 +2586,20 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre           | Ruta                             | Acción                                      | Handle                    |
-|------------------|----------------------------------|---------------------------------------------|---------------------------|
+| ---------------- | -------------------------------- | ------------------------------------------- | ------------------------- |
 | getReport        | `/{userId:long}/{reportId:long}` | Obtener reporte por ID de usuario y reporte | `GetDataReportQuery`      |
 | createReport     | `/create`                        | Crear nuevo reporte                         | `CreateDataReportCommand` |
 | updateReport     | `/update`                        | Actualizar reporte existente                | `UpdateDataReportCommand` |
 | getReportsByUser | `/user/{userId:long}`            | Obtener todos los reportes de un usuario    | `GetReportsByUserQuery`   |
+
 ---
+
 #### 4.2.9.3. Application Layer.
 
 ## GetDataReportQueryHandler
 
 | Propiedad     | Valor                                                |
-|---------------|------------------------------------------------------|
+| ------------- | ---------------------------------------------------- |
 | **Nombre**    | GetDataReportQueryHandler                            |
 | **Categoría** | Query Handler                                        |
 | **Propósito** | Manejar la consulta para obtener un reporte de datos |
@@ -2583,7 +2607,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## CreateDataReportCommandHandler
 
 | Propiedad     | Valor                                            |
-|---------------|--------------------------------------------------|
+| ------------- | ------------------------------------------------ |
 | **Nombre**    | CreateDataReportCommandHandler                   |
 | **Categoría** | Command Handler                                  |
 | **Propósito** | Manejar la creación de un nuevo reporte de datos |
@@ -2591,18 +2615,19 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## UpdateDataReportCommandHandler
 
 | Propiedad     | Valor                                           |
-|---------------|-------------------------------------------------|
+| ------------- | ----------------------------------------------- |
 | **Nombre**    | UpdateDataReportCommandHandler                  |
 | **Categoría** | Command Handler                                 |
 | **Propósito** | Manejar la actualización de un reporte de datos |
 
 ---
+
 #### 4.2.9.4. Infrastructure Layer.
 
 ## DataReportRepository
 
 | Propiedad     | Valor                                                                   |
-|---------------|-------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------- |
 | **Nombre**    | DataReportRepository                                                    |
 | **Categoría** | Repository Implementation                                               |
 | **Propósito** | Implementar `IDataReportRepository` usando un mecanismo de persistencia |
@@ -2610,7 +2635,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre       | Tipo de retorno | Visibilidad | Descripción                      |
-|--------------|-----------------|-------------|----------------------------------|
+| ------------ | --------------- | ----------- | -------------------------------- |
 | findByUserId | `DataReport?`   | public      | Recupera un reporte por `userId` |
 | create       | `Unit`          | public      | Crear un nuevo reporte           |
 | update       | `Unit`          | public      | Actualiza un reporte existente   |
@@ -2619,7 +2644,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ## DataSourceRepository
 
 | Propiedad     | Valor                                                                   |
-|---------------|-------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------- |
 | **Nombre**    | DataSourceRepository                                                    |
 | **Categoría** | Repository Implementation                                               |
 | **Propósito** | Implementar `IDataSourceRepository` usando un mecanismo de persistencia |
@@ -2627,16 +2652,22 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 ### Métodos
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                |
-|----------------|-----------------|-------------|--------------------------------------------|
+| -------------- | --------------- | ----------- | ------------------------------------------ |
 | findBySourceId | `DataSource?`   | public      | Recupera la fuente de datos por `sourceId` |
 | create         | `Unit`          | public      | Crear una nueva fuente de datos            |
 | update         | `Unit`          | public      | Actualiza una fuente de datos existente    |
 | delete         | `Unit`          | public      | Elimina una fuente de datos                |
 
 ---
+
 #### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams.
+
 #### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams.
+
 ##### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams.
+
 <image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingClassDiagram.png"></image>
+
 ##### 4.2.9.6.2. Bounded Context Database Design Diagram.
+
 <image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingDbDiagram.png"></image>
