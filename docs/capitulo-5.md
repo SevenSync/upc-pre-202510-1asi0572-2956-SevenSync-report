@@ -1593,56 +1593,53 @@ Son botones circulares que representan la acción principal de la pantalla para 
 
   - En vistas de listado, permite agregar nuevos sensores o programaciones.
 
-
   * **Variantes:**
 
   - **Extended FAB:** botón alargado con icono y texto, mínimo 88 dp de ancho, para mejorar la claridad en acciones complejas (p. ej., “Programar Riego”).
 
 **Headers Adaptativos**
 
+Son encabezados flexibles que responden a cambios de contexto, scroll y jerarquía de la pantalla del usuario. Permite maximizar el área de contenido sin perder rastreo de la navegación. La dinámica de expansión y contracción mejora la orientación espacial del usuario y prioriza la información según contexto (Apple Inc., 2025).
 
-  Son encabezados flexibles que responden a cambios de contexto, scroll y jerarquía de la pantalla del usuario. Permite maximizar el área de contenido sin perder rastreo de la navegación. La dinámica de expansión y contracción mejora la orientación espacial del usuario y prioriza la información según contexto (Apple Inc., 2025).
+- **Dimensiones:**
 
+  - **Altura inicial:** 56 dp (Android) / 44 pt (iOS Safe Area + 44 pt).
 
-  * **Dimensiones:**
+  - **Altura contraída al hacer scroll:** reducir a 48 dp–50 dp, optimizando espacio.
 
-    * **Altura inicial:** 56 dp (Android) / 44 pt (iOS Safe Area + 44 pt).
+- **Componentes habituales:**
 
-    * **Altura contraída al hacer scroll:** reducir a 48 dp–50 dp, optimizando espacio.
+  - Icono de navegación (back or menu), título de pantalla, iconos de acción (perfil, notificaciones).
 
-  * **Componentes habituales:**
+  - **Espaciado interno:** 16 dp de padding horizontal, 8 dp entre iconos, 24 dp entre icono y título.
 
-    * Icono de navegación (back or menu), título de pantalla, iconos de acción (perfil, notificaciones).
+- **Comportamiento adaptativo:**
 
-    * **Espaciado interno:** 16 dp de padding horizontal, 8 dp entre iconos, 24 dp entre icono y título.
+  - **Shrink on Scroll:** el header contrae su altura y puede ocultar el subtítulo o buscar, manteniendo solo el título principal.
 
-  * **Comportamiento adaptativo:**
+  - **Collapsing Toolbar:** en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
 
-    * **Shrink on Scroll:** el header contrae su altura y puede ocultar el subtítulo o buscar, manteniendo solo el título principal.
+###### Figura 30?
 
-    * **Collapsing Toolbar:** en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
+_Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la aplicación móvil de Macetech_
 
-  ###### Figura 30?
-
-  *Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la aplicación móvil de Macetech*
-
-  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="1000" height="580"> 
+  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="1000" height="580">
 
 **Principios Generales**
 
-* **Consistencia entre plataformas**
+- **Consistencia entre plataformas**
 
   Aunque Material Design y Human Interface Guidelines difieren en detalles, la estructura de navegación debe mantenerse coherente en iOS y Android, adaptando solo los matices de estilo y gestos nativos en todo momento.
 
-* **Claridad en el estado activo**
+- **Claridad en el estado activo**
 
   En los componentes Bottom Navigation y Drawer, resaltar el ítem activo con un cambio de color de icono y texto (por ejemplo, verde brote #38865D) y un subrayado o fondo semitransparente.
 
-* **Accesibilidad**
+- **Accesibilidad**
 
   Todos los elementos de navegación deben tener un modelo de focus y cumplir con las áreas de toque mínimas.Se deben proveer etiquetas descriptivas (aria-label, accessibilityLabel) para lectores de pantalla.
 
-* **Pruebas de usabilidad**
+- **Pruebas de usabilidad**
 
   Realizar tests con usuarios en dispositivos reales, evaluando la facilidad para alcanzar elementos y comprender la jerarquía.
 
@@ -1654,70 +1651,70 @@ Los Material Components (MDC) son los elementos de interfaz nativos recomendados
 
 A continuación se detallan los más relevantes para la aplicación móvil de Macetech:
 
-**Card** 
+**Card**
 
 Los Card contienen datos agrupados como tarjetas de plantas, historial de riego, métricas sensoriales. Las Card proveen un marco visual consistente para elementos que deben ser escaneados rápidamente y seleccionados como unidades.
 
-* **Elevación:** elevation = 1dp para agrupaciones neutrales; hasta 8dp si se quiere destacar interacción.
+- **Elevación:** elevation = 1dp para agrupaciones neutrales; hasta 8dp si se quiere destacar interacción.
 
-* **Corner Radius:** 12dp en layouts móviles. Adaptativo en tablets.
+- **Corner Radius:** 12dp en layouts móviles. Adaptativo en tablets.
 
-* **Contenido para los cards:** 
+- **Contenido para los cards:**
 
-  * Icono
-  * Título
-  * Descripción corta
-  * Gráfico embebido (miniatura)
-  * Chip o botón secundario.
+  - Icono
+  - Título
+  - Descripción corta
+  - Gráfico embebido (miniatura)
+  - Chip o botón secundario.
 
 **FloatingActionButton (FAB)**
 
 Los FAB muestran una acción principal por pantalla, como “Añadir planta”, “Programar riego”. El FAB actúa como affordance visual (sugerencia de uso) y funcional para tareas centrales. Su posición flotante reduce fricción y maximiza la eficiencia de interacción.
 
-* **Tamaño:** normal (56dp) o extended (text + icon) cuando se requiere claridad contextual. "Usar contentDescription" obligatorio para lectores de pantalla.
+- **Tamaño:** normal (56dp) o extended (text + icon) cuando se requiere claridad contextual. "Usar contentDescription" obligatorio para lectores de pantalla.
 
-* **Elevación:** 6dp resting / 12dp pressed.
+- **Elevación:** 6dp resting / 12dp pressed.
 
-* **Color:** usar color primario del sistema temático. Contraste mínimo de 4.5:1 con el fondo. 
+- **Color:** usar color primario del sistema temático. Contraste mínimo de 4.5:1 con el fondo.
 
 **Snackbar**
 
 Los snackbar brindan retroalimentación no intrusiva tras acciones inmediatas (Por ejemplo “Riego activado”, “Planta añadida”). Usar action solo si es relevante (Por ejemplo “Deshacer”). Snackbar refuerza confianza del usuario sin bloquear el flujo ni requerir confirmación.
 
-* **Tamaño:**
+- **Tamaño:**
 
-  * LENGTH_SHORT = 2000ms
+  - LENGTH_SHORT = 2000ms
 
-  * LENGTH_LONG = 3500ms
+  - LENGTH_LONG = 3500ms
 
-* **Estética:**
+- **Estética:**
 
-  * Fondo semitransparente (elevationOverlay).
+  - Fondo semitransparente (elevationOverlay).
 
-  * Texto de alto contraste.
+  - Texto de alto contraste.
 
-  * Botón alineado a la derecha (action textColor = secondary color).
+  - Botón alineado a la derecha (action textColor = secondary color).
 
 **TopAppBar (MDC Toolbar o CenterAlignedTopAppBar)**
 
 El TopAppBar funciona para la navegación principal y contexto por pantalla. La barra superior en Android cumple una función de orientación y acción. Su presencia debe ser clara pero no dominante.
 
-* **Altura estándar:** 64dp (modo móvil), con scroll de desaparición automática en listas largas. Expansión con CollapsingToolbarLayout si hay imágenes destacadas (dashboard de sensores).
+- **Altura estándar:** 64dp (modo móvil), con scroll de desaparición automática en listas largas. Expansión con CollapsingToolbarLayout si hay imágenes destacadas (dashboard de sensores).
 
-* **Iconografía:** usar *start icon* para navegación, *end icons* para acciones rápidas (buscador, filtros).
+- **Iconografía:** usar _start icon_ para navegación, _end icons_ para acciones rápidas (buscador, filtros).
 
-* **Elevación dinámica:** de 0dp a 4dp en scroll para reforzar jerarquía.
+- **Elevación dinámica:** de 0dp a 4dp en scroll para reforzar jerarquía.
 
 ###### Tabla 35
 
-*Modelo de Métricas UI/UX recomendadas para los Material Components de Android*
+_Modelo de Métricas UI/UX recomendadas para los Material Components de Android_
 
-| Componente	| Tiempo de feedback visual	| Altura mínima táctil |	Elevación (reposo)	| Elevación (activo) |
-|-------------|---------------------------|----------------------|----------------------|--------------------|
-| Card	| < 100 ms	| 48 dp	| 1–4 dp	| 6–8 dp |
-| FAB	| < 50 ms	| 56 dp	| 6 dp | 12 dp | 
-| Snackbar	| 2000–3500 ms |	48 dp | 	4 dp	| - |
-| TopAppBar	| Instantáneo	| 64 dp	| 0 dp (scroll)	| 4 dp (sticky) |
+| Componente | Tiempo de feedback visual | Altura mínima táctil | Elevación (reposo) | Elevación (activo) |
+| ---------- | ------------------------- | -------------------- | ------------------ | ------------------ |
+| Card       | < 100 ms                  | 48 dp                | 1–4 dp             | 6–8 dp             |
+| FAB        | < 50 ms                   | 56 dp                | 6 dp               | 12 dp              |
+| Snackbar   | 2000–3500 ms              | 48 dp                | 4 dp               | -                  |
+| TopAppBar  | Instantáneo               | 64 dp                | 0 dp (scroll)      | 4 dp (sticky)      |
 
 ##### 5.1.2.2.2. iOS Style Guidelines
 
@@ -1727,17 +1724,17 @@ El diseño de interfaces para iOS debe seguir los principios de Human Interface 
 
 SF Symbols es el sistema oficial de iconos vectoriales de Apple, integrado en iOS desde iOS 13. Están perfectamente alineados con el sistema visual del sistema operativo. Proporciona una escala perfecta con Dynamic Type y configuraciones de accesibilidad.
 
-* 9 pesos de grosor diferentes (ultralight a black) para alinearse con distintos estilos de contenido.
+- 9 pesos de grosor diferentes (ultralight a black) para alinearse con distintos estilos de contenido.
 
-* Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
+- Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
 
-* Fácil integración en UIKit y SwiftUI con un systemName.
+- Fácil integración en UIKit y SwiftUI con un systemName.
 
-| Propiedad | Recomendación para iOS	| Justificación UX | 
-Tamaño base (icono)	20–28 pt	Claridad en pantallas Retina
-Espaciado mínimo	8 pt entre elementos	Evita sobrecarga visual
-Grosor sugerido	regular o semibold	Balance entre legibilidad y neutralidad visual
-Color	Ligado a label, secondaryLabel o paleta de acento (tint)	Coherencia visual en modo claro/oscuro
+| Propiedad | Recomendación para iOS | Justificación UX |
+Tamaño base (icono) 20–28 pt Claridad en pantallas Retina
+Espaciado mínimo 8 pt entre elementos Evita sobrecarga visual
+Grosor sugerido regular o semibold Balance entre legibilidad y neutralidad visual
+Color Ligado a label, secondaryLabel o paleta de acento (tint) Coherencia visual en modo claro/oscuro
 
 #### 5.1.2.3. IoT Style Guidelines
 
@@ -1749,41 +1746,41 @@ La retroalimentación visual mediante diodos emisores de luz (LEDs) constituye u
 
 **Especificaciones de componentes**
 
-* **Tipo de LED:** LED de alta luminosidad, difuso (“lens diffused”) de 3 mm o 5 mm, según volumen del dispositivo.
+- **Tipo de LED:** LED de alta luminosidad, difuso (“lens diffused”) de 3 mm o 5 mm, según volumen del dispositivo.
 
-* **Ángulo de visión:** mínimo 120 ° para garantizar visibilidad desde distintos ángulos de instalación (mesas, repisas, jardineras).
+- **Ángulo de visión:** mínimo 120 ° para garantizar visibilidad desde distintos ángulos de instalación (mesas, repisas, jardineras).
 
-* **Corriente de operación:** típicamente 10 mA – 20 mA por LED. 
+- **Corriente de operación:** típicamente 10 mA – 20 mA por LED.
 
-* **Brillo (luminous intensity):**
+- **Brillo (luminous intensity):**
 
-  * **Verde:** ≥ 8 mcd a 20 mA
+  - **Verde:** ≥ 8 mcd a 20 mA
 
-  * **Amarillo:** ≥ 5 mcd a 20 mA
+  - **Amarillo:** ≥ 5 mcd a 20 mA
 
-  * **Rojo:** ≥ 6 mcd a 20 mA
+  - **Rojo:** ≥ 6 mcd a 20 mA
 
-* **Consumo energético:** Aproximadamente 0.06 W por LED. Optimizar los ciclos de parpadeo para reducir consumo en modos activos de larga duración.
+- **Consumo energético:** Aproximadamente 0.06 W por LED. Optimizar los ciclos de parpadeo para reducir consumo en modos activos de larga duración.
 
 **Montaje y óptica**
 
-* **Difusores y lentes:** emplear cubiertas semitransparentes de policarbonato (transmisión mayor o igua a 85 %) con patrón de microestructura para dispersión uniforme de la luz.
+- **Difusores y lentes:** emplear cubiertas semitransparentes de policarbonato (transmisión mayor o igua a 85 %) con patrón de microestructura para dispersión uniforme de la luz.
 
-* **Protección ambiental:** sellado IP54 en zonas de LED para evitar acumulación de polvo y humedad.
+- **Protección ambiental:** sellado IP54 en zonas de LED para evitar acumulación de polvo y humedad.
 
 **Retroalimentación háptica (Vibración)**
 
-* **Eccentric Rotating Mass (ERM)**
+- **Eccentric Rotating Mass (ERM)**
 
-* **Amplitud:** 0.8 G – 1.2 G
+- **Amplitud:** 0.8 G – 1.2 G
 
-* **Frecuencia de resonancia:** 180 Hz – 250 Hz
+- **Frecuencia de resonancia:** 180 Hz – 250 Hz
 
-* **Tiempo de respuesta:** Menos de 20 ms
+- **Tiempo de respuesta:** Menos de 20 ms
 
 **Patrones de vibración**
 
-* **Confirmación de acción:** un pulso único de 200 ms ON / 100 ms OFF.
+- **Confirmación de acción:** un pulso único de 200 ms ON / 100 ms OFF.
 
 Alerta crítica: secuencia de 3 pulsos (300 ms ON / 100 ms OFF), repetidos 2 veces, con pausa de 500 ms entre secuencias.
 
@@ -2135,14 +2132,14 @@ Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Desi
 
 Los siguientes mockups representan las interfaces clave de una plataforma de gestión de macetas inteligentes. Estas vistas han sido diseñadas para facilitar la experiencia del usuario en procesos como el registro e inicio de sesión, visualización del estado de las macetas, gestión de notificaciones, y administración de cuenta y membresía. Cada pantalla refleja una parte esencial del recorrido del usuario, alineada con los objetivos y necesidades definidos para cada User Persona.
 
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.2.png"  alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-3.png"  alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.2.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.2.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.2.png"  alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-3.png"  alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.2.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.2.png" alt="MockUp" width="1000" height="500"> <br>
 
 ### 5.4.3. Applications User Flow Diagrams
 
@@ -2191,4 +2188,4 @@ La presente sección incluye los prototipos interactivos desarrollados para repr
 - **Screenshot representativo del prototipo en acción:**
   <img src="/assets/img/capitulo-5/ux-ui-design/prototyping/Web_Prototyping.png"  alt="MockUp" width="1000" height="700"> <br>
 - **Enlace al video de navegación en Microsoft Stream:**
-  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  [Prototyping_Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)

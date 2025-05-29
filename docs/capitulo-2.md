@@ -970,10 +970,10 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
 - **Segmento 1: Personas Apasionadas por las plantas**
-  ![UserPerson_1](/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png) <br><br>
+  <img src="/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png" alt="UP1" width="400" height="600">
 
 - **Segmento 2: Personas dedicadas a la jardineria**
-  ![UserPerson_2](/assets/img/capitulo-2/needfinding/user-persona/UserPerson2.png) <br><br>
+  <img src="/assets/img/capitulo-2/needfinding/user-persona/UserPerson2.png" alt="UP1" width="400" height="600">
 
 - ### 2.3.2. User Task Matrix
 
@@ -1074,7 +1074,36 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
     </tbody>
   </table>
 
-PON TU EXPLICACION COMO DICE EN EL STATEMENT
+**Análisis comparativo de tareas: personas apasionadas por las plantas vs. personas que trabajan en jardinería**
+
+- **🔍 Tareas de mayor frecuencia e importancia en ambos perfiles**
+  Tanto las personas apasionadas por las plantas como quienes trabajan en jardinería coinciden en ciertas tareas clave que son realizadas con alta frecuencia y calificadas como altamente importantes:
+
+  - Regar sus plantas: Es una actividad esencial para ambos grupos. Los jardineros lo hacen a diario, mientras que los aficionados lo realizan frecuentemente. En ambos casos, se reconoce su alta importancia.
+
+  - Identificar cuándo una planta está en mal estado: Ambos perfiles consideran esta acción altamente importante y la ejecutan con mucha regularidad (frecuente o siempre).
+
+  - Monitorear múltiples plantas al mismo tiempo: Aunque los jardineros lo hacen siempre y los aficionados solo a veces, ambos lo califican como una tarea de alta importancia.
+
+  - Estas tareas muestran que, sin importar el perfil, hay un núcleo compartido de actividades críticas para mantener la salud de las plantas.
+
+- **⚖️ Principales diferencias**
+
+  - Revisión de luz: Los jardineros profesionales revisan siempre la exposición lumínica, considerándola muy importante, mientras que los aficionados solo lo hacen a veces y le asignan una importancia media. Esto revela una mayor conciencia técnica en los profesionales.
+
+  - Uso de apps para seguimiento: Esta es una actividad rara o inexistente en ambos perfiles, y también de baja importancia, lo que sugiere una oportunidad para diseñar soluciones más accesibles y motivadoras.
+
+  - Registro del estado de cada planta: Los jardineros lo hacen a veces y le asignan alta importancia, mientras que los aficionados lo hacen raramente, con solo una importancia media. Esto refuerza la diferencia en hábitos de documentación entre ambos perfiles.
+
+  - Tomar fotos: Es más común en los aficionados (a veces, con importancia media), mientras que los jardineros rara vez lo hacen y no lo consideran relevante. Esto sugiere un componente más emocional o estético en el público no profesional.
+
+- **✅ Coincidencias destacadas**
+
+  - Ambos grupos valoran y practican regularmente el cuidado reactivo, como detectar problemas y regar.
+
+  - Tareas como consultar información sobre plantas son más frecuentes en aficionados, pero ambos reconocen su valor.
+
+  - La compra de productos ocurre con diferentes frecuencias (mensual vs. semanal), pero con similar importancia media, lo que indica un patrón de consumo compartido.
 
 - ### 2.3.3. User Journey Mapping
 
