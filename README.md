@@ -1,27 +1,29 @@
-# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+# Informe de Trabajo Final
 
-![UPC](assets/img/portada/UPC_logo_transparente.png)
+<p align="center">
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br>
+    <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png"></img><br><br>
+    <strong>Ingeniería de Software - 202510</strong><br>
+    <strong>Ciclo: 07</strong><br><br>
+    <strong>1ASI0572 - Desarrollo de Soluciones IOT - 2956</strong><br><br>
+    <strong>Profesor: Velásquez Núñez, Angel Augusto</strong><br><br>
+    <strong>INFORME DE TRABAJO FINAL </strong> 
+</p>
 
-# Desarrollo de Soluciones IOT (2956)
-
-## PROFESOR: Angel Augusto Velasquez Nuñez
-
-## "Informe De Trabajo Final - Desarrollo de Soluciones IOT"
-
-## STARTUP: SevenSync
-
-## NOMBRE DEL PRODUCTO: MaceTech
 
 ---
 
 INTEGRANTES
 
-- Paredes Zapata, Luiggi Gianfranco  (U202218996)
-- Pescorán Angulo, Juan Fabritzzio (U20221C936)
-- Mallma Quispe, Rubén Elías (U202214234)
-- Sanchez Zamora, Fabrizio Alessandro  (U202213652)
-- Trigueros Chumacero, Flavio Eduardo (U202210190)
-- Yen Cerna, Lucio Heli (U202213143)
+
+| Apellidos y Nombres                 | Código     |
+|-------------------------------------|------------|
+| Paredes Zapata, Luiggi Gianfranco   | U202218996 |
+| Pescorán Angulo, Juan Fabritzzio    | U20221C936 |
+| Mallma Quispe, Rubén Elías          | U202214234 |
+| Sanchez Zamora, Fabrizio Alessandro | U202213652 |
+| Trigueros Chumacero, Flavio Eduardo | U202210190 |
+| Yen Cerna, Lucio Heli               | U202213143 |
 
 FECHA: MAYO 2025
 
