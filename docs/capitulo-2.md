@@ -1118,79 +1118,38 @@ El proceso consistió en identificar las fases principales (Steps), describir la
 
 En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
 
-## Glosario de Ubiquitous Language
-
 ---
-
-#### IAM (Identity and Access Management)
-
-| Término               | Definición                                                                                                                   |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 2FA                   | Mecanismo de autenticación que agrega una segunda capa de seguridad mediante códigos temporales (email).                     |
-| Credentials           | Conjunto de datos secretos (usuario, contraseña, tokens) utilizados para autenticar usuarios. Incluye almacenamiento seguro. |
-| Token                 | Cadena cifrada que autentica usuarios o servicios en peticiones, con expiración y permisos asociados.                        |
-| Session               | Representación de una sesión activa del usuario, contiene tokens, expiración y roles.                                        |
-| AccountStatus         | Estado actual de la cuenta del usuario (activo, suspendido, eliminado, pendiente). Controla acceso y flujos automatizados.   |
-| PasswordRecoveryToken | Token temporal emitido para la recuperación de contraseña.                                                                   |
-| User                  | Entidad que representa a una persona que usa el sistema. Incluye identificación, credenciales y preferencias.                |
-| User Management       | Lógica de negocio asociada al registro, actualización y verificación de datos del usuario.                                   |
-
----
-
-#### Profile and Preferences
-
-| Término      | Definición                                                                                         |
-| ------------ | -------------------------------------------------------------------------------------------------- |
-| Preference   | Configuración individual del usuario sobre idioma, notificaciones, unidades, etc.                  |
-| User Profile | Datos personales del usuario como dirección, número telefónico, idioma y preferencias visuales.    |
-| Address      | Información de localización del usuario, incluyendo validación con Geo API.                        |
-| PhoneNumber  | Estructura validada de números telefónicos para notificaciones y autenticación.                    |
-| Country      | Identificador estandarizado de país (ISO) para normalización de datos y localización de contenido. |
-
----
-
-#### Subscriptions & Payments
-
-| Término                  | Definición                                                                                |
-| ------------------------ | ----------------------------------------------------------------------------------------- |
-| Subscriptions & Payments | Flujos que gestionan planes de suscripción, pagos, métodos asociados e historial.         |
-| PaymentTransaction       | Registro detallado de pagos realizados: monto, estado, método, marca temporal.            |
-| Invoice                  | Documento fiscal con desglose de importes cobrados, productos/servicios y estado de pago. |
-
----
-
-#### Asset & Resource Management
-
-| Término            | Definición                                                                                                           |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| Plant Management   | Contexto que gestiona especies y macetas, condiciones óptimas, identificación y sincronización con fuentes externas. |
-| Plant Profile      | Conjunto de datos relevantes de una planta: nombre, requerimientos, fecha de plantación, etiquetas.                  |
-| Compatibility      | Validación entre planta y maceta según tamaño, retención de agua, profundidad y otros factores.                      |
-| Plant API          | Servicio externo que proporciona catálogos y características de especies vegetales.                                  |
-| MaceTech           | Hardware IoT con sensores integrados para monitoreo de variables como humedad, pH, temperatura, etc.                 |
-| Maintenance Report | Documento con historial de cuidados, alertas y estado general de la planta o maceta.                                 |
-| Light Sensor       | Sensor que mide la luz ambiental recibida por la planta.                                                             |
-| Moisture Sensor    | Sensor de humedad en el sustrato para regular riego y generar alertas.                                               |
-
----
-
-#### Service Design and Planning
-
-| Término             | Definición                                                                                                |
-| ------------------- | --------------------------------------------------------------------------------------------------------- |
-| Rule                | Lógica definida para activar alertas o recomendaciones con base en umbrales de sensores.                  |
-| Threshold           | Valor configurado que determina cuándo se debe activar una alerta o acción automática.                    |
-| OptimalRange        | Rango de valores saludables por especie vegetal (ej. luz, humedad, pH).                                   |
-| Recommendation      | Sugerencia automatizada al usuario para mejorar las condiciones de sus plantas.                           |
-| Caring Intelligence | Módulo que analiza datos y genera recomendaciones personalizadas según patrones y condiciones detectadas. |
-| Geo API             | Servicio externo que provee datos geográficos y climáticos para contextualizar recomendaciones.           |
-
----
-
-#### Service Operation and Monitoring
 
 | Término                     | Definición                                                                                                                    |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 2FA                         | Mecanismo de autenticación que agrega una segunda capa de seguridad mediante códigos temporales (email ).                     |
+| Credentials                 | Conjunto de datos secretos (usuario, contraseña, tokens) utilizados para autenticar usuarios. Incluye almacenamiento seguro.  |
+| Token                       | Cadena cifrada que autentica usuarios o servicios en peticiones, con expiración y permisos asociados.                         |
+| Session                     | Representación de una sesión activa del usuario, contiene tokens, expiración y roles.                                         |
+| AccountStatus               | Estado actual de la cuenta del usuario (activo, suspendido, eliminado, pendiente). Controla acceso y flujos automatizados.    |
+| PasswordRecoveryToken       | Token temporal emitido para la recuperación de contraseña.                                                                    |
+| User                        | Entidad que representa a una persona que usa el sistema. Incluye identificación, credenciales y preferencias.                 |
+| Preference                  | Configuración individual del usuario sobre idioma, notificaciones, unidades, etc.                                             |
+| User Profile                | Datos personales del usuario como dirección, número telefónico, idioma y preferencias visuales.                               |
+| Address                     | Información de localización del usuario, incluyendo validación con Geo API.                                                   |
+| PhoneNumber                 | Estructura validada de números telefónicos para notificaciones y autenticación.                                               |
+| Country                     | Identificador estandarizado de país (ISO) para normalización de datos y localización de contenido.                            |
+| PaymentTransaction          | Registro detallado de pagos realizados: monto, estado, método, marca temporal.                                                |
+| Invoice                     | Documento fiscal con desglose de importes cobrados, productos/servicios y estado de pago.                                     |
+| Plant Management            | Contexto que gestiona especies y macetas, condiciones óptimas, identificación y sincronización con fuentes externas.          |
+| Plant Profile               | Conjunto de datos relevantes de una planta: nombre, requerimientos, fecha de plantación, etiquetas.                           |
+| Compatibility               | Validación entre planta y maceta según tamaño, retención de agua, profundidad y otros factores.                               |
+| Plant API                   | Servicio externo que proporciona catálogos y características de especies vegetales.                                           |
+| MaceTech                    | Hardware IoT con sensores integrados para monitoreo de variables como humedad, pH, temperatura, etc.                          |
+| Maintenance Report          | Documento con historial de cuidados, alertas y estado general de la planta o maceta.                                          |
+| Light Sensor                | Sensor que mide la luz ambiental recibida por la planta.                                                                      |
+| Moisture Sensor             | Sensor de humedad en el sustrato para regular riego y generar alertas.                                                        |
+| Rule                        | Lógica definida para activar alertas o recomendaciones con base en umbrales de sensores.                                      |
+| Threshold                   | Valor configurado que determina cuándo se debe activar una alerta o acción automática.                                        |
+| OptimalRange                | Rango de valores saludables por especie vegetal (ej. luz, humedad, pH).                                                       |
+| Recommendation              | Sugerencia automatizada al usuario para mejorar las condiciones de sus plantas.                                               |
+| Caring Intelligence         | Módulo que analiza datos y genera recomendaciones personalizadas según patrones y condiciones detectadas.                     |
+| Geo API                     | Servicio externo que provee datos geográficos y climáticos para contextualizar recomendaciones.                               |
 | SensorData                  | Lecturas obtenidas por sensores de humedad, pH, temperatura y salinidad.                                                      |
 | SensorRecord                | Registro persistente con marca temporal y metadatos de cada SensorData.                                                       |
 | Alert                       | Evento generado al detectarse condiciones anormales según reglas definidas.                                                   |
@@ -1200,27 +1159,10 @@ En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre
 | IrrigationJob               | Objeto que representa una ejecución programada de riego: hora, duración, volumen, válvula, estado.                            |
 | Watering Management         | Módulo encargado de planificar y ejecutar acciones de riego automáticas o manuales basadas en reglas.                         |
 | System Monitoring & Control | Supervisión del estado de sensores y dispositivos conectados. Activa alertas en caso de fallas o interrupciones del servicio. |
-
----
-
-#### Data Analytics
-
-| Término                   | Definición                                                                                   |
-| ------------------------- | -------------------------------------------------------------------------------------------- |
-| Data Insights & Reporting | Transformación de datos de sensores en dashboards, alertas y reportes históricos.            |
-| InsightReport             | Documento generado tras el análisis de datos para visualizar KPIs y recomendar acciones.     |
-| ReportTemplate            | Plantilla predefinida para estructurar reportes y garantizar uniformidad visual y semántica. |
-| Dashboard                 | Interfaz visual para presentar datos clave de macetas, plantas y estado general del sistema. |
-| Feedback                  | Respuestas del usuario que permiten al sistema ajustar sus recomendaciones futuras.          |
-
----
-
-#### Segmentos y Experiencias de Usuario
-
-| Término            | Definición                                                                                                |
-| ------------------ | --------------------------------------------------------------------------------------------------------- |
-| Plant Enthusiastic | Usuario que interactúa con Macetech para cuidar sus plantas de manera doméstica.                          |
-| Gardener           | Subgrupo de jardineros domésticos interesados principalmente en decoración y esparcimiento.               |
-| Landing Page       | Página de presentación que muestra beneficios del sistema y permite el registro.                          |
-| Web App            | Plataforma web que centraliza funcionalidades del sistema para monitoreo, configuración y visualización.  |
-| Mobile App         | Versión nativa del sistema para dispositivos móviles. Permite monitoreo, notificaciones y control remoto. |
+| Data Insights & Reporting   | Transformación de datos de sensores en dashboards, alertas y reportes históricos.                                             |
+| InsightReport               | Documento generado tras el análisis de datos para visualizar KPIs y recomendar acciones.                                      |
+| ReportTemplate              | Plantilla predefinida para estructurar reportes y garantizar uniformidad visual y semántica.                                  |
+| Dashboard                   | Interfaz visual para presentar datos clave de macetas, plantas y estado general del sistema.                                  |
+| Feedback                    | Respuestas del usuario que permiten al sistema ajustar sus recomendaciones futuras.                                           |
+| Plant Enthusiastic          | Usuario que interactúa con Macetech para cuidar sus plantas de manera doméstica.                                              |
+| Gardener                    | Subgrupo de jardineros domésticos interesados principalmente en el cuidado de las plantas.                                    |
