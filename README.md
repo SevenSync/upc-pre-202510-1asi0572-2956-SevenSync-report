@@ -1,4 +1,4 @@
-# Informe de Trabajo Final
+# Informe de Trabajo Final - TB2
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br>
@@ -10,11 +10,12 @@
     <strong>INFORME DE TRABAJO FINAL </strong> 
 </p>
 
+<p align="center">
+    <strong>Startup: Seven Sync </strong><br>
+    <strong>Producto: Macetech </strong>
+</p>
 
----
-
-INTEGRANTES
-
+### Relación de integrantes
 
 | Apellidos y Nombres                 | Código     |
 |-------------------------------------|------------|
@@ -25,7 +26,7 @@ INTEGRANTES
 | Trigueros Chumacero, Flavio Eduardo | U202210190 |
 | Yen Cerna, Lucio Heli               | U202213143 |
 
-FECHA: MAYO 2025
+**Mayo, 2025**
 
 ---
 
