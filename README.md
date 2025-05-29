@@ -1,41 +1,44 @@
-# Informe de Trabajo Final - TB2
+<div style="text-align: center;">
 
-<p align="center">
+
+
+<p align="center"><br>
+    <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png" width="150px"></img><br><br>
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br>
-    <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png"></img><br><br>
-    <strong>Ingeniería de Software - 202510</strong><br>
-    <strong>Ciclo: 07</strong><br><br>
-    <strong>1ASI0572 - Desarrollo de Soluciones IOT - 2956</strong><br><br>
-    <strong>Profesor: Velásquez Núñez, Angel Augusto</strong><br><br>
-    <strong>INFORME DE TRABAJO FINAL </strong> 
+    <strong>Carrera de ingeniería de Software</strong><br><br>
+    <strong>Ciclo 202510</strong><br><br>
+    1ASI0572 - Desarrollo de Soluciones IOT<br><br>
+    <strong>NRC:</strong> 2956<br><br>
+    <strong>Profesor:</strong> Velásquez Núñez, Angel Augusto<br><br>
+    <strong>Informe de Trabajo Final </strong> 
 </p>
 
 <p align="center">
-    <strong>Startup: Seven Sync </strong><br>
-    <strong>Producto: Macetech </strong>
+    <strong>Startup:</strong> SevenSync <br>
+    <strong>Producto:</strong> Macetech <br>
 </p>
+    <h4>Relación de integrantes</h4>
+    <ul style="list-style-type: none; padding: 0;">
+        <li>u202218996 - Paredes Zapata, Luiggi Gianfranco</li>
+        <li>u20221C936 - Pescorán Angulo, Juan Fabritzzio</li>
+        <li>u202214234 - Mallma Quispe, Rubén Elías</li>
+        <li>u202213652 - Sanchez Zamora, Fabrizio Alessandro</li>
+        <li>u202210190 - Trigueros Chumacero, Flavio Eduardo</li>
+        <li>u202213143 - Yen Cerna, Lucio Heli </li>
+    </ul>
+    <p><strong>Mayo 2025</strong></p>
 
-### Relación de integrantes
-
-| Apellidos y Nombres                 | Código     |
-|-------------------------------------|------------|
-| Paredes Zapata, Luiggi Gianfranco   | U202218996 |
-| Pescorán Angulo, Juan Fabritzzio    | U20221C936 |
-| Mallma Quispe, Rubén Elías          | U202214234 |
-| Sanchez Zamora, Fabrizio Alessandro | U202213652 |
-| Trigueros Chumacero, Flavio Eduardo | U202210190 |
-| Yen Cerna, Lucio Heli               | U202213143 |
-
-**Mayo, 2025**
+</div>
 
 ---
 
 # Registro de Versiones del Informe
 
-| Versión   | Fecha      | Autores                                                                                                                                                                                                          | Descripción de Modificación                                                                                                                                              |
+| Versión   | Fecha      |Autores                                                                                                                                                                                                          | Descripción de Modificación                                                                                                                                              |
 |-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25                           |
-| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. |
+| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75|
+
 ---
 
 # Project Report Collaboration Insights
