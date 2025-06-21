@@ -1,7 +1,5 @@
 <div style="text-align: center;">
 
-
-
 <p align="center"><br>
     <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png" width="150px"></img><br><br>
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br>
@@ -26,7 +24,7 @@
         <li>u202210190 - Trigueros Chumacero, Flavio Eduardo</li>
         <li>u202213143 - Yen Cerna, Lucio Heli </li>
     </ul>
-    <p><strong>Mayo 2025</strong></p>
+    <p><strong>Junio 2025</strong></p>
 
 </div>
 
@@ -34,10 +32,10 @@
 
 # Registro de Versiones del Informe
 
-| Versión   | Fecha      |Autores                                                                                                                                                                                                          | Descripción de Modificación                                                                                                                                              |
-|-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega.  Nota: 6.25                           |
-| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br>  Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75|
+| Versión   | Fecha      | Autores                                                                                                                                                                                                         | Descripción de Modificación                                                                                                                                                          |
+| --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br> Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega. Nota: 6.25                                        |
+| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br> Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75 |
 
 ---
 
@@ -52,27 +50,26 @@ elaboración del informe. Adicionalmente, se presentan las métricas de las acci
 
 **TB1 Project Report Collaboration Insights**
 
-*Vista general de las contribuciones del equipo*
+_Vista general de las contribuciones del equipo_
 <img src="/assets/img/portada/team-contributions-tb1.png" alt="contribuciones del equipo para la TB1">
-*Contribuciones por miembro del equipo*
+_Contribuciones por miembro del equipo_
 <img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la TB1">
 <img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para la TB1">
 
-
-*Commits*
+_Commits_
 
 <img src="/assets/img/portada/commits-tb1.png" alt="commits del equipo para la TB1">
 
-*Network Graph*
+_Network Graph_
 <img src="/assets/img/portada/network-graph-tb1.png" alt="gráfico de red de ramas del equipo para la TB1">
 <img src="/assets/img/portada/network-graph-tb1-b.png" alt="gráfico de red de ramas del equipo para la TB1">
 
-De las contribuciones del equipo y commits se concluye lo siguiente: 
+De las contribuciones del equipo y commits se concluye lo siguiente:
 
 - Para esta entrega, se han realizado un total de 70 commits.
 
 - La mayor concentración de commits estuvo en las ramas capitulo-I y capitulo-II.
- 
+
 - El equipo no logró el alcance de la entrega al no finalizar el desarrollo del capítulo III y IV.
 
 - El equipo considera que hubo falta de organización y balance en la repartición de artefactos de los capítulos.
@@ -89,27 +86,26 @@ En esta entrega no se han utilizado pull requests.
 
 **TP Project Report Collaboration Insights**
 
-*Vista general de las contribuciones del equipo*
+_Vista general de las contribuciones del equipo_
 <img src="/assets/img/portada/team-contributions-tp.png" alt="contribuciones del equipo para el trabajo parcial">
-*Contribuciones por miembro del equipo*
+_Contribuciones por miembro del equipo_
 <img src="/assets/img/portada/contributions-tp-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
 <img src="/assets/img/portada/contributions-tp-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
 
-
-*Commits*
+_Commits_
 
 <img src="/assets/img/portada/commits-tp.png" alt="commits del equipo para el trabajo parcial">
 
-*Network Graph*
+_Network Graph_
 <img src="/assets/img/portada/network-graph-tp.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
 <img src="/assets/img/portada/network-graph-tp-b.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
 
-De las contribuciones del equipo y commits se concluye lo siguiente: 
+De las contribuciones del equipo y commits se concluye lo siguiente:
 
 - Para esta entrega, se han realizado un total de (numero) commits.
 
 - La mayor concentración de commits estuvo en la rama develop.
- 
+
 - El equipo logró el alcance de la entrega al finalizar el desarrollo del capítulo III, IV, V y VI y aplicar las correcciones brindadas en la retroalimentación con el docente.
 
 - El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
@@ -122,115 +118,123 @@ Para el control de versiones, decidimos emplear 2 ramas estables y ramas tempora
 
 **ramas temporales**: Estas ramas entregan valor que se integrará posteriomente en develop mediante pull requests, estas ramas aseguran la reversión sencilla. Al ser fusionadas, estas son eliminadas promoviendo la organización y limpieza.
 
-Las otras ramas utilizadas en la TB1 fueron declaradas en desuso al cambiar el manejo de las ramas, por lo tanto, fueron eliminadas. 
+Las otras ramas utilizadas en la TB1 fueron declaradas en desuso al cambiar el manejo de las ramas, por lo tanto, fueron eliminadas.
 
 En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop.
 
 # Contenido
+
 ## Tabla de Contenidos
-* [Capítulo I: Introducción](#capítulo-i-introducción)
-    * [1.1. Startup Profile](#11-startup-profile)
-        * [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-        * [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    * [1.2. Solution Profile](#12-solution-profile)
-        * [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-        * [1.2.2. Lean UX Process](#122-lean-ux-process)
-            * [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-            * [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-            * [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-            * [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-    * [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-* [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    * [2.1. Competidores](#21-competidores)
-        * [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-        * [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    * [2.2. Entrevistas](#22-entrevistas)
-        * [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-        * [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-        * [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-    * [2.3. Needfinding](#23-needfinding)
-        * [2.3.1. User Personas](#231-user-personas)
-        * [2.3.2. User Task Matrix](#232-user-task-matrix)
-        * [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-        * [2.3.4. Empathy Mapping](#234-empathy-mapping)
-        * [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    * [2.4. Ubiquitous Language](#24-ubiquitous-language)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
 
-* [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    * [3.1. To-Be Scenario Mappin](#31-to-be-scenario-mappin)
-    * [3.2. User Storie](#32-user-storie)
-    * [3.3. Impact Mappin](#33-impact-mappin)
-    * [3.4. Product Backlog](#34-product-backlog)
+  - [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-* [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    * [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        * [4.1.1. EventStorming](#411-eventstorming)
-            * [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-            * [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            * [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-        * [4.1.2. Context Mapping](#412-context-mapping)
-        * [4.1.3. Software Architecture](#413-software-architecture)
-            * [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-            * [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-            * [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-            * [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-    * [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        * [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
-            * [4.2.X.1. Domain Layer](#42x1-domain-layer)
-            * [4.2.X.2. Interface Layer](#42x2-interface-layer)
-            * [4.2.X.3. Application Layer](#42x3-application-layer)
-            * [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
-            * [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
-            * [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
-                * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
-                * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
 
-* [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    * [5.1. Style Guidelines](#51-style-guidelines)
-        * [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-        * [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-    * [5.2. Information Architecture](#52-information-architecture)
-        * [5.2.1. Organization Systems](#521-organization-systems)
-        * [5.2.2. Labeling Systems](#522-labeling-systems)
-        * [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-        * [5.2.4. Searching Systems](#524-searching-systems)
-        * [5.2.5. Navigation Systems](#525-navigation-systems)
-    * [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-        * [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-        * [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-    * [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-        * [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        * [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
-        * [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        * [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-    * [5.5. Applications Prototyping](#55-applications-prototyping)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
-* [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    * [6.1. Software Configuration Management](#61-software-configuration-management)
-        * [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-        * [6.1.2. Source Code Management](#612-source-code-management)
-        * [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-        * [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
-    * [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-        * [6.2.X. Sprint n](#62x-sprint-n)
-            * [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
-            * [6.2.X.2. Sprint Backlog n](#62x2-sprint-backlog-n)
-            * [6.2.X.3. Development Evidence for Sprint Review](#62x3-development-evidence-for-sprint-review)
-            * [6.2.X.4. Testing Suite Evidence for Sprint Review](#62x4-testing-suite-evidence-for-sprint-review)
-            * [6.2.X.5. Execution Evidence for Sprint Review](#62x5-execution-evidence-for-sprint-review)
-            * [6.2.X.6. Services Documentation Evidence for Sprint Review](#62x6-services-documentation-evidence-for-sprint-review)
-            * [6.2.X.7. Software Deployment Evidence for Sprint Review](#62x7-software-deployment-evidence-for-sprint-review)
-            * [6.2.X.8. Team Collaboration Insights during Sprint](#62x8-team-collaboration-insights-during-sprint)
-    * [6.3. Validation Interviews](#63-validation-interviews)
-        * [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-        * [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-        * [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-    * [6.4. Video About-the-Product](#64-video-about-the-product)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
 
-* [Conclusiones](#conclusiones)
+  - [3.1. To-Be Scenario Mappin](#31-to-be-scenario-mappin)
+  - [3.2. User Storie](#32-user-storie)
+  - [3.3. Impact Mappin](#33-impact-mappin)
+  - [3.4. Product Backlog](#34-product-backlog)
 
-* [Bibliografía](#bibliografía)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+
+  - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+    - [4.1.1. EventStorming](#411-eventstorming)
+      - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+      - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+      - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+    - [4.1.2. Context Mapping](#412-context-mapping)
+    - [4.1.3. Software Architecture](#413-software-architecture)
+      - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+      - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+      - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+      - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+  - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+    - [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
+      - [4.2.X.1. Domain Layer](#42x1-domain-layer)
+      - [4.2.X.2. Interface Layer](#42x2-interface-layer)
+      - [4.2.X.3. Application Layer](#42x3-application-layer)
+      - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
+      - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
+        - [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
+
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+
+  - [5.1. Style Guidelines](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture](#52-information-architecture)
+    - [5.2.1. Organization Systems](#521-organization-systems)
+    - [5.2.2. Labeling Systems](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems](#524-searching-systems)
+    - [5.2.5. Navigation Systems](#525-navigation-systems)
+  - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+    - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+    - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+    - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping](#55-applications-prototyping)
+
+- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+
+  - [6.1. Software Configuration Management](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+    - [6.1.2. Source Code Management](#612-source-code-management)
+    - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+    - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+  - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+    - [6.2.X. Sprint n](#62x-sprint-n)
+      - [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
+      - [6.2.X.2. Sprint Backlog n](#62x2-sprint-backlog-n)
+      - [6.2.X.3. Development Evidence for Sprint Review](#62x3-development-evidence-for-sprint-review)
+      - [6.2.X.4. Testing Suite Evidence for Sprint Review](#62x4-testing-suite-evidence-for-sprint-review)
+      - [6.2.X.5. Execution Evidence for Sprint Review](#62x5-execution-evidence-for-sprint-review)
+      - [6.2.X.6. Services Documentation Evidence for Sprint Review](#62x6-services-documentation-evidence-for-sprint-review)
+      - [6.2.X.7. Software Deployment Evidence for Sprint Review](#62x7-software-deployment-evidence-for-sprint-review)
+      - [6.2.X.8. Team Collaboration Insights during Sprint](#62x8-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product](#64-video-about-the-product)
+
+- [Conclusiones](#conclusiones)
+
+- [Bibliografía](#bibliografía)
 
 # Student Outcome
 
@@ -283,8 +287,26 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
      Trabajé en los diagramas técnicos, asegurando que el flujo de datos estuviera bien documentado. Colaboré estrechamente con otros miembros del equipo para realizar las subsanaciones necesarias, optimizando la estructura técnica. <br><br>
       <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
-        Desarrollé diagramas detallados de arquitectura técnica, asegurando que el sistema estuviera bien documentado. Trabajé en la subsanación de problemas relacionados con la integración de sensores y componentes físicos, colaborando estrechamente con el equipo.
-        </td>
+        Desarrollé diagramas detallados de arquitectura técnica, asegurando que el sistema estuviera bien documentado. Trabajé en la subsanación de problemas relacionados con la integración de sensores y componentes físicos, colaborando estrechamente con el equipo. <br><br>
+      <b> TB2</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      Avancé el desarrollo de la aplicación web y móvil del bounded context de Identity and     Access Management (IAM). Además, actualicé las user stories y technical stories para    reflejar los cambios implementados.<br><br>
+      <b> TB2</b><br>
+      <u> Luiggi Paredes </u><br>
+      Colaboré en el desarrollo de la aplicación web y móvil del bounded context de Asset &     Resource Management, asegurando su alineación con los objetivos funcionales. También    actualicé las user stories y technical stories.<br><br>
+      <b> TB2</b><br>
+      <u> Ruben Mallma </u><br>
+      Contribuí al desarrollo de la aplicación web y móvil del bounded context de Profile     and Preferences, trabajando con el equipo para implementar funcionalidades clave.   <br><br>
+      <b> TB2</b><br>
+      <u> Juan Pescoran </u><br>
+      Implementé el Edge Application y colaboré en el desarrollo de la aplicación web y     móvil del bounded context de Data Analytics. Asimismo, actualicé las user stories y     technical stories.<br><br>
+      <b> TB2</b><br>
+      <u> Flavio Trigeros </u><br>
+      Colaboré con la redacción del reporte técnico del proyecto y participé en el    desarrollo de la aplicación web y móvil del bounded context de Subscriptions &    Payments. También me encargué de actualizar las user stories y technical stories.  <br><br>
+      <b> TB2</b><br>
+      <u> Lucio Yen </u><br>
+      Implementé el Edge Application y colaboré con el desarrollo de la aplicación web y    móvil del bounded context de Service Design and Planning. Además, actualicé las user    stories y technical stories.
+      </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -328,6 +350,25 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
         La experiencia me permitió fortalecer mi capacidad de colaboración multidisciplinaria. Aprendí a manejar la información técnica compleja de manera efectiva y a compartirla con otros miembros para tomar decisiones informadas.
+      <br><br>
+      <b> TB2</b><br>
+    <u> Fabrizio Sanchez </u><br>
+    Fortalecí mis habilidades técnicas desarrollando funcionalidades clave en IAM tanto para web como móvil. Además, entendí mejor la importancia de mantener la documentación técnica actualizada mediante user y technical stories.<br><br>
+    <b> TB2</b><br>
+    <u> Luiggi Paredes </u><br>
+    Aprendí a coordinar el desarrollo de una aplicación compleja bajo el contexto de gestión de activos, fortaleciendo mi capacidad para mantener la coherencia entre las historias de usuario y los entregables técnicos.<br><br>
+    <b> TB2</b><br>
+    <u> Ruben Mallma </u><br>
+    Profundicé en el desarrollo del módulo de preferencias y perfiles, entendiendo cómo estas funcionalidades se integran en una solución mayor. Esto me ayudó a mejorar mi enfoque colaborativo.<br><br>
+    <b> TB2</b><br>
+    <u> Juan Pescoran </u><br>
+    El desarrollo del Edge Application me permitió aplicar conocimientos avanzados de integración y procesamiento en tiempo real. También mejoré mi capacidad para articular los requerimientos técnicos del módulo de analítica.<br><br>
+    <b> TB2</b><br>
+    <u> Flavio Trigeros </u><br>
+    Al participar tanto en la elaboración del reporte como en el desarrollo de funcionalidades, fortalecí mis habilidades de documentación y análisis técnico. Aprendí a traducir las necesidades funcionales en historias técnicas claras.<br><br>
+    <b> TB2</b><br>
+    <u> Lucio Yen </u><br>
+    Trabajar en la implementación del Edge Application y en el módulo de planificación de servicios me permitió comprender mejor cómo coordinar múltiples componentes del sistema de forma integral y documentada.
       </td>
     </tr>
     <tr>
@@ -370,6 +411,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
         Estudié el impacto de las soluciones tecnológicas en la jardinería, enfocándome en cómo el IoT puede optimizar el monitoreo y cuidado de las plantas mediante sensores y sistemas automáticos. Investigamos el mercado de la jardinería inteligente y sus aplicaciones comerciales. <br><br>
+      <b>TB2</b><br>
+    <u>Fabrizio Sanchez</u><br>
+    Ayudé a organizar las tareas del equipo para avanzar con las funciones que permiten a los usuarios registrarse, iniciar sesión y acceder a la maceta inteligente desde la app web y móvil. También actualicé las historias que explican lo que debe hacer el sistema para que todos tuvieran claro qué seguir.<br><br>
+    <b>TB2</b><br>
+    <u>Luiggi Paredes</u><br>
+    Coordiné con mis compañeros para asegurar que las funciones relacionadas con la gestión de herramientas y recursos de jardinería fueran claras y alcanzables. Aporté en la organización de tareas y ayudé a mantener actualizada la información del proyecto.<br><br>
+    <b>TB2</b><br>
+    <u>Ruben Mallma</u><br>
+    Participé en la planificación de las pantallas y funciones donde los usuarios pueden editar su perfil, preferencias y datos personales. Me aseguré de que el trabajo se ajustara a los plazos definidos.<br><br>
+    <b>TB2</b><br>
+    <u>Juan Pescoran</u><br>
+    Ayudé a definir las tareas para que la maceta inteligente pudiera enviar datos en tiempo real sobre el estado de la planta. También participé en la planificación de funciones que ayudan al usuario a entender cómo evoluciona su planta.<br><br>
+    <b>TB2</b><br>
+    <u>Flavio Trigeros</u><br>
+    Contribuí organizando las tareas del equipo para que los usuarios pudieran revisar y gestionar sus suscripciones al servicio. Además, ayudé a revisar que los objetivos del equipo se estuvieran cumpliendo según lo planeado.<br><br>
+    <b>TB2</b><br>
+    <u>Lucio Yen</u><br>
+    Aporté en la planificación de las funciones que permiten a los usuarios configurar alertas y planes de cuidado según el tipo de planta. Me aseguré de que todos supieran qué debía hacerse y cuándo.
 </td>
       <td>
       <b> TB1</b><br>
@@ -409,6 +468,24 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b> TP</b><br>
       <u> Flavio Trigeros </u><br>
         Mi investigación me permitió ampliar mis conocimientos sobre la industria de la jardinería inteligente y cómo las soluciones tecnológicas pueden satisfacer una necesidad real de automatización y eficiencia en este sector. Esto enriqueció nuestra solución tecnológica, alineándola con las demandas actuales del mercado. <br><br>
+      <b>TB2</b><br>
+    <u>Fabrizio Sanchez</u><br>
+    Aprendí a coordinar tareas pensando en cómo facilitar el uso de la app por parte de los jardineros. Entendí mejor cómo una buena organización mejora tanto el desarrollo como la experiencia del usuario final.<br><br>
+    <b>TB2</b><br>
+    <u>Luiggi Paredes</u><br>
+    Me di cuenta de lo importante que es tener metas claras y compartirlas con el equipo para que todos trabajen hacia un mismo objetivo. La colaboración hizo que avanzáramos más rápido.<br><br>
+    <b>TB2</b><br>
+    <u>Ruben Mallma</u><br>
+    Aprendí a adaptarme al ritmo del equipo y a mantener la comunicación para cumplir con las tareas que permiten a los usuarios personalizar su experiencia con la maceta.<br><br>
+    <b>TB2</b><br>
+    <u>Juan Pescoran</u><br>
+    Comprendí que una buena planificación permite integrar funciones importantes como el monitoreo en tiempo real, y que todos los aportes del equipo son clave para lograrlo.<br><br>
+    <b>TB2</b><br>
+    <u>Flavio Trigeros</u><br>
+    Fortalecí mi capacidad para organizar el trabajo del grupo y asegurarme de que cumplíamos con lo que el usuario espera: tener acceso claro y útil a suscripciones y datos de su planta.<br><br>
+    <b>TB2</b><br>
+    <u>Lucio Yen</u><br>
+    Entendí mejor cómo planificar funciones pensando en los usuarios que cuidan sus plantas día a día. Aprendí a trabajar en equipo para lograr que las funciones lleguen a tiempo y funcionen como se espera.
     </td>
     </tr>
   </tbody>
