@@ -1089,363 +1089,181 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
-### 4.2.3. Bounded Context: Pot Management
-
-#### 4.2.3.1. Domain Layer.
-
-## Pot
-
-| Propiedad     | Valor                                                          |
-| ------------- | -------------------------------------------------------------- |
-| **Nombre**    | Pot                                                            |
-| **Categoría** | Aggregate Root                                                 |
-| **Propósito** | Representar una maceta con su ciclo de vida, estado y sensores |
-
-### Atributos
-
-| Nombre      | Tipo de dato | Visibilidad | Descripción                             |
-| ----------- | ------------ | ----------- | --------------------------------------- |
-| id          | `Long`       | private     | Identificador único de la maceta        |
-| userUid     | `String`     | private     | Identificador del usuario dueño         |
-| tag         | `String`     | private     | Etiqueta o nombre amigable de la maceta |
-| status      | `PotStatus`  | private     | Estado actual de la maceta              |
-| humidity    | `Sensor`     | private     | Sensor de humedad asociado              |
-| temperature | `Sensor`     | private     | Sensor de temperatura asociado          |
-| water       | `Sensor`     | private     | Sensor de nivel de agua asociado        |
-
-### Métodos
-
-| Nombre            | Tipo de retorno | Visibilidad | Descripción                                    |
-| ----------------- | --------------- | ----------- | ---------------------------------------------- |
-| changeTag         | `void`          | public      | Actualiza la `tag` de la maceta                |
-| changeStatus      | `void`          | public      | Actualiza el `status` de la maceta             |
-| recordHumidity    | `void`          | public      | Actualiza el valor del sensor de `humidity`    |
-| recordTemperature | `void`          | public      | Actualiza el valor del sensor de `temperature` |
-| recordWaterLevel  | `void`          | public      | Actualiza el valor del sensor de `water`       |
-
-## Group
-
-| Propiedad     | Valor                                       |
-| ------------- | ------------------------------------------- |
-| **Nombre**    | Group                                       |
-| **Categoría** | Entity                                      |
-| **Propósito** | Agrupar varias macetas bajo un nombre común |
-
-### Atributos
-
-| Nombre  | Tipo de dato | Visibilidad | Descripción                                     |
-| ------- | ------------ | ----------- | ----------------------------------------------- |
-| id      | `Long`       | private     | Identificador único del grupo                   |
-| name    | `String`     | private     | Nombre del grupo                                |
-| userUid | `String`     | private     | Identificador del usuario que creó el grupo     |
-| potUid  | `List<Long>` | private     | Lista de IDs de macetas pertenecientes al grupo |
-
-### Métodos
-
-| Nombre      | Tipo de retorno | Visibilidad | Descripción                         |
-| ----------- | --------------- | ----------- | ----------------------------------- |
-| renameGroup | `void`          | public      | Cambia el nombre del grupo          |
-| addPot      | `void`          | public      | Añade un ID de maceta a `potUid`    |
-| removePot   | `void`          | public      | Elimina un ID de maceta de `potUid` |
-
-## Sensor
-
-| Propiedad     | Valor                                               |
-| ------------- | --------------------------------------------------- |
-| **Nombre**    | Sensor                                              |
-| **Categoría** | Value Object                                        |
-| **Propósito** | Representar la lectura y estado de un sensor físico |
-
-### Atributos
-
-| Nombre           | Tipo de dato | Visibilidad | Descripción                                               |
-| ---------------- | ------------ | ----------- | --------------------------------------------------------- |
-| value            | `Float`      | private     | Valor actual de la medición                               |
-| isMalfunctioning | `Boolean`    | private     | Indica si el sensor está fallando                         |
-| measurementType  | `String`     | private     | Tipo de medición (ej. "humidity", "temperature", "water") |
-
-### Métodos
-
-| Nombre           | Tipo de retorno | Visibilidad | Descripción                             |
-| ---------------- | --------------- | ----------- | --------------------------------------- |
-| updateValue      | `void`          | public      | Asigna un nuevo `value`                 |
-| markMalfunction  | `void`          | public      | Marca el sensor como en fallo           |
-| clearMalfunction | `void`          | public      | Restablece `isMalfunctioning` a `false` |
-
-## PotStatus
-
-| Propiedad     | Valor                                      |
-| ------------- | ------------------------------------------ |
-| **Nombre**    | PotStatus                                  |
-| **Categoría** | Enum                                       |
-| **Propósito** | Definir los posibles estados de una maceta |
-
-### Valores
-
-| Valor    | Descripción |
-| -------- | ----------- |
-| Free     | Disponible  |
-| InUse    | En uso      |
-| Inactive | Inactiva    |
-| Broken   | Dañada      |
-
-## PotFactory
-
-| Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
-| **Nombre**    | PotFactory                               |
-| **Categoría** | Factory                                  |
-| **Propósito** | Crear nuevas instancias válidas de `Pot` |
-
-### Métodos
-
-| Nombre | Tipo de retorno | Visibilidad | Descripción                                                                         |
-| ------ | --------------- | ----------- | ----------------------------------------------------------------------------------- |
-| create | `Pot`           | public      | Construye un `Pot` inicializando `id`, `userUid`, `tag`, `status` y sensores vacíos |
-
-## IPotRepository
-
-| Propiedad     | Valor                                 |
-| ------------- | ------------------------------------- |
-| **Nombre**    | IPotRepository                        |
-| **Categoría** | Repository                            |
-| **Propósito** | Persistir y recuperar entidades `Pot` |
-
-### Métodos
-
-| Nombre         | Tipo de retorno | Visibilidad | Descripción                                     |
-| -------------- | --------------- | ----------- | ----------------------------------------------- |
-| findById       | `Pot?`          | public      | Recupera un `Pot` por su `id`                   |
-| findByUserUid  | `List<Pot>`     | public      | Recupera todas las macetas de un usuario        |
-| findByGroupUid | `List<Pot>`     | public      | Recupera todas las macetas asociadas a un grupo |
-| findByTag      | `Pot?`          | public      | Busca una maceta por su `tag`                   |
-| update         | `Unit`          | public      | Actualiza un `Pot` existente                    |
-| create         | `Unit`          | public      | Persiste un nuevo `Pot`                         |
-
-## IGroupRepository
-
-| Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
-| **Nombre**    | IGroupRepository                        |
-| **Categoría** | Repository                              |
-| **Propósito** | Persistir y recuperar entidades `Group` |
-
-## Métodos
-
-| Nombre        | Tipo de retorno | Visibilidad | Descripción                                        |
-| ------------- | --------------- | ----------- | -------------------------------------------------- |
-| findById      | `Group?`        | public      | Recupera un `Group` por su `id`                    |
-| findByUserUid | `List<Group>`   | public      | Recupera todos los grupos de un usuario            |
-| findByPotUid  | `List<Group>`   | public      | Recupera todos los grupos que contienen una maceta |
-| update        | `Unit`          | public      | Actualiza un `Group` existente                     |
-| create        | `Unit`          | public      | Persiste un nuevo `Group`                          |
-| delete        | `Unit`          | public      | Elimina un `Group`                                 |
-
-#### 4.2.3.2. Interface Layer.
-
-## PotController
-
-| Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
-| **Nombre**    | PotController                            |
-| **Categoría** | Controller                               |
-| **Propósito** | Exponer API REST para gestión de macetas |
-| **Ruta**      | `/api/pot/`                              |
-
-## Métodos
-
-| Nombre            | Ruta                 | Acción                                  | Handle                   |
-| ----------------- | -------------------- | --------------------------------------- | ------------------------ |
-| getPot            | `/{id}`              | Obtener una maceta por ID               | `GetPotQuery`            |
-| getAllPots        | `/all/{userId}`      | Obtener todas las macetas de un usuario | `GetAllPotsQuery`        |
-| getAllPotsByGroup | `/group/{groupId}`   | Obtener macetas de un grupo             | `GetAllPotsByGroupQuery` |
-| updatePot         | `/{id}`              | Actualizar datos de una maceta          | `UpdatePotCommand`       |
-| linkPot           | `/link-user/{id}`    | Enlazar maceta a un usuario             | `LinkPotCommand`         |
-| unlinkPot         | `/unlink-user/{id}`  | Desenlazar maceta de un usuario         | `UnlinkPotCommand`       |
-| assignPlant       | `/assign-plant/{id}` | Asignar planta a una maceta             | `AssignPlantCommand`     |
-
-## GroupController
-
-| Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
-| **Nombre**    | GroupController                         |
-| **Categoría** | Controller                              |
-| **Propósito** | Exponer API REST para gestión de grupos |
-| **Ruta**      | `/api/group/`                           |
-
-### Métodos
-
-| Nombre       | Ruta            | Acción                                 | Handle               |
-| ------------ | --------------- | -------------------------------------- | -------------------- |
-| getGroup     | `/{id}`         | Obtener un grupo por ID                | `GetGroupQuery`      |
-| getAllGroups | `/all/{userId}` | Obtener todos los grupos de un usuario | `GetAllGroupsQuery`  |
-| updateGroup  | `/{id}`         | Actualizar datos de un grupo           | `UpdateGroupCommand` |
-| createGroup  | `/create`       | Crear un nuevo grupo                   | `CreateGroupCommand` |
-| deleteGroup  | `/{id}`         | Eliminar un grupo                      | `DeleteGroupCommand` |
-
-#### 4.2.3.3. Application Layer.
-
-## GetPotQueryHandler
-
-| Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
-| **Nombre**    | GetPotQueryHandler                                        |
-| **Categoría** | Query Handler                                             |
-| **Propósito** | Manejar la consulta `GetPotQuery` para obtener una maceta |
-
-## GetAllPotsQueryHandler
-
-| Propiedad     | Valor                                                                   |
-| ------------- | ----------------------------------------------------------------------- |
-| **Nombre**    | GetAllPotsQueryHandler                                                  |
-| **Categoría** | Query Handler                                                           |
-| **Propósito** | Manejar la consulta `GetAllPotsQuery` para listar macetas de un usuario |
-
-## GetAllPotsByGroupQueryHandler
-
-| Propiedad     | Valor                                                                      |
-| ------------- | -------------------------------------------------------------------------- |
-| **Nombre**    | GetAllPotsByGroupQueryHandler                                              |
-| **Categoría** | Query Handler                                                              |
-| **Propósito** | Manejar la consulta `GetAllPotsByGroupQuery` para listar macetas por grupo |
-
-## UpdatePotCommandHandler
-
-| Propiedad     | Valor                                                               |
-| ------------- | ------------------------------------------------------------------- |
-| **Nombre**    | UpdatePotCommandHandler                                             |
-| **Categoría** | Command Handler                                                     |
-| **Propósito** | Ejecutar la lógica de `UpdatePotCommand` para actualizar una maceta |
-
-## LinkPotCommandHandler
-
-| Propiedad     | Valor                                                                       |
-| ------------- | --------------------------------------------------------------------------- |
-| **Nombre**    | LinkPotCommandHandler                                                       |
-| **Categoría** | Command Handler                                                             |
-| **Propósito** | Ejecutar la lógica de `LinkPotCommand` para enlazar una maceta a un usuario |
-
-## UnlinkPotCommandHandler
-
-| Propiedad     | Valor                                                                             |
-| ------------- | --------------------------------------------------------------------------------- |
-| **Nombre**    | UnlinkPotCommandHandler                                                           |
-| **Categoría** | Command Handler                                                                   |
-| **Propósito** | Ejecutar la lógica de `UnlinkPotCommand` para desenlazar una maceta de un usuario |
-
-## PotUpdatedEventHandler
-
-| Propiedad     | Valor                                               |
-| ------------- | --------------------------------------------------- |
-| **Nombre**    | PotUpdatedEventHandler                              |
-| **Categoría** | Event Handler                                       |
-| **Propósito** | Procesar la lógica tras el evento `PotUpdatedEvent` |
-
-## PotLinkedEventHandler
-
-| Propiedad     | Valor                                              |
-| ------------- | -------------------------------------------------- |
-| **Nombre**    | PotLinkedEventHandler                              |
-| **Categoría** | Event Handler                                      |
-| **Propósito** | Procesar la lógica tras el evento `PotLinkedEvent` |
-
-## PotUnlinkedEventHandler
-
-| Propiedad     | Valor                                                |
-| ------------- | ---------------------------------------------------- |
-| **Nombre**    | PotUnlinkedEventHandler                              |
-| **Categoría** | Event Handler                                        |
-| **Propósito** | Procesar la lógica tras el evento `PotUnlinkedEvent` |
-
-## PotAssignedPlantEventHandler
-
-| Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
-| **Nombre**    | PotAssignedPlantEventHandler                              |
-| **Categoría** | Event Handler                                             |
-| **Propósito** | Procesar la lógica tras el evento `PotAssignedPlantEvent` |
-
-## GetGroupQueryHandler
-
-| Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
-| **Nombre**    | GetGroupQueryHandler                                      |
-| **Categoría** | Query Handler                                             |
-| **Propósito** | Manejar la consulta `GetGroupQuery` para obtener un grupo |
-
-## GetAllGroupsQueryHandler
-
-| Propiedad     | Valor                                                                              |
-| ------------- | ---------------------------------------------------------------------------------- |
-| **Nombre**    | GetAllGroupsQueryHandler                                                           |
-| **Categoría** | Query Handler                                                                      |
-| **Propósito** | Manejar la consulta `GetAllGroupsQuery` para listar todos los grupos de un usuario |
-
-## UpdateGroupCommandHandler
-
-| Propiedad     | Valor                                                               |
-| ------------- | ------------------------------------------------------------------- |
-| **Nombre**    | UpdateGroupCommandHandler                                           |
-| **Categoría** | Command Handler                                                     |
-| **Propósito** | Ejecutar la lógica de `UpdateGroupCommand` para actualizar un grupo |
-
-## CreateGroupCommandHandler
-
-| Propiedad     | Valor                                                          |
-| ------------- | -------------------------------------------------------------- |
-| **Nombre**    | CreateGroupCommandHandler                                      |
-| **Categoría** | Command Handler                                                |
-| **Propósito** | Ejecutar la lógica de `CreateGroupCommand` para crear un grupo |
-
-## DeleteGroupCommandHandler
-
-| Propiedad     | Valor                                                             |
-| ------------- | ----------------------------------------------------------------- |
-| **Nombre**    | DeleteGroupCommandHandler                                         |
-| **Categoría** | Command Handler                                                   |
-| **Propósito** | Ejecutar la lógica de `DeleteGroupCommand` para eliminar un grupo |
-
-## GroupUpdatedEventHandler
-
-| Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
-| **Nombre**    | GroupUpdatedEventHandler                              |
-| **Categoría** | Event Handler                                         |
-| **Propósito** | Procesar la lógica tras el evento `GroupUpdatedEvent` |
-
-## GroupCreatedEventHandler
-
-| Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
-| **Nombre**    | GroupCreatedEventHandler                              |
-| **Categoría** | Event Handler                                         |
-| **Propósito** | Procesar la lógica tras el evento `GroupCreatedEvent` |
-
-## GroupDeletedEventHandler
-
-| Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
-| **Nombre**    | GroupDeletedEventHandler                              |
-| **Categoría** | Event Handler                                         |
-| **Propósito** | Procesar la lógica tras el evento `GroupDeletedEvent` |
-
-#### 4.2.2.4. Infrastructure Layer.
-
-## PotRepository
-
-| Propiedad     | Valor                                                            |
-| ------------- | ---------------------------------------------------------------- |
-| **Nombre**    | PotRepository                                                    |
-| **Categoría** | Repository Implementation                                        |
-| **Propósito** | Implementar `IPotRepository` usando un mecanismo de persistencia |
-
-## GroupRepository
-
-| Propiedad     | Valor                                                              |
-| ------------- | ------------------------------------------------------------------ |
-| **Nombre**    | GroupRepository                                                    |
-| **Categoría** | Repository Implementation                                          |
-| **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
+## 4.2.3. Bounded Context: Asset and Resource Management
+
+---
+
+### 4.2.3.1. Domain Layer
+
+#### SmartPot
+
+| Propiedad     | Valor                                          |
+| ------------- | ---------------------------------------------- |
+| **Nombre**    | SmartPot                                       |
+| **Categoría** | Aggregate Root                                 |
+| **Propósito** | Representa una maceta inteligente del usuario  |
+
+##### Atributos
+
+| Nombre                 | Tipo de dato              | Visibilidad | Descripción                              |
+| ---------------------- | ------------------------- | ----------- | ---------------------------------------- |
+| Id                     | `Guid`                    | private     | Identificador único de la maceta         |
+| Nombre                 | `string`                  | private     | Nombre asignado por el usuario           |
+| Tipo                   | `string`                  | private     | Tipo de planta (ej. suculenta, tropical) |
+| Ubicacion              | `string`                  | private     | Ubicación física                         |
+| Estado                 | `EstadoMaceta`            | private     | Enum: Saludable, Atencion, Critica       |
+| FechaRegistro          | `DateTime`                | private     | Fecha de alta                            |
+| DispositivoBluetoothId | `string?`                 | private     | ID de dispositivo BLE (si aplica)        |
+| UuidFabricacion        | `string`                  | private     | Código de fabricación                    |
+| UsuarioId              | `Guid`                    | private     | Identificador de usuario propietario     |
+| ConfiguracionRiego     | `ConfiguracionRiego`      | private     | Configuración de riego de la maceta      |
+| HistorialRiego         | `List<HistorialRiego>`    | private     | Registros de riegos                      |
+| Telemetrias            | `List<LecturaTelemetria>` | private     | Telemetrías asociadas                    |
+| Alertas                | `List<Alerta>`            | private     | Alertas críticas o warnings              |
+
+##### Métodos
+
+| Nombre               | Tipo de retorno  | Descripción                                                   |
+| -------------------- | ---------------- | ------------------------------------------------------------- |
+| Editar               | `void`           | Modifica nombre, tipo o ubicación                             |
+| CambiarEstado        | `void`           | Actualiza el estado según las condiciones                     |
+| AsignarBluetoothId   | `void`           | Registra el ID BLE para vinculación                           |
+| AsignarUUID          | `void`           | Asocia el UUID de fabricación                                 |
+| Eliminar             | `void`           | Marca la maceta como inactiva                                 |
+| RegistrarRiegoManual | `HistorialRiego` | Agrega un evento de riego manual                              |
+| PuedeAgregarRiego    | `bool`           | Verifica si puede regarse (según reglas de negocio)           |
+
+---
+
+#### ConfiguracionRiego
+
+| Propiedad     | Valor                                     |
+| ------------- | ----------------------------------------- |
+| **Nombre**    | ConfiguracionRiego                        |
+| **Categoría** | Entidad anidada                           |
+| **Propósito** | Parámetros de riego asociados a la maceta |
+
+##### Atributos
+
+| Nombre         | Tipo de dato | Visibilidad | Descripción                      |
+| -------------- | ------------ | ----------- | -------------------------------- |
+| FrecuenciaDias | `int`        | private     | Días entre riegos                |
+| CantidadML     | `float`      | private     | Cantidad de agua por sesión (ml) |
+| HoraProgramada | `TimeSpan`   | private     | Hora del riego automático        |
+| Modo           | `ModoRiego`  | private     | Enum: Automatico, Manual, Mixto  |
+
+---
+
+#### Usuario
+
+| Propiedad     | Valor                                         |
+| ------------- | --------------------------------------------- |
+| **Nombre**    | Usuario                                       |
+| **Categoría** | Referencia externa                            |
+| **Propósito** | Representa al dueño de las macetas            |
+
+---
+
+#### HistorialRiego
+
+| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
+| ---------------- | ------------ | ----------- | ------------------------------- |
+| Id               | `Guid`       | private     | Identificador único             |
+| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
+| Fecha            | `DateTime`   | private     | Fecha y hora del riego          |
+| DuracionSegundos | `int`        | private     | Duración del riego              |
+| VolumenAguaML    | `int`        | private     | Volumen de agua usado (ml)      |
+| HumedadInicial   | `int`        | private     | Humedad antes del riego         |
+| HumedadFinal     | `int`        | private     | Humedad después del riego       |
+| Resultado        | `string`     | private     | Resultado (éxito, error, etc.)  |
+
+---
+
+#### LecturaTelemetria
+
+| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
+| ---------------- | ------------ | ----------- | ------------------------------- |
+| Id               | `Guid`       | private     | Identificador único             |
+| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
+| Timestamp        | `DateTime`   | private     | Fecha de la medición            |
+| Humedad          | `float`      | private     | Porcentaje de humedad           |
+| Ph               | `float`      | private     | Nivel de acidez                 |
+| Salinidad        | `float`      | private     | Salinidad del sustrato          |
+| Temperatura      | `float`      | private     | Temperatura                     |
+| ExposicionSolar  | `bool?`      | private     | Exposición anómala              |
+| HorasExposicion  | `int?`       | private     | Horas de exposición solar       |
+
+---
+
+#### Alerta
+
+| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
+| ---------------- | ------------ | ----------- | ------------------------------- |
+| Id               | `Guid`       | private     | Identificador único             |
+| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
+| Tipo             | `string`     | private     | Tipo de alerta                  |
+| ValorDetectado   | `float`      | private     | Valor que generó la alerta      |
+| Urgencia         | `string`     | private     | Nivel de urgencia               |
+| Recomendacion    | `string`     | private     | Sugerencia o acción recomendada |
+| GuiaUrl          | `string`     | private     | Enlace a guía externa           |
+
+---
+
+### 4.2.3.2. Interface Layer
+
+#### DTOs y Requests/Responses
+
+| DTO/Record             | Campos principales                                                                   | Propósito                    |
+| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------- |
+| `SmartPotSummaryDto`   | Id, Nombre, Tipo, Estado, Humedad, Temperatura, Battery, FechaRegistro               | Listado general              |
+| `SmartPotDetailsDto`   | Todos los atributos de la entidad + configuración + alertas + historial              | Vista detallada              |
+| `HistorialRiegoDto`    | Id, Fecha, VolumenAgua, HumedadInicial, HumedadFinal, Resultado                      | Detalle de riego             |
+| `LecturaTelemetriaDto` | Id, Timestamp, Humedad, Ph, Salinidad, Temperatura, ExposicionSolar, HorasExposicion | Medición ambiental           |
+| `AlertaDto`            | Id, Tipo, ValorDetectado, Urgencia, Recomendacion, GuiaUrl, Fecha                    | Alertas recientes            |
+
+##### Endpoints REST
+
+| Endpoint                           | Método | Acción                          |
+| ---------------------------------- | ------ | ------------------------------- |
+| `/api/smartpots`                   | GET    | Listar macetas del usuario      |
+| `/api/smartpots/{id}`              | GET    | Ver detalles de una maceta      |
+| `/api/smartpots`                   | POST   | Registrar maceta nueva (BLE/UUID) |
+| `/api/smartpots/{id}`              | PUT    | Editar datos de maceta          |
+| `/api/smartpots/{id}`              | DELETE | Eliminar (soft delete)          |
+| `/api/smartpots/{id}/water/manual` | POST   | Agregar riego manual            |
+| `/api/smartpots/{id}/history`      | GET    | Ver historial de riego          |
+| `/api/smartpots/{id}/alerts`       | GET    | Ver alertas activas             |
+| `/api/smartpots/{id}/telemetry`    | GET    | Ver telemetría asociada         |
+
+---
+
+### 4.2.3.3. Application Layer
+
+| Comando/Consulta                | Propósito                                              | Entrada                        | Salida                      |
+| ------------------------------ | ------------------------------------------------------ | ------------------------------ | --------------------------- |
+| `RegisterSmartPotCommand`      | Crear maceta vía BLE o UUID                            | RegistroDto, userId            | SmartPotDetailsDto          |
+| `EditSmartPotCommand`          | Actualizar información general                         | potId, EditDto, userId         | SmartPotDetailsDto          |
+| `DeleteSmartPotCommand`        | Eliminar (soft delete)                                 | potId, userId                  | bool                        |
+| `RegisterManualWateringCmd`    | Agregar evento de riego manual                         | potId, Volumen, userId         | HistorialRiegoDto           |
+| `GetSmartPotDetailsQuery`      | Consultar todos los detalles de la maceta              | potId, userId                  | SmartPotDetailsDto          |
+| `ListUserSmartPotsQuery`       | Obtener listado resumido                               | userId                         | SmartPotSummaryDto[]        |
+| `GetWateringHistoryQuery`      | Ver historial de riegos                                | potId, userId                  | HistorialRiegoDto[]         |
+| `GetPotAlertsQuery`            | Obtener alertas                                         | potId, userId                  | AlertaDto[]                 |
+| `GetPotTelemetryQuery`         | Obtener telemetrías                                     | potId, userId, rangoFecha?     | LecturaTelemetriaDto[]      |
+
+---
+
+### 4.2.3.4. Infrastructure Layer
+
+| Repositorio/Adaptador            | Propósito                                      |
+| -------------------------------- | ---------------------------------------------- |
+| `ISmartPotRepository`            | Acceso a datos de macetas                      |
+| `IHistorialRiegoRepository`      | Lectura/escritura de historial de riego        |
+| `ILecturaTelemetriaRepository`   | Persistencia de sensores/telemetría            |
+| `IAlertaRepository`              | Manejo de alertas persistentes                 |
+| `IUsuarioRepository`             | Validación y consulta de usuarios              |
+
+---
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
 
