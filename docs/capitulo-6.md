@@ -1442,7 +1442,7 @@ Esta sección documenta las entrevistas realizadas a representantes de nuestros 
 
 ---
 
-## TAREAS A EVALUAR
+##### TAREAS A EVALUAR
 
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
@@ -1467,7 +1467,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 ---
 
-## ESCALA DE SEVERIDAD
+##### ESCALA DE SEVERIDAD
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
@@ -1480,7 +1480,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-## TABLA RESUMEN
+##### TABLA RESUMEN
 
 | #   | Problema                                                                              | Escala de severidad | Heurística/Principio violado                                     |
 | --- | ------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------- |
@@ -1505,9 +1505,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-## DESCRIPCIÓN DE PROBLEMAS
+##### DESCRIPCIÓN DE PROBLEMAS
 
-#### PROBLEMA #1
+###### PROBLEMA #1
 
 **Severidad:** 3  
 **Heurística violada:** Usabilidad: Prevención de errores  
@@ -1518,7 +1518,7 @@ Separar ambos botones visualmente o añadir un espacio entre ellos para prevenir
 
 ---
 
-#### PROBLEMA #2
+###### PROBLEMA #2
 
 **Severidad:** 2  
 **Heurística violada:** Usabilidad: Visibilidad del estado del sistema  
@@ -1529,7 +1529,7 @@ Habilitar el botón una vez los campos estén correctamente llenos o proporciona
 
 ---
 
-#### PROBLEMA #3
+###### PROBLEMA #3
 
 **Severidad:** 2  
 **Heurística violada:** Usabilidad: Feedback inmediato  
@@ -1540,7 +1540,7 @@ Añadir mensajes o indicadores de cambio exitoso después de modificar preferenc
 
 ---
 
-#### PROBLEMA #4
+###### PROBLEMA #4
 
 **Severidad:** 3  
 **Heurística violada:** Arquitectura de Información: Claridad de acciones  
@@ -1551,7 +1551,7 @@ Mostrar información detallada del plan premium antes de que el usuario presione
 
 ---
 
-#### PROBLEMA #5
+###### PROBLEMA #5
 
 **Severidad:** 4  
 **Heurística violada:** Usabilidad: Prevención de errores  
@@ -1562,7 +1562,7 @@ Añadir un paso intermedio con confirmación explícita y opción de cancelar.
 
 ---
 
-### PROBLEMA #6
+###### PROBLEMA #6
 
 - **Severidad:** 2
 - **Heurística violada:** Usability: Visibilidad del estado del sistema
@@ -1575,7 +1575,7 @@ Agregar un ícono para todas las categorías y mantener una codificación visual
 
 ---
 
-### PROBLEMA #7
+###### PROBLEMA #7
 
 - **Severidad:** 2
 - **Heurística violada:** Usability: Correspondencia entre sistema y mundo real
@@ -1588,7 +1588,7 @@ Agregar una breve descripción o tooltip al pasar el cursor, indicando el destin
 
 ---
 
-### PROBLEMA #8
+###### PROBLEMA #8
 
 - **Severidad:** 1
 - **Heurística violada:** Information Architecture: Is it usable
@@ -1601,7 +1601,7 @@ Ocultar filtros vacíos o mostrar un mensaje tipo “No hay notificaciones de es
 
 ---
 
-### PROBLEMA #9
+###### PROBLEMA #9
 
 - **Severidad:** 3
 - **Heurística violada:** Usability: Visibilidad y control del usuario
@@ -1614,7 +1614,7 @@ Aplicar una diferencia visual explícita entre notificaciones leídas y no leíd
 
 ---
 
-### **PROBLEMA #10**
+###### **PROBLEMA #10**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Reconocer en lugar de recordar
@@ -1630,7 +1630,7 @@ Agregar una marca visual distintiva (etiqueta, color, ícono) que indique el pla
 
 ---
 
-### **PROBLEMA #11**
+###### **PROBLEMA #11**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Control y libertad del usuario
@@ -1646,7 +1646,7 @@ Añadir un botón de navegación para volver a la página anterior o explorar lo
 
 ---
 
-### **PROBLEMA #12**
+###### **PROBLEMA #12**
 
 **Severidad:** 3  
 **Heurística violada:** Usability: Prevención de errores
@@ -1662,7 +1662,7 @@ Implementar validaciones inmediatas para campos como tarjeta, fecha de expiraci�
 
 ---
 
-### **PROBLEMA #13**
+###### **PROBLEMA #13**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Visibilidad del estado del sistema
@@ -1675,7 +1675,7 @@ Incluir la fecha de finalización del plan y si se renovará automáticamente o 
 
 ---
 
-### **PROBLEMA #14**
+###### **PROBLEMA #14**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Ayuda a los usuarios a reconocer situaciones críticas
@@ -1688,7 +1688,7 @@ Implementar ordenamiento automático o filtros que prioricen las macetas que nec
 
 ---
 
-### **PROBLEMA #15**
+###### **PROBLEMA #15**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Flexibilidad y eficiencia de uso
@@ -1701,7 +1701,7 @@ Añadir icono de edición junto al nombre de cada planta o un menú contextual c
 
 ---
 
-### **PROBLEMA #16**
+###### **PROBLEMA #16**
 
 **Severidad:** 1  
 **Heurística violada:** Usability: Visibilidad del estado del sistema
@@ -1714,7 +1714,7 @@ Resaltar o sugerir proactivamente revisar recomendaciones cuando hay datos fuera
 
 ---
 
-### **PROBLEMA #17**
+###### **PROBLEMA #17**
 
 **Severidad:** 2  
 **Heurística violada:** Information Architecture: User control
@@ -1727,7 +1727,7 @@ Agregar controles de descarga (PDF/CSV), visualización en pantalla completa y r
 
 ---
 
-### **PROBLEMA #18**
+###### **PROBLEMA #18**
 
 **Severidad:** 2  
 **Heurística violada:** Usability: Visibilidad y prevención de errores
@@ -1738,4 +1738,4 @@ En la lista principal, las macetas que presentan alertas no se destacan lo sufic
 **Recomendación:**  
 Utilizar colores de fondo o bordes más llamativos para alertas críticas y mostrar un resumen de advertencia al inicio de la pantalla.
 
-### 6.4. Video About-the-Product.
+## 6.4. Video About-the-Product.
