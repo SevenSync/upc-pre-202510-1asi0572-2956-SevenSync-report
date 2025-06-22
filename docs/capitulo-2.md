@@ -1,3 +1,4 @@
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 La recolección y el análisis de requisitos constituyen la piedra angular de cualquier proyecto exitoso. En esta fase se identifican y documentan, de manera sistemática, las necesidades, expectativas y restricciones de todos los grupos de interés (stakeholders), así como los objetivos de negocio que el proyecto debe cumplir. Para lograrlo, se emplean técnicas como entrevistas individuales, encuestas cuantitativas, talleres colaborativos y análisis de la competencia, que permiten obtener una visión integral y detallada de lo que se desea alcanzar.
@@ -976,6 +977,9 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 
 **Características objetivas:**
 
+###### Tabla 5
+*Listado de estadísticas de características objetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
+
 | Característica | Presencia en muestra (n = 3) | Betty (n = 1) |	Javier (n = 1) |	Yasser (n = 1) |	Frecuencia (%) |	Implicación para el diseño |
 |----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
 | Sistemas de riego automatizado (goteo o motorizado) | 	2 |	No|	Sí	|Sí	|66.7 %|	Validar modo híbrido: la aplicación debe soportar riego automático (goteo) y permitir riego manual, según caso de uso para el usuario y así no dejen atrás su hobby.|
@@ -1071,6 +1075,9 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 - **Implicaciones:** Ofrecer comparativas de precios y diferentes planes de suscripción (Freemium, premium), mostrando beneficios concretos por cada nivel y opciones de pago fraccionado en meses o en años.
 
 **Características subjetivas:**
+
+###### Tabla 6
+*Listado de estadísticas de características subjetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
 
 | Característica| Presencia en muestra (n = 3) | Betty (n = 1)	|Javier (n = 1)	|Yasser (n = 1)|	Frecuencia (%)	|Implicación para el diseño|
 |------|-------|--------|--------|---------|---------|----------|
@@ -1369,15 +1376,23 @@ El proceso de needfinding nos permite identificar problemas reales que enfrentan
 
 En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
-- **Segmento 1: Personas Apasionadas por las plantas**
-  <img src="/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png" alt="UP1" width="400" height="600">
+###### Figura 11
+*User persona de nuestro segmento de personas apasionadas por las plantas*
 
-- **Segmento 2: Personas dedicadas a la jardineria**
-  <img src="/assets/img/capitulo-2/needfinding/user-persona/UserPerson2.png" alt="UP1" width="400" height="600">
+  <img src="/assets/img/capitulo-2/needfinding/user-persona/user-person-segment-1.png" alt="UP1" width="400" height="850">
+
+###### Figura 12
+*User persona de nuestro segmento de personas dedicadas a la jardinería*
+
+  <img src="/assets/img/capitulo-2/needfinding/user-persona/user-person-segment-2.png" alt="User Persona of segment 2: People dedicated to gardening" width="400" height="850">
 
 - ### 2.3.2. User Task Matrix
 
   La User Task Matrix es una herramienta que nos permite identificar las tareas clave que nuestros usuarios necesitan realizar en nuestra aplicación web y móbil. Al mapear estas tareas, podemos comprender mejor las necesidades y expectativas de nuestros usuarios, lo que nos ayuda a diseñar una experiencia de usuario más efectiva y centrada en sus requerimientos.
+
+  ###### Tabla 9
+  *User Task Matrix de los dos segmentos objetivos de Macetech*
+
   <br><br>
   <table style="text-align: center; width: 100%;">
     <thead>
@@ -1476,28 +1491,28 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
 
 **Análisis comparativo de tareas: personas apasionadas por las plantas vs. personas que trabajan en jardinería**
 
-- **🔍 Tareas de mayor frecuencia e importancia en ambos perfiles**
+- **Tareas de mayor frecuencia e importancia en ambos perfiles**
   Tanto las personas apasionadas por las plantas como quienes trabajan en jardinería coinciden en ciertas tareas clave que son realizadas con alta frecuencia y calificadas como altamente importantes:
 
-  - Regar sus plantas: Es una actividad esencial para ambos grupos. Los jardineros lo hacen a diario, mientras que los aficionados lo realizan frecuentemente. En ambos casos, se reconoce su alta importancia.
+  - **Regar sus plantas:** Es una actividad esencial para ambos grupos. Los jardineros lo hacen a diario, mientras que los aficionados lo realizan frecuentemente. En ambos casos, se reconoce su alta importancia.
 
-  - Identificar cuándo una planta está en mal estado: Ambos perfiles consideran esta acción altamente importante y la ejecutan con mucha regularidad (frecuente o siempre).
+  - **Identificar cuándo una planta está en mal estado:** Ambos perfiles consideran esta acción altamente importante y la ejecutan con mucha regularidad (frecuente o siempre).
 
-  - Monitorear múltiples plantas al mismo tiempo: Aunque los jardineros lo hacen siempre y los aficionados solo a veces, ambos lo califican como una tarea de alta importancia.
+  - **Monitorear múltiples plantas al mismo tiempo:** Aunque los jardineros lo hacen siempre y los aficionados solo a veces, ambos lo califican como una tarea de alta importancia.
 
-  - Estas tareas muestran que, sin importar el perfil, hay un núcleo compartido de actividades críticas para mantener la salud de las plantas.
+  Estas tareas muestran que, sin importar el perfil, hay un núcleo compartido de actividades críticas para mantener la salud de las plantas.
 
-- **⚖️ Principales diferencias**
+- **Principales diferencias**
 
-  - Revisión de luz: Los jardineros profesionales revisan siempre la exposición lumínica, considerándola muy importante, mientras que los aficionados solo lo hacen a veces y le asignan una importancia media. Esto revela una mayor conciencia técnica en los profesionales.
+  - **Revisión de luz:** Los jardineros profesionales revisan siempre la exposición lumínica, considerándola muy importante, mientras que los aficionados solo lo hacen a veces y le asignan una importancia media. Esto revela una mayor conciencia técnica en los profesionales.
 
-  - Uso de apps para seguimiento: Esta es una actividad rara o inexistente en ambos perfiles, y también de baja importancia, lo que sugiere una oportunidad para diseñar soluciones más accesibles y motivadoras.
+  - **Uso de apps para seguimiento:** Esta es una actividad rara o inexistente en ambos perfiles, y también de baja importancia, lo que sugiere una oportunidad para diseñar soluciones más accesibles y motivadoras.
 
-  - Registro del estado de cada planta: Los jardineros lo hacen a veces y le asignan alta importancia, mientras que los aficionados lo hacen raramente, con solo una importancia media. Esto refuerza la diferencia en hábitos de documentación entre ambos perfiles.
+  - **Registro del estado de cada planta:** Los jardineros lo hacen a veces y le asignan alta importancia, mientras que los aficionados lo hacen raramente, con solo una importancia media. Esto refuerza la diferencia en hábitos de documentación entre ambos perfiles.
 
-  - Tomar fotos: Es más común en los aficionados (a veces, con importancia media), mientras que los jardineros rara vez lo hacen y no lo consideran relevante. Esto sugiere un componente más emocional o estético en el público no profesional.
+  - **Tomar fotos:** Es más común en los aficionados (a veces, con importancia media), mientras que los jardineros rara vez lo hacen y no lo consideran relevante. Esto sugiere un componente más emocional o estético en el público no profesional.
 
-- **✅ Coincidencias destacadas**
+- **Coincidencias destacadas**
 
   - Ambos grupos valoran y practican regularmente el cuidado reactivo, como detectar problemas y regar.
 
@@ -1509,20 +1524,28 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
 
   El User Journey Mapping es una herramienta para comprender la experiencia del usuario de manera holística, lo que permite a los equipos de diseño crear productos y servicios que se alineen mejor con las necesidades y expectativas de los usuarios.<br><br>
 
-  - **Segmento 1: Personas Apasionadas por las plantas**
+  ###### Figura 13
+  *User Journey Mapping de nuestro segmento de personas apasionadas por las plantas*
+
     ![JourneyMap_1](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento1.png) <br><br>
 
-  - **Segmento 2: Personas dedicadas a la jardineria**
+  ###### Figura 14
+  *User Journey Mapping de nuestro segmento de personas dedicadas a la jardinería*
+
     ![JourneyMap_2](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
 
 - ### 2.3.4. Empathy Mapping
 
   Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo. <br><br>
 
-  - **Segmento 1: Personas Apasionadas por las plantas**
+  ###### Figura 15
+  *Empathy Mapping de nuestro segmento de personas apasionadas por las plantas*
+
     ![EmpathyMap_1](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
 
-  - **Segmento 2: Personas dedicadas a la jardineria**
+  ###### Figura 16
+  *Empathy Mapping de nuestro segmento de personas dedicadas a la jardinería*
+
     ![EmpathyMap_2](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap2.png)
 
 - ### 2.3.5. As-is Scenario Mapping
@@ -1537,20 +1560,23 @@ Para la elaboración de estos escenarios, se analizaron los perfiles de dos segm
 
 El proceso consistió en identificar las fases principales (Steps), describir las acciones realizadas (Doing), los pensamientos que surgen (Thinking) y las emociones experimentadas (Feeling), representando una perspectiva empática y detallada del recorrido del usuario.
 
-- **Segmento 1: Personas Apasionadas por las plantas**
+  ###### Figura 17
+  *As-Is Scenario Mapping de nuestro segmento de personas apasionadas por las plantas*
   ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
 
-- **Segmento 2: Personas dedicadas a la jardineria**
+  ###### Figura 18
+  *As-Is Scenario Mapping de nuestro segmento de personas dedicadas a la jardinería*
   ![As_Is-2](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
 
 En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
 
----
+###### Tabla 10
+*Listado del lenguaje ubicuo empleado en Macetech por el equipo de trabajo de SevenSync*
 
-| Término                     | Definición                                                                                                                    |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Término | Definición |
+| --------| ---------- |
 | 2FA                         | Mecanismo de autenticación que agrega una segunda capa de seguridad mediante códigos temporales (email ).                     |
 | Credentials                 | Conjunto de datos secretos (usuario, contraseña, tokens) utilizados para autenticar usuarios. Incluye almacenamiento seguro.  |
 | Token                       | Cadena cifrada que autentica usuarios o servicios en peticiones, con expiración y permisos asociados.                         |
