@@ -15,7 +15,9 @@ El equipo llevó a cabo el proceso mediante las siguientes etapas:
 
 A continuación, se describen los resultados obtenidos para los dos segmentos analizados:
 
-*Mapa de Escenario To-Be para nuestro primer user persona.*
+###### Figura 19
+*To-Be Scenario Mapping de nuestro segmento de personas apasionadas por las plantas*
+
 <img src="/assets/img/capitulo-3/to-be scenario-1.jpg">
 Este escenario propone una experiencia asistida por una aplicación inteligente que acompaña al usuario desde la observación de su planta hasta la verificación de mejoras visibles, guiando sus decisiones mediante datos y recomendaciones automatizadas.
 
@@ -43,7 +45,9 @@ Surgen emociones como esperanza, alivio, satisfacción, inspiración y motivaci�
 **Comparación con el As-Is**
 En el escenario actual (As-Is), este segmento experimenta mucha incertidumbre, ansiedad y prueba-error. El To-Be propone resolver esos puntos de dolor mediante automatización, personalización y feedback continuo. La emoción dominante pasa de la confusión al alivio y motivación, y las acciones son más eficientes y menos intuitivas.
 
-*Mapa de Escenario To-Be para nuestro segundo user persona.*
+
+###### Figura 20
+*To-Be Scenario Mapping de nuestro segmento de personas dedicadas a la jardinería*
 
 <img src="/assets/img/capitulo-3/to-be-scenario-2.jpg">
 
@@ -81,7 +85,8 @@ Iniciaremos este proceso de presentación con una definición clara y contextual
 
 Por lo tanto, la presentación de la tabla inicia con la lista de Epics, el cual servirá como una guía y un marco de referencia integral para comprender tanto la naturaleza como el alcance de las historias de usuario que se abordarán, tras ello, se proseguirá detallando cada User y Technical Story. Este enfoque garantiza que se obtenga una visión completa y coherente de los diversos tipos de historias de usuario, así como de sus respectivas divisiones y definiciones, facilitando así una evaluación más precisa y una comprensión más profunda del proyecto en su conjunto.
 
-*Tabla de las historias de usuarios.*
+###### Tabla 11
+*Listado de historias de usuario a desarrollar en el proyecto de Macetech*
 
 | User<br>Story<br>ID | Título | Descripción | Criterios de Aceptación | Relacionado<br>con Epic |
 |---------------------|--------|-------------|-------------------------|-------------------------|
@@ -194,20 +199,23 @@ Por lo tanto, la presentación de la tabla inicia con la lista de Epics, el cual
 
 Impact Mapping es una herramienta poderosa que nos ayudará a visualizar y planificar cómo nuestro proyecto puede generar un impacto significativo en nuestros usuarios y en nuestro objetivo final. Nos permitirá identificar claramente los resultados deseados, los comportamientos esperados de nuestros usuarios y las acciones necesarias para alcanzar esos objetivos. Al utilizar Impact Mapping, podremos alinear mejor nuestras actividades con nuestros objetivos, tomar decisiones más informadas y maximizar el impacto de nuestro proyecto.
 
-_Impact Mapping de los dos user persona del proyecto._
+###### Figura 21
+*Impact Mapping de nuestro segmento objetivo de personas apasionadas por las plantas*
 
----
-
-- **Segmento 1: Personas Apasionadas por las plantas**
   ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping1.png) <br><br>
 
-- **Segmento 2: Personas dedicadas a la jardineria**
+###### Figura 22
+*Impact Mapping de nuestro segmento objetivo de personas dedicadas a la jardinería*
+
   ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping2.png) <br><br>
 
 ## 3.4. Product Backlog.
 
+###### Tabla 12
+*Product Backlog priorizado para el proyecto de Macetech*
+
 | #Orden | User<br>Story<br>ID | Título | Descripción| Story Points<br>(1/2/3/5/8) |
-| ------ | ------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| ------ | ------- | ------- | --------- | ------- |
 1 | US001 | Ver introducción atractiva | **Como** visitante de la plataforma, **quiero** ver una sección introductoria concisa sobre Macetech **para** obtener una primera impresión positiva del sistema | 3
 2 | US002 | Entender el valor principal | **Como** visitante de la plataforma, **quiero** identificar y comprender la propuesta de valor central **para** saber si es de mi interés | 3
 3 | US006 | Iniciar sesión desde un CTA visible | **Como** visitante, **quiero** ver un llamado a la acción claro **para** acceder a funcionalidades personalizadas | 2
@@ -302,6 +310,9 @@ _Impact Mapping de los dos user persona del proyecto._
 92 | TS092 | Implementar gestión de consentimiento | **Como** desarrollador, **quiero** control granular **para** preferencias de datos | 5
 
 
-Como herramienta de gestión de proyectos, hemos seleccionado Jira Software, el product backlog está registrado en el siguiente enlace: https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/MSB/boards/67/backlog?atlOrigin=eyJpIjoiMjA5MDdiNzI5NmIwNDZkNGE5NGY2NDgwOGUzOGRhMzMiLCJwIjoiaiJ9
+Como herramienta de gestión de proyectos, hemos seleccionado Jira Software, el product backlog está registrado en el siguiente enlace: [Panel de Product Backlog desarrollado en Jira Software](https://sevensync.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline?selectedIssue=SCRUM-4)
 
-<img src="/assets/img/capitulo-3/product-backlog.png" alt="Product Backlog for Macetech System Development">
+###### Figura 23
+*Imagen de evidencia del uso de Jira Software en el desarrollo del Product Backlog de Macetech*
+
+<img src="/assets/img/capitulo-3/product-backlog-jira-software-evidence.png" alt="Product Backlog for Macetech System Development">
