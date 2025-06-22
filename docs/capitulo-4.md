@@ -1,91 +1,209 @@
 # Capítulo IV: Solution Software Design
 
+En este capítulo describiremos en detalle el diseño de la solución software de Macetech, trazando desde la arquitectura general hasta los componentes y las interacciones que permiten la gestión inteligente de las macetas. Presentaremos el modelo de capas, incluyendo el servicio de adquisición y procesamiento de datos de los sensores IoT, la capa de negocio para la lógica de riego y análisis de estado de las plantas, y la capa de presentación en la aplicación móvil, así como los patrones de diseño y las tecnologías seleccionadas para garantizar escalabilidad, fiabilidad y seguridad. 
+
+Además, se detallarán los flujos de datos, las interfaces de programación (APIs) y los protocolos de comunicación con los dispositivos, junto con las consideraciones de usabilidad y experiencia de usuario que facilitarán un manejo intuitivo y eficiente de Macetech. Por último, se abordarán aspectos claves como la integración con servicios en la nube, el manejo de eventos en tiempo real y las estrategias de despliegue continuo que soportarán la evolución continua de la plataforma.
+
 ## 4.1. Strategic-Level Domain-Driven Design.
 
 Strategic Domain-Driven Design, o DDD estratégico es un enfoque arquitectónico que busca alinear la estructura del software con la lógica del negocio y la organización. Este enfoque es esencial para gestionar la complejidad en sistemas grandes y distribuidos, especialmente cuando múltiples equipos trabajan en diferentes partes del sistema.
 
-Según Eric Evans, quien introdujo el concepto de DDD en su libro Domain-Driven Design: Tackling Complexity in the Heart of Software, el enfoque estratégico se centra en definir límites claros dentro del dominio, conocidos como Bounded Contexts, y en establecer un lenguaje común, o Lenguaje Ubicuo, que facilite la comunicación entre desarrolladores y expertos del dominio.
+Según Khononov (2021), el diseño orientado al dominio enfatiza la creación de contextos delimitados ("bounded contexts") que actúan como fronteras explícitas para mantener la coherencia del modelo en cada subdominio, así como el establecimiento de un lenguaje ubicuo ("ubiquitous language") compartido entre los equipos técnicos y los expertos del negocio para asegurar una comunicación precisa y libre de ambigüedades (Khononov, 2021).
 
-Vaughn Vernon, en su obra Implementing Domain-Driven Design, amplía esta perspectiva al dividir el dominio en dos espacios: el espacio del problema y el espacio de la solución. El primero se enfoca en entender los problemas del negocio, mientras que el segundo aborda cómo resolverlos mediante soluciones técnicas adecuadas.
+Vernon (2016) propone una clara distinción entre dos espacios complementarios: el espacio del problema, dedicado a comprender en profundidad las necesidades y restricciones del negocio, y el espacio de la solución, enfocado en diseñar y aplicar patrones técnicos y arquitectónicos que respondan eficazmente a esos requerimientos. Esta división permite alinear la estrategia empresarial con las decisiones de diseño de software (Vernon, 2016).
 
 Para abordar las decisiones estratégicas en el diseño de software utilizando Domain-Driven Design (DDD), el equipo ha implementado un proceso estructurado que combina técnicas colaborativas y herramientas visuales. Este enfoque facilita la identificación de límites naturales dentro del dominio del negocio, conocidos como Bounded Contexts, y promueve una comprensión compartida entre todos los participantes.
 
 ### 4.1.1. EventStorming.
 
-En esta sección se documenta el proceso realizado mediante la técnica de EventStorming, con el propósito de obtener una comprensión compartida del dominio del problema y definir una primera aproximación al modelo del sistema. Esta técnica, introducida por Alberto Brandolini, permite identificar eventos clave del negocio de manera colaborativa entre expertos del dominio y el equipo técnico, y constituye una base sólida para aplicar Domain-Driven Design (DDD).
+En esta sección se describe el proceso llevado a cabo mediante la técnica de EventStorming para construir una visión compartida del dominio del problema y elaborar una primera versión del modelo del sistema. Siguiendo a Zimarev (2019), EventStorming consiste en un taller colaborativo en el que, a través de la identificación y secuenciación de eventos de negocio, expertos del dominio y miembros del equipo técnico pueden descubrir puntos críticos y dependencias ocultas dentro de procesos complejos (Zimarev, 2019). Además, Tune y Perrin (2024) resaltan cómo esta técnica no solo facilita la generación de requisitos claros, sino que también promueve la alineación socio-técnica al conectar las decisiones de arquitectura con la estrategia organizacional (Tune & Perrin, 2024).
 
-> “EventStorming is a workshop format for quickly exploring complex business domains. It is designed to bring together different stakeholders to collaboratively model business processes using domain events.” (Brandolini, 2013)
+Para ilustrar su alcance, Tune y Perrin definen EventStorming en términos prácticos:
 
-Como objetivos tuvimos:
+“El EventStorming es un taller dinámico que alinea a los distintos actores, tanto de negocio como técnicos, mediante la identificación de eventos de dominio, permitiendo desentrañar la complejidad del sistema y sentar las bases para un diseño coherente” (Tune & Perrin, 2024).
 
-- Identificar eventos relevantes que ocurren dentro del dominio.
+Como objetivos de la sesión de EventStorming planteamos:
 
-- Establecer relaciones causales y temporales entre eventos.
+- Reconocer y catalogar los eventos de dominio más significativos, definiendo con precisión su naturaleza y alcance.
 
-- Detectar procesos del negocio, comandos y actores implicados.
+- Mapear las dependencias causales y la secuencia temporal entre esos eventos, para visibilizar flujos y puntos de decisión críticos.
 
-- Servir como insumo para definir Bounded Contexts posteriormente.
+- Identificar los procesos de negocio subyacentes, así como los comandos que los activan y los actores responsables de cada acción.
 
-###### Desarrollo de la sesión
+- Generar un insumo estructurado que facilite la posterior delimitación de Bounded Contexts y sirva de base para la definición del modelo de dominio.
 
-<b>Fase 1: Recolección de Domain Events (Big Picture)</b>
+**Desarrollo de la sesión**
 
-En esta etapa inicial, cada participante propuso eventos profesionales del sistema utilizando notas adhesivas naranjas. Estos eventos representan hechos relevantes que ocurren en el negocio, expresados en pasado.
+**Fase 1: Recolección de Eventos de Dominio (Big Picture)**
+
+En esta etapa inicial, todos los participantes plasmaron en notas adhesivas los eventos más relevantes del sistema, redactados en pasado para enfatizar que son hechos consumados dentro del negocio. El objetivo fue generar una “fotografía” global de todos los sucesos críticos, sin filtrar o depurar, de modo que emergiera un panorama amplio de qué ocurre en el dominio.
+
+###### Figura 24
+*Primera fase del proceso de EventStorming de Macetech*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-1-collect-domain-events.jpg"></image>
 
-- Fase 2: Refinamiento de Domain Events
+**Fase 2: Refinamiento de Eventos de Dominio**
 
-En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eliminaron duplicados, se aclararon ambigüedades y se reorganizaron cronológicamente. También se discutió la terminología para asegurar coherencia y precisión semántica.
+Con la visión global completada, el equipo realizó una segunda pasada colaborativa para:
+
+- Eliminar duplicados y consolidar sinónimos.
+
+- Aclarar conceptos ambiguos ajustando la redacción de cada evento.
+
+- Ordenar cronológicamente las notas para construir una línea de tiempo coherente.
+
+- Acordar una terminología común que garantizara consistencia semántica.
+
+###### Figura 25
+*Segunda fase del proceso de EventStorming de Macetech con la línea de tiempo y refinación de los eventos de dominio*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-timeline-and-refine-domain-events.jpg"></image>
+
+###### Figura 26
+*Segunda fase del proceso de EventStorming de Macetech con la recolección de eventos de dominio*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-1-collect-domain-events.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-2-collect-domain-events.jpg.jpg"></image>
 
-Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
+**Fase 3: Identificación de disparadores y causas**
 
-- Acciones de usuarios (comandos, actores, vistas),
-- Sistemas externos,
-- Procesos de negocio (por ejemplo, condiciones temporales),
-- Otros eventos del dominio (reacciones automáticas).
+A continuación, se analizó cada evento para descubrir qué lo había provocado. Para ello, clasificamos sus orígenes en cuatro categorías principales:
+
+- Acciones de usuario (comandos iniciados desde la interfaz, decisiones de actores).
+
+- Sistemas externos (integraciones o datos entrantes).
+
+- Procesos internos de negocio (temporizadores, condiciones de rutina).
+
+- Reacciones automatizadas (políticas, reglas de negocio que generan eventos secundarios).
+
+De este modo, obtuvimos un mapa de dependencias causales que revela no solo qué sucede, sino por qué y cómo se interconectan los distintos componentes del sistema.
 
 Para esta sección, se necesitará identificar el color de los post-its de Miro para mantener el orden. Se usará esta convención:
 
+###### Figura 27
+*Convención de color de post-its utilizados en la tercera fase del proceso de EventStorming de Macetech.*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
+
+###### Figura 28
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores.*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes.jpg"></image>
 
+###### Figura 29
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en alertas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-alerts.jpg"></image>
+
+###### Figura 30
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la obtención de datos*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
+
+###### Figura 31
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Administración de Identidad y Acceso*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-iam.jpg"></image>
+
+###### Figura 32
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Notificaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
+
+###### Figura 33
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Plantas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-plant-management.jpg"></image>
+
+###### Figura 34
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Macetas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-pot-management.jpg"></image>
+
+###### Figura 35
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Recomendaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-recommendations.jpg"></image>
+
+###### Figura 36
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en los Reportes*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-reports.jpg"></image>
+
+###### Figura 37
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Suscripciones y Membresías*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-subscriptions.jpg"></image>
+
+###### Figura 38
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en el Sistema de Riego*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-watering.jpg"></image>
 
-Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
+Finalmente, agrupamos los eventos en torno a los agregados del dominio —elementos cohesivos de nuestro modelo— para visualizar:
 
-- Qué comandos disparan qué eventos,
-- Qué usuarios ejecutan qué comandos,
-- Qué eventos activan políticas o modelos de lectura,
+- Qué comandos disparan cada evento.
+- Qué roles o actores están involucrados en esos comandos.
+- Qué eventos activan políticas (procesos automáticos) y qué crean modelos de lectura.
+
+Este último paso transforma el Big Picture en un modelo estructurado, orientado a la definición de Bounded Contexts y al diseño detallado de nuestro sistema.
+
+###### Figura 39
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
+###### Figura 40
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Alertas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
+
+###### Figura 41
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Ingreso de Datos*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ing.jpg"></image>
+
+###### Figura 42
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Administración de Identidad y Acceso*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
+
+###### Figura 43
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Notificaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
+
+###### Figura 44
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Plantas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant.jpg"></image>
+
+###### Figura 45
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Macetas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot.jpg"></image>
+
+###### Figura 46
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Recomendaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recom.jpg"></image>
+
+###### Figura 47
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en los Reportes*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
+
+###### Figura 48
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Suscripciones y Membresías*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
+
+###### Figura 49
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Sistema de Riego*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
 
 <a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
@@ -170,7 +288,7 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
      Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
 
-###### Tabla 40 y algo
+###### Tabla 13
 
 _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
@@ -190,7 +308,7 @@ _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
    Con el propósito de delimitar con precisión los contextos, se identificaron eventos de transición. Un evento de transición, según Khononov (2021), no solo marca un cambio de estado significativo, por ejemplo el paso de “usuario anónimo” a “usuario registrado” o de “maceta sin configurar” a “maceta lista para monitoreo”, sino que también permite priorizar de forma rigurosa el modelado y el desarrollo. Al centrarse en aquellos eventos de mayor impacto, el equipo puede determinar con claridad qué áreas requieren atención inmediata y cuáles funcionalidades deben implementarse primero, garantizando así que las decisiones de diseño estén siempre alineadas con los objetivos de negocio y el valor aportado al usuario.
 
-###### Tabla 40 y algo
+###### Tabla 14
 
 _Lista de transiciones identificadas en el proceso de EventStorming de Macetech_
 
@@ -256,7 +374,7 @@ Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes re
 
 A continuación presentamos la sección de Candidatos a Bounded Contexts, donde listamos todos los contextos identificados en la sesión inicial (incluyendo aquellos que finalmente no se consolidaron) y la justificación de su inclusión o exclusión en el conjunto definitivo.
 
-###### Tabla 40 y algo
+###### Tabla 15
 
 _Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech_
 
@@ -281,22 +399,22 @@ _Lista de candidatos a Bounded Context identificados en el proceso de EventStorm
 
 Como resultado de la sesión de Candidate Context Discovery y con base en los eventos pivotal identificados, se definieron y refinaron los siguientes diez Bounded Contexts ante todos los candidatos iniciales. Cada uno incluye sus responsabilidades principales, lenguaje ubicuo y contratos de integración.
 
-###### Tabla 40 y algo
+###### Tabla 16
 
 _Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech_
 
-| Contexto                           | Responsabilidades clave                                                                                                                                                                                                                                                                               | Ubiquitous Language                                |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| **1. IAM**                         | - Autenticación de usuarios (login/logout, manejo de sesiones)<br>- Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco<br>- Soporte de 2FA (envío y verificación de códigos)<br>- Gestión de permisos y roles                                                                         | User, Credentials, Session, Token, 2FA             |
-| **2. Account Management**          | - Operaciones CRUD sobre entidades **User**<br>- Eliminación (soft/hard delete) de cuentas<br>- Recuperación de contraseña y gestión de **PasswordRecoveryToken**<br>- Validación de datos de contacto y cumplimiento de políticas de seguridad                                                       | User, PasswordRecoveryToken, AccountStatus         |
-| **3. Profile & Personal Data**     | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección)<br>- Gestión de preferencias de usuario (idioma, notificaciones)<br>- Integración con **Geo API** para catálogo de países y ciudades<br>- Normalización y validación de direcciones                                | Profile, Address, PhoneNumber, Preference, Country |
-| **4. Pot Management**              | - Operaciones CRUD sobre la entidad **Pot**<br>- Configuración de parámetros de riego (frecuencia, volumen, thresholds)<br>- Gestión de metadatos (nombre, identificador único, etiquetas)<br>- Persistencia de configuraciones históricas para auditoría                                             | Pot, PotConfiguration, Threshold                   |
-| **5. Plant Management**            | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad)<br>- Validación de compatibilidad planta–maceta<br>- Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies                       | PlantSpecies, OptimalRange, Compatibility          |
-| **6. Watering Management**         | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration**<br>- Generación de **IrrigationJob** (planificación y disparo de válvulas)<br>- Manejo de excepciones de hardware (fallos, reintentos)<br>- Coordinación con servicios de control de dispositivos IoT | IrrigationJob, ValveCommand, SensorData            |
-| **7. Subscriptions & Payments**    | - Definición y gestión de **SubscriptionPlan**<br>- Procesamiento de transacciones recurrentes y cobros únicos<br>- Gestión de **Invoice** y seguimiento de estado de pago<br>- Integración con pasarelas externas y webhooks                                                                         | SubscriptionPlan, Invoice, PaymentTransaction      |
-| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (health checks)<br>- Registro y almacenamiento de logs críticos<br>- Generación y envío de alertas (push, email, SMS) ante umbrales o fallos<br>- Dashboard operativo para visualización de métricas de disponibilidad                            | SystemHealth, Alert, NotificationChannel           |
-| **9. Data Insights & Reporting**   | - Ingesta, normalización y almacenamiento de **SensorRecord**<br>- Procesamiento batch/stream para generación de métricas agregadas<br>- Exposición de dashboards y endpoints de consulta<br>- Exportación de datos a formatos CSV/JSON para análisis externo                                         | SensorRecord, InsightReport, Dashboard             |
-| **10. Caring Intelligence**        | - Motor de recomendación basado en reglas y modelos ML/IA<br>- Generación de **Recommendation** y mapeo a patrones de usuario<br>- Creación de reportes personalizados (**ReportTemplate**)<br>- Aprendizaje continuo a partir de retroalimentación del usuario                                       | Recommendation, ReportTemplate, Rule, Feedback     |
+| Contexto                           | Responsabilidades clave                                                                                                                                                                                                                                                                                     | Ubiquitous Language                                |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| **1. IAM**                         | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles                                                                              | User, Credentials, Session, Token, 2FA             |
+| **2. Account Management**          | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas <br> - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br> - Validación de datos de contacto y cumplimiento de políticas de seguridad                                                       | User, PasswordRecoveryToken, AccountStatus         |
+| **3. Profile & Personal Data**     | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br> - Gestión de preferencias de usuario (idioma, notificaciones) <br> - Integración con **Geo API** para catálogo de países y ciudades <br> - Normalización y validación de direcciones                                | Profile, Address, PhoneNumber, Preference, Country |     |
+| **4. Pot Management**              | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br> - Gestión de metadatos (nombre, identificador único, etiquetas) <br> - Persistencia de configuraciones históricas para auditoría                                         | Pot, PotConfiguration, Threshold                   |
+| **5. Plant Management**            | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br> - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies                         | PlantSpecies, OptimalRange, Compatibility          |     |
+| **6. Watering Management**         | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos) <br> - Coordinación con servicios de control de dispositivos IoT | IrrigationJob, ValveCommand, SensorData            |     |
+| **7. Subscriptions & Payments**    | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br> - Gestión de **Invoice** y seguimiento de estado de pago <br> - Integración con pasarelas externas y webhooks                                                                         | SubscriptionPlan, Invoice, PaymentTransaction      |
+| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (`health checks`) <br> - Registro y almacenamiento de logs críticos <br> - Generación y envío de alertas (push, email, SMS) ante umbrales o fallos <br> - Dashboard operativo para visualización de métricas de disponibilidad                          | SystemHealth, Alert, NotificationChannel           |
+| **9. Data Insights & Reporting**   | - Ingesta, normalización y almacenamiento de **SensorRecord** <br> - Procesamiento batch/stream para generación de métricas agregadas <br> - Exposición de dashboards y endpoints de consulta <br> - Exportación de datos a formatos CSV/JSON para análisis externo                                         | SensorRecord, InsightReport, Dashboard             |
+| **10. Caring Intelligence**        | - Motor de recomendación basado en reglas y modelos ML/IA <br> - Generación de **Recommendation** y mapeo a patrones de usuario <br> - Creación de reportes personalizados (**ReportTemplate**) <br> - Aprendizaje continuo a partir de retroalimentación del usuario                                       | Recommendation, ReportTemplate, Rule, Feedback     |
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
@@ -313,6 +431,8 @@ El diseño arquitectónico de la aplicación móvil Roademics se basa en una arq
 La arquitectura también contempla la seguridad como un aspecto central, con la implementación de técnicas de cifrado para proteger los datos sensibles del usuario y garantizar que las comunicaciones dentro de la aplicación sean seguras. Además, se diseña para ser compatible con diversas plataformas móviles, adaptándose a las especificaciones de iOS y Android, lo que facilita una experiencia de usuario consistente y de alta calidad en ambos entornos.
 
 De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles —Contexto, Contenedores, Componentes y Código—, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
+
+
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view-key.png"></image>
 
