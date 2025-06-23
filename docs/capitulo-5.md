@@ -2128,6 +2128,22 @@ Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Desi
 
 ### 5.4.2. Applications Wireflow Diagrams
 
+- **1. Registro e Inicio de Sesión del Usuario**
+  Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_1.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **2. Visualización y Gestión de Macetas Inteligentes**
+  Este flujo permite a los usuarios acceder al panel principal donde visualizan todas sus macetas inteligentes, consultar detalles individuales como estado de sensores, historial de riego, recomendaciones, y ejecutar acciones como regar la planta manualmente.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_2.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **3. Actualización de Membresía y Proceso de Pago**
+  Este flujo guía al usuario desde la comparación de planes hasta el proceso de pago para actualizar su cuenta gratuita a una suscripción Premium, permitiéndole acceder a funcionalidades avanzadas como reportes detallados y riego automático programado.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_3.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **4. Configuración de Cuenta y Preferencias de Notificación**
+  Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_4.png"  alt="MockUp" width="1000" height="700"> <br>
+
 ### 5.4.2. Applications Mock-ups
 
 Los siguientes mockups representan las interfaces clave de una plataforma de gestión de macetas inteligentes. Estas vistas han sido diseñadas para facilitar la experiencia del usuario en procesos como el registro e inicio de sesión, visualización del estado de las macetas, gestión de notificaciones, y administración de cuenta y membresía. Cada pantalla refleja una parte esencial del recorrido del usuario, alineada con los objetivos y necesidades definidos para cada User Persona.
