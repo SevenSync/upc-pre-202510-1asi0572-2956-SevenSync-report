@@ -1739,3 +1739,7 @@ En la lista principal, las macetas que presentan alertas no se destacan lo sufic
 Utilizar colores de fondo o bordes más llamativos para alertas críticas y mostrar un resumen de advertencia al inicio de la pantalla.
 
 ## 6.4. Video About-the-Product.
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+<img src="/assets/img/portada/about-the-product.png" alt="Video About The Product">
