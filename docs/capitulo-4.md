@@ -1,6 +1,6 @@
 # Capítulo IV: Solution Software Design
 
-En este capítulo describiremos en detalle el diseño de la solución software de Macetech, trazando desde la arquitectura general hasta los componentes y las interacciones que permiten la gestión inteligente de las macetas. Presentaremos el modelo de capas, incluyendo el servicio de adquisición y procesamiento de datos de los sensores IoT, la capa de negocio para la lógica de riego y análisis de estado de las plantas, y la capa de presentación en la aplicación móvil, así como los patrones de diseño y las tecnologías seleccionadas para garantizar escalabilidad, fiabilidad y seguridad. 
+En este capítulo describiremos en detalle el diseño de la solución software de Macetech, trazando desde la arquitectura general hasta los componentes y las interacciones que permiten la gestión inteligente de las macetas. Presentaremos el modelo de capas, incluyendo el servicio de adquisición y procesamiento de datos de los sensores IoT, la capa de negocio para la lógica de riego y análisis de estado de las plantas, y la capa de presentación en la aplicación móvil, así como los patrones de diseño y las tecnologías seleccionadas para garantizar escalabilidad, fiabilidad y seguridad.
 
 Además, se detallarán los flujos de datos, las interfaces de programación (APIs) y los protocolos de comunicación con los dispositivos, junto con las consideraciones de usabilidad y experiencia de usuario que facilitarán un manejo intuitivo y eficiente de Macetech. Por último, se abordarán aspectos claves como la integración con servicios en la nube, el manejo de eventos en tiempo real y las estrategias de despliegue continuo que soportarán la evolución continua de la plataforma.
 
@@ -39,7 +39,8 @@ Como objetivos de la sesión de EventStorming planteamos:
 En esta etapa inicial, todos los participantes plasmaron en notas adhesivas los eventos más relevantes del sistema, redactados en pasado para enfatizar que son hechos consumados dentro del negocio. El objetivo fue generar una “fotografía” global de todos los sucesos críticos, sin filtrar o depurar, de modo que emergiera un panorama amplio de qué ocurre en el dominio.
 
 ###### Figura 24
-*Primera fase del proceso de EventStorming de Macetech*
+
+_Primera fase del proceso de EventStorming de Macetech_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-1-collect-domain-events.jpg"></image>
 
@@ -56,12 +57,14 @@ Con la visión global completada, el equipo realizó una segunda pasada colabora
 - Acordar una terminología común que garantizara consistencia semántica.
 
 ###### Figura 25
-*Segunda fase del proceso de EventStorming de Macetech con la línea de tiempo y refinación de los eventos de dominio*
+
+_Segunda fase del proceso de EventStorming de Macetech con la línea de tiempo y refinación de los eventos de dominio_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-timeline-and-refine-domain-events.jpg"></image>
 
 ###### Figura 26
-*Segunda fase del proceso de EventStorming de Macetech con la recolección de eventos de dominio*
+
+_Segunda fase del proceso de EventStorming de Macetech con la recolección de eventos de dominio_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-1-collect-domain-events.jpg"></image>
 
@@ -84,62 +87,74 @@ De este modo, obtuvimos un mapa de dependencias causales que revela no solo qué
 Para esta sección, se necesitará identificar el color de los post-its de Miro para mantener el orden. Se usará esta convención:
 
 ###### Figura 27
-*Convención de color de post-its utilizados en la tercera fase del proceso de EventStorming de Macetech.*
+
+_Convención de color de post-its utilizados en la tercera fase del proceso de EventStorming de Macetech._
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
 
 ###### Figura 28
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores.*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores._
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes.jpg"></image>
 
 ###### Figura 29
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en alertas*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en alertas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-alerts.jpg"></image>
 
 ###### Figura 30
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la obtención de datos*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la obtención de datos_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
 
 ###### Figura 31
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Administración de Identidad y Acceso*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Administración de Identidad y Acceso_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-iam.jpg"></image>
 
 ###### Figura 32
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Notificaciones*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Notificaciones_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
 
 ###### Figura 33
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Plantas*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Plantas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-plant-management.jpg"></image>
 
 ###### Figura 34
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Macetas*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Macetas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-pot-management.jpg"></image>
 
 ###### Figura 35
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Recomendaciones*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Recomendaciones_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-recommendations.jpg"></image>
 
 ###### Figura 36
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en los Reportes*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en los Reportes_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-reports.jpg"></image>
 
 ###### Figura 37
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Suscripciones y Membresías*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Suscripciones y Membresías_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-subscriptions.jpg"></image>
 
 ###### Figura 38
-*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en el Sistema de Riego*
+
+_Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en el Sistema de Riego_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-watering.jpg"></image>
 
@@ -152,57 +167,68 @@ Finalmente, agrupamos los eventos en torno a los agregados del dominio —elemen
 Este último paso transforma el Big Picture en un modelo estructurado, orientado a la definición de Bounded Contexts y al diseño detallado de nuestro sistema.
 
 ###### Figura 39
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
 ###### Figura 40
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Alertas*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Alertas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
 
 ###### Figura 41
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Ingreso de Datos*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Ingreso de Datos_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-data-ing.jpg"></image>
 
 ###### Figura 42
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Administración de Identidad y Acceso*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Administración de Identidad y Acceso_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
 
 ###### Figura 43
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Notificaciones*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Notificaciones_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
 
 ###### Figura 44
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Plantas*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Plantas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant.jpg"></image>
 
 ###### Figura 45
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Macetas*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Macetas_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot.jpg"></image>
 
 ###### Figura 46
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Recomendaciones*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Recomendaciones_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recom.jpg"></image>
 
 ###### Figura 47
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en los Reportes*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en los Reportes_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
 
 ###### Figura 48
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Suscripciones y Membresías*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Suscripciones y Membresías_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
 
 ###### Figura 49
-*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Sistema de Riego*
+
+_Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Sistema de Riego_
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
 
@@ -404,7 +430,7 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 _Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech_
 
 | Contexto                           | Responsabilidades clave                                                                                                                                                                                                                                                                                     | Ubiquitous Language                                |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --- |
 | **1. IAM**                         | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles                                                                              | User, Credentials, Session, Token, 2FA             |
 | **2. Account Management**          | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas <br> - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br> - Validación de datos de contacto y cumplimiento de políticas de seguridad                                                       | User, PasswordRecoveryToken, AccountStatus         |
 | **3. Profile & Personal Data**     | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br> - Gestión de preferencias de usuario (idioma, notificaciones) <br> - Integración con **Geo API** para catálogo de países y ciudades <br> - Normalización y validación de direcciones                                | Profile, Address, PhoneNumber, Preference, Country |     |
@@ -420,6 +446,9 @@ _Lista de Bounded Context finales identificados en el proceso de EventStorming d
 
 #### 4.1.1.3 Bounded Context Canvases.
 
+**IDENTITY AND ACCES MANAGEMENT**
+<img src="/assets/img/capitulo-4/bounded-context-iam/Canvas.jpg" alt="MockUp" width="1000" height="500"> <br>
+
 ### 4.1.2. Context Mapping.
 
 ### 4.1.3. Software Architecture.
@@ -431,8 +460,6 @@ El diseño arquitectónico de la aplicación móvil Roademics se basa en una arq
 La arquitectura también contempla la seguridad como un aspecto central, con la implementación de técnicas de cifrado para proteger los datos sensibles del usuario y garantizar que las comunicaciones dentro de la aplicación sean seguras. Además, se diseña para ser compatible con diversas plataformas móviles, adaptándose a las especificaciones de iOS y Android, lo que facilita una experiencia de usuario consistente y de alta calidad en ambos entornos.
 
 De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles —Contexto, Contenedores, Componentes y Código—, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
-
-
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-101667-container-view-key.png"></image>
 
@@ -1097,11 +1124,11 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 #### SmartPot
 
-| Propiedad     | Valor                                          |
-| ------------- | ---------------------------------------------- |
-| **Nombre**    | SmartPot                                       |
-| **Categoría** | Aggregate Root                                 |
-| **Propósito** | Representa una maceta inteligente del usuario  |
+| Propiedad     | Valor                                         |
+| ------------- | --------------------------------------------- |
+| **Nombre**    | SmartPot                                      |
+| **Categoría** | Aggregate Root                                |
+| **Propósito** | Representa una maceta inteligente del usuario |
 
 ##### Atributos
 
@@ -1123,15 +1150,15 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 ##### Métodos
 
-| Nombre               | Tipo de retorno  | Descripción                                                   |
-| -------------------- | ---------------- | ------------------------------------------------------------- |
-| Editar               | `void`           | Modifica nombre, tipo o ubicación                             |
-| CambiarEstado        | `void`           | Actualiza el estado según las condiciones                     |
-| AsignarBluetoothId   | `void`           | Registra el ID BLE para vinculación                           |
-| AsignarUUID          | `void`           | Asocia el UUID de fabricación                                 |
-| Eliminar             | `void`           | Marca la maceta como inactiva                                 |
-| RegistrarRiegoManual | `HistorialRiego` | Agrega un evento de riego manual                              |
-| PuedeAgregarRiego    | `bool`           | Verifica si puede regarse (según reglas de negocio)           |
+| Nombre               | Tipo de retorno  | Descripción                                         |
+| -------------------- | ---------------- | --------------------------------------------------- |
+| Editar               | `void`           | Modifica nombre, tipo o ubicación                   |
+| CambiarEstado        | `void`           | Actualiza el estado según las condiciones           |
+| AsignarBluetoothId   | `void`           | Registra el ID BLE para vinculación                 |
+| AsignarUUID          | `void`           | Asocia el UUID de fabricación                       |
+| Eliminar             | `void`           | Marca la maceta como inactiva                       |
+| RegistrarRiegoManual | `HistorialRiego` | Agrega un evento de riego manual                    |
+| PuedeAgregarRiego    | `bool`           | Verifica si puede regarse (según reglas de negocio) |
 
 ---
 
@@ -1156,56 +1183,56 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 #### Usuario
 
-| Propiedad     | Valor                                         |
-| ------------- | --------------------------------------------- |
-| **Nombre**    | Usuario                                       |
-| **Categoría** | Referencia externa                            |
-| **Propósito** | Representa al dueño de las macetas            |
+| Propiedad     | Valor                              |
+| ------------- | ---------------------------------- |
+| **Nombre**    | Usuario                            |
+| **Categoría** | Referencia externa                 |
+| **Propósito** | Representa al dueño de las macetas |
 
 ---
 
 #### HistorialRiego
 
-| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
-| ---------------- | ------------ | ----------- | ------------------------------- |
-| Id               | `Guid`       | private     | Identificador único             |
-| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
-| Fecha            | `DateTime`   | private     | Fecha y hora del riego          |
-| DuracionSegundos | `int`        | private     | Duración del riego              |
-| VolumenAguaML    | `int`        | private     | Volumen de agua usado (ml)      |
-| HumedadInicial   | `int`        | private     | Humedad antes del riego         |
-| HumedadFinal     | `int`        | private     | Humedad después del riego       |
-| Resultado        | `string`     | private     | Resultado (éxito, error, etc.)  |
+| Propiedad        | Tipo de dato | Visibilidad | Descripción                    |
+| ---------------- | ------------ | ----------- | ------------------------------ |
+| Id               | `Guid`       | private     | Identificador único            |
+| SmartPotId       | `Guid`       | private     | FK hacia SmartPot              |
+| Fecha            | `DateTime`   | private     | Fecha y hora del riego         |
+| DuracionSegundos | `int`        | private     | Duración del riego             |
+| VolumenAguaML    | `int`        | private     | Volumen de agua usado (ml)     |
+| HumedadInicial   | `int`        | private     | Humedad antes del riego        |
+| HumedadFinal     | `int`        | private     | Humedad después del riego      |
+| Resultado        | `string`     | private     | Resultado (éxito, error, etc.) |
 
 ---
 
 #### LecturaTelemetria
 
-| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
-| ---------------- | ------------ | ----------- | ------------------------------- |
-| Id               | `Guid`       | private     | Identificador único             |
-| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
-| Timestamp        | `DateTime`   | private     | Fecha de la medición            |
-| Humedad          | `float`      | private     | Porcentaje de humedad           |
-| Ph               | `float`      | private     | Nivel de acidez                 |
-| Salinidad        | `float`      | private     | Salinidad del sustrato          |
-| Temperatura      | `float`      | private     | Temperatura                     |
-| ExposicionSolar  | `bool?`      | private     | Exposición anómala              |
-| HorasExposicion  | `int?`       | private     | Horas de exposición solar       |
+| Propiedad       | Tipo de dato | Visibilidad | Descripción               |
+| --------------- | ------------ | ----------- | ------------------------- |
+| Id              | `Guid`       | private     | Identificador único       |
+| SmartPotId      | `Guid`       | private     | FK hacia SmartPot         |
+| Timestamp       | `DateTime`   | private     | Fecha de la medición      |
+| Humedad         | `float`      | private     | Porcentaje de humedad     |
+| Ph              | `float`      | private     | Nivel de acidez           |
+| Salinidad       | `float`      | private     | Salinidad del sustrato    |
+| Temperatura     | `float`      | private     | Temperatura               |
+| ExposicionSolar | `bool?`      | private     | Exposición anómala        |
+| HorasExposicion | `int?`       | private     | Horas de exposición solar |
 
 ---
 
 #### Alerta
 
-| Propiedad        | Tipo de dato | Visibilidad | Descripción                     |
-| ---------------- | ------------ | ----------- | ------------------------------- |
-| Id               | `Guid`       | private     | Identificador único             |
-| SmartPotId       | `Guid`       | private     | FK hacia SmartPot               |
-| Tipo             | `string`     | private     | Tipo de alerta                  |
-| ValorDetectado   | `float`      | private     | Valor que generó la alerta      |
-| Urgencia         | `string`     | private     | Nivel de urgencia               |
-| Recomendacion    | `string`     | private     | Sugerencia o acción recomendada |
-| GuiaUrl          | `string`     | private     | Enlace a guía externa           |
+| Propiedad      | Tipo de dato | Visibilidad | Descripción                     |
+| -------------- | ------------ | ----------- | ------------------------------- |
+| Id             | `Guid`       | private     | Identificador único             |
+| SmartPotId     | `Guid`       | private     | FK hacia SmartPot               |
+| Tipo           | `string`     | private     | Tipo de alerta                  |
+| ValorDetectado | `float`      | private     | Valor que generó la alerta      |
+| Urgencia       | `string`     | private     | Nivel de urgencia               |
+| Recomendacion  | `string`     | private     | Sugerencia o acción recomendada |
+| GuiaUrl        | `string`     | private     | Enlace a guía externa           |
 
 ---
 
@@ -1213,55 +1240,55 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 #### DTOs y Requests/Responses
 
-| DTO/Record             | Campos principales                                                                   | Propósito                    |
-| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------- |
-| `SmartPotSummaryDto`   | Id, Nombre, Tipo, Estado, Humedad, Temperatura, Battery, FechaRegistro               | Listado general              |
-| `SmartPotDetailsDto`   | Todos los atributos de la entidad + configuración + alertas + historial              | Vista detallada              |
-| `HistorialRiegoDto`    | Id, Fecha, VolumenAgua, HumedadInicial, HumedadFinal, Resultado                      | Detalle de riego             |
-| `LecturaTelemetriaDto` | Id, Timestamp, Humedad, Ph, Salinidad, Temperatura, ExposicionSolar, HorasExposicion | Medición ambiental           |
-| `AlertaDto`            | Id, Tipo, ValorDetectado, Urgencia, Recomendacion, GuiaUrl, Fecha                    | Alertas recientes            |
+| DTO/Record             | Campos principales                                                                   | Propósito          |
+| ---------------------- | ------------------------------------------------------------------------------------ | ------------------ |
+| `SmartPotSummaryDto`   | Id, Nombre, Tipo, Estado, Humedad, Temperatura, Battery, FechaRegistro               | Listado general    |
+| `SmartPotDetailsDto`   | Todos los atributos de la entidad + configuración + alertas + historial              | Vista detallada    |
+| `HistorialRiegoDto`    | Id, Fecha, VolumenAgua, HumedadInicial, HumedadFinal, Resultado                      | Detalle de riego   |
+| `LecturaTelemetriaDto` | Id, Timestamp, Humedad, Ph, Salinidad, Temperatura, ExposicionSolar, HorasExposicion | Medición ambiental |
+| `AlertaDto`            | Id, Tipo, ValorDetectado, Urgencia, Recomendacion, GuiaUrl, Fecha                    | Alertas recientes  |
 
 ##### Endpoints REST
 
-| Endpoint                           | Método | Acción                          |
-| ---------------------------------- | ------ | ------------------------------- |
-| `/api/smartpots`                   | GET    | Listar macetas del usuario      |
-| `/api/smartpots/{id}`              | GET    | Ver detalles de una maceta      |
+| Endpoint                           | Método | Acción                            |
+| ---------------------------------- | ------ | --------------------------------- |
+| `/api/smartpots`                   | GET    | Listar macetas del usuario        |
+| `/api/smartpots/{id}`              | GET    | Ver detalles de una maceta        |
 | `/api/smartpots`                   | POST   | Registrar maceta nueva (BLE/UUID) |
-| `/api/smartpots/{id}`              | PUT    | Editar datos de maceta          |
-| `/api/smartpots/{id}`              | DELETE | Eliminar (soft delete)          |
-| `/api/smartpots/{id}/water/manual` | POST   | Agregar riego manual            |
-| `/api/smartpots/{id}/history`      | GET    | Ver historial de riego          |
-| `/api/smartpots/{id}/alerts`       | GET    | Ver alertas activas             |
-| `/api/smartpots/{id}/telemetry`    | GET    | Ver telemetría asociada         |
+| `/api/smartpots/{id}`              | PUT    | Editar datos de maceta            |
+| `/api/smartpots/{id}`              | DELETE | Eliminar (soft delete)            |
+| `/api/smartpots/{id}/water/manual` | POST   | Agregar riego manual              |
+| `/api/smartpots/{id}/history`      | GET    | Ver historial de riego            |
+| `/api/smartpots/{id}/alerts`       | GET    | Ver alertas activas               |
+| `/api/smartpots/{id}/telemetry`    | GET    | Ver telemetría asociada           |
 
 ---
 
 ### 4.2.3.3. Application Layer
 
-| Comando/Consulta                | Propósito                                              | Entrada                        | Salida                      |
-| ------------------------------ | ------------------------------------------------------ | ------------------------------ | --------------------------- |
-| `RegisterSmartPotCommand`      | Crear maceta vía BLE o UUID                            | RegistroDto, userId            | SmartPotDetailsDto          |
-| `EditSmartPotCommand`          | Actualizar información general                         | potId, EditDto, userId         | SmartPotDetailsDto          |
-| `DeleteSmartPotCommand`        | Eliminar (soft delete)                                 | potId, userId                  | bool                        |
-| `RegisterManualWateringCmd`    | Agregar evento de riego manual                         | potId, Volumen, userId         | HistorialRiegoDto           |
-| `GetSmartPotDetailsQuery`      | Consultar todos los detalles de la maceta              | potId, userId                  | SmartPotDetailsDto          |
-| `ListUserSmartPotsQuery`       | Obtener listado resumido                               | userId                         | SmartPotSummaryDto[]        |
-| `GetWateringHistoryQuery`      | Ver historial de riegos                                | potId, userId                  | HistorialRiegoDto[]         |
-| `GetPotAlertsQuery`            | Obtener alertas                                         | potId, userId                  | AlertaDto[]                 |
-| `GetPotTelemetryQuery`         | Obtener telemetrías                                     | potId, userId, rangoFecha?     | LecturaTelemetriaDto[]      |
+| Comando/Consulta            | Propósito                                 | Entrada                    | Salida                 |
+| --------------------------- | ----------------------------------------- | -------------------------- | ---------------------- |
+| `RegisterSmartPotCommand`   | Crear maceta vía BLE o UUID               | RegistroDto, userId        | SmartPotDetailsDto     |
+| `EditSmartPotCommand`       | Actualizar información general            | potId, EditDto, userId     | SmartPotDetailsDto     |
+| `DeleteSmartPotCommand`     | Eliminar (soft delete)                    | potId, userId              | bool                   |
+| `RegisterManualWateringCmd` | Agregar evento de riego manual            | potId, Volumen, userId     | HistorialRiegoDto      |
+| `GetSmartPotDetailsQuery`   | Consultar todos los detalles de la maceta | potId, userId              | SmartPotDetailsDto     |
+| `ListUserSmartPotsQuery`    | Obtener listado resumido                  | userId                     | SmartPotSummaryDto[]   |
+| `GetWateringHistoryQuery`   | Ver historial de riegos                   | potId, userId              | HistorialRiegoDto[]    |
+| `GetPotAlertsQuery`         | Obtener alertas                           | potId, userId              | AlertaDto[]            |
+| `GetPotTelemetryQuery`      | Obtener telemetrías                       | potId, userId, rangoFecha? | LecturaTelemetriaDto[] |
 
 ---
 
 ### 4.2.3.4. Infrastructure Layer
 
-| Repositorio/Adaptador            | Propósito                                      |
-| -------------------------------- | ---------------------------------------------- |
-| `ISmartPotRepository`            | Acceso a datos de macetas                      |
-| `IHistorialRiegoRepository`      | Lectura/escritura de historial de riego        |
-| `ILecturaTelemetriaRepository`   | Persistencia de sensores/telemetría            |
-| `IAlertaRepository`              | Manejo de alertas persistentes                 |
-| `IUsuarioRepository`             | Validación y consulta de usuarios              |
+| Repositorio/Adaptador          | Propósito                               |
+| ------------------------------ | --------------------------------------- |
+| `ISmartPotRepository`          | Acceso a datos de macetas               |
+| `IHistorialRiegoRepository`    | Lectura/escritura de historial de riego |
+| `ILecturaTelemetriaRepository` | Persistencia de sensores/telemetría     |
+| `IAlertaRepository`            | Manejo de alertas persistentes          |
+| `IUsuarioRepository`           | Validación y consulta de usuarios       |
 
 ---
 
