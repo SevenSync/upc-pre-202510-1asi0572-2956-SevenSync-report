@@ -1729,12 +1729,12 @@ SF Symbols es el sistema oficial de iconos vectoriales de Apple, integrado en iO
 - Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
 
 - Fácil integración en UIKit y SwiftUI con un systemName.
-
-| Propiedad | Recomendación para iOS | Justificación UX |
-Tamaño base (icono) 20–28 pt Claridad en pantallas Retina
-Espaciado mínimo 8 pt entre elementos Evita sobrecarga visual
-Grosor sugerido regular o semibold Balance entre legibilidad y neutralidad visual
-Color Ligado a label, secondaryLabel o paleta de acento (tint) Coherencia visual en modo claro/oscuro
+  | Propiedad | Recomendación para iOS | Justificación UX |
+  |-------------------|---------------------------------------------------------|--------------------------------------------------|
+  | Tamaño base (icono) | 20–28 pt | Claridad en pantallas Retina |
+  | Espaciado mínimo | 8 pt entre elementos | Evita sobrecarga visual |
+  | Grosor sugerido | Regular o Semibold | Balance entre legibilidad y neutralidad visual |
+  | Color | Ligado a `label`, `secondaryLabel` o paleta de acento (tint) | Coherencia visual en modo claro/oscuro |
 
 #### 5.1.2.3. IoT Style Guidelines
 
