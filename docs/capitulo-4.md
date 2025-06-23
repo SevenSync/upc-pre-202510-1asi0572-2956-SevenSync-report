@@ -444,10 +444,17 @@ _Lista de Bounded Context finales identificados en el proceso de EventStorming d
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
+<img src="/assets/img/capitulo-4/message-flows/message-flow-1.jpg" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-4/message-flows/message-flow-2.jpg" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-4/message-flows/message-flow-3.jpg" alt="MockUp" width="1000" height="500"> <br>
+
 #### 4.1.1.3 Bounded Context Canvases.
 
 **IDENTITY AND ACCES MANAGEMENT**
 <img src="/assets/img/capitulo-4/bounded-context-iam/Canvas.jpg" alt="MockUp" width="1000" height="500"> <br>
+
+**Profile and personal data**
+<img src="/assets/img/capitulo-4/bounded-context-profile-and-personal-data/Canvas2.jpgg" alt="MockUp" width="1000" height="500"> <br>
 
 ### 4.1.2. Context Mapping.
 
