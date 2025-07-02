@@ -232,7 +232,9 @@ _Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggreg
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
 
-<a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
+Mediante el siguiente enlace podrá acceder y explorar en detalle la pizarra de Miro donde se desarrolló el modelo de EventStorming, organizada por fases e ilustrada con una leyenda explicativa que facilita su revisión:
+
+<a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Pizarra Miro del proceso de EventStorming</a>
 
 #### 4.1.1.1 Candidate Context Discovery
 
@@ -240,11 +242,11 @@ En esta sección, el equipo describe detalladamente el proceso seguido para la s
 
 Para asegurar una exploración efectiva de los límites contextuales, se combinaron tres técnicas complementarias, tal como recomienda Khononov (2021):
 
-- Start‑with‑Value: consiste en identificar primero aquellos subdominios o flujos de negocio cuyo impacto en la propuesta de valor sea más significativo, de modo que las decisiones de acotamiento prioricen las funcionalidades críticas para el usuario y el negocio
+- **Start‑with‑Value:** consiste en identificar primero aquellos subdominios o flujos de negocio cuyo impacto en la propuesta de valor sea más significativo, de modo que las decisiones de acotamiento prioricen las funcionalidades críticas para el usuario y el negocio
 
-- Start‑with‑Simple: implica descomponer el proceso principal en un conjunto mínimo de pasos secuenciales, desde el registro de usuario hasta la generación de recomendaciones, lo cual facilita la visualización y evita solapamientos entre candidatos de contexto
+- **Start‑with‑Simple:** implica descomponer el proceso principal en un conjunto mínimo de pasos secuenciales, desde el registro de usuario hasta la generación de recomendaciones, lo cual facilita la visualización y evita solapamientos entre candidatos de contexto
 
-- Look‑for‑Pivotal‑Events: se centra en detectar aquellos eventos de dominio que representan cambios de estado fundamentales, ya que estos hitos indefectiblemente marcan fronteras naturales entre contextos
+- **Look‑for‑Pivotal‑Events:** se centra en detectar aquellos eventos de dominio que representan cambios de estado fundamentales, ya que estos hitos indefectiblemente marcan fronteras naturales entre contextos
 
 La sesión de Candidate Context Discovery, cuya duración no excedió las dos horas, se organizó como un taller interactivo en el que participaron todos los miembros de nuestro equipo de SevenSync, empleando una herramienta colaborativa de EventStorming, Miro. Durante la misma, se capturaron iterativamente pantallazos que documentan la evolución del modelo de eventos, desde la visión inicial hasta la estructuración final de los contextos. Estas imágenes se incorporarán en la sección para evidenciar la progresión metodológica y facilitar la trazabilidad de las decisiones tomadas.
 
@@ -252,74 +254,76 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
 1. **Preparación y definición de alcance**
 
-   Para garantizar una sesión estructurada y productiva, se llevaron a cabo las siguientes actividades previas:
+   Para garantizar una sesión estructurada y productiva, se llevaron a cabo las siguientes actividades previas: <br><br>
 
-   - Convocatoria y roles de los participantes
+   - **Convocatoria y roles de los participantes**
 
-     Se conformó un grupo interdisciplinario bajo la coordinación de SevenSync, integrado por:
+     Se conformó un grupo interdisciplinario bajo la coordinación de SevenSync, integrado por:<br><br>
 
-     - Desarrolladores backend y frontend, responsables de la viabilidad técnica.
+     - **Desarrolladores backend y frontend**, responsables de la viabilidad técnica.
 
-     - Diseñadores UX/UI, encargados de asegurar la coherencia en la experiencia de usuario.
+     - **Documentadores técnicos** con información total sobre el negocio y las convenciones a utilizar.
 
-   - Definición de objetivos y alcance
+     - **Diseñadores UX/UI**, encargados de asegurar la coherencia en la experiencia de usuario.<br><br>
+
+   - **Definición de objetivos y alcance**<br><br>
 
      - **Propósito principal:** Descomponer el dominio de Macetech, desde el registro inicial del usuario hasta la emisión de recomendaciones y reportes personalizados.
 
-     - **Alcance temporal:** Taller de mínimo dos horas y máximo tres horas en la plataforma Miro utilizando la técnica de EventStorming.
+     - **Alcance temporal:** Taller de mínimo dos horas y máximo tres horas en la plataforma Miro utilizando la técnica de EventStorming.<br><br>
 
-   - Herramientas y materiales de trabajo
+   - **Herramientas y materiales de trabajo**<br><br>
 
-     - Lienzo colaborativo en Miro: para la colocación y organización dinámica de eventos y comandos.
+     - **Lienzo colaborativo en Miro:** para la colocación y organización dinámica de eventos y comandos.
 
-     - Post‑its codificados por color: diferenciando eventos de dominio, comandos de acción e integraciones externas.
+     - **Post‑its codificados por color:** diferenciando eventos de dominio, comandos de acción e integraciones externas.
 
-     - Marcadores y cámaras: para anotar aclaraciones y capturar iteraciones de la evolución del modelo.
+     - **Marcadores y cámaras:** para anotar aclaraciones y capturar iteraciones de la evolución del modelo.<br><br>
 
-   - Asignación de responsabilidades
+   - **Asignación de responsabilidades**<br><br>
 
-     - Facilitador: orientó la dinámica del taller, gestionó los tiempos y promovió la participación activa.
+     - **Facilitador:** orientó la dinámica del taller, gestionó los tiempos y promovió la participación activa.
 
-     - Escritor: trasladó al lienzo digital las notas y agrupaciones, asegurando la trazabilidad de cada modificación.
+     - **Escritor:** trasladó al lienzo digital las notas y agrupaciones, asegurando la trazabilidad de cada modificación.
 
-     - Expertos de dominio: validaron definiciones, aclararon términos y garantizaron la precisión del lenguaje ubicuo.
+     - **Expertos de dominio:** validaron definiciones, aclararon términos y garantizaron la precisión del lenguaje ubicuo.<br><br>
 
-2. **Técnica Start‑with‑Value**
+2. **Técnica Start‑with‑Value**<br><br>
 
-   Con el fin de enfocar el análisis en las áreas de mayor impacto, se realizó:
+   Con el fin de enfocar el análisis en las áreas de mayor impacto, se realizó:<br><br>
 
-   - Identificación de “valores núcleo”
+   - **Identificación de “valores núcleo”**
 
-     Cada integrante propuso los flujos de negocio que, a su juicio, aportan el mayor valor a usuario y organización:
+     Cada integrante propuso los flujos de negocio que, a su juicio, aportan el mayor valor a usuario y organización:<br><br>
 
      - Gestión inicial de macetas y parámetros de configuración.
 
      - Generación de recomendaciones inteligentes para maximizar la tasa de éxito en el cuidado.
 
-     - Monitoreo en tiempo real, evitando pérdidas derivadas de riegos inadecuados.
+     - Monitoreo en tiempo real, evitando pérdidas derivadas de riegos inadecuados.<br><br>
 
-   - Priorización de eventos
+   - **Priorización de eventos**
 
-     Se listaron todos los eventos detectados y se clasificaron según su impacto (alto, medio, bajo). Solo los catalogados como alto impacto se trasladaron a la siguiente etapa, garantizando que la sesión permaneciera centrada en las funciones críticas.
+     Se listaron todos los eventos detectados y se clasificaron según su impacto (alto, medio, bajo). Solo los catalogados como alto impacto se trasladaron a la siguiente etapa, garantizando que la sesión permaneciera centrada en las funciones críticas.<br><br>
 
 3. **Técnica Start‑with‑Simple**
 
-   Para clarificar la secuencia de operaciones esenciales, se procedió a:
+   Para clarificar la secuencia de operaciones esenciales, se procedió a:<br><br>
 
-   - Modelado visual con post‑its
+   - **Modelado visual con post‑its**
 
-     Cada uno de los nueve pasos se representó con post‑its de un único color, evitando superposiciones y facilitando la delimitación de responsabilidades entre los distintos subdominios.
+     Para garantizar una visualización ordenada y comprensible de todo el proceso, cada uno de los nueve pasos identificados se plasmó en fichas adhesivas (post-its) de un único color por tipo de actividad. Esta uniformidad evitó solapamientos visuales y facilitó la distinción de responsabilidades entre los distintos subdominios. 
 
-   - Descomposición en pasos mínimos
+   - **Descomposición en pasos mínimos**
 
-     Se esbozó un timeline básico que recogiera el flujo de valor, compuesto por:
+     Con el fin de capturar con precisión el flujo de valor, se esbozó la siguiente tabla sencilla que descompone el proceso en sus componentes más básicos, compuesto por:
 
 ###### Tabla 13
 
 _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
-| Paso | Descripción                                                                                                   | Artefactos de Dominio / Evento Pivotal                         |
-| ---- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Paso | Descripción | Artefactos de Dominio / Evento Pivotal  |
+| ---- | -----------| ----------------------- |
 | 1    | Registro del usuario en la plataforma.                                                                        | Comando: RegisterUser, Evento: UserRegistered                  |
 | 2    | Creación de perfil con datos de contacto y preferencias.                                                      | Comando: CreateProfile, Evento: ProfileCreated                 |
 | 3    | Autenticación del usuario, incluyendo verificación 2FA.                                                       | Comando: AuthenticateUser, Evento: UserAuthenticated           |
@@ -330,9 +334,9 @@ _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 | 8    | Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API. | SensorDataCollected + Evento: ExternalClimateDataFetched       |
 | 9    | Generación de recomendaciones y notificaciones de alertas.                                                    | Comando: SelectRecommendation, Evento: RecommendationDisplayed |
 
-4. **Técnica Look‑for‑Pivotal‑Events**
+4.  **Técnica Look‑for‑Pivotal‑Events**
 
-   Con el propósito de delimitar con precisión los contextos, se identificaron eventos de transición. Un evento de transición, según Khononov (2021), no solo marca un cambio de estado significativo, por ejemplo el paso de “usuario anónimo” a “usuario registrado” o de “maceta sin configurar” a “maceta lista para monitoreo”, sino que también permite priorizar de forma rigurosa el modelado y el desarrollo. Al centrarse en aquellos eventos de mayor impacto, el equipo puede determinar con claridad qué áreas requieren atención inmediata y cuáles funcionalidades deben implementarse primero, garantizando así que las decisiones de diseño estén siempre alineadas con los objetivos de negocio y el valor aportado al usuario.
+    Con el propósito de delimitar con precisión los contextos, se identificaron eventos de transición. Un evento de transición, según Khononov (2021), no solo marca un cambio de estado significativo, por ejemplo el paso de “usuario anónimo” a “usuario registrado” o de “maceta sin configurar” a “maceta lista para monitoreo”, sino que también permite priorizar de forma rigurosa el modelado y el desarrollo. Al centrarse en aquellos eventos de mayor impacto, el equipo puede determinar con claridad qué áreas requieren atención inmediata y cuáles funcionalidades deben implementarse primero, garantizando así que las decisiones de diseño estén siempre alineadas con los objetivos de negocio y el valor aportado al usuario.
 
 ###### Tabla 14
 
@@ -370,33 +374,33 @@ _Lista de transiciones identificadas en el proceso de EventStorming de Macetech_
 | ConsentAccepted            | El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema.                            |
 | ConsentRejected            | El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema.                                                 |
 
-- Agrupación por afinidad de eventos
+- **Agrupación por afinidad de eventos**
 
   Sobre el lienzo, los post‑its se reagruparon alrededor de cada evento pivotal, permitiendo visualizar con claridad los límites naturales entre posibles contextos.
 
-5. Visualización evolutiva
+**5. Visualización evolutiva**
 
-   Para documentar el progreso y facilitar la trazabilidad:
+   Con el objetivo de documentar de manera sistemática el avance del modelo y garantizar su trazabilidad, se implementó un proceso de registro visual en intervalos regulares:
+   
+   - **Capturas iterativas**
 
-   - Capturas iterativas
+      Para conservar un historial detallado de la evolución del tablero, se generaron capturas de pantalla en Miro a lo largo de toda la sesión de trabajo, siguiendo estos hitos: <br><br>
 
-   Se realizaron screenshots en Miro cada 30 minutos, mostrando:
+      - **Estado inicial:** todos los eventos recolectados, aún sin clasificar ni ordenar, reflejando la materia prima del modelado.
 
-   - Estado inicial: eventos sin ordenar.
+      - **Después de Start-with-Value:** se destacaron exclusivamente aquellos eventos con mayor repercusión en la generación de valor, lo que permitió centrar el análisis en los aspectos críticos del dominio.
 
-   - Tras Start‑with‑Value: solo eventos de alto impacto.
+      - **Después de Start-with-Simple:** se reorganizó el conjunto de eventos siguiendo un criterio cronológico básico, facilitando la comprensión del flujo secuencial de las interacciones.
 
-   - Tras Start‑with‑Simple: disposición cronológica.
+      - **Después de Look-for-Pivotal-Events:** se identificaron y agruparon los eventos clave que actúan como puntos de inflexión, sentando las bases para la delimitación de subdominios.
 
-   - Tras Look‑for‑Pivotal‑Events: primeros agrupamientos.
+      - **Versión final:** se plasmó la consolidación de los candidatos a contextos delimitados, incorporando agregados, políticas y responsabilidades, y validando la coherencia global del modelo.
 
-   - Versión final: consolidación de los candidatos a contextos.
+   * **Registro meticuloso**
 
-   * Registro meticuloso
+      Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes realizados, asegurando que el informe refleje con exactitud la evolución metodológica, y facilitando la inclusión de estas evidencias en la sección correspondiente.
 
-Cada imagen se anotó con fecha, hora y una breve descripción de los ajustes realizados, asegurando que el informe refleje con exactitud la evolución metodológica, y facilitando la inclusión de estas evidencias en la sección correspondiente.
-
-6. Candidatos a Bounded Context
+**6. Candidatos a Bounded Context**
 
 A continuación presentamos la sección de Candidatos a Bounded Contexts, donde listamos todos los contextos identificados en la sesión inicial (incluyendo aquellos que finalmente no se consolidaron) y la justificación de su inclusión o exclusión en el conjunto definitivo.
 
@@ -404,51 +408,66 @@ A continuación presentamos la sección de Candidatos a Bounded Contexts, donde 
 
 _Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech_
 
-| Contexto                    | Responsabilidades clave                                                                                                                                              | ¿Pasa al diseño final?                                                                                                                                                                                                                                                                                                                                                                     |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. Además, comparte modelo con “User Management” para evitar duplicación de lógica de usuario. |
-| Account Management          | CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                                                                 | **Consolidado:** Es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría. Al estar separado de IAM, mantiene independencia entre identidad y gestión de recursos de usuario.                                                                                                   |
-| Profile & Personal Data     | Almacenamiento/actualización de datos de perfil, preferencias, integración Geo API, normalización de direcciones                                                     | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos. Al abstraer el manejo de datos de contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación.                                                           |
-| Pot Management              | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica                                 | **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica.                                                                            |
-| Plant Management            | Catálogo de especies (PlantSpecies), rangos óptimos (pH, luminosidad, temperatura, salinidad), validación planta–maceta                                              | **Consolidado:** Permite evolucionar el modelo botánico de forma independiente al hardware. Separar la lógica de especies y rangos óptimos facilita incorporar nuevas plantas o proveedores de datos externos, y garantiza que la capa de riego no dependa de cambios en el catálogo ni en los esquemas de las APIs externas.                                                              |
-| Watering Management         | Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT | **Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Pot Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control.                                                                          |
-| Subscriptions & Payments    | Definición y gestión de planes (SubscriptionPlan), procesamiento de transacciones, gestión de facturas (Invoice), integración con pasarelas y webhooks.              | **Consolidado:** Soporta el modelo de negocio freemium/pago. Mantener un contexto dedicado a facturación garantiza que cambios en pasarelas, planes o flujos de cobro no afecten la lógica de usuario ni de riego. La separación da flexibilidad para adaptar políticas de precio y métodos de pago con mínima fricción.                                                                   |
-| System Monitoring & Control | Health checks, registro de logs críticos, generación/envío de alertas (push, email, SMS), dashboard operativo.                                                       | **Consolidado:** Integra supervisión y notificaciones en un único lugar, evitando fragmentar la lógica de alertas. Concentra la detección de fallos y la notificación al usuario o al equipo de operaciones, garantizando coherencia en umbrales y canales de comunicación, y favoreciendo la medición de uptime.                                                                          |
-| Data Insights & Reporting   | Ingesta, normalización y almacenamiento de SensorRecord; procesamiento batch/stream; dashboards                                                                      | **Consolidado:** Proporciona visibilidad de operación y resultados. Mantenerlo separado de la capa de control permite escalar pipelines de datos y ajustar retención sin impactar los servicios transaccionales, favoreciendo la adopción de nuevas herramientas de analítica.                                                                                                             |
-| Caring Intelligence         | Motor de recomendaciones, generación de Recommendation, reportes personalizados (ReportTemplate), aprendizaje continuo.                                              | **Consolidado:** Corazón del valor añadido de Macetech. Al separar el procesamiento de la ingesta de datos, se posibilita iterar en modelos de reglas de negocio sin afectar flujos de riego ni analítica básica, y se facilita la experimentación y el versionado de algoritmos.                                                                                                          |
-| Notifying System            | Envío y gestión de notificaciones genéricas sin información adicional o relacionada a recomendaciones o alertas                                                      | **Excluido:** Su responsabilidad acotada (solo envíos) carecía de un modelo de datos robusto y se solapaba con alertas críticas. Se integró dentro de System Monitoring & Control para centralizar tanto la supervisión como los canales de comunicación y evitar duplicación de lógica.                                                                                                   |
-| Critical Alert System       | Detección y disparo de alertas críticas según umbrales muy concretos para las métricas de las plantas                                                                | **Excluido:** Solapaba responsabilidades con el contexto de monitoreo general y carecía de un dominio propio (no gestionaba datos ni reglas de negocio distintos). Su funcionalidad se migró a System Monitoring & Control, que unifica alertas de todo tipo.                                                                                                                              |
-| AI Service                  | Servicio genérico de IA para procesamiento de datos sin enfoque claro en las recomendaciones de cada planta y las alertas no definidas                               | **Excluido:** Era excesivamente genérico y no alineado con casos de uso concretos o con los propios ideales del proyecto. Se reemplazó por integraciones enfocadas: Plant Management usa Plant API y Caring Intelligence alberga la lógica de recomendaciones y aprendizaje automático plenamente contextualizadas.                                                                        |
-| SensorState                 | Gestión de estados físicos del sensor (calibración, fallos, ciclos de vida) de forma remota.                                                                         | **Excluido:** La complejidad de manejar calibraciones y ciclos de vida requería un dominio especializado de ingeniería de hardware. Decidimos evitar la complejidad de este Bounded Context para no perder nuestro enfoque en el software y el funcionamiento del propio sistema IoT.                                                                                                      |
+| Contexto    | Responsabilidades clave    | ¿Pasa al diseño  |
+| ---------- | -----------| -------------------- |
+| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles. CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. También es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría.   |
+| Profile and Preferences    | Almacenamiento/actualización de datos de perfil, preferencias del usuario, integración Geo API, y normalización de direcciones del usuario  | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos dentro de la solución. Al abstraer el manejo de datos de perfil, contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. Esto involucra también preferencias de notificaciones, apariencia de la aplicación, etc. |
+| Asset & Resource Management | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica de los datos obtenidos | Este componente constituye la base de la capa IoT, ya que permite registrar las macetas junto con sus parámetros iniciales. Centralizar en este punto la configuración posibilita desacoplar la lógica de los sensores de la lógica del resto de la aplicación, lo que a su vez favorece la extensibilidad del sistema. De este modo, se pueden incorporar nuevos tipos de dispositivos sin generar impactos en los módulos de control ni en los procesos analíticos, asegurando una arquitectura más flexible y escalable.  |
+| Service Design and Planning | Catálogo de especies de plantas junto con sus rangos óptimos de pH, luminosidad, temperatura y salinidad, así como la validación de la correspondencia planta–maceta. Engloba el diseño y la planificación del servicio y de sus funcionalidades, desde la selección de la especie hasta la configuración de sus parámetros.  | **Consolidado:** Este enfoque posibilita la evolución del modelo botánico de manera autónoma respecto al hardware subyacente. Al aislar la lógica del servicio de las especies y sus rangos óptimos, se facilita la incorporación de nuevas variedades vegetales o la integración de proveedores de datos externos, sin que ello afecte a otras capas. De este modo, se mantiene la robustez y la coherencia arquitectónica del sistema. |
+| Subscriptions & Payments    | Definición y gestión de los planes de suscripción, del procesamiento seguro de las transacciones y de la administración integral de las facturas, así como de la integración con pasarelas de pago y webhooks con la API externa de Stripe. De este modo, se garantiza la trazabilidad de los cobros y la coherencia en la facturación..  | **Consolidado:** Este contexto soporta tanto el modelo de negocio freemium como las suscripciones de pago. Al mantener un dominio dedicado exclusivamente a la facturación, se aísla cualquier cambio en las pasarelas de pago, en los planes tarifarios o en los flujos de cobro, evitando impactos en la lógica de usuario o en los sistemas físicos. Esta separación otorga la flexibilidad necesaria para ajustar políticas de precios y métodos de pago con el mínimo esfuerzo y sin fricciones entre módulos.  |
+| Service Operation and Monitoring | Agrupa las funciones de verificación de estado (health checks), registro de logs críticos y generación y envío de alertas (push y e-mail), así como la visualización de un dashboard operativo. Además, ejecuta las operaciones de la maceta, incluyendo riego, notificaciones y recomendacionesm y supervisa el estado de la planta mediante la interacción de sensores y actuadores, integrando tanto la aplicación embebida (embedded app) como la de borde (edge app). | **Consolidado:** Este contexto centraliza la supervisión y la gestión de alertas en un único módulo, evitando la fragmentación de la lógica de notificaciones. Al consolidar la detección de fallos y su envío al usuario, se asegura la coherencia en los umbrales y en los canales de comunicación, además de facilitar la medición y optimización del uptime. Este componente constituye el núcleo del valor añadido de Macetech. Asimismo, al desacoplar el procesamiento de la ingesta de datos de las reglas de negocio, se posibilita la iteración continua en los modelos de decisión sin afectar los flujos de riego ni la analítica básica, favoreciendo la experimentación y el versionado de algoritmos. |
+| Data Analytics   | Este módulo gestiona la ingesta, normalización y almacenamiento de los registros de sensores (SensorRecord), soporta tanto el procesamiento por lotes (batch) como en tiempo real (streaming) y provee dashboards analíticos para la visualización de métricas y tendencias relevantes.| **Consolidado:** Este módulo ofrece una visibilidad completa de las operaciones y sus resultados. Al aislarlo de la capa de control, se posibilita la escalabilidad de los pipelines de datos y la configuración de políticas de retención sin afectar los servicios transaccionales, lo que facilita la incorporación de nuevas herramientas de análisis.  |
+| Caring Intelligence         | Este módulo integra un motor de recomendaciones que crea entidades Recommendation, soporta la generación de informes personalizados mediante plantillas (ReportTemplate) y emplea aprendizaje continuo para mejorar sus sugerencias de forma progresiva. | **Excluido:** En lugar de contar con un bounded context independiente para el motor de recomendaciones, se ha integrado completamente dentro del contexto de Service Operation and Monitoring. De este modo, las funciones de recomendación comparten la misma canalización de datos en tiempo real y los mecanismos de supervisión de dispositivos edge y embedded. Esta unificación reduce la latencia de la información y garantiza una única fuente para todas las reglas de negocio, facilitando al mismo tiempo el despliegue, la monitorización de desempeño y la iteración ágil de algoritmos sin impactar los flujos de riego ni los servicios de control. |
+| Watering Management         | El motor de decisión de riego integra el análisis de los datos de los sensores (SensorData) y la configuración de la maceta (PotConfiguration) para generar automáticamente los trabajos de riego (IrrigationJob), gestionar posibles excepciones y coordinar su ejecución con la capa IoT. | **Excluido:** En lugar de mantener un bounded context independiente para el riego, esta responsabilidad se ha trasladado al nuevo contexto Service Operation and Monitoring. De este modo, las funciones de control físico, supervisión y excepción se agrupan junto con el resto de operaciones IoT, mejorando la cohesión y la claridad de la arquitectura. Asimismo, se ha prescindido de la planificación de riego tradicional, dado que el sistema opera exclusivamente en función de lecturas en tiempo real de los sensores, lo que simplifica el flujo de datos y evita duplicidades en la lógica de control. |
+| Notifying System            | Este módulo se encarga del envío y la gestión de notificaciones genéricas, sin incluir información adicional ni vinculación con recomendaciones o alertas específicas. | **Excluido:** Su ámbito limitado, centrado exclusivamente en el envío de notificaciones genéricas, carecía de un modelo de datos sólido y presentaba solapamientos con las alertas críticas. Por ello, se ha integrado dentro del contexto de Service Operation and Monitoring, centralizando la supervisión y los canales de comunicación para eliminar la duplicación de lógica y reforzar la consistencia operativa. |
+| Critical Alert System       | Se encarga de detectar y disparar alertas críticas basadas en umbrales específicos para las métricas de las plantas, garantizando una respuesta inmediata ante cualquier desviación que pueda comprometer su salud. | **Excluido:** Este componente duplicaba responsabilidades con el contexto de supervisión general y carecía de un modelo de datos y reglas propio. Por ello, su lógica se consolidó en «Service Operation and Monitoring», que centraliza y armoniza todas las alertas, eliminando redundancias y asegurando una única fuente de verdad. |
+| AI Service | Servicio de inteligencia artificial orientado al procesamiento de datos, pero sin un enfoque claro en generar recomendaciones personalizadas para cada planta ni en la definición precisa de alertas, lo que limitaba su aplicabilidad directa dentro del flujo operativo. | **Excluido:** Este módulo resultaba excesivamente genérico y desalineado tanto de los casos de uso concretos como de los objetivos del proyecto. Se reemplazó por integraciones más focalizadas: la gestión de plantas recae ahora sobre la Plant API dentro del contexto de Service Design and Planning, mientras que la lógica de recomendaciones y el aprendizaje automático se integra por completo en Service Operation and Monitoring, asegurando un procesamiento de datos contextualizado, coherente y alineado con las necesidades operativas. |
+| SensorState | Se encarga de la gestión remota del ciclo de vida y estado físico de los sensores, incluyendo calibración, detección de fallos y mantenimiento preventivo, para garantizar su operatividad continua y fiabilidad. | **Excluido:** La gestión remota de calibraciones, fallos y ciclos de vida de los sensores implicaba un dominio especializado en ingeniería de hardware que excedía el alcance principal del proyecto. Por ello, se optó por excluir este bounded context y conservar el foco en el desarrollo del software y la operatividad del sistema IoT. |
 
-7. Bounded Contexts finales
+**7. Bounded Contexts finales**
 
-Como resultado de la sesión de Candidate Context Discovery y con base en los eventos pivotal identificados, se definieron y refinaron los siguientes diez Bounded Contexts ante todos los candidatos iniciales. Cada uno incluye sus responsabilidades principales, lenguaje ubicuo y contratos de integración.
+Como resultado de la sesión de Candidate Context Discovery y tras identificar los eventos cruciales (pivotal events), se definieron y refinaron siete Bounded Contexts a partir de los candidatos iniciales. Para cada uno se establecieron sus responsabilidades principales, su lenguaje ubicuo y los contratos de integración, garantizando así una delimitación clara y coherente entre dominios.
 
 ###### Tabla 16
 
 _Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech_
 
-| Contexto                           | Responsabilidades clave                                                                                                                                                                                                                                                                                     | Ubiquitous Language                                |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --- |
-| **1. IAM**                         | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles                                                                              | User, Credentials, Session, Token, 2FA             |
-| **2. Account Management**          | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas <br> - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br> - Validación de datos de contacto y cumplimiento de políticas de seguridad                                                       | User, PasswordRecoveryToken, AccountStatus         |
-| **3. Profile & Personal Data**     | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br> - Gestión de preferencias de usuario (idioma, notificaciones) <br> - Integración con **Geo API** para catálogo de países y ciudades <br> - Normalización y validación de direcciones                                | Profile, Address, PhoneNumber, Preference, Country |     |
-| **4. Pot Management**              | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br> - Gestión de metadatos (nombre, identificador único, etiquetas) <br> - Persistencia de configuraciones históricas para auditoría                                         | Pot, PotConfiguration, Threshold                   |
-| **5. Plant Management**            | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br> - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies                         | PlantSpecies, OptimalRange, Compatibility          |     |
-| **6. Watering Management**         | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos) <br> - Coordinación con servicios de control de dispositivos IoT | IrrigationJob, ValveCommand, SensorData            |     |
-| **7. Subscriptions & Payments**    | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br> - Gestión de **Invoice** y seguimiento de estado de pago <br> - Integración con pasarelas externas y webhooks                                                                         | SubscriptionPlan, Invoice, PaymentTransaction      |
-| **8. System Monitoring & Control** | - Supervisión del estado de servicios y componentes (`health checks`) <br> - Registro y almacenamiento de logs críticos <br> - Generación y envío de alertas (push, email, SMS) ante umbrales o fallos <br> - Dashboard operativo para visualización de métricas de disponibilidad                          | SystemHealth, Alert, NotificationChannel           |
-| **9. Data Insights & Reporting**   | - Ingesta, normalización y almacenamiento de **SensorRecord** <br> - Procesamiento batch/stream para generación de métricas agregadas <br> - Exposición de dashboards y endpoints de consulta <br> - Exportación de datos a formatos CSV/JSON para análisis externo                                         | SensorRecord, InsightReport, Dashboard             |
-| **10. Caring Intelligence**        | - Motor de recomendación basado en reglas y modelos ML/IA <br> - Generación de **Recommendation** y mapeo a patrones de usuario <br> - Creación de reportes personalizados (**ReportTemplate**) <br> - Aprendizaje continuo a partir de retroalimentación del usuario                                       | Recommendation, ReportTemplate, Rule, Feedback     |
+| Contexto | Responsabilidades clave | Ubiquitous Language  |
+| ---------| ------------| -------- |
+| **1. IAM**                         | **- Autenticación de usuarios:** gestión de inicio y cierre de sesión, con control seguro de las credenciales. <br>**- Emisión y validación de tokens:** generación de JSON Web Tokens (JWT) y tokens de refresco para mantener sesiones seguras y persistentes. <br> **- Autenticación de dos factores (2FA):** envío y verificación de códigos para reforzar la seguridad de acceso. <br> **- Gestión de permisos y roles:** definición, asignación y verificación de privilegios de usuario según políticas establecidas. <br> **- Registro y administración de cuentas:** creación de usuarios, recuperación de contraseñas y mantenimiento de perfiles. | **- User:** Representa a la persona real o entidad que interactúa con el sistema, identificada de forma única por un conjunto de atributos. <br> **- Credentials** Conjunto de datos secretos que el usuario emplea para demostrar su identidad.<br> **- Session:** Período de interacción autorizado entre un usuario y el sistema, iniciado tras la autenticación y mantenido mediante un token válido hasta que el usuario cierre sesión o expire. <br> **- Access Token:** Token de corta duración que certifica las credenciales del usuario y autoriza el acceso a recursos protegidos durante la sesión activa. <br> **- Refresh Token:** Token de mayor duración que permite obtener nuevos Access Tokens sin necesidad de que el usuario vuelva a autenticarse con sus credenciales. <br> **-Two‑Factor Authentication (2FA):** Mecanismo de seguridad adicional que exige un segundo factor de verificación (p. ej., código enviado por SMS o app de autenticación) tras la introducción de las credenciales. |
+| **2. Profile & Personal Data**     | - **Gestión de perfil de usuario:** almacenamiento y actualización de datos personales (nombre, teléfono, dirección) con controles de integridad. <br> - **Configuración de preferencias:** personalización de idioma y modelo de notificaciones a recibir. <br> **- Integración con Geo API:** acceso a catálogos de países y ciudades para facilitar la selección y estandarización de ubicaciones. <br> - **Normalización y validación de direcciones:** aplicación de reglas y formatos estándar para asegurar la consistencia de los datos de ubicación. | - **User:** Representa al individuo registrado en el sistema, con una identidad única vinculada a su perfil y credenciales de acceso. <br> - **Profile:** Conjunto de datos personales y configuraciones asociadas a un usuario, incluyendo nombre, dirección, número de teléfono y preferencias. <br> - **Address:** Información estructurada sobre la ubicación física del usuario (país, ciudad, calle, código postal), sujeta a validación y normalización. <br> - **PhoneNumber:** Número de contacto del usuario, almacenado en formato internacional estandarizado y utilizado para verificación o notificaciones. <br> - **Preference:** Opciones personalizables elegidas por el usuario, como idioma, configuración de notificaciones, y tema de interfaz (modo claro/oscuro). <br> -**PasswordRecoveryToken:** Token temporal generado para permitir la recuperación segura de una cuenta en caso de pérdida de contraseña. - **GeoAPI:** Servicio externo que proporciona catálogos actualizados de países y ciudades para facilitar la selección geográfica y la validación de direcciones.      |
+| **3. Asset & Resource Management**              | - **Gestión de macetas (Pot):** operaciones de creación, lectura, actualización y eliminación de instancias de Pot, garantizando la integridad y consistencia de los datos. <br> - **Configuración de riego:** definición de parámetros clave, como frecuencia, volumen y umbrales de activación, para adaptar el riego a las necesidades de cada planta. <br>- **Administración de metadatos:** asignación de atributos descriptivos (nombre, identificador único y etiquetas) que facilitan la organización, búsqueda y categorización de las macetas. <br> -**Registro histórico de configuraciones:** persistencia de todos los ajustes realizados en cada maceta, permitiendo auditorías y análisis de evolución a lo largo del tiempo. | - **Pot:** Representa la maceta física asociada a una planta, identificada por un ID único y un conjunto de atributos básicos.<br> -**PotConfiguration:** Conjunto de parámetros de riego y operación asignados a una maceta determinada (frecuencia, volumen, umbrales), que define cómo debe actuarse sobre ella. <br> -**Threshold:** Valor límite que, al ser superado por una medida (humedad, temperatura, etc.), desencadena una acción automática de riego o alerta. <br> -**Metadata:** Atributos descriptivos de la maceta, como nombre, etiquetas, fecha de creación, destinados a facilitar la búsqueda y categorización. <br> - **HistoricalConfig:** Registro inmutable de las configuraciones previas de la maceta, utilizado para auditoría y análisis de evolución en el tiempo. <br> -**SensorBinding:** Asociación de la maceta con uno o varios sensores específicos, que permite la ingestión de datos ambientales para toma de decisiones. <br> -**IrrigationJob:** Tarea disparada en tiempo real que ejecuta el acto de riego sobre la maceta, según su PotConfiguration y Thresholds.                   |
+| **4. Service Design and Planning**  | -**Catálogo de especies vegetales (PlantSpecies):** Incluye los atributos técnicos de cada planta y sus rangos óptimos de pH, luminosidad, humedad, temperatura y salinidad, garantizando una base de datos exhaustiva para el cuidado botánico. <br> -**Validación de compatibilidad planta–maceta:** Comprueba que las características de la planta seleccionada se ajusten a las dimensiones y capacidades de la maceta, evitando errores de configuración y optimizando el desarrollo vegetal. <br> -**Sincronización con APIs externas:** Ejecuta actualizaciones periódicas para incorporar nuevas especies y refrescar parámetros existentes, asegurando que el catálogo se mantenga alineado con la información más reciente del sector. <br> -**Diseño y planificación del servicio:** Abarca desde la selección de la especie hasta la definición de sus parámetros personalizados,  incluyendo frecuencia y volumen de riego, y la programación de los horarios de riego, proporcionando un flujo de trabajo completo y coherente para la gestión automatizada de cada planta. | - **PlantSpecies:** Entidad que representa una especie vegetal, con atributos como nombre científico, nombre común y clasificación botánica. <br> - **OptimalRange:** Conjunto de valores óptimos para indicadores clave (pH, luminosidad, temperatura, salinidad, humedad) que definen el entorno ideal de crecimiento de una especie. <br> - **Compatibility:** Relación que valida la adecuación entre una especie y una maceta o ambiente determinado, asegurando que las condiciones físicas y de espacio sean apropiadas. <br> - **PlantAPI:** Servicio interno responsable de proporcionar catálogos de especies y actualizar parámetros botánicos de forma periódica. <br> - **PlantParameter:** Conjunto de parámetros personalizados vinculados a una instancia de PlantSpecies (por ejemplo, ajustes finos de frecuencia y volumen de riego). |
+| **5. Service Operation and Monitoring** | -**Motor de decisión de riego:** analiza en tiempo real los datos de los sensores (SensorData) junto con la configuración de la maceta (PotConfiguration), generando automáticamente los trabajos de riego (IrrigationJob) y disparando las válvulas correspondientes. <br> - **Supervisión continua:** a través de health checks, registro y almacenamiento de logs críticos, envía datos de métricas de disponibilidad y rendimiento. <br> -**Sistema de alertas:** envía notificaciones (push, correo electrónico) ante umbrales o errores, garantizando respuestas inmediatas a incidentes. <br> -**Monitoreo de dispositivo embebido y edge:** integra la aplicación embebida y edge para garantizar la trazabilidad de cada componente y operación de la maceta (riego, alertas, recomendaciones). <br> -**Motor de recomendaciones:** sistema basado en reglas sobre los sensores de Pot y los datos obtenidos con PlantAPI, que crea entidades Recommendation mapeadas a patrones de uso y genera reportes personalizados (ReportTemplate). | - **IrrigationJob:** Tarea disparada en tiempo real que ejecuta el riego de una maceta, a partir de la configuración y los datos sensoriales. <br> - **ValveCommand:** Instrucción enviada al actuador de riego (válvula) para abrir o cerrar el flujo de agua según el plan de riego. <br> -**SensorData:** Lectura cruda proveniente de los sensores (humedad, temperatura, luminosidad, pH, etc.) asociada a una maceta en un instante de tiempo. <br> -**Alert:** Evento generado cuando una métrica o condición supera un umbral crítico, disparando un flujo de notificación y posibles acciones de mitigación. <br> -**NotificationChannel:** Medio utilizado para enviar alertas o avisos al usuario o al equipo de operaciones (push, correo electrónico). <br> -**Recommendation:** Sugerencia generada por el sistema de recomendaciones que propone acciones de cuidado o ajustes personalizados para la planta. <br> -**ReportTemplate:** Estructura predefinida que define el formato y contenido de los informes personalizados que se entregan al usuario. |
+| **6. Subscriptions & Payments**    | **-Definición y gestión de planes de suscripción (SubscriptionPlan):** creación y parametrización de modalidades (freemium, premium mensual o anual), con reglas de acceso y beneficios asociados. <br> - **Procesamiento de pagos:** manejo de transacciones periódicas y cargos únicos, garantizando la fiabilidad y la seguridad en cada operación. <br> - **Administración de facturación (Invoice):** generación automática de facturas, seguimiento de su estado (pendiente, pagada, vencida) y emisión de recordatorios ante impagos. <br> -**Integración con pasarelas de pago y webhooks:** conexión con el proveedor externo de Stripe para la ejecución de pagos y recepción de notificaciones en tiempo real sobre eventos de cobro. | -**SubscriptionPlan:** Modelo que describe las modalidades de suscripción (freemium, premium mensual o anual), con sus características, precios y reglas de renovación. <br> -**Invoice:** Documento que detalla los cargos generados para un usuario, incluyendo desgloses de precio y fechas de vencimiento, así como su estado de pago. <br> -**PaymentTransaction:** Registro de cada intento de cobro o pago (recurrente o único), con información sobre el resultado y cualquier código de error. <br> -**Stripe API (PaymentGateway):** Servicio externo encargado de procesar los pagos, al que se envían las transacciones para su autorización y liquidación. <br> -**WebhookEvent:** Mensaje entrante desde la pasarela de pago que notifica al sistema sobre cambios en el estado de una transacción (aprobada, rechazada, reembolsada). <br> -**BillingCycle:** Periodo de facturación asociado a un SubscriptionPlan, que determina la cadencia de generación de Invoice y la programación de PaymentTransaction. |
+| **7. Data Analytics**   | -**Ingesta, normalización y almacenamiento de registros de sensores (SensorRecord):** captura masiva de datos crudos, aplicación de procesos de limpieza y estructuración, y persistencia segura en el repositorio de datos. <br> -**Procesamiento batch y en streaming:** cálculo de métricas agregadas en lotes programados y en tiempo real, garantizando la disponibilidad continua de indicadores. <br> -**Exposición de dashboards y endpoints de consulta:** provisión de interfaces gráficas y APIs REST para la visualización interactiva de tendencias y la obtención directa de datos. - **Interpretación de KPIs:** elaboración de indicadores clave de rendimiento derivados de los datos sensoriales, facilitando la toma de decisiones operativas y estratégicas.                                        | -**SensorRecord:** Registro individual de datos capturados por un sensor (humedad, temperatura, luminosidad, pH, etc.), almacenado con su marca de tiempo y metadatos de origen. <br> -**InsightReport:** Documento generado a partir del análisis de los datos sensoriales y KPIs, que presenta conclusiones, tendencias y recomendaciones operativas o estratégicas. <br> -**Dashboard:** Interfaz gráfica interactiva que muestra visualizaciones en tiempo real o históricas de métricas clave, permitiendo filtrar y profundizar en la información. <br> -**BatchProcess:** Flujo de trabajo periódico que procesa grandes volúmenes de SensorRecord para calcular métricas agregadas y generar nuevos InsightReport. <br> -**KPI (Key Performance Indicator):** Métrica derivada de los datos sensoriales que cuantifica el rendimiento o estado de las macetas y plantas, usada para la toma de decisiones.
+  |
 
-#### 4.1.1.2 Domain Message Flows Modeling.
+#### 4.1.1.2 Domain Message Flows Modeling
 
-<img src="/assets/img/capitulo-4/message-flows/message-flow-1.jpg" alt="MockUp" width="1000" height="500"> <br>
-<img src="/assets/img/capitulo-4/message-flows/message-flow-2.jpg" alt="MockUp" width="1000" height="500"> <br>
-<img src="/assets/img/capitulo-4/message-flows/message-flow-3.jpg" alt="MockUp" width="1000" height="500"> <br>
+En esta sección, el equipo presenta y documenta de forma detallada el proceso seguido para ilustrar la colaboración entre los distintos bounded contexts al abordar los casos de uso planteados por los usuarios del sistema. A través de la aplicación de la técnica de visualización Domain Storytelling, se evidenciará cada interacción y flujo de información entre los contextos, apoyándose en capturas de pantalla que muestran los diagramas elaborados durante el ejercicio. Este enfoque colaborativo permite validar y ajustar las fronteras de los dominios, garantizando que el diseño del software refleje fielmente las necesidades del negocio y del usuario.
 
-#### 4.1.1.3 Bounded Context Canvases.
+Domain Storytelling es una técnica visual y ágil que utiliza historias narradas y representadas gráficamente para describir cómo los distintos actores y componentes del sistema interactúan en situaciones reales. Cada flujo se descompone en pasos secuenciales que combinan narración textual y símbolos estandarizados (actores, mensajes y artefactos), facilitando la comprensión colectiva y la detección temprana de inconsistencias o vacíos en el modelo de dominio (Hofer & Schwentner, 2021).
+
+###### Figura 50
+
+_Domain Storytelling del bounded context de Subscriptions and Payments_
+
+<img src="/assets/img/capitulo-4/message-flows/message-flow-1.jpg" alt="MockUp" width="1000" height="500">
+
+###### Figura 51
+
+*Domain Storytelling de ...*
+
+<img src="/assets/img/capitulo-4/message-flows/message-flow-2.jpg" alt="MockUp" width="1000" height="500"> 
+
+###### Figura 52
+
+_Domain Storytelling de ..._
+
+<img src="/assets/img/capitulo-4/message-flows/message-flow-3.jpg" alt="MockUp" width="1000" height="500"> <
+
+#### 4.1.1.3 Bounded Context Canvases
 
 **IDENTITY AND ACCES MANAGEMENT**
 <img src="/assets/img/capitulo-4/bounded-context-iam/Canvas.jpg" alt="MockUp" width="1000" height="500"> <br>
@@ -456,9 +475,9 @@ _Lista de Bounded Context finales identificados en el proceso de EventStorming d
 **Profile and personal data**
 <img src="/assets/img/capitulo-4/bounded-context-profile-and-personal-data/Canvas2.jpg" alt="MockUp" width="1000" height="500"> <br>
 
-### 4.1.2. Context Mapping.
+### 4.1.2. Context Mapping
 
-### 4.1.3. Software Architecture.
+### 4.1.3. Software Architecture
 
 La visión general de la arquitectura describe la estructura fundamental de un sistema, abarcando sus componentes principales y la interacción entre ellos. En el contexto de desarrollo de aplicaciones móviles, una arquitectura sólida es esencial para garantizar que la aplicación sea escalable, segura y eficiente. Este enfoque permite una implementación ordenada, donde cada parte del sistema tiene una responsabilidad clara, y facilita la integración de nuevas funcionalidades o la modificación de las existentes sin afectar la estabilidad general de la plataforma (Richards & Ford, 2021).
 
