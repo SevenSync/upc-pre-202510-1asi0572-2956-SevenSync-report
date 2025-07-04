@@ -16,14 +16,40 @@
     <strong>Producto:</strong> Macetech <br>
 </p>
     <h4>Relación de integrantes</h4>
-    <ul style="list-style-type: none; padding: 0;">
-        <li>u202218996 - Paredes Zapata, Luiggi Gianfranco</li>
-        <li>u20221C936 - Pescorán Angulo, Juan Fabritzzio</li>
-        <li>u202214234 - Mallma Quispe, Rubén Elías</li>
-        <li>u202213652 - Sanchez Zamora, Fabrizio Alessandro</li>
-        <li>u202210190 - Trigueros Chumacero, Flavio Eduardo</li>
-        <li>u202213143 - Yen Cerna, Lucio Heli </li>
-    </ul>
+    <table style="width:100%; text-align:left;">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>u202218996</td>
+          <td>Paredes Zapata, Luiggi Gianfranco</td>
+        </tr>
+        <tr>
+          <td>u20221C936</td>
+          <td>Pescorán Angulo, Juan Fabritzzio</td>
+        </tr>
+        <tr>
+          <td>u202214234</td>
+          <td>Mallma Quispe, Rubén Elías</td>
+        </tr>
+        <tr>
+          <td>u202213652</td>
+          <td>Sanchez Zamora, Fabrizio Alessandro</td>
+        </tr>
+        <tr>
+          <td>u202210190</td>
+          <td>Trigueros Chumacero, Flavio Eduardo</td>
+        </tr>
+        <tr>
+          <td>u202213143</td>
+          <td>Yen Cerna, Lucio Heli</td>
+        </tr>
+      </tbody>
+    </table>
     <p><strong>Junio 2025</strong></p>
 
 </div>
@@ -32,10 +58,11 @@
 
 # Registro de Versiones del Informe
 
-| Versión   | Fecha      | Autores                                                                                                                                                                                                         | Descripción de Modificación                                                                                                                                                          |
-| --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1.0 - TB1 | 27/4/25    | Paredes Zapata, Luiggi Gianfranco <br> Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega. Nota: 6.25                                        |
-| 2.0 - TP  | 16/05/2025 | Paredes Zapata, Luiggi Gianfranco <br> Pescorán Angulo, Juan Fabritzzio<br> Mallma Quispe, Rubén Elías<br> Sanchez Zamora, Fabrizio Alessandro<br> Trigueros Chumacero, Flavio Eduardo<br>Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75 |
+| Versión   | Fecha      | Autores                                                                                                                                                                                                                                                                    | Descripción de Modificación                                                                                                                                                                                                                                                                          |
+| --------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0 - TB1 | 27/4/25    | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega. Nota: 6.25                                                                                                                                                        |
+| 2.0 - TP  | 16/05/2025 | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75                                                                                                                 |
+| 3.0 - TB2 | 22/05/2025 | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Se realizaron correcciones y se incorporaron mejoras en los capítulos III, IV, V y VI, a partir del feedback brindado por el docente en el TP. El equipo aplicó los cambios necesarios en cada capítulo y se pudo completar parcialmente todo el alcance correspondiente a esta entrega.. Nota: 11,5 |
 
 ---
 

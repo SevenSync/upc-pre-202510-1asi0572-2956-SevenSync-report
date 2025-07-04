@@ -1625,8 +1625,7 @@ En la tabla comparativa de planes, no se señala claramente cuál es el plan act
 **Recomendación:**  
 Agregar una marca visual distintiva (etiqueta, color, ícono) que indique el plan activo en ambas vistas.
 
-**Evidencia visual:**  
-![P1](ruta/a/imagen1.png)
+**Evidencia visual:**
 
 ---
 
@@ -1641,8 +1640,7 @@ En la vista de precios mensuales, no existe una opción visible para volver o ex
 **Recomendación:**  
 Añadir un botón de navegación para volver a la página anterior o explorar los beneficios de otros planes.
 
-**Evidencia visual:**  
-![P2](ruta/a/imagen2.png)
+**Evidencia visual:**
 
 ---
 
@@ -1657,8 +1655,7 @@ El formulario de pago permite introducir datos sin mostrar validaciones en tiemp
 **Recomendación:**  
 Implementar validaciones inmediatas para campos como tarjeta, fecha de expiración y CVV, antes de permitir continuar.
 
-**Evidencia visual:**  
-![P3](ruta/a/imagen3.png)
+**Evidencia visual:**
 
 ---
 
