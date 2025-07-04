@@ -451,28 +451,30 @@ Domain Storytelling es una técnica visual y ágil que utiliza historias narrada
 
 ###### Figura 50
 
-_Domain Storytelling del bounded context de Subscriptions and Payments_
+_Domain Storytelling #1_
 
-<img src="/assets/img/capitulo-4/message-flows/message-flow-1.jpg" alt="MockUp" width="1000" height="500">
+<img src="/assets/img/capitulo-4/message-flows/message-flow-1.png" alt="MockUp">
 
 ###### Figura 51
 
-*Domain Storytelling de ...*
+_Domain Storytelling #2_
 
-<img src="/assets/img/capitulo-4/message-flows/message-flow-2.jpg" alt="MockUp" width="1000" height="500"> 
+<img src="/assets/img/capitulo-4/message-flows/message-flow-2.png" alt="MockUp" width="1175" height="475"> 
 
 ###### Figura 52
 
-_Domain Storytelling de ..._
+_Domain Storytelling #3_
 
-<img src="/assets/img/capitulo-4/message-flows/message-flow-3.jpg" alt="MockUp" width="1000" height="500"> <
+<img src="/assets/img/capitulo-4/message-flows/message-flow-3.png" alt="MockUp" width="1175" height="475"> <
 
 #### 4.1.1.3 Bounded Context Canvases
 
-**IDENTITY AND ACCES MANAGEMENT**
+**IDENTITY AND ACCES S MANAGEMENT**
+
 <img src="/assets/img/capitulo-4/bounded-context-iam/Canvas.jpg" alt="MockUp" width="1000" height="500"> <br>
 
 **Profile and personal data**
+
 <img src="/assets/img/capitulo-4/bounded-context-profile-and-personal-data/Canvas2.jpg" alt="MockUp" width="1000" height="500"> <br>
 
 ### 4.1.2. Context Mapping
