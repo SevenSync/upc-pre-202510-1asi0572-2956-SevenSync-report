@@ -1,91 +1,214 @@
 # Capítulo IV: Solution Software Design
 
-## 4.1. Strategic-Level Domain-Driven Design.
+En este capítulo describiremos en detalle el diseño de la solución software de Macetech, trazando desde la arquitectura general hasta los componentes y las interacciones que permiten la gestión inteligente de las macetas. Presentaremos el modelo de capas, incluyendo el servicio de adquisición y procesamiento de datos de los sensores IoT, la capa de negocio para la lógica de riego y análisis de estado de las plantas, y la capa de presentación en la aplicación móvil, así como los patrones de diseño y las tecnologías seleccionadas para garantizar escalabilidad, fiabilidad y seguridad. 
+
+Además, se detallarán los flujos de datos, las interfaces de programación (APIs) y los protocolos de comunicación con los dispositivos, junto con las consideraciones de usabilidad y experiencia de usuario que facilitarán un manejo intuitivo y eficiente de Macetech. Por último, se abordarán aspectos claves como la integración con servicios en la nube, el manejo de eventos en tiempo real y las estrategias de despliegue continuo que soportarán la evolución continua de la plataforma.
+
+## 4.1. Strategic-Level Domain-Driven Design
 
 Strategic Domain-Driven Design, o DDD estratégico es un enfoque arquitectónico que busca alinear la estructura del software con la lógica del negocio y la organización. Este enfoque es esencial para gestionar la complejidad en sistemas grandes y distribuidos, especialmente cuando múltiples equipos trabajan en diferentes partes del sistema.
 
-Según Eric Evans, quien introdujo el concepto de DDD en su libro Domain-Driven Design: Tackling Complexity in the Heart of Software, el enfoque estratégico se centra en definir límites claros dentro del dominio, conocidos como Bounded Contexts, y en establecer un lenguaje común, o Lenguaje Ubicuo, que facilite la comunicación entre desarrolladores y expertos del dominio.
+Según Khononov (2021), el diseño orientado al dominio enfatiza la creación de contextos delimitados ("bounded contexts") que actúan como fronteras explícitas para mantener la coherencia del modelo en cada subdominio, así como el establecimiento de un lenguaje ubicuo ("ubiquitous language") compartido entre los equipos técnicos y los expertos del negocio para asegurar una comunicación precisa y libre de ambigüedades (Khononov, 2021).
 
-Vaughn Vernon, en su obra Implementing Domain-Driven Design, amplía esta perspectiva al dividir el dominio en dos espacios: el espacio del problema y el espacio de la solución. El primero se enfoca en entender los problemas del negocio, mientras que el segundo aborda cómo resolverlos mediante soluciones técnicas adecuadas.
+Vernon (2016) propone una clara distinción entre dos espacios complementarios: el espacio del problema, dedicado a comprender en profundidad las necesidades y restricciones del negocio, y el espacio de la solución, enfocado en diseñar y aplicar patrones técnicos y arquitectónicos que respondan eficazmente a esos requerimientos. Esta división permite alinear la estrategia empresarial con las decisiones de diseño de software (Vernon, 2016).
 
 Para abordar las decisiones estratégicas en el diseño de software utilizando Domain-Driven Design (DDD), el equipo ha implementado un proceso estructurado que combina técnicas colaborativas y herramientas visuales. Este enfoque facilita la identificación de límites naturales dentro del dominio del negocio, conocidos como Bounded Contexts, y promueve una comprensión compartida entre todos los participantes.
 
-### 4.1.1. EventStorming.
+### 4.1.1. EventStorming
 
-En esta sección se documenta el proceso realizado mediante la técnica de EventStorming, con el propósito de obtener una comprensión compartida del dominio del problema y definir una primera aproximación al modelo del sistema. Esta técnica, introducida por Alberto Brandolini, permite identificar eventos clave del negocio de manera colaborativa entre expertos del dominio y el equipo técnico, y constituye una base sólida para aplicar Domain-Driven Design (DDD).
+En esta sección se describe el proceso llevado a cabo mediante la técnica de EventStorming para construir una visión compartida del dominio del problema y elaborar una primera versión del modelo del sistema. Siguiendo a Zimarev (2019), EventStorming consiste en un taller colaborativo en el que, a través de la identificación y secuenciación de eventos de negocio, expertos del dominio y miembros del equipo técnico pueden descubrir puntos críticos y dependencias ocultas dentro de procesos complejos (Zimarev, 2019). Además, Tune y Perrin (2024) resaltan cómo esta técnica no solo facilita la generación de requisitos claros, sino que también promueve la alineación socio-técnica al conectar las decisiones de arquitectura con la estrategia organizacional (Tune & Perrin, 2024).
 
-> “EventStorming is a workshop format for quickly exploring complex business domains. It is designed to bring together different stakeholders to collaboratively model business processes using domain events.” (Brandolini, 2013)
+Para ilustrar su alcance, Tune y Perrin definen EventStorming en términos prácticos:
 
-Como objetivos tuvimos: 
-- Identificar eventos relevantes que ocurren dentro del dominio.
+“El EventStorming es un taller dinámico que alinea a los distintos actores, tanto de negocio como técnicos, mediante la identificación de eventos de dominio, permitiendo desentrañar la complejidad del sistema y sentar las bases para un diseño coherente” (Tune & Perrin, 2024).
 
-- Establecer relaciones causales y temporales entre eventos.
+Como objetivos de la sesión de EventStorming planteamos:
 
-- Detectar procesos del negocio, comandos y actores implicados.
+- Reconocer y catalogar los eventos de dominio más significativos, definiendo con precisión su naturaleza y alcance.
+  
+- Mapear las dependencias causales y la secuencia temporal entre esos eventos, para visibilizar flujos y puntos de decisión críticos.
 
-- Servir como insumo para definir Bounded Contexts posteriormente.
+- Identificar los procesos de negocio subyacentes, así como los comandos que los activan y los actores responsables de cada acción.
 
-###### Desarrollo de la sesión
+- Generar un insumo estructurado que facilite la posterior delimitación de Bounded Contexts y sirva de base para la definición del modelo de dominio.
 
- <b>Fase 1: Recolección de Domain Events (Big Picture)</b>
+**Desarrollo de la sesión**
 
-En esta etapa inicial, cada participante propuso eventos profesionales del sistema utilizando notas adhesivas naranjas. Estos eventos representan hechos relevantes que ocurren en el negocio, expresados en pasado.
+**Fase 1: Recolección de Eventos de Dominio (Big Picture)**
+
+En esta etapa inicial, todos los participantes plasmaron en notas adhesivas los eventos más relevantes del sistema, redactados en pasado para enfatizar que son hechos consumados dentro del negocio. El objetivo fue generar una “fotografía” global de todos los sucesos críticos, sin filtrar o depurar, de modo que emergiera un panorama amplio de qué ocurre en el dominio.
+
+###### Figura 24
+*Primera fase del proceso de EventStorming de Macetech*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-1-collect-domain-events.jpg"></image>
 
-- Fase 2: Refinamiento de Domain Events
+**Fase 2: Refinamiento de Eventos de Dominio**
 
-En una segunda ronda colaborativa, se depuraron los eventos recolectados: se eliminaron duplicados, se aclararon ambigüedades y se reorganizaron cronológicamente. También se discutió la terminología para asegurar coherencia y precisión semántica.
+Con la visión global completada, el equipo realizó una segunda pasada colaborativa para:
+
+- Eliminar duplicados y consolidar sinónimos.
+
+- Aclarar conceptos ambiguos ajustando la redacción de cada evento.
+
+- Ordenar cronológicamente las notas para construir una línea de tiempo coherente.
+
+- Acordar una terminología común que garantizara consistencia semántica.
+
+###### Figura 25
+*Segunda fase del proceso de EventStorming de Macetech con la línea de tiempo y refinación de los eventos de dominio*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-timeline-and-refine-domain-events.jpg"></image>
+
+###### Figura 26
+*Segunda fase del proceso de EventStorming de Macetech con la recolección de eventos de dominio*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-1-collect-domain-events.jpg"></image>
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-2-2-collect-domain-events.jpg.jpg"></image>
 
-Fase 3: Rastrear las Causas: Durante esta fase, se analizaron los eventos para identificar sus causas. Se consideraron cuatro tipos principales de disparadores:
-- Acciones de usuarios (comandos, actores, vistas),
-- Sistemas externos,
-- Procesos de negocio (por ejemplo, condiciones temporales),
-- Otros eventos del dominio (reacciones automáticas).
+**Fase 3: Identificación de disparadores y causas**
+
+A continuación, se analizó cada evento para descubrir qué lo había provocado. Para ello, clasificamos sus orígenes en cuatro categorías principales:
+
+- Acciones de usuario (comandos iniciados desde la interfaz, decisiones de actores).
+
+- Sistemas externos (integraciones o datos entrantes).
+
+- Procesos internos de negocio (temporizadores, condiciones de rutina).
+
+- Reacciones automatizadas (políticas, reglas de negocio que generan eventos secundarios).
+
+De este modo, obtuvimos un mapa de dependencias causales que revela no solo qué sucede, sino por qué y cómo se interconectan los distintos componentes del sistema.
 
 Para esta sección, se necesitará identificar el color de los post-its de Miro para mantener el orden. Se usará esta convención:
+
+###### Figura 27
+*Convención de color de post-its utilizados en la tercera fase del proceso de EventStorming de Macetech.*
  
  <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-summary.jpg"></image>
 
+ ###### Figura 28
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores.*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes.jpg"></image>
 
+###### Figura 29
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en alertas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-alerts.jpg"></image>
+
+###### Figura 30
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la obtención de datos*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
+
+###### Figura 31
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Administración de Identidad y Acceso*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-iam.jpg"></image>
+
+###### Figura 32
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Notificaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
-<image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-notifications.jpg"></image>
+
+###### Figura 33
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Plantas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-plant-management.jpg"></image>
+
+###### Figura 34
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en la Gestión de Macetas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-pot-management.jpg"></image>
+
+###### Figura 35
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Recomendaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-recommendations.jpg"></image>
+
+###### Figura 36
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en los Reportes*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-reports.jpg"></image>
+
+###### Figura 37
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en las Suscripciones y Membresías*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-subscriptions.jpg"></image>
+
+###### Figura 38
+*Tercera fase del proceso de EventStorming de Macetech con el rastreo de causas y disparadores en el Sistema de Riego*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-watering.jpg"></image>
 
-Finalmente, se reorganizaron los eventos en torno a los agregados identificados. Esto permitió visualizar relaciones clave como:
-- Qué comandos disparan qué eventos,
-- Qué usuarios ejecutan qué comandos,
-- Qué eventos activan políticas o modelos de lectura,
+Finalmente, agrupamos los eventos en torno a los agregados del dominio —elementos cohesivos de nuestro modelo— para visualizar:
+
+- Qué comandos disparan cada evento.
+- Qué roles o actores están involucrados en esos comandos.
+- Qué eventos activan políticas (procesos automáticos) y qué crean modelos de lectura.
+
+Este último paso transforma el Big Picture en un modelo estructurado, orientado a la definición de Bounded Contexts y al diseño detallado de nuestro sistema.
+
+###### Figura 39
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento*
 
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them.jpg"></image>
 
+###### Figura 40
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Alertas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-alerts.jpg"></image>
+
+###### Figura 41
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Ingreso de Datos*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-3-track-causes-data-ingestion.jpg"></image>
+
+###### Figura 42
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Administración de Identidad y Acceso*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-iam.jpg"></image>
+
+###### Figura 43
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Notificaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-notifications.jpg"></image>
+
+###### Figura 44
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Plantas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-plant.jpg"></image>
+
+###### Figura 45
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en la Gestión de Macetas*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-pot.jpg"></image>
+
+###### Figura 46
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Recomendaciones*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-recom.jpg"></image>
+
+###### Figura 47
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en los Reportes*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-reports.jpg"></image>
+
+###### Figura 48
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en las Suscripciones y Membresías*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-subscriptions.jpg"></image>
+
+###### Figura 49
+*Cuarta fase del proceso de EventStorming de Macetech con la búsqueda de aggregates y su re-ordenamiento en el Sistema de Riego*
+
 <image src="../assets/img/capitulo-4/event-storming/iot-solution-software-design-event-storming-step-4-find-aggregates-&-re-sort-them-watering.jpg"></image>
 
-<a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Visualizar Miro</a>
+Mediante el siguiente enlace podrá acceder y explorar en detalle la pizarra de Miro donde se desarrolló el modelo de EventStorming, organizada por fases e ilustrada con una leyenda explicativa que facilita su revisión:
+
+<a href="https://miro.com/app/board/uXjVI7RMpGc=/?share_link_id=692821022758">Pizarra Miro del proceso de EventStorming</a>
 
 #### 4.1.1.1 Candidate Context Discovery
 
