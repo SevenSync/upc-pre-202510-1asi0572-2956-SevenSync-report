@@ -323,19 +323,13 @@
                 <td>4.6</td>
                 <td>05/07/2025</td>
                 <td>Juan Pescorán</td>
-                <td>Actualización de los diagramas C4.</td>
+                <td>Actualización de los diagramas C4. Documentación del Bounded Context Canvas y 3 Domain Message Flows.</td>
             </tr>
              <tr>
                 <td>4.7</td>
-                <td>04/07/2025</td>
+                <td>05/07/2025</td>
                 <td>Lucio Yen</td>
-                <td>Implementación parcial de diagrama de clases en PlantUML.</td>
-            </tr>
-            <tr>
-                <td>4.8</td>
-                <td>04/07/2025</td>
-                <td>Juan Pescorán</td>
-                <td>Documentación del Bounded Context Canvas y 3 Domain Message Flows.</td>
+                <td>Implementación parcial de diagrama de clases en PlantUML. Bounded context canvas terminado. Bibliografía Actualizada. Sprints Documentados.</td>
             </tr>
         </tbody>
     </table>

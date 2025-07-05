@@ -295,47 +295,52 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 ### Scenario: Account Creation
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/0.png"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/0.png" width="650px" alt="Account Creation Domain Message Flow"></image>
 
 ### Scenario: Create Profile On First Sign In
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/1.png"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/1.png" width="650px" alt="Create Profile On First Sign In Domain Message Flow"></image>
 
 ### Scenario: Pot Linking With User
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png" width="650px" alt="Pot Linking With User
+ Domain Message Flow"></image>
 
 ### Scenario: Assign Plant to Linked Pot
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png" width="650px" alt="Assign Plant to Linked Pot
+ Domain Message Flow"></image>
 
 ### Scenario: Send Alert Based On Pot
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/4.png"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/4.png" width="650px" alt="Send Alert Based On Pot
+ Domain Message Flow"></image>
 
 ### Scenario: Decision, Execution and Notification of Irrigation
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/6.jpg"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/6.jpg" width="650px" alt="Decision, Execution and Notification of Irrigation
+ Domain Message Flow"></image>
 
 ### Scenario: Automatic System Requests the Irrigation Plan
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/5.jpg"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/5.jpg" width="650px" alt="Automatic System Requests the Irrigation Plan
+ Domain Message Flow"></image>
 
 #### 4.1.1.3 Bounded Context Canvases.
 ### Identity and Access Management
-<image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png" width="650px" alt="Iam Bounded Context Canvas"></image>
 
 ### Profile and Preferences
-<image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png" width="650px" alt="Profile and Preferences Bounded Context Canvas"></image>
 
 ### Asset & Resource Management
-<image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png" width="650px" alt="Asset & Resource Management Bounded Context Canvas"></image>
 
-### Plant Management
-<image src="../assets/img/capitulo-4/bounded-context-canvases/plant-management.png"></image>
+### Suscriptions and Payments
+<image src="../assets/img/capitulo-4/bounded-context-canvases/subscriptions-and-payments-canvas.png" width="650px" alt="Suscriptions and Payments Management Bounded Context Canvas"></image>
 
-### System Monitoring & Control
-<image src="../assets/img/capitulo-4/bounded-context-canvases/system-monitoring-and-control.png"></image>
+### Service Design and Planning
+<image src="../assets/img/capitulo-4/bounded-context-canvases/service-design-and-planning-canvas.png" width="650px" alt="Service Design and Planning Bounded Context Canvas"></image>
 
 ### Service Operation and Monitoring
-<image src="../assets/img/capitulo-4/bounded-context-canvases/design-canva.jpg"></image>
+<image src="../assets/img/capitulo-4/bounded-context-canvases/service-operation-and-monitoring-canvas.png" width="650px" alt="Service Operation and Monitoring Bounded Context Canvas"></image>
 
 ### Data Analytics
-<image src="../assets/img/capitulo-4/bounded-context-canvases/analytics-canva.jpg"></image>
+<image src="../assets/img/capitulo-4/bounded-context-canvases/data-analytics-canvas.png" width="650px" alt="Data Analytics Bounded Context Canvas"></image>
 
 ### 4.1.2. Context Mapping.
 
@@ -1425,7 +1430,7 @@ Participación en Cloud API:
 ##### 4.2.3.6.2. Asset & Resource Management Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
-### 4.2.4. Bounded Context: Plant Management
+### 4.2.4. Bounded Context: Service Planning
 
 #### 4.2.4.1. Domain Layer.
 
