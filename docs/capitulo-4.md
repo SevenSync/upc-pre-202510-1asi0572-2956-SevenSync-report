@@ -260,9 +260,9 @@ A continuación presentamos la sección de Candidatos a Bounded Contexts, donde 
 | IAM	| Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles	| **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. Además, comparte modelo con “User Management” para evitar duplicación de lógica de usuario. |
 | Account Management	| CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto	| **Consolidado:** Es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría. Al estar separado de IAM, mantiene independencia entre identidad y gestión de recursos de usuario. |
 | Profile & Personal Data |	Almacenamiento/actualización de datos de perfil, preferencias, integración Geo API, normalización de direcciones	| **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos. Al abstraer el manejo de datos de contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. 
-| Pot Management	| CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica	| **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica. |
+| Asset & Resource Management	| CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica	| **Consolidado:** Es la base de la capa IoT: registrar macetas y sus parámetros iniciales. Aglutinar aquí la configuración básica permite desacoplar la lógica de riego y la lógica de planta, favoreciendo la extensibilidad hacia nuevos tipos de dispositivo sin impactar módulos de control ni de analítica. |
 | Plant Management |	Catálogo de especies (PlantSpecies), rangos óptimos (pH, luminosidad, temperatura, salinidad), validación planta–maceta | **Consolidado:** Permite evolucionar el modelo botánico de forma independiente al hardware. Separar la lógica de especies y rangos óptimos facilita incorporar nuevas plantas o proveedores de datos externos, y garantiza que la capa de riego no dependa de cambios en el catálogo ni en los esquemas de las APIs externas. |
-| Watering Management	| Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT |	**Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Pot Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control. |
+| Watering Management	| Motor de decisión de riego (análisis de SensorData + PotConfiguration), generación de trabajos de riego (IrrigationJob), manejo de excepciones, coordinación con IoT |	**Consolidado:** Aísla la complejidad del control físico del riego. Distinguirlo de la gestión de activos (Asset & Resource Management) permite evolucionar algoritmos de riego y protocolos IoT sin afectar el modelado de macetas o plantas, mejorando el rendimiento y el despliegue independiente de servicios de control. |
 | Subscriptions & Payments	| Definición y gestión de planes (SubscriptionPlan), procesamiento de transacciones, gestión de facturas (Invoice), integración con pasarelas y webhooks. | **Consolidado:** Soporta el modelo de negocio freemium/pago. Mantener un contexto dedicado a facturación garantiza que cambios en pasarelas, planes o flujos de cobro no afecten la lógica de usuario ni de riego. La separación da flexibilidad para adaptar políticas de precio y métodos de pago con mínima fricción. |
 | System Monitoring & Control |	Health checks, registro de logs críticos, generación/envío de alertas (push, email, SMS), dashboard operativo. | **Consolidado:** Integra supervisión y notificaciones en un único lugar, evitando fragmentar la lógica de alertas. Concentra la detección de fallos y la notificación al usuario o al equipo de operaciones, garantizando coherencia en umbrales y canales de comunicación, y favoreciendo la medición de uptime. |
 | Data Insights & Reporting | Ingesta, normalización y almacenamiento de SensorRecord; procesamiento batch/stream; dashboards	| **Consolidado:** Proporciona visibilidad de operación y resultados. Mantenerlo separado de la capa de control permite escalar pipelines de datos y ajustar retención sin impactar los servicios transaccionales, favoreciendo la adopción de nuevas herramientas de analítica. |
@@ -285,7 +285,7 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 | **1. IAM**                       | - Autenticación de usuarios (login/logout, manejo de sesiones) <br> - Emisión y validación de JSON Web Tokens (JWT) y tokens de refresco  - Soporte de 2FA (envío y verificación de códigos) <br> - Gestión de permisos y roles | User, Credentials, Session, Token, 2FA |
 | **2. Account Management**           | - Operaciones CRUD sobre entidades **User** <br> - Eliminación (soft/hard delete) de cuentas  <br>  - Recuperación de contraseña y gestión de **PasswordRecoveryToken** <br>  - Validación de datos de contacto y cumplimiento de políticas de seguridad  | User, PasswordRecoveryToken, AccountStatus |
 | **3. Profile & Personal Data**   | - Almacenamiento y actualización de datos de perfil (nombres, teléfono, dirección) <br>  - Gestión de preferencias de usuario (idioma, notificaciones)  <br>  - Integración con **Geo API** para catálogo de países y ciudades <br>  - Normalización y validación de direcciones  | Profile, Address, PhoneNumber, Preference, Country   |                                                                                                 |
-| **4. Pot Management** | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br>  - Gestión de metadatos (nombre, identificador único, etiquetas) <br>  - Persistencia de configuraciones históricas para auditoría | Pot, PotConfiguration, Threshold  |
+| **4. Asset & Resource Management** | - Operaciones CRUD sobre la entidad **Pot** <br><br> - Configuración de parámetros de riego (frecuencia, volumen, thresholds) <br>  - Gestión de metadatos (nombre, identificador único, etiquetas) <br>  - Persistencia de configuraciones históricas para auditoría | Pot, PotConfiguration, Threshold  |
 | **5. Plant Management**          | - Catálogo de especies vegetales (**PlantSpecies**): atributos técnicos y rangos óptimos (pH, luminosidad, temperatura, salinidad) <br> - Validación de compatibilidad planta–maceta <br>  - Sincronización periódica con APIs externas para actualizar parámetros y nuevas especies     | PlantSpecies, OptimalRange, Compatibility  |                                                                                                |
 | **6. Watering Management**       | - Motor de decisión para riego: análisis de **SensorData** y parámetros de **PotConfiguration** <br> - Generación de **IrrigationJob** (planificación y disparo de válvulas) <br> - Manejo de excepciones de hardware (fallos, reintentos)  <br> - Coordinación con servicios de control de dispositivos IoT  | IrrigationJob, ValveCommand, SensorData               |                                                                                          |
 | **7. Subscriptions & Payments**  | - Definición y gestión de **SubscriptionPlan** <br> - Procesamiento de transacciones recurrentes y cobros únicos <br>  - Gestión de **Invoice** y seguimiento de estado de pago <br>  - Integración con pasarelas externas y webhooks  | SubscriptionPlan, Invoice, PaymentTransaction  |                             
@@ -308,9 +308,9 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 #### 4.1.1.3 Bounded Context Canvases.
 ### Identity and Access Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png"></image>
-### Profile and Personal Data
+### Profile and Preferences
 <image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png"></image>
-### Pot Management
+### Asset & Resource Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png"></image>
 ### Plant Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/plant-management.png"></image>
@@ -355,13 +355,25 @@ En el caso del sistema integrado de Roademics, este diagrama desglosa la arquite
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Containers.png"></image>
 
-#### Edge Diagram
+#### Landing Page Diagram
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EdgeComponents.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-LandingPageComponents.png"></image>
+
+#### SPA Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-WCAComponents.png"></image>
+
+#### Mobile App Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MobileAppComponents.png"></image>
 
 #### Monolith Diagram
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MonolithComponents.png"></image>
+
+#### Edge Diagram
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EdgeComponents.png"></image>
 
 #### Embedded Diagram
 
@@ -717,11 +729,17 @@ En el contexto de Roademics, el diagrama de componentes destaca los elementos cl
 
 La utilidad del diagrama de componentes se extiende más allá del simple entendimiento de la arquitectura. Al proporcionar una visualización clara de cómo se gestionan los datos dentro de la aplicación móvil, este diagrama resulta invaluable no solo para los desarrolladores, sino también para los equipos de mantenimiento y actualización del sistema. Al descomponer cada elemento en sus componentes individuales y mapear sus interacciones, el diagrama optimiza el proceso de diseño y desarrollo, facilitando un mantenimiento efectivo y minimizando la complejidad durante el ciclo de vida del software.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-iam-component.png"></image>
+Participación en Mobile:
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-mobile-iam-component.png"></image>
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-MobileComponent.png"></image>
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-wcac-iam-component.png"></image>
+Participación en Web:
+
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-WebComponent.png"></image>
+
+Participación en Cloud API:
+
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-APIComponent.png"></image>
 
 #### 4.2.1.6. IAM Bounded Context Software Architecture Code Level Diagrams.
 
@@ -733,7 +751,7 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/database-diagram.png"></image>
 
-### 4.2.2. Bounded Context: Profile and Personal Data
+### 4.2.2. Bounded Context: Profile and Preferences
 
 #### 4.2.2.1. Domain Layer.
 
@@ -982,25 +1000,31 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Interfaz**  | `IProfileRepository`                                   |
 
 
-#### 4.2.2.5. Profile and Personal Data Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.2.5. Profile and Preferences Bounded Context Software Architecture Component Level Diagrams.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-profile-component.png"></image>
+Participación en Mobile:
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-wcac-profile-component.png"></image>
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-MobileComponent.png"></image>
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-mobile-profile-component.png"></image>
+Participación en Web:
+
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-WebComponent.png"></image>
+
+Participación en Cloud API:
+
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-APIComponent.png"></image>
 
 
-#### 4.2.2.6. Profile and Personal Data Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.2.6. Profile and Preferences Bounded Context Software Architecture Code Level Diagrams.
 
-##### 4.2.2.6.1. Profile and Personal Data Bounded Context Domain Layer Class Diagrams.
+##### 4.2.2.6.1. Profile and Preferences Bounded Context Domain Layer Class Diagrams.
 
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
-##### 4.2.2.6.2. Profile and Personal Data Bounded Context Database Design Diagram.
+##### 4.2.2.6.2. Profile and Preferences Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
-### 4.2.3. Bounded Context: Pot Management
+### 4.2.3. Bounded Context: Asset & Resource Management
 
 #### 4.2.3.1. Domain Layer.
 
@@ -1358,19 +1382,27 @@ La utilidad del diagrama de componentes se extiende más allá del simple entend
 | **Categoría** | Repository Implementation                                          |
 | **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
 
-#### 4.2.3.5. Pot Management Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.3.5. Asset & Resource Management Bounded Context Software Architecture Component Level Diagrams.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-pot-component.png"></image>
+Participación en Mobile:
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-pot-component.png"></image>
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-MobileComponent.png"></image>
 
-#### 4.2.3.6. Pot Management Bounded Context Software Architecture Code Level Diagrams.
+Participación en Web:
 
-##### 4.2.3.6.1. Pot Management Bounded Context Domain Layer Class Diagrams.
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-WebComponent.png"></image>
+
+Participación en Cloud API:
+
+<image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-APIComponent.png"></image>
+
+#### 4.2.3.6. Asset & Resource Management Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.3.6.1. Asset & Resource Management Bounded Context Domain Layer Class Diagrams.
 
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
-##### 4.2.3.6.2. Pot Management Bounded Context Database Design Diagram.
+##### 4.2.3.6.2. Asset & Resource Management Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
 ### 4.2.4. Bounded Context: Plant Management
