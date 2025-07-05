@@ -30,7 +30,8 @@ A continuación, se detallan los colores primarios, secundarios y terciarios def
 
 _Listado de colores primarios que se usaran en las aplicaciones de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/primary-color-light-mode.png" alt="Listado de todos los colores primarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/primary-color-light-mode.png" alt="Listado de todos los colores primarios que se usaran en las aplicaciones de Macetech en general" width="800" height="250
+"> <br>
 
 El verde es la piedra angular de Macetech porque conecta directamente con la naturaleza, el crecimiento y la salud de las plantas, al mismo tiempo que sugiere innovación tecnológica. Desde el punto de la experiencia del usuario y su percepción, el verde equilibra la respuesta emocional, puesto que relaja la corteza visual y facilita la concentración en los datos de los sensores, reduciendo la fatiga ocular en entornos de uso prolongado (Wang et al., 2025). Asimismo, al seguir las recomendaciones de accesibilidad WCAG 2.1, los tonos escogidos garantizan contraste suficiente para usuarios con baja visión sin sacrificar la riqueza del matiz verde primario (World Wide Web Consortium, 2025). Estos colores no deberían ocupar más del 45% de la pantalla del usuario.
 
@@ -87,7 +88,7 @@ _Descripción de usos y justificación para cada uno de los tonos del color secu
 
 _Listado de colores terciarios que se usaran en las aplicaciones de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/tertiary-color-light-mode.png" alt="Listado de todos los colores terciarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/tertiary-color-light-mode.png" alt="Listado de todos los colores terciarios que se usaran en las aplicaciones de Macetech en general" width="600" height="500"> <br>
 
 Para asegurar que los datos de nuestros sensores IoT sean fáciles de interpretar de un vistazo, definimos una paleta de colores terciarios específicamente orientada a la visualización de métricas. Cada tono ha sido elegido no solo por su carácter semántico (asociación intuitiva con humedad, luz, temperatura, pH y salinidad), sino también por su rendimiento en términos de contraste y accesibilidad, tanto en entornos de alta luminosidad como en ambientes oscuros. Esta estrategia refuerza la consistencia de la interfaz y facilita la rápida identificación de cada variable sin necesidad de etiquetas adicionales (Westland y Maggio, 2023).
 
@@ -1593,56 +1594,53 @@ Son botones circulares que representan la acción principal de la pantalla para 
 
   - En vistas de listado, permite agregar nuevos sensores o programaciones.
 
-
   * **Variantes:**
 
   - **Extended FAB:** botón alargado con icono y texto, mínimo 88 dp de ancho, para mejorar la claridad en acciones complejas (p. ej., “Programar Riego”).
 
 **Headers Adaptativos**
 
+Son encabezados flexibles que responden a cambios de contexto, scroll y jerarquía de la pantalla del usuario. Permite maximizar el área de contenido sin perder rastreo de la navegación. La dinámica de expansión y contracción mejora la orientación espacial del usuario y prioriza la información según contexto (Apple Inc., 2025).
 
-  Son encabezados flexibles que responden a cambios de contexto, scroll y jerarquía de la pantalla del usuario. Permite maximizar el área de contenido sin perder rastreo de la navegación. La dinámica de expansión y contracción mejora la orientación espacial del usuario y prioriza la información según contexto (Apple Inc., 2025).
+- **Dimensiones:**
 
+  - **Altura inicial:** 56 dp (Android) / 44 pt (iOS Safe Area + 44 pt).
 
-  * **Dimensiones:**
+  - **Altura contraída al hacer scroll:** reducir a 48 dp–50 dp, optimizando espacio.
 
-    * **Altura inicial:** 56 dp (Android) / 44 pt (iOS Safe Area + 44 pt).
+- **Componentes habituales:**
 
-    * **Altura contraída al hacer scroll:** reducir a 48 dp–50 dp, optimizando espacio.
+  - Icono de navegación (back or menu), título de pantalla, iconos de acción (perfil, notificaciones).
 
-  * **Componentes habituales:**
+  - **Espaciado interno:** 16 dp de padding horizontal, 8 dp entre iconos, 24 dp entre icono y título.
 
-    * Icono de navegación (back or menu), título de pantalla, iconos de acción (perfil, notificaciones).
+- **Comportamiento adaptativo:**
 
-    * **Espaciado interno:** 16 dp de padding horizontal, 8 dp entre iconos, 24 dp entre icono y título.
+  - **Shrink on Scroll:** el header contrae su altura y puede ocultar el subtítulo o buscar, manteniendo solo el título principal.
 
-  * **Comportamiento adaptativo:**
+  - **Collapsing Toolbar:** en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
 
-    * **Shrink on Scroll:** el header contrae su altura y puede ocultar el subtítulo o buscar, manteniendo solo el título principal.
+###### Figura 30?
 
-    * **Collapsing Toolbar:** en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
+_Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la aplicación móvil de Macetech_
 
-  ###### Figura 30?
-
-  *Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la aplicación móvil de Macetech*
-
-  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="1000" height="580"> 
+  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="1000" height="580">
 
 **Principios Generales**
 
-* **Consistencia entre plataformas**
+- **Consistencia entre plataformas**
 
   Aunque Material Design y Human Interface Guidelines difieren en detalles, la estructura de navegación debe mantenerse coherente en iOS y Android, adaptando solo los matices de estilo y gestos nativos en todo momento.
 
-* **Claridad en el estado activo**
+- **Claridad en el estado activo**
 
   En los componentes Bottom Navigation y Drawer, resaltar el ítem activo con un cambio de color de icono y texto (por ejemplo, verde brote #38865D) y un subrayado o fondo semitransparente.
 
-* **Accesibilidad**
+- **Accesibilidad**
 
   Todos los elementos de navegación deben tener un modelo de focus y cumplir con las áreas de toque mínimas.Se deben proveer etiquetas descriptivas (aria-label, accessibilityLabel) para lectores de pantalla.
 
-* **Pruebas de usabilidad**
+- **Pruebas de usabilidad**
 
   Realizar tests con usuarios en dispositivos reales, evaluando la facilidad para alcanzar elementos y comprender la jerarquía.
 
@@ -1654,70 +1652,70 @@ Los Material Components (MDC) son los elementos de interfaz nativos recomendados
 
 A continuación se detallan los más relevantes para la aplicación móvil de Macetech:
 
-**Card** 
+**Card**
 
 Los Card contienen datos agrupados como tarjetas de plantas, historial de riego, métricas sensoriales. Las Card proveen un marco visual consistente para elementos que deben ser escaneados rápidamente y seleccionados como unidades.
 
-* **Elevación:** elevation = 1dp para agrupaciones neutrales; hasta 8dp si se quiere destacar interacción.
+- **Elevación:** elevation = 1dp para agrupaciones neutrales; hasta 8dp si se quiere destacar interacción.
 
-* **Corner Radius:** 12dp en layouts móviles. Adaptativo en tablets.
+- **Corner Radius:** 12dp en layouts móviles. Adaptativo en tablets.
 
-* **Contenido para los cards:** 
+- **Contenido para los cards:**
 
-  * Icono
-  * Título
-  * Descripción corta
-  * Gráfico embebido (miniatura)
-  * Chip o botón secundario.
+  - Icono
+  - Título
+  - Descripción corta
+  - Gráfico embebido (miniatura)
+  - Chip o botón secundario.
 
 **FloatingActionButton (FAB)**
 
 Los FAB muestran una acción principal por pantalla, como “Añadir planta”, “Programar riego”. El FAB actúa como affordance visual (sugerencia de uso) y funcional para tareas centrales. Su posición flotante reduce fricción y maximiza la eficiencia de interacción.
 
-* **Tamaño:** normal (56dp) o extended (text + icon) cuando se requiere claridad contextual. "Usar contentDescription" obligatorio para lectores de pantalla.
+- **Tamaño:** normal (56dp) o extended (text + icon) cuando se requiere claridad contextual. "Usar contentDescription" obligatorio para lectores de pantalla.
 
-* **Elevación:** 6dp resting / 12dp pressed.
+- **Elevación:** 6dp resting / 12dp pressed.
 
-* **Color:** usar color primario del sistema temático. Contraste mínimo de 4.5:1 con el fondo. 
+- **Color:** usar color primario del sistema temático. Contraste mínimo de 4.5:1 con el fondo.
 
 **Snackbar**
 
 Los snackbar brindan retroalimentación no intrusiva tras acciones inmediatas (Por ejemplo “Riego activado”, “Planta añadida”). Usar action solo si es relevante (Por ejemplo “Deshacer”). Snackbar refuerza confianza del usuario sin bloquear el flujo ni requerir confirmación.
 
-* **Tamaño:**
+- **Tamaño:**
 
-  * LENGTH_SHORT = 2000ms
+  - LENGTH_SHORT = 2000ms
 
-  * LENGTH_LONG = 3500ms
+  - LENGTH_LONG = 3500ms
 
-* **Estética:**
+- **Estética:**
 
-  * Fondo semitransparente (elevationOverlay).
+  - Fondo semitransparente (elevationOverlay).
 
-  * Texto de alto contraste.
+  - Texto de alto contraste.
 
-  * Botón alineado a la derecha (action textColor = secondary color).
+  - Botón alineado a la derecha (action textColor = secondary color).
 
 **TopAppBar (MDC Toolbar o CenterAlignedTopAppBar)**
 
 El TopAppBar funciona para la navegación principal y contexto por pantalla. La barra superior en Android cumple una función de orientación y acción. Su presencia debe ser clara pero no dominante.
 
-* **Altura estándar:** 64dp (modo móvil), con scroll de desaparición automática en listas largas. Expansión con CollapsingToolbarLayout si hay imágenes destacadas (dashboard de sensores).
+- **Altura estándar:** 64dp (modo móvil), con scroll de desaparición automática en listas largas. Expansión con CollapsingToolbarLayout si hay imágenes destacadas (dashboard de sensores).
 
-* **Iconografía:** usar *start icon* para navegación, *end icons* para acciones rápidas (buscador, filtros).
+- **Iconografía:** usar _start icon_ para navegación, _end icons_ para acciones rápidas (buscador, filtros).
 
-* **Elevación dinámica:** de 0dp a 4dp en scroll para reforzar jerarquía.
+- **Elevación dinámica:** de 0dp a 4dp en scroll para reforzar jerarquía.
 
 ###### Tabla 35
 
-*Modelo de Métricas UI/UX recomendadas para los Material Components de Android*
+_Modelo de Métricas UI/UX recomendadas para los Material Components de Android_
 
-| Componente	| Tiempo de feedback visual	| Altura mínima táctil |	Elevación (reposo)	| Elevación (activo) |
-|-------------|---------------------------|----------------------|----------------------|--------------------|
-| Card	| < 100 ms	| 48 dp	| 1–4 dp	| 6–8 dp |
-| FAB	| < 50 ms	| 56 dp	| 6 dp | 12 dp | 
-| Snackbar	| 2000–3500 ms |	48 dp | 	4 dp	| - |
-| TopAppBar	| Instantáneo	| 64 dp	| 0 dp (scroll)	| 4 dp (sticky) |
+| Componente | Tiempo de feedback visual | Altura mínima táctil | Elevación (reposo) | Elevación (activo) |
+| ---------- | ------------------------- | -------------------- | ------------------ | ------------------ |
+| Card       | < 100 ms                  | 48 dp                | 1–4 dp             | 6–8 dp             |
+| FAB        | < 50 ms                   | 56 dp                | 6 dp               | 12 dp              |
+| Snackbar   | 2000–3500 ms              | 48 dp                | 4 dp               | -                  |
+| TopAppBar  | Instantáneo               | 64 dp                | 0 dp (scroll)      | 4 dp (sticky)      |
 
 ##### 5.1.2.2.2. iOS Style Guidelines
 
@@ -1727,72 +1725,17 @@ El diseño de interfaces para iOS debe seguir los principios de Human Interface 
 
 SF Symbols es el sistema oficial de iconos vectoriales de Apple, integrado en iOS desde iOS 13. Están perfectamente alineados con el sistema visual del sistema operativo. Proporciona una escala perfecta con Dynamic Type y configuraciones de accesibilidad.
 
-* 9 pesos de grosor diferentes (ultralight a black) para alinearse con distintos estilos de contenido.
+- 9 pesos de grosor diferentes (ultralight a black) para alinearse con distintos estilos de contenido.
 
-* Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
+- Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
 
-* Fácil integración en UIKit y SwiftUI con un systemName.
-
-| Propiedad | Recomendación para iOS	| Justificación UX | 
-Tamaño base (icono)	20–28 pt	Claridad en pantallas Retina
-Espaciado mínimo	8 pt entre elementos	Evita sobrecarga visual
-Grosor sugerido	regular o semibold	Balance entre legibilidad y neutralidad visual
-Color	Ligado a label, secondaryLabel o paleta de acento (tint)	Coherencia visual en modo claro/oscuro
-
-📌 Ejemplo: Para representar un estado de riego activo, usar drop.fill con estilo palette y colores tintColorPrimary (verde) y tintColorSecondary (azul agua).
-
-🧱 2. UIKit: Sistema clásico para componentes nativos (iOS 9–13+)
-UIKit sigue siendo el motor más maduro y estable para aplicaciones que requieren compatibilidad, control total de ciclo de vida, y una integración más granular.
-
-🧩 Componentes clave recomendados:
-Componente	Uso sugerido en Macetech	Métricas recomendadas
-UICollectionView	Dashboard de plantas/sensores	Tamaño celda mínimo: 160×160 pt
-UITableView	Listas de historial, recomendaciones	Altura fila: 56–72 pt
-UIAlertController	Confirmaciones de riego, eliminaciones	Usar estilo .alert o .actionSheet con botones accesibles (≥44 pt)
-UISwitch	Activación de sensores o riego manual	Altura mínima: 31 pt
-UIStackView	Composición vertical/horizontal adaptable	Spacing: 8–16 pt según nivel visual
-
-📌 Accesibilidad: Todos los componentes deben tener etiquetas (accessibilityLabel) y agrupaciones lógicas (accessibilityTraits) para VoiceOver.
-
-🍃 3. SwiftUI: Enfoque declarativo y moderno (iOS 13+)
-SwiftUI permite construir interfaces adaptativas y reactivas con menos código, ideal para prototipos rápidos o interfaces con transiciones fluidas entre estados.
-
-🧰 Ventajas clave:
-Adaptabilidad automática a Dark Mode y Dynamic Type.
-
-Composición visual más intuitiva.
-
-Animaciones integradas y expresivas (withAnimation, matchedGeometryEffect).
-
-Uso directo de SF Symbols y tipografías del sistema (.title2, .caption).
-
-📐 Recomendaciones UI específicas:
-Elemento SwiftUI	Recomendación de uso	Métricas
-NavigationStack	Jerarquía clara en flujos de detalle	Altura mínima barra: 44 pt
-List	Recomendado para historial o sugerencias	Separación entre filas: 12 pt mínimo
-Button(style: .bordered)	Acciones secundarias (ej. cancelar riego)	Tacto mínimo: 44×44 pt
-Toggle	Activación rápida con retroalimentación	Espaciado interno de 16 pt
-Form	Configuración rápida de sensores o alertas	Adaptativa a entorno
-
-🧭 Comparativa visual y de rendimiento (UIKit vs SwiftUI)
-Criterio	UIKit	SwiftUI
-Control granular de layouts	Alto	Medio
-Soporte para apps antiguas	iOS 9+	iOS 13+
-Composición declarativa	❌	✅
-Transiciones avanzadas (Hero)	Requiere librerías externas	Integrado (matchedGeometry)
-Rendimiento en views complejas	Más eficiente	Requiere tuning
-Integración con Storyboard	Total	Limitada o nula
-
-📌 Recomendación: Para la app de Macetech, usar SwiftUI como motor principal en iOS 14+, especialmente en pantallas de usuario final. Usar UIKit solo en componentes específicos que necesiten más control, como la visualización dinámica de gráficos o dashboards con múltiples celdas.
-
-🎯 Buenas prácticas para lograr consistencia visual
-Colores: usar Color.primary, Color.accentColor, Color.secondaryBackground para mantener la coherencia con los temas del sistema.
-
-Tipografía: San Francisco, escalada dinámica (.title2, .body, .caption).
-
-Iconos: solo SF Symbols o custom symbols con equivalencia semántica (.accessibilityLabel).
-
-Espaciados: múltiplos de 4 pt (4, 8, 12, 16, 24, 32) para armonía visual.
+- Fácil integración en UIKit y SwiftUI con un systemName.
+  | Propiedad | Recomendación para iOS | Justificación UX |
+  |-------------------|---------------------------------------------------------|--------------------------------------------------|
+  | Tamaño base (icono) | 20–28 pt | Claridad en pantallas Retina |
+  | Espaciado mínimo | 8 pt entre elementos | Evita sobrecarga visual |
+  | Grosor sugerido | Regular o Semibold | Balance entre legibilidad y neutralidad visual |
+  | Color | Ligado a `label`, `secondaryLabel` o paleta de acento (tint) | Coherencia visual en modo claro/oscuro |
 
 #### 5.1.2.3. IoT Style Guidelines
 
@@ -1804,105 +1747,45 @@ La retroalimentación visual mediante diodos emisores de luz (LEDs) constituye u
 
 **Especificaciones de componentes**
 
-* **Tipo de LED:** LED de alta luminosidad, difuso (“lens diffused”) de 3 mm o 5 mm, según volumen del dispositivo.
+- **Tipo de LED:** LED de alta luminosidad, difuso (“lens diffused”) de 3 mm o 5 mm, según volumen del dispositivo.
 
-* **Ángulo de visión:** mínimo 120 ° para garantizar visibilidad desde distintos ángulos de instalación (mesas, repisas, jardineras).
+- **Ángulo de visión:** mínimo 120 ° para garantizar visibilidad desde distintos ángulos de instalación (mesas, repisas, jardineras).
 
-* **Corriente de operación:** típicamente 10 mA – 20 mA por LED. 
+- **Corriente de operación:** típicamente 10 mA – 20 mA por LED.
 
-* **Brillo (luminous intensity):**
+- **Brillo (luminous intensity):**
 
-  * **Verde:** ≥ 8 mcd a 20 mA
+  - **Verde:** ≥ 8 mcd a 20 mA
 
-  * **Amarillo:** ≥ 5 mcd a 20 mA
+  - **Amarillo:** ≥ 5 mcd a 20 mA
 
-  * **Rojo:** ≥ 6 mcd a 20 mA
+  - **Rojo:** ≥ 6 mcd a 20 mA
 
-* **Consumo energético:** Aproximadamente 0.06 W por LED. Optimizar los ciclos de parpadeo para reducir consumo en modos activos de larga duración.
+- **Consumo energético:** Aproximadamente 0.06 W por LED. Optimizar los ciclos de parpadeo para reducir consumo en modos activos de larga duración.
 
 **Montaje y óptica**
 
-* **Difusores y lentes:** emplear cubiertas semitransparentes de policarbonato (transmisión mayor o igua a 85 %) con patrón de microestructura para dispersión uniforme de la luz.
+- **Difusores y lentes:** emplear cubiertas semitransparentes de policarbonato (transmisión mayor o igua a 85 %) con patrón de microestructura para dispersión uniforme de la luz.
 
-* **Protección ambiental:** sellado IP54 en zonas de LED para evitar acumulación de polvo y humedad.
+- **Protección ambiental:** sellado IP54 en zonas de LED para evitar acumulación de polvo y humedad.
 
 **Retroalimentación háptica (Vibración)**
 
-* **Eccentric Rotating Mass (ERM)**
+- **Eccentric Rotating Mass (ERM)**
 
-* **Amplitud:** 0.8 G – 1.2 G
+- **Amplitud:** 0.8 G – 1.2 G
 
-* **Frecuencia de resonancia:** 180 Hz – 250 Hz
+- **Frecuencia de resonancia:** 180 Hz – 250 Hz
 
-* **Tiempo de respuesta:** Menos de 20 ms
+- **Tiempo de respuesta:** Menos de 20 ms
 
 **Patrones de vibración**
 
-* **Confirmación de acción:** un pulso único de 200 ms ON / 100 ms OFF.
+- **Confirmación de acción:** un pulso único de 200 ms ON / 100 ms OFF.
 
 Alerta crítica: secuencia de 3 pulsos (300 ms ON / 100 ms OFF), repetidos 2 veces, con pausa de 500 ms entre secuencias.
 
 Emparejamiento: pulso breve de 100 ms cada 1 s durante 10 s máximo.
-
-B.3. Integración mecánica
-Montar el actuador sobre un sustrato rígido con amortiguadores de espuma siliconada (2 mm) para transmitir la vibración sin dañar componentes adyacentes.
-
-Verificar resonancias estructurales del recinto con análisis modal (FEA) para evitar timbres no deseados.
-
-C. Retroalimentación sonora
-C.1. Elementos acústicos
-Buzzer piezoeléctrico: diámetro 12 mm, altura ≤ 5 mm.
-
-Frecuencia de operación: 2 kHz ± 200 Hz, rango óptimo para captar atención en 1 m de distancia.
-
-Nivel de sonido: 60 – 70 dB SPL @ 1 m.
-
-C.2. Patrones sonoros
-Notificación estándar: tono simple de 150 ms.
-
-Alerta crítica: dos tonos de 300 ms, separados por 200 ms, con frecuencia constante (2 kHz).
-
-Duración máxima continua: 5 s (para no sobresaturar).
-
-C.3. Disposición y recinto
-Ubicar el buzzer con salida directa al exterior o a una cavidad acústica (guide channel) para amplificar sonido.
-
-Incluir rejillas o aberturas mínimas de 10 mm² frente al buzzer para transmisión efectiva.
-
-D. Asociación de estados con colores fijos
-Para sintetizar la información y facilitar la memorización, cada estado del dispositivo se codifica con un color LED y, cuando sea posible, con patrón de parpadeo:
-
-Estado	Color LED	Patrón	Justificación de diseño
-Funcionamiento correcto	Verde #43AA8B	Continuo	Color asociado a “bien” o “saludable” en semiótica; comunica estabilidad.
-Advertencia leve	Amarillo #F9C74F	Parpadeo lento (1 Hz)	Ampliamente reconocido como “precaución”, parpadeo moderado evita alarma innecesaria.
-Alerta crítica	Rojo #F94144	Parpadeo rápido (2 Hz)	El rojo intenso llama la atención y el parpadeo veloz transmite urgencia máxima.
-Proceso en curso	Azul #2D6CDF	Pulso breve cada 1 s	El azul se asocia a “actividad en progreso” sin connotación de error.
-Emparejamiento / Setup	Blanco neutro	Alternancia 200 ms ON/OFF	Color neutro y patrón distintivo para diferenciar de estados operativos.
-
-Métricas de implementación
-
-Tiempo de ciclo: precisión de ± 10 ms en temporización de parpadeos.
-
-Intensidad luminosa: ajustar PWM para reducir a 50 % en entornos oscuros, manteniendo relación de contraste suficiente para distinguir estados.
-
-E. Justificaciones de diseño y usabilidad
-Redundancia sensorial
-
-Combinar LED, vibración y sonido permite que, si un canal falla (por ejemplo, vibrador deshabilitado), el usuario reciba la alerta por otra vía.
-
-Consistencia semántica
-
-El uso de colores y patrones está alineado con normativas de semiótica universales (rojo=error, verde=éxito) y estudios de percepción (Goldstein, 2019).
-
-Optimización de energía
-
-Limitar parpadeos y duraciones sonoras a los mínimos efectivos reduce consumo y extiende la vida de la batería en módulos edge.
-
-Manufacturabilidad y pruebas de calidad
-
-Especificar tolerancias de componentes (± 10 % en luminosidad, ± 5 % en frecuencia de vibración) facilita la inspección de línea.
-
-Incluir pruebas automáticas de “LED blink test” y “vibration response test” en la cadena de montaje para validar conformidad.
 
 ## 5.2. Information Architecture
 
@@ -2246,18 +2129,34 @@ Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Desi
 
 ### 5.4.2. Applications Wireflow Diagrams
 
+- **1. Registro e Inicio de Sesión del Usuario**
+  Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_1.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **2. Visualización y Gestión de Macetas Inteligentes**
+  Este flujo permite a los usuarios acceder al panel principal donde visualizan todas sus macetas inteligentes, consultar detalles individuales como estado de sensores, historial de riego, recomendaciones, y ejecutar acciones como regar la planta manualmente.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_2.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **3. Actualización de Membresía y Proceso de Pago**
+  Este flujo guía al usuario desde la comparación de planes hasta el proceso de pago para actualizar su cuenta gratuita a una suscripción Premium, permitiéndole acceder a funcionalidades avanzadas como reportes detallados y riego automático programado.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_3.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **4. Configuración de Cuenta y Preferencias de Notificación**
+  Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_4.png"  alt="MockUp" width="1000" height="700"> <br>
+
 ### 5.4.2. Applications Mock-ups
 
 Los siguientes mockups representan las interfaces clave de una plataforma de gestión de macetas inteligentes. Estas vistas han sido diseñadas para facilitar la experiencia del usuario en procesos como el registro e inicio de sesión, visualización del estado de las macetas, gestión de notificaciones, y administración de cuenta y membresía. Cada pantalla refleja una parte esencial del recorrido del usuario, alineada con los objetivos y necesidades definidos para cada User Persona.
 
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.2.png"  alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-3.png"  alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.2.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.1.png" alt="MockUp" width="700" height="400"> <br>
-<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.2.png" alt="MockUp" width="700" height="400"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.2.png"  alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-3.png"  alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-4.2.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.1.png" alt="MockUp" width="1000" height="500"> <br>
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.2.png" alt="MockUp" width="1000" height="500"> <br>
 
 ### 5.4.3. Applications User Flow Diagrams
 
@@ -2267,19 +2166,19 @@ Los siguientes User Flows representan los principales recorridos que un usuario 
 
 - **1. Registro e Inicio de Sesión del Usuario**
   Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
-  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/UserFlow-1.png" alt="MockUp" width="1000" height="700"> <br>
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_1.png" alt="MockUp" width="1000" height="700"> <br>
 
 - **2. Visualización y Gestión de Macetas Inteligentes**
   Este flujo permite a los usuarios acceder al panel principal donde visualizan todas sus macetas inteligentes, consultar detalles individuales como estado de sensores, historial de riego, recomendaciones, y ejecutar acciones como regar la planta manualmente.
-  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/UserFlow-2.png" alt="MockUp" width="1000" height="700"> <br>
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_2.png" alt="MockUp" width="1000" height="700"> <br>
 
 - **3. Actualización de Membresía y Proceso de Pago**
   Este flujo guía al usuario desde la comparación de planes hasta el proceso de pago para actualizar su cuenta gratuita a una suscripción Premium, permitiéndole acceder a funcionalidades avanzadas como reportes detallados y riego automático programado.
-  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/UserFlow-3.png" alt="MockUp" width="1000" height="700"> <br>
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_3.png" alt="MockUp" width="1000" height="700"> <br>
 
 - **4. Configuración de Cuenta y Preferencias de Notificación**
   Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
-  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/UserFlow-4.png"  alt="MockUp" width="1000" height="700"> <br>
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_4.png"  alt="MockUp" width="1000" height="700"> <br>
 
 ## 5.5. Applications Prototyping
 
@@ -2306,4 +2205,4 @@ La presente sección incluye los prototipos interactivos desarrollados para repr
 - **Screenshot representativo del prototipo en acción:**
   <img src="/assets/img/capitulo-5/ux-ui-design/prototyping/Web_Prototyping.png"  alt="MockUp" width="1000" height="700"> <br>
 - **Enlace al video de navegación en Microsoft Stream:**
-  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  [Prototyping_Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
