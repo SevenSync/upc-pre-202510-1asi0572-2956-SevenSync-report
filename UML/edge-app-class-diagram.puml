@@ -1,0 +1,273 @@
+@startuml name "Edge App Class Diagram"
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam handwritten false
+skinparam monochrome false
+skinparam shadowing false
+
+package "Analytics Bounded Context" #ffccd5 {
+  ' Domain Layer
+  package "domain" #ff8fa3 {
+    
+    class PotRecord {
+      id: int
+      device_id: str
+      ph: float
+      humidity: float
+      temperature: float
+        salinity: float
+        light: float
+      created_at: datetime
+      +__init__(self, device_id, ph, humidity, temperature, salinity, light, created_at, id)
+    }
+
+    class PotRecordService {
+      +__init__()
+      +create_record(device_id, ph, humidity, temperature, salinity, light, created_at): PotRecord
+    }
+
+    class WateringCalculator {
+      +calculate(sensor_data: dict, thresholds: dict): int
+    }
+  }
+
+  ' Application Layer
+  package "application" #ff8fa3 {
+    class PotRecordApplicationService {
+      -pot_record_repository: PotRecordRepository
+      -pot_record_service: PotRecordService
+      -device_repository: DeviceRepository
+      -threshold_service: ThresholdService
+      -auth_service: AuthService
+      +__init__(self, pot_record_repository, pot_record_service, device_repository, threshold_service, auth_service)
+      +create_pot_record(device_id, sensor_data, created_at, api_key): PotRecord
+      +get_last_record(self, device_id): PotRecord
+      +calculate_watering_time(self, device_id, sensor_data): int
+    }
+  }
+
+  ' Infrastructure Layer
+  package "infrastructure" #ff8fa3 {
+    class PotRecordModel(Model) {
+        id: AutoField
+        device_id: CharField
+        ph: FloatField
+        humidity: FloatField
+        temperature: FloatField
+        salinity: FloatField
+        light: FloatField
+        created_at: DateTimeField
+    }
+       
+    class Meta:{
+        database: db
+        table_name: 'pot_records'
+    }
+
+    class PotRecordRepository {
+      +save(pot_record): PotRecord
+      +get_last_record(device_id): PotRecord
+      +get_by_device(device_id, hours: int = 24): list[PotRecord]
+    }
+  }
+
+  ' Interface Layer
+  package "interfaces" #ff8fa3 {
+
+    class analytics_api {       
+      +create_pot_record() 
+      +calculate_watering_time()
+      +get_device_status(device_id: str) 
+    }
+  }
+}
+
+' Define packages for bounded contexts
+package "Planning Bounded Context" #d8f3dc {
+  ' Domain Layer
+  package "domain" #95d5b2 {
+
+    class __init__ {
+      +__init__(self)
+    }
+
+    class Thresholds {
+      humidity_min: float
+      temp_max: float
+      +__init__(self, humidity_min, temp_max)
+    }
+
+    class WateringDecision {
+        should_water: bool
+        duration_seconds: int
+      +__init__(self, should_water, duration_seconds)
+    }
+
+    class PlanningService {
+      +make_watering_decision(sensor_data: PotRecord, thresholds: Thresholds): WateringDecision
+    }
+  }
+
+  ' Application Layer
+  package "application" #95d5b2 {
+    class PlanningApplicationService {
+      -threshold_repo
+      -pot_record_repo
+      -planning_service
+      +__init__(self, threshold_repo, pot_record_repo, planning_service)
+      +get_watering_decision(self, device_id: str): WateringDecision
+    }
+  }
+
+  ' Interface Layer
+  package "interfaces" #95d5b2 {
+    class device_decision_api {
+      +get_device_watering_decision(device_id: str): tuple
+    }
+  }
+}
+
+package "Watering Bounded Context" #e0fbfc {
+  ' Domain Layer
+  package "domain" #bbdefb {
+
+    class __init__ {
+      +__init__(self)
+    }
+
+    class WateringDecision {
+     device_id: str
+     decision: bool
+     reason: str
+     timestamp: datetime
+      +__init__(self, device_id, decision, reason, timestamp)
+    }
+
+    class WateringExecution {
+        device
+        duration: int
+        timestamp: datetime
+        success: bool
+      +__init__(self, device, duration, timestamp, success)
+    }
+
+    class WateringDecisionService {
+      +make_watering_decision(analytics_data: dict, thresholds: dict): WateringDecision
+    }
+
+    class WateringExecutionService {
+      +calculate_water_duration(decision: WateringDecision, analytics: dict): int
+    }
+  }
+
+  ' Application Layer
+  package "application" #bbdefb {
+    class WateringOrchestrator {
+      +__init__(self,decision_service: WateringDecisionService, execution_service: WateringExecutionService, analytics_client,
+                 thresholds_client,
+                 device_client,
+                 repository)
+      +execute_watering_workflow(self, device_id: str): WateringExecution
+    }
+  }
+
+  ' Interface Layer
+  package "interfaces" #bbdefb {
+    class execute_watering_operation {
+      +execute_watering_operation(): tuple
+    }
+  }
+}
+
+
+package "IAM Bounded Context" #FFEBDE {
+  ' Domain Layer
+  package "domain" #FFF2E8 {
+    class Device {
+      device_id: str
+      api_key: str
+      created_at: datetime
+      +__init__(device_id, api_key, created_at)
+    }
+
+    class AuthService {
+      +__init__()
+      +authenticate(device): bool
+    }
+  }
+
+  ' Application Layer
+  package "application" #FFE6D5 {
+    class AuthApplicationService {
+      -device_repository: DeviceRepository
+      -auth_service: AuthService
+      +__init__()
+      +authenticate(device_id, api_key): bool
+      +get_or_create_test_device(): Device
+    }
+  }
+
+  ' Infrastructure Layer
+  package "infrastructure" #FFDAC1 {
+    class DeviceModel {
+      device_id: CharField
+      api_key: CharField
+      created_at: DateTimeField
+    }
+
+    class DeviceRepository {
+      +find_by_id_and_api_key(device_id, api_key): Device
+      +get_or_create_test_device(): Device
+    }
+  }
+
+  ' Interface Layer
+  package "interfaces" #FFCEAE {
+    class iam_api {
+      +authenticate_request(): tuple
+    }
+  }
+}
+
+package "Shared Components" #E8FFE8 {
+  package "infrastructure" #D1FFD1 {
+    class database {
+      +init_db_tables()
+    }
+
+    class init_db {
+      +init_db()
+    }
+  }
+}
+
+' Main application
+class app {
+  +before_request_handler()
+  +after_request_handler(response)
+}
+
+' Relationships
+
+' IAM bounded context relationships
+AuthApplicationService --> DeviceRepository: uses
+AuthApplicationService --> AuthService: uses
+DeviceRepository --> DeviceModel: uses
+DeviceRepository ..> Device: creates
+AuthService ..> Device: authenticates
+iam_api --> AuthApplicationService: uses
+
+' Cross-context relationships
+
+
+
+' Database relationships
+HealthRecordModel --> db: uses
+DeviceModel --> db: uses
+init_db ..> HealthRecordModel: creates tables
+init_db ..> DeviceModel: creates tables
+app ..> init_db: initializes
+app ..> health_api: registers
+app ..> iam_api: registers
+@enduml
