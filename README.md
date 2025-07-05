@@ -149,29 +149,30 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TB2 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tb2.png" alt="contribuciones del equipo para el trabajo parcial">
+<img src="/assets/img/portada/team-contributions-tb2.png" alt="contribuciones del equipo para la tb2">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
-<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la tb2">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para la tb2">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tb2.png" alt="commits del equipo para el trabajo parcial">
+<img src="/assets/img/portada/commits-tb2.png" alt="commits del equipo para la tb2">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tb2.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+<img src="/assets/img/portada/network-graph-tb2.png" alt="gráfico de red de ramas del equipo para la tb2">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
-- Para esta entrega, se han realizado un total de 38 commits.
+- Para esta entrega, se han realizado un total de 25 commits.
 
 - La mayor concentración de commits estuvo en la rama develop.
 
-- El equipo logró subsanar los errores de la anterior entrega tb1. 
-- El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
+- El equipo logró subsanar los errores de la anterior entrega tp. 
 
-- El equipo logró documentar el capítulo 1 y 2 al 100%, sim embargo se deben subsanar varios errores en los capítulos posteriores.
+- El equipo se retroalimentó del feedback brindado por el profesor.
+
+- El equipo no logró documentar el capítulo 3, 4, 5 y 6 al 100%, por lo tanto, se deben subsanar varios errores en los capítulos posteriores. Como mayor importancia, se deben documentar de forma adecuada los sprints. 
 
 Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ramas temporales:
 
@@ -180,6 +181,43 @@ Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ra
 **develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
 
 En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
+
+**TF1 Project Report Collaboration Insights**
+
+_Vista general de las contribuciones del equipo_
+<img src="/assets/img/portada/team-contributions-tf.png" alt="contribuciones del equipo para el tf">
+_Contribuciones por miembro del equipo_
+<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el tf">
+<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el tf">
+
+_Commits_
+
+<img src="/assets/img/portada/commits-tf.png" alt="commits del equipo para el tf">
+
+_Network Graph_
+
+<img src="/assets/img/portada/network-graph-tf.png" alt="gráfico de red de ramas del equipo para el tf">
+
+De las contribuciones del equipo y commits se concluye lo siguiente:
+
+-Esta es la entega final, el cúal concluyó con (numero) commits.
+
+- El equipo logró subsanar los errores de la anterior entrega tb2. 
+
+- El equipo se retroalimentó del feedback brindado por el profesor.
+
+- El equipo  logró documentar el capítulo 3, 4, 5 y 6 al 100%, concluyendo la documentación del proyecto. 
+
+Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ramas temporales:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
+
+
+
 # Contenido
 
 ## Tabla de Contenidos
