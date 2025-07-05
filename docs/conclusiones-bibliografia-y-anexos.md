@@ -1,5 +1,7 @@
 # Conclusiones
 
+
+
 # Bibliografía
 
 - Abofol, T., Erev, I. & Sulitzeanu-Kenan, R. (2023). Conformity and Group Performance. Human Nature, 34. 381–399. https://doi.org/10.1007/s12110-023-09454-2
@@ -10,6 +12,7 @@
 - Beavers, A., Ray R., Lacy, K., Coringrato, E., Lavelle Sachs, A., Kelly, Z., Buchenau, H., Decker, E., Fahnestock, L., Quist, P., Hébert, J., Litt, J. & Alaimo, K. (2024). Supporting new gardeners: Perspectives of gardeners and garden leaders. _Journal of Agriculture Food Systems and Community Development_, _14_(1), 309-326. https://doi.org/10.5304/jafscd.2024.141.007
 - Bhati, A., Hiran, K. K., Vyas, K. A., Mijwil, M. M., Aljanabi, M., Metwally, A. S., Al-Asad, M. F., Awang, M. K. & Ahmad, H. (2024). Low cost artificial intelligence Internet of Things based water quality monitoring for rural areas. _Internet of Things (Netherlands)_, _27_, 101255. https://doi.org/10.1016/j.iot.2024.101255
 - Bieri, D., Joshi, N., Wende, W. & Kleinschroth, F. (2024). Increasing demand for urban community gardening before, during and after the COVID-19 pandemic. _Urban Forestry and Urban Greening_, _92_(128206), 1-10. https://doi.org/10.1016/j.ufug.2024.128206
+- Brown, S. (2023). *The C4 model*. Leanpub. https://leanpub.com/visualising-software-architecture
 - Budarina, M. (2023). UI Design Systems Mastery (3a ed.). https://es.scribd.com/document/718150434/Marina-Budarina-UI-Design-Systems-Mastery-v3-2023
 - Ceño Elie, R. M. (2023). _‘EL JARDÍN DE LOS SENTIDOS’: UN PARQUE SALUDABLE_ [Tesis de maestría, Universidad Politécnica de Madrid]. Archivo Digital de la Universidad Politécnica de Madrid. https://oa.upm.es/76827/3/TFM_ROSA_MARIA_C_ELIE.pdf
 - Cherlinka, V. (2025, 10 de marzo). _Enfermedades De Las Plantas: Tipos Y Prevención_. EOS DATA ANALYTICS. Recuperado el 08 de abril de 2025, de https://eos.com/es/blog/enfermedades-de-las-plantas/
@@ -17,10 +20,12 @@
 - Data Bridge Market Research. (2025, enero). _Informe de análisis de tamaño, participación y tendencias del mercado mundial de equipos de jardinería: descripción general de la industria y pronóstico hasta 2032_. Recuperado el día 08 de abril de 2025, de https://www.databridgemarketresearch.com/es/reports/global-gardening-equipment-market
 - Departamento de Agricultura de EE. UU., Servicio de Conservación de Recursos Naturales. (2025). PLANTS DATABASE. Recuperado el 5 de julio de 2025, de https://plants.usda.gov/
 - Eltabbal, A. (2023). The Ultimate SEO Guide. flexiple. https://es.scribd.com/document/650074548/The-Ultimate-SEO-Guide?_gl=1*va5pa1*_gcl_au*NDA3NzI0MDYzLjE3MzIzMjcyMDE
+- Ford, N., Richards, M., Sadalage, P. & Dehghani, Z. (2021). *Software Architecture: The Hard Parts*. O'Reilly Media, Inc. https://learning.oreilly.com/library/view/software-architecture-the/9781492086888/ 
 - GreenTech. (2022). _CREATING THE FUTURE WITH SUBSTANCE_. GreenTech sustainability report. https://greentech.energy/wp-content/uploads/2022_greentech_SustainabilityReport-2.pdf
 - Gulyas, B. Z., Caton, S. J. & Edmonson, J. L. (2024). Quantifying the relationship between gardening and health and well-being in the UK: a survey during the covid-19 pandemic. _BMC Public Health_, _24_(810), 1-14. https://doi.org/10.1186/s12889-024-18249-8
 - Guo, J., Song, F., Liu, Y., Wang, W. & Wang, Y. (2025). The Impact of Color Combination on Visual Search Efficiency and User Experience in Human-Machine Interface: A Case Study of Metro Electronic Guide Screen. _International Journal of Human-Computer Interaction_, 1–19. https://doi.org/10.1080/10447318.2025.2450164
 - Hair Jr., J., Page, M., Brunsveld, N., Merkle, A. & Cleton, N. (2023). _Essentials of Business Research Methods_ (5a ed.). Routledge. https://learning.oreilly.com/library/view/essentials-of-business/9781000894561/
+- Hofer, S. & Schwentner, H. (2021). *Domain Storytelling: A Collaborative, Visual, and Agile Way to Build Domain-Driven Software*. Addison-Wesley Professional. https://learning.oreilly.com/library/view/domain-storytelling-a/9780137458974/ 
 - Ibarra-Cabrera, M. J., Estrada Torres, I., Aquino Cruz, M., Rentería Ayquipa, R. A., Ochoa, S. F. & Ochoa, J. M. (2024). Tomato Urban Gardening Supported by an IoT-Based System: A Latin American Experience Report on Technology Adoption. _Sensors_, _24_(23), 7620. https://doi.org/10.3390/s24237620
 - Instituto Nacional de Estadística e Informática. (2024). _Perú Anuario de Estadísticas Ambientales 2024_. https://cdn.www.gob.pe/uploads/document/file/7448677/6344095-peru-anuario-de-estadisticas-ambientales-2024.pdf?v=1735913022
 - Jain, R. K. (2023). Experimental performance of smart IoT-enabled drip irrigation system using and controlled through web-based applications. _Smart Agricultural Technology_, _4_, 100215. https://doi.org/10.1016/j.atech.2023.100215
@@ -36,6 +41,7 @@
 - Patel, N. (2021). SEO MADE SIMPLE. The Neil Patel Step-By-Step Guide. https://es.scribd.com/document/558294953/SEO-Made-Simple?_gl=1*1dvgoky*_gcl_au*NDA3NzI0MDYzLjE3MzIzMjcyMDE.
 - Perfect Earth Project. (2024). _Jardinería basada en la naturaleza. Creando jardines ecológicamente hermosos y saludables_. https://perfectearthproject.org/wp-content/uploads/2024/04/Leaflet_24Update_ES_Download_Digital-1.pdf
 - Postolache, S., Sebastiao, P., Viegas, V., Postolache, O. & Cercas, F. (2022). IoT-Based Systems for Soil Nutrients Assessment in Horticulture. _Sensors_, _23_(1), 403. https://doi.org/10.3390/s23010403
+- Richards, M. & Ford, N. (2025). *Fundamentals of Software Architecture* (2nd Edition). O'Reilly Media, Inc. https://learning.oreilly.com/library/view/fundamentals-of-software/9781098175504/ 
 - Royal Horticultural Society. (2024). _RHS Annual Report and Consolidated Financial Statements. For the year ended 31 January 2024_. https://www.rhs.org.uk/about-us/pdfs/about-the-rhs/mission-and-strategy/past-annual-reports/rhs-annual-report-2023-2024.pdf
 - Rusfian, E. & Alessandro, J. (2021). The influence of social media’s marketing activity on local brand equity and consumer response: using mix method approach. Linguistics and Culture Review, 5(S1), 767-780. https://doi.org/10.21744/lingcure.v5nS1.1462
 - Sommerville, I. (2019). Engineering software products: An introduction to modern software engineering. Pearson. https://api.pageplace.de/preview/DT0400.9781292376356_A41458140/preview-9781292376356_A41458140.pdf
