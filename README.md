@@ -60,35 +60,287 @@
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autores | Descripción del Cambio |
-| :--- | :--- | :--- | :--- |
-| **1.0 - TB1** | **27/04/2025** | **SevenSync** | **Desarrollo parcial de Capítulos 1, 2, 3 y 4. Nota: 6.25** |
-| 1.1 | 25/04/2025 | Flavio Trigueros| Desarrollo inicial del Capítulo 1 - Planteamiento del Problema y definición de la startup. |
-| 1.2 | 26/04/2025 | Fabrizio Sánchez| Elaboración del Capítulo 2 |
-| 1.3 | 26/04/2025 | Lucio Yen | Desarrollo parcial del Capítulo 3 - User Stories y Product Backlog. |
-| 1.4 | 27/04/2025 | Ruben Mallma, Luiggui Paredes y Juan Pescorán | Avance inicial del Capítulo 4 - Event Storming, C4 models. |
-| **2.0 - TP** | **16/05/2025** | **SevenSync** | **Correcciones y desarrollo completo de caps 3-6. Nota: 13.75** |
-| 2.1 | 10/05/2025 | Lucio Yen, Flavio Trigueros, Fabrizio Sánchez, Juan Pescorán | Aplicación de correcciones del feedback docente a capítulos 1-4. |
-| 2.2 | 12/05/2025 |Lucio Yen | Documentación y mejora del Capítulo 3 - Impact Mapping, User Stories y Product Backlog. |
-| 2.3 | 14/05/2025 | Luiggui Paredes, Juan Pescorán, Flavio Trigueros, Luiggi Paredes | Expansión del Capítulo 4 - Candidate Context y Tactical DDD |
-| 2.4 | 15/05/2025 | Flavio Trigueros, Fabrizio Sanchez | Desarrollo parcial del Capítulo 5 - Diseño de la aplicación web de negocio, web y móvil |
-| 2.5 | 16/05/2025 | Lucio Yen | Avance del Capítulo 6 - documentación del Sprint 1 |
-| **3.0 - TB2** | **15/07/2025** | **SevenSync** | **Correcciones y mejoras en caps 3-6. Nota: 11.5** |
-| 3.1 | 10/07/2025 | Lucio Yen | Corrección y mejora del Capítulo 3 según feedback del TP. |
-| 3.2 | 11/07/2025 | Ruben Mallma, Flavio Triguereos, Juan Pescorán, Fabrizio Sánchez, | Ajuste del análisis y presentación en Capítulo 4. |
-| 3.3 | 13/07/2025 | Flavio Trigueros, Fabrizio Sánchez, Lucio Yen | Mejora de redacción y claridad en el Capítulo 5, Prototipo de Figma. |
-| 3.4 | 15/07/2025 | Lucio Yen | Video about The About the Team |
-| **4.0 - TF1** | **07/07/2025** | **SevenSync** | **Documentación completa del proyecto** |
-| 4.1 | 01/07/2025 | Flavio Trigueros | Actualización de la biblografía. |
-| 4.2 | 03/07/2025 | Flavio Trigueros |Correción del Candidate Context Discovery. |
-| 4.3 | 04/07/2025 | Fabrizio Sanchez |Modificación de los datos de integrantes en la portada y el formato de la bibliografía |
-| 4.4 | 04/07/2025 | Rubén Mallma |Documentación del Domain Message Flow Modelling con 3 bounded context |
-| 4.5 | 04/07/2025 | Rubén Mallma |Documentación del Domain Message Flow Modelling con 3 bounded context |
-| 4.6 | 04/07/2025 | Flavio Trigueros |Documentación de descripción de los diagramas C4 |
-| 4.7 | 05/07/2025 | Juan Pescorán |Actualización de los diagramas C4 |
-| 4.8 | 04/07/2025 | Flavio Trigueros |Documentación de descripción de los diagramas C4 |
-| 4.9 | 04/07/2025 | Lucio Yen |Implementación parcial del diagrama de clase del Edge Application er PlantUML| 
-| 4.10 | 04/07/2025 | Juan Pescorán |Documentación del Bounded Context Canvas Data Analytics y Service Operation and Monitoring. También se Realizó la documentación de 3 Domain Message Flow| 
+<style>
+    /* --- Estilos Generales para el Contenedor del Historial --- */
+    .historial-versiones {
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 10pt; /* Tamaño de fuente reducido para que quepa más contenido */
+        color: #333;
+        line-height: 1.5;
+    }
+    /* --- Estilo para las Tablas Individuales --- */
+    .historial-versiones table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2em; /* Espacio generoso entre tablas */
+        table-layout: fixed; /* CLAVE: Evita que el contenido desborde las columnas */
+    }
+    /* --- Estilo para Encabezados de Tabla (th) --- */
+    .historial-versiones th {
+        background-color: #4A5568; /* Gris oscuro para contraste */
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 9pt;
+    }
+    /* --- Estilo para Celdas de Tabla (td) --- */
+    .historial-versiones td {
+        border: 1px solid #e2e8f0;
+        padding: 8px 10px;
+        vertical-align: top; /* Alinear contenido arriba para textos largos */
+        word-wrap: break-word; /* CLAVE: Forzar el salto de línea en textos largos */
+    }
+    
+    /* --- Estilo para Títulos de Entrega (H3) --- */
+    .historial-versiones h3 {
+        border-bottom: 2px solid #4A5568;
+        padding-bottom: 5px;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        font-size: 14pt;
+    }
+    /* --- Estilo para Filas Principales de Entrega (TB1, TP, etc.) --- */
+    .entrega-principal td {
+        background-color: #edf2f7; /* Un gris muy claro para destacar la fila */
+        font-weight: bold;
+    }
+</style>
+<div class="historial-versiones">
+    <h2>Registro de Versiones del Informe</h2>
+    <!-- =========== ENTREGA 1 =========== -->
+    <h3>Entrega 1: Trabajo Base (TB1)</h3>
+    <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Versión</th>
+                <th>Fecha</th>
+                <th>Autores</th>
+                <th>Descripción del Cambio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="entrega-principal">
+                <td>1.0 - TB1</td>
+                <td>27/04/2025</td>
+                <td>SevenSync</td>
+                <td>Desarrollo parcial de Capítulos 1, 2, 3 y 4. Nota: 6.25</td>
+            </tr>
+            <tr>
+                <td>1.1</td>
+                <td>25/04/2025</td>
+                <td>Flavio Trigueros</td>
+                <td>Desarrollo inicial del Capítulo 1 - Planteamiento del Problema y definición de la startup.</td>
+            </tr>
+            <tr>
+                <td>1.2</td>
+                <td>26/04/2025</td>
+                <td>Fabrizio Sánchez</td>
+                <td>Elaboración del Capítulo 2.</td>
+            </tr>
+            <tr>
+                <td>1.3</td>
+                <td>26/04/2025</td>
+                <td>Lucio Yen</td>
+                <td>Desarrollo parcial del Capítulo 3 - User Stories y Product Backlog.</td>
+            </tr>
+            <tr>
+                <td>1.4</td>
+                <td>27/04/2025</td>
+                <td>Ruben Mallma, Luiggui Paredes y Juan Pescorán</td>
+                <td>Avance inicial del Capítulo 4 - Event Storming, C4 models.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- =========== ENTREGA 2 =========== -->
+    <h3>Entrega 2: Trabajo Parcial (TP)</h3>
+    <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Versión</th>
+                <th>Fecha</th>
+                <th>Autores</th>
+                <th>Descripción del Cambio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="entrega-principal">
+                <td>2.0 - TP</td>
+                <td>16/05/2025</td>
+                <td>SevenSync</td>
+                <td>Correcciones y desarrollo completo de caps 3-6. Nota: 13.75</td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>10/05/2025</td>
+                <td>Lucio Yen, Flavio Trigueros, Fabrizio Sánchez, Juan Pescorán</td>
+                <td>Aplicación de correcciones del feedback docente a capítulos 1-4.</td>
+            </tr>
+            <tr>
+                <td>2.2</td>
+                <td>12/05/2025</td>
+                <td>Lucio Yen</td>
+                <td>Documentación y mejora del Capítulo 3 - Impact Mapping, User Stories y Product Backlog.</td>
+            </tr>
+            <tr>
+                <td>2.3</td>
+                <td>14/05/2025</td>
+                <td>Luiggui Paredes, Juan Pescorán, Flavio Trigueros, Luiggi Paredes</td>
+                <td>Expansión del Capítulo 4 - Candidate Context y Tactical DDD.</td>
+            </tr>
+            <tr>
+                <td>2.4</td>
+                <td>15/05/2025</td>
+                <td>Flavio Trigueros, Fabrizio Sánchez</td>
+                <td>Desarrollo parcial del Capítulo 5 - Diseño de la aplicación web.</td>
+            </tr>
+            <tr>
+                <td>2.5</td>
+                <td>16/05/2025</td>
+                <td>Lucio Yen</td>
+                <td>Avance del Capítulo 6 - documentación del Sprint 1.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- =========== ENTREGA 3 =========== -->
+    <h3>Entrega 3: Trabajo Base 2 (TB2)</h3>
+    <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Versión</th>
+                <th>Fecha</th>
+                <th>Autores</th>
+                <th>Descripción del Cambio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="entrega-principal">
+                <td>3.0 - TB2</td>
+                <td>15/07/2025</td>
+                <td>SevenSync</td>
+                <td>Correcciones y mejoras en caps 3-6. Nota: 11.5</td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>10/07/2025</td>
+                <td>Lucio Yen</td>
+                <td>Corrección y mejora del Capítulo 3 según feedback del TP.</td>
+            </tr>
+             <tr>
+                <td>3.2</td>
+                <td>11/07/2025</td>
+                <td>Ruben Mallma, Flavio Trigueros, Juan Pescorán, Fabrizio Sánchez</td>
+                <td>Ajuste del análisis y presentación en Capítulo 4.</td>
+            </tr>
+            <tr>
+                <td>3.3</td>
+                <td>13/07/2025</td>
+                <td>Flavio Trigueros, Fabrizio Sánchez, Lucio Yen</td>
+                <td>Mejora de redacción y claridad en el Capítulo 5, Prototipo de Figma.</td>
+            </tr>
+            <tr>
+                <td>3.4</td>
+                <td>15/07/2025</td>
+                <td>Lucio Yen</td>
+                <td>Video "About The Team".</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- =========== ENTREGA 4 =========== -->
+    <h3>Entrega 4: Trabajo Final (TF1)</h3>
+    <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Versión</th>
+                <th>Fecha</th>
+                <th>Autores</th>
+                <th>Descripción del Cambio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="entrega-principal">
+                <td>4.0 - TF1</td>
+                <td>07/07/2025</td>
+                <td>SevenSync</td>
+                <td>Documentación completa del proyecto.</td>
+            </tr>
+            <tr>
+                <td>4.1</td>
+                <td>01/07/2025</td>
+                <td>Flavio Trigueros</td>
+                <td>Actualización de la bibliografía.</td>
+            </tr>
+            <tr>
+                <td>4.2</td>
+                <td>03/07/2025</td>
+                <td>Flavio Trigueros</td>
+                <td>Corrección del Candidate Context Discovery.</td>
+            </tr>
+            <tr>
+                <td>4.3</td>
+                <td>04/07/2025</td>
+                <td>Fabrizio Sánchez</td>
+                <td>Modificación de datos en portada y formato de bibliografía.</td>
+            </tr>
+            <tr>
+                <td>4.4</td>
+                <td>04/07/2025</td>
+                <td>Rubén Mallma</td>
+                <td>Documentación del Domain Message Flow Modelling.</td>
+            </tr>
+            <tr>
+                <td>4.5</td>
+                <td>04/07/2025</td>
+                <td>Flavio Trigueros</td>
+                <td>Documentación de descripción de los diagramas C4.</td>
+            </tr>
+            <tr>
+                <td>4.6</td>
+                <td>05/07/2025</td>
+                <td>Juan Pescorán</td>
+                <td>Actualización de los diagramas C4.</td>
+            </tr>
+             <tr>
+                <td>4.7</td>
+                <td>04/07/2025</td>
+                <td>Lucio Yen</td>
+                <td>Implementación parcial de diagrama de clases en PlantUML.</td>
+            </tr>
+            <tr>
+                <td>4.8</td>
+                <td>04/07/2025</td>
+                <td>Juan Pescorán</td>
+                <td>Documentación del Bounded Context Canvas y 3 Domain Message Flows.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 ---
 
 # Project Report Collaboration Insights
@@ -103,18 +355,17 @@ elaboración del informe. Adicionalmente, se presentan las métricas de las acci
 **TB1 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tb1.png" width= "600px" alt="contribuciones del equipo para la TB1">
+<img src="/assets/img/portada/team-contributions-tb1.png" width= "400px" alt="contribuciones del equipo para la TB1">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para la TB1">
-<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" width= "400px" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" width= "400px" alt="contribuciones de cada miembro del equipo para la TB1">
 
 _Commits_
-
-<img src="/assets/img/portada/commits-tb1.png" width= "600px" alt="commits del equipo para la TB1">
+<img src="/assets/img/portada/commits-tb1.png" width= "400px" alt="commits del equipo para la TB1">
 
 _Network Graph_
-<img src="/assets/img/portada/network-graph-tb1.png" width= "600px" alt="gráfico de red de ramas del equipo para la TB1">
-<img src="/assets/img/portada/network-graph-tb1-b.png" width= "600px" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1.png" width= "400px" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1-b.png" width= "400px" alt="gráfico de red de ramas del equipo para la TB1">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -139,18 +390,18 @@ En esta entrega no se han utilizado pull requests.
 **TP Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tp.png" width= "600px" alt="contribuciones del equipo para el trabajo parcial">
+<img src="/assets/img/portada/team-contributions-tp.png" width= "400px" alt="contribuciones del equipo para el trabajo parcial">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
-<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" width= "400px" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" width= "400px" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tp.png" width= "600px" alt="commits del equipo para el trabajo parcial">
+<img src="/assets/img/portada/commits-tp.png" width= "400px" alt="commits del equipo para el trabajo parcial">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tp.png" width= "600px" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+<img src="/assets/img/portada/network-graph-tp.png" width= "400px" alt="gráfico de red de ramas del equipo para el trabajo parcial">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -174,18 +425,18 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TB2 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tb2.png" width= "600px" alt="contribuciones del equipo para la tb2">
+<img src="/assets/img/portada/team-contributions-tb2.png" width= "400px" alt="contribuciones del equipo para la tb2">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para la tb2">
-<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para la tb2">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" width= "400px" alt="contribuciones de cada miembro del equipo para la tb2">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" width= "400px" alt="contribuciones de cada miembro del equipo para para la tb2">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tb2.png" width= "600px" alt="commits del equipo para la tb2">
+<img src="/assets/img/portada/commits-tb2.png" width= "400px" alt="commits del equipo para la tb2">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tb2.png" width= "600px" alt="gráfico de red de ramas del equipo para la tb2">
+<img src="/assets/img/portada/network-graph-tb2.png" width= "400px" alt="gráfico de red de ramas del equipo para la tb2">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -210,18 +461,18 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TF1 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tf.png" width= "600px" alt="contribuciones del equipo para el tf">
+<img src="/assets/img/portada/team-contributions-tf.png" width= "400px" alt="contribuciones del equipo para el tf">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para el tf">
-<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para el tf">
+<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" width= "400px" alt="contribuciones de cada miembro del equipo para el tf">
+<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" width= "400px" alt="contribuciones de cada miembro del equipo para para el tf">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tf.png" width= "600px" alt="commits del equipo para el tf">
+<img src="/assets/img/portada/commits-tf.png" width= "400px" alt="commits del equipo para el tf">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tf.png" width= "600px" alt="gráfico de red de ramas del equipo para el tf">
+<img src="/assets/img/portada/network-graph-tf.png" width= "400px" alt="gráfico de red de ramas del equipo para el tf">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -242,8 +493,6 @@ Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ra
 En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
 
 ---
-
-
 # Contenido
 
 ## Tabla de Contenidos
