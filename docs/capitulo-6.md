@@ -538,7 +538,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 </tbody>
 </table>
 
-#### 6.2.1.2.Sprint Backlog 1.
+#### 6.2.1.2. Aspects Leaders and Collaborators
+
+#### 6.2.1.3.Sprint Backlog 1.
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
 A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
@@ -1331,7 +1333,7 @@ Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https:
     <tbody>
 </table>
 
-#### 6.2.1.3.Development Evidence for Sprint Review.
+#### 6.2.1.4.Development Evidence for Sprint Review.
 
 En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page, Web Applications, Web Services.
 
@@ -1340,15 +1342,15 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
 
-#### 6.2.1.4.Testing Suite Evidence for Sprint Review.
+#### 6.2.1.5.Testing Suite Evidence for Sprint Review.
 
 Para front es Specs de angular
 
-#### 6.2.1.5.Execution Evidence for Sprint Review.
+#### 6.2.1.6.Execution Evidence for Sprint Review.
 
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page ">
 
-#### 6.2.1.6.Services Documentation Evidence for Sprint Review.
+#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
 
 En el alcance de este sprint, no se realizó un web service, sin embargo, a modo de simulación de datos, desplegamos una FAKE API en Beeceptor con los siguientes endpoints:
 <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia Landing page ">
@@ -1358,12 +1360,12 @@ En el alcance de este sprint, no se realizó un web service, sin embargo, a modo
 <img src="/assets/img/capitulo-6/evidence/service-fake-4.jpeg" alt="Evidencia Landing page ">
 <img src="/assets/img/capitulo-6/evidence/service-fake-5.jpeg" alt="Evidencia Landing page ">
 
-#### 6.2.1.7.Software Deployment Evidence for Sprint Review.
+#### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
 Enlace de Landing Page: https://sevensync.github.io/macetech-landing/
 <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia Landing page ">
 
-#### 6.2.1.8.Team Collaboration Insights during Sprint.
+#### 6.2.1.9.Team Collaboration Insights during Sprint.
 
 <img src="/assets/img/capitulo-6/evidence/landing-page-commits-evidence.jpeg" alt="Evidencia Landing page ">
 
@@ -1371,19 +1373,40 @@ Enlace de Landing Page: https://sevensync.github.io/macetech-landing/
 
 #### 6.2.2.1. Sprint Planning 2
 
-#### 6.2.2.2. Sprint Backlog 2
+#### 6.2.2.2. Aspects Leaders and Collaborators
 
-#### 6.2.2.3. Development Evidence for Sprint Review
+#### 6.2.2.3. Sprint Backlog 2
 
-#### 6.2.2.4. Testing Suite Evidence for Sprint Review
+#### 6.2.2.4. Development Evidence for Sprint Review
 
-#### 6.2.2.5. Execution Evidence for Sprint Review
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
-#### 6.2.2.6. Services Documentation Evidence for Sprint Review
+#### 6.2.2.6. Execution Evidence for Sprint Review
 
-#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
-#### 6.2.2.8. Team Collaboration Insights during Sprint
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint
+
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3
+
+#### 6.2.3.2. Aspects Leaders and Collaborators
+
+#### 6.2.3.3. Sprint Backlog 3
+#### 6.2.3.4. Development Evidence for Sprint Review
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint
 
 ### 6.3. Validation Interviews.
 
