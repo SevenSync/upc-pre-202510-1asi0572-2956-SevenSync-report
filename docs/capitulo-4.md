@@ -296,26 +296,46 @@ Como resultado de la sesión de Candidate Context Discovery y con base en los ev
 #### 4.1.1.2 Domain Message Flows Modeling.
 ### Scenario: Account Creation
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/0.png"></image>
+
 ### Scenario: Create Profile On First Sign In
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/1.png"></image>
+
 ### Scenario: Pot Linking With User
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png"></image>
+
 ### Scenario: Assign Plant to Linked Pot
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png"></image>
+
 ### Scenario: Send Alert Based On Pot
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/4.png"></image>
+
+### Scenario: Decision, Execution and Notification of Irrigation
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/6.jpg"></image>
+
+### Scenario: Automatic System Requests the Irrigation Plan
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/5.jpg"></image>
 
 #### 4.1.1.3 Bounded Context Canvases.
 ### Identity and Access Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png"></image>
+
 ### Profile and Preferences
 <image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png"></image>
+
 ### Asset & Resource Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png"></image>
+
 ### Plant Management
 <image src="../assets/img/capitulo-4/bounded-context-canvases/plant-management.png"></image>
+
 ### System Monitoring & Control
 <image src="../assets/img/capitulo-4/bounded-context-canvases/system-monitoring-and-control.png"></image>
+
+### Service Operation and Monitoring
+<image src="../assets/img/capitulo-4/bounded-context-canvases/design-canva.jpg"></image>
+
+### Data Analytics
+<image src="../assets/img/capitulo-4/bounded-context-canvases/analytics-canva.jpg"></image>
 
 ### 4.1.2. Context Mapping.
 
