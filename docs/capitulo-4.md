@@ -382,7 +382,7 @@ _Lista de candidatos a Bounded Context identificados en el proceso de EventStorm
 
 | Contexto    | Responsabilidades clave    | ¿Pasa al diseño  |
 | ---------- | -----------| -------------------- |
-| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles. CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login, emisión de tokens y 2FA en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. También es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría.   |
+| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles. CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login Y emisión de tokens en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. También es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría.   |
 | Profile and Preferences    | Almacenamiento/actualización de datos de perfil, preferencias del usuario, integración Geo API, y normalización de direcciones del usuario  | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos dentro de la solución. Al abstraer el manejo de datos de perfil, contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. Esto involucra también preferencias de notificaciones, apariencia de la aplicación, etc. |
 | Asset & Resource Management | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica de los datos obtenidos | Este componente constituye la base de la capa IoT, ya que permite registrar las macetas junto con sus parámetros iniciales. Centralizar en este punto la configuración posibilita desacoplar la lógica de los sensores de la lógica del resto de la aplicación, lo que a su vez favorece la extensibilidad del sistema. De este modo, se pueden incorporar nuevos tipos de dispositivos sin generar impactos en los módulos de control ni en los procesos analíticos, asegurando una arquitectura más flexible y escalable.  |
 | Service Design and Planning | Catálogo de especies de plantas junto con sus rangos óptimos de pH, luminosidad, temperatura y salinidad, así como la validación de la correspondencia planta–maceta. Engloba el diseño y la planificación del servicio y de sus funcionalidades, desde la selección de la especie hasta la configuración de sus parámetros.  | **Consolidado:** Este enfoque posibilita la evolución del modelo botánico de manera autónoma respecto al hardware subyacente. Al aislar la lógica del servicio de las especies y sus rangos óptimos, se facilita la incorporación de nuevas variedades vegetales o la integración de proveedores de datos externos, sin que ello afecte a otras capas. De este modo, se mantiene la robustez y la coherencia arquitectónica del sistema. |
@@ -420,29 +420,41 @@ En esta sección, el equipo presenta y documenta de forma detallada el proceso s
 
 Domain Storytelling es una técnica visual y ágil que utiliza historias narradas y representadas gráficamente para describir cómo los distintos actores y componentes del sistema interactúan en situaciones reales. Cada flujo se descompone en pasos secuenciales que combinan narración textual y símbolos estandarizados (actores, mensajes y artefactos), facilitando la comprensión colectiva y la detección temprana de inconsistencias o vacíos en el modelo de dominio (Hofer & Schwentner, 2021).
 
-### Scenario: Account Creation
+###### Figura 50
+*Domain Message Flow relacionado a la creación de una cuenta*
+
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/0.png" width="650px" alt="Account Creation Domain Message Flow"></image>
 
-### Scenario: Create Profile On First Sign In
+###### Figura 51
+*Domain Message Flow relacionado a la creación de un perfil tras el primer inicio de sesión del usuario*
+
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/1.png" width="650px" alt="Create Profile On First Sign In Domain Message Flow"></image>
 
-### Scenario: Pot Linking With User
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png" width="650px" alt="Pot Linking With User
- Domain Message Flow"></image>
+###### Figura 52
+*Domain Message Flow relacionado a la asignación de una maceta con un usuario específico*
 
-### Scenario: Assign Plant to Linked Pot
-<image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png" width="650px" alt="Assign Plant to Linked Pot
- Domain Message Flow"></image>
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/2.png" width="650px" alt="Pot Linking With User Domain Message Flow"></image>
 
-### Scenario: Send Alert Based On Pot
+###### Figura 53
+*Domain Message Flow relacionado a la asignación de una planta a una maceta específica*
+
+<image src="../assets/img/capitulo-4/domain-message-flows-modelling/3.png" width="650px" alt="Assign Plant to Linked Pot Domain Message Flow"></image>
+
+###### Figura 54
+*Domain Message Flow relacionado al envío de alertas provenientes de una maceta*
+
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/4.png" width="650px" alt="Send Alert Based On Pot
  Domain Message Flow"></image>
 
-### Scenario: Decision, Execution and Notification of Irrigation
+###### Figura 55
+*Domain Message Flow relacionado al proceso de decisión, ejecución y notificación de irrigación para una maceta*
+
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/6.jpg" width="650px" alt="Decision, Execution and Notification of Irrigation
  Domain Message Flow"></image>
 
-### Scenario: Automatic System Requests the Irrigation Plan
+###### Figura 56
+*Domain Message Flow relacionado a la petición del sistema automático para el plan de irrigación de una maceta*
+
 <image src="../assets/img/capitulo-4/domain-message-flows-modelling/5.jpg" width="650px" alt="Automatic System Requests the Irrigation Plan
  Domain Message Flow"></image>
 
@@ -466,25 +478,39 @@ El Bounded Context Canvas es una herramienta que guía el diseño de dominios ac
 
 7. **IAM (Authentication & Authorization):** Login/logout, gestión de sesiones, emisión de JWT. Fundamental para la seguridad y el acceso, pero en la práctica “soporta” a todos los demás contextos.
 
-### Identity and Access Management
+###### Figura 57
+*Bounded Context Canvas de IAM (Identity and Access Management)*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/iam.png" width="650px" alt="Iam Bounded Context Canvas"></image>
 
-### Profile and Preferences
+###### Figura 58
+*Bounded Context Canvas de Profile and Preferences*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/profile-and-personal-data.png" width="650px" alt="Profile and Preferences Bounded Context Canvas"></image>
 
-### Asset & Resource Management
+###### Figura 59
+*Bounded Context Canvas de Asset & Resource Management*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/pot-management.png" width="650px" alt="Asset & Resource Management Bounded Context Canvas"></image>
 
-### Suscriptions and Payments
+###### Figura 60
+*Bounded Context Canvas de Subscriptions and Payments*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/subscriptions-and-payments-canvas.png" width="650px" alt="Suscriptions and Payments Management Bounded Context Canvas"></image>
 
-### Service Design and Planning
+###### Figura 61
+*Bounded Context Canvas de Service Design and Planning*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/service-design-and-planning-canvas.png" width="650px" alt="Service Design and Planning Bounded Context Canvas"></image>
 
-### Service Operation and Monitoring
+###### Figura 62
+*Bounded Context Canvas de Service Operation and Monitoring*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/service-operation-and-monitoring-canvas.png" width="650px" alt="Service Operation and Monitoring Bounded Context Canvas"></image>
 
-### Data Analytics
+###### Figura 63
+*Bounded Context Canvas de Data Analytics*
+
 <image src="../assets/img/capitulo-4/bounded-context-canvases/data-analytics-canvas.png" width="650px" alt="Data Analytics Bounded Context Canvas"></image>
 
 ### 4.1.2. Context Mapping
@@ -495,67 +521,93 @@ El context mapping, en el marco de Domain‑Driven Design, consiste en represent
 
 Para guiar el proceso de refinamiento, se plantean preguntas estratégicas en cada iteración: “¿qué pasaría si movemos esta capability a otro bounded context?”, “¿qué tal si descomponemos un sub‑capability y lo trasladamos?”, “¿qué implicaría partir un contexto en dos?”, o “¿qué ganamos duplicando cierta funcionalidad para eliminar dependencias?”. Asimismo, se evalúa la conveniencia de introducir servicios compartidos o aislar los core capabilities en contextos específicos. Cada alternativa se debate contrastando su impacto en la cohesión, el acoplamiento y la escalabilidad, hasta consensuar el mapping óptimo para el ecosistema de Macetech (Khononov, 2021).
 
+###### Figura 64 - 70
+*Context Mapping de ...*
+
 ### 4.1.3. Software Architecture
 
 La visión general de la arquitectura describe la estructura fundamental de un sistema, abarcando sus componentes principales y la interacción entre ellos. En el contexto de desarrollo de aplicaciones móviles, una arquitectura sólida es esencial para garantizar que la aplicación sea escalable, segura y eficiente. Este enfoque permite una implementación ordenada, donde cada parte del sistema tiene una responsabilidad clara, y facilita la integración de nuevas funcionalidades o la modificación de las existentes sin afectar la estabilidad general de la plataforma (Richards & Ford, 2021).
 
-El diseño arquitectónico de la aplicación móvil Roademics se basa en una arquitectura modular, donde cada componente del sistema está desacoplado, permitiendo un desarrollo y mantenimiento más flexible. Este enfoque se apoya en patrones de diseño como el Modelo-Vista-Controlador (MVC) y el Modelo-Vista-ViewModel (MVVM), que promueven una clara separación de preocupaciones y mejoran la mantenibilidad del código. Además, se integra con servicios externos de autenticación, bases de datos en la nube, y plataformas de análisis, asegurando que la aplicación pueda manejar grandes volúmenes de datos de manera eficiente y con una alta disponibilidad.
+El diseño arquitectónico de Macetech se basa en una arquitectura modular, donde cada componente del sistema está desacoplado, permitiendo un desarrollo y mantenimiento más flexible. Este enfoque se apoya en patrones de diseño como el Modelo-Vista-Controlador (MVC) y el modelo de Vista-Modelo-Vista (MVVM), que promueven una clara separación de preocupaciones y mejoran la mantenibilidad del código. Además, se integra con servicios externos de autenticación, bases de datos en la nube, y plataformas de análisis, asegurando que la aplicación pueda manejar grandes volúmenes de datos de manera eficiente y con una alta disponibilidad.
 
 La arquitectura también contempla la seguridad como un aspecto central, con la implementación de técnicas de cifrado para proteger los datos sensibles del usuario y garantizar que las comunicaciones dentro de la aplicación sean seguras. Además, se diseña para ser compatible con diversas plataformas móviles, adaptándose a las especificaciones de iOS y Android, lo que facilita una experiencia de usuario consistente y de alta calidad en ambos entornos.
 
-De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles —Contexto, Contenedores, Componentes y Código—, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
+De acuerdo con Brown (2023), el modelo C4 para la diagramación y esquematización de la arquitectura de software ofrece un enfoque estructurado y escalable que facilita la descripción clara de sus secciones y componentes. Al dividir la arquitectura en cuatro niveles, Contexto, Contenedores, Componentes y Código, permite una comprensión más accesible tanto para técnicos como para partes interesadas sin experiencia técnica. Esta estructura promueve una comunicación más fluida y efectiva entre los equipos de desarrollo y las partes involucradas, optimizando el proceso colaborativo y resultando en un desarrollo más eficiente y en una arquitectura de software más robusta y mantenible.
 
-#### 4.1.3.1. Software Architecture System Landscape Diagram.
+#### 4.1.3.1. Software Architecture System Landscape Diagram
 
-El diagrama de landscape (o paisaje del sistema) representa un nivel organizacional dentro del modelo C4, proporcionando una visión holística de todos los sistemas de software relevantes y cómo se relacionan entre sí dentro de un entorno empresarial o tecnológico más amplio. Este diagrama ayuda a comprender la arquitectura distribuida de múltiples sistemas, ya sean internos o externos, y las interacciones clave que sostienen los flujos de información entre ellos.
+El diagrama de landscape o paisaje del sistema corresponde al nivel organizacional del modelo C4 y ofrece una visión integral de todos los sistemas de software relevantes y sus interacciones dentro de un entorno empresarial o tecnológico más amplio. Este tipo de visualización resulta clave para comprender arquitecturas distribuidas, ya que permite mapear tanto sistemas internos como externos, así como los flujos de información que los conectan (Brown, 2023).
 
-En el contexto de una plataforma de jardinería inteligente como Macetech, el diagrama de landscape muestra cómo conviven e interactúan los distintos sistemas que conforman el ecosistema completo: desde las aplicaciones cliente (web, móvil), el backend monolítico, y los servicios embebidos en dispositivos IoT, hasta los sistemas externos como APIs de inteligencia artificial. Esta representación permite identificar relaciones críticas entre componentes distribuidos, dependencias tecnológicas y oportunidades de desacoplamiento, facilitando tanto la toma de decisiones arquitectónicas como la evolución escalable del sistema.
+En el caso de Macetech, una plataforma de jardinería inteligente, el diagrama de landscape ilustra la convivencia e integración de múltiples componentes: desde las aplicaciones cliente (web y móvil), el backend monolítico y los servicios embebidos y edge en dispositivos IoT, hasta sistemas externos. Esta representación facilita la comprensión de relaciones críticas entre componentes distribuidos, revelando dependencias tecnológicas y posibles puntos de desacoplamiento.
+
+Al proporcionar una vista de alto nivel, este diagrama apoya la toma de decisiones arquitectónicas estratégicas y orienta la evolución del sistema hacia estructuras más modulares, resilientes y escalables.
+
+###### Figura 71
+*Diagrama de paisaje de la plataforma de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MacetechLandscape.png"></image>
 
-#### 4.1.3.2. Software Architecture Context Level Diagrams.
+#### 4.1.3.2. Software Architecture Context Level Diagrams
 
-El diagrama de contexto, el nivel más alto de abstracción en el modelo C4, proporciona una vista general del sistema y su entorno externo, ilustrando las interacciones de alto nivel entre el sistema y los actores externos. Este diagrama ofrece una representación clara de cómo el sistema se relaciona con sus usuarios, agentes externos y otros componentes ajenos al sistema.
+El diagrama de contexto, como nivel más alto de abstracción del modelo C4, ofrece una visión global del sistema de Macetech y su entorno externo, mostrando las interacciones de alto nivel con actores y servicios externos. Esta representación clarifica cómo la plataforma se vincula con usuarios (jardineros novatos y experimentados), sistemas externos (Stripe, GeoAPI) y otros subsistemas independientes que se pueda requerir, estableciendo los límites de responsabilidad de Macetech (Brown, 2023).
 
-En el caso de una aplicación web inmobiliaria, el diagrama de contexto muestra de manera detallada las interacciones entre los usuarios finales, los agentes inmobiliarios y la plataforma. Además, destaca las conexiones críticas entre la aplicación y diversas API y servicios externos, esenciales para habilitar las funcionalidades clave que la plataforma debe ofrecer a los usuarios. Estas integraciones son fundamentales para garantizar una experiencia fluida y robusta, respondiendo a las necesidades dinámicas del mercado inmobiliario.
+Para SevenSync, el diagrama de contexto expone de forma precisa las conexiones críticas entre Macetech y sus dependencias externas, como APIs de pasarelas de pago y proveedores de geolocalización. Al visualizar estos enlaces, el equipo puede asegurar una experiencia de usuario fluida y resiliente, anticipar puntos de fallo y planificar estrategias de desacoplamiento o sustitución de servicios, adaptándose ágilmente a las exigencias del mercado de jardinería inteligente.
+
+###### Figura 72
+*Diagrama de contexto de la plataforma de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-SystemContext.png"></image>
 
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
 
-El diagrama de contenedores ofrece una representación visual detallada de la arquitectura interna de un sistema de software, mostrando los principales contenedores (como aplicaciones, bases de datos o servicios) y cómo estos se comunican para cumplir con los objetivos del sistema. Es una herramienta esencial para facilitar la comprensión de la estructura y las interacciones internas, permitiendo a los miembros del equipo técnico y otras partes interesadas colaborar de manera más eficiente.
+El diagrama de contenedores, ubicado en un nivel intermedio del modelo C4, ofrece una visión detallada de la arquitectura interna de Macetech, identificando los principales contenedores (aplicaciones cliente, servicios backend, bases de datos, aplicaciones relacionadas a IoT) y sus protocolos de comunicación. Esta representación facilita la comprensión de cómo cada pieza colabora para cumplir con los casos de uso del sistema, permitiendo al equipo técnico y a los stakeholders visualizar claramente responsabilidades, flujos de datos y tecnologías empleadas (Brown, 2023).
 
-En el caso del sistema integrado de Roademics, este diagrama desglosa la arquitectura, revelando las conexiones entre los distintos puntos de desarrollo, así como las interacciones con sistemas externos adyacentes. A través del BackEnd, se establecen conexiones directas con la base de datos, la cual gestiona y almacena la información crítica para el funcionamiento eficiente del sistema. Este enfoque detallado permite una visión clara de cómo cada componente colabora para brindar una experiencia fluida y coherente, asegurando que todas las partes del sistema trabajen en conjunto de manera efectiva.
+En el contexto de Macetech, el diagrama presenta, por ejemplo, la aplicación web y móvil como contenedores de presentación que interactúan con un backend monolítico para autenticación y lógica de negocio. A su vez, se distinguen las aplicaciones edge y embedded, las cuales conforman contenedores que se comunican con el backend a través de MQTT, cerrando así el ciclo de información en tiempo real. Esta estructura modular apoya la escalabilidad del producto y facilita la identificación de puntos de desacoplamiento o de refactorización futura.
 
-#### Containers Diagram
+###### Figura 73
+*Diagrama de contenedores de la plataforma de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Containers.png"></image>
 
-#### Landing Page Diagram
+###### Figura 74
+*Diagrama de componentes de la Landing Page de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-LandingPageComponents.png"></image>
 
-#### SPA Diagram
+###### Figura 75
+*Diagrama de componentes del SPA (Single-Page Application) de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-WCAComponents.png"></image>
 
-#### Mobile App Diagram
+###### Figura 76
+*Diagrama de componentes del Mobile Application de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MobileAppComponents.png"></image>
 
-#### Monolith Diagram
+###### Figura 77
+*Diagrama de componentes del Cloud API de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-MonolithComponents.png"></image>
 
-#### Edge Diagram
+###### Figura 78
+*Diagrama de componentes del Edge Application de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EdgeComponents.png"></image>
 
-#### Embedded Diagram
+###### Figura 79
+*Diagrama de componentes del Embedded Application de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-EmbeddedComponents.png"></image>
 
-#### 4.1.3.3. Software Architecture Deployment Diagrams.
+#### 4.1.3.3. Software Architecture Deployment Diagrams
+
+El diagrama de despliegue muestra la distribución física de los contenedores de software sobre la infraestructura tecnológica, detallando nodos (servidores, dispositivos IoT, gateways) y las conexiones de red que los interconectan. Este nivel del modelo C4 permite visualizar dónde se ejecuta cada componente, desde el backend y las bases de datos hasta la aplicación embebida y edge, así como los protocolos de comunicación, volúmenes de tráfico y requisitos de seguridad y redundancia (Brown, 2023).
+
+En el caso de Macetech, el diagrama de despliegue ilustra cómo se alojan las aplicaciones cliente (web y móvil), cómo interactúan con el backend monolítico y cómo se conectan los dispositivos embedded y edge mediante MQTT sobre redes. Además, se especifican los nodos de bases de datos y las pasarelas de API externas (de pago, geolocalización). Esta visión facilita la planificación de escalabilidad, alta disponibilidad y recuperación ante desastres, asegurando un despliegue robusto y mantenible.
+
+###### Figura 80
+
+*Diagrama de despliegue de la plataforma de Macetech*
 
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-Deployment-001.png"></image>
 
