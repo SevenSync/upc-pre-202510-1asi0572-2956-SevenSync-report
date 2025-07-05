@@ -1,7 +1,7 @@
 <div style="text-align: center;">
 
 <p align="center"><br>
-    <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png" width="150px"></img><br><br>
+    <img src="https://www.upc.edu.pe/static/img/logo_upc_red.png" width="100px"></img><br>
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br>
     <strong>Carrera de ingeniería de Software</strong><br><br>
     <strong>Ciclo 202510</strong><br><br>
@@ -11,12 +11,13 @@
     <strong>Informe de Trabajo Final </strong> 
 </p>
 
-<p align="center">
-    <strong>Startup:</strong> SevenSync <br>
-    <strong>Producto:</strong> Macetech <br>
-</p>
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+    <p>
+        <strong>Startup:</strong> SevenSync 
+        <strong>Producto:</strong> Macetech <br>
+    </p>
     <h4>Relación de integrantes</h4>
-    <table style="width:100%; text-align:left;">
+    <table style="width:60%; margin: 0 auto; text-align: left;">
       <thead>
         <tr>
           <th>Código</th>
@@ -50,7 +51,8 @@
         </tr>
       </tbody>
     </table>
-    <p><strong>Junio 2025</strong></p>
+    <p style="text-align: center;"><br><strong>Julio 2025</strong></p>
+</div>
 
 </div>
 
@@ -58,12 +60,35 @@
 
 # Registro de Versiones del Informe
 
-| Versión   | Fecha      | Autores                                                                                                                                                                                                                                                                    | Descripción de Modificación                                                                                                                                                                                                                                                                          |
-| --------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0 - TB1 | 27/4/25    | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Se desarrolló el Capítulo 1, 2, 3 y 4 de forma parcial. Sin embargo, el equipo no logró cumplir con todo el alcance de la entrega. Nota: 6.25                                                                                                                                                        |
-| 2.0 - TP  | 16/05/2025 | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Correciones realizadas a partir del feedback brindadas por el docente. Desarrollo del capítulo III, IV, V y VI. El equipo logró completar todo el alcance de la entrega. Nota: 13.75                                                                                                                 |
-| 3.0 - TB2 | 22/05/2025 | - Paredes Zapata </br></br> - Luiggi Gianfranco </br></br> - Pescorán Angulo, Juan Fabritzzio </br></br> - Mallma Quispe, Rubén Elías </br></br> - Sanchez Zamora, Fabrizio Alessandro </br></br> - Trigueros Chumacero, Flavio Eduardo </br></br> - Yen Cerna, Lucio Heli | Se realizaron correcciones y se incorporaron mejoras en los capítulos III, IV, V y VI, a partir del feedback brindado por el docente en el TP. El equipo aplicó los cambios necesarios en cada capítulo y se pudo completar parcialmente todo el alcance correspondiente a esta entrega.. Nota: 11,5 |
-
+| Versión | Fecha | Autores | Descripción del Cambio |
+| :--- | :--- | :--- | :--- |
+| **1.0 - TB1** | **27/04/2025** | **SevenSync** | **Desarrollo parcial de Capítulos 1, 2, 3 y 4. Nota: 6.25** |
+| 1.1 | 25/04/2025 | Flavio Trigueros| Desarrollo inicial del Capítulo 1 - Planteamiento del Problema y definición de la startup. |
+| 1.2 | 26/04/2025 | Fabrizio Sánchez| Elaboración del Capítulo 2 |
+| 1.3 | 26/04/2025 | Lucio Yen | Desarrollo parcial del Capítulo 3 - User Stories y Product Backlog. |
+| 1.4 | 27/04/2025 | Ruben Mallma, Luiggui Paredes y Juan Pescorán | Avance inicial del Capítulo 4 - Event Storming, C4 models. |
+| **2.0 - TP** | **16/05/2025** | **SevenSync** | **Correcciones y desarrollo completo de caps 3-6. Nota: 13.75** |
+| 2.1 | 10/05/2025 | Lucio Yen, Flavio Trigueros, Fabrizio Sánchez, Juan Pescorán | Aplicación de correcciones del feedback docente a capítulos 1-4. |
+| 2.2 | 12/05/2025 |Lucio Yen | Documentación y mejora del Capítulo 3 - Impact Mapping, User Stories y Product Backlog. |
+| 2.3 | 14/05/2025 | Luiggui Paredes, Juan Pescorán, Flavio Trigueros, Luiggi Paredes | Expansión del Capítulo 4 - Candidate Context y Tactical DDD |
+| 2.4 | 15/05/2025 | Flavio Trigueros, Fabrizio Sanchez | Desarrollo parcial del Capítulo 5 - Diseño de la aplicación web de negocio, web y móvil |
+| 2.5 | 16/05/2025 | Lucio Yen | Avance del Capítulo 6 - documentación del Sprint 1 |
+| **3.0 - TB2** | **15/07/2025** | **SevenSync** | **Correcciones y mejoras en caps 3-6. Nota: 11.5** |
+| 3.1 | 10/07/2025 | Lucio Yen | Corrección y mejora del Capítulo 3 según feedback del TP. |
+| 3.2 | 11/07/2025 | Ruben Mallma, Flavio Triguereos, Juan Pescorán, Fabrizio Sánchez, | Ajuste del análisis y presentación en Capítulo 4. |
+| 3.3 | 13/07/2025 | Flavio Trigueros, Fabrizio Sánchez, Lucio Yen | Mejora de redacción y claridad en el Capítulo 5, Prototipo de Figma. |
+| 3.4 | 15/07/2025 | Lucio Yen | Video about The About the Team |
+| **4.0 - TF1** | **07/07/2025** | **SevenSync** | **Documentación completa del proyecto** |
+| 4.1 | 01/07/2025 | Flavio Trigueros | Actualización de la biblografía. |
+| 4.2 | 03/07/2025 | Flavio Trigueros |Correción del Candidate Context Discovery. |
+| 4.3 | 04/07/2025 | Fabrizio Sanchez |Modificación de los datos de integrantes en la portada y el formato de la bibliografía |
+| 4.4 | 04/07/2025 | Rubén Mallma |Documentación del Domain Message Flow Modelling con 3 bounded context |
+| 4.5 | 04/07/2025 | Rubén Mallma |Documentación del Domain Message Flow Modelling con 3 bounded context |
+| 4.6 | 04/07/2025 | Flavio Trigueros |Documentación de descripción de los diagramas C4 |
+| 4.7 | 05/07/2025 | Juan Pescorán |Actualización de los diagramas C4 |
+| 4.8 | 04/07/2025 | Flavio Trigueros |Documentación de descripción de los diagramas C4 |
+| 4.9 | 04/07/2025 | Lucio Yen |Implementación parcial del diagrama de clase del Edge Application er PlantUML| 
+| 4.10 | 04/07/2025 | Juan Pescorán |Documentación del Bounded Context Canvas Data Analytics y Service Operation and Monitoring. También se Realizó la documentación de 3 Domain Message Flow| 
 ---
 
 # Project Report Collaboration Insights
@@ -78,18 +103,18 @@ elaboración del informe. Adicionalmente, se presentan las métricas de las acci
 **TB1 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tb1.png" alt="contribuciones del equipo para la TB1">
+<img src="/assets/img/portada/team-contributions-tb1.png" width= "600px" alt="contribuciones del equipo para la TB1">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la TB1">
-<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para la TB1">
+<img src="/assets/img/portada/contributions-tb1-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para la TB1">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tb1.png" alt="commits del equipo para la TB1">
+<img src="/assets/img/portada/commits-tb1.png" width= "600px" alt="commits del equipo para la TB1">
 
 _Network Graph_
-<img src="/assets/img/portada/network-graph-tb1.png" alt="gráfico de red de ramas del equipo para la TB1">
-<img src="/assets/img/portada/network-graph-tb1-b.png" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1.png" width= "600px" alt="gráfico de red de ramas del equipo para la TB1">
+<img src="/assets/img/portada/network-graph-tb1-b.png" width= "600px" alt="gráfico de red de ramas del equipo para la TB1">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -114,18 +139,18 @@ En esta entrega no se han utilizado pull requests.
 **TP Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tp.png" alt="contribuciones del equipo para el trabajo parcial">
+<img src="/assets/img/portada/team-contributions-tp.png" width= "600px" alt="contribuciones del equipo para el trabajo parcial">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
-<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tp-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tp.png" alt="commits del equipo para el trabajo parcial">
+<img src="/assets/img/portada/commits-tp.png" width= "600px" alt="commits del equipo para el trabajo parcial">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tp.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+<img src="/assets/img/portada/network-graph-tp.png" width= "600px" alt="gráfico de red de ramas del equipo para el trabajo parcial">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -149,18 +174,18 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TB2 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tb2.png" alt="contribuciones del equipo para la tb2">
+<img src="/assets/img/portada/team-contributions-tb2.png" width= "600px" alt="contribuciones del equipo para la tb2">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para la tb2">
-<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para la tb2">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para la tb2">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para la tb2">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tb2.png" alt="commits del equipo para la tb2">
+<img src="/assets/img/portada/commits-tb2.png" width= "600px" alt="commits del equipo para la tb2">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tb2.png" alt="gráfico de red de ramas del equipo para la tb2">
+<img src="/assets/img/portada/network-graph-tb2.png" width= "600px" alt="gráfico de red de ramas del equipo para la tb2">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -185,18 +210,18 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TF1 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tf.png" alt="contribuciones del equipo para el tf">
+<img src="/assets/img/portada/team-contributions-tf.png" width= "600px" alt="contribuciones del equipo para el tf">
 _Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el tf">
-<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el tf">
+<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" width= "600px" alt="contribuciones de cada miembro del equipo para el tf">
+<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" width= "600px" alt="contribuciones de cada miembro del equipo para para el tf">
 
 _Commits_
 
-<img src="/assets/img/portada/commits-tf.png" alt="commits del equipo para el tf">
+<img src="/assets/img/portada/commits-tf.png" width= "600px" alt="commits del equipo para el tf">
 
 _Network Graph_
 
-<img src="/assets/img/portada/network-graph-tf.png" alt="gráfico de red de ramas del equipo para el tf">
+<img src="/assets/img/portada/network-graph-tf.png" width= "600px" alt="gráfico de red de ramas del equipo para el tf">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
@@ -216,6 +241,7 @@ Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ra
 
 En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
 
+---
 
 
 # Contenido
@@ -313,15 +339,36 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
     - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
   - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-    - [6.2.X. Sprint n](#62x-sprint-n)
-      - [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
-      - [6.2.X.2. Sprint Backlog n](#62x2-sprint-backlog-n)
-      - [6.2.X.3. Development Evidence for Sprint Review](#62x3-development-evidence-for-sprint-review)
-      - [6.2.X.4. Testing Suite Evidence for Sprint Review](#62x4-testing-suite-evidence-for-sprint-review)
-      - [6.2.X.5. Execution Evidence for Sprint Review](#62x5-execution-evidence-for-sprint-review)
-      - [6.2.X.6. Services Documentation Evidence for Sprint Review](#62x6-services-documentation-evidence-for-sprint-review)
-      - [6.2.X.7. Software Deployment Evidence for Sprint Review](#62x7-software-deployment-evidence-for-sprint-review)
-      - [6.2.X.8. Team Collaboration Insights during Sprint](#62x8-team-collaboration-insights-during-sprint)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspects Leader and Collaborators](#6212-sprint-backlog-n)
+      - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-n)
+      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+    - [6.2.2. Sprint 2](#622-sprint-2)
+      - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
+      - [6.2.2.2. Aspects Leader and Collaborators](#6222-sprint-backlog-2)
+      - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
+      - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
+      - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
+      - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
+      - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
+      - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
+      - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
+    - [6.2.3. Sprint 3](#623-sprint-3)
+      - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-1)
+      - [6.2.3.2. Aspects Leader and Collaborators](#6232-sprint-backlog-3)
+      - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-n)
+      - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+      - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+      - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+      - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+      - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+      - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
