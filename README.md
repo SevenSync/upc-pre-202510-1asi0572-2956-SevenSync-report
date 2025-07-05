@@ -124,31 +124,62 @@ _Commits_
 <img src="/assets/img/portada/commits-tp.png" alt="commits del equipo para el trabajo parcial">
 
 _Network Graph_
+
 <img src="/assets/img/portada/network-graph-tp.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
-<img src="/assets/img/portada/network-graph-tp-b.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
-- Para esta entrega, se han realizado un total de (numero) commits.
+- Para esta entrega, se han realizado un total de 38 commits.
 
 - La mayor concentración de commits estuvo en la rama develop.
 
-- El equipo logró el alcance de la entrega al finalizar el desarrollo del capítulo III, IV, V y VI y aplicar las correcciones brindadas en la retroalimentación con el docente.
-
+- El equipo logró subsanar los errores de la anterior entrega tb1. 
 - El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
 
-Para el control de versiones, decidimos emplear 2 ramas estables y ramas temporales:
+- El equipo logró documentar el capítulo 1 y 2 al 100%, sim embargo se deben subsanar varios errores en los capítulos posteriores.
+
+Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ramas temporales:
 
 **main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
 
 **develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
 
-**ramas temporales**: Estas ramas entregan valor que se integrará posteriomente en develop mediante pull requests, estas ramas aseguran la reversión sencilla. Al ser fusionadas, estas son eliminadas promoviendo la organización y limpieza.
+En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
 
-Las otras ramas utilizadas en la TB1 fueron declaradas en desuso al cambiar el manejo de las ramas, por lo tanto, fueron eliminadas.
+**TB2 Project Report Collaboration Insights**
 
-En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop.
+_Vista general de las contribuciones del equipo_
+<img src="/assets/img/portada/team-contributions-tb2.png" alt="contribuciones del equipo para el trabajo parcial">
+_Contribuciones por miembro del equipo_
+<img src="/assets/img/portada/contributions-tb2-per-team-member-1.png" alt="contribuciones de cada miembro del equipo para el trabajo parcial">
+<img src="/assets/img/portada/contributions-tb2-per-team-member-2.png" alt="contribuciones de cada miembro del equipo para para el trabajo parcial">
 
+_Commits_
+
+<img src="/assets/img/portada/commits-tb2.png" alt="commits del equipo para el trabajo parcial">
+
+_Network Graph_
+
+<img src="/assets/img/portada/network-graph-tb2.png" alt="gráfico de red de ramas del equipo para el trabajo parcial">
+
+De las contribuciones del equipo y commits se concluye lo siguiente:
+
+- Para esta entrega, se han realizado un total de 38 commits.
+
+- La mayor concentración de commits estuvo en la rama develop.
+
+- El equipo logró subsanar los errores de la anterior entrega tb1. 
+- El equipo celebra la reorganización y compromiso que se tuvo para realizar la entrega.
+
+- El equipo logró documentar el capítulo 1 y 2 al 100%, sim embargo se deben subsanar varios errores en los capítulos posteriores.
+
+Para el control de versiones, decidimos emplear 2 ramas estables y borrar las ramas temporales:
+
+**main:** Esta rama se mantiene como un reflejo del documento en su última versión estable. El estado del documento será listo para entregar.
+
+**develop:** Esta rama actúa como la rama de integración principal para la nueva documentación por capítulo y correcciones del informe.
+
+En esta entrega se han utilizado pull requests para la entrega de artefactos en la rama develop y se hizo el merge a main para entregar el informe.
 # Contenido
 
 ## Tabla de Contenidos
