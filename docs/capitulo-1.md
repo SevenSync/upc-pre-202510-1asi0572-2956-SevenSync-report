@@ -1,5 +1,7 @@
 # Capítulo I: Introducción
 
+En este capítulo se sientan las bases estratégicas y conceptuales de SevenSync, presentando la visión y misión que guían nuestro propósito, así como los valores que definen nuestra cultura organizacional. A continuación se perfila el perfil de la startup y de la solución, mostrando el contexto de su creación, su propuesta de valor y sus principales características diferenciales. Asimismo, se expone el enfoque Lean UX adoptado para iterar de forma ágil y centrada en el usuario, y se delimitan los segmentos objetivos a los que dirigimos nuestra oferta, identificando sus necesidades y motivaciones clave. Este marco introductorio proporcionará al lector una comprensión global del proyecto y el punto de partida para los capítulos posteriores.
+
 ## 1.1. Startup Profile
 
 Según un informe publicado por el Proyecto Perfect Earth (2024), se estima que alrededor del 50% del agua utilizada en actividades de riego se desperdicia, ya sea debido a una distribución hídrica ineficiente en las áreas del jardín o a la aplicación de volúmenes de agua que exceden considerablemente las necesidades fisiológicas de las plantas. Este mal uso de los recursos hídricos no solo resulta en una utilización ineficaz del agua, sino que también puede generar graves consecuencias para la salud de las plantas, como el marchitamiento causado por la pudrición radicular, la compactación del sustrato y los desequilibrios en la absorción de nutrientes esenciales (Cherlinka, 2025). Estos problemas afectan directamente el crecimiento y la vitalidad de las plantas, comprometiendo su desarrollo a largo plazo. A esto se suma la falta de una planificación adecuada en aspectos como la selección de la tierra, la gestión del mantenimiento de las plantas y una zonificación inapropiada en áreas de sol o sombra. Este conjunto de factores sigue siendo uno de los principales obstáculos en la jardinería doméstica sostenible, lo que dificulta la creación de espacios verdes saludables y eficientes (Paisajismo San Rafael, 2024).
@@ -24,51 +26,51 @@ Aspiramos a convertirnos en la plataforma líder en innovación aplicada a la ja
 
 En SevenSync, nuestros principios rectores constituyen el núcleo de nuestra cultura organizacional y guían de forma estratégica cada una de nuestras decisiones, desde la concepción de productos hasta su implementación en el entorno real. Estos valores no solo reflejan nuestro compromiso con la excelencia tecnológica y la responsabilidad ambiental, sino también con la generación de soluciones que promuevan un ecosistema de jardinería inteligente, accesible y sostenible. En este marco, sostenemos los siguientes pilares:
 
-1. Accesibilidad
+1. **Accesibilidad**
 
    Nos comprometemos a ofrecer soluciones tecnológicas que puedan ser utilizadas por cualquier persona, sin importar su edad, nivel técnico o experiencia previa en jardinería. Creemos firmemente que el cuidado vegetal debe estar al alcance de todos, y por ello diseñamos interfaces intuitivas, amigables e inclusivas que eliminan las barreras de entrada al uso de tecnologías avanzadas.
 
-2. Adaptabilidad
+2. **Adaptabilidad**
 
    Desarrollamos herramientas flexibles capaces de ajustarse a una amplia diversidad de especies vegetales, entornos de cultivo y rutinas personales. Esta capacidad de adaptación garantiza que nuestra tecnología responda eficazmente a las necesidades particulares de cada usuario y escenario, permitiendo una experiencia personalizada y funcional en todo momento.
 
-3. Conectividad
+3. **Conectividad**
 
    Fomentamos una conexión armónica entre las personas, las plantas y la tecnología, mediante plataformas digitales que integran datos ambientales en tiempo real. Nuestra solución permite que los usuarios se mantengan informados y en control del estado de sus plantas desde cualquier lugar, fortaleciendo el vínculo entre el entorno natural y el entorno digital.
 
-4. Desarrollo Continuo
+4. **Desarrollo Continuo**
 
    Creemos en la mejora constante de nuestras capacidades, tanto a nivel individual como organizacional. Promovemos un entorno de aprendizaje permanente, donde la retroalimentación, la innovación tecnológica y la investigación aplicada son elementos esenciales para evolucionar y mantenernos a la vanguardia del sector verde-tecnológico.
 
-5. Educación Verde
+5. **Educación Verde**
 
    Nos proponemos como agentes de cambio en la promoción del conocimiento ambiental y del uso consciente de la tecnología en el ámbito vegetal. A través de contenidos formativos y funcionalidades educativas, buscamos sensibilizar a nuestros usuarios sobre la importancia del respeto por la naturaleza, el ahorro de recursos y la conservación del ecosistema.
 
-6. Eficiencia
+6. **Eficiencia**
 
    Valoramos profundamente la optimización de recursos como el agua, los nutrientes y el tiempo. Nuestro enfoque técnico se basa en el diseño de soluciones precisas y automatizadas que maximizan el rendimiento de cada acción de jardinería, reduciendo significativamente el desperdicio y fomentando prácticas más responsables y productivas.
 
-7. Ética
+7. **Ética**
 
    Operamos bajo principios éticos sólidos que rigen el uso de datos, la privacidad del usuario y el impacto de nuestra tecnología en el entorno. Nos regimos por estándares de transparencia, justicia y responsabilidad social, asegurando que nuestras decisiones estén siempre alineadas con el bienestar común y el respeto por el medio ambiente.
 
-8. Integridad
+8. **Integridad**
 
    Actuamos con coherencia entre lo que decimos y lo que hacemos. Nuestra integridad se refleja en la calidad de nuestros productos, en la precisión de los datos proporcionados y en la fiabilidad de las recomendaciones generadas. Nos esforzamos por brindar información veraz, científica y útil para una toma de decisiones informada.
 
-9. Innovación
+9. **Innovación**
 
    La búsqueda constante de nuevas soluciones tecnológicas está en el centro de nuestro ADN. Promovemos la creatividad, la experimentación y la investigación aplicada como medios para desarrollar productos disruptivos que transformen el cuidado vegetal y contribuyan activamente al avance de la jardinería inteligente.
 
-10. Sostenibilidad
+10. **Sostenibilidad**
 
     Nuestro compromiso ambiental se traduce en el diseño de herramientas que promueven prácticas ecológicas, conscientes y de bajo impacto. Trabajamos por un futuro donde la tecnología y la naturaleza coexistan en equilibrio, apoyando la creación de espacios verdes resilientes y saludables para las generaciones presentes y futuras.
 
-11. Trabajo en Equipo
+11. **Trabajo en Equipo**
 
     Valoramos el aporte de cada integrante de nuestro equipo, reconociendo que la colaboración interdisciplinaria potencia la creatividad, la eficiencia y la innovación. Fomentamos un entorno de respeto, escucha activa y apoyo mutuo, donde el trabajo conjunto se convierte en la base del éxito colectivo.
 
-12. Transparencia
+12. **Transparencia**
 
     Nos guiamos por un principio de claridad en todos nuestros procesos, tanto internos como externos. Mantenemos una comunicación abierta con nuestros usuarios, aliados y comunidad, brindando información accesible y verificable sobre el funcionamiento de nuestras herramientas, sus beneficios y limitaciones.
 
@@ -76,12 +78,12 @@ En SevenSync, nuestros principios rectores constituyen el núcleo de nuestra cul
 
 | Descripción del Integrante                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Imagen de Perfil                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mi nombre es Fabrizio Alessandro Sanchez Zamora con código de estudiante U202213652, soy estudiante de Ingeniería de Software. Entre mis conocimientos se encuentran el manejo de lenguajes de programacion como C++, JavaScript y Python, asi como también se manejar SQL, Html y CSS. Como miembro del equipo, me comprometo a colaborar con mis compañeros para poder presentar un buen proyecto grupal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | <img src="/assets/img/capitulo-1/profiles/fabrizio-sanchez-zamora-profile.png" alt="Fabrizio Sanchez profile picture" width="350" height="125">    |
-| Me llamo Ruben Mallma. tengo 19 años, estudiante de séptimo ciclo estudiando la carrera de ingeniería de software. Soy creativo, activo, afable e ingenioso. Me gusta programar y hacer mis proyectos exitosamente. Actualmente estoy desarrollando un videojuego, y me ha enseñado muchas cosas las cuáles nunca pensé observar en mi carrera e ingeniería como tal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <img src="/assets/img/capitulo-1/profiles/ruben-mallma-profile.png" alt="Ruben Mallma profile picture" width="350" height="125">                   |
-| Mi nombre es Luiggi Paredes, estoy cursando el séptimo ciclo de la carrera de Ingeniería de Software. Soy un apasionado de la tecnología y me especializo en backend pero también manejo algunos frameworks de frontend como Angular y Astro. Me considero una persona proactiva, responsable y ambiciosa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | <img src="/assets/img/capitulo-1/profiles/luiggi-paredes-profile.png" alt="Luiggi Paredes profile picture" width="350" height="100">               |
-| Hola que tal, soy Juan Pescoran, tengo 19 años, estoy llevando la carrera de Ingeniería de Software en la UPC, voy en el 7mo ciclo. Me considero una persona responsable, puntual y comprometida con mis estudios. Me gusta aprender cosas nuevas y siempre estoy dispuesto a ayudar a mis compañeros.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | <img src="/assets/img/capitulo-1/profiles/juan-pescoran-profile.png" alt="Juan Pescoran profile picture">                                          |
-| Mi nombre es Flavio Eduardo Trigueros Chumacero, estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas en el 7° ciclo, con código de alumno U202210190. Me considero una persona meticulosa y profundamente dedicada, con un firme compromiso hacia la mejora continua en todas las áreas de mi trabajo. Mi enfoque detallista y preciso me permite avanzar de manera eficiente y ágil en los proyectos, con especial énfasis en la documentación, la identificación de errores y la detección de oportunidades de mejora. Siempre estoy dispuesto a apoyar a mis compañeros en todo lo que sea necesario y me esfuerzo constantemente por entregar productos de la más alta calidad. <br><br> Además, cuento con un amplio conocimiento en diversas áraes como Scrum y Ciberseguridad, y lenguajes de programación, incluyendo JavaScript, Python, HTML, CSS, MySQL, MongoDB, Flutter, y GitHub, entre otros. Estas competencias no solo son valiosas para el resultado del curso, sino que también aseguran un desarrollo favorable y multidisciplinario a lo largo del proyecto. | <img src="/assets/img/capitulo-1/profiles/flavio-trigueros-chumacero-profile.png" alt="Flavio Trigueros profile picture" width="300" height="110"> |
-| Mi nombre es Lucio Yen, soy estudiante del séptimo ciclo de la carrera de Ingeniería de Software en la UPC. Me considero una persona responsable, dedicada y autodidacta. Me gusta crear un gran ambiente laboral que genere a todos los miembros de mi equipo una gran motivación para lograr nuestros objetivos con creces.<br> <br>**Conocimientos:**<br>Mi conjunto de habilidades abarca un amplio espectro del desarrollo de software, con un fuerte enfoque en el frontend (HTML5, CSS3, Javascript, Angular 18, Vue), backend (Java, ASP.NET Core), gestión de código con git, manejo de bases de datos relacionales (MySQL) y NoSQL (MongoDB), y desarrollo de aplicaciones móviles multiplataforma con Flutter.                                                                                                                                                                                                                                                                                                                                                                                          | <img src="/assets/img/capitulo-1/profiles/lucio-yen-profile.png" alt="Lucio Yen profile picture" width="300" height="110">                         |
+| Mi nombre es **Fabrizio Alessandro Sanchez Zamora** con código de estudiante U202213652, soy estudiante de Ingeniería de Software. Entre mis conocimientos se encuentran el manejo de lenguajes de programacion como C++, JavaScript y Python, asi como también se manejar SQL, Html y CSS. Como miembro del equipo, me comprometo a colaborar con mis compañeros para poder presentar un buen proyecto grupal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | <img src="/assets/img/capitulo-1/profiles/fabrizio-sanchez-zamora-profile.png" alt="Fabrizio Sanchez profile picture" width="350" height="125">    |
+| Me llamo **Ruben Mallma**. tengo 19 años, estudiante de séptimo ciclo estudiando la carrera de ingeniería de software. Soy creativo, activo, afable e ingenioso. Me gusta programar y hacer mis proyectos exitosamente. Actualmente estoy desarrollando un videojuego, y me ha enseñado muchas cosas las cuáles nunca pensé observar en mi carrera e ingeniería como tal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <img src="/assets/img/capitulo-1/profiles/ruben-mallma-profile.png" alt="Ruben Mallma profile picture" width="350" height="125">                   |
+| Mi nombre es **Luiggi Paredes**, estoy cursando el séptimo ciclo de la carrera de Ingeniería de Software. Soy un apasionado de la tecnología y me especializo en backend pero también manejo algunos frameworks de frontend como Angular y Astro. Me considero una persona proactiva, responsable y ambiciosa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | <img src="/assets/img/capitulo-1/profiles/luiggi-paredes-profile.png" alt="Luiggi Paredes profile picture" width="350" height="100">               |
+| Hola que tal, soy **Juan Pescoran**, tengo 19 años, estoy llevando la carrera de Ingeniería de Software en la UPC, voy en el 7mo ciclo. Me considero una persona responsable, puntual y comprometida con mis estudios. Me gusta aprender cosas nuevas y siempre estoy dispuesto a ayudar a mis compañeros.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | <img src="/assets/img/capitulo-1/profiles/juan-pescoran-profile.png" alt="Juan Pescoran profile picture">                                          |
+| Mi nombre es **Flavio Eduardo Trigueros Chumacero**, estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas en el 7° ciclo, con código de alumno U202210190. Me considero una persona meticulosa y profundamente dedicada, con un firme compromiso hacia la mejora continua en todas las áreas de mi trabajo. Mi enfoque detallista y preciso me permite avanzar de manera eficiente y ágil en los proyectos, con especial énfasis en la documentación, la identificación de errores y la detección de oportunidades de mejora. Siempre estoy dispuesto a apoyar a mis compañeros en todo lo que sea necesario y me esfuerzo constantemente por entregar productos de la más alta calidad. <br><br> Además, cuento con un amplio conocimiento en diversas áraes como Scrum y Ciberseguridad, y lenguajes de programación, incluyendo JavaScript, Python, HTML, CSS, MySQL, MongoDB, Flutter, y GitHub, entre otros. Estas competencias no solo son valiosas para el resultado del curso, sino que también aseguran un desarrollo favorable y multidisciplinario a lo largo del proyecto. | <img src="/assets/img/capitulo-1/profiles/flavio-trigueros-chumacero-profile.png" alt="Flavio Trigueros profile picture" width="300" height="110"> |
+| Mi nombre es **Lucio Yen**, soy estudiante del séptimo ciclo de la carrera de Ingeniería de Software en la UPC. Me considero una persona responsable, dedicada y autodidacta. Me gusta crear un gran ambiente laboral que genere a todos los miembros de mi equipo una gran motivación para lograr nuestros objetivos con creces.<br> <br>Mi conjunto de habilidades abarca un amplio espectro del desarrollo de software, con un fuerte enfoque en el frontend (HTML5, CSS3, Javascript, Angular 18, Vue), backend (Java, ASP.NET Core), gestión de código con git, manejo de bases de datos relacionales (MySQL) y NoSQL (MongoDB), y desarrollo de aplicaciones móviles multiplataforma con Flutter.                                                                                                                                                                                                                                                                                                                                                                                          | <img src="/assets/img/capitulo-1/profiles/lucio-yen-profile.png" alt="Lucio Yen profile picture" width="300" height="110">                         |
 
 ## 1.2. Solution Profile
 
@@ -162,15 +164,15 @@ Desarrollar una solución tecnológica integral de jardinería doméstica median
 
 **Objetivos Específicos**
 
-1. Diseñar e implementar una maceta inteligente (Macetech) con sensores capaces de medir variables clave como humedad del sustrato, temperatura, luminosidad, pH y conductividad eléctrica para la salinidad.
+1. Diseñar e implementar una maceta inteligente (Macetech) con sensores capaces de medir variables clave como humedad del sustrato, temperatura, luminosidad, pH y conductividad eléctrica para la salinidad.<br><br>
 
-2. Desarrollar una aplicación móvil y web con interfaz amigable que permita visualizar en tiempo real los datos recolectados por la maceta, generar alertas y ofrecer recomendaciones personalizadas de cuidado vegetal con el uso de gráficos de progreso constante.
+2. Desarrollar una aplicación móvil y web con interfaz amigable que permita visualizar en tiempo real los datos recolectados por la maceta, generar alertas y ofrecer recomendaciones personalizadas de cuidado vegetal con el uso de gráficos de progreso constante.<br><br>
 
-3. Integrar un sistema automatizado de riego, controlado por los datos recolectados y criterios definidos, que optimice el uso del agua y garantice el riego eficiente según las necesidades específicas de cada planta.
+3. Integrar un sistema automatizado de riego, controlado por los datos recolectados y criterios definidos, que optimice el uso del agua y garantice el riego eficiente según las necesidades específicas de cada planta.<br><br>
 
-4. Incorporar un módulo de análisis fitosanitario básico, basado en reglas heurísticas, que apoye la detección temprana de condiciones adversas del sustrato, con sugerencias de acción correctiva.
+4. Incorporar un módulo de análisis fitosanitario básico, basado en reglas heurísticas, que apoye la detección temprana de condiciones adversas del sustrato, con sugerencias de acción correctiva.<br><br>
 
-5. Validar el prototipo en un entorno urbano controlado, midiendo su eficacia en términos de facilidad de uso, precisión de datos, ahorro de agua y percepción de los usuarios.
+5. Validar el prototipo en un entorno urbano controlado, midiendo su eficacia en términos de facilidad de uso, precisión de datos, ahorro de agua y percepción de los usuarios.<br><br>
 
 **Puntos más importantes para la solución propuesta**
 
@@ -178,35 +180,35 @@ En respuesta a los desafíos detectados en la jardinería doméstica y comunitar
 
 1.  Falta de conocimiento técnico en jardinería
 
-    Muchos jardineros principiantes no saben cómo cuidar adecuadamente sus plantas, lo que conduce a riegos mal ejecutados, exposición solar incorrecta y uso inapropiado del sustrato. Macetech debe ofrecer un sistema de progreso del usuario y alertas automatizadas basadas en el estado real de la planta y del entorno. Esto permitirá que incluso usuarios sin experiencia puedan tomar decisiones acertadas y sostenibles.
+    Muchos jardineros principiantes no saben cómo cuidar adecuadamente sus plantas, lo que conduce a riegos mal ejecutados, exposición solar incorrecta y uso inapropiado del sustrato. Macetech debe ofrecer un sistema de progreso del usuario y alertas automatizadas basadas en el estado real de la planta y del entorno. Esto permitirá que incluso usuarios sin experiencia puedan tomar decisiones acertadas y sostenibles.<br><br>
 
 2.  Gestión ineficiente del riego
 
-    El mal manejo del riego genera desperdicio de agua y estrés hídrico en las plantas. Se estima que hasta un 45% del agua se pierde por malas prácticas (Amir et al., 2024). La maceta debe contar con sensores de humedad y temperatura, integrados con un sistema de riego automatizado que ajuste la cantidad y frecuencia del agua según las necesidades específicas de la planta y el clima. Además, debe incorporar una lógica adaptable que prevenga el riego innecesario en días húmedos o lluviosos.
+    El mal manejo del riego genera desperdicio de agua y estrés hídrico en las plantas. Se estima que hasta un 45% del agua se pierde por malas prácticas (Amir et al., 2024). La maceta debe contar con sensores de humedad y temperatura, integrados con un sistema de riego automatizado que ajuste la cantidad y frecuencia del agua según las necesidades específicas de la planta y el clima. Además, debe incorporar una lógica adaptable que prevenga el riego innecesario en días húmedos o lluviosos.<br><br>
 
 3.  Ausencia de tecnologías accesibles para el hogar
 
-    Las tecnologías inteligentes en agricultura aún no se han adaptado para su uso práctico en la jardinería doméstica, por lo que los usuarios no cuentan con herramientas asequibles ni fáciles de usar. Macetech debe traducir el poder del IoT y la sensorización ambiental en una solución accesible, económica y fácil de instalar, con una interfaz intuitiva que pueda ser utilizada por cualquier persona, sin necesidad de conocimientos técnicos. La aplicación debe funcionar en móviles, páginas web, y permitir monitoreo remoto, configuración de rutinas y seguimiento del estado de la planta.
+    Las tecnologías inteligentes en agricultura aún no se han adaptado para su uso práctico en la jardinería doméstica, por lo que los usuarios no cuentan con herramientas asequibles ni fáciles de usar. Macetech debe traducir el poder del IoT y la sensorización ambiental en una solución accesible, económica y fácil de instalar, con una interfaz intuitiva que pueda ser utilizada por cualquier persona, sin necesidad de conocimientos técnicos. La aplicación debe funcionar en móviles, páginas web, y permitir monitoreo remoto, configuración de rutinas y seguimiento del estado de la planta.<br><br>
 
 4.  Abandono de jardines por falta de motivación o soporte
 
-    La frustración por fracasos en el cuidado de plantas lleva a muchos usuarios a abandonar jardines y huertos urbanos, generando pérdida de recursos y desmotivación generalizada. La solución debe incorporar un sistema de retroalimentación positiva, mediante reportes visuales del progreso de la planta y consejos útiles. Estas funciones deben fomentar el apego emocional al proceso de jardinería, aumentando la satisfacción del usuario.
+    La frustración por fracasos en el cuidado de plantas lleva a muchos usuarios a abandonar jardines y huertos urbanos, generando pérdida de recursos y desmotivación generalizada. La solución debe incorporar un sistema de retroalimentación positiva, mediante reportes visuales del progreso de la planta y consejos útiles. Estas funciones deben fomentar el apego emocional al proceso de jardinería, aumentando la satisfacción del usuario.<br><br>
 
 5.  Escasa disponibilidad de datos para toma de decisiones
 
-    El cuidado de plantas, especialmente en contextos domésticos y urbanos, suele depender de la intuición del usuario o de recomendaciones generales que no toman en cuenta las condiciones particulares del entorno. Esta falta de información personalizada puede llevar a prácticas inadecuadas que afectan negativamente la salud de las plantas. Macetech debe abordar esta limitación mediante la recopilación continua y precisa de datos ambientales y de comportamiento de cada planta. A través de sensores inteligentes, el sistema podrá monitorear variables como la humedad del suelo, la temperatura, la luz solar y otros indicadores clave.
+    El cuidado de plantas, especialmente en contextos domésticos y urbanos, suele depender de la intuición del usuario o de recomendaciones generales que no toman en cuenta las condiciones particulares del entorno. Esta falta de información personalizada puede llevar a prácticas inadecuadas que afectan negativamente la salud de las plantas. Macetech debe abordar esta limitación mediante la recopilación continua y precisa de datos ambientales y de comportamiento de cada planta. A través de sensores inteligentes, el sistema podrá monitorear variables como la humedad del suelo, la temperatura, la luz solar y otros indicadores clave.<br><br>
 
 6.  Baja cobertura de áreas verdes en ciudades
     Ciudades como Lima tienen muy pocas áreas verdes por habitante, lo que afecta la salud mental y ambiental de la población tanto a corto como a largo plazo.
-    Macetech debe ser parte de una estrategia de micro-jardinería urbana, facilitando la creación de espacios verdes personalizados y sostenibles en hogares, balcones o jardines compartidos. Su diseño debe ser compacto, estético y funcional, para adaptarse a distintos tipos de vivienda urbana.
+    Macetech debe ser parte de una estrategia de micro-jardinería urbana, facilitando la creación de espacios verdes personalizados y sostenibles en hogares, balcones o jardines compartidos. Su diseño debe ser compacto, estético y funcional, para adaptarse a distintos tipos de vivienda urbana.<br><br>
 
 **Restricciones del Proyecto**
 
-- Limitación en el tipo de plantas soportadas inicialmente: La versión prototipo se centrará en especies domésticas comunes (como hierbas aromáticas, plantas ornamentales de interior y suculentas), dejando para fases futuras la inclusión de especies con requerimientos más complejos.
+- Limitación en el tipo de plantas soportadas inicialmente: La versión prototipo se centrará en especies domésticas comunes (como hierbas aromáticas, plantas ornamentales de interior y suculentas), dejando para fases futuras la inclusión de especies con requerimientos más complejos.<br><br>
 
-- Cobertura limitada de conectividad IoT: En la fase inicial, la conectividad dependerá de redes Wi-Fi domésticas. No se incluirá soporte para redes móviles (4G/5G) o redes de largo alcance como LoRaWAN.
+- Cobertura limitada de conectividad IoT: En la fase inicial, la conectividad dependerá de redes Wi-Fi domésticas. No se incluirá soporte para redes móviles (4G/5G) o redes de largo alcance como LoRaWAN.<br><br>
 
-- Autonomía energética condicionada: El diseño de Macetech dependerá de una fuente eléctrica doméstica o baterías recargables de capacidad limitada.
+- Autonomía energética condicionada: El diseño de Macetech dependerá de una fuente eléctrica doméstica o baterías recargables de capacidad limitada.<br><br>
 
 - Escalabilidad restringida al entorno doméstico: La solución está diseñada exclusivamente para jardinería doméstica urbana y no contempla, en esta etapa, adaptaciones para cultivos en exteriores a gran escala, viveros o entornos rurales.
 
@@ -214,79 +216,66 @@ En respuesta a los desafíos detectados en la jardinería doméstica y comunitar
 
 **User Assumptions**
 
-- Creemos que el producto debe ser fácil de usar, autónomo, visualmente atractivo y no invasivo. Es fundamental que incluya sensores que proporcionen datos confiables en tiempo real (humedad del sustrato, nivel de luz, temperatura y salinidad). Además, debe ofrecer recomendaciones simples pero efectivas, junto con gráficos de progreso concisos y fáciles de interpretar. También resulta clave que la interfaz sea amigable, con notificaciones claras y alertas oportunas tanto en la aplicación web como en la móvil.
+- Creemos que, como aficionados a la jardinería urbana, nuestros usuarios interactuarán con la sección de sensores en la app móvil para consultar en tiempo real la humedad del sustrato, nivel de luz, temperatura y salinidad con el fin de tomar decisiones informadas sobre el cuidado de sus plantas. Validaremos esta suposición si, en un prototipo de media fidelidad sometido a prueba, un 70 % manifiesta que recurriría a esta sección antes de regar o mover sus plantas. Para testearlo, realizaremos sesiones de usabilidad semiestructuradas y analizaremos los registros de interacción, dado que sin datos fiables de sensores la propuesta pierde valor y su validación temprana es de máxima prioridad.<br><br>
 
-- Consideramos que Macetech se integra como una herramienta de apoyo en la rutina diaria o semanal del usuario. Se utiliza principalmente en espacios personales como el hogar o la oficina, y en momentos de descanso o relajación, como los fines de semana o durante pausas a lo largo del día. Su uso promueve hábitos sostenibles y contribuye al bienestar emocional mediante el cuidado y la conexión con las plantas.
+- Consideramos que, como parte de su rutina diaria o semanal, el usuario integrará Macetech en espacios personales, como el hogar u oficina, durante momentos de descanso (fines de semana o breves pausas diarias) para fomentar hábitos sostenibles y mejorar su bienestar emocional mediante el cuidado de plantas. Confirmaremos esta hipótesis mediante encuestas de seguimiento durante dos meses, buscando que al menos el 60 % de los participantes declare haber utilizado el dispositivo en los horarios previstos. Llevaremos un diario de uso y realizaremos entrevistas para entender su grado de compromiso; al tratarse de comportamiento clave para la adopción del producto, su riesgo de fracaso es medio y su prioridad alta.<br><br>
 
-- Establecemos que el producto tiene un uso tanto pasivo como activo. Pasivamente, los sensores recopilan datos de forma continua y alertan al usuario cuando es necesario actuar. Activamente, el usuario consulta la app móvil o web para conocer el estado de sus plantas, seguir recomendaciones o revisar históricos. También se incluyen funciones como el riego automático, que se activa en función de parámetros configurados. El uso activo suele darse en lapsos breves durante el día (entre 10 y 20 minutos), al recibir notificaciones o durante el tiempo libre.
+- Suponemos que el producto tendrá un uso dual: pasivo, con sensores que recopilan datos de forma continua y envían alertas cuando se requiera acción, y activo, cuando el usuario abra la app (web o móvil) para revisar el estado de sus plantas, seguir recomendaciones o consultar históricos, en lapsos de entre 10 y 20 minutos tras recibir notificaciones. Corroboraremos esta suposición mediante análisis de logs de uso y pruebas de prototipo con 10 usuarios, verificando que al menos el 65 % accede a la app tras una alerta. Dado que la experiencia de uso tanto pasiva como activa define el valor central de Macetech, validarlo pronto es de máxima prioridad.<br><br>
 
-- Consideramos que el dispositivo debe presentar un diseño moderno, compacto y estéticamente armónico con el entorno doméstico. La aplicación debe ofrecer una interfaz limpia, intuitiva y visualmente clara, con íconos reconocibles, gráficos informativos y una codificación de colores que facilite la comprensión del estado de las plantas. El sistema debe comportarse de manera proactiva, personalizada y educativa, facilitando la mejora continua del usuario sin generar sobrecarga cognitiva.
+- Partimos de la hipótesis de que, para facilitar la integración en el entorno doméstico, un usuario promedio percibirá el dispositivo y la aplicación con un diseño moderno, compacto y armónicamente estético, disfrutando de una interfaz limpia e intuitiva con iconos reconocibles y gráficos informativos. Mediremos su percepción mediante test de primer impacto visual, buscando un 80 % de valoración positiva en criterios de estética y usabilidad. Usaremos prototipos de alta fidelidad y entrevistas de opinión; aunque el riesgo estético es bajo, asegurar la primera impresión es crucial, por lo que esta validación ocupa una prioridad media-alta. <br><br>
 
-- Valoramos que los elementos visuales deben destacar por su simplicidad y claridad. Los íconos y componentes deben seguir patrones coherentes que guíen al usuario intuitivamente. Se priorizan estructuras jerárquicas claras y llamadas a la acción visibles en momentos clave (como el estado de salud crítico de una planta o el inicio de un riego programado). Esto asegura una interacción fluida y comprensible desde la primera vez.
+- Asumimos que los elementos visuales, como íconos, componentes y jerarquías de información, guiarán al usuario de forma intuitiva y eficiente, de modo que identifique llamadas a la acción clave (alertas críticas o inicio de riego) en menos de 5 segundos. Para probarlo, realizaremos pruebas de tarea y mediremos el tiempo de reconocimiento de cada elemento, esperando que al menos el 75 % complete la tarea en ese umbral. Este experimento de prototipo click‑through es de prioridad media, pues determina la fluidez de interacción. <br><br>
 
-- Estimamos que el usuario debe poder interactuar con el producto de forma ligera pero efectiva. El sistema debe permitir una personalización mínima necesaria para ajustar los parámetros a sus preferencias, sin obligar a configurar todo desde cero. El ideal es que la interacción sea breve, guiada por notificaciones y que las decisiones más técnicas estén automatizadas o asistidas por recomendaciones claras del sistema.
+- Estimamos que el usuario buscará completar configuraciones mínimas de parámetros en menos de 3 minutos, confiando en notificaciones guiadas y recomendaciones automatizadas para no verse abrumado por opciones técnicas. Validaremos esta suposición con un test de configuración en prototipo de baja fidelidad, analizando el tiempo y los errores de configuración; si un 70 % lo hace sin asistencia, confirmaremos la hipótesis. Dado que la sencillez de configuración es clave para la adopción, este test es de alto riesgo y prioridad máxima.
 
 **User Outcomes**
 
-**1. Incrementar supervivencia de plantas domésticas**
-
-- **Lean UX Goal:** Los usuarios deben sentirse más capacitados y seguros en el mantenimiento de plantas domésticas luego de usar Macetech.
-- **Propósito:** Mejorar la salud vegetal a largo plazo.
-- **Meta:** 75 % de las plantas sobreviven más de 3 meses luego de un año de uso.
-- **Herramienta de medición:** Seguimiento del porcentaje de alertas de cuidado atendidas que resultan en plantas saludables tras 90 días.
-- **Métrica clave:** Tasa de alertas resueltas con éxito / plantas saludables vivas después de 3 meses.
+**1. Incrementar la supervivencia de plantas domésticas**
+- **Objetivo Lean UX:** Empoderar a los usuarios para que mantengan sus plantas en óptimas condiciones y adopten una práctica de cuidado proactiva.
+- **Resultado deseado:** Los usuarios revisarán y responderán de forma oportuna a las alertas de cuidado, asegurando que sus plantas reciban el riego y la atención necesarios.
+- **Propósito:** Garantizar una salud vegetal más robusta y un vínculo de confianza con la solución a largo plazo.
+- **Criterio de éxito:** Que al menos el 75 % de las plantas supervisadas hayan permanecido saludables pasados tres meses desde la primera alerta recibida.
+- **Método de medición:** Análisis de los registros de alertas atendidas y estado vegetal tras 90 días de uso continuo, cruzando la tasa de respuesta con la supervivencia de las plantas.
 
 **2. Reducir el desperdicio de agua en el riego doméstico**
+- **Objetivo Lean UX:** Facilitar a los usuarios un control preciso del volumen de agua dispensado, sin comprometer la vitalidad de sus plantas.
+- **Resultado deseado:** Los usuarios confiarán en los ciclos automatizados de riego para ajustar el consumo de agua a las necesidades reales de cada especie.
+- **Propósito:** Contribuir a la eficiencia hídrica y a la sostenibilidad del hogar, minimizando el impacto ambiental.
+- **Criterio de éxito:** Alcanzar una reducción mínima del 50 % en el volumen total de agua utilizado durante los primeros seis meses de uso, comparado con el riego manual previo.
+- **Método de medición:** Comparativa de datos de consumo por ciclo (litros dispensados) entre sesiones de riego automatizado y registros históricos de riego manual, normalizados por tipo de planta y frecuencia.
 
-- **Lean UX Goal:** El sistema debe permitir a los usuarios optimizar el uso de agua sin comprometer la salud vegetal.
-- **Propósito:** Disminuir el consumo de agua en procesos de riego.
-- **Meta:** Reducción del 50 % del uso de agua en los primeros 6 meses.
-- **Herramienta de medición:** Comparación entre ciclos de riego automatizados y consumo promedio manual.
-- **Métrica clave:** Litros dispensados por ciclo automatizado vs consumo manual promedio.
-
-**3. Fomentar aprendizaje autónomo en jardinería**
-
-- **Lean UX Goal:** Los usuarios deben adquirir conocimientos prácticos de jardinería sin necesidad de asistencia externa.
-- **Propósito:** Capacitar al usuario mediante reportes y sugerencias.
-- **Meta:** 70 % de usuarios corrigen prácticas de riego y fertilización sin ayuda externa.
-- **Herramienta de medición:** Registro de acciones sugeridas completadas sin soporte humano.
-- **Métrica clave:** Porcentaje de acciones completadas tras sugerencias automáticas de Macetech.
+**3. Fomentar el aprendizaje autónomo en jardinería**
+- **Objetivo Lean UX:** Proporcionar información y sugerencias accionables que permitan al usuario mejorar sus prácticas sin necesidad de asesoría externa.
+- **Resultado deseado:** Los usuarios actuarán de forma independiente sobre las recomendaciones de riego y fertilización, integrándolas en su rutina de cuidado.
+- **Propósito:** Aumentar la autoconfianza del usuario y disminuir la curva de aprendizaje relacionada con el manejo de sus plantas.
+- **Criterio de éxito:** Al menos el 70 % de los usuarios completarán las acciones sugeridas (riegos, abonados, podas) sin solicitar asistencia humana adicional.
+- **Método de medición:** Registro de la ejecución de recomendaciones automáticas en la app y validación mediante encuestas de seguimiento que confirmen la correcta comprensión y aplicación de cada sugerencia.
 
 **4. Aumentar el bienestar emocional del usuario**
-
-- **Lean UX Goal:** El uso de Macetech debe generar emociones positivas y reducir el estrés del usuario.
-- **Propósito:** Mejorar la experiencia emocional del usuario mediante la interacción con el producto.
-- **Meta:** Incremento del 20 % en bienestar emocional en 3 meses.
-- **Herramienta de medición:** Encuestas de bienestar antes y después de 3 meses de uso (escalas validadas de estrés y estado de ánimo).
-- **Métrica clave:** Variación en la puntuación promedio de bienestar emocional.
+- **Objetivo Lean UX:** Generar una experiencia de uso que refuerce emociones positivas y reduzca los niveles de estrés asociados al cuidado de las plantas.
+- **Resultado deseado:** Los usuarios percibirán una mejora palpable en su estado de ánimo cada vez que interactúen con la solución.
+- **Propósito:** Fortalecer el vínculo emocional con Macetech, promoviendo hábitos saludables que trasciendan la simple gestión de riego.
+- **Criterio de éxito:** Incremento del 20 % en la puntuación promedio de bienestar emocional medida con una escala validada tras tres meses de interacción regular.
+- **Método de medición:** Encuestas pre y post uso aplicadas a una muestra de usuarios, cuantificando la variación en indicadores de estrés y ánimo relacionadas con la experiencia del producto.
 
 **5. Promover hábitos sostenibles y ecológicos**
-
-- **Lean UX Goal:** Los usuarios deben adoptar prácticas ecológicas nuevas como resultado del uso del sistema.
-- **Propósito:** Fomentar una vida urbana más consciente.
-- **Meta:** 30 % de incremento en adopción de al menos dos nuevas prácticas sostenibles tras 6 meses de uso.
-- **Herramienta de medición:** Encuestas de hábitos sostenibles (pre y post uso del producto).
-- **Métrica clave:** Número de prácticas ecológicas nuevas adoptadas por usuario.
+- **Objetivo Lean UX:** Inspirar a los usuarios a adoptar acciones cotidianas que favorezcan la conservación de recursos y el respeto al medio ambiente.
+- **Resultado deseado:** Los usuarios incorporarán prácticas ecológicas nuevas, como la reutilización de agua de riego o el uso de compost orgánico, gracias a las recomendaciones de la plataforma.
+- **Propósito:** Impulsar un estilo de vida más consciente y responsable en entornos urbanos, alineado con los valores de sostenibilidad de la marca.
+- **Criterio de éxito:** Que al menos el 30 % de los usuarios registre la adopción de dos o más prácticas sostenibles distintas tras seis meses de uso.
+- **Método de medición:** Comparación de encuestas de hábitos ecológicos realizadas antes del primer uso y tras medio año de interacción, cuantificando el número de nuevas prácticas implementadas.
 
 **Business Assumptions**
 
-- Creemos que nuestros segmentos objetivos necesitan...
+- Creemos que nuestros segmentos objetivos necesitan una solución tecnológica inteligente, automatizada y de fácil uso, diseñada específicamente para facilitar el cuidado de plantas en espacios urbanos reducidos y con falta de conocimientos técnicos. Esta solución debe permitirles evitar errores comunes en el mantenimiento, recibir retroalimentación inmediata sobre el estado de sus plantas y fomentar una conexión más activa y consciente con la naturaleza dentro de entornos domésticos o laborales.<br><br>
 
-  Una solución tecnológica inteligente, automatizada y de fácil uso, diseñada específicamente para facilitar el cuidado de plantas en espacios urbanos reducidos y con falta de conocimientos técnicos. Esta solución debe permitirles evitar errores comunes en el mantenimiento, recibir retroalimentación inmediata sobre el estado de sus plantas y fomentar una conexión más activa y consciente con la naturaleza dentro de entornos domésticos o laborales.
+- Estas necesidades pueden resolverse mediante una maceta inteligente equipada con sensores IoT y conectividad móvil y web, capaz de monitorear variables clave como la humedad del sustrato, temperatura, acidez, salinidad y otros factores críticos para el desarrollo vegetal. Esta maceta estará complementada por un sistema de riego automatizado y una suite de aplicaciones (web, móvil y edge).<br><br>
 
-- Estas necesidades pueden resolverse mediante...
+- Nuestros clientes iniciales serán jóvenes y adultos de entre 18 y 45 años, ubicados principalmente en zonas urbanas, interesados en la jardinería doméstica, la decoración natural de interiores, o prácticas sostenibles. Muchos de ellos tienen poco tiempo o conocimientos técnicos, por lo que valoran herramientas que les permitan cuidar de sus plantas sin complicaciones ni curvas de aprendizaje pronunciadas.<br><br>
 
-  Una maceta inteligente equipada con sensores IoT y conectividad móvil y web, capaz de monitorear variables clave como la humedad del sustrato, temperatura, acidez, salinidad y otros factores críticos para el desarrollo vegetal. Esta maceta estará complementada por un sistema de riego automatizado y una suite de aplicaciones (web, móvil y edge).
+- El valor principal que nuestros clientes esperan de esta solución es mantener sus plantas sanas y en crecimiento constante sin necesidad de estar monitoreando manualmente todo el tiempo, confiando en un sistema autónomo que simplifique el cuidado y les ayude a tomar mejores decisiones con el mínimo esfuerzo.<br><br>
 
-- Nuestros clientes iniciales serán...
-
-  Jóvenes y adultos de entre 18 y 45 años, ubicados principalmente en zonas urbanas, interesados en la jardinería doméstica, la decoración natural de interiores, o prácticas sostenibles. Muchos de ellos tienen poco tiempo o conocimientos técnicos, por lo que valoran herramientas que les permitan cuidar de sus plantas sin complicaciones ni curvas de aprendizaje pronunciadas.
-
-- El valor principal que nuestros clientes esperan de esta solución es...
-
-  Mantener sus plantas sanas y en crecimiento constante sin necesidad de estar monitoreando manualmente todo el tiempo, confiando en un sistema autónomo que simplifique el cuidado y les ayude a tomar mejores decisiones con el mínimo esfuerzo.
-
-- Además del valor central, el segmento objetivo también puede obtener estos beneficios adicionales:
+- Además del valor central, el segmento objetivo también puede obtener estos beneficios adicionales: <br><br>
 
   - Aprendizaje progresivo y guiado sobre prácticas adecuadas de jardinería según gráficos de progreso.
 
@@ -296,141 +285,149 @@ En respuesta a los desafíos detectados en la jardinería doméstica y comunitar
 
   - Mejora estética de ambientes interiores y exteriores a través del uso de macetas decorativas.
 
-  - Prevención de enfermedades mediante alertas tempranas y visualización del estado de la planta.
+  - Prevención de enfermedades mediante alertas tempranas y visualización del estado de la planta.<br><br>
 
-- Adquiriremos a la mayoría de nuestros clientes a través de...
+- Adquiriremos a la mayoría de nuestros clientes a través de estrategias de marketing digital, incluyendo campañas en redes sociales, anuncios segmentados por intereses, alianzas estratégicas con viveros y tiendas especializadas, participación en ferias de tecnología verde y activaciones presenciales en universidades y comunidades eco-urbanas.<br><br>
 
-  Estrategias de marketing digital, incluyendo campañas en redes sociales, anuncios segmentados por intereses, alianzas estratégicas con viveros y tiendas especializadas, participación en ferias de tecnología verde y activaciones presenciales en universidades y comunidades eco-urbanas.
+- El modelo de ingresos estará basado en la venta directa de macetas inteligentes en distintos tamaños y estilos (interior, exterior, decorativas, minimalistas).<br><br>
 
-- El modelo de ingresos estará basado en...
+- Nuestra competencia principal está formada por otras soluciones de jardinería inteligente como Click & Grow, Masdio, Xiaomi Smart Flower Pot, así como sensores de monitoreo independientes sin una plataforma integrada.<br><br>
 
-  La venta directa de macetas inteligentes en distintos tamaños y estilos (interior, exterior, decorativas, minimalistas).
+- Superaremos a estos competidores gracias a nuestro enfoque en accesibilidad, personalización, seguimiento continuo y conexión emocional con el usuario. A diferencia de ellos, ofrecemos una solución integral que no solo recopila datos, sino que actúa (riego automatizado), promueve el aprendizaje autónomo (Gráficos de progreso) y motiva (Conexión emocional con el proceso de cultivo).<br><br>
 
-- Nuestra competencia principal está formada por...
+- Nuestro mayor riesgo de producto es que el sistema de sensores o el mecanismo de riego automatizado no funcionen de forma precisa y confiable, lo que podría comprometer la salud de las plantas y generar desconfianza en los usuarios.<br><br>
 
-  Otras soluciones de jardinería inteligente como Click & Grow, Masdio, Xiaomi Smart Flower Pot, así como sensores de monitoreo independientes sin una plataforma integrada.
+- Abordaremos este riesgo a través de iteraciones constantes de prueba en escenarios reales, validación técnica de hardware en distintos ambientes urbanos, mejoras continuas del sistema de calibración y un equipo de soporte técnico activo para resolver incidentes rápidamente.<br><br>
 
-- Superaremos a estos competidores gracias a...
+- Otras suposiciones que podrían comprometer el éxito del proyecto si se demuestran incorrectas son:<br><br>
 
-  Nuestro enfoque en accesibilidad, personalización, seguimiento continuo y conexión emocional con el usuario. A diferencia de ellos, ofrecemos una solución integral que no solo recopila datos, sino que actúa (riego automatizado), promueve el aprendizaje autónomo (Gráficos de progreso) y motiva (Conexión emocional con el proceso de cultivo).
+  1.  Los usuarios percibirán suficiente valor en nuestra solución como para invertir económicamente en una maceta inteligente. Si el usuario no considera que el beneficio práctico y emocional justifique el costo, es probable que no convierta ni retorne, afectando directamente la viabilidad del modelo de ingresos y la escalabilidad del negocio.<br><br>
 
-- Nuestro mayor riesgo de producto es...
+  2.  El sistema de sensores IoT integrado en la maceta será confiable y preciso en la lectura de variables ambientales en diversos entornos urbanos, incluyendo interiores, balcones y climas variados. Si el hardware presenta errores de lectura, fallas de calibración o sensibilidad extrema a cambios ambientales, podría socavar la confianza del usuario en la tecnología, perjudicando la experiencia general y la reputación del producto.<br><br>
 
-  Que el sistema de sensores o el mecanismo de riego automatizado no funcionen de forma precisa y confiable, lo que podría comprometer la salud de las plantas y generar desconfianza en los usuarios.
+  3.  La jardinería urbana y el interés por soluciones eco-tecnológicas continuarán siendo una tendencia creciente impulsada por estilos de vida sostenibles, bienestar emocional y decoración biofílica. Si el interés colectivo por el autocuidado verde o la tecnología aplicada al hogar se estanca o disminuye, el producto podría volverse menos relevante, reduciendo el tamaño y crecimiento del mercado objetivo.<br><br>
 
-- Abordaremos este riesgo a través de...
-
-  Iteraciones constantes de prueba en escenarios reales, validación técnica de hardware en distintos ambientes urbanos, mejoras continuas del sistema de calibración y un equipo de soporte técnico activo para resolver incidentes rápidamente.
-
-- Otras suposiciones que podrían comprometer el éxito del proyecto si se demuestran incorrectas son:
-
-  1.  Los usuarios percibirán suficiente valor en nuestra solución como para invertir económicamente en una maceta inteligente. Si el usuario no considera que el beneficio práctico y emocional justifique el costo, es probable que no convierta ni retorne, afectando directamente la viabilidad del modelo de ingresos y la escalabilidad del negocio.
-
-  2.  El sistema de sensores IoT integrado en la maceta será confiable y preciso en la lectura de variables ambientales en diversos entornos urbanos, incluyendo interiores, balcones y climas variados. Si el hardware presenta errores de lectura, fallas de calibración o sensibilidad extrema a cambios ambientales, podría socavar la confianza del usuario en la tecnología, perjudicando la experiencia general y la reputación del producto.
-
-  3.  La jardinería urbana y el interés por soluciones eco-tecnológicas continuarán siendo una tendencia creciente impulsada por estilos de vida sostenibles, bienestar emocional y decoración biofílica. Si el interés colectivo por el autocuidado verde o la tecnología aplicada al hogar se estanca o disminuye, el producto podría volverse menos relevante, reduciendo el tamaño y crecimiento del mercado objetivo.
-
-  4.  El diseño estético del producto será percibido como moderno, versátil y armónico con distintos estilos de vida, convirtiéndose en un factor de decisión clave de compra, especialmente entre los segmentos jóvenes urbanos. Si el diseño no logra conectar con las preferencias visuales y culturales del público objetivo, se reducirá el atractivo inicial del producto, limitando la adopción y viralidad esperada, incluso si la funcionalidad es destacada.
+  4.  El diseño estético del producto será percibido como moderno, versátil y armónico con distintos estilos de vida, convirtiéndose en un factor de decisión clave de compra, especialmente entre los segmentos jóvenes urbanos. Si el diseño no logra conectar con las preferencias visuales y culturales del público objetivo, se reducirá el atractivo inicial del producto, limitando la adopción y viralidad esperada, incluso si la funcionalidad es destacada.<br><br>
 
 **Business Outcomes**
 
 **1. Adopción del producto en hogares de Lima Metropolitana**
 
-- **Lean UX Goal**: Aumentar la adopción de Macetech en Lima Metropolitana en su primer año.
-- **Propósito:** Validar la penetración del producto en el mercado urbano local, especialmente entre jóvenes con afinidad tecnológica.
-- **Meta:** Alcanzar el 8 % de adopción en hogares de Lima Metropolitana dentro de 12 meses, con un hito intermedio del 4 % a los 6 meses.
-- **Herramienta de medición:** Google Analytics, ventas físicas registradas.
-- **Métrica clave:** Porcentaje acumulado de adopción en hogares con Macetech instalado.
+- **Lean UX Goal:** Impulsar la adopción de Macetech en el mercado residencial urbano de Lima Metropolitana durante el primer año de lanzamiento.
+
+- **Propósito:** Validar el encaje del producto entre hogares jóvenes con afinidad tecnológica y establecer una base sólida de usuarios locales que sirva de palanca para la expansión nacional.
+
+- **Meta:** Conseguir que el 8 % de los hogares de Lima Metropolitana instalen Macetech en un plazo de 12 meses, con un hito intermedio de 4 % al cierre del sexto mes.
+
+- **Herramientas de medición:** Google Analytics y Firebase para monitorizar instalaciones activas de la app vinculadas a Lima Metropolitana.
+
+- **Métrica clave:** Porcentaje acumulado de hogares con Macetech activo, calculado como la proporción entre el número de instalaciones confirmadas y el total de hogares tech‑friendly identificados en la región.
 
 **2. Reducción del churn en usuarios nuevos**
 
-- **Lean UX Goal:** Minimizar el abandono de usuarios en la fase inicial de uso del producto.
-- **Propósito:** Mejorar la retención temprana de usuarios mediante experiencia guiada y personalización.
-- **Meta:** Reducir el churn a un 20 % o menos en los primeros 3 meses, con un hito de 25 % a los 2 meses.
-- **Herramienta de medición:** Análisis de segmentos de usuarios, métricas de cancelación.
-- **Métrica clave:** Tasa de abandono mensual acumulada en los primeros 90 días.
+- **Lean UX Goal:** Minimizar la tasa de abandono durante los primeros tres meses de uso para consolidar el hábito de seguimiento y cuidado de plantas con Macetech.
+
+- **Propósito:** Mejorar la experiencia de incorporación (onboarding) y la personalización temprana, de modo que los usuarios perciban valor inmediato y reduzcan la probabilidad de desinstalar o suspender el servicio.
+
+- **Meta:** Mantener la tasa de churn por debajo del 20 % a los 90 días de uso, con un hito de 25 % al cumplir los 60 días.
+
+- **Herramientas de medición:** Segmentación en Google Analytics/Firebase para identificar cohortes por fecha de registro.
+
+- **Métrica clave:** Tasa de abandono acumulada en los primeros tres meses, definida como el porcentaje de usuarios activos al día 0 que dejan de usar la app antes del día 90.
 
 **3. Posicionamiento SEO en mercados clave de Latinoamérica**
 
-- **Lean UX Goal:** Lograr visibilidad destacada en buscadores para categorías clave.
-- **Propósito:** Aumentar la visibilidad orgánica de Macetech en Perú, México y Colombia.
-- **Meta:** Alcanzar el top 3 en Google para “maceta inteligente” y “jardinería IoT” en 12 meses (top 10 en 6 meses).
-- **Herramienta de medición:** SEMrush, Google Search Console.
-- **Métrica clave:** Posición promedio de palabras clave y volumen de tráfico orgánico mensual.
+- **Lean UX Goal:** Asegurar una visibilidad orgánica prominente de Macetech en los principales mercados de habla hispana de la región.
+
+- **Propósito:** Generar tráfico cualificado y sostenible desde buscadores para reducir la dependencia de canales de pago y atraer prospectos interesados en “maceta inteligente” y “jardinería IoT”.
+
+- **Meta:** Alcanzar posiciones dentro del top 10 en Google para las keywords “maceta inteligente” y “jardinería IoT” en un plazo de 6 meses, y escalar al top 3 en 12 meses.
+
+- **Herramientas de medición:** SEMrush para seguimiento de rankings y análisis de competencia. Google Search Console para validar impresiones y clics directos.
+
+- **Métrica clave:** Posición promedio de las keywords objetivo y volumen de tráfico orgánico mensual generado desde México, Colombia y Perú.
 
 **4. Reducción de abandono por preocupaciones de privacidad**
 
-- **Lean UX Goal:** Fortalecer la percepción de seguridad y privacidad del usuario.
-- **Propósito:** Asegurar la confianza del usuario en el tratamiento ético y seguro de sus datos.
-- **Meta:** Mantener la tasa de abandono por privacidad en o por debajo del 15 % durante los primeros 3 meses.
-- **Herramienta de medición:** Encuestas de percepción de privacidad, análisis de tickets de soporte clasificados.
-- **Métrica clave:** % de usuarios que desinstalan o abandonan Macetech citando problemas de privacidad.
+- **Lean UX Goal:** Fortalecer la confianza del usuario en el manejo ético y seguro de sus datos personales y de sensores.
 
-**5. Establecimiento de un modelo de precio rentable y competitivo**
+- **Propósito:** Minimizar los frenos relacionados con la seguridad y privacidad, garantizando que los términos de uso claros y las políticas de datos sean un facilitador, no una barrera, en la experiencia de usuario.
 
-- **Lean UX Goal:** Validar un precio promedio competitivo que asegure márgenes de sostenibilidad.
-- **Propósito:** Sostener el margen bruto y la rentabilidad sin comprometer la percepción de valor.
-- **Meta:** Mantener un precio promedio de venta de 150 USD con margen bruto mínimo del 35 %.
-- **Herramienta de medición:** Comparación mensual de costos de producción vs. ingresos netos.
-- **Métrica clave:** Margen bruto mensual promedio sobre unidades vendidas.
+- **Meta:** Mantener la tasa de abandono atribuible a preocupaciones de privacidad en o por debajo del 15 % durante los primeros 90 días de uso.
+
+- **Herramientas de medición:** Encuestas de percepción (in‑app específicas de privacidad) al inicio y a los 30, 60, 90 días.
+
+- **Métrica clave:** Porcentaje de usuarios que citan “privacidad” o “seguridad de datos” como motivo de desinstalación o abandono, respecto al total de abandonos registrados.
+
+**5. Establecimiento de un modelo de suscripción rentable y escalable**
+
+- **Lean UX Goal:** Validar que los planes de suscripción mensual (S/ 29.99) y anual (S/ 299.99) ofrezcan márgenes sostenibles y se perciban como una propuesta de valor justa para el usuario.
+
+- **Propósito:** Garantizar la viabilidad financiera del negocio de suscripción, manteniendo la percepción de valor y facilitando la recomendación orgánica y la retención a largo plazo sin incurrir en costos de fabricación ni logística de las macetas.
+
+- **Meta:** Alcanzar 1 000 suscriptores activos (mensuales o equivalentes anuales) en los primeros 12 meses. Obtener un ingreso mensual recurrente (MRR) superior a S/ 29 990 al mes 12, y mantener un margen de contribución mínimo del 60 % sobre el ingreso por suscripción, considerando únicamente costos de plataforma, soporte y marketing.
+
+- **Herramientas de medición:** Dashboard de facturación y renovaciones de suscripción. Estado de resultados mensual que contraste ingresos por suscripción con costos operativos directos (plataforma, atención al cliente, marketing).
+
+- **Métrica clave:** MRR (Ingreso Mensual Recurrente), que es el total de ingresos recurrentes de suscripciones al cierre de cada mes.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-1. Adopción del producto (Business Outcome 1)
+**1. Adopción del producto (Business Outcome 1)**
 
-   **Creemos que** al lanzar Macetech al mercado peruano, aproximadamente el 8 % de los hogares en Lima Metropolitana lo adoptarán durante los primeros 12 meses, alcanzando un hito intermedio del 4 % a los 6 meses, especialmente entre jóvenes profesionales entre 18 y 45 años con interés en sostenibilidad urbana.
+**Creemos que** al ofrecer Macetech como servicio de suscripción (S/ 29.99/mes o S/ 299.99/año), un 8 % de los hogares tech‑friendly de Lima Metropolitana se registrará y mantendrá activa su suscripción en los primeros 12 meses, alcanzando un 4 % de adopción a los 6 meses, especialmente entre profesionales jóvenes (18 - 45 años) interesados en sostenibilidad urbana.
 
-   **Si tenemos razón**, las ventas físicas del producto se verán reflejadas en registros analíticos a través de herramientas como Google Analytics, y esto validará tanto la visibilidad como la demanda inicial del producto.
+**Si tenemos razón**, veremos un crecimiento sostenido de altas en nuestro CRM y un incremento de instalaciones activas de la app en Google Analytics, reflejando tanto visibilidad como demanda real.
 
-   **Sabremos que tenemos razón si** logramos monitorear un crecimiento progresivo hacia el 8 % de adopción anual, sustentado en el contexto de alto dinamismo en el mercado global de IoT doméstico, que alcanzó 155 000 millones de USD en 2023 y proyecta llegar a 231 600 millones para 2028, con 785 millones de hogares conectados a nivel mundial (Statista Research Department, 2025). El éxito en adopción indicará que Macetech responde a una tendencia real y creciente en América Latina, donde países como México ya alcanzan un 94 % de penetración de dispositivos inteligentes en hogares.
+**Sabremos que** tenemos razón si a los 6 meses alcanzamos una tasa mayor al 4 % de penetración (hogares suscritos sobre total de hogares tech‑friendly) y a los 12 meses logramos más del 8 %, con una tasa de cancelación inferior al 15 % mensual.
 
-2. Retención temprana de usuarios (Business Outcome 2)
+**2. Retención temprana de usuarios (Business Outcome 2)**
 
-   **Creemos que** si diseñamos un proceso de onboarding guiado paso a paso, enviamos notificaciones personalizadas y mostramos métricas visuales de salud vegetal, lograremos reducir la tasa de abandono (churn) a un 20 % o menos en los primeros 3 meses, partiendo desde un hito intermedio del 25 % a los 2 meses.
+**Creemos que** un onboarding guiado, notificaciones personalizadas y métricas visuales de salud vegetal evitarán que más del 20 % de los nuevos suscriptores cancelen su plan durante los primeros 3 meses (con un hito de 25 % a los 60 días).
 
-   **Si tenemos razón**, observaremos una mejora significativa en la permanencia de usuarios dentro del ecosistema Macetech, incluso superando la tendencia promedio de churn del 30–35 % en soluciones IoT domésticas (National Institute of Standards and Technology, 2024).
+**Si tenemos razón**, observaremos una disminución gradual del churn por debajo de los niveles promedio de soluciones IoT (30 – 35 %) y mayor uso recurrente de la app en los días críticos iniciales.
 
-   **Sabremos que tenemos razón si** los registros de cancelación descienden por debajo del umbral del 20 %, y nuestros análisis por segmentos reflejan una mejora continua en los puntos de fricción más críticos identificados durante los primeros días de uso.
+**Sabremos que** tenemos razón si al evaluar las cohortes en Firebase notamos una tasa de churn acumulado menor o igual al 20 % a los 90 días, acompañado de un aumento en la interacción (sesiones semanales mayores de 3 por usuario).
 
-3. Visibilidad en buscadores (Business Outcome 3)
+**3. Visibilidad en buscadores (Business Outcome 3)**
 
-   **Creemos que** si implementamos una estrategia sólida de SEO y marketing digital enfocada en términos clave como “maceta inteligente” y “jardinería IoT”, lograremos alcanzar el top 3 de Google en Perú, México y Colombia dentro del primer año, alcanzando un hito intermedio en el top 10 a los 6 meses.
+**Creemos que** al implementar una estrategia SEO focalizada en “maceta inteligente” y “jardinería IoT” para Perú, México y Colombia, alcanzaremos el top 10 en Google a los 6 meses y el top 3 a los 12 meses.
 
-   **Si tenemos razón**, obtendremos un crecimiento sostenido del tráfico orgánico y una mejora en nuestros rankings medidos por herramientas como SEMrush.
+**Si tenemos razón**, registraremos un incremento sostenido en impresiones, clics y posición promedio de las keywords clave, medido con SEMrush y Google Search Console.
 
-   **Sabremos que tenemos razón si** observamos un aumento progresivo en clics y conversiones derivadas de búsquedas, validando el interés de una región altamente conectada: el 94 % de los hogares mexicanos y más del 80 % de la población urbana en Colombia ya integran tecnología IoT (Thormundsson, 2024; Statista, 2025).
+**Sabremos que** tenemos razón si a los 6 meses nuestras keywords principales aparecen sistemáticamente entre los puestos 4 – 10 y, a los 12 meses, entre el 1 – 3, con un crecimiento de tráfico orgánico de más del 50 % respecto al punto de partida.
 
-4. Salud de las plantas y éxito del cuidado (User Outcome 1)
+**4. Salud de las plantas y éxito del cuidado (User Outcome 1)**
 
-   **Creemos que** al integrar monitoreo en tiempo real, riego automatizado y reportes gráficos de progreso, los usuarios de Macetech aumentarán la tasa de supervivencia de sus plantas más allá de los 90 días en al menos un 75 % durante su primer año de uso.
+**Creemos que** al integrar monitoreo en tiempo real, riego automatizado y reportes gráficos de progreso, al menos el 75 % de las plantas de usuarios suscritos sobreviva y se mantenga saludable tras 90 días de uso continuo.
 
-   **Si tenemos razón**, los usuarios responderán a las alertas de cuidado y lograrán mantener sus plantas sanas, estableciendo rutinas de jardinería efectivas.
+**Si tenemos razón**, los usuarios atenderán oportunamente las alertas y seguirán las recomendaciones, lo que quedará reflejado en los logs de la plataforma y en su feedback cualitativo.
 
-   **Sabremos que tenemos razón si** el 75 % de las notificaciones sobre estrés vegetal se atienden exitosamente y las plantas asociadas sobreviven a los primeros 3 meses, apoyando los hallazgos de Beavers et al. (2024), que documentan una mejora del 50 % en la efectividad del cuidado con tecnología de asistencia.
+**Sabremos que** tenemos razón si los registros muestran más del 75 % de alertas resueltas con éxito y una tasa del 75 % de supervivencia vegetal en dicho periodo, contrastado con cohortes de control sin tecnología.
 
-5. Reducción del desperdicio de recursos (User Outcome 2)
+**5. Reducción del desperdicio de recursos (User Outcome 2)**
 
-   **Creemos que** con los sensores de humedad y el sistema de riego inteligente de Macetech, los usuarios reducirán su consumo de agua y energía en un 50 % en los primeros 6 meses, comparado con métodos manuales tradicionales.
+**Creemos que** gracias a los sensores de humedad y al sistema de riego inteligente de Macetech, los usuarios reducirán en un 50 % su consumo de agua y energía en riego durante los primeros 6 meses, sin afectar la salud de sus plantas.
 
-   **Si tenemos razón**, veremos una disminución sistemática del volumen de agua y energía utilizada por ciclo de riego, sin comprometer la salud de las plantas.
+**Si tenemos razón**, los datos de consumo por ciclo y las métricas de salud vegetal se mantendrán estables o mejorarán, reflejando eficiencia.
 
-   **Sabremos que tenemos razón si** el análisis de los datos recopilados por Macetech demuestra una caída de, por ejemplo, 120 a 80 litros de agua y de 210 a 160 kWh de energía, replicando los hallazgos de Siraparapu y Azad (2024). Además, el control automatizado contribuirá a mitigar el 45 % del agua que, según la Organización de las Naciones Unidas para la Alimentación y la Agricultura (2024), se pierde por evaporación o filtración profunda.
+**Sabremos que** tenemos razón si observamos una caída en el consumo promedio de agua y energía de un 50% (por ejemplo, pasando de 120L a 60L de agua y de 200kWh a 100 kWh de energía por semana), manteniendo una tasa mayor al 75 % de supervivencia vegetal en el mismo periodo.
 
-6. Privacidad como factor de retención (Business Outcome 4)
+**6. Reducción de abandono por preocupaciones de privacidad (Business Outcome 4)**
 
-   **Creemos que** si implementamos medidas proactivas como consentimiento explícito, cifrado de datos y políticas de transparencia, podremos reducir el abandono por preocupaciones de privacidad a un máximo del 15 % en los primeros 3 meses.
+**Creemos que** al implementar consentimiento claro, cifrado extremo y políticas de datos transparentes, reduciremos al máximo el porcentaje de users que cancelan su suscripción por temas de privacidad por debajo del 15 % en los primeros 90 días.
 
-   **Si tenemos razón**, los usuarios confiarán más en la seguridad de Macetech y mostrarán menos rechazo ante las funcionalidades de recopilación y análisis de datos.
+**Si tenemos razón**, las encuestas in‑app relacionadas con privacidad serán residuales (menos del 15 % del total de abandonos).
 
-   **Sabremos que tenemos razón si** las encuestas revelan una alta percepción de confianza y los tickets de soporte por temas de privacidad se mantienen por debajo del 15 %, contrastando con el 45 % de desconfianza promedio en dispositivos inteligentes según Thormundsson (2024).
+**Sabremos que** tenemos razón si el 10 – 15 % de las bajas de usuarios cita “privacidad” como motivo, y las valoraciones en temas de seguridad promedian un valor de aceptación 4 de 5.
 
-7. Cambio en hábitos sostenibles (User Outcome 5)
+**7. Cambio en hábitos sostenibles (User Outcome 5)**
 
-   **Creemos que** si los usuarios integran Macetech a su vida cotidiana, al menos un 30 % adoptará dos o más prácticas ecológicas adicionales (como compostaje o eficiencia energética) durante los primeros 6 meses.
+**Creemos que** los usuarios que mantengan Macetech activo adoptarán al menos dos nuevas prácticas ecológicas (compostaje, reutilización de agua, uso de fertilizantes orgánicos, etc.) dentro de los primeros 6 meses.
 
-   **Si tenemos razón**, veremos un cambio conductual significativo en la rutina ecológica de los usuarios, fortalecido por la experiencia positiva con la jardinería inteligente.
+**Si tenemos razón**, en encuestas de seguimiento y diarios de uso, los participantes reportarán la incorporación de estas prácticas como parte de su rutina.
 
-   **Sabremos que tenemos razón si** las entrevistas post-uso reflejan un crecimiento del 30 % en hábitos sostenibles adquiridos, validando lo observado por Murtagh & Frost (2023), quienes concluyeron que 2 de cada 3 personas valoran altamente las iniciativas verdes, especialmente aquellas que pueden integrar en su hogar.
+**Sabremos que** tenemos razón si más del 30 % de la muestra declara haber implementado dos o más prácticas sostenibles tras medio año de suscripción, validado mediante entrevistas semiestructuradas y cuestionarios pre/post uso.
 
 #### 1.2.2.4. Lean UX Canvas
 
