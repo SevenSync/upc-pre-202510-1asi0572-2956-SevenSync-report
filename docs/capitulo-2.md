@@ -1992,47 +1992,45 @@ El concepto de Ubiquitous Language fue formalizado por Eric Evans en su obra pri
 
 | Término | Definición |
 | --------| ---------- |
-| 2FA                         | Mecanismo de autenticación que agrega una segunda capa de seguridad mediante códigos temporales (email ).                     |
-| Credentials                 | Conjunto de datos secretos (usuario, contraseña, tokens) utilizados para autenticar usuarios. Incluye almacenamiento seguro.  |
-| Token                       | Cadena cifrada que autentica usuarios o servicios en peticiones, con expiración y permisos asociados.                         |
-| Session                     | Representación de una sesión activa del usuario, contiene tokens, expiración y roles.                                         |
-| AccountStatus               | Estado actual de la cuenta del usuario (activo, suspendido, eliminado, pendiente). Controla acceso y flujos automatizados.    |
-| PasswordRecoveryToken       | Token temporal emitido para la recuperación de contraseña.                                                                    |
-| User                        | Entidad que representa a una persona que usa el sistema. Incluye identificación, credenciales y preferencias.                 |
-| Preference                  | Configuración individual del usuario sobre idioma, notificaciones, unidades, etc.                                             |
-| User Profile                | Datos personales del usuario como dirección, número telefónico, idioma y preferencias visuales.                               |
-| Address                     | Información de localización del usuario, incluyendo validación con Geo API.                                                   |
-| PhoneNumber                 | Estructura validada de números telefónicos para notificaciones y autenticación.                                               |
-| Country                     | Identificador estandarizado de país (ISO) para normalización de datos y localización de contenido.                            |
-| PaymentTransaction          | Registro detallado de pagos realizados: monto, estado, método, marca temporal.                                                |
-| Invoice                     | Documento fiscal con desglose de importes cobrados, productos/servicios y estado de pago.                                     |
-| Plant Management            | Contexto que gestiona especies y macetas, condiciones óptimas, identificación y sincronización con fuentes externas.          |
-| Plant Profile               | Conjunto de datos relevantes de una planta: nombre, requerimientos, fecha de plantación, etiquetas.                           |
-| Compatibility               | Validación entre planta y maceta según tamaño, retención de agua, profundidad y otros factores.                               |
-| Plant API                   | Servicio externo que proporciona catálogos y características de especies vegetales.                                           |
-| MaceTech                    | Hardware IoT con sensores integrados para monitoreo de variables como humedad, pH, temperatura, etc.                          |
-| Maintenance Report          | Documento con historial de cuidados, alertas y estado general de la planta o maceta.                                          |
-| Light Sensor                | Sensor que mide la luz ambiental recibida por la planta.                                                                      |
-| Moisture Sensor             | Sensor de humedad en el sustrato para regular riego y generar alertas.                                                        |
-| Rule                        | Lógica definida para activar alertas o recomendaciones con base en umbrales de sensores.                                      |
-| Threshold                   | Valor configurado que determina cuándo se debe activar una alerta o acción automática.                                        |
-| OptimalRange                | Rango de valores saludables por especie vegetal (ej. luz, humedad, pH).                                                       |
-| Recommendation              | Sugerencia automatizada al usuario para mejorar las condiciones de sus plantas.                                               |
-| Caring Intelligence         | Módulo que analiza datos y genera recomendaciones personalizadas según patrones y condiciones detectadas.                     |
-| Geo API                     | Servicio externo que provee datos geográficos y climáticos para contextualizar recomendaciones.                               |
-| SensorData                  | Lecturas obtenidas por sensores de humedad, pH, temperatura y salinidad.                                                      |
-| SensorRecord                | Registro persistente con marca temporal y metadatos de cada SensorData.                                                       |
-| Alert                       | Evento generado al detectarse condiciones anormales según reglas definidas.                                                   |
-| Alert Level                 | Clasificación de alerta: normal, advertencia, crítico. Permite jerarquizar la atención del usuario.                           |
-| Smart Notification          | Notificación enviada al usuario cuando una condición requiere atención (email, push, SMS).                                    |
-| Automatic Watering          | Mecanismo de riego automático activado por reglas cuando se detecta humedad baja.                                             |
-| IrrigationJob               | Objeto que representa una ejecución programada de riego: hora, duración, volumen, válvula, estado.                            |
-| Watering Management         | Módulo encargado de planificar y ejecutar acciones de riego automáticas o manuales basadas en reglas.                         |
-| System Monitoring & Control | Supervisión del estado de sensores y dispositivos conectados. Activa alertas en caso de fallas o interrupciones del servicio. |
-| Data Insights & Reporting   | Transformación de datos de sensores en dashboards, alertas y reportes históricos.                                             |
-| InsightReport               | Documento generado tras el análisis de datos para visualizar KPIs y recomendar acciones.                                      |
-| ReportTemplate              | Plantilla predefinida para estructurar reportes y garantizar uniformidad visual y semántica.                                  |
-| Dashboard                   | Interfaz visual para presentar datos clave de macetas, plantas y estado general del sistema.                                  |
-| Feedback                    | Respuestas del usuario que permiten al sistema ajustar sus recomendaciones futuras.                                           |
-| Plant Enthusiastic          | Usuario que interactúa con Macetech para cuidar sus plantas de manera doméstica.                                              |
-| Gardener                    | Subgrupo de jardineros domésticos interesados principalmente en el cuidado de las plantas.                                    |
+| Access Token (Token de acceso) |	Token de corta duración que certifica las credenciales del usuario y autoriza el acceso a recursos protegidos durante la sesión activa. |
+|Alert (Alerta)	| Evento generado cuando una métrica o condición supera un umbral crítico, disparando notificaciones y posibles acciones de mitigación.|
+|Alert Level (Nivel de alerta)	|Clasificación de alerta (normal, advertencia, crítico) que permite jerarquizar la atención del usuario.|
+| Analytics & Reporting (Análisis e informes)	|Transformación de datos de sensores en dashboards, alertas y reportes históricos para apoyar la toma de decisiones.|
+|Asset & Resource Management (Gestión de recursos)|	Contexto que agrupa la administración de macetas, configuraciones de riego, metadatos y registros históricos de todas las instancias de Pot.|
+| BatchProcess (Proceso por lotes)	| Flujo de trabajo periódico que procesa grandes volúmenes de registros de sensores para calcular métricas agregadas y generar nuevos InsightReport.| 
+| BillingCycle (Ciclo de facturación)	| Periodo asociado a un SubscriptionPlan que determina la frecuencia de generación de facturas y la programación de cobros. |
+| Business Domain (Dominio de negocio)	| Conjunto de conceptos y reglas que describen el área funcional en la que opera la solución (jardinería inteligente). |
+| Credentials (Credenciales)|	Conjunto de datos secretos (usuario, contraseña, tokens) utilizados para autenticar usuarios.| 
+| Dashboard (Tablero de control)	| Interfaz gráfica interactiva que muestra datos clave de macetas, plantas y estado general de todo el grupo, permitiendo filtrar y profundizar. |
+| Data Insights (Información derivada) | Conclusiones y recomendaciones extraídas del análisis de datos sensoriales y KPIs. |
+|Device Monitoring (Monitoreo de dispositivo)	|Supervisión continua del estado de sensores y actuadores embebidos, con health checks y registro de logs críticos.|
+| GeoAPI (API geográfica) |	Servicio externo que proporciona catálogos de países y ciudades, datos geográficos y climáticos para contextualizar recomendaciones.|
+|HistoricalConfig (Configuración histórica)|	Registro inmutable de todas las configuraciones previas de una maceta, utilizado para auditorías y análisis de evolución.|
+|InsightReport (Informe de insights)	|Documento generado tras el análisis de datos de sensores y KPIs, que presenta tendencias, conclusiones y recomendaciones operativas o estratégicas.|
+| Invoice (Factura)	| Documento fiscal con desglose de importes cobrados, productos/servicios y estado de pago, generado automáticamente.|
+| IrrigationJob (Tarea de riego) | Objeto que representa la ejecución programada de una operación de riego: hora, duración, volumen, válvula y estado. |
+| Maintenance Report (Informe de mantenimiento)	|Documento con historial de cuidados, alertas y estado general de una planta o maceta. |
+| MaceTech (Maceta inteligente)	| Dispositivo IoT que integra sensores de humedad, pH, temperatura, luz y salinidad, junto con una plataforma web/móvil.|
+| OptimalRange (Rango óptimo)	| Valores saludables establecidos para indicadores clave (pH, humedad, temperatura, luminosidad) de cada PlantSpecies. |
+| PaymentTransaction (Transacción de pago) |	Registro detallado de cada intento de cobro o pago (recurrente o único), con montos, estado, método y marca temporal. |
+| PlantAPI (API de especies)	| Servicio interno responsable de proporcionar catálogos de especies vegetales y actualizar parámetros botánicos. |
+| PlantParameter  (Parámetro de planta) | Ajustes personalizados de riego y cuidado vinculados a una instancia de PlantSpecies, como frecuencia y volumen.|
+| PlantProfile (Perfil de planta)	| Conjunto de datos relevantes de una planta: nombre, requerimientos, fecha de plantación y etiquetas.| 
+| PlantSpecies (Especie vegetal)	| Entidad que representa una especie botánica, con nombre científico, común y clasificación junto a sus rangos óptimos.|
+| Preference (Preferencia) | Configuración individual elegida por el usuario (idioma, notificaciones, tema visual). |
+| Profile (Perfil de usuario)	| Conjunto de datos personales y preferencias asociadas a una cuenta de User, incluyendo dirección, teléfono e idioma. |
+| Recommendation (Recomendación) | Sugerencia automatizada generada por el motor de recomendaciones para mejorar las condiciones de las plantas.|
+| ReportTemplate (Plantilla de informe)	| Estructura predefinida que define el formato y contenido de los informes personalizados.| 
+| Renewal (Renovación de suscripción)	| Proceso automático de extensión de un SubscriptionPlan, que genera un nuevo Invoice y PaymentTransaction de forma periódica. |
+| Rule (Regla) | Lógica definida para activar alertas, recomendaciones o acciones automáticas basadas en umbrales. |
+| Session (Sesión)	| Periodo de interacción autorizado entre un User y el sistema, iniciado tras autenticación y mantenido mediante un Access Token válido.
+| SensorBinding (Vinculación de sensor)	| Asociación de una maceta (Pot) con uno o varios sensores específicos para la captura de datos ambientales. |
+| SensorData (Datos de sensor)	| Lecturas crudas de humedad, temperatura, luz, pH y salinidad asociadas a una maceta en un instante de tiempo. |
+| SensorRecord (Registro de sensor)	|Registro persistente de un SensorData, con marca temporal y metadatos de origen. |
+| Smart Notification (Notificación inteligente)	|Alerta contextual enviada al usuario (push, SMS) cuando una condición requiere atención, con contenido personalizado. |
+| SubscriptionPlan (Plan de suscripción) | Modelo que describe modalidades de suscripción (freemium, premium mensual/anual), con características, precios y reglas de renovación. |
+| Threshold (Umbral)	| Valor límite que, al ser superado por una métrica sensorial, dispara una alerta o una acción automática. |
+| User (Usuario) | Entidad que representa a la persona o sistema que interactúa con la aplicación, con identidad única y credenciales asociadas.| 
+| Validation (Validación)	| Proceso de comprobación que asegura la integridad y consistencia de datos (por ejemplo, direcciones, números telefónicos, compatibilidad planta-maceta). |
+| ValveCommand (Comando de válvula)	|Instrucción enviada al actuador de riego para abrir o cerrar el flujo de agua según la especificación de un IrrigationJob.|
+| Watering Management (Gestión de riego)|Módulo encargado de planificar y ejecutar acciones de riego automáticas o manuales, basadas en reglas y configuraciones definidas.|
