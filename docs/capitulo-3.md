@@ -1,83 +1,88 @@
 # Capítulo III: Requirements Specification
 
-## 3.1. To-Be Scenario Mapping.
-En esta sección se presenta el proceso y resultados del To-Be Scenario Mapping, una herramienta clave para proyectar cómo podría mejorar la experiencia del usuario a través de una solución innovadora. Esta actividad parte del análisis previo del escenario actual (As-Is Scenario) y propone una visión futura deseada de la interacción del usuario con el sistema o producto, considerando mejoras sustanciales en sus acciones, pensamientos y emociones.
+Este capítulo define de manera rigurosa la especificación de requisitos de Macetech, integrando prácticas consolidadas en el ámbito del análisis de requisitos. Siguiendo el marco propuesto por Robertson, Robertson y Reed (2024) en Mastering the Requirements Process, se adopta un enfoque sistemático que abarca la elicitation, el modelado y la priorización de necesidades, con el objetivo de generar un documento de requisitos que cumpla criterios de claridad, completitud, consistencia, trazabilidad y modificabilidad. El punto de partida es un análisis exhaustivo de los hallazgos de la fase de investigación, incluyendo estudios de usuarios, procesos de needfinding y análisis competitivo, a partir del cual se construye la estructura conceptual que sustentará todo el desarrollo. Como base metodológica se presentan las secciones de To‑Be Scenario Mapping, User Stories, Impact Map y Product Backlog, lo que garantiza un ciclo de vida de producto adaptable y enfocado en la entrega continua de valor.
 
-El equipo llevó a cabo el proceso mediante las siguientes etapas:
+## 3.1. To-Be Scenario Mapping
 
-**Preparación:** Se revisaron los escenarios As-Is para cada user persona.
+En esta sección se documenta el proceso metodológico y los hallazgos del To‑Be Scenario Mapping, herramienta esencial para diseñar la experiencia futura de cada User Persona y contrastarla con el escenario actual (As‑Is). Partiendo de un análisis riguroso de los mapas As‑Is, se proyectan las acciones, pensamientos y emociones del usuario a través de las filas Phases, Doing, Thinking y Feeling, de manera que quede explícito cómo Macetech transformará cada etapa de la interacción.
 
-**Lluvia de ideas individual:** Cada miembro del equipo propuso ideas sobre cómo podría transformarse la experiencia del usuario.
+El procedimiento seguido por el equipo incluyó las siguientes fases, en línea con las recomendaciones de Kalbach (2020) para el mapeo de experiencias:
 
-**Revisión e identificación de fases:** Se definieron fases clave comunes en el flujo ideal de interacción con el sistema.
+* **Preparación:** Revisión exhaustiva de los As‑Is Scenario Mapping existentes y definición del alcance para cada User Persona.
 
-**Nombramiento de fases:** Las columnas del mapa se titularon según las nuevas etapas del proceso.
+* **Lluvia de ideas individual:** Generación de propuestas de mejora centradas en optimizar actividades, percepciones y motivaciones del usuario.
 
-A continuación, se describen los resultados obtenidos para los dos segmentos analizados:
+* **Revisión colaborativa:** Consolidación de ideas, identificación de fases clave como columnas del mapa y validación de su pertinencia.
+
+* **Nombramiento de fases:** Asignación de títulos descriptivos a cada columna, representando los estados ideales del flujo de interacción.
+
+* **Comparación As‑Is vs. To‑Be:** Detección y análisis de las diferencias más relevantes, resaltando las innovaciones y beneficios esperados en términos de eficiencia, usabilidad y satisfacción.
+
+A continuación se incluyen capturas de los To‑Be Scenario Mapping generados en la herramienta designada para cada User Persona, con sus respectivas filas Phases, Doing, Thinking y Feeling, que ilustran de forma clara las mejoras proyectadas en la experiencia de usuario.
 
 ###### Figura 19
-*To-Be Scenario Mapping de nuestro segmento de personas apasionadas por las plantas*
+*To-Be Scenario Mapping de nuestro segmento de jardineros nuevos e inexpertos*
 
 <img src="/assets/img/capitulo-3/to-be scenario-1.jpg">
+
 Este escenario propone una experiencia asistida por una aplicación inteligente que acompaña al usuario desde la observación de su planta hasta la verificación de mejoras visibles, guiando sus decisiones mediante datos y recomendaciones automatizadas.
 
-**Fases:**
+**Fases**
 
-- Verificar estado de planta
+- **Monitoreo de la planta:** Comprobación precisa y automática del nivel de humedad, luz, temperatura, salinidad y acidez mediante sensores IoT.
 
-- Recibir información confiable
+- **Recepción de datos confiables:** Visualización en la aplicación de lecturas validadas y actualizadas al instante.
 
-- Evaluar qué hacer con respaldo
+- **Análisis de opciones:** Evaluación de recomendaciones personalizadas, respaldadas por historial de datos y criterios botánicos.
 
-- Tomar acción guiada y sencilla
+- **Ejecución guiada:** Ejecución de acciones sugeridas (riego, ajuste de iluminación, fertilización) mediante instrucciones claras y paso a paso.
 
-- Observar mejoras con feedback real
+- **Seguimiento y retroalimentación:** Observación de los efectos de cada intervención y recepción de informes de progreso en tiempo real.
 
-**Doing:**
-Desde usar sensores que alertan sobre el estado de humedad, luz o salud, hasta recibir sugerencias de acción en la app, todo el proceso está automatizado o guiado.
+**Doing**
+El usuario interactúa con la plataforma de manera fluida: los sensores envían alertas automáticas, la aplicación despliega sugerencias concretas y, con un solo toque, se activan los mecanismos de riego.
 
-**Thinking:**
-Los usuarios piensan en la facilidad de cuidar sus plantas, en lo valiosa que es la información personalizada, y en lo útil que resulta tomar decisiones basadas en datos reales.
+**Thinking**
+El cuidador valora la simplicidad del proceso, confía en la precisión de los datos personalizados y percibe que sus decisiones están fundamentadas en información objetiva y relevante.
 
-**Feeling:**
-Surgen emociones como esperanza, alivio, satisfacción, inspiración y motivación, evidenciando una experiencia positiva, empoderadora y confiable.
+**Feeling**
+Se generan sensaciones de tranquilidad y seguridad al saber que la planta recibe el cuidado adecuado. Emergen además la satisfacción de ver resultados tangibles y la motivación para continuar aprendiendo sobre jardinería inteligente.
 
-**Comparación con el As-Is**
-En el escenario actual (As-Is), este segmento experimenta mucha incertidumbre, ansiedad y prueba-error. El To-Be propone resolver esos puntos de dolor mediante automatización, personalización y feedback continuo. La emoción dominante pasa de la confusión al alivio y motivación, y las acciones son más eficientes y menos intuitivas.
-
+**Comparación con el As‑Is**
+En el escenario actual, el usuario enfrenta incertidumbre y constante prueba y error, lo que provoca ansiedad y frustración. Con el To‑Be Scenario Mapping, estos puntos de dolor se eliminan a través de la automatización de tareas, la personalización basada en datos y un ciclo de retroalimentación continua. De este modo, la experiencia transita de la confusión al alivio y de la improvisación a la eficiencia guiada.
 
 ###### Figura 20
-*To-Be Scenario Mapping de nuestro segmento de personas dedicadas a la jardinería*
+*To-Be Scenario Mapping de nuestro segmento de especialistas de jardinería y áreas verdes*
 
 <img src="/assets/img/capitulo-3/to-be-scenario-2.jpg">
 
 Para el perfil jardineros, el To-Be Scenario introduce una herramienta tecnológica que facilita el monitoreo masivo, agiliza la toma de decisiones y automatiza la comunicación con clientes.
 
-**Fases:**
+**Fases**
 
-- Llegar al espacio/jardín
+- **Arribo al jardín:** Ingreso al área de trabajo y conexión con la plataforma Macetech.
 
-- Revisar estado planta por planta
+- **Inspección individualizada:** Revisión rápida y centralizada del estado de cada planta a través del tablero de control.
 
-- Tomar decisiones rápidas
+- **Decisión inmediata:** Priorización de intervenciones basadas en alertas de salud y niveles críticos detectados.
 
-- Explicar al cliente lo realizado
+- **Reporte al cliente:** Comunicación clara y automatizada de las acciones realizadas y recomendaciones futuras.
 
-- Terminar jornada
+- **Cierre de la jornada:** Registro final de actividades y sincronización automática de datos para el seguimiento continuo.
 
-**Doing:**
-El jardinero inicia su jornada visualizando un resumen del estado de todas las plantas desde la app, actúa solo en los casos prioritarios y deja registros automáticos de su trabajo.
+**Doing**
+Al iniciar el día, el jardinero accede a un resumen consolidado de todas las plantas. Ejecuta solo las intervenciones prioritarias indicadas por la app y documenta cada tarea con un solo clic, liberándose de la carga de anotaciones manuales.
 
-**Thinking:**
-Piensa en cómo organizar su tiempo eficientemente, confía en los datos disponibles y se siente productivo y profesional en su jornada laboral.
+**Thinking**
+Valora la optimización de su tiempo y la fiabilidad de la información que sustenta sus decisiones; percibe un entorno de trabajo organizado y profesional gracias a la visibilidad global del estado de las plantas.
 
-**Feeling:**
-Las emociones van desde la organización mental, pasando por seguridad, tranquilidad, hasta orgullo y satisfacción, reflejando una jornada más inteligente y controlada.
+**Feeling**
+Experimenta seguridad y tranquilidad al contar con datos precisos, seguidas por orgullo y satisfacción al concluir su jornada con eficiencia y calidad, reflejando un servicio más inteligente y controlado.
 
-**Comparación con el As-Is**
-Mientras que el As-Is evidenciaba un proceso más manual, repetitivo y con ciertas dudas en la toma de decisiones, el To-Be automatiza y agiliza estos pasos. Se reduce el esfuerzo físico y cognitivo, aumentando la confianza en los datos y el rendimiento. La emoción cambia del cansancio a la eficiencia y orgullo profesional.
+**Comparación con el As‑Is**
+En el escenario actual, el jardinero trabaja de forma manual y repetitiva, confiando en su observación directa y notas a mano, lo que conlleva dudas y retrabajo. Con el To‑Be Scenario Mapping, estos pasos se automatizan y agilizan, reduciendo el esfuerzo físico y mental. El resultado es una transición emocional del agotamiento a la eficiencia, la confianza y el reconocimiento profesional.
 
-## 3.2. User Stories.
+## 3.2. User Stories
 
 En esta sección, procederemos a realizar un análisis exhaustivo de cada una de las historias de usuario asignadas a lo largo de todo el ciclo de vida del proyecto. Nuestro objetivo primordial es asegurar la plena satisfacción de nuestros segmentos de mercado, mediante una comprensión profunda de sus necesidades y expectativas, así como la posterior adecuación de nuestras soluciones a estos requerimientos. Para alcanzar este fin, se especificarán detalladamente los requisitos definidos, junto con el conjunto de User Stories y Epics identificados como elementos clave para el éxito del proyecto. Es crucial destacar que cada User Story estará acompañada de sus correspondientes criterios de aceptación, lo que garantizará una comprensión precisa y compartida de los objetivos a lograr.
 
