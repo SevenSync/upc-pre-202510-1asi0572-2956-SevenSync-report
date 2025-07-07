@@ -331,6 +331,18 @@
                 <td>Lucio Yen</td>
                 <td>Implementación parcial de diagrama de clases en PlantUML. Bounded context canvas terminado. Bibliografía Actualizada. Sprints Documentados.</td>
             </tr>
+              <tr>
+                <td>4.8</td>
+                <td>06/07/2025</td>
+                <td>Fabrizio Sánchez</td>
+                <td>Revisión y corrección de los Wireflows y Userflows de la aplicación web y aplicación móvil de Macetech</td>
+            </tr>
+              <tr>
+                <td>4.9</td>
+                <td>06/07/2025</td>
+                <td>Flavio Trigueros</td>
+                <td>Revisión y corrección de la estructura del needfinding con los User Persona y Ubiquitous Language, además de la corrección de las épicas de la tabla de User Stories</td>
+            </tr>
         </tbody>
     </table>
 </div>
