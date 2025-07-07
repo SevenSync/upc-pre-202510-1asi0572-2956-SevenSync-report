@@ -295,39 +295,121 @@ _Análisis Competitivo organizado para todos los competidores potenciales de Mac
   </tbody>
 </table>
 
-- ### 2.1.2. Estrategias y tácticas frente a competidores
+### 2.1.2. Estrategias y tácticas frente a competidores
 
-  Para destacar frente a competidores y consolidar nuestra posición en el mercado de jardinería inteligente, resulta imprescindible diseñar e implementar un conjunto de estrategias y tácticas coordinadas que refuercen nuestra diferenciación y capten la atención de los segmentos objetivo. A continuación, se presentan las principales líneas de acción:
+Para destacar frente a competidores y consolidar nuestra posición en el mercado de jardinería inteligente, resulta imprescindible diseñar e implementar un conjunto de estrategias y tácticas coordinadas que refuercen nuestra diferenciación y capten la atención de los segmentos objetivo. A continuación, se presentan las principales líneas de acción:
 
-- **Desarrollo de una Propuesta de Valor Distintiva**
+**1. Desarrollo de una Propuesta de Valor Distintiva**
+   
+**Estrategia:**
 
-  **Estrategia:** Precisar y articular el beneficio central de Macetech: la provisión de un sistema de cuidado de plantas verdaderamente autónomo, basado en monitoreo continuo de variables críticas (humedad, temperatura, pH, salinidad y luz) y en el envío de alertas contextuales.
+  Precisar el beneficio único de Macetech para diferenciarlo en un mercado emergente de soluciones IoT hogareñas. La autonomía total en el cuidado de plantas, apoyada por un monitoreo 24/7 de humedad, temperatura, pH, salinidad y luz, y la entrega de “alertas contextuales” convierten a Macetech en un asistente vegetal proactivo, capaz de anticipar necesidades y reducir al mínimo la intervención manual.
 
-  **Táctica:** Conducir estudios cualitativos y cuantitativos, entrevistas estructuradas, encuestas y focus groups, con usuarios residenciales de diversos perfiles (urbanos con balcones, oficinas, universidades) para mapear sus principales frustraciones y expectativas. A partir de los hallazgos, enfatizar en nuestros materiales de comunicación características como el disparo automático de riego al superar umbrales críticos de humedad y las recomendaciones inteligentes de iluminación.
+**Táctica:**
 
-- **Optimización de la Experiencia de Usuario (UX)**
+   * Realizar entrevistas en profundidad (6 - 10 usuarios) en sus hogares y espacios de trabajo para capturar narrativas de uso cotidiano y mapeo de momentos de fricción o puntos de dolor (por ejemplo, olvidos de riego).
+   * Implementar encuestas cuantitativas (igual o más de 200) para validar la relevancia de cada variable monitoreada y la disposición a recibir alertas automáticas.
+   * A/B testing de titulares y descripciones en landing pages, midiendo tasa de rebote y tiempo promedio en página.
+   * Diseñar piezas visuales y videos cortos que destaquen el “disparo automático de riego” y las “recomendaciones inteligentes”, con resultados antes/después.
+   * Incluir testimonios reales de early‑adopters que validen la conexión emocional y el ahorro de tiempo.
+ 
+**Indicadores de éxito:**
 
-  **Estrategia:** Garantizar una curva de aprendizaje mínima, así como una interacción fluida desde la instalación inicial del dispositivo hasta la consulta diaria de datos, alineada con los principios de diseño centrado en el usuario y el minimalismo funcional.
+   * Tasa de conversión en landing pages con mensajes diferenciados (mayor al 15 %).
+   * Score de valor percibido en encuestas post‑test (mayor al 4.2/5).
+   * Engagement con piezas de video (VTR (Tasa de visualización) mayor al 40 %, completitud mayor al 60 %).
 
-  **Táctica:** Desarrollar prototipos de la interfaz móvil y web empleando metodologías Agile y Design Thinking; realizar múltiples rondas de pruebas de usabilidad con usuarios sin experiencia en tecnologías IoT, evaluando métricas de éxito como tasa de completitud de tareas, tiempos de respuesta y grado de autonomía al configurar la maceta.
+**2. Optimización de la Experiencia de Usuario (UX)**
+  
+**Estrategia:**
 
-- **Expansión de la Base de Usuarios**
+Reducir al máximo la fricción en todo el camino recorrido por el usuario: desde la instalación inicial del dispositivo hasta la rutina diaria de chequeo de datos. Un UX minimalista y centrado en tareas críticas acelera la adopción y mejora la retención.
 
-  **Estrategia:** Ampliar el alcance de Macetech a subsegmentos específicos (entusiastas de plantas ornamentales, propietarios de huertos caseros, profesionales de oficina) mediante propuestas de valor adaptadas a sus necesidades y motivaciones particulares.
+**Táctica:**
 
-  **Táctica:** Diseñar promociones de lanzamiento (por ejemplo, bundles con fertilizantes inteligentes o descuentos para compras múltiples), además de habilitar una versión freemium de la aplicación que permita a los usuarios explorar la plataforma de monitoreo sin compromiso de compra inmediata de hardware.
+* Desarrollar prototipos de baja, media y alta fidelidad para web y móvil, con componentes visuales claros, jerarquías de información y flujos de configuración simplificados.
 
-- **Marketing Digital de Alta Precisión**
+* Realizar 3 rondas de tests con al menos 6 usuarios sin experiencia previa en IoT, midiendo: <br><br>
 
-  **Estrategia:** Implementar campañas de performance marketing segmentadas por comportamientos e intereses afines (seguidores de cuentas de jardinería urbana, smart home, sostenibilidad) aprovechando plataformas de Social Ads y Search Ads.
+  * Tasa de completitud de tareas (instalación, configuración de sensor, revisión de histórico).
+  * Tiempo medio para completar cada tarea (menos de  3 minutos).
+  * Nivel alto de autonomía percibido.<br><br>
 
-  **Táctica:** Crear contenidos en video de formato corto (Reels, TikToks) que demuestren casos de uso reales —por ejemplo, la recuperación de una planta marchita gracias al riego programado—, segmentando audiencias mediante lookalike audiences y retargeting dinámico basado en la interacción con landing pages especializadas.
+* Integrar feedback en cada sprint, priorizando correcciones de flujos críticos y ajustes de microinteracciones (animaciones, feedback en tiempo real).
 
-- **Alianzas Comerciales y Cooperaciones Estratégicas**
+**Indicadores de éxito:**
 
-  **Estrategia:** Forjar sinergias con viveros, cadenas de tiendas de jardinería, estudios de paisajismo y marcas de decoración para ampliar canales de distribución y credibilidad del producto.
+* SUS (System Usability Scale): puntuación promedio mayor a 80.
+* Tasa de error en configuración: menor al 10 %.
 
-  **Táctica:** Desarrollar acuerdos de co-branding para incluir Macetech en kits de plantación (“kit inteligente + planta”), organizar workshops conjuntos con influencers y expertos en horticultura, y participar en ferias de sostenibilidad y eventos de tecnología aplicada al hogar, garantizando exhibiciones interactivas y demostraciones en vivo.
+**3. Expansión de la Base de Usuarios**
+  
+**Estrategia:**
+
+Segmentar el mercado inicial para generar tracción rápida y luego replicar el modelo en subnichos de alto potencial (ornamentales, huertos caseros, oficinas corporativas).
+
+**Táctica:**
+
+* Definir perfiles de usuario (“personas”) detallados o subsegmentos objetivos:<br><br>
+
+  * Urbanita ornamental: busca estética y quiere un “toque verde” sin complicaciones.
+  * Huertero casero: interesado en optimizar cultivos pequeños (hierbas, aromáticas).
+  * Profesional de oficina: desea un ambiente relajante que mejore la productividad.<br><br>
+
+* Crear bundles específicos como "Ornamental Pack" o "Herb Garden Kit", y ofrecer trials freemium de la app (funcionalidad básica de monitoreo sin acceso al riego) para “probar antes de suscribir”.
+
+* Implementar programas de prueba en coworkings y residencias universitarias con condiciones de seguimiento y feedback guiado.
+
+**Indicadores de éxito:**
+
+* Tasa de conversión de freemium a suscripción: menos al 15 %.
+
+* Penetración en cada subsegmento piloto: menos al 10 % en 3 meses.
+
+* Tasa de referidos generados por usuarios piloto: ≥ 20 %.
+
+**4. Marketing Digital de Alta Precisión**
+
+**Estrategia:**
+  
+Maximizar el rendimiento de la inversión publicitaria segmentando audiencias de alto potencial, basándose en comportamientos previos y similitudes con perfiles de cliente ideal.
+
+**Táctica:**
+
+* Campañas de Social Ads en Facebook o Instagram, segmentadas por intereses en jardinería urbana, smart home y sostenibilidad.
+* Search Ads en Google Ads para keywords de “maceta inteligente”, “riego automático”.
+* Implementar formatos “before/after” con llamadas a la acción claras.
+* Audiencias basadas en compradores exitosos.
+* Retargeting dinámico para visitantes de landing pages que no convirtieron, mostrando beneficios específicos y ofertas de tiempo limitado.
+
+**Indicadores de éxito:**
+
+* Rendimiento de la inversión publicitaria objetivo: mayor o igual a un 4x en campañas de adquisición.
+
+* Costo por Adquisición (CPA): menor o igual a S/ 35 por suscriptor.
+
+* Tasa de Clicks (CTR) en anuncios de video mayor al 2.5 %.
+
+**5. Alianzas Comerciales y Cooperaciones Estratégicas**
+
+**Estrategia:**
+
+Ampliar canales de distribución, reforzar credibilidad y aprovechar audiencias ya consolidadas en el ecosistema de jardinería y decoración.
+
+**Táctica:**
+
+* Convenios con viveros y tiendas especializadas
+* Negociar acuerdos de co‑branding y promociones cruzadas.
+* Formación y certificación de personal de venta para que actúe como embajadores de la marca.
+* Talleres prácticos de “Cómo usar Macetech” impartidos por influencers y expertos en horticultura.
+* Stands interactivos en ferias de sostenibilidad, tecnología doméstica y decoración de interiores.
+* Diseñar un programa de comisiones para paisajistas, decoradores y universidades que recomienden Macetech en proyectos de diseño de espacios verdes.
+
+**Indicadores de éxito:**
+
+* Número de puntos de venta físicos mayor o igual a 25 en el primer año.
+* Volumen de ventas generadas por canal de alianzas mayor o igual al 20 % del total.
+* Tasa de conversión en eventos y workshops mayor o igual al ≥ 30 % de asistentes que solicitan más información o prueba gratuita.
 
 ## 2.2. Entrevistas
 
@@ -341,7 +423,7 @@ Estas entrevistas generan una base de conocimiento que orienta el desarrollo con
 
 En esta sección se presenta el diseño de las entrevistas, estructurado en tres fases. En la primera fase se recopilan datos demográficos y contextuales del participante con 5 preguntas; a continuación, las preguntas se organizan según el segmento objetivo al que pertenezca. Cada segmento incluye 15 preguntas específicas, lo que resulta en un total de 20 ítems por entrevista. Cabe señalar que, si el entrevistado profundiza en sus respuestas y aborda de forma espontánea cuestiones aún no planteadas, el entrevistador podrá omitir dichas preguntas y avanzar directamente a los siguientes ítems.
 
-- **Información general del participante**
+- **Información general del participante**<br><br>
 
   1. Nombre:
   2. Edad:
@@ -349,27 +431,27 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
   4. Estado Civil:
   5. Ocupación:
   6. Dispositivo más usado en actividades cotidianas:
-  7. Navegador más usado en actividades cotidianas:
+  7. Navegador más usado en actividades cotidianas:<br><br>
 
-- **Segmento 1: Personas apasionadas por las plantas**
+- **Segmento 1: Personas apasionadas por las plantas**<br><br>
 
-  **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.
+  **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.<br><br>
 
-  - Preguntas de exploración inicial (contexto general)
+  - **Preguntas de exploración inicial (contexto general)**<br><br>
 
     1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
 
     2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
 
-    3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?
+    3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?<br><br>
 
-  - Preguntas de seguimiento y profundización ante la exploración inicial (Probes):
+  - **Preguntas de seguimiento y profundización ante la exploración inicial (Probes):**<br><br>
 
     1. ¿Qué haces exactamente durante ese tiempo?
 
-    2. ¿Hay momentos del día o del año donde cuidas más de ellas?
+    2. ¿Hay momentos del día o del año donde cuidas más de ellas?<br><br>
 
-  - Desafíos actuales y soluciones empleadas
+  - **Desafíos actuales y soluciones empleadas**<br><br>
 
     1. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
 
@@ -377,23 +459,23 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
     3. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-    4. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?
+    4. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?<br><br>
 
-  - Actitud frente a la tecnología (antes de presentar el producto)
+  - **Actitud frente a la tecnología (antes de presentar el producto)**<br><br>
 
     1. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
 
-    2. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?
+    2. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?<br><br>
 
-  - Reacción tras presentar el concepto de Macetech
+  - **Reacción tras presentar el concepto de Macetech**<br><br>
 
-    **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.
+    **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.<br><br>
 
     10. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
 
-    11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?
+    11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?<br><br>
 
-  - Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):
+  - **Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):**<br><br>
 
     12. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
 
@@ -401,44 +483,44 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
     14. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
 
-    15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?
+    15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?<br><br>
 
-- **Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)
+- **Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)<br><br>
 
-  **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.
+  **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.<br><br>
 
-  - Preguntas de contexto y rutina profesional
+  - **Preguntas de contexto y rutina profesional**<br><br>
 
     1. ¿Cuántos años de experiencia tienes en jardinería? ¿Trabajas de forma independiente, en viveros, o en proyectos particulares?
 
     2. ¿Qué tipo de plantas manejas con más frecuencia? ¿Cuál es el volumen promedio de plantas que cuidas?
 
     3. ¿Podrías describirme cómo es tu proceso habitual de riego, fertilización y monitoreo?
-    4. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
+    4. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?<br><br>
 
-  - Problemas y recursos actuales
+  - **Problemas y recursos actuales**<br><br>
 
-  1. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
+    1. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-  2. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+    2. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
 
-  3. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?
+    3. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?<br><br>
 
-  - Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):
+  - **Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):**<br><br>
 
     6. ¿Qué te funciona bien hoy?
 
-    7. ¿Qué te gustaría que funcione mejor?
+    7. ¿Qué te gustaría que funcione mejor?<br><br>
 
-  - Expectativas y percepción frente a soluciones inteligentes
+  - **Expectativas y percepción frente a soluciones inteligentes**<br><br>
 
     8. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
 
     9. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
 
-    10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?
+    10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?<br><br>
 
-  - Reacción ante Macetech
+  - **Reacción ante Macetech**<br><br>
 
     11. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
 
@@ -448,7 +530,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
     14. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
 
-    15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
+    15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?<br><br>
 
 ### 2.2.2. Registro de entrevistas
 
@@ -941,41 +1023,380 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
       Evalúa la inversión considerando la capacidad de Macetech para ahorrar tiempo y reducir frustraciones, justificando el gasto mediante la protección de sus plantas. Considera esencial que el sistema ofrezca un equilibrio entre automatización y participación manual, asegurándose de no perder la experiencia emocional del riego. Toma en cuenta la durabilidad del dispositivo y la facilidad de adaptación de sus métodos caseros a la tecnología, buscando que el producto sea un complemento natural de su hobby.
 
----
-
 ### 2.2.3. Análisis de entrevistas
 
-**1. Segmento: Jardineros Apasionados y Hogareños**
+En esta sección presentamos el análisis detallado de las entrevistas realizadas a nuestros dos segmentos objetivos. Nuestro objetivo es identificar patrones de comportamiento, motivaciones y necesidades que nos permitan diseñar una solución que combine tecnología web, móvil e IoT que resuelva sus necesidades de manera intuitiva. Para ello, recopilamos testimonios, tres para cada segmento, resumimos sus características objetivas y subjetivas, y extraemos implicaciones de diseño concretas. A partir de estos hallazgos, construiremos un arquetipo final que guiará el desarrollo de la interfaz, las funcionalidades clave y la estrategia de adopción de Macetech.
 
-En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Especialistas de Jardinería y Áreas Verdes” (Betty Chumacero, Javier Hernández y Yasser Rentería), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
+#### 1. Segmento: Jardineros Nuevos e Inexpertos**
 
-- **Características Objetivas:**
+En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Jardineros Nuevos e Inexpertos” (Rosalinda Quispe, Sirley Zapata y Andrés Torres), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
 
-* Frecuencia de cuidado: 100% de este segmento (3/3) realiza el cuidado de sus plantas al menos cada 2 días.
+Este segmento agrupa a personas sin formación técnica en horticultura que cultivan plantas en entornos urbanos limitados, como balcones, terrazas, jardineras de interior o pequeños patios, con recursos espaciales y temporales reducidos. Su motivación principal radica en reconectar con la naturaleza, mejorar su bienestar emocional, purificar el aire de sus entornos y embellecer sus hogares. No obstante, suelen disponer de conocimientos muy básicos o casi nulos sobre técnicas fundamentales de jardinería: desconocen cómo establecer un programa de riego eficiente, ajustar las proporciones de nutrientes esenciales, identificar y prevenir plagas o enfermedades, y seleccionar o preparar adecuadamente el sustrato según la especie vegetal. Esta brecha de habilidades los expone a errores recurrentes que, al no contar con orientación profesional, terminan provocando el deterioro prematuro o la muerte de las plantas, generando frustración y abandono de la actividad.
 
-* Método de monitoreo: 100% se basa en observación manual tradicional (sin sensores ni apps).
+#### Características Objetivas:
 
-* Uso de tecnología actual: 0% utiliza actualmente tecnología para el monitoreo de plantas.
+###### Tabla 5
+*Listado de estadísticas de características objetivas identificadas para nuestro segmento de jardineros nuevos e inexpertos*
 
-* Preferencia de precio: 66% (3/3) mencionaron que el precio accesible es un factor importante para decidir la compra.
+| Característica | Presencia en muestra (n = 3) | Rosalinda (n = 1) |	Sirley (n = 1) | Andrés (n = 1) |	Frecuencia (%) | Implicación para el diseño |
+|----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
+| Apego a marcas específicas (Ferticorp, 4Estaciones, Orange) |	2	|No	|Sí	|Sí|	66.7 %	| Integrar un catálogo dinámico que muestre disponibilidad y precios de Ferticorp, 4Estaciones y Orange en viveros y Promart, con reseñas y comparativas de rendimiento para reforzar la confianza.|
+| Uso de métodos empíricos para control de plagas |	3	|Sí| Sí	|Si	| 100 %	|	Diseñar tutoriales interactivos que combinen datos de sensores con remedios caseros, mostrando gráficas de efectividad y recomendando prácticas óptimas por especie.|
+| Uso de computadora o laptop con Windows	|3|	Sí (Laptop Asus, Windows 10) |Sí (Computadora Dell con Windows 10) |	Sí (Laptop HP con Windows 11)|	100 %| Desarrollar una web app ligera, optimizada para Chrome en Windows 10/11, con dashboards intuitivos, tiempos de carga rápidos y menús simplificados para principiantes.|
+|Uso de Smartphone con Android	|2|	Sí (Android Xiaomi Redmi con Chrome) |Sí (Android Xiaomi POCO con Chrome) |	No (iPhone 14 Pro con Safari) |66.7 %	| Implementar una versión web móvil responsiva en Chrome, con notificaciones push configurables y flujos simplificados, antes de migrar a una app nativa.|
+| Uso de apps de jardinería o sensores	|0	|No	|No	|No	|0 %	| Justificar el valor de los sensores durante el onboarding web con una demo interactiva que muestre casos de uso prácticos y beneficios medibles. |
+|Uso de YouTube para tutoriales de jardinería|	1|	No|	No |Sí	|33.3 %|	Incluir enlaces a videos tutoriales dentro de la plataforma, así como secciones de ayuda visual paso a paso para apoyar a los usuarios que buscan guía práctica.|
+|Uso de apps de identificación de plantas	| 1 |No |No |	Sí	|33.3 %	|	Añadir una herramienta de reconocimiento de plantas por foto o un cuestionario inteligente, entregando información adaptada y recomendaciones específicas por especie.|
+| Canal de consejo preferido: presencial	| 3	| Sí | Sí| Sí| 100 %	| 	Incorporar chat en vivo, centro de ayuda y sección “pregúntale a un experto” con respuestas personalizadas y tiempos de respuesta rápidos para recrear la confianza de la interacción cara a cara. |
+| Tipo de cultivo con plantas con fruto | 2 | Sí | No | Sí | 66.7% |	Ofrecer modos de cultivo preconfigurados para frutales, con alertas de riego y abonado ajustadas a ciclos de producción y consejos específicos para cada tipo de fruto. |
+| Tipo de cultivo con plantas ornamentales | 3	| Sí | Sí | Sí | 100 %	| Proporcionar presets de cuidado para ornamentales, con ajustes predeterminados de riego y nutrientes y posibilidad de personalización manual sencilla.|
+| Disposición a pagar |	3	| Sí (Ahorrar tiempo y errores en jardinería) |	Sí (Mayor beneficio en costos)	| Sí (Ahorrar tiempo) |	100 %	| Mostrar comparativas claras de planes Freemium y Premium, resaltando beneficios concretos (litros ahorrados, alertas prioritarias, módulos avanzados) para ayudar en la decisión según presupuesto. |
 
-* Importancia del diseño: 100% valoran que la maceta inteligente tenga un diseño estético que combine con la decoración del hogar.
+#### Interpretación de características objetivas:
 
-- **Características Subjetivas:**
+**1. Apego a marcas específicas**
 
-* Conexión emocional: 100% (3/3) expresan un fuerte vínculo emocional con sus plantas, viendo la jardinería como un hobby relajante.
+* 66.7 % de los entrevistados (Sirley y Andrés) eligen abonos y herramientas de Ferticorp, 4Estaciones u Orange al comprar insumos. <br><br>
 
-* Frustración por errores: 100% sienten frustración al perder plantas por falta de conocimiento técnico específico.
+* El 100 % adquiere en Promart Homecenter, donde encuentra esas marcas y compara precios antes de decidir. <br><br>
+  
+*  **Implicaciones:** Mostrar en la plataforma un catálogo dinámico con disponibilidad, precios y reseñas de Ferticorp, 4Estaciones y Orange en Promart, así como comparativas de rendimiento y testimonios de usuarios para reforzar la confianza en la elección.
 
-* Interés en tecnología: 100% muestran interés en soluciones tecnológicas sencillas y fáciles de usar (alertas claras, integración con app móvil).
+**2. Dependencia de métodos empíricos para control de plagas**
 
-* Valoran la personalización: 100% desean que la app o el sistema pueda adaptar recomendaciones específicas al tipo de planta.
+* El 100 % usa remedios caseros (ajo diluido, infusiones), confiando en su efectividad histórica. <br><br>
+
+* Ninguno emplea hoy sensores ni apps especializadas para el monitoreo de plagas. <br><br>
+
+* **Implicaciones:** Diseñar tutoriales interactivos que combinen datos reales de sensores con prácticas caseras, mostrando gráficas de efectividad y recomendaciones óptimas para cada alerta de plaga según especie.
+
+**3. Preferencia por computadora Windows + Chrome**
+
+* El 100 % utiliza una laptop o PC Windows (Asus, Dell, HP) con Chrome como principal interfaz tecnológica. <br><br>
+
+* Prefieren revisar la información en un entorno fijo de escritorio, sin depender de movilidad. <br><br>
+
+* **Implicaciones:** Priorizar una web app ligera, optimizada para Chrome en Windows 10/11, con dashboards claros, tiempos de carga rápidos y menús simplificados para facilitar la adopción inicial.
+
+**4. Uso secundario de smartphone Android**
+
+* 66.7 % aprovecha Chrome en Android (Redmi, POCO) únicamente para búsquedas generales, no para manejo de jardinería. <br><br>
+
+* Un usuario (Andrés) usa un iPhone 14 Pro, pero no lo emplea para jardinería. <br><br>
+
+* **Implicaciones:** Implementar primero una versión web móvil responsiva en Chrome con notificaciones push configurables, y luego evaluar el desarrollo de una app nativa cuando la adopción web esté consolidada.
+
+**5. Ausencia de apps de jardinería o sensores**
+
+* 0 % de los entrevistados utiliza actualmente apps de jardinería o sensores automatizados. <br><br>
+
+* Todos dependen exclusivamente de métodos manuales y su intuición para el cuidado. <br><br>
+
+* **Implicaciones:** Justificar el valor de los sensores desde el primer acceso a la web con una demo interactiva que muestre casos de uso prácticos, beneficios medibles (agua ahorrada, detecciones tempranas) y guías visuales de configuración.
+
+**6. Uso puntual de YouTube para tutoriales**
+
+* 33.3 % (Andrés) recurre a YouTube para aprender técnicas avanzadas de cuidado. <br><br>
+
+* Los demás entrevistados no utilizan videos como recurso principal. <br><br>
+
+* **Implicaciones:** Integrar dentro de la plataforma enlaces a videos tutoriales seleccionados, así como mini-videos paso a paso para reforzar el aprendizaje visual y complementar la información de los dashboards.
+
+**7. Interés en reconocimiento de plantas**
+
+* 33.3 % (Andrés) emplea apps de identificación por foto para conocer especies. <br><br>
+
+* Los otros dos no usan esta funcionalidad, pero podrían beneficiarse de ella. <br><br>
+
+* **Implicaciones:** Añadir una herramienta de reconocimiento de plantas mediante imagen o cuestionario inteligente, que genere automáticamente el perfil de cuidado y recomendaciones específicas para cada especie detectada.
+
+**8. Canal de consejo preferido: presencial**
+
+* El 100 % prefiere intercambiar consejos cara a cara con amigos o familiares expertos. <br><br>
+
+* No participan en foros digitales ni grupos de jardinería en línea. <br><br>
+
+* **Implicaciones:** Recrear esa confianza mediante chat en vivo, sección “pregúntale a un experto” y FAQs interactivas con respuestas personalizadas y tiempos de respuesta breves.
+
+**9. Diversidad de cultivos (frutales vs ornamentales)**
+
+* 66.7 % cultiva plantas con fruto (Rosalinda y Andrés) mientras que 100 % tiene ornamentales. <br><br>
+
+* Las necesidades de riego y abonado varían significativamente según el tipo de planta. <br><br>
+
+* **Implicaciones:** Incorporar presets diferenciados de cuidado para frutales y ornamentales, con ciclos de riego y fertilización preconfigurados, permitiendo ajustes manuales rápidos según el crecimiento y época del año.
+
+**10. Disposición a pagar por suscripción**
+
+* El 100 % valora el ahorro de tiempo y la reducción de errores como factores clave para invertir. <br><br>
+
+* Buscan claridad en el beneficio versus costo antes de comprometerse con un plan. <br><br>
+
+* **Implicaciones:** Ofrecer comparativas visuales de planes Freemium y Premium, destacando beneficios concretos (litros de agua ahorrados, alertas prioritarias, acceso a módulos avanzados) para facilitar la elección según presupuesto y necesidades.
+
+#### Características Subjetivas:
+
+###### Tabla 6
+*Listado de estadísticas de características subjetivas identificadas para nuestro segmento de jardineros nuevos e inexpertos*
+
+| Característica | Presencia en muestra (n = 3) | Rosalinda (n = 1) |	Sirley (n = 1) | Andrés (n = 1) |	Frecuencia (%) |	Implicación para el diseño |
+|----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
+| Conexión emocional con las plantas | 	3 |	Sí |	Sí	|Sí	| 100 % | Incorporar funcionalidades que permitan personalizar nombres y fotos de cada planta, y mostrar notificaciones de “logro” cuando superen metas de salud.|
+| Enfoque empírico y tradicional |	3	| Sí	|Sí	| Sí | 100 %	| Ofrecer recomendaciones donde los datos de sensores aparezcan junto a sugerencias caseras (ajo, infusiones) según los requisitos de cada planta. |
+| Necesidad de simplicidad y guía paso a paso |	3	|Sí|Sí	| Sí	| 100 %	| Diseñar un onboarding interactivo en tres pasos clave (instalación, calibración, primer riego), con gráficos minimalistas, textos breves y botones claros. |
+| Preocupación por estética y discreción	| 3 |	Sí|	Sí |	Sí | 100 %|	Incluir opciones de temas visuales neutros y proponer tutoriales fotográficos sobre cómo camuflar el hardware en cualquier espacio doméstico. |
+| Ansiedad por errores de riego y plagas	| 3 |	Sí |Sí |	Sí | 100 %	|	Implementar alertas predictivas basadas en tendencias y mensajes de tranquilidad cuando las variables estén dentro del rango óptimo. |
+| Búsqueda de tranquilidad y confianza |3	|Sí	|Sí	|Sí	|100 %	| Mostrar un panel de “Comparación” que utilice semáforos de color y un resumen diario con un breve mensaje de confianza (“Hoy ahorraste 2 L de agua”), reforzando la percepción de seguridad en el sistema. |
+|Dependencia de soporte humano|	3 |	Sí | Sí |Sí	| 100 %| 	Integrar una base de conocimientos dinámica que sugiera respuestas instantáneas basadas en síntomas descritos por el usuario, recreando la cercanía de una consulta presencial. |
+|Reticencia a tecnología compleja	| 3 |Sí |Sí |	Sí	|100 %	|Lanzar la plataforma en modo “básico” con un panel único, ocultar las opciones avanzadas en un menú secundario con descripción sencilla y permitir activarlas solo si el usuario lo solicita.|
+| Preferencia por aprendizaje visual	| 1	| No | No | Sí | 33.3 %	| Añadir un repositorio de videoclips de 1–2 min o animaciones adecuadas junto a cada recomendación que demuestren gráficamente cada paso (por ejemplo, cómo conectar la maceta a la aplicación web), para quienes aprenden mejor con apoyo audiovisual. |
+| Supervisión desde el hogar, no intrusiva | 3 | Sí | Sí | Sí | 100% | Priorizar un dashboard de escritorio con widgets configurables y notificaciones agrupadas (“Todas las alertas” o “Alertas críticas”), para que el usuario decida cuándo y cómo ser interrumpido, sin saturar su rutina diaria. |
+
+**Interpretación de características subjetivas:**
+
+**1. Conexión emocional con las plantas**
+
+* 100 % manifiestan un fuerte vínculo afectivo con sus macetas. <br><br>
+
+* 66.7 % describen el cuidado como fuente de relajación y bienestar emocional. <br><br>
+
+* 33.3 % valoran el aspecto estético y la personalización (nombres, fotos). <br><br>
+
+* **Implicaciones:** La interfaz debe reforzar este lazo a través de notificaciones afectivas (“¡Tu suculenta Sofía está feliz hoy!”), medallas de progreso y la opción de personalizar nombres e imágenes por planta, incentivando visitas frecuentes y fortaleciendo el apego.
+
+**2. Enfoque empírico y tradicional**
+
+* 100 % recurre a métodos caseros (ajo, infusiones) para el control de plagas. <br><br>
+
+* 0 % emplea hoy aplicaciones o sensores para monitoreo. <br><br>
+
+* 100 % confía en la observación manual antes que en lecturas automáticas. <br><br>
+* **Implicaciones:** Incluir un “modo mixto” donde cada sugerencia empírica aparezca junto a datos de sensores, explicando cómo cada remedio refuerza las métricas digitales, para validar las prácticas tradicionales y facilitar la adopción tecnológica sin invalidar su experiencia.
+
+**3. Necesidad de simplicidad y guía paso a paso**
+
+* 100 % teme interfaces abrumadoras con demasiadas opciones. <br><br>
+
+* 66.7 % requiere instrucciones claras desde el primer uso. <br><br>
+
+* 33.3 % valora un tutorial visual breve antes de empezar. <br><br>
+  
+* **Implicaciones:** Diseñar un onboarding interactivo en tres pasos (instalación, calibración, primer riego) con botones claros, textos mínimos y un asistente virtual que guíe contextualizadamente al usuario, reduciendo la curva de aprendizaje y la frustración inicial.
+
+**4. Preocupación por estética y discreción**
+
+* 100 % solicita un diseño minimalista que no desentone con la decoración. <br><br>
+
+* 66.7 % rechaza cables a la vista. <br><br>
+
+* 33.3 % pide paletas de colores neutros en la app. <br><br>
+
+* **Implicaciones:** Ofrecer temas visuales (claro/oscuro, neutros), un “modo invisible” de montaje que muestre cómo ocultar cables y guías fotográficas para integrar el hardware sin romper la armonía estética del hogar.
+
+**5. Ansiedad por errores de riego y plagas**
+
+* 100 % experimenta preocupación al detectar plagas o riego inadecuado. <br><br>
+
+* 66.7 % teme las consecuencias de un riego excesivo. <br><br>
+
+* 33.3 % se angustia cuando el suelo permanece seco demasiado tiempo. <br><br>
+
+* **Implicaciones:** Implementar alertas predictivas basadas en tendencias (“Tu suelo estará seco en 2 h”) y feedback positivo (“Todo está bajo control”), para aliviar la ansiedad y permitir acciones preventivas antes de que los problemas se agraven.
+
+**6. Búsqueda de tranquilidad y confianza**
+
+* 100 % describe la tecnología como fuente de paz mental. <br><br>
+
+* 100 % desea confirmación visual inmediata de que todo “está bien”. <br><br>
+
+* 66.7 % quiere métricas de ahorro de recursos para reforzar la fiabilidad. <br><br>
+  
+* **Implicaciones:** Incluir un “Resumen diario” con semáforo de estado, mensaje de tranquilidad (“Tu jardín está perfecto”) y métricas comparativas de agua y nutrientes ahorrados, reforzando la seguridad y la confianza en el sistema.
+
+**7. Dependencia de soporte humano**
+
+* 100 % prefiere consejos presenciales antes que foros en línea. <br><br>
+
+* 0 % se siente cómodo buscando respuesta en documentaciones extensas. <br><br>
+
+* 100 % valora la interacción personalizada y rápida. <br><br>
+  
+* **Implicaciones:** Integrar chat en vivo con expertos, sistema de tickets para consultas rápidas y sugerencias automáticas basadas en síntomas descritos, recreando la cercanía de la consulta cara a cara y reduciendo la incertidumbre.
+
+**8. Reticencia a tecnología compleja**
+
+* 100 % muestra rechazo a configuraciones avanzadas visibles. <br><br>
+
+*  0 % solicita funciones avanzadas en el primer uso. <br><br>
+
+* 66.7 % se siente abrumado ante menús complejos. <br><br>
+  
+* **Implicaciones:** Lanzar la plataforma en “modo básico” con solo tres acciones resaltadas, ocultando las opciones avanzadas en un menú secundario descriptivo y permitiendo activarlas bajo demanda para quienes requieran mayor control.
+
+**9. Preferencia por aprendizaje visual**
+
+* 33.3 % utiliza YouTube para tutoriales prácticos. <br><br>
+
+* 0 % emplea guías textuales extensas. <br><br>
+
+* 100 % se beneficiaría de ejemplos visuales junto a cada explicación. <br><br>
+  
+* **Implicaciones:** Incluir videoclips de 1–2 min y mini-animaciones en contexto (por ejemplo, calibrar un sensor), para facilitar el aprendizaje de usuarios con preferencia por estímulos visuales y reforzar la comprensión de cada función.
+
+**10.  Supervisión desde el hogar, no intrusiva**
+
+* 100 % prefiere consultar datos desde su laptop en un entorno tranquilo. <br><br>
+
+* 66.7 % solicita notificaciones solo en casos críticos. <br><br>
+
+* 33.3 % estaría dispuesto a recibir resúmenes diarios automáticos. <br><br>
+  
+* **Implicaciones:** Priorizar un dashboard de escritorio con widgets configurables y notificaciones agrupadas (resúmenes diarios, alertas críticas), permitiendo al usuario definir qué eventos merecen interrupciones y cuáles pueden esperar, sin saturar su rutina.
+
+#### Interpretación y conclusión final del análisis del segmento objetivo Jardineros Nuevos e Inexpertos
+
+A partir de la síntesis de los tres perfiles de jardineros inexpertos (Rosalinda, Sirley y Andrés), emergen patrones claros que permiten definir un arquetipo representativo de este grupo. Combina un fuerte vínculo afectivo con las plantas, confianza en métodos tradicionales y una reticencia inicial hacia la tecnología, con las siguientes conclusiones:
+
+**1. Adopción tecnológica inicial baja (0 % apps de jardinería/sensores + 100 % Windows/Chrome)**
+
+* Ninguno utiliza hoy aplicaciones especializadas ni sensores para monitoreo. <br><br>
+
+* 100 % prefiere consultar el estado de sus plantas desde un equipo Windows con Chrome. <br><br>
+
+* 0 % ha probado soluciones digitales más allá de búsquedas genéricas. <br><br>
+
+* Lanzar primero una web app ligera, optimizada para Chrome en Windows 10/11, que demuestre el valor de los sensores mediante una demo interactiva en el onboarding, antes de proponer una app nativa.
+
+**2. Vínculo afectivo y enfoque empírico (100 % conexión emocional + 100 % métodos caseros)**
+
+* 100 % manifiesta un lazo emocional con sus macetas, describiéndolas como “compañeras” o “decoración con vida”. <br><br>
+
+* 100 % confía en remedios caseros (ajo, infusiones) para el control de plagas y fertilización. <br><br>
+
+* 33.3 % además valora personalizar nombres y fotografías de sus ejemplares. <br><br>
+  
+* Incorporar un modo donde las prácticas tradicionales aparezcan junto a los datos de sensores, explicando cómo cada remedio refuerza las métricas digitales, y reforzar el apego con notificaciones afectivas y de logro.
+
+**3. Necesidad de simplicidad y apoyo humano (100 % simplicidad + 100 % soporte presencial)**
+
+* 100 % teme interfaces complejas y pide un flujo guiado paso a paso. <br><br>
+
+* 100 % prefiere consultar consejos de forma presencial o en chat en vivo, en lugar de bucear en foros. <br><br>
+
+* 66.7 % considera que un asistente virtual sería de gran ayuda durante la configuración inicial. <br><br>
+
+* Implementar un onboarding en tres pasos clave (instalación, calibración, primer riego), complementado con un chat en vivo y base de conocimientos dinámica que simule la cercanía de la consulta presencial.
+
+**4. Preocupación por estética y discreción (100 % minimalismo + 66.7 % rechazo a cables visibles)**
+
+* 100 % quiere un diseño minimalista que no desentone con su decoración. <br><br>
+
+* 66.7 % rechaza tener cables expuestos a la vista. <br><br>
+
+* 33.3 % solicita paletas de colores neutros en la interfaz. <br><br>
+
+* Ofrecer temas visuales neutros, un montaje con guías fotográficas para ocultar cables y opciones de personalización estética en la compra que aseguren una integración armónica del hardware en cualquier hogar.
+
+**5. Ansiedad por fallos de riego y plagas, y búsqueda de confianza (100 % ansiedad + 100 % necesidad de tranquilidad)**
+
+* 100 % se angustia ante riegos olvidados o plagas no detectadas a tiempo. <br><br>
+
+* 100 % describe la tecnología como “tranquilizante” si brinda datos claros. <br><br>
+
+* 66.7 % valoraría métricas de ahorro de agua y fertilizantes para reforzar la fiabilidad. <br><br>
+
+* Incorporar alertas predictivas basadas en tendencias (“Tu suelo estará seco en 2 h”), paneles de “Resumen diario” con semáforo de estado, mensajes de refuerzo positivo y métricas de sostenibilidad que generen confianza y reduzcan la incertidumbre.
+
+**Conclusión del segmento**
+El “Jardinero Nuevo e Inexperto” es alguien con un profundo apego emocional a sus plantas, arraigado en prácticas caseras, y con baja predisposición inicial hacia la tecnología. Valora ante todo la simplicidad, el acompañamiento humano y la estética de la solución.
+
+**Recomendación final**
+La plataforma debe arrancar en modo básico desde un navegador Windows, con un onboarding interactivo que demuestre el valor de la maceta inteligente y combine prácticas tradicionales con datos de sensores. El diseño será minimalista, con opciones de personalización, guías fotográficas para ocultar cables y un sistema de soporte en vivo que recree la cercanía de la consulta presencial. Las funcionalidades avanzadas, app nativa, configuraciones profundas, se irán desbloqueando gradualmente, siempre acompañadas de videos y mensajes afectivos que refuercen la confianza y el vínculo del usuario con sus plantas.
+
+#### Arquetipo final de User Persona para el segmento objetivo Jardinero Nuevo e Inexperto
+
+* **Perfil Demográfico y Ocupación**<br><br>
+
+  * **Edad:** 21 – 54 años.
+  * **Ubicación:** Lima Metropolitana y provincias con acceso a Internet y tiendas Promart Homecenter.
+  * **Ocupación y Experiencia:** Usuarios sin formación profesional en jardinería (carpintera, ama de casa, estudiante), con más de 3 años de afición empírica y cero experiencia con tecnología de sensores. Cultivan entre 3 y 10 macetas ornamentales y/o frutales en casa, basándose en la observación visual y remedios caseros.
+  * **Descripción:** Este User Persona siente un vínculo afectivo fuerte con sus plantas, las trata como compañía y fuente de bienestar. Su conocimiento proviene de prácticas tradicionales (ajo diluido, infusiones) y tutoriales ocasionales en YouTube, pero muestran reticencia a adoptar apps o dispositivos complejos. Buscan sobre todo tranquilidad y confianza en una solución que les guíe paso a paso sin romper la estética de su hogar.
+
+* **Metas**<br><br>
+
+  * Mantener la salud de 3 – 10 plantas sin esfuerzo constante, recibiendo alertas únicamente para acciones críticas.
+  * Prevenir plagas y enfermedades combinando datos objetivos y prácticas caseras.
+  * Conservar la estética del hogar, evitando cables y aparatos invasivos.
+  * Aprender a usar tecnología de forma gradual, con guías visuales y soporte en vivo.
+  * Mejorar su rutina de jardinería con métricas sencillas que refuercen la confianza (“todo bajo control”).<br><br>
+
+* **Infraestructura Tecnológica**<br><br>
+
+  * Laptop o PC con Windows 10/11 y navegador Chrome, usado como punto principal de acceso.
+  * Smartphone Android (Xiaomi Redmi, POCO) con Chrome para búsquedas generales y notificaciones web push.
+  * No utilizan actualmente apps de jardinería ni sensores físicos.<br><br>
+
+* **Marcas que Usa**<br><br>
+
+  * Abonos y Plaguicidas: Ferticorp, 4Estaciones, Orange (adquiridos en Promart).
+  * Herramientas de Jardinería: Instrumentos básicos comprados en Promart Homecenter.
+  * Remedios Caseros: Ingredientes locales (ajo, cáscaras de huevo) usados en infusiones o pulverizaciones.<br><br>
+
+* **Canales de Compra** <br><br>
+
+  * Promart Homecenter como único punto de adquisición de insumos y herramientas.
+  * En provincias, tiendas locales similares a Promart o mercados de abonos.
+  * Confían en la disponibilidad inmediata y no en la marca.<br><br>
+
+* **Influencias**<br><br>
+
+  * **YouTube:** 33.3 % busca tutoriales en video para aprender técnicas específicas.
+  * **Amigos y Familia:** 100 % prefiere preguntar presencialmente antes que consultar foros.
+  * **Reseñas en Tienda:** Opiniones de vendedores y clientes en Promart.<br><br>
+
+* **Actitudes y Motivaciones**<br><br>
+
+  * **Vínculo afectivo:** 100 % ve sus plantas como “compañeras” de relajación.
+  * **Confianza empírica:** 100 % cree en sus remedios caseros y la observación directa.
+  * **Deseo de tranquilidad:** 100 % valoraría una tecnología que reduzca la ansiedad de fallos.
+  * **Aprecio estético:** 100 % exige discreción y diseño minimalista del dispositivo.
+  * **Apertura gradual:** 66.7 % estaría dispuesto a aprender tecnologías simples si recibe soporte adecuado.<br><br>
+
+* **Frustraciones y Puntos de Dolor**<br><br>
+
+  * **Olvido y excesos de riego:** 100 % sufre consecuencias emocionales cuando falla el riego.
+  * Plagas tardías: 100 % se angustia al detectar infestaciones demasiado tarde.
+  * Interfaces complejas: 100 % rechaza apps con menús profundos y jargon técnico.
+  * Falta de soporte inmediato: 100 % se siente inseguro sin consejo presencial o en tiempo real.<br><br>
+
+* **Habilidades**<br><br>
+
+  * Jardinería empírica: Experiencia de más de 10 años en métodos tradicionales.
+  * Uso básico de tecnología: Navegación en Chrome, instalación de software sencillo.
+  * Aprendizaje autodidacta: Capacidad para seguir tutoriales en video y guías visuales.
+  * Organización doméstica: Gestión de recordatorios manuales (alarmas, calendarios de papel).<br><br>
+
+* **Necesidades Clave**<br><br>
+
+  * Onboarding guiado y progresivo en 3 pasos, con asistente virtual.
+  * Dashboard web minimalista en Chrome, con semáforo de estado y resúmenes diarios.
+  * Alertas predictivas y feedback positivo cuando las métricas estén en rango.
+  * Integración de prácticas caseras junto a datos de sensores en un “modo mixto”.
+  * Opciones de personalización estética (temas, ocultar cables).<br><br>
+
+* **Criterios de Adopción y Disposición a Pagar**<br><br>
+
+  * Requieren ROI claro: ahorro de agua, tiempo y reducción de errores.
+  * Dispuestos a pagar suscripción básica (Freemium) si garantiza tranquilidad.
+  * Considerarán un plan Premium para acceso a módulos avanzados (sensores de pH, reconocimiento de especies) solo tras validar la versión web.
 
 #### 2. Especialistas de Jardinería y Áreas Verdes
 
 En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Especialistas de Jardinería y Áreas Verdes” (Betty Chumacero, Javier Hernández y Yasser Rentería), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
 
-**Características objetivas:**
+Este segmento agrupa a técnicos especializados, agrónomos, jardineros profesionales y paisajistas que diseñan, implementan y mantienen proyectos de jardinería tanto en residencias privadas como en corporativos, espacios públicos y comunitarios. Su objetivo es maximizar la salud vegetal, la estética del paisaje y la eficiencia de los recursos invertidos (agua, nutrientes, tiempo de mantenimiento). Aunque poseen conocimientos sólidos sobre especies, suelos, riego y nutrición, enfrentan limitaciones en la supervisión remota de múltiples sitios, la recolección manual de métricas ambientales, y la detección temprana de anomalías que afecten la salud vegetal. Esto los expone a sobrecostos por riegos ineficientes, deterioro no detectado a tiempo o pérdidas de plantas. La creciente necesidad de integrar tecnologías IoT y automatización inteligente en sus procesos surge como un factor clave para escalar operaciones, optimizar tiempos de respuesta, y ofrecer resultados más sostenibles y competitivos a sus clientes.
+
+#### Características objetivas:
 
 ###### Tabla 5
 *Listado de estadísticas de características objetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
@@ -997,7 +1418,7 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 |Sensores de pH o nutrientes	| 0| 	No| 	No	| No	| 0 % |	Desarrollar módulo de medición de pH y nutrientes integrado, dado que ningún usuario cuenta actualmente con esa tecnología, pero existe demanda unánime. |
 | Disposición a pagar |	3	| Sí (Ahorrar tiempo y frustración) |	Sí (Costo-beneficio moderado)	| Sí (Relación calidad-precio y dispuesto a pagar por eficiencia) |	100 %	| Incluir comparativas de precios o niveles de suscripción (Freemium, premium) que muestren beneficios vs. costo, para ayudar a usuarios a elegir según su presupuesto y necesidades. |
 
-**Interpretación de características objetivas:**
+#### Interpretación de características objetivas:
 
 **1. Adopción tecnológica intermedia-alta**
 
@@ -1074,7 +1495,7 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 
 - **Implicaciones:** Ofrecer comparativas de precios y diferentes planes de suscripción (Freemium, premium), mostrando beneficios concretos por cada nivel y opciones de pago fraccionado en meses o en años.
 
-**Características subjetivas:**
+#### Características subjetivas:
 
 ###### Tabla 6
 *Listado de estadísticas de características subjetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
@@ -1094,7 +1515,7 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 |Frustración por falta de datos precisos	|3	|Sí	|Sí|	Sí|	100 %	|Incorporar gráficas y paneles de control con métricas históricas (humedad, pH, fertilización) para que el usuario compruebe tendencias y compare datos.|
 |Nivel alto de conocimiento tecnológico	|2	|No	|Sí	|Sí	|66.7 %	|Diseñar la interfaz con niveles de complejidad ajustables y un onboarding inicial para que pueda ser usada de forma rápida, adecuada y flexible. |
 
-**Interpretación de características subjetivas:**
+#### Interpretación de características subjetivas:
 
 **1. Conexión emocional con las plantas**
 
@@ -1172,181 +1593,147 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 
 - **Implicaciones:** Incluir alertas predictivas basadas en tendencias históricas (como “pH bajará mañana según lecturas de los últimos tres días”). Implementar un sistema de notificaciones tempranas que señale desviaciones menores antes de alcanzar niveles críticos. Proporcionar sugerencias automáticas para acciones preventivas (“aumentar riego un 5 % mañana por posibilidad de baja en precipitaciones”).
 
-**Interpretación y conclusión final del análisis del segmento objetivo Especialistas de Jardinería y Áreas Verdes**
+#### Interpretación y conclusión final del análisis del segmento objetivo Especialistas de Jardinería y Áreas Verdes
 
 A partir de la consolidación de los tres perfiles de especialistas en jardinería (Betty, Javier y Yasser), se identifican patrones claros que permiten construir un arquetipo de User Persona representativo del segmento “Especialistas de Jardinería y Áreas Verdes”. Este perfil combina actitudes prácticas, motivaciones emocionales y un nivel de confianza técnico intermedio-alto, con las siguientes conclusiones:
 
-1. Adopción tecnológica con nivel intermedio-alto (100 % smartphone Android + 66.7 % sistemas de riego automatizado + 100 % uso de dashboard):
+**1. Adopción tecnológica con nivel intermedio-alto (100 % smartphone Android + 66.7 % sistemas de riego automatizado + 100 % uso de dashboard):**
 
    * Los especialistas ya manejan aplicaciones móviles y conocen (o han probado) sistemas de riego automatizados y medidores de humedad, por lo que la curva de aprendizaje no debe ser abrupta.
 
    * La solución debe tener una interfaz móvil simple y con opción a una web optimizada para Windows. Se asume que el usuario sabrá instalar una app de Chrome y familiarizarse con notificaciones push. Asimismo, el hardware debería conectarse fácilmente con el software, sin requerir una configuración avanzada por parte del usuario.
 
-2. Necesidad de un modo híbrido y configuraciones flexibles (33.3 % riego manual, 33.3 % uso de remedios empíricos, 100 % fertilización programada):
+**2. Necesidad de un modo híbrido y configuraciones flexibles (33.3 % riego manual, 33.3 % uso de remedios empíricos, 100 % fertilización programada):**
 
    * Aunque hay predisposición a integrar automatización, cada especialista desea mantener el control manual, sea para hobby o para ajustes puntuales, y conservar prácticas empíricas de abono.
 
    * Debe incorporarse la opción de que el usuario pueda indicar al sistema que va a realizar riegos manuales sin problemas, y que el hardware solo brinde notificaciones de cuando es necesario regar y ante que situación. También se pueden brindar recomendaciones personalizadas sobre remedios caseros que pueden usar los usuarios, como el ajo o las cáscaras de huevo.
 
-3. Gestión de volúmenes elevados de plantas (66.7 % con más de 50 macetas, 100 % dashboards para supervisión):
+**3. Gestión de volúmenes elevados de plantas (66.7 % con más de 50 macetas, 100 % dashboards para supervisión):**
 
    * Los especialistas administran decenas o centenas de macetas, por lo que requieren agrupación, filtros y vistas resumidas que permitan identificar rápidamente plantas críticas.
 
    * El dashboard debe ofrecer agrupación por lotes, filtros por especie o ubicación, y un indicador visual que muestre “alertas abiertas” (en rojo/amarillo) para actuar de forma rápida. Asimismo, la posibilidad de exportar reportes consolidados refuerza la usabilidad en proyectos profesionales. También se puede utilizar paginación de ser necesario.
 
-4. Frustración originada en la falta de datos precisos y detección tardía de problemas (100 % frustraciones por plagas, errores de riego, 100 % búsqueda de métricas granulares):
+**4. Frustración originada en la falta de datos precisos y detección tardía de problemas (100 % frustraciones por plagas, errores de riego, 100 % búsqueda de métricas granulares):**
 
    * Los tres especialistas coinciden en que sin datos concretos (humedad exacta, pH, nutrientes, salinidad) es muy difícil anticiparse a plagas o estrés de las plantas. Esto genera pérdidas, costos extras y desgaste emocional.
 
    * Es esencial incorporar sensores integrados de pH y salinidad (demanda latente del 100 %) y mostrar métricas con precisión decimal. Además, se deben mostrar alertas predictivas basadas en tendencias históricas (por hora, día, semana), las cuales minimizarán el impacto de variaciones climáticas.
 
-5. Conexión emocional y motivación por sostenibilidad (100 % valoran ahorro de agua/nutrientes y vínculo afectivo con las plantas):
+**5. Conexión emocional y motivación por sostenibilidad (100 % valoran ahorro de agua/nutrientes y vínculo afectivo con las plantas):**
 
-Conclusión: Más allá de la eficiencia, los especialistas sienten un vínculo emocional con cada ejemplar, y buscan reducir el desperdicio de recursos para cuidar tanto su jardín como el medio ambiente.
+* Más allá de la eficiencia, los especialistas sienten un vínculo emocional con cada ejemplar, y buscan reducir el desperdicio de recursos para cuidar tanto su jardín como el medio ambiente.
 
-Recomendación final: La interfaz debe reforzar este lazo con retroalimentación afectiva (iconos que “celebran” cuando una planta alcanza parámetros óptimos), métricas de sostenibilidad (litros ahorrados, dosis optimizadas) y mensajes motivadores. Permitir nombrar cada planta o agregar fotos refuerza el elemento emocional.
+* La interfaz debe reforzar este lazo con retroalimentación afectiva (iconos que “celebran” cuando una planta alcanza parámetros óptimos), métricas de sostenibilidad (litros ahorrados, dosis optimizadas) y mensajes motivadores. Permitir nombrar cada planta o agregar fotos refuerza el elemento emocional.
 
-Preferencias estético-funcionales (100 % minimalismo y discreción):
+**6. Preferencias estético-funcionales (100 % minimalismo y discreción):**
 
-Conclusión: Todos coinciden en que la maceta inteligente debe integrarse armónicamente en cualquier entorno (hogar moderno o proyecto paisajístico), evitando cables expuestos y diseños llamativos.
+* Todos coinciden en que la maceta inteligente debe integrarse armónicamente en cualquier entorno (hogar moderno o proyecto paisajístico), evitando cables expuestos y diseños llamativos.
 
-Recomendación final: La carcasa se diseñará en material cerámico con tonos neutros (blanco, gris claro) y líneas suaves. Los cables se ocultarán en una base encastrada o canaletas camufladas. La app usará colores naturales (verdes suaves) y tipografía legible para reforzar la sensación de limpieza y orden.
+* La carcasa se diseñará en material cerámico con tonos neutros (blanco, gris claro) y líneas suaves. Los cables se ocultarán en una base encastrada o canaletas camufladas. La app usará colores naturales (verdes suaves) y tipografía legible para reforzar la sensación de limpieza y orden.
 
-Valoración de marcas, puntos de venta y modelo de suscripción (100 % predisposición a pagar por calidad y confiabilidad):
+**Conclusión del segmento**
 
-Conclusión: El especialista confía en marcas consolidadas (Ferticorp, 4Estaciones, Ergo, Just Home Collection, Orange) y compra en tiendas “homecenter” (Promart, Sodimac, Maestro) y viveros locales según disponibilidad. No compran solo por precio, sino por la garantía de desempeño.
+Los especialistas combinan un nivel de adopción tecnológica intermedio‑alto con la necesidad de mantener control manual y prácticas empíricas. Gestionan grandes volúmenes de plantas y esperan dashboards avanzados que permitan filtrar, agrupar y exportar reportes, al mismo tiempo que demandan métricas precisas y alertas predictivas para anticiparse a problemas. Paralelamente, valoran profundamente el ahorro de agua y nutrientes y el vínculo emocional con sus plantas, por lo que requieren retroalimentación afectiva, indicadores de sostenibilidad y una estética minimalista y discreta que se integre sin romper armonía en su entorno.
 
-Recomendación final: Dentro de la aplicación, ofrecer un catálogo de insumos con marcas recomendadas, junto a comparativas de precios o beneficios (p. ej., durabilidad, rendimiento). Incluir un geolocalizador de tiendas cercanas con indicación de stock o precios aproximados refuerza la experiencia de compra integrada y brinda valor agregado. Además, presentar planes de suscripción (Freemium, Premium) con comparativas de beneficios (ahorro de agua, alertas prioritarias, acceso a módulos avanzados) facilita la adopción según presupuesto.
+**Recomendación final**
 
-**Arquetipo final de User Persona para el segmento objetivo Especialistas de Jardinería y Áreas Verdes** 
+Desarrollar una solución multiplataforma, app móvil Android y web optimizada para Windows/Chrome, con modo híbrido que permita alternar fácilmente entre riego manual y automatizado, incluir recomendaciones personalizables de remedios caseros y fertilización. El dashboard debe ofrecer agrupación por lotes, filtros avanzados y exportación de reportes, así como sensores de humedad, pH y nutrientes con precisión decimal y alertas predictivas basadas en tendencias históricas. Incorporar elementos de gamificación emocional (medallas, animaciones celebratorias), métricas de sostenibilidad (litros ahorrados, dosis optimizadas) y un diseño de hardware y UI minimalista, con guías para ocultar cables y paletas de colores neutros, reforzará la adopción y satisfacción de este segmento.
 
-* **Perfil Demográfico y Ocupación**
+#### Arquetipo final de User Persona para el segmento objetivo Especialistas de Jardinería y Áreas Verdes 
 
-  * Edad: 28 – 45 años. <br><br>
+* **Perfil Demográfico y Ocupación** <br><br>
 
-  * Ubicación: Lima Metropolitana (pero aplica para áreas con acceso a Android/Windows).<br><br>
+  * **Edad:** 28 – 45 años. 
+  * **Ubicación:** Lima Metropolitana (pero aplica para áreas con acceso a Android/Windows).
 
-  * **Ocupación y Experiencia:** Jardinero independiente o profesional de proyectos de paisajismo/áreas verdes, con más de 5 años de práctica empírica. Gestiona desde decenas hasta cientos de plantas (ornamentales, tropicales, aromáticas) en entornos residenciales o corporativos.<br><br>
-
+  * **Ocupación y Experiencia:** Jardinero independiente o profesional de proyectos de paisajismo/áreas verdes, con más de 5 años de práctica empírica. Gestiona desde decenas hasta cientos de plantas (ornamentales, tropicales, aromáticas) en entornos residenciales o corporativos.
   * **Descripción:** Este User Persona combina su pasión por la jardinería con un enfoque técnico. Ha aprendido “a puro ojo” y con métodos empíricos (ajo, cáscaras de huevo, abono natural), pero reconoce la necesidad de datos precisos para evitar pérdidas y optimizar recursos. Busca equilibrar el placer del cuidado manual con la eficiencia de la tecnología.<br><br>
 
-* **Metas**
+* **Metas**<br><br>
 
-  * Mantener la salud óptima de cada planta mediante datos en tiempo real que permitan anticiparse a plagas y desequilibrios.<br><br>
-
-  * Ahorrar agua y fertilizantes, cuantificando el consumo para demostrar ahorros frente a métodos tradicionales.<br><br>
-
-  * Administrar grandes volúmenes de plantas (De 50 a más macetas) desde una única plataforma, con filtros que faciliten la supervisión y priorización de alertas.<br><br>
-
-  * Reforzar su reputación profesional, ofreciendo un servicio diferenciado que incluya monitoreo remoto y recomendaciones personalizadas.<br><br>
-
+  * Mantener la salud óptima de cada planta mediante datos en tiempo real que permitan anticiparse a plagas y desequilibrios.
+  * Ahorrar agua y fertilizantes, cuantificando el consumo para demostrar ahorros frente a métodos tradicionales.
+  * Administrar grandes volúmenes de plantas (De 50 a más macetas) desde una única plataforma, con filtros que faciliten la supervisión y priorización de alertas.
+  * Reforzar su reputación profesional, ofreciendo un servicio diferenciado que incluya monitoreo remoto y recomendaciones personalizadas.
   * Integrar el cuidado de plantas en un entorno minimalista y moderno, evitando cables visibles y elementos intrusivos.<br><br>
 
 * **Infraestructura Tecnológica**
 
-  * Smartphone Android (Xiaomi Redmi MIUI o Samsung Galaxy One UI), familiarizado con Chrome.<br><br>
-
+  * Smartphone Android (Xiaomi Redmi MIUI o Samsung Galaxy One UI), familiarizado con Chrome.
   * Computadora o laptop con Windows (HP, Dell) para consultas puntuales y análisis más a fondo (navegador Chrome).<br><br>
-
-* **Marcas que Usa**
+  
+* **Marcas que Usa**<br><br>
 
   * **Abonos:**
 
-    4Estaciones (nutrientes balanceados para plantas tropicales/ornamentales)
+    * 4Estaciones (nutrientes balanceados para plantas tropicales/ornamentales)
 
-    Ferticorp (recetas probadas, buena relación calidad-precio)<br><br>
+    * Ferticorp (recetas probadas, buena relación calidad-precio)
 
   * **Herramientas de Riego:**
 
-    Ergo (durabilidad y flujo constante en sistemas de goteo)
-
-    Ferticorp (pulverizadores completos)
-
-    Orange (complemento cuando es necesario ampliar equipo)<br><br>
+    * Ergo (durabilidad y flujo constante en sistemas de goteo)
+    * Ferticorp (pulverizadores completos)
+    * Orange (complemento cuando es necesario ampliar equipo)
 
   * **Macetas y Utensilios:**
 
-    Just Home Collection (resistencia y acabado estético)<br><br>
+    * Just Home Collection (resistencia y acabado estético)
 
   * **Productos de Aseo y Complementos (remedios caseros):**
 
-    Ingredientes locales (ajo, cáscaras de huevo) para tratamientos empíricos.<br><br>
+    * Ingredientes locales (ajo, cáscaras de huevo) para tratamientos empíricos.<br><br>
 
-* **Canales de Compra**
+* **Canales de Compra**<br><br>
 
   Promart Homecenter y Maestro de Sodimac Homecenter para herramientas profesionales. Viveros locales para abonos personalizados y variedades de plantas poco comunes. A veces prioriza cercanía, calidad y variedad sobre la promoción de marca.<br><br>
 
-* **Influencias**
+* **Influencias**<br><br>
 
-  * **YouTube:** Canales especializados en prevención de plagas, guías de abonado y diseño de jardines.<br><br>
-
-  * **Foros Locales y Grupos de Jardinería:** Intercambio de consejos entre colegas de la zona (más presencial que online).<br><br>
-
+  * **YouTube:** Canales especializados en prevención de plagas, guías de abonado y diseño de jardines.
+  * **Foros Locales y Grupos de Jardinería:** Intercambio de consejos entre colegas de la zona (más presencial que online).
   * **Referencias de Productos:** Reseñas de usuarios y recomendaciones de marcas confiables obtenidas en conversaciones en tienda.<br><br>
+  
+* **Actitudes y Motivaciones**<br><br>
 
-* **Actitudes y Motivaciones**
-
-  * **Conexión emocional con las plantas:** Asigna nombres a sus ejemplares, conversa con ellos y se siente energizado al verlos prosperar.<br><br>
-
-  * **Ahorro de recursos:** Cada litro de agua y cada gramo de abono cuentan; quiere demostrar mejoras cuantificables.<br><br>
-
-  * **Equilibrio entre riego manual y automatización:** Desea conservar su “toque experto” pero liberar tiempo en tareas repetitivas.<br><br>
-
+  * **Conexión emocional con las plantas:** Asigna nombres a sus ejemplares, conversa con ellos y se siente energizado al verlos prosperar.
+  * **Ahorro de recursos:** Cada litro de agua y cada gramo de abono cuentan; quiere demostrar mejoras cuantificables.
+  * **Equilibrio entre riego manual y automatización:** Desea conservar su “toque experto” pero liberar tiempo en tareas repetitivas.
   * **Actualización constante:** Utiliza YouTube para aprender sobre plagas, fertilización y riego, valorando consejos prácticos de influencers de jardinería.<br><br>
 
-* **Frustraciones y Puntos de Dolor:**
+* **Frustraciones y Puntos de Dolor:**<br><br>
 
-  * **Detección tardía de problemas** Sin datos en tiempo real, las plagas o el estrés hídrico a menudo ya dañaron la planta.<br><br>
-
-  * **Falta de métricas precisas:** Confía en su intuición, pero le angustia no poder confirmar con valores numéricos (humedad al 0.1 %, pH con decimales).<br><br>
-
-  * **Herramientas poco fiables:** Sistemas de riego que no informan niveles, aplicaciones saturadas de menús o sin opción de control manual.<br><br>
-
+  * **Detección tardía de problemas** Sin datos en tiempo real, las plagas o el estrés hídrico a menudo ya dañaron la planta.
+  * **Falta de métricas precisas:** Confía en su intuición, pero le angustia no poder confirmar con valores numéricos (humedad al 0.1 %, pH con decimales).
+  * **Herramientas poco fiables:** Sistemas de riego que no informan niveles, aplicaciones saturadas de menús o sin opción de control manual.
   * **Pérdida económica y emocional:** Cada planta marchita representa horas de trabajo y la decepción de no cumplir sus propios estándares.<br><br>
 
-* **Habilidades**
+* **Habilidades**<br><br>
 
   * **Conocimientos avanzados de jardinería:**
-
-    Experto en sistemas de riego por goteo, ajustando caudales y horarios según cada especie.<br><br>
-
-    Manejo eficaz de fertilización orgánica. Conoce dosis, calendarios y mezclas caseras (cáscaras, compost).<br><br>
-
-    Control de plagas mediante métodos empíricos (ajo, soluciones naturales) y rotación de cultivos.<br><br>
-
+    * Experto en sistemas de riego por goteo, ajustando caudales y horarios según cada especie.
+    * Manejo eficaz de fertilización orgánica. Conoce dosis, calendarios y mezclas caseras (cáscaras, compost).
+    * Control de plagas mediante métodos empíricos (ajo, soluciones naturales) y rotación de cultivos.
   * **Dominio tecnológico:**  
-
-    Instalación y configuración de aplicaciones Android sin dificultad; navega en Chrome para buscar y organizar información.<br><br>
-
-    Interpretación de datos técnicos. Comprende gráficos de humedad, pH y temperatura siempre que la visualización sea clara.<br><br>
-
-    Uso de herramientas digitales básicas (YouTube, marcadores en navegador) para actualización continua de técnicas de cultivo.<br><br>
-
+    * Instalación y configuración de aplicaciones Android sin dificultad; navega en Chrome para buscar y organizar información.
+    * Interpretación de datos técnicos. Comprende gráficos de humedad, pH y temperatura siempre que la visualización sea clara.
+    * Uso de herramientas digitales básicas (YouTube, marcadores en navegador) para actualización continua de técnicas de cultivo.
   * **Habilidades analíticas:**
-
-    Lectura precisa de indicadores numéricos (humedad al 0,1 %, pH con decimales), permitiendo ajustes finos en el cuidado vegetal.<br><br>
-
-    Capacidad para identificar patrones en series de datos (historial de riego, fertilización) y anticipar riesgos (sequías, plagas).<br><br>
-
-    Planificación de tareas a gran escala. Gestionan calendarios de abonado y riego para más de 50 plantas de forma organizada.<br><br>
-
+    * Lectura precisa de indicadores numéricos (humedad al 0,1 %, pH con decimales), permitiendo ajustes finos en el cuidado vegetal.
+    * Capacidad para identificar patrones en series de datos (historial de riego, fertilización) y anticipar riesgos (sequías, plagas).
+    * Planificación de tareas a gran escala. Gestionan calendarios de abonado y riego para más de 50 plantas de forma organizada.
   * **Habilidades sociales y comunicativas:**
-
-    Interacción fluida con proveedores en viveros y homecenter, solicitando recomendaciones específicas según el proyecto.<br><br>
-
-    Colaboración en foros de jardinería y grupos locales: comparte experiencias, solicita feedback y difunde prácticas sostenibles.<br><br>
-
-    Expresa con claridad las necesidades de sus plantas a clientes y colaboradores, generando confianza y credibilidad profesional.<br><br>
-
+    * Interacción fluida con proveedores en viveros y homecenter, solicitando recomendaciones específicas según el proyecto.
+    * Colaboración en foros de jardinería y grupos locales: comparte experiencias, solicita feedback y difunde prácticas sostenibles.
+    * Expresa con claridad las necesidades de sus plantas a clientes y colaboradores, generando confianza y credibilidad profesional.
   * **Habilidades organizativas y de gestión:**
+    * Agrupamiento y priorización de tareas. Identifica plantas críticas para acción inmediata frente a especies estables.
+    * Documentación clara de procesos. Registra notas sobre remedios caseros y resultados, facilitando la replicación de métodos exitosos.
+    * Manejo básico de herramientas ofimáticas (Hoja de cálculo en Windows) para llevar un inventario de plantas, consumos de agua y abonos.<br><br>
 
-    Agrupamiento y priorización de tareas. Identifica plantas críticas para acción inmediata frente a especies estables.<br><br>
-
-    Documentación clara de procesos. Registra notas sobre remedios caseros y resultados, facilitando la replicación de métodos exitosos.<br><br>
-
-    Manejo básico de herramientas ofimáticas (Hoja de cálculo en Windows) para llevar un inventario de plantas, consumos de agua y abonos.<br><br>
-
-* **Necesidades Clave:**
+* **Necesidades Clave:**<br><br>
 
   * Modo híbrido de riego: control manual junto al automático. El usuario debe ser capaz de poder elegir entre realizar riegos manuales con alertas del sistema, o dejar que el sistema active el riego automático.<br><br>
 
@@ -1360,7 +1747,7 @@ Recomendación final: Dentro de la aplicación, ofrecer un catálogo de insumos 
 
   * Compatibilidad Android + Windows: app móvil nativa en Android, versión web optimizada para Chrome en Windows, garantizando fluidez y notificaciones push en Android.<br><br>
 
-* **Criterios de Adopción y Disposición a Pagar:**
+* **Criterios de Adopción y Disposición a Pagar:**<br><br>
 
   * Estado del sistema debe traducirse en ahorro tangible (agua, tiempo) y menor riesgo de pérdida de plantas.<br><br>
 
@@ -1372,7 +1759,7 @@ Recomendación final: Dentro de la aplicación, ofrecer un catálogo de insumos 
 
 El proceso de needfinding nos permite identificar problemas reales que enfrentan los usuarios y descubrir oportunidades de diseño que pueden llevar a soluciones innovadoras y centradas en el usuario.
 
-- ### 2.3.1. User Personas
+### 2.3.1. User Personas
 
 En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
 
