@@ -1,4 +1,3 @@
-
 # Capítulo II: Requirements Elicitation & Analysis
 
 La recolección y el análisis de requisitos constituyen la piedra angular de cualquier proyecto exitoso. En esta fase se identifican y documentan, de manera sistemática, las necesidades, expectativas y restricciones de todos los grupos de interés (stakeholders), así como los objetivos de negocio que el proyecto debe cumplir. Para lograrlo, se emplean técnicas como entrevistas individuales, encuestas cuantitativas, talleres colaborativos y análisis de la competencia, que permiten obtener una visión integral y detallada de lo que se desea alcanzar.
@@ -423,7 +422,7 @@ Estas entrevistas generan una base de conocimiento que orienta el desarrollo con
 
 En esta sección se presenta el diseño de las entrevistas, estructurado en tres fases. En la primera fase se recopilan datos demográficos y contextuales del participante con 5 preguntas; a continuación, las preguntas se organizan según el segmento objetivo al que pertenezca. Cada segmento incluye 15 preguntas específicas, lo que resulta en un total de 20 ítems por entrevista. Cabe señalar que, si el entrevistado profundiza en sus respuestas y aborda de forma espontánea cuestiones aún no planteadas, el entrevistador podrá omitir dichas preguntas y avanzar directamente a los siguientes ítems.
 
-- **Información general del participante**<br><br>
+**Información general del participante**
 
   1. Nombre:
   2. Edad:
@@ -431,63 +430,63 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
   4. Estado Civil:
   5. Ocupación:
   6. Dispositivo más usado en actividades cotidianas:
-  7. Navegador más usado en actividades cotidianas:<br><br>
+  7. Navegador más usado en actividades cotidianas:
 
-- **Segmento 1: Personas apasionadas por las plantas**<br><br>
+**Segmento 1: Personas apasionadas por las plantas**
 
-  **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.<br><br>
+* **Objetivo**: Explorar las motivaciones, hábitos, retos, y percepción de la tecnología de personas con un vínculo emocional fuerte con las plantas, ya sea en el hogar o en pequeños jardines.
 
-  - **Preguntas de exploración inicial (contexto general)**<br><br>
+- **Preguntas de exploración inicial (contexto general)**<br><br>
 
-    1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
+  1. ¿Podrías contarme cómo empezó tu interés por el cuidado de plantas?
 
-    2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
+  2. ¿Cuántas plantas cuidas actualmente y qué tipo de plantas prefieres (interior, exterior, comestibles, decorativas, etc.)?
 
-    3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?<br><br>
+  3. ¿Con qué frecuencia sueles dedicar tiempo al cuidado de tus plantas? ¿Tienes alguna rutina específica?<br><br>
 
-  - **Preguntas de seguimiento y profundización ante la exploración inicial (Probes):**<br><br>
+- **Preguntas de seguimiento y profundización ante la exploración inicial (Probes):**<br><br>
 
-    1. ¿Qué haces exactamente durante ese tiempo?
+  4. ¿Qué haces exactamente durante ese tiempo?
 
-    2. ¿Hay momentos del día o del año donde cuidas más de ellas?<br><br>
+  5. ¿Hay momentos del día o del año donde cuidas más de ellas?<br><br>
 
-  - **Desafíos actuales y soluciones empleadas**<br><br>
+- **Desafíos actuales y soluciones empleadas**<br><br>
 
-    1. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
+    6. ¿Cuáles dirías que son los principales retos que enfrentas al cuidar tus plantas?
 
-    2. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
+    7. ¿Cuáles consideras que son tus objetivos como una persona que se encuentra interesada en las plantas?
 
-    3. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
+    8. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-    4. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?<br><br>
+    9. ¿Has utilizado alguna herramienta, app o dispositivo tecnológico para ayudarte con el riego o monitoreo? ¿Cuál fue tu experiencia?<br><br>
 
-  - **Actitud frente a la tecnología (antes de presentar el producto)**<br><br>
+- **Actitud frente a la tecnología (antes de presentar el producto)**<br><br>
 
-    1. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
+    10. ¿Qué te parecería contar con una maceta que pueda regar automáticamente tus plantas y monitorear su salud?
 
-    2. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?<br><br>
+    11. ¿Qué beneficios imaginas que te podría ofrecer una maceta inteligente? ¿Y qué dudas o preocupaciones te generaría?<br><br>
 
-  - **Reacción tras presentar el concepto de Macetech**<br><br>
+- **Reacción tras presentar el concepto de Macetech**<br><br>
 
-    **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.<br><br>
+  **Objetivo**: Validar aceptación, percepción de valor, integración en el estilo de vida, y disposición de pago.<br><br>
 
-    10. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
+  12. Después de conocer lo que hace nuestra maceta inteligente, ¿qué función te parece más útil o valiosa? ¿Por qué?
 
-    11. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?<br><br>
+  13. ¿Considerarías esta maceta como una inversión en el cuidado de tus plantas o como un lujo? ¿Qué resultados esperas ver para sentir que fue una buena inversión?<br><br>
 
-  - **Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):**<br><br>
+- **Preguntas de seguimiento y profundización ante la presentación del concepto de Macetech (Probes):**<br><br>
 
-    12. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
+  14. En una escala del 1 al 5, ¿qué tan dispuesto/a estarías a usar este tipo de tecnología con tus plantas? (1 = Nada dispuesto, 5 = Muy dispuesto)
 
-    13. ¿Cómo imaginas que este dispositivo encajaría en tu hogar? ¿El diseño y tamaño serían importantes para ti?
+  15. ¿Cómo imaginas que este dispositivo encajaría en tu hogar? ¿El diseño y tamaño serían importantes para ti?
 
-    14. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
+  16. ¿Qué tan útil te parecería tener una app móvil o web para recibir notificaciones, ver métricas o controlar el riego?
 
-    15. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?<br><br>
+  17. ¿Qué otras funciones o características te gustaría que tuviera Macetech para mejorar tu experiencia?<br><br>
 
-- **Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)<br><br>
+**Segmento 2:** Personas dedicadas a la jardinería (profesional o semiprofesional)<br><br>
 
-  **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.<br><br>
+  - **Objetivo:** Identificar prácticas comunes, herramientas utilizadas, puntos de dolor críticos y percepción de valor funcional de una solución como Macetech en contextos más técnicos o comerciales.<br><br>
 
   - **Preguntas de contexto y rutina profesional**<br><br>
 
@@ -500,37 +499,37 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 
   - **Problemas y recursos actuales**<br><br>
 
-    1. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
+    4. ¿Con qué motivaciones y frustaciones sueles lidiar en base a la pregunta anterior?
 
-    2. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
+    5. ¿Qué dificultades enfrentas hoy en el manejo de plantas (riego, clima, plagas, tiempo, recursos, etc.)?
 
-    3. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?<br><br>
+    6. ¿Utilizas actualmente alguna tecnología para ayudarte con estas tareas? ¿Qué tan útil ha sido?<br><br>
 
   - **Preguntas de seguimiento y profundización ante las preguntas de contexto y rutina profesional (Probes):**<br><br>
 
-    6. ¿Qué te funciona bien hoy?
+    7. ¿Qué te funciona bien hoy?
 
-    7. ¿Qué te gustaría que funcione mejor?<br><br>
+    8. ¿Qué te gustaría que funcione mejor?<br><br>
 
   - **Expectativas y percepción frente a soluciones inteligentes**<br><br>
 
-    8. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
+    9. Si tuvieras un sistema automatizado que controle riego, humedad y nutrientes, ¿cuál de estas variables te sería más crítica monitorear?
 
-    9. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
+    10. ¿Qué tan importante sería para ti poder visualizar toda esta información desde una plataforma web o móvil?
 
-    10. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?<br><br>
+    11. ¿Preferirías un sistema que simplemente automatice tareas o uno que te brinde recomendaciones y control manual?<br><br>
 
   - **Reacción ante Macetech**<br><br>
 
-    11. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
+    12. Luego de conocer nuestra maceta inteligente, ¿qué opinas sobre su utilidad práctica en tu trabajo diario?
 
-    12. ¿Qué características crees que deben mejorarse o incluirse para ser realmente útil a nivel profesional?
+    13. ¿Qué características crees que deben mejorarse o incluirse para ser realmente útil a nivel profesional?
 
-    13. En una escala del 1 al 5, ¿qué tan probable es que consideres adoptar este tipo de tecnología como parte de tus herramientas de jardinería?
+    14. En una escala del 1 al 5, ¿qué tan probable es que consideres adoptar este tipo de tecnología como parte de tus herramientas de jardinería?
 
-    14. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
+    15. ¿Qué elementos influirían más en tu decisión de compra (precio, ahorro de agua, menor carga de trabajo, confiabilidad)?
 
-    15. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?<br><br>
+    16. ¿Cuánto estarías dispuesto a pagar por una unidad como esta, considerando su funcionalidad y durabilidad?
 
 ### 2.2.2. Registro de entrevistas
 
@@ -1027,16 +1026,16 @@ A continuación se presenta la documentación detallada de cada entrevista reali
 
 En esta sección presentamos el análisis detallado de las entrevistas realizadas a nuestros dos segmentos objetivos. Nuestro objetivo es identificar patrones de comportamiento, motivaciones y necesidades que nos permitan diseñar una solución que combine tecnología web, móvil e IoT que resuelva sus necesidades de manera intuitiva. Para ello, recopilamos testimonios, tres para cada segmento, resumimos sus características objetivas y subjetivas, y extraemos implicaciones de diseño concretas. A partir de estos hallazgos, construiremos un arquetipo final que guiará el desarrollo de la interfaz, las funcionalidades clave y la estrategia de adopción de Macetech.
 
-#### 1. Segmento: Jardineros Nuevos e Inexpertos**
+#### 1. Segmento: Jardineros Nuevos e Inexpertos
 
 En esta sección se realiza un análisis comparativo de los tres perfiles entrevistados dentro del segmento “Jardineros Nuevos e Inexpertos” (Rosalinda Quispe, Sirley Zapata y Andrés Torres), cuantificando la frecuencia de sus características objetivas y subjetivas para fundamentar la construcción de un único arquetipo de User Persona.
 
 Este segmento agrupa a personas sin formación técnica en horticultura que cultivan plantas en entornos urbanos limitados, como balcones, terrazas, jardineras de interior o pequeños patios, con recursos espaciales y temporales reducidos. Su motivación principal radica en reconectar con la naturaleza, mejorar su bienestar emocional, purificar el aire de sus entornos y embellecer sus hogares. No obstante, suelen disponer de conocimientos muy básicos o casi nulos sobre técnicas fundamentales de jardinería: desconocen cómo establecer un programa de riego eficiente, ajustar las proporciones de nutrientes esenciales, identificar y prevenir plagas o enfermedades, y seleccionar o preparar adecuadamente el sustrato según la especie vegetal. Esta brecha de habilidades los expone a errores recurrentes que, al no contar con orientación profesional, terminan provocando el deterioro prematuro o la muerte de las plantas, generando frustración y abandono de la actividad.
 
-#### Características Objetivas:
+#### Características Objetivas
 
 ###### Tabla 5
-*Listado de estadísticas de características objetivas identificadas para nuestro segmento de jardineros nuevos e inexpertos*
+*Listado de características objetivas del segmento de jardineros nuevos e inexpertos*
 
 | Característica | Presencia en muestra (n = 3) | Rosalinda (n = 1) |	Sirley (n = 1) | Andrés (n = 1) |	Frecuencia (%) | Implicación para el diseño |
 |----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
@@ -1052,7 +1051,7 @@ Este segmento agrupa a personas sin formación técnica en horticultura que cult
 | Tipo de cultivo con plantas ornamentales | 3	| Sí | Sí | Sí | 100 %	| Proporcionar presets de cuidado para ornamentales, con ajustes predeterminados de riego y nutrientes y posibilidad de personalización manual sencilla.|
 | Disposición a pagar |	3	| Sí (Ahorrar tiempo y errores en jardinería) |	Sí (Mayor beneficio en costos)	| Sí (Ahorrar tiempo) |	100 %	| Mostrar comparativas claras de planes Freemium y Premium, resaltando beneficios concretos (litros ahorrados, alertas prioritarias, módulos avanzados) para ayudar en la decisión según presupuesto. |
 
-#### Interpretación de características objetivas:
+#### Interpretación de características objetivas
 
 **1. Apego a marcas específicas**
 
@@ -1134,10 +1133,11 @@ Este segmento agrupa a personas sin formación técnica en horticultura que cult
 
 * **Implicaciones:** Ofrecer comparativas visuales de planes Freemium y Premium, destacando beneficios concretos (litros de agua ahorrados, alertas prioritarias, acceso a módulos avanzados) para facilitar la elección según presupuesto y necesidades.
 
-#### Características Subjetivas:
+#### Características Subjetivas
 
 ###### Tabla 6
-*Listado de estadísticas de características subjetivas identificadas para nuestro segmento de jardineros nuevos e inexpertos*
+
+*Listado de características subjetivas del segmento de jardineros nuevos e inexpertos*
 
 | Característica | Presencia en muestra (n = 3) | Rosalinda (n = 1) |	Sirley (n = 1) | Andrés (n = 1) |	Frecuencia (%) |	Implicación para el diseño |
 |----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
@@ -1152,7 +1152,7 @@ Este segmento agrupa a personas sin formación técnica en horticultura que cult
 | Preferencia por aprendizaje visual	| 1	| No | No | Sí | 33.3 %	| Añadir un repositorio de videoclips de 1–2 min o animaciones adecuadas junto a cada recomendación que demuestren gráficamente cada paso (por ejemplo, cómo conectar la maceta a la aplicación web), para quienes aprenden mejor con apoyo audiovisual. |
 | Supervisión desde el hogar, no intrusiva | 3 | Sí | Sí | Sí | 100% | Priorizar un dashboard de escritorio con widgets configurables y notificaciones agrupadas (“Todas las alertas” o “Alertas críticas”), para que el usuario decida cuándo y cómo ser interrumpido, sin saturar su rutina diaria. |
 
-**Interpretación de características subjetivas:**
+#### Interpretación de características subjetivas
 
 **1. Conexión emocional con las plantas**
 
@@ -1396,10 +1396,10 @@ En esta sección se realiza un análisis comparativo de los tres perfiles entrev
 
 Este segmento agrupa a técnicos especializados, agrónomos, jardineros profesionales y paisajistas que diseñan, implementan y mantienen proyectos de jardinería tanto en residencias privadas como en corporativos, espacios públicos y comunitarios. Su objetivo es maximizar la salud vegetal, la estética del paisaje y la eficiencia de los recursos invertidos (agua, nutrientes, tiempo de mantenimiento). Aunque poseen conocimientos sólidos sobre especies, suelos, riego y nutrición, enfrentan limitaciones en la supervisión remota de múltiples sitios, la recolección manual de métricas ambientales, y la detección temprana de anomalías que afecten la salud vegetal. Esto los expone a sobrecostos por riegos ineficientes, deterioro no detectado a tiempo o pérdidas de plantas. La creciente necesidad de integrar tecnologías IoT y automatización inteligente en sus procesos surge como un factor clave para escalar operaciones, optimizar tiempos de respuesta, y ofrecer resultados más sostenibles y competitivos a sus clientes.
 
-#### Características objetivas:
+#### Características objetivas
 
-###### Tabla 5
-*Listado de estadísticas de características objetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
+###### Tabla 7
+*Listado de características objetivas del segmento de especialistas de jardinería y áreas verdes*
 
 | Característica | Presencia en muestra (n = 3) | Betty (n = 1) |	Javier (n = 1) |	Yasser (n = 1) |	Frecuencia (%) |	Implicación para el diseño |
 |----------------|-------------------------------|---------------|----------------|-----------------|----------------|----------------------------|
@@ -1418,7 +1418,7 @@ Este segmento agrupa a técnicos especializados, agrónomos, jardineros profesio
 |Sensores de pH o nutrientes	| 0| 	No| 	No	| No	| 0 % |	Desarrollar módulo de medición de pH y nutrientes integrado, dado que ningún usuario cuenta actualmente con esa tecnología, pero existe demanda unánime. |
 | Disposición a pagar |	3	| Sí (Ahorrar tiempo y frustración) |	Sí (Costo-beneficio moderado)	| Sí (Relación calidad-precio y dispuesto a pagar por eficiencia) |	100 %	| Incluir comparativas de precios o niveles de suscripción (Freemium, premium) que muestren beneficios vs. costo, para ayudar a usuarios a elegir según su presupuesto y necesidades. |
 
-#### Interpretación de características objetivas:
+#### Interpretación de características objetivas
 
 **1. Adopción tecnológica intermedia-alta**
 
@@ -1495,10 +1495,10 @@ Este segmento agrupa a técnicos especializados, agrónomos, jardineros profesio
 
 - **Implicaciones:** Ofrecer comparativas de precios y diferentes planes de suscripción (Freemium, premium), mostrando beneficios concretos por cada nivel y opciones de pago fraccionado en meses o en años.
 
-#### Características subjetivas:
+#### Características subjetivas
 
-###### Tabla 6
-*Listado de estadísticas de características subjetivas identificadas para nuestro segmento de especialistas de jardinería y áreas verdes*
+###### Tabla 8
+*Listado de características subjetivas del segmento de especialistas de jardinería y áreas verdes*
 
 | Característica| Presencia en muestra (n = 3) | Betty (n = 1)	|Javier (n = 1)	|Yasser (n = 1)|	Frecuencia (%)	|Implicación para el diseño|
 |------|-------|--------|--------|---------|---------|----------|
@@ -1515,7 +1515,7 @@ Este segmento agrupa a técnicos especializados, agrónomos, jardineros profesio
 |Frustración por falta de datos precisos	|3	|Sí	|Sí|	Sí|	100 %	|Incorporar gráficas y paneles de control con métricas históricas (humedad, pH, fertilización) para que el usuario compruebe tendencias y compare datos.|
 |Nivel alto de conocimiento tecnológico	|2	|No	|Sí	|Sí	|66.7 %	|Diseñar la interfaz con niveles de complejidad ajustables y un onboarding inicial para que pueda ser usada de forma rápida, adecuada y flexible. |
 
-#### Interpretación de características subjetivas:
+#### Interpretación de características subjetivas
 
 **1. Conexión emocional con las plantas**
 
@@ -1757,36 +1757,41 @@ Desarrollar una solución multiplataforma, app móvil Android y web optimizada p
 
 ## 2.3. Needfinding
 
-El proceso de needfinding nos permite identificar problemas reales que enfrentan los usuarios y descubrir oportunidades de diseño que pueden llevar a soluciones innovadoras y centradas en el usuario.
+En está sección presentamos los artefactos generados a partir del exhaustivo análisis de la información recolectada en las entrevistas: perfiles de User Personas, la User Task Matrix, los User Journey Maps, el Empathy Mapping y el As‑Is Scenario Mapping. Cada uno de estos elementos refleja las necesidades, motivaciones y puntos de dolor identificados y sirve como base para definir soluciones de diseño centradas en el usuario. Al mostrar estos entregables, buscamos garantizar que todas las decisiones de producto se apoyen en datos cualitativos sólidos y en una comprensión profunda de los comportamientos reales de nuestros usuarios.
+
+El proceso de needfinding, según Patnaik (2017), consiste en la investigación y planificación del diseño orientada a descubrir las necesidades latentes y explícitas de los usuarios, más allá de lo que ellos mismos son capaces de articular. A través de técnicas como la observación contextual, la creación de mapas de empatía y la construcción de escenarios “as‑is”, este enfoque permite extraer insights que guían la ideación y la definición de soluciones efectivas. En las secciones siguientes, desplegaremos cómo hemos aplicado el método de needfinding para estructurar cada artefacto y, con ello, sentar las bases de Macetech como una herramienta verdaderamente alineada con las expectativas y aspiraciones de nuestros segmentos objetivos.
 
 ### 2.3.1. User Personas
 
-En esta sección, presentaremos el perfil de nuestros User Persona, que surge de un análisis de las entrevistas realizadas anteriormente y de una evaluación de la competencia en el mercado. Los artefactos que vamos a presentar están estrechamente relacionados con las principales características identificadas durante este proceso de análisis. Desde las entrevistas, hemos extraído valiosa información sobre las necesidades, deseos y frustraciones de nuestros potenciales usuarios, lo que nos ha permitido perfilar a nuestro User Persona de manera precisa y realista. <br><br>
+En esta sección describimos en detalle la construcción de las fichas de User Persona para cada uno de nuestros segmentos objetivo, integrando tanto los insights cualitativos extraídos de las entrevistas (Jardineros Nuevos e Inexpertos y Especialistas de Jardinería y Áreas Verdes) como los aprendizajes obtenidos del análisis competitivo en el mercado de jardinería inteligente. Partimos de los patrones de comportamientos, frustraciones y motivaciones identificados, como la preferencia por interfaces sencillas, la reticencia a tecnologías complejas, la dependencia de prácticas empíricas y la demanda de soluciones estéticas y discretas, y los contrastamos con las propuestas de valor de competidores clave (Click & Grow, Xiaomi Mi Flower Care, Masdio Ivy). De este modo, cada ficha de User Persona combina atributos demográficos y psicográficos con las funcionalidades diferenciales que Macetech deberá ofrecer para cubrir vacíos detectados en otras soluciones (por ejemplo, sensores de pH integrados, riego automatizado y recomendaciones específicas para cada especie de planta).
+
+Siguiendo las mejores prácticas de creación de personas establecidas por Nielsen (2019), cada ficha incluye información sobre metas, escenarios de uso, nivel de competencia tecnológica, canales de interacción preferidos y actitudes emocionales. Además, incorporamos referencias cruzadas entre los artefactos—User Task Matrix, User Journey Maps, Empathy Mapping y As‑Is Scenario Mapping—y las características clave surgidas tanto de las entrevistas como del benchmark competitivo. Esta integración garantiza que las User Personas no solo reflejen quiénes son nuestros usuarios y cómo piensan, sino también cómo Macetech se posiciona para ofrecerles propuestas de valor únicas frente a las alternativas existentes, cimentando una estrategia de producto centrada en necesidades reales y oportunidades de diferenciación.
 
 ###### Figura 11
-*User persona de nuestro segmento de personas apasionadas por las plantas*
+*User persona de nuestro segmento de jardineros nuevos e inexpertos*
 
   <img src="/assets/img/capitulo-2/needfinding/user-persona/user-person-segment-1.png" alt="UP1" width="400" height="850">
 
 ###### Figura 12
-*User persona de nuestro segmento de personas dedicadas a la jardinería*
+*User persona de nuestro segmento de especialistas de jardinería y áreas verdes*
 
   <img src="/assets/img/capitulo-2/needfinding/user-persona/user-person-segment-2.png" alt="User Persona of segment 2: People dedicated to gardening" width="400" height="850">
 
-- ### 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix
 
-  La User Task Matrix es una herramienta que nos permite identificar las tareas clave que nuestros usuarios necesitan realizar en nuestra aplicación web y móbil. Al mapear estas tareas, podemos comprender mejor las necesidades y expectativas de nuestros usuarios, lo que nos ayuda a diseñar una experiencia de usuario más efectiva y centrada en sus requerimientos.
+En esta sección presentamos el User Task Matrix, una herramienta que sintetiza las acciones clave que nuestros User Personas ejecutan para alcanzar sus objetivos de jardinería, independientemente de la existencia de una solución digital. Para este ejercicio consideramos los dos segmentos definidos: “Jardineros Nuevos e Inexpertos” y “Especialistas de Jardinería y Áreas Verdes”. Cada fila del matrix corresponde a una tarea concreta, mientras que las columnas se dividen en sub-columnas que indican la frecuencia y la importancia con que cada segmento realiza dicha tarea. Es fundamental distinguir entre tareas reales del usuario y funcionalidades del software, de modo que el matrix refleje el comportamiento orgánico de nuestros usuarios sin sesgarlo hacia características ya implementadas.
 
-  ###### Tabla 9
-  *User Task Matrix de los dos segmentos objetivos de Macetech*
+Tras el matrix, describiremos cuáles son las tareas de mayor prioridad, aquellas de alta frecuencia y alta importancia, y compararemos similitudes y diferencias entre los dos perfiles. Esta fase de análisis permitirá enfocar el diseño de Macetech en soportar de manera óptima las acciones críticas de cada segmento, priorizando funcionalidades que respondan directamente a las necesidades más relevantes y frecuentes de nuestros usuarios (Nielsen, 2019).
 
-  <br><br>
+###### Tabla 9
+*User Task Matrix de los dos segmentos objetivos de Macetech*
+
   <table style="text-align: center; width: 100%;">
     <thead>
       <tr>
         <th rowspan="2">Tareas</th>
-        <th colspan="2">Personas apasionadas por las plantas</th>
-        <th colspan="2">Personas que trabajan en jardinería</th>
+        <th colspan="2">Jardineros Nuevos e Inexpertos</th>
+        <th colspan="2">Especialistas de Jardinería y Áreas Verdes</th>
       </tr>
       <tr>
         <th>Frecuencia</th>
@@ -1804,14 +1809,14 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
         <td>High</td>
       </tr>
       <tr>
-        <td>Revisar si las plantas tienen suficiente luz</td>
+        <td>Revisar si sus plantas tienen suficiente luz</td>
         <td>Sometimes</td>
         <td>Medium</td>
         <td>Always</td>
         <td>High</td>
       </tr>
       <tr>
-        <td>Consultar sobre el cuidado de una planta específica</td>
+        <td>Consultar sobre el cuidado de una especie de planta específica</td>
         <td>Often</td>
         <td>High</td>
         <td>Sometimes</td>
@@ -1832,21 +1837,21 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
         <td>High</td>
       </tr>
       <tr>
-        <td>Identificar cuándo una planta está en mal estado</td>
+        <td>Identificar cuándo una planta está en mal estado de salud</td>
         <td>Often</td>
         <td>High</td>
         <td>Always</td>
         <td>High</td>
       </tr>
       <tr>
-        <td>Revisar manualmente el nivel de humedad del suelo</td>
+        <td>Revisar manualmente el nivel de humedad del sustrato</td>
         <td>Sometimes</td>
         <td>Medium</td>
         <td>Daily</td>
         <td>High</td>
       </tr>
       <tr>
-        <td>Comprar productos o herramientas para plantas</td>
+        <td>Comprar productos o herramientas para jardinería</td>
         <td>Monthly</td>
         <td>Medium</td>
         <td>Weekly</td>
@@ -1860,7 +1865,7 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
         <td>High</td>
       </tr>
       <tr>
-        <td>Probar nuevas formas de mejorar el cuidado de las plantas</td>
+        <td>Probar nuevas formas de mejorar el cuidado de sus plantas</td>
         <td>Often</td>
         <td>Medium</td>
         <td>Sometimes</td>
@@ -1879,17 +1884,17 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
 **Análisis comparativo de tareas: personas apasionadas por las plantas vs. personas que trabajan en jardinería**
 
 - **Tareas de mayor frecuencia e importancia en ambos perfiles**
-  Tanto las personas apasionadas por las plantas como quienes trabajan en jardinería coinciden en ciertas tareas clave que son realizadas con alta frecuencia y calificadas como altamente importantes:
+  Tanto las personas apasionadas por las plantas como quienes trabajan en jardinería coinciden en ciertas tareas clave que son realizadas con alta frecuencia y calificadas como altamente importantes:<br><br>
 
   - **Regar sus plantas:** Es una actividad esencial para ambos grupos. Los jardineros lo hacen a diario, mientras que los aficionados lo realizan frecuentemente. En ambos casos, se reconoce su alta importancia.
 
   - **Identificar cuándo una planta está en mal estado:** Ambos perfiles consideran esta acción altamente importante y la ejecutan con mucha regularidad (frecuente o siempre).
 
-  - **Monitorear múltiples plantas al mismo tiempo:** Aunque los jardineros lo hacen siempre y los aficionados solo a veces, ambos lo califican como una tarea de alta importancia.
+  - **Monitorear múltiples plantas al mismo tiempo:** Aunque los jardineros lo hacen siempre y los aficionados solo a veces, ambos lo califican como una tarea de alta importancia.<br><br>
 
-  Estas tareas muestran que, sin importar el perfil, hay un núcleo compartido de actividades críticas para mantener la salud de las plantas.
+  Estas tareas muestran que, sin importar el perfil, hay un núcleo compartido de actividades críticas para mantener la salud de las plantas.<br><br>
 
-- **Principales diferencias**
+- **Principales diferencias**<br><br>
 
   - **Revisión de luz:** Los jardineros profesionales revisan siempre la exposición lumínica, considerándola muy importante, mientras que los aficionados solo lo hacen a veces y le asignan una importancia media. Esto revela una mayor conciencia técnica en los profesionales.
 
@@ -1897,9 +1902,9 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
 
   - **Registro del estado de cada planta:** Los jardineros lo hacen a veces y le asignan alta importancia, mientras que los aficionados lo hacen raramente, con solo una importancia media. Esto refuerza la diferencia en hábitos de documentación entre ambos perfiles.
 
-  - **Tomar fotos:** Es más común en los aficionados (a veces, con importancia media), mientras que los jardineros rara vez lo hacen y no lo consideran relevante. Esto sugiere un componente más emocional o estético en el público no profesional.
+  - **Tomar fotos:** Es más común en los aficionados (a veces, con importancia media), mientras que los jardineros rara vez lo hacen y no lo consideran relevante. Esto sugiere un componente más emocional o estético en el público no profesional.<br><br>
 
-- **Coincidencias destacadas**
+- **Coincidencias destacadas**<br><br>
 
   - Ambos grupos valoran y practican regularmente el cuidado reactivo, como detectar problemas y regar.
 
@@ -1907,57 +1912,80 @@ En esta sección, presentaremos el perfil de nuestros User Persona, que surge de
 
   - La compra de productos ocurre con diferentes frecuencias (mensual vs. semanal), pero con similar importancia media, lo que indica un patrón de consumo compartido.
 
-- ### 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping
 
-  El User Journey Mapping es una herramienta para comprender la experiencia del usuario de manera holística, lo que permite a los equipos de diseño crear productos y servicios que se alineen mejor con las necesidades y expectativas de los usuarios.<br><br>
+En esta sección desarrollamos los User Journey Maps As‑Is para cada uno de nuestros User Personas, representando el recorrido completo que los usuarios siguen hoy al cuidar sus plantas, desde la identificación de una necesidad hasta la acción final de riego o tratamiento. Comenzaremos con una descripción general del viaje end‑to‑end, destacando los momentos clave de descubrimiento, diagnóstico y acción, así como los puntos de dolor y oportunidades de mejora. A continuación, incluiremos capturas de los diagramas realizados en la herramienta designada, vinculando cada mapa con el User Persona correspondiente para mostrar cómo sus motivaciones y frustraciones influyen en cada etapa del proceso.
+
+El User Journey Mapping permite visualizar de manera holística la experiencia actual del usuario y detectar fricciones ocultas que no siempre emergen en entrevistas o cuestionarios. Según Kalbach (2020), esta técnica facilita la empatía al ilustrar flujos de interacción, puntos de contacto y emociones asociadas en cada fase del viaje del usuario. Por su parte, Walter (2022) destaca que los mapas As‑Is son fundamentales para establecer un punto de partida claro antes de diseñar soluciones, pues revelan prácticas y patrones reales que guían la priorización de mejoras en la propuesta de valor.
 
   ###### Figura 13
-  *User Journey Mapping de nuestro segmento de personas apasionadas por las plantas*
+  *User Journey Mapping de nuestro segmento de jardineros nuevos e inexpertos*
 
-    ![JourneyMap_1](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento1.png) <br><br>
+  ![JourneyMap_1](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento1.png)
 
   ###### Figura 14
-  *User Journey Mapping de nuestro segmento de personas dedicadas a la jardinería*
+  *User Journey Mapping de nuestro segmento de especialistas de jardinería y áreas verdes*
 
-    ![JourneyMap_2](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
+  ![JourneyMap_2](/assets/img/capitulo-2/needfinding/journey-mapping/JourneyMap_Segmento2.png)
 
-- ### 2.3.4. Empathy Mapping
+### 2.3.4. Empathy Mapping
 
-  Se ha elaborado el Empathy Mapping utilizando los datos obtenidos de las etapas preliminares del proyecto. A través de este proceso, hemos diseñado mapas específicos para cada uno de nuestros dos User Persona, con el fin de profundizar en la comprensión de sus necesidades y experiencias. Esta comprensión es esencial para guiar las próximas fases de nuestro desarrollo. <br><br>
+En esta sección describimos en detalle tanto el proceso como los resultados de nuestros Empathy Maps, creando uno para cada User Persona definido en los capítulos previos. Siguiendo el enfoque de Kalbach (2020), comenzamos situando al User Persona en el centro del lienzo y, a partir de las observaciones cualitativas recogidas durante las entrevistas y el análisis de la competencia, organizamos las aportaciones de nuestro equipo en las seis áreas fundamentales: 
 
-  ###### Figura 15
-  *Empathy Mapping de nuestro segmento de personas apasionadas por las plantas*
+* ¿Qué ve?
+* ¿Qué dice?
+* ¿Qué hace?
+* ¿Qué escucha?
+* ¿Cómo se siente?
+* ¿Qué piensa?
 
-    ![EmpathyMap_1](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
+Posteriormente, procedimos a identificar los Pains (preocupaciones, frustraciones y riesgos) y los Gains (motivaciones, deseos de solución y factores de decisión) para capturar de manera integral las dimensiones emocionales y cognitivas que moldean la experiencia de cada usuario.
 
-  ###### Figura 16
-  *Empathy Mapping de nuestro segmento de personas dedicadas a la jardinería*
+El propósito de este ejercicio es profundizar en la empatía con nuestros usuarios, planteándonos preguntas clave como:
 
-    ![EmpathyMap_2](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap2.png)
+* ¿Con quién estamos empatizando?
+* ¿Qué tareas necesita realizar?
+* ¿Qué barreras enfrenta?
+* ¿Qué incentivos podrían motivarlo a adoptar Macetech?
 
-- ### 2.3.5. As-is Scenario Mapping
+Para ello, combinamos los insights del Empathy Mapping con las metas y comportamientos declarados en las entrevistas, siguiendo además las pautas de Nielsen (2019) para asegurar que cada hallazgo sea accionable. De este modo, garantizamos que los futuros diseños de interfaz y las funcionalidades propuestas respondan directamente a las necesidades reales de los jardineros, contribuyendo a una solución verdaderamente centrada en el usuario.
 
-El As-Is Scenario es una herramienta fundamental en el análisis de experiencias de usuario, ya que permite visualizar paso a paso cómo interactúan actualmente los diferentes segmentos de usuarios con un producto, servicio o actividad. A través de esta metodología se identifican los comportamientos, pensamientos y emociones del usuario en cada etapa del proceso, lo que ayuda a detectar puntos de dolor, necesidades no cubiertas, y oportunidades de mejora.
+###### Figura 15
+*Empathy Mapping de nuestro segmento de personas apasionadas por las plantas*
 
-Para la elaboración de estos escenarios, se analizaron los perfiles de dos segmentos de usuarios relacionados con el cuidado de plantas:
+![EmpathyMap_1](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap1.png)
 
-- Personas Apasionadas por las Plantas
+###### Figura 16
+*Empathy Mapping de nuestro segmento de personas dedicadas a la jardinería*
 
-- Personas Dedicadas a la Jardinería
+![EmpathyMap_2](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap2.png)
 
-El proceso consistió en identificar las fases principales (Steps), describir las acciones realizadas (Doing), los pensamientos que surgen (Thinking) y las emociones experimentadas (Feeling), representando una perspectiva empática y detallada del recorrido del usuario.
+### 2.3.5. As-is Scenario Mapping
 
-  ###### Figura 17
-  *As-Is Scenario Mapping de nuestro segmento de personas apasionadas por las plantas*
-  ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
+El As‑Is Scenario Mapping es una herramienta esencial en el análisis de experiencias de usuario, pues permite desglosar paso a paso cómo interactúan actualmente nuestros segmentos objetivo (“Jardineros Nuevos e Inexpertos” y “Especialistas de Jardinería y Áreas Verdes”) con las actividades de cuidado de plantas. Mediante esta metodología se registran de forma estructurada los comportamientos (Doing), pensamientos (Thinking) y emociones (Feeling) que los usuarios experimentan en cada fase del proceso (Steps), lo cual facilita la identificación de puntos de dolor, necesidades no cubiertas y oportunidades de mejora antes de diseñar cualquier solución tecnológica.
 
-  ###### Figura 18
-  *As-Is Scenario Mapping de nuestro segmento de personas dedicadas a la jardinería*
-  ![As_Is-2](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento2.png)
+Para elaborar estos escenarios, el equipo siguió un proceso riguroso que incluyó: 
+
+1. Preparación y revisión de perfiles de User Persona
+2. Lluvia de ideas individual para recoger insights de cada miembro
+3. Consolidación y nombrado de las fases comunes al recorrido de cada segmento
+4. Etiquetado de experiencias positivas, negativas y áreas en blanco que requieren mayor investigación.
+  
+A continuación presentamos capturas de los mapas As‑Is generados en la herramienta designada, con las filas Phases, Doing, Thinking y Feeling debidamente organizadas, sirviendo como base empática y detallada para la siguiente etapa de diseño centrado en el usuario (Kalbach, 2020).
+
+###### Figura 17
+*As-Is Scenario Mapping de nuestro segmento de personas apasionadas por las plantas*
+![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
+
+###### Figura 18
+*As-Is Scenario Mapping de nuestro segmento de personas dedicadas a la jardinería*
+![As_Is-2](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento2.png)
 
 ## 2.4. Ubiquitous Language
 
-En el contexto del desarrollo de Macetech, mantener un lenguaje compartido entre todos los miembros del equipo y stakeholders es clave para una comunicación clara y efectiva. A continuación, se presenta un glosario con los principales términos del dominio, utilizados por usuarios, diseñadores, desarrolladores y otros actores involucrados. Todos los términos están en inglés para facilitar la consistencia en documentación técnica, pero incluyen su equivalente en español y una definición clara orientada al uso dentro del producto.
+En esta sección presentamos el glosario de Ubiquitous Language, compuesto por términos y conceptos clave del dominio de jardinería inteligente que utiliza Macetech. Cada entrada está escrita en inglés, con su equivalente en español entre paréntesis, y acompañada de una definición clara y sin ambigüedad en español. Mantener un lenguaje ubicuo y bien definido garantiza que todos los miembros del equipo, desde desarrolladores hasta stakeholders, compartan un mismo entendimiento de los conceptos esenciales, evitando malentendidos y facilitando la comunicación efectiva durante el ciclo de vida del proyecto. Este glosario abarca únicamente términos propios del business domain y excluye jerga técnica del área de ingeniería de software.
+
+El concepto de Ubiquitous Language fue formalizado por Eric Evans en su obra principal, donde establece que “el lenguaje ubicuo se modela dentro de un contexto limitado, donde se identifican los términos y conceptos del dominio empresarial y no debe haber ambigüedad.” (Evans, 2003). Según Evans, este lenguaje compartido es fundamental para alinear el modelo de dominio con el código fuente y las discusiones del equipo, reduciendo la brecha entre expertos de negocio y técnicos. Shore y Warden (2021) complementan esta visión al subrayar que en metodologías ágiles el Ubiquitous Language no solo documenta terminología, sino que evoluciona de manera iterativa con el feedback continuo de los usuarios y del propio equipo, convirtiéndose en un cimiento vivo para el desarrollo colaborativo de soluciones centradas en el usuario.
 
 ###### Tabla 10
 *Listado del lenguaje ubicuo empleado en Macetech por el equipo de trabajo de SevenSync*
