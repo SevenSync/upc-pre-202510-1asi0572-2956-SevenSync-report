@@ -2127,7 +2127,14 @@ Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Desi
 
 ### 5.4.1. Applications Wireframes
 
+#### 5.4.1.1. Web Applications Wireframes
+#### 5.4.1.2. Mobile Applications Wireframes
+
+
 ### 5.4.2. Applications Wireflow Diagrams
+
+#### 5.4.2.1. Web Applications Wireflow Diagrams
+
 
 - **1. Registro e Inicio de Sesión del Usuario**
   Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
@@ -2145,10 +2152,22 @@ Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Desi
   Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
   <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_4.png"  alt="MockUp" width="1000" height="700"> <br>
 
-### 5.4.2. Applications Mock-ups
+#### 5.4.2.2. Mobile Applications Wireflow Diagrams
+
+- **1. Registro e Inicio de Sesión del Usuario**
+  Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_1_mobile.png" alt="MockUp" width="1000" height="700"> <br>
+
+- **2. Configuración de Cuenta y Preferencias de Notificación**
+  Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
+  <img src="/assets/img/capitulo-5/ux-ui-design/wire-flow/wireflow_2_mobile.png"  alt="MockUp" width="1000" height="700"> <br>
+
+
+### 5.4.3. Applications Mock-ups
 
 Los siguientes mockups representan las interfaces clave de una plataforma de gestión de macetas inteligentes. Estas vistas han sido diseñadas para facilitar la experiencia del usuario en procesos como el registro e inicio de sesión, visualización del estado de las macetas, gestión de notificaciones, y administración de cuenta y membresía. Cada pantalla refleja una parte esencial del recorrido del usuario, alineada con los objetivos y necesidades definidos para cada User Persona.
 
+#### 5.4.3.1. Web Applications Mock-ups
 <img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-1.png" alt="MockUp" width="1000" height="500"> <br>
 <img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.1.png" alt="MockUp" width="1000" height="500"> <br>
 <img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-2.2.png"  alt="MockUp" width="1000" height="500"> <br>
@@ -2158,11 +2177,13 @@ Los siguientes mockups representan las interfaces clave de una plataforma de ges
 <img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.1.png" alt="MockUp" width="1000" height="500"> <br>
 <img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/web-app/Mockup-5.2.png" alt="MockUp" width="1000" height="500"> <br>
 
-### 5.4.3. Applications User Flow Diagrams
+#### 5.4.3.2. Mobile Applications Mock-ups
 
-#### 5.4.3.1. Web Applications User Flow Diagrams
 
+### 5.4.4. Applications User Flow Diagrams
 Los siguientes User Flows representan los principales recorridos que un usuario puede seguir dentro de la aplicación, desde el acceso inicial hasta la personalización de su experiencia. Cada flujo responde a un objetivo específico del usuario (User Goal) y está basado en los mockups desarrollados. Se abordan procesos clave como el registro e inicio de sesión, la interacción con macetas inteligentes, la actualización de membresía, y la configuración de cuenta y notificaciones, asegurando una experiencia intuitiva, eficiente y centrada en las necesidades del usuario.
+
+#### 5.4.4.1. Web Applications User Flow Diagrams
 
 - **1. Registro e Inicio de Sesión del Usuario**
   Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
@@ -2179,6 +2200,19 @@ Los siguientes User Flows representan los principales recorridos que un usuario 
 - **4. Configuración de Cuenta y Preferencias de Notificación**
   Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
   <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_4.png"  alt="MockUp" width="1000" height="700"> <br>
+
+
+#### 5.4.4.2. Mobile Applications User Flow Diagrams
+
+- **1. Registro e Inicio de Sesión del Usuario**
+  Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_1_mobile.png" alt="MockUp" width="1000" height="700"> <br>
+
+
+- **4. Configuración de Cuenta y Preferencias de Notificación**
+  Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
+  <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_2_mobile.png"  alt="MockUp" width="1000" height="700"> <br>
+
 
 ## 5.5. Applications Prototyping
 
