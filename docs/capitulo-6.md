@@ -535,11 +535,11 @@ Asimismo, la página mostrará una comparación accesible entre las funcionalida
 		</tr>
         <tr>
 			<td colspan="1">Sprint 1 Velocity </td>
-            <td colspan="1"></td>
+            <td colspan="1">19</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1"></td>
+            <td colspan="1">19</td>
 		</tr>
 </tbody>
 </table>
@@ -797,7 +797,7 @@ A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajo
 
 Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9)
 
-<img src="/assets/img/capitulo-6/evidence/sprint-backlog-1.png" alt="Evidencia de Sprint Backlog para sprint 1">
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-1-macetech.png" alt="Evidencia de Sprint Backlog para sprint 1">
 
 #### 6.2.1.4.Development Evidence for Sprint Review.
 
@@ -897,27 +897,31 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 		</tr>
          <tr>
 			<td colspan="1">Sprint 2 – 2 Review Summary </td>
-            <td colspan="1"></td>
+            <td colspan="1">El sprint 2 concluyó con el desarrollo de la plataforma web, servicio web y aplicativo móvil. Los integrantes del equipo finalizaron este producto y comenzaron a preparar el ambiente de desarrollo para los siguientes productos (edge y embedded). El profesor observó que el formulario de contacto no debe estar ubicado al final de la página, además, sostenió que se debe contar con i18n para realizar el cambio de lenguaje.</td>
 		</tr>
          <tr>
 			<td colspan="1">Sprint 2 – 2 Retrospective Summary </td>
-            <td colspan="1">Tras completar el primer Sprint, el equipo sintió que colaboraron bien y se adaptaron a los desafíos iniciales del proyecto, lo cual fue un comienzo coomplicado pero con buen descenlace. Sin embargo, también identificaron áreas clave para mejorar la forma de trabajar en el futuro, como organizar mejor los tiempos, coordinar las tareas compartidas de manera más eficiente, asegurar que siempre se enfoquen en entregar lo más valioso para el producto, y tener más reuniones cortas para mantenerse mejor comunicados y alineados en los próximos sprints.</td>
+            <td colspan="1">Tras completar el segundo Sprint, el equipo identificó varios puntos de mejora como la gestión del tiempo y la responsabilidad en el cumplimiento de tareas. Como reflexión, no se cumplió el objetivo debido a que el sprint 1 debió cubrir la página web de negocio y la plataforma web. Sim embargo, por falta de tiempo no se pudo contemplar el desarrollo del segundo producto. El equipo encara este obstáculo con optimismo para cumplir en el siguiente entregable. </td>
 		</tr>
          <tr>
 			<td colspan="2">Sprint Goal & User Stories </td>
 		</tr>
          <tr>
 			<td>Sprint 2 Goal</td>
-            <td><strong>Nuestro enfoque es</strong>. <strong>Creemos que esto proporciona</strong> <strong>Esto se confirmará cuando</strong> 
+            <td><strong>Nuestro enfoque está</strong> en entregar la propuesta de valor central del sistema de jardinería inteligente de SevenSync, mediante la implementación de la aplicación web para configurar los servicios, el servicio web que permite el monitoreo y cuidado automatizado de las plantas, y la aplicación móvil que habilita el acceso remoto.
+
+<strong>Creemos que esto proporciona</strong> una primera experiencia funcional completa al usuario, permitiéndole interactuar con el sistema desde múltiples interfaces, generando confianza en la solución, facilitando la adopción del producto y validando nuestra arquitectura tecnológica.
+
+<strong>Esto se confirma cuando</strong> los usuarios pueden registrar sus plantas y configuraciones desde la app web, el sistema responde a condiciones del entorno a través del servicio web, y la app móvil permite visualizar parámetros y controlar remotamente el riego automático, sin errores críticos detectados en las pruebas de integración y aceptación.
 </td>
 		</tr>
         <tr>
 			<td colspan="1">Sprint 2 Velocity </td>
-            <td colspan="1"></td>
+            <td colspan="1">42</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1"></td>
+            <td colspan="1">61</td>
 		</tr>
 </tbody>
 </table>
@@ -936,25 +940,98 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 
 #### 6.2.2.3. Sprint Backlog 2
 
+El sprint backlog 2 abarcó la implemetnación inicial de todos los productos. En este caso se contempló desarrollar la aplicación web, el servicio en la nube, la aplicación, móvil, la aplicación edge y la aplicación embedida. Se tomó en cuenta el orden de implementación según el valor que aportaba.
+
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-2-macetech.png" alt="Sprint Backlog 2 " width="600px">
+
 #### 6.2.2.4. Development Evidence for Sprint Review
 
+En esta sección, se documentarán las evidencias de desarrollo más importantes por producto. Para el desarrollo, cada producto se aloja en su propio repositorio.
+
+
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+| ---------- | ------ | --------- | -------------- | ------------------- |------------------ |
+| DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 4e32efe | feat(pot-details): add features: recommendations, history and alerts | - | 15/07/2025 |
+| LucioY250/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 889d5f6 | feat: add plant-catalog component implementation | - | 14/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 24c8503 | feat: add membership and payment routes | - | 22/05/2025 |
+| DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-pots | f76c05b | feat(pots): add pots and route | - | 30/05/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-feat-memberships | 24c8503 | feat: add membership and payment routes | - | 22/05/2025 |
+| RubDaShen/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | b0710cc | feat: Add or update the Azure App Service build and deployment workflow config | - | 16/05/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-feat-login-register | ed2d780 | feat: routing and global styles; implement login and register components | - | 14/05/2025 |
 
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
+Se desarrollaron archivos .feature en formato gherkin para especificar el comportamiento de nuestras user stories.
+
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
-
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 6a6bd51 | Add feature files for managing macetas via Bluetooth, UUID, and web interface | - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 4021a24 | Add feature files for subscription management scenarios in web and mobile applications| - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 5db13aa | Add feature files for user data management in web and mobile applications | - | 8/07/2025 |
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
+Para el alcance de este sprint se desarrollaron las vistas principales de la aplicación web y móvil.
+
+En la aplicación web se contempló el desarrollo del IAM, la vista de perfil, la págian principal donde está la interfaz de macetas y la interfaz de cada maceta. 
+
+<img src="/assets/img/capitulo-6/evidence/web-evidence-1.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-2.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-3.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-4.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-5.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-6.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-7.png" alt="Web Service Evidence" width="600px">
+
+Para la aplicación móvil se contempló el desarrollo inicial del IAM y la vista de perfil de usuario.
+
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-1.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-2.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-3.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-4.jpeg" alt="Web Service Evidence" width="400px">
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
+El servicio web fue documentado por la dependencia OpenAPI el cuál permite mostrar los endpoints en Swagguer UI. 
+
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-4.jpeg" alt="Web Service Evidence" width="600px">
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
+Se hizo el despliegue del cloud api en azure web service. 
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-4.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-5.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-6.jpeg" alt="Web Service Evidence" width="600px">
+
+En el caso de la aplicación web, se hizo el despliegue en firebase.
+
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-4.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-5.jpeg" alt="Web Service Evidence" width="600px">
+
 #### 6.2.2.9. Team Collaboration Insights during Sprint
+
+La colaboración del equipo en los produtos se llevó a cabo gracias a la organización del Aspects Leaders and Collaborators. Sin embargo, también delegamos tareas por afinidad y habilidades.
+
+Contribuciones y commits de la aplicación web:
+
+<img src="/assets/img/capitulo-6/evidence/web-app-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
+Contribuciones y commits del servicio web:
+<img src="/assets/img/capitulo-6/evidence/web-service-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
+
+Contribuciones y commits de la aplicación móvil:
+
+<img src="/assets/img/capitulo-6/evidence/mobile-app-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/mobile-app-commits.png" alt="Web Service Evidence" width="600px">
 
 ### 6.2.3. Sprint 3
 
@@ -994,27 +1071,31 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 		</tr>
          <tr>
 			<td colspan="1">Sprint 3 – 3 Review Summary </td>
-            <td colspan="1"></td>
+            <td colspan="1">Tras completar el tercer Sprint, el equipo identificó varios puntos de mejora como la gestión del tiempo y la responsabilidad en el cumplimiento de tareas. .</td>
 		</tr>
          <tr>
 			<td colspan="1">Sprint 3 – 3 Retrospective Summary </td>
-            <td colspan="1"></td>
+            <td colspan="1">El sprint 3 concluyó con el desarrollo de la aplicación edge y embedded. Además, se finalizó el desarrollo de los otros productos.</td>
 		</tr>
          <tr>
 			<td colspan="2">Sprint Goal & User Stories </td>
 		</tr>
          <tr>
 			<td>Sprint 3 Goal</td>
-            <td><strong>Nuestro enfoque es</strong>. <strong>Creemos que esto proporciona</strong> <strong>Esto se confirmará cuando</strong> 
+            <td><strong>Nuestro enfoque está en </strong> completar la solución integral de Macetech integrando la aplicación embebida y el componente Edge, que permiten la conexión directa entre los sensores físicos y el sistema inteligente de monitoreo y riego automático, además de finalizar los desarrollos pendientes de la app web, servicio web y app móvil.
+
+<strong>Creemos que esto proporciona</strong> la capacidad completa del sistema IoT para operar de manera autónoma y en tiempo real, fortaleciendo la propuesta de valor de Macetech como un sistema inteligente y automatizado de cuidado de plantas, y asegurando que todas las plataformas del ecosistema estén listas para su despliegue.
+
+<strong>Esto se confirma cuando</strong> el dispositivo embebido se comunica correctamente con el servicio web al detectar condiciones ambientales (temperatura, humedad, luz), ejecutando decisiones de riego a través del edge, y se registra una tasa de éxito del 90 % en las pruebas de integración entre hardware y software, junto con la validación del 100 % de los criterios de aceptación funcionales pendientes de los productos anteriores. 
 </td>
 		</tr>
         <tr>
 			<td colspan="1">Sprint 3 Velocity </td>
-            <td colspan="1"></td>
+            <td colspan="1">56</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1"></td>
+            <td colspan="1">107</td>
 		</tr>
 </tbody>
 </table>
@@ -1030,18 +1111,41 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 | Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
 | Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
 | Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
+
 #### 6.2.3.3. Sprint Backlog 3
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-3.png" alt="sprint backlog 3" width="600px">
+
 #### 6.2.3.4. Development Evidence for Sprint Review
+<img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 6a6bd51 | Add feature files for managing macetas via Bluetooth, UUID, and web interface | - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 4021a24 | Add feature files for subscription management scenarios in web and mobile applications| - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 5db13aa | Add feature files for user data management in web and mobile applications | - | 8/07/2025 |
+
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+<img src="/assets/img/capitulo-6/evidence/embedded-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/embedded-2.jpeg" alt="Web Service Evidence" width="600px">
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+<img src="/assets/img/capitulo-6/evidence/edge-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-2.jpeg" alt="Web Service Evidence" width="600px">
+
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
+<img src="/assets/img/capitulo-6/evidence/edge-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/embedded-contributos.png" alt="Web Service Evidence" width="600px">
 
 ### 6.3. Validation Interviews.
 
