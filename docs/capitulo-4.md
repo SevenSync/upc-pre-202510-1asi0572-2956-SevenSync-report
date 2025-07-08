@@ -621,226 +621,286 @@ Para cada Bounded Context, se propone una arquitectura modular basada en capas t
 
 En el contexto táctico, el Bounded Context IAM (Identity and Access Management) agrupa toda la funcionalidad relacionada con la identificación, autenticación y autorización de los usuarios de Macetech. Este módulo centraliza el ciclo de vida de las cuentas: desde el registro y recuperación de credenciales hasta la gestión segura de sesiones. Incluye la generación y validación de JSON Web Tokens (access y refresh tokens) para mantener la persistencia de las sesiones sin comprometer la seguridad. Además, IAM ejerce el control de permisos y roles, definiendo y verificando privilegios de usuario conforme a las políticas establecidas, y expone interfaces limpias para su consumo por otros bounded contexts, garantizando una fuente única de verdad en toda la plataforma.
 
-#### 4.2.1.1. Domain Layer
+#### 4.2.1.1. IAM Bounded Context Domain Layer
 
 En la capa de dominio de IAM se definen las entidades y objetos de valor esenciales junto con sus reglas de negocio. Además, en este nivel residen los Domain Services encargados de orquestar procesos complejos, garantizando la coherencia y la reutilización de toda la lógica central.
 
-## User
+**User**
+
+###### Tabla 17
+
+_Tabla de User en el Domain Layer de IAM_
 
 | Propiedad   | Valor                         |
 |-------------|-------------------------------|
 | **Nombre**  | User                          |
 | **Categoría** | Aggregate Root             |
-| **Propósito** | Almacenar datos del usuario |
+| **Propósito** | Representar a un usuario autenticado en el sistema, encapsulando su información personal, credenciales y estado. |
 
----
+###### Tabla 18
 
-### Atributos
+_Tabla de atributos de User en el Domain Layer de IAM_
 
 | Nombre       | Tipo de dato   | Visibilidad | Descripción                                  |
 |--------------|----------------|-------------|----------------------------------------------|
-| Id           | `unsigned long`| private     | Identificador irrepetible del usuario        |
-| FullName     | `FullName`     | private     | Nombres del usuario                          |
-| Email        | `Email`        | private     | Correo electrónico del usuario               |
-| Password     | `PasswordHash` | private     | Lógica de hashing/verificación de contraseña |
-| Role         | `List<Role>`   | private     | Rol del usuario                              |
-| CreatedDate  | `DateTime`     | private     | Fecha de creación del usuario                |
-| Status       | `Status` (enum)| private     | Estado del usuario                           |
+| Id           | `unsigned long`| private     | Identificador único del usuario        |
+| FullName     | `FullName`     | private     | 	Nombre completo del usuario                          |
+| Email        | `Email`        | private     | 	Correo electrónico asociado al usuario               |
+| Password     | `PasswordHash` | private     | Hash seguro de la contraseña |
+| Role         | `List<Role>`   | private     | Lista de roles asignados al usuario                              |
+| CreatedDate  | `DateTime`     | private     | 	Fecha de creación del registro del usuario               |
+| Status       | `Status` (enum)| private     | Estado actual del usuario (activo, suspendido, eliminado)                           |
 
----
+###### Tabla 19
 
-### Métodos
+_Tabla de métodos de User en el Domain Layer de IAM_
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                            |
 |----------------|-----------------|-------------|----------------------------------------|
-| ChangeName     | `void`          | public      | Cambiar nombre del usuario             |
-| ChangeEmail    | `void`          | public      | Cambiar correo electrónico del usuario |
-| ChangePassword | `void`          | public      | Cambiar contraseña del usuario         |
-| ChangeRole     | `void`          | public      | Cambiar el rol del usuario             |
-| Suspend        | `void`          | public      | Suspender al usuario                   |
-| Activate       | `void`          | public      | Reactiva al usuario                    |
-| Delete         | `void`          | public      | Marcar al usuario como eliminado       |
+| ChangeName     | `void`          | public      | 	Modifica el nombre completo del usuario             |
+| ChangeEmail    | `void`          | public      | 	Actualiza el correo electrónico del usuario |
+| ChangePassword | `void`          | public      | Cambia la contraseña del usuario         |
+| ChangeRole     | `void`          | public      | Asigna nuevos roles al usuario            |
+| Suspend        | `void`          | public      | 	Marca al usuario como suspendido                  |
+| Activate       | `void`          | public      | Reactiva a un usuario suspendido                    |
+| Delete         | `void`          | public      | Marca lógicamente al usuario como eliminado       |
 
-## UserId
+**UserId**
+
+###### Tabla 20
+
+_Tabla de UserId en el Domain Layer de IAM_
 
 | Propiedad    | Valor                                         |
 |--------------|-----------------------------------------------|
 | **Nombre**   | UserId                                        |
 | **Categoría**| Value Object                                  |
-| **Propósito**| Encapsular el identificador único de usuario  |
+| **Propósito**| 	Encapsular el identificador único de usuario  |
 
-### Atributos
+###### Tabla 21
+
+_Tabla de atributos de UserId en el Domain Layer de IAM_
 
 | Nombre | Tipo de dato | Visibilidad | Descripción                         |
 |--------|--------------|-------------|-------------------------------------|
-| Value  | `Long`       | private     | Identificador único de usuario      |
+| Value  | `Long`       | private     | Valor numérico del identificador      |
 
----
+**FullName**
 
-## FullName
+###### Tabla 22
+
+_Tabla de FullName en el Domain Layer de IAM_
 
 | Propiedad    | Valor                                   |
 |--------------|-----------------------------------------|
 | **Nombre**   | FullName                                |
 | **Categoría**| Value Object                            |
-| **Propósito**| Almacenar nombres de usuario            |
+| **Propósito**| 	Representar el nombre completo de un usuario            |
 
-### Atributos
+###### Tabla 23
+
+_Tabla de atributos de FullName en el Domain Layer de IAM_
 
 | Nombre     | Tipo de dato | Visibilidad | Descripción               |
 |------------|--------------|-------------|---------------------------|
 | name       | `string`     | private     | Nombre del usuario        |
 | LastNames  | `string`     | private     | Apellidos del usuario     |
 
----
+**Email**
 
-## Email
+###### Tabla 24
+
+_Tabla de Email en el Domain Layer de IAM_
 
 | Propiedad    | Valor                                  |
 |--------------|----------------------------------------|
 | **Nombre**   | Email                                  |
 | **Categoría**| Value Object                           |
-| **Propósito**| Almacenar el correo electrónico del usuario |
+| **Propósito**| 	Representar un correo electrónico válido |
 
-### Atributos
+###### Tabla 25
+
+_Tabla de atributos de Email en el Domain Layer de IAM_
 
 | Nombre | Tipo de dato | Visibilidad | Descripción                   |
 |--------|--------------|-------------|-------------------------------|
-| Email  | `string`     | private     | Correo electrónico del usuario |
+| Email  | `string`     | private     | Dirección de correo electrónico |
 
-## PasswordHash
+**PasswordHash**
+
+###### Tabla 26
+
+_Tabla de PasswordHash en el Domain Layer de IAM_
 
 | Propiedad    | Valor                                              |
 |--------------|----------------------------------------------------|
 | **Nombre**   | PasswordHash                                       |
 | **Categoría**| Value Object                                       |
-| **Propósito**| Almacenar el correo electrónico del usuario        |
+| **Propósito**| 	Almacenar la versión en hash de la contraseña del usuario        |
 
-### Atributos
+###### Tabla 27
+
+_Tabla de atributos de PasswordHash en el Domain Layer de IAM_
 
 | Nombre | Tipo de dato | Visibilidad | Descripción                         |
 |--------|--------------|-------------|-------------------------------------|
-| email  | `string`     | private     | Correo electrónico del usuario      |
+| email  | `string`     | private     | Hash de la contraseña del usuario      |
 
-### Métodos
+###### Tabla 28
+
+_Tabla de métodos de PasswordHash en el Domain Layer de IAM_
 
 | Nombre  | Tipo de retorno | Visibilidad | Descripción                                       |
 |---------|-----------------|-------------|---------------------------------------------------|
-| Matches | `bool`          | public      | Verificar si un texto coincide con este hash      |
+| Matches | `bool`          | public      | Verifica si una contraseña en texto plano coincide con el hash almacenado      |
 
----
+**UserFactory**
 
-## UserFactory
+###### Tabla 29
+
+_Tabla de UserFactory en el Domain Layer de IAM_
 
 | Propiedad    | Valor                                      |
 |--------------|--------------------------------------------|
 | **Nombre**   | UserFactory                                |
 | **Categoría**| Factory                                    |
-| **Propósito**| Crear nuevas instancias de `User`          |
+| **Propósito**| 	Crear instancias válidas de User          |
 
-### Métodos
+###### Tabla 30
+
+_Tabla de métodos de UserFactory en el Domain Layer de IAM_
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                      |
 |--------|-----------------|-------------|----------------------------------|
-| Create | `User`          | public      | Crear una instancia de `User`    |
+| Create | `User`          | public      | Construye una nueva instancia de User    |
 
-## IUserRepository
+**IUserRepository**
+
+###### Tabla 31
+
+_Tabla de IUserRepository en el Domain Layer de IAM_
 
 | Propiedad     | Valor                                     |
 |---------------|-------------------------------------------|
 | **Nombre**    | IUserRepository                           |
 | **Categoría** | Repository                                |
-| **Propósito** | Persistir y consultar entidades de User   |
+| **Propósito** | Interfaz para persistencia de usuarios   |
 
-### Métodos
+###### Tabla 32
+
+_Tabla de métodos de IUserRepository en el Domain Layer de IAM_
 
 | Nombre               | Tipo de retorno | Visibilidad | Descripción                                                   |
 |----------------------|-----------------|-------------|---------------------------------------------------------------|
-| GetByIdAsync         | `User?`         | public      | Obtener un usuario por identificador                          |
-| FindByEmailAsync     | `User?`         | public      | Buscar un usuario por correo                                  |
-| ExistsByEmailAsync   | `bool`          | public      | Verificar si hay un usuario con dicho email ya registrado     |
-| FindAllAsync         | `List<User>`    | public      | Lista de usuarios (para casos de administración)              |
-| SaveAsync            | `User`          | public      | Crear o actualizar un usuario; devuelve la entidad persistida |
-| DeleteLogicallyAsync | `bool`          | public      | Elimina lógicamente un usuario                                |
-| CountAsync           | `long`          | public      | Total de usuarios                                             |
+| GetByIdAsync         | `User?`         | public      | Obtiene un usuario por su identificador                         |
+| FindByEmailAsync     | `User?`         | public      | Busca un usuario por su correo electrónico                                  |
+| ExistsByEmailAsync   | `bool`          | public      | Verifica si un usuario ya está registrado con un email determinado     |
+| FindAllAsync         | `List<User>`    | public      | Recupera todos los usuarios registrados (uso administrativo)             |
+| SaveAsync            | `User`          | public      | Persiste o actualiza un usuario |
+| DeleteLogicallyAsync | `bool`          | public      | Marca un usuario como eliminado lógicamente                                |
+| CountAsync           | `long`          | public      | Devuelve el total de usuarios registrados                                             |
 
----
+**ISessionRepository**
 
-## ISessionRepository
+###### Tabla 33
+
+_Tabla de ISessionRepository en el Domain Layer de IAM_
 
 | Propiedad     | Valor                                       |
 |---------------|---------------------------------------------|
 | **Nombre**    | ISessionRepository                          |
 | **Categoría** | Repository                                  |
-| **Propósito** | Persistir y consultar entidades de User     |
+| **Propósito** | Interfaz para gestionar sesiones activas     |
 
-### Métodos
+###### Tabla 34
+
+_Tabla de métodos de ISessionRepository en el Domain Layer de IAM_
 
 | Nombre                  | Tipo de retorno   | Visibilidad | Descripción                                      |
 |-------------------------|-------------------|-------------|--------------------------------------------------|
-| FindByTokenId           | `SessionToken?`   | public      | Obtener un SessionToken por identificador        |
-| Store                   | `void`            | public      | Guardar un SessionToken activo                   |
-| Revoke                  | `void`            | public      | Revocar un token                                 |
-| RevokeAllSessionForUser | `void`            | public      | Revocar todas los SessionToken de un usuario     |
+| FindByTokenId           | `SessionToken?`   | public      | Recupera un token de sesión por su identificador        |
+| Store                   | `void`            | public      | Persiste un nuevo token de sesión                   |
+| Revoke                  | `void`            | public      | Revoca un token de sesión específico                                 |
+| RevokeAllSessionForUser | `void`            | public      | Revoca todas las sesiones activas de un usuario     |
 
-## Authenticator
+**Authenticator**
+
+###### Tabla 35
+
+_Tabla de Authenticator en el Domain Layer de IAM_
 
 | Propiedad     | Valor                                        |
 |---------------|----------------------------------------------|
 | **Nombre**    | Authenticator                                |
 | **Categoría** | Domain Service                               |
-| **Propósito** | Verificar las credenciales de un usuario     |
+| **Propósito** | Validar credenciales y generar tokens de sesión     |
 
-### Métodos
+###### Tabla 36
+
+_Tabla de métodos de Authenticator en el Domain Layer de IAM_
 
 | Nombre       | Tipo de retorno  | Visibilidad | Descripción                  |
 |--------------|------------------|-------------|------------------------------|
-| authenticate | `SessionToken`   | public      | Valida las credenciales de un usuario y devuelve un token de sesión |
+| authenticate | `SessionToken`   | public      | Autentica a un usuario y emite un token de sesión válido |
 
----
+**SessionToken**
 
-## SessionToken
+###### Tabla 37
+
+_Tabla de SessionToken en el Domain Layer de IAM_
 
 | Propiedad     | Valor                                          |
 |---------------|------------------------------------------------|
 | **Nombre**    | SessionToken                                   |
 | **Categoría** | Entity                                         |
-| **Propósito** | Representar una sesión activa de un usuario     |
+| **Propósito** | Representar una sesión autenticada activa     |
 
-### Atributos
+###### Tabla 38
+
+_Tabla de métodos de SessionToken en el Domain Layer de IAM_
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                                 |
 |-------------|--------------|-------------|---------------------------------------------|
 | TokenId     | `string`     | private     | Identificador único del token               |
-| userId      | `UserId`     | private     | Identificador del usuario                   |
+| userId      | `UserId`     | private     | Identificador del usuario asociado                   |
 | createdAt   | `DateTime`   | private     | Fecha y hora de creación del token          |
 | expiresAt   | `DateTime`   | private     | Fecha y hora de expiración del token        |
 | revoked     | `bool`       | private     | Indica si el token ha sido revocado         |
 
-#### 4.2.1.2. Interface Layer.
+#### 4.2.1.2. IAM Bounded Context Interface Layer
 
-## UserController
+En la capa de interfaz del Bounded Context de IAM se exponen los endpoints necesarios para interactuar con las funcionalidades de autenticación, autorización y gestión de usuarios. A través de controladores especializados, esta capa actúa como punto de entrada para solicitudes externas, facilitando la comunicación entre clientes (como aplicaciones web o móviles) y la lógica de negocio. Su diseño busca garantizar una separación clara de responsabilidades, manteniendo la simplicidad en la orquestación de comandos y consultas sin comprometer la seguridad ni la escalabilidad del sistema.
+
+**UserController**
+
+###### Tabla 39
+
+_Tabla de SessionToken en el Interface Layer de IAM_
 
 | Propiedad     | Valor                   |
 |---------------|-------------------------|
 | **Nombre**    | UserController          |
 | **Categoría** | Controller              |
-| **Propósito** | Gestionar usuarios      |
+| **Propósito** | Exponer endpoints para gestión de usuarios      |
 | **Ruta**      | `/api/users`            |
 
-### Métodos
+###### Tabla 40
+
+_Tabla de métodos de SessionToken en el Interface Layer de IAM_
 
 | Nombre         | Ruta                    | Acción                      | Handle                                           |
 |----------------|-------------------------|-----------------------------|--------------------------------------------------|
-| GetById        | `/{userId}`             | Obtiene información del usuario | `GetUserByIdQuery`                              |
+| GetById        | `/{userId}`             | Obtiene los datos de un usuario | `GetUserByIdQuery`                              |
 | ChangeName     | `/{userId}/name`        | Cambia `FullName`           | `ChangeUserNameCommand`                          |
 | ChangeEmail    | `/{userId}/email`       | Cambia `Email`              | `ChangeUserEmailCommand`                         |
 | ChangePassword | `/{userId}/password`    | Cambia `PasswordHash`       | `ChangeUserPasswordCommand`                      |
 | ChangeStatus   | `/{userId}/status`      | Cambia `Status`             | `ActivateUserCommand`, `SuspendUserCommand`, `DeleteUserCommand` |
 
----
+**AuthController**
 
-## AuthController
+###### Tabla 41
+
+_Tabla de AuthController en el Interface Layer de IAM_
 
 | Propiedad     | Valor                                                                 |
 |---------------|-----------------------------------------------------------------------|
@@ -849,7 +909,9 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Encargado de todo lo relacionado con registro y autenticación         |
 | **Ruta**      | `/api/auth`                                                           |
 
-### Métodos
+###### Tabla 42
+
+_Tabla de métodos de AuthController en el Interface Layer de IAM_
 
 | Nombre   | Ruta         | Acción                                    | Handle                     |
 |----------|--------------|-------------------------------------------|----------------------------|
@@ -858,9 +920,15 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | Refresh  | `/refresh`   | Renueva el acceso; nuevo token            | `~`                        |
 | Logout   | `/logout`    | Revoca el token activo                    | `RevokeSessionCommand`     |
 
-#### 4.2.1.3. Application Layer.
+#### 4.2.1.3. IAM Bounded Context Application Layer 
 
-## UserRegisterCommandHandler
+La capa de aplicación del Bounded Context de IAM coordina el flujo de trabajo entre la interfaz y el dominio, encapsulando la lógica de orquestación sin mezclar reglas de negocio. Aquí residen los Command Handlers, Query Handlers y Event Handlers, responsables de ejecutar operaciones como el registro, inicio o cierre de sesión, así como la gestión de eventos relacionados con la identidad de los usuarios. Esta capa asegura que las acciones se realicen de manera transaccional, manteniendo la integridad del sistema y delegando la lógica específica al dominio o a componentes de infraestructura según corresponda.
+
+**UserRegisterCommandHandler**
+
+###### Tabla 43
+
+_Tabla de UserRegisterCommandHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                        |
 |---------------|------------------------------|
@@ -869,9 +937,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Registrar un usuario         |
 | **Comando**   | RegisterUserCommand          |
 
----
+**UserLoginCommandHandler**
 
-## UserLoginCommandHandler
+###### Tabla 44
+
+_Tabla de UserLoginCommandHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                      |
 |---------------|----------------------------|
@@ -880,9 +950,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Iniciar sesión a un usuario|
 | **Comando**   | LoginUserCommand           |
 
----
+**UserLogoutCommandHandler**
 
-## UserLogoutCommandHandler
+###### Tabla 45
+
+_Tabla de UserLogoutCommandHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                       |
 |---------------|-----------------------------|
@@ -891,9 +963,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Cerrar sesión de un usuario |
 | **Comando**   | LogoutUserCommand           |
 
----
+**RegisteredUserEventHandler**
 
-## RegisteredUserEventHandler
+###### Tabla 46
+
+_Tabla de RegisteredUserEventHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                    |
 |---------------|--------------------------|
@@ -902,9 +976,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Gestionar el registro de un usuario |
 | **Evento**    | UserRegisteredEvent     |
 
----
+**UserLoggedInEventHandler**
 
-## UserLoggedInEventHandler
+###### Tabla 47
+
+_Tabla de UserLoggedInEventHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                        |
 |---------------|------------------------------|
@@ -913,9 +989,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Gestionar el registro de un usuario |
 | **Evento**    | UserLoggedInEvent           |
 
----
+**UserLoggedOutEventHandler**
 
-## UserLoggedOutEventHandler
+###### Tabla 48
+
+_Tabla de UserLoggedOutEventHandler en el Application Layer de IAM_
 
 | Propiedad     | Valor                               |
 |---------------|-------------------------------------|
@@ -924,10 +1002,17 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Gestionar el registro de un usuario |
 | **Evento**    | UserLoggedOutEvent                  |
 
-#### 4.2.1.4. Infrastructure Layer.
+#### 4.2.1.4. Infrastructure Layer
 
+La capa de infraestructura del Bounded Context de IAM actúa como el puente entre la lógica de negocio y los mecanismos técnicos de persistencia, comunicación y ejecución. En este nivel se implementan las dependencias necesarias para interactuar con bases de datos, proveedores de autenticación, mecanismos de almacenamiento de sesiones y otros servicios externos o compartidos.
 
-## UserRepository
+Esta capa concreta las abstracciones definidas en el dominio mediante implementaciones de repositorios. Su diseño busca mantener el desacoplamiento respecto a la lógica central, permitiendo la evolución tecnológica sin comprometer la integridad del dominio. Además, garantiza la eficiencia, seguridad y confiabilidad en la gestión de identidades, roles y sesiones, alineándose con los objetivos funcionales y no funcionales del sistema.
+
+**UserRepository**
+
+###### Tabla 49
+
+_Tabla de UserRepository en el Infraestructure Layer de IAM_
 
 | Propiedad     | Valor                                     |
 |---------------|-------------------------------------------|
@@ -936,9 +1021,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Persistir y consultar entidades de `User` |
 | **Interfaz**  | `IUserRepository`                        |
 
----
+**SessionRepository**
 
-## SessionRepository
+###### Tabla 50
+
+_Tabla de SessionRepository en el Infraestructure Layer de IAM_
 
 | Propiedad     | Valor                                       |
 |---------------|---------------------------------------------|
@@ -947,9 +1034,11 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Propósito** | Persistir y consultar entidades de `User`   |
 | **Interfaz**  | `ISessionRepository`                       |
 
----
+**AppDbContext**
 
-## AppDbContext
+###### Tabla 51
+
+_Tabla de AppDbContext en el Infraestructure Layer de IAM_
 
 | Propiedad     | Valor                                          |
 |---------------|------------------------------------------------|
@@ -957,41 +1046,72 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 | **Categoría** | ORM Context                                    |
 | **Propósito** | Punto central de acceso a la base de datos     |
 
-#### 4.2.1.5. IAM Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.1.5. IAM Bounded Context Software Architecture Component Level Diagrams
 
-El diagrama de componentes profundiza aún más en la arquitectura de un sistema, desglosando cada contenedor en sus componentes individuales. Este nivel de análisis permite una representación clara y detallada de la organización interna, así como de la comunicación entre estos componentes dentro de cada contenedor, facilitando una comprensión precisa de cómo interactúan y se interrelacionan para cumplir las funciones del sistema.
+En esta sección se presentan los diagramas de componentes correspondientes a los principales containers definidos dentro del Bounded Context de IAM. Estos diagramas permiten descomponer cada contenedor en sus componentes internos, identificando sus responsabilidades específicas, las tecnologías involucradas y las interacciones entre ellos. Esta representación es clave para comprender con mayor precisión cómo se estructura internamente cada parte del sistema, qué tareas cumple cada componente, y cómo colaboran para satisfacer los requerimientos funcionales y no funcionales del contexto de gestión de identidad y acceso.
 
-En el contexto de Roademics, el diagrama de componentes destaca los elementos clave del backend, con especial énfasis en el controlador principal, que actúa como el núcleo organizador. Este controlador es responsable de coordinar y orquestar las operaciones internas, gestionando los flujos de datos y asegurando la interacción eficiente con componentes especializados, tales como aquellos que manejan la interacción con APIs externas y las conexiones a la base de datos. Al ilustrar estas interacciones, se obtiene una visión detallada de cómo los diferentes componentes colaboran para mantener la integridad y funcionalidad del sistema.
+Tal como lo establece el C4 Model, el nivel de componentes es el cuarto nivel de detalle en la visualización de arquitecturas de software, y resulta útil tanto para desarrolladores como para arquitectos, al proporcionar una perspectiva clara de las decisiones de diseño que se toman dentro de cada contenedor (Brown, 2023). Este nivel permite una mayor trazabilidad entre la arquitectura lógica y la implementación concreta, reforzando así la mantenibilidad, escalabilidad y seguridad del sistema.
 
-La utilidad del diagrama de componentes se extiende más allá del simple entendimiento de la arquitectura. Al proporcionar una visualización clara de cómo se gestionan los datos dentro de la aplicación móvil, este diagrama resulta invaluable no solo para los desarrolladores, sino también para los equipos de mantenimiento y actualización del sistema. Al descomponer cada elemento en sus componentes individuales y mapear sus interacciones, el diagrama optimiza el proceso de diseño y desarrollo, facilitando un mantenimiento efectivo y minimizando la complejidad durante el ciclo de vida del software.
-
-Participación en Mobile:
+###### Figura 80
+*Participación del Bounded Context de IAM con la aplicación móvil mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-MobileComponent.png"></image>
 
-Participación en Web:
+###### Figura 81
+*Participación del Bounded Context de IAM con la aplicación web mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-WebComponent.png"></image>
 
-Participación en Cloud API:
+###### Figura 82
+*Participación del Bounded Context de IAM con la Cloud API mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-IAM-APIComponent.png"></image>
 
-#### 4.2.1.6. IAM Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.1.6. IAM Bounded Context Software Architecture Code Level Diagrams
 
-##### 4.2.1.6.1. IAM Bounded Context Domain Layer Class Diagrams.
+En esta sección se profundiza en los aspectos internos de implementación del Bounded Context de IAM, presentando diagramas que permiten visualizar con mayor detalle la estructura y composición de sus componentes clave. A través de representaciones estructuradas, como los diagramas de clases de la capa de dominio y el diagrama de base de datos, se facilita la comprensión técnica de cómo se organizan e interrelacionan los elementos dentro del sistema.
+
+Estos recursos visuales permiten identificar entidades, objetos de valor, relaciones, atributos, operaciones, estructuras persistentes y sus vínculos, sirviendo como puente entre el diseño arquitectónico de alto nivel y la implementación concreta. Esta aproximación asegura que las decisiones tomadas a nivel táctico se traduzcan en estructuras sólidas, coherentes y alineadas con los objetivos del dominio, aportando claridad al proceso de desarrollo y mantenimiento del sistema.
+
+##### 4.2.1.6.1. IAM Bounded Context Domain Layer Class Diagrams
+
+En esta subsección se presenta el diagrama de clases UML correspondiente al Domain Layer del bounded context de IAM. Esta representación estructurada permite visualizar con claridad las clases, interfaces y enumeraciones que conforman la lógica de dominio, así como sus relaciones fundamentales. El nivel de detalle abarca la definición de atributos y métodos para cada clase, especificando su tipo de dato, visibilidad y su rol dentro del modelo.
+
+Asimismo, se incluyen las relaciones entre elementos del dominio, calificadas con nombres descriptivos, direccionalidad —cuando corresponde— y multiplicidad para reflejar con precisión el grado de asociación entre las entidades. Esta vista detallada del diseño táctico favorece la comprensión compartida del modelo conceptual, sirviendo como puente entre el análisis del dominio y su implementación efectiva dentro de la arquitectura de software.
+
+###### Figura 83
+*Diagrama de clases de la capa de dominio del Bounded Context de IAM*
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/class-diagram.png"></image>
 
-##### 4.2.1.6.2. IAM Bounded Context Database Design Diagram.
+##### 4.2.1.6.2. IAM Bounded Context Database Design Diagram
+
+En esta subsección se presenta el diagrama de clases UML correspondiente al Domain Layer del bounded context de IAM. Esta representación permite visualizar de forma estructurada y precisa las clases, interfaces y enumeraciones que conforman la lógica de dominio, junto con sus atributos, métodos y responsabilidades específicas dentro del modelo.
+
+El diagrama incluye detalles esenciales como el tipo de dato y la visibilidad de cada miembro, así como las relaciones entre los distintos elementos del dominio. Estas relaciones están calificadas con nombres descriptivos, indican la dirección cuando aplica, e incorporan multiplicidades para representar con fidelidad la cardinalidad de cada asociación.
+
+Esta visualización detallada contribuye significativamente a la comprensión compartida del modelo conceptual, funcionando como un nexo clave entre el análisis de dominio y su posterior implementación en la arquitectura del sistema.
+
+###### Figura 84
+*Diagrama de base de datos del Bounded Context de IAM*
 
 <image src="../assets/img/capitulo-4/bounded-context-iam/database-diagram.png"></image>
 
 ### 4.2.2. Bounded Context: Profile and Preferences
 
-#### 4.2.2.1. Domain Layer.
+En el contexto táctico, el Bounded Context Profiles and Preferences concentra toda la funcionalidad relacionada con la gestión personalizada de los perfiles de usuario en la plataforma Macetech. Este módulo se encarga de almacenar, actualizar y exponer información detallada sobre las preferencias individuales, hábitos de uso, configuraciones personalizadas y características del entorno del usuario. Entre sus responsabilidades se incluyen la edición de datos personales no sensibles, la gestión de configuraciones del dispositivo vinculado (como idioma, notificaciones o zonas horarias), y la persistencia de hábitos o preferencias en el cuidado de plantas.
 
-## Profile
+Profiles and Preferences permite adaptar la experiencia digital a las necesidades particulares de cada usuario, y lo hace mediante una interfaz limpia e interoperable, disponible para otros bounded contexts. Al ofrecer un punto centralizado para el perfilado y la personalización, garantiza consistencia, reutilización y separación de preocupaciones dentro de la arquitectura de la solución.
+
+#### 4.2.2.1. Profile and Preferences Bounded Context Domain Layer
+
+En la capa de dominio de Profiles and Preferences se modelan las entidades, objetos de valor y reglas de negocio fundamentales asociadas a la gestión de perfiles y preferencias personalizadas. Esta capa encapsula la lógica central vinculada al almacenamiento, validación y actualización de datos relacionados con la configuración del usuario, sus preferencias de uso y hábitos de interacción con la plataforma. Asimismo, se definen los Domain Services responsables de coordinar operaciones complejas que involucran múltiples objetos, asegurando la coherencia del comportamiento del sistema y promoviendo su reutilización en otros contextos.
+
+**Profile**
+
+###### Tabla 52
+
+_Tabla de Profile en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                              |
 | ------------- | ------------------------------------------------------------------ |
@@ -999,7 +1119,9 @@ Participación en Cloud API:
 | **Categoría** | Aggregate Root                                                     |
 | **Propósito** | Agrupar y gestionar los datos de perfil y personales de un usuario |
 
-### Atributos
+###### Tabla 53
+
+_Tabla de atributos de Profile en el Domain Layer de Profile and Preferences_
 
 | Nombre           | Tipo de dato    | Visibilidad | Descripción                                         |
 | ---------------- | --------------- | ----------- | --------------------------------------------------- |
@@ -1013,7 +1135,9 @@ Participación en Cloud API:
 | createdAt        | `DateTime`      | private     | Fecha de creación del perfil                        |
 | updatedAt        | `DateTime`      | private     | Fecha de la última actualización del perfil         |
 
-### Métodos
+###### Tabla 54
+
+_Tabla de métodos de Profile en el Domain Layer de Profile and Preferences_
 
 | Nombre                  | Tipo de retorno | Visibilidad | Descripción                                             |
 | ----------------------- | --------------- | ----------- | ------------------------------------------------------- |
@@ -1024,7 +1148,11 @@ Participación en Cloud API:
 | toggleEmailNotification | `void`          | public      | Activa/desactiva `notifyUsingEmail` y marca `updatedAt` |
 | markUpdated             | `void`          | private     | Actualiza internamente el campo `updatedAt`             |
 
-## FullName
+**FullName**
+
+###### Tabla 55
+
+_Tabla de FullName en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                    |
 | ------------- | ---------------------------------------- |
@@ -1032,20 +1160,28 @@ Participación en Cloud API:
 | **Categoría** | Value Object                             |
 | **Propósito** | Encapsular nombre y apellido del usuario |
 
-### Atributos
+###### Tabla 56
+
+_Tabla de atributos de FullName en el Domain Layer de Profile and Preferences_
 
 | Nombre   | Tipo de dato | Visibilidad | Descripción           |
 | -------- | ------------ | ----------- | --------------------- |
 | name     | `String`     | private     | Nombre propio         |
 | lastName | `String`     | private     | Apellidos del usuario |
 
-### Métodos
+###### Tabla 57
+
+_Tabla de métodos de FullName en el Domain Layer de Profile and Preferences_
 
 | Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
 | --------------- | --------------- | ----------- | --------------------------------------- |
 | fullName        | `String`        | public      | Retorna `name + " " + lastName`         |
 
-## PhoneNumber
+**PhoneNumber**
+
+###### Tabla 58
+
+_Tabla de PhoneNumber en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                     |
 | ------------- | ----------------------------------------- |
@@ -1053,20 +1189,28 @@ Participación en Cloud API:
 | **Categoría** | Value Object                              |
 | **Propósito** | Validar y almacenar un número de teléfono |
 
-### Atributos
+###### Tabla 59
+
+_Tabla de atributos de PhoneNumber en el Domain Layer de Profile and Preferences_
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                |
 | ----------- | ------------ | ----------- | -------------------------- |
 | countryCode | `String`     | private     | Código de país (ej. "+51") |
 | number      | `String`     | private     | Número local del teléfono  |
 
-### Métodos
+###### Tabla 60
+
+_Tabla de métodos de PhoneNumber en el Domain Layer de Profile and Preferences_
 
 | Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
 | --------------- | --------------- | ----------- | --------------------------------------- |
 | formatted       | `String`        | public      | Devuelve `countryCode + number`         |
 
-## StreetAddress
+**StreetAddress**
+
+###### Tabla 61
+
+_Tabla de StreetAddress en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                  |
 | ------------- | -------------------------------------- |
@@ -1074,7 +1218,9 @@ Participación en Cloud API:
 | **Categoría** | Value Object                           |
 | **Propósito** | Almacenar datos de la dirección física |
 
-### Atributos
+###### Tabla 62
+
+_Tabla de atributos de StreetAddress en el Domain Layer de Profile and Preferences_
 
 | Nombre       | Tipo de dato | Visibilidad | Descripción                        |
 | ------------ | ------------ | ----------- | ---------------------------------- |
@@ -1084,13 +1230,19 @@ Participación en Cloud API:
 | postalCode   | `String`     | private     | Código postal                      |
 | country      | `String`     | private     | País                               |
 
-### Métodos
+###### Tabla 63
+
+_Tabla de métodos de StreetAddress en el Domain Layer de Profile and Preferences_
 
 | Nombre          | Tipo de retorno | Visibilidad | Descripción                                               |
 | --------------- | --------------- | ----------- | --------------------------------------------------------- |
 | fullAddress     | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
 
-## ProfileRole
+**ProfileRole**
+
+###### Tabla 64
+
+_Tabla de ProfileRole en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                   |
 | ------------- | --------------------------------------- |
@@ -1098,14 +1250,20 @@ Participación en Cloud API:
 | **Categoría** | Enum                                    |
 | **Propósito** | Definir los posibles roles de un perfil |
 
-### Valores
+###### Tabla 65
+
+_Tabla de valores de ProfileRole en el Domain Layer de Profile and Preferences_
 
 | Valor    | Descripción                 |
 | -------- | --------------------------- |
 | Amateur  | Perfil de usuario amateur   |
 | Gardener | Perfil de usuario jardinero |
 
-## ProfileFactory
+**ProfileFactory**
+
+###### Tabla 66
+
+_Tabla de ProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                     |
 | ------------- | ----------------------------------------- |
@@ -1113,7 +1271,9 @@ Participación en Cloud API:
 | **Categoría** | Factory                                   |
 | **Propósito** | Construir instancias válidas de `Profile` |
 
-### Métodos
+###### Tabla 67
+
+_Tabla de métodos de ProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                                                                                       |
 | ------ | --------------- | ----------- | ------------------------------------------------------------------------------------------------- |
@@ -1121,13 +1281,19 @@ Participación en Cloud API:
 
 ## IProfileRepository
 
+###### Tabla 68
+
+_Tabla de IProfileFactory en el Domain Layer de Profile and Preferences_
+
 | Propiedad     | Valor                                     |
 | ------------- | ----------------------------------------- |
 | **Nombre**    | IProfileRepository                        |
 | **Categoría** | Repository                                |
 | **Propósito** | Persistir y recuperar entidades `Profile` |
 
-### Métodos
+###### Tabla 69
+
+_Tabla de métodos de IProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Nombre        | Tipo de retorno | Visibilidad | Descripción                                       |
 | ------------- | --------------- | ----------- | ------------------------------------------------- |
@@ -1137,9 +1303,15 @@ Participación en Cloud API:
 | update        | `Unit`          | public      | Actualiza un `Profile` existente                  |
 | delete        | `Unit`          | public      | Elimina lógicamente un `Profile`                  |
 
-#### 4.2.2.2. Interface Layer.
+#### 4.2.2.2. Profile and Preferences Bounded Context Interface Layer
 
-## ProfileController
+En la capa de interfaz del Bounded Context de Profiles and Preferences se exponen los endpoints necesarios para gestionar la información de perfil de usuario y sus preferencias personalizadas dentro de la plataforma Macetech. A través de controladores dedicados, esta capa actúa como intermediaria entre las aplicaciones cliente y la lógica de negocio, permitiendo operaciones como la visualización, edición y actualización de datos personales y configuraciones. Su diseño promueve una arquitectura desacoplada y segura, enfocada en mantener una experiencia fluida y adaptable para el usuario sin comprometer la coherencia del sistema.
+
+**ProfileController**
+
+###### Tabla 70
+
+_Tabla de ProfileController en el Interface Layer de Profile and Preferences_
 
 | Propiedad     | Valor                             |
 | ------------- | --------------------------------- |
@@ -1148,7 +1320,9 @@ Participación en Cloud API:
 | **Propósito** | Exponer servicios REST de Profile |
 | **Ruta**      | `/api/profile/`                   |
 
-### Métodos
+###### Tabla 71
+
+_Tabla de métodos de ProfileController en el Interface Layer de Profile and Preferences_
 
 | Nombre                   | Ruta                 | Acción                     | Handle                            |
 | ------------------------ | -------------------- | -------------------------- | --------------------------------- |
@@ -1158,9 +1332,15 @@ Participación en Cloud API:
 | createProfile            | `/create`            | Crear nuevo perfil         | `CreateProfileCommand`            |
 | updateProfilePreferences | `/preferences/{uid}` | Actualizar preferencias    | `UpdateProfilePreferencesCommand` |
 
-#### 4.2.2.3. Application Layer.
+#### 4.2.2.3. Profile and Preferences Bounded Context Application Layer
 
-## GetProfileQueryHandler
+La capa de aplicación del Bounded Context de Profiles and Preferences coordina el flujo de trabajo entre la interfaz y el dominio, encapsulando la lógica de orquestación sin incorporar reglas de negocio. En esta capa se implementan los Command Handlers, Query Handlers y Event Handlers responsables de operaciones como la edición de información personal, actualización de preferencias del usuario y notificación de cambios relevantes. Su rol es garantizar que dichas acciones se ejecuten de forma consistente y transaccional, delegando la lógica central al dominio y apoyándose en la infraestructura cuando sea necesario, manteniendo así la cohesión funcional del sistema.
+
+**GetProfileQueryHandler**
+
+###### Tabla 72
+
+_Tabla de ProfileQueryHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                    |
 | ------------- | ---------------------------------------- |
@@ -1168,7 +1348,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                            |
 | **Propósito** | Manejar la lógica para `GetProfileQuery` |
 
-## CreateProfileCommandHandler
+**CreateProfileCommandHandler**
+
+###### Tabla 73
+
+_Tabla de CreateProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                      |
 | ------------- | ---------------------------------------------------------- |
@@ -1176,7 +1360,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                            |
 | **Propósito** | Ejecutar la creación de un perfil (`CreateProfileCommand`) |
 
-## UpdateProfileCommandHandler
+**UpdateProfileCommandHandler**
+
+###### Tabla 74
+
+_Tabla de UpdateProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                           |
 | ------------- | --------------------------------------------------------------- |
@@ -1184,7 +1372,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                 |
 | **Propósito** | Ejecutar la actualización de un perfil (`UpdateProfileCommand`) |
 
-## DeleteProfileCommandHandler
+**DeleteProfileCommandHandler**
+
+###### Tabla 75
+
+_Tabla de DeleteProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                         |
 | ------------- | ------------------------------------------------------------- |
@@ -1192,7 +1384,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                               |
 | **Propósito** | Ejecutar la eliminación de un perfil (`DeleteProfileCommand`) |
 
-## UpdateProfilePreferencesCommandHandler
+**UpdateProfilePreferencesCommandHandler**
+
+###### Tabla 76
+
+_Tabla de UpdateProfilePreferencesCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                                                   |
 | ------------- | --------------------------------------------------------------------------------------- |
@@ -1200,7 +1396,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                                         |
 | **Propósito** | Ejecutar la actualización de preferencias de perfil (`UpdateProfilePreferencesCommand`) |
 
-## CreatedProfileEventHandler
+**CreatedProfileEventHandler**
+
+###### Tabla 77
+
+_Tabla de CreatedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
 | ------------- | ------------------------------------------------------- |
@@ -1208,7 +1408,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileCreatedEvent` |
 
-## UpdatedProfileEventHandler
+**UpdatedProfileEventHandler**
+
+###### Tabla 78
+
+_Tabla de UpdatedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
 | ------------- | ------------------------------------------------------- |
@@ -1216,7 +1420,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileUpdatedEvent` |
 
-## DeletedProfileEventHandler
+**DeletedProfileEventHandler**
+
+###### Tabla 79
+
+_Tabla de DeletedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
 | ------------- | ------------------------------------------------------- |
@@ -1224,9 +1432,17 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileDeletedEvent` |
 
-#### 4.2.2.4. Infrastructure Layer.
+#### 4.2.2.4. Profile and Preferences Bounded Context Infrastructure Layer
 
-## ProfileRepository
+La capa de infraestructura del Bounded Context de Profile and Preferences sirve como enlace entre la lógica de negocio y los mecanismos técnicos que permiten la persistencia y comunicación con recursos externos. En este nivel se implementan las dependencias necesarias para interactuar con bases de datos, servicios de almacenamiento y otros módulos relevantes que permiten gestionar la información de perfil y preferencias de los usuarios.
+
+Esta capa materializa las abstracciones definidas en el dominio mediante la implementación de repositorios y adaptadores técnicos. Su diseño favorece el desacoplamiento de la lógica central, facilitando la evolución tecnológica sin afectar la integridad del modelo. Asimismo, asegura una gestión consistente, eficiente y segura de los datos personales, configuraciones y preferencias del usuario, en línea con los objetivos funcionales y no funcionales del sistema.
+
+**ProfileRepository**
+
+###### Tabla 80
+
+_Tabla de ProfileRepository en el Infraestructure Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                  |
 | ------------- | ------------------------------------------------------ |
@@ -1235,36 +1451,72 @@ Participación en Cloud API:
 | **Propósito** | Implementar `IProfileRepository` usando ORM relacional |
 | **Interfaz**  | `IProfileRepository`                                   |
 
+#### 4.2.2.5. Profile and Preferences Bounded Context Software Architecture Component Level Diagrams
 
-#### 4.2.2.5. Profile and Preferences Bounded Context Software Architecture Component Level Diagrams.
+En esta sección se presentan los diagramas de componentes correspondientes a los principales containers definidos dentro del Bounded Context de Profiles and Preferences. Estos diagramas permiten descomponer cada contenedor en sus componentes internos, identificando sus responsabilidades específicas, las tecnologías utilizadas y las interacciones entre ellos. Esta representación es fundamental para comprender en detalle cómo se organiza internamente cada parte del sistema, qué funcionalidades asume cada componente, y de qué manera colaboran para gestionar la información personal, preferencias y configuración personalizada del usuario dentro de Macetech.
 
-Participación en Mobile:
+Tal como establece el C4 Model, el nivel de componentes representa el cuarto nivel de abstracción en la visualización de arquitecturas de software, y resulta especialmente útil para desarrolladores y arquitectos al ofrecer una visión clara de las decisiones de diseño adoptadas en cada contenedor (Brown, 2023). Este nivel facilita la trazabilidad entre los elementos de alto nivel y su implementación específica, fortaleciendo la mantenibilidad, extensibilidad y coherencia del sistema.
+
+###### Figura 85
+*Participación del Bounded Context de Profile and Preferences con la aplicación móvil mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-MobileComponent.png"></image>
 
-Participación en Web:
+###### Figura 86
+*Participación del Bounded Context de Profile and Preferences con la aplicación web mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-WebComponent.png"></image>
 
-Participación en Cloud API:
+###### Figura 87
+*Participación del Bounded Context de Profile and Preferences con la Cloud API mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Profile-APIComponent.png"></image>
 
+#### 4.2.2.6. Profile and Preferences Bounded Context Software Architecture Code Level Diagrams
 
-#### 4.2.2.6. Profile and Preferences Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se profundiza en los aspectos internos de implementación del Bounded Context de Profiles and Preferences, presentando diagramas que permiten visualizar con mayor precisión la estructura y composición de sus componentes clave. A través de representaciones estructuradas —como los diagramas de clases de la capa de dominio y el diagrama de base de datos— se facilita la comprensión técnica de cómo se organizan e interrelacionan los elementos del sistema que gestionan la configuración del perfil de usuario, sus intereses, preferencias y datos personales.
 
-##### 4.2.2.6.1. Profile and Preferences Bounded Context Domain Layer Class Diagrams.
+Estos recursos visuales permiten identificar entidades, objetos de valor, relaciones, atributos, operaciones, estructuras persistentes y sus vínculos, sirviendo como puente entre el diseño arquitectónico y la implementación concreta. Esta aproximación garantiza que las decisiones tomadas a nivel táctico se materialicen en estructuras coherentes, sólidas y alineadas con los objetivos funcionales del contexto, brindando claridad y sostenibilidad al proceso de desarrollo y evolución del sistema.
+
+##### 4.2.2.6.1. Profile and Preferences Bounded Context Domain Layer Class Diagrams
+
+En esta subsección se presenta el diagrama de clases UML correspondiente al Domain Layer del bounded context de Profiles and Preferences. Esta representación estructurada permite visualizar con claridad las clases, interfaces y enumeraciones que componen la lógica de dominio relacionada con la gestión del perfil del usuario, sus intereses, configuraciones personalizadas y preferencias de interacción dentro del ecosistema de Macetech.
+
+El nivel de detalle incluye la definición de atributos y métodos para cada clase, especificando sus tipos de datos, visibilidad y rol dentro del modelo, así como las relaciones fundamentales entre los distintos elementos del dominio. Estas relaciones se representan con nombres descriptivos, direccionalidad, cuando aplica, y multiplicidad, lo que permite reflejar con precisión el grado de asociación entre las entidades. Esta vista detallada facilita una comprensión común del modelo conceptual, sirviendo como puente entre el diseño del dominio y su posterior implementación técnica.
+
+###### Figura 88
+*Diagrama de clases de la capa de dominio del Bounded Context de Profile and Preferences*
 
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/class-diagram-profile-and-personal-data.png"></image>
 
-##### 4.2.2.6.2. Profile and Preferences Bounded Context Database Design Diagram.
+##### 4.2.2.6.2. Profile and Preferences Bounded Context Database Design Diagram
+
+En esta subsección se presenta el diagrama de base de datos correspondiente al bounded context de Profiles and Preferences. Esta representación estructurada permite visualizar con claridad las entidades persistentes asociadas a la gestión de perfiles, intereses y preferencias del usuario, junto con sus atributos clave, tipos de datos, claves primarias y foráneas, y restricciones asociadas.
+
+El diagrama refleja las relaciones entre las distintas tablas o entidades, indicando la dirección de las asociaciones, su naturaleza (uno a uno, uno a muchos, muchos a muchos) y la cardinalidad, lo que facilita el entendimiento de la estructura lógica que respalda el almacenamiento y la recuperación eficiente de datos dentro de este contexto.
+
+Esta visualización resulta esencial para asegurar la coherencia entre el modelo conceptual y su implementación en la capa de persistencia, contribuyendo a una arquitectura sólida, escalable y alineada con los requerimientos funcionales y no funcionales del sistema.
+
+###### Figura 89
+*Diagrama de base de datos del Bounded Context de Profile and Preferences*
+
 <image src="../assets/img/capitulo-4/bounded-context-profile-and-personal-data/database-diagram-profile-and-personal-data.png"></image>
 
 ### 4.2.3. Bounded Context: Asset & Resource Management
 
-#### 4.2.3.1. Domain Layer.
+En el contexto táctico, el Bounded Context Asset & Resource Management agrupa toda la funcionalidad vinculada a la administración de activos físicos y recursos operativos dentro del ecosistema Macetech. Este módulo se encarga del registro, monitoreo y mantenimiento de los dispositivos IoT desplegados (como sensores de humedad, temperatura, pH, entre otros), permitiendo llevar un control detallado de su estado, ubicación, historial de intervenciones y condiciones operativas.
 
-## Pot
+Asset & Resource Management centraliza el ciclo de vida de cada dispositivo, desde su activación inicial hasta su posible retiro o sustitución, asegurando trazabilidad completa y continuidad en la gestión técnica. Asimismo, incorpora mecanismos para la asignación de recursos a usuarios o entornos específicos, facilitando una administración eficiente y contextualizada. Este bounded context expone interfaces estandarizadas para permitir su integración con otros contextos funcionales, y actúa como fuente confiable de verdad sobre los activos tecnológicos desplegados en la plataforma.
+
+#### 4.2.3.1. Asset & Resource Management Bounded Context Domain Layer
+
+En la capa de dominio de Asset & Resource Management se definen las entidades y objetos de valor fundamentales relacionados con los activos físicos y digitales gestionados por Macetech, como sensores, macetas inteligentes y otros dispositivos IoT. Esta capa encapsula las reglas de negocio que regulan su ciclo de vida: desde el registro, asignación y mantenimiento, hasta su retiro o reemplazo. Además, en este nivel se ubican los Domain Services encargados de orquestar procesos complejos, como la vinculación entre usuarios y dispositivos o la planificación de recursos, asegurando coherencia, integridad y reutilización de la lógica central.
+
+**Pot**
+
+###### Tabla 81
+
+_Tabla de Pot en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                          |
 | ------------- | -------------------------------------------------------------- |
@@ -1272,7 +1524,9 @@ Participación en Cloud API:
 | **Categoría** | Aggregate Root                                                 |
 | **Propósito** | Representar una maceta con su ciclo de vida, estado y sensores |
 
-### Atributos
+###### Tabla 82
+
+_Tabla de atributos de Pot en el Domain Layer de Asset & Resource Management_
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                             |
 | ----------- | ------------ | ----------- | --------------------------------------- |
@@ -1284,7 +1538,9 @@ Participación en Cloud API:
 | temperature | `Sensor`     | private     | Sensor de temperatura asociado          |
 | water       | `Sensor`     | private     | Sensor de nivel de agua asociado        |
 
-### Métodos
+###### Tabla 83
+
+_Tabla de métodos de Pot en el Domain Layer de Asset & Resource Management_
 
 | Nombre            | Tipo de retorno | Visibilidad | Descripción                                    |
 | ----------------- | --------------- | ----------- | ---------------------------------------------- |
@@ -1294,7 +1550,11 @@ Participación en Cloud API:
 | recordTemperature | `void`          | public      | Actualiza el valor del sensor de `temperature` |
 | recordWaterLevel  | `void`          | public      | Actualiza el valor del sensor de `water`       |
 
-## Group
+**Group**
+
+###### Tabla 84
+
+_Tabla de Group en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                       |
 | ------------- | ------------------------------------------- |
@@ -1302,7 +1562,9 @@ Participación en Cloud API:
 | **Categoría** | Entity                                      |
 | **Propósito** | Agrupar varias macetas bajo un nombre común |
 
-### Atributos
+###### Tabla 85
+
+_Tabla de atributos de Group en el Domain Layer de Asset & Resource Management_
 
 | Nombre  | Tipo de dato | Visibilidad | Descripción                                     |
 | ------- | ------------ | ----------- | ----------------------------------------------- |
@@ -1311,7 +1573,9 @@ Participación en Cloud API:
 | userUid | `String`     | private     | Identificador del usuario que creó el grupo     |
 | potUid  | `List<Long>` | private     | Lista de IDs de macetas pertenecientes al grupo |
 
-### Métodos
+###### Tabla 86
+
+_Tabla de métodos de Group en el Domain Layer de Asset & Resource Management_
 
 | Nombre      | Tipo de retorno | Visibilidad | Descripción                         |
 | ----------- | --------------- | ----------- | ----------------------------------- |
@@ -1319,7 +1583,11 @@ Participación en Cloud API:
 | addPot      | `void`          | public      | Añade un ID de maceta a `potUid`    |
 | removePot   | `void`          | public      | Elimina un ID de maceta de `potUid` |
 
-## Sensor
+**Sensor**
+
+###### Tabla 87
+
+_Tabla de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                               |
 | ------------- | --------------------------------------------------- |
@@ -1327,7 +1595,9 @@ Participación en Cloud API:
 | **Categoría** | Value Object                                        |
 | **Propósito** | Representar la lectura y estado de un sensor físico |
 
-### Atributos
+###### Tabla 88
+
+_Tabla de atributos de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Nombre           | Tipo de dato | Visibilidad | Descripción                                               |
 | ---------------- | ------------ | ----------- | --------------------------------------------------------- |
@@ -1335,7 +1605,9 @@ Participación en Cloud API:
 | isMalfunctioning | `Boolean`    | private     | Indica si el sensor está fallando                         |
 | measurementType  | `String`     | private     | Tipo de medición (ej. "humidity", "temperature", "water") |
 
-### Métodos
+###### Tabla 89
+
+_Tabla de métodos de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Nombre           | Tipo de retorno | Visibilidad | Descripción                             |
 | ---------------- | --------------- | ----------- | --------------------------------------- |
@@ -1343,7 +1615,11 @@ Participación en Cloud API:
 | markMalfunction  | `void`          | public      | Marca el sensor como en fallo           |
 | clearMalfunction | `void`          | public      | Restablece `isMalfunctioning` a `false` |
 
-## PotStatus
+**PotStatus**
+
+###### Tabla 90
+
+_Tabla de PotStatus en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                      |
 | ------------- | ------------------------------------------ |
@@ -1351,7 +1627,9 @@ Participación en Cloud API:
 | **Categoría** | Enum                                       |
 | **Propósito** | Definir los posibles estados de una maceta |
 
-### Valores
+###### Tabla 91
+
+_Tabla de valores de PotStatus en el Domain Layer de Asset & Resource Management_
 
 | Valor    | Descripción |
 | -------- | ----------- |
@@ -1360,7 +1638,11 @@ Participación en Cloud API:
 | Inactive | Inactiva    |
 | Broken   | Dañada      |
 
-## PotFactory
+**PotFactory**
+
+###### Tabla 92
+
+_Tabla de PotFactory en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                    |
 | ------------- | ---------------------------------------- |
@@ -1368,13 +1650,19 @@ Participación en Cloud API:
 | **Categoría** | Factory                                  |
 | **Propósito** | Crear nuevas instancias válidas de `Pot` |
 
-### Métodos
+###### Tabla 93
+
+_Tabla de métodos de PotFactory en el Domain Layer de Asset & Resource Management_
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                                                                         |
 | ------ | --------------- | ----------- | ----------------------------------------------------------------------------------- |
 | create | `Pot`           | public      | Construye un `Pot` inicializando `id`, `userUid`, `tag`, `status` y sensores vacíos |
 
-## IPotRepository
+**IPotRepository**
+
+###### Tabla 94
+
+_Tabla de IPotRepository en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                 |
 | ------------- | ------------------------------------- |
@@ -1382,7 +1670,9 @@ Participación en Cloud API:
 | **Categoría** | Repository                            |
 | **Propósito** | Persistir y recuperar entidades `Pot` |
 
-### Métodos
+###### Tabla 95
+
+_Tabla de métodos de IPotRepository en el Domain Layer de Asset & Resource Management_
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                     |
 | -------------- | --------------- | ----------- | ----------------------------------------------- |
@@ -1393,7 +1683,11 @@ Participación en Cloud API:
 | update         | `Unit`          | public      | Actualiza un `Pot` existente                    |
 | create         | `Unit`          | public      | Persiste un nuevo `Pot`                         |
 
-## IGroupRepository
+**IGroupRepository**
+
+###### Tabla 96
+
+_Tabla de IGroupRepository en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                   |
 | ------------- | --------------------------------------- |
@@ -1401,7 +1695,9 @@ Participación en Cloud API:
 | **Categoría** | Repository                              |
 | **Propósito** | Persistir y recuperar entidades `Group` |
 
-## Métodos
+###### Tabla 97
+
+_Tabla de métodos de IGroupRepository en el Domain Layer de Asset & Resource Management_
 
 | Nombre        | Tipo de retorno | Visibilidad | Descripción                                        |
 | ------------- | --------------- | ----------- | -------------------------------------------------- |
@@ -1412,9 +1708,15 @@ Participación en Cloud API:
 | create        | `Unit`          | public      | Persiste un nuevo `Group`                          |
 | delete        | `Unit`          | public      | Elimina un `Group`                                 |
 
-#### 4.2.3.2. Interface Layer.
+#### 4.2.3.2. Asset & Resource Management Bounded Context Interface Layer
 
-## PotController
+En la capa de interfaz del Bounded Context de Asset & Resource Management se exponen los endpoints necesarios para gestionar la infraestructura física y digital asociada a los dispositivos inteligentes de Macetech. Su diseño promueve una separación clara de responsabilidades, orquestando de forma eficiente comandos y consultas, al tiempo que garantiza trazabilidad, disponibilidad y consistencia de los recursos gestionados.
+
+**PotController**
+
+###### Tabla 98
+
+_Tabla de PotController en el Interface Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                    |
 | ------------- | ---------------------------------------- |
@@ -1423,7 +1725,9 @@ Participación en Cloud API:
 | **Propósito** | Exponer API REST para gestión de macetas |
 | **Ruta**      | `/api/pot/`                              |
 
-## Métodos
+###### Tabla 99
+
+_Tabla de métodos de PotController en el Interface Layer de Asset & Resource Management_
 
 | Nombre            | Ruta                 | Acción                                  | Handle                   |
 | ----------------- | -------------------- | --------------------------------------- | ------------------------ |
@@ -1435,7 +1739,11 @@ Participación en Cloud API:
 | unlinkPot         | `/unlink-user/{id}`  | Desenlazar maceta de un usuario         | `UnlinkPotCommand`       |
 | assignPlant       | `/assign-plant/{id}` | Asignar planta a una maceta             | `AssignPlantCommand`     |
 
-## GroupController
+**GroupController**
+
+###### Tabla 100
+
+_Tabla de GroupController en el Interface Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                   |
 | ------------- | --------------------------------------- |
@@ -1444,7 +1752,9 @@ Participación en Cloud API:
 | **Propósito** | Exponer API REST para gestión de grupos |
 | **Ruta**      | `/api/group/`                           |
 
-### Métodos
+###### Tabla 101
+
+_Tabla de métodos de GroupController en el Interface Layer de Asset & Resource Management_
 
 | Nombre       | Ruta            | Acción                                 | Handle               |
 | ------------ | --------------- | -------------------------------------- | -------------------- |
@@ -1454,9 +1764,15 @@ Participación en Cloud API:
 | createGroup  | `/create`       | Crear un nuevo grupo                   | `CreateGroupCommand` |
 | deleteGroup  | `/{id}`         | Eliminar un grupo                      | `DeleteGroupCommand` |
 
-#### 4.2.3.3. Application Layer.
+#### 4.2.3.3. Asset & Resource Management Bounded Context Application Layer
 
-## GetPotQueryHandler
+La capa de aplicación del Bounded Context de Asset & Resource Management coordina el flujo de trabajo entre la interfaz y el dominio, encapsulando la lógica de orquestación sin incorporar reglas de negocio. En esta capa se ubican los Command Handlers, Query Handlers y Event Handlers, encargados de gestionar operaciones como el registro, actualización y seguimiento del estado de los activos físicos o virtuales dentro de Macetech, así como el procesamiento de eventos vinculados a su uso o mantenimiento. Esta capa garantiza que las interacciones se realicen de manera segura y transaccional, manteniendo la coherencia del sistema y delegando la lógica específica al dominio o a componentes de infraestructura según sea necesario.
+
+**GetPotQueryHandler**
+
+###### Tabla 102
+
+_Tabla de GetPotQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
 | ------------- | --------------------------------------------------------- |
@@ -1464,7 +1780,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                                             |
 | **Propósito** | Manejar la consulta `GetPotQuery` para obtener una maceta |
 
-## GetAllPotsQueryHandler
+**GetAllPotsQueryHandler**
+
+###### Tabla 103
+
+_Tabla de GetAllPotsQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                   |
 | ------------- | ----------------------------------------------------------------------- |
@@ -1472,7 +1792,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                                                           |
 | **Propósito** | Manejar la consulta `GetAllPotsQuery` para listar macetas de un usuario |
 
-## GetAllPotsByGroupQueryHandler
+**GetAllPotsByGroupQueryHandler**
+
+###### Tabla 104
+
+_Tabla de GetAllPotsByGroupQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                      |
 | ------------- | -------------------------------------------------------------------------- |
@@ -1480,7 +1804,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                                                              |
 | **Propósito** | Manejar la consulta `GetAllPotsByGroupQuery` para listar macetas por grupo |
 
-## UpdatePotCommandHandler
+**UpdatePotCommandHandler**
+
+###### Tabla 105
+
+_Tabla de UpdatePotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                               |
 | ------------- | ------------------------------------------------------------------- |
@@ -1488,7 +1816,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                     |
 | **Propósito** | Ejecutar la lógica de `UpdatePotCommand` para actualizar una maceta |
 
-## LinkPotCommandHandler
+**LinkPotCommandHandler**
+
+###### Tabla 106
+
+_Tabla de LinkPotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                       |
 | ------------- | --------------------------------------------------------------------------- |
@@ -1496,7 +1828,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                             |
 | **Propósito** | Ejecutar la lógica de `LinkPotCommand` para enlazar una maceta a un usuario |
 
-## UnlinkPotCommandHandler
+**UnlinkPotCommandHandler**
+
+###### Tabla 107
+
+_Tabla de UnlinkPotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                             |
 | ------------- | --------------------------------------------------------------------------------- |
@@ -1504,7 +1840,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                                   |
 | **Propósito** | Ejecutar la lógica de `UnlinkPotCommand` para desenlazar una maceta de un usuario |
 
-## PotUpdatedEventHandler
+**PotUpdatedEventHandler**
+
+###### Tabla 108
+
+_Tabla de PotUpdatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                               |
 | ------------- | --------------------------------------------------- |
@@ -1512,7 +1852,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                       |
 | **Propósito** | Procesar la lógica tras el evento `PotUpdatedEvent` |
 
-## PotLinkedEventHandler
+**PotLinkedEventHandler**
+
+###### Tabla 109
+
+_Tabla de PotLinkedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                              |
 | ------------- | -------------------------------------------------- |
@@ -1520,7 +1864,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                      |
 | **Propósito** | Procesar la lógica tras el evento `PotLinkedEvent` |
 
-## PotUnlinkedEventHandler
+**PotUnlinkedEventHandler**
+
+###### Tabla 110
+
+_Tabla de PotUnlinkedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                |
 | ------------- | ---------------------------------------------------- |
@@ -1528,7 +1876,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                        |
 | **Propósito** | Procesar la lógica tras el evento `PotUnlinkedEvent` |
 
-## PotAssignedPlantEventHandler
+**PotAssignedPlantEventHandler**
+
+###### Tabla 111
+
+_Tabla de PotAssignedPlantEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
 | ------------- | --------------------------------------------------------- |
@@ -1536,7 +1888,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                             |
 | **Propósito** | Procesar la lógica tras el evento `PotAssignedPlantEvent` |
 
-## GetGroupQueryHandler
+**GetGroupQueryHandler**
+
+###### Tabla 112
+
+_Tabla de GetGroupQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
 | ------------- | --------------------------------------------------------- |
@@ -1544,7 +1900,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                                             |
 | **Propósito** | Manejar la consulta `GetGroupQuery` para obtener un grupo |
 
-## GetAllGroupsQueryHandler
+**GetAllGroupsQueryHandler**
+
+###### Tabla 113
+
+_Tabla de GetAllGroupsQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                              |
 | ------------- | ---------------------------------------------------------------------------------- |
@@ -1552,7 +1912,11 @@ Participación en Cloud API:
 | **Categoría** | Query Handler                                                                      |
 | **Propósito** | Manejar la consulta `GetAllGroupsQuery` para listar todos los grupos de un usuario |
 
-## UpdateGroupCommandHandler
+**UpdateGroupCommandHandler**
+
+###### Tabla 114
+
+_Tabla de UpdateGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                               |
 | ------------- | ------------------------------------------------------------------- |
@@ -1560,7 +1924,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                     |
 | **Propósito** | Ejecutar la lógica de `UpdateGroupCommand` para actualizar un grupo |
 
-## CreateGroupCommandHandler
+**CreateGroupCommandHandler**
+
+###### Tabla 115
+
+_Tabla de CreateGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                          |
 | ------------- | -------------------------------------------------------------- |
@@ -1568,7 +1936,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                |
 | **Propósito** | Ejecutar la lógica de `CreateGroupCommand` para crear un grupo |
 
-## DeleteGroupCommandHandler
+**DeleteGroupCommandHandler**
+
+###### Tabla 116
+
+_Tabla de DeleteGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                             |
 | ------------- | ----------------------------------------------------------------- |
@@ -1576,7 +1948,11 @@ Participación en Cloud API:
 | **Categoría** | Command Handler                                                   |
 | **Propósito** | Ejecutar la lógica de `DeleteGroupCommand` para eliminar un grupo |
 
-## GroupUpdatedEventHandler
+**GroupUpdatedEventHandler**
+
+###### Tabla 117
+
+_Tabla de GroupUpdatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
 | ------------- | ----------------------------------------------------- |
@@ -1584,7 +1960,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupUpdatedEvent` |
 
-## GroupCreatedEventHandler
+**GroupCreatedEventHandler**
+
+###### Tabla 118
+
+_Tabla de GroupCreatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
 | ------------- | ----------------------------------------------------- |
@@ -1592,7 +1972,11 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupCreatedEvent` |
 
-## GroupDeletedEventHandler
+**GroupDeletedEventHandler**
+
+###### Tabla 119
+
+_Tabla de GroupDeletedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
 | ------------- | ----------------------------------------------------- |
@@ -1600,9 +1984,17 @@ Participación en Cloud API:
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupDeletedEvent` |
 
-#### 4.2.2.4. Infrastructure Layer.
+#### 4.2.2.4. Asset & Resource Management Bounded Context Infrastructure Layer
 
-## PotRepository
+La capa de infraestructura del Bounded Context de Asset & Resource Management actúa como el vínculo entre la lógica de negocio y las tecnologías subyacentes que permiten la persistencia, comunicación e integración con sistemas externos. En este nivel se implementan las dependencias necesarias para interactuar con bases de datos, sensores físicos, servicios de monitoreo o catálogos de activos.
+
+Esta capa concreta las abstracciones del dominio a través de implementaciones de repositorios y componentes técnicos especializados. Su diseño busca preservar el desacoplamiento respecto al núcleo del sistema, facilitando la evolución tecnológica sin afectar la consistencia de las reglas de negocio. Asimismo, garantiza eficiencia y confiabilidad en la gestión de inventarios, recursos físicos y sus respectivos estados operativos, en línea con los requerimientos estratégicos de la solución.
+
+**PotRepository**
+
+###### Tabla 120
+
+_Tabla de PotRepository en el Infraestructure Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                            |
 | ------------- | ---------------------------------------------------------------- |
@@ -1610,7 +2002,11 @@ Participación en Cloud API:
 | **Categoría** | Repository Implementation                                        |
 | **Propósito** | Implementar `IPotRepository` usando un mecanismo de persistencia |
 
-## GroupRepository
+**GroupRepository**
+
+###### Tabla 121
+
+_Tabla de GroupRepository en el Infraestructure Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                              |
 | ------------- | ------------------------------------------------------------------ |
@@ -1618,27 +2014,57 @@ Participación en Cloud API:
 | **Categoría** | Repository Implementation                                          |
 | **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
 
-#### 4.2.3.5. Asset & Resource Management Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.3.5. Asset & Resource Management Bounded Context Software Architecture Component Level Diagrams
 
-Participación en Mobile:
+En esta sección se presentan los diagramas de componentes correspondientes a los principales containers definidos dentro del Bounded Context de Asset & Resource Management. Estos diagramas permiten descomponer cada contenedor en sus componentes internos, identificando sus responsabilidades específicas, las tecnologías involucradas y las interacciones entre ellos. Esta representación es clave para comprender con mayor precisión cómo se estructura internamente cada parte del sistema, qué tareas cumple cada componente, y cómo colaboran para satisfacer los requerimientos funcionales y no funcionales relacionados con la gestión de activos y recursos dentro de la plataforma Macetech.
+
+Tal como lo establece el C4 Model, el nivel de componentes es el cuarto nivel de detalle en la visualización de arquitecturas de software, y resulta útil tanto para desarrolladores como para arquitectos, al proporcionar una perspectiva clara de las decisiones de diseño que se toman dentro de cada contenedor (Brown, 2023). Este nivel permite una mayor trazabilidad entre la arquitectura lógica y la implementación concreta, reforzando así la mantenibilidad, escalabilidad y eficiencia del sistema.
+
+###### Figura 90
+*Participación del Bounded Context de Asset & Resource Management con la aplicación móvil mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-MobileComponent.png"></image>
 
-Participación en Web:
+###### Figura 91
+*Participación del Bounded Context de Asset & Resource Management con la aplicación web mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-WebComponent.png"></image>
 
-Participación en Cloud API:
+###### Figura 92
+*Participación del Bounded Context de Asset & Resource Management con la Cloud API mediante el diagrama de componentes*
 
 <image src="..\assets\img\capitulo-4\c4-model\structurizr-102464-Pot-APIComponent.png"></image>
 
-#### 4.2.3.6. Asset & Resource Management Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.3.6. Asset & Resource Management Bounded Context Software Architecture Code Level Diagrams
 
-##### 4.2.3.6.1. Asset & Resource Management Bounded Context Domain Layer Class Diagrams.
+En esta sección se profundiza en los aspectos internos de implementación del Bounded Context de Asset & Resource Management, presentando diagramas que permiten visualizar con mayor detalle la estructura y composición de sus componentes clave. A través de representaciones estructuradas, como los diagramas de clases de la capa de dominio y el diagrama de base de datos, se facilita la comprensión técnica de cómo se organizan e interrelacionan los elementos dentro del sistema.
+
+Estos recursos visuales permiten identificar entidades, objetos de valor, relaciones, atributos, operaciones, estructuras persistentes y sus vínculos, sirviendo como puente entre el diseño arquitectónico de alto nivel y la implementación concreta. Esta aproximación asegura que las decisiones tomadas a nivel táctico se traduzcan en estructuras sólidas, coherentes y alineadas con los objetivos del dominio, aportando claridad al proceso de desarrollo y mantenimiento del sistema.
+
+##### 4.2.3.6.1. Asset & Resource Management Bounded Context Domain Layer Class Diagrams
+
+En esta subsección se presenta el diagrama de clases UML correspondiente al Domain Layer del bounded context de Asset & Resource Management. Esta representación estructurada permite visualizar con claridad las clases, interfaces y enumeraciones que conforman la lógica del dominio, centrada en la gestión de activos físicos y recursos tecnológicos dentro del ecosistema Macetech.
+
+El nivel de detalle abarca la definición de atributos y métodos para cada clase, especificando su tipo de dato, visibilidad y propósito en el modelo. Asimismo, se incluyen las relaciones entre elementos del dominio, cualificadas mediante nombres representativos, dirección cuando aplica y multiplicidad adecuada para reflejar con precisión las asociaciones entre entidades.
+
+Esta vista detallada del diseño táctico facilita una comprensión compartida del modelo conceptual, sirviendo como puente entre el análisis del dominio y su implementación técnica, y asegurando la coherencia estructural en la gestión y trazabilidad de recursos en la plataforma.
+
+###### Figura 93
+*Diagrama de clases de la capa de dominio del Bounded Context de Asset & Resource Management*
 
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/class-diagram-pot-management.png"></image>
 
-##### 4.2.3.6.2. Asset & Resource Management Bounded Context Database Design Diagram.
+##### 4.2.3.6.2. Asset & Resource Management Bounded Context Database Design Diagram
+
+En esta subsección se presenta el diagrama de base de datos correspondiente al bounded context de Asset & Resource Management. Esta representación permite visualizar de forma estructurada y precisa las entidades persistentes que forman parte de la gestión de activos físicos y recursos dentro de Macetech, así como sus atributos, claves primarias, claves foráneas y relaciones asociadas.
+
+El diagrama incluye detalles fundamentales como los tipos de datos, las restricciones y la cardinalidad de las asociaciones entre tablas, lo que permite entender cómo se organiza la información a nivel de almacenamiento. Asimismo, se especifican las relaciones entre los distintos elementos, con nombres descriptivos, direccionalidad, cuando aplica, y multiplicidad, reflejando de forma fidedigna la estructura lógica del modelo persistente.
+
+Esta visualización detallada contribuye significativamente a la comprensión compartida del diseño de datos, sirviendo como puente entre el modelo de dominio y la implementación técnica de la base de datos, y asegurando que la arquitectura sea coherente, mantenible y alineada con los requerimientos del sistema.
+
+###### Figura 94
+*Diagrama de base de datos del Bounded Context de Asset & Resource Management*
+
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
 ### 4.2.4. Bounded Context: Service Planning
