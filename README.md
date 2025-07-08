@@ -703,7 +703,10 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       Colaboré con la redacción del reporte técnico del proyecto y participé en el    desarrollo de la aplicación web y móvil del bounded context de Subscriptions &    Payments. También me encargué de actualizar las user stories y technical stories.  <br><br>
       <b> TB2</b><br>
       <u> Lucio Yen </u><br>
-      Implementé el Edge Application y colaboré con el desarrollo de la aplicación web y    móvil del bounded context de Service Design and Planning. Además, actualicé las user    stories y technical stories.
+      Implementé el Edge Application y colaboré con el desarrollo de la aplicación web y    móvil del bounded context de Service Design and Planning. Además, actualicé las user    stories y technical stories. <br><br>
+      <b>TF</b><br>
+      <u> Fabrizio Sanchez </u><br>
+      Apoyé en la corrección del Frontend, mejoré el reporte técnico y subsané errores de la entrega pasada para entregar un buen proyecto final.<br><br>
       </td>
       <td>
       <b> TB1</b><br>
@@ -766,8 +769,11 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     Al participar tanto en la elaboración del reporte como en el desarrollo de funcionalidades, fortalecí mis habilidades de documentación y análisis técnico. Aprendí a traducir las necesidades funcionales en historias técnicas claras.<br><br>
     <b> TB2</b><br>
     <u> Lucio Yen </u><br>
-    Trabajar en la implementación del Edge Application y en el módulo de planificación de servicios me permitió comprender mejor cómo coordinar múltiples componentes del sistema de forma integral y documentada.
-      </td>
+    Trabajar en la implementación del Edge Application y en el módulo de planificación de servicios me permitió comprender mejor cómo coordinar múltiples componentes del sistema de forma integral y documentada.<br><br>
+    <b> TF</b><br>
+    <u> Fabrizio Sanchez </u><br>
+    Aprendí a coordinar diagramas técnicos y a mejorar la coherencia entre el frontend y la documentación.
+    </td>
     </tr>
     <tr>
       <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
@@ -826,8 +832,11 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     Contribuí organizando las tareas del equipo para que los usuarios pudieran revisar y gestionar sus suscripciones al servicio. Además, ayudé a revisar que los objetivos del equipo se estuvieran cumpliendo según lo planeado.<br><br>
     <b>TB2</b><br>
     <u>Lucio Yen</u><br>
-    Aporté en la planificación de las funciones que permiten a los usuarios configurar alertas y planes de cuidado según el tipo de planta. Me aseguré de que todos supieran qué debía hacerse y cuándo.
-</td>
+    Aporté en la planificación de las funciones que permiten a los usuarios configurar alertas y planes de cuidado según el tipo de planta. Me aseguré de que todos supieran qué debía hacerse y cuándo. <br><br>
+    <b>TF</b><br>
+    <u> Fabrizio Sanchez </u><br>
+    Coordiné la revisión del Frontend y la mejora del reporte técnico, asegurando que el equipo estuviera alineado con los objetivos finales del proyecto. También ayudé a corregir errores de la entrega pasada para entregar un buen proyecto final.
+    </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -883,7 +892,10 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     Fortalecí mi capacidad para organizar el trabajo del grupo y asegurarme de que cumplíamos con lo que el usuario espera: tener acceso claro y útil a suscripciones y datos de su planta.<br><br>
     <b>TB2</b><br>
     <u>Lucio Yen</u><br>
-    Entendí mejor cómo planificar funciones pensando en los usuarios que cuidan sus plantas día a día. Aprendí a trabajar en equipo para lograr que las funciones lleguen a tiempo y funcionen como se espera.
+    Entendí mejor cómo planificar funciones pensando en los usuarios que cuidan sus plantas día a día. Aprendí a trabajar en equipo para lograr que las funciones lleguen a tiempo y funcionen como se espera.<br><br>
+    <b>TF</b><br>
+    <u>Fabrizio Sanchez</u><br>
+    Aprendí a investigar el mercado de IoT y a organizar tareas para entregar funcionalidades clave de forma colaborativa.<br><br>
     </td>
     </tr>
   </tbody>
