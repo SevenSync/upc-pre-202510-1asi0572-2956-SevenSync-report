@@ -707,6 +707,9 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
       <b>TF</b><br>
       <u> Fabrizio Sanchez </u><br>
       Apoyé en la corrección del Frontend, mejoré el reporte técnico y subsané errores de la entrega pasada para entregar un buen proyecto final.<br><br>
+      <b>TF</b><br>
+      <u> Luiggi Paredes </u><br>
+      Participé de manera activa en la corrección del Frontend y entendiendo el backend para poder integrar de manera satisfactoria todos los componentes necesarios, delegué y participé en muchos ámbitos del proyecto iniciando desde planteación de ideas hasta resolver conflictos.<br><br>
       </td>
       <td>
       <b> TB1</b><br>
@@ -773,6 +776,9 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     <b> TF</b><br>
     <u> Fabrizio Sanchez </u><br>
     Aprendí a coordinar diagramas técnicos y a mejorar la coherencia entre el frontend y la documentación.
+    <b> TF</b><br>
+    <u> Luiggi Paredes </u><br>
+    Aprendí la importancia de mantener y aplicar estándares para facilitar la colaboración en equipo.
     </td>
     </tr>
     <tr>
@@ -836,7 +842,10 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     <b>TF</b><br>
     <u> Fabrizio Sanchez </u><br>
     Coordiné la revisión del Frontend y la mejora del reporte técnico, asegurando que el equipo estuviera alineado con los objetivos finales del proyecto. También ayudé a corregir errores de la entrega pasada para entregar un buen proyecto final.
-    </td>
+    <b>TF</b><br>
+    <u> Luiggi Paredes </u><br>
+    Encabecé la revisión e integración del producto web, asegurando que se cumplan los estándares de calidad y funcionalidad. Coordiné al equipo para que todos los componentes del proyecto estuvieran alineados y funcionando correctamente.
+      </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -896,6 +905,9 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     <b>TF</b><br>
     <u>Fabrizio Sanchez</u><br>
     Aprendí a investigar el mercado de IoT y a organizar tareas para entregar funcionalidades clave de forma colaborativa.<br><br>
+    <b>TF</b><br>
+    <u>Luiggi Paredes</u><br>
+    Me empapé de conocimiento en cuanto al nicho y recopilé información importante para entender y empatizar con nuestros segmentos objetivos, para que de esta manera podamos entregar un producto alineado a sus necesidades.<br><br>
     </td>
     </tr>
   </tbody>
