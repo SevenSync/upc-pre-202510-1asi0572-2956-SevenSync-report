@@ -688,28 +688,40 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
         Desarrollé diagramas detallados de arquitectura técnica, asegurando que el sistema estuviera bien documentado. Trabajé en la subsanación de problemas relacionados con la integración de sensores y componentes físicos, colaborando estrechamente con el equipo. <br><br>
       <b> TB2</b><br>
       <u> Fabrizio Sanchez </u><br>
-      Avancé el desarrollo de la aplicación web y móvil del bounded context de Identity and     Access Management (IAM). Además, actualicé las user stories y technical stories para    reflejar los cambios implementados.<br><br>
+      Avancé el desarrollo de la aplicación web y móvil del bounded context de Identity and Access Management (IAM). Además, actualicé las user stories y technical stories para    reflejar los cambios implementados.<br><br>
       <b> TB2</b><br>
       <u> Luiggi Paredes </u><br>
-      Colaboré en el desarrollo de la aplicación web y móvil del bounded context de Asset &     Resource Management, asegurando su alineación con los objetivos funcionales. También    actualicé las user stories y technical stories.<br><br>
+      Colaboré en el desarrollo de la aplicación web y móvil del bounded context de Asset & Management, asegurando su alineación con los objetivos funcionales. También    actualicé las user stories y technical stories.<br><br>
       <b> TB2</b><br>
       <u> Ruben Mallma </u><br>
-      Contribuí al desarrollo de la aplicación web y móvil del bounded context de Profile     and Preferences, trabajando con el equipo para implementar funcionalidades clave.   <br><br>
+      Contribuí al desarrollo de la aplicación web y móvil del bounded context de Profile Preferences, trabajando con el equipo para implementar funcionalidades clave.   <br><br>
       <b> TB2</b><br>
       <u> Juan Pescoran </u><br>
-      Implementé el Edge Application y colaboré en el desarrollo de la aplicación web y     móvil del bounded context de Data Analytics. Asimismo, actualicé las user stories y     technical stories.<br><br>
+      Implementé el Edge Application y colaboré en el desarrollo de la aplicación web y móvil del bounded context de Data Analytics. Asimismo, actualicé las user stories y     technical stories.<br><br>
       <b> TB2</b><br>
       <u> Flavio Trigeros </u><br>
-      Colaboré con la redacción del reporte técnico del proyecto y participé en el    desarrollo de la aplicación web y móvil del bounded context de Subscriptions &    Payments. También me encargué de actualizar las user stories y technical stories.  <br><br>
+      Colaboré con la redacción del reporte técnico del proyecto y participé en el desarrollo de la aplicación web y móvil del bounded context de Subscriptions &    Payments. También me encargué de actualizar las user stories y technical stories.  <br><br>
       <b> TB2</b><br>
       <u> Lucio Yen </u><br>
-      Implementé el Edge Application y colaboré con el desarrollo de la aplicación web y    móvil del bounded context de Service Design and Planning. Además, actualicé las user    stories y technical stories. <br><br>
+      Implementé el Edge Application y colaboré con el desarrollo de la aplicación web y móvil del bounded context de Service Design and Planning. Además, actualicé las user    stories y technical stories. <br><br>
       <b>TF</b><br>
       <u> Fabrizio Sanchez </u><br>
       Apoyé en la corrección del Frontend, mejoré el reporte técnico y subsané errores de la entrega pasada para entregar un buen proyecto final.<br><br>
       <b>TF</b><br>
       <u> Luiggi Paredes </u><br>
       Participé de manera activa en la corrección del Frontend y entendiendo el backend para poder integrar de manera satisfactoria todos los componentes necesarios, delegué y participé en muchos ámbitos del proyecto iniciando desde planteación de ideas hasta resolver conflictos.<br><br>
+      <b>TF</b><br>
+      <u> Rubén Mallma </u><br>
+      Trabajé en equipo para la solución continua de nuestros servicios. Apoyé a mi equipo en subsanar errores y en la rápida iteración de los productos.<br><br>
+      <b>TF</b><br>
+      <u> Juan Pescoran </u><br>
+      Implementé el Edge Application y Embedded System. Trabajé en equipo resolviendo problemas técnicos, ayudando a mi equipo y en la integración de los servicios. <br><br>
+      <b>TF</b><br>
+      <u> Flavio Trigeros </u><br>
+      Avancé en la documentación de nuestro producto, creación de los servicios y sistemas, y avanzar en conjunto fomentando comunicación y respeto.<br><br>
+      <b>TF</b><br>
+      <u> Lucio Yen </u><br>
+      Contribuí en la creación del Embedded System y Edge Application. Colaboré en el desarrollo en equipo de nuestros servicios. Promocione el liderazgo, trabajo en equipo, la unión y comunicación.<br><br>   
       </td>
       <td>
       <b> TB1</b><br>
@@ -775,10 +787,22 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     Trabajar en la implementación del Edge Application y en el módulo de planificación de servicios me permitió comprender mejor cómo coordinar múltiples componentes del sistema de forma integral y documentada.<br><br>
     <b> TF</b><br>
     <u> Fabrizio Sanchez </u><br>
-    Aprendí a coordinar diagramas técnicos y a mejorar la coherencia entre el frontend y la documentación.
+    Aprendí a coordinar diagramas técnicos y a mejorar la coherencia entre el frontend y la documentación.<br><br>
     <b> TF</b><br>
     <u> Luiggi Paredes </u><br>
-    Aprendí la importancia de mantener y aplicar estándares para facilitar la colaboración en equipo.
+    Aprendí la importancia de mantener y aplicar estándares para facilitar la colaboración en equipo.<br><br>
+    <b>TF</b><br>
+    <u> Rubén Mallma </u><br>
+    Aprendí a trabajar en conjunto, la importancia de la comunicación y sobre todo saber que toda opinión es importante.<br><br>
+    <b>TF</b><br>
+    <u> Juan Pescoran </u><br>
+    La contribución en la implementación del Edge Application y Embedded System me ayudó a entender más sobre el trabajo en equipo y cómo todo logra a coordinarse.<br><br>
+    <b>TF</b><br>
+    <u> Flavio Trigeros </u><br>
+    Fortalecí mis habilidades blandas y técnicas. Colaborar en equipo y haciendo hincapié en los detalles me ayudó a expandirme en conocimientos.<br><br>
+    <b>TF</b><br>
+    <u> Lucio Yen </u><br>
+    Mejoré mis habilidades en todo aspecto. Fortalecí mis habilidades blandas y técnicas. Valoré y aprecié cada colaboración de mi equipo para el desarrollo en conjunto.<br><br>    
     </td>
     </tr>
     <tr>
@@ -841,11 +865,23 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     Aporté en la planificación de las funciones que permiten a los usuarios configurar alertas y planes de cuidado según el tipo de planta. Me aseguré de que todos supieran qué debía hacerse y cuándo. <br><br>
     <b>TF</b><br>
     <u> Fabrizio Sanchez </u><br>
-    Coordiné la revisión del Frontend y la mejora del reporte técnico, asegurando que el equipo estuviera alineado con los objetivos finales del proyecto. También ayudé a corregir errores de la entrega pasada para entregar un buen proyecto final.
+    Coordiné la revisión del Frontend y la mejora del reporte técnico, asegurando que el equipo estuviera alineado con los objetivos finales del proyecto. También ayudé a corregir errores de la entrega pasada para entregar un buen proyecto final. <br><br>
     <b>TF</b><br>
     <u> Luiggi Paredes </u><br>
-    Encabecé la revisión e integración del producto web, asegurando que se cumplan los estándares de calidad y funcionalidad. Coordiné al equipo para que todos los componentes del proyecto estuvieran alineados y funcionando correctamente.
-      </td>
+    Encabecé la revisión e integración del producto web, asegurando que se cumplan los estándares de calidad y funcionalidad. Coordiné al equipo para que todos los componentes del proyecto estuvieran alineados y funcionando correctamente. <br><br>
+    <b>TF</b><br>
+    <u> Rubén Mallma </u><br>
+    Contribuí en la coordinación de los servicios web y la comunicación con nuestros demás servicios. He ideado planes y metas para una finalización exitosa..<br><br>
+    <b>TF</b><br>
+    <u> Juan Pescoran </u><br>
+    He creado objetivos y metas en conjunto que todos podamos seguir. La creación de la maceta inteligente fue un proceso de planeamiento y dedicación.<br><br>
+    <b>TF</b><br>
+    <u> Flavio Trigeros </u><br>
+    Ayudé a organizar las ideas principales de cada punto en nuestro trabajo. Colaboré y propuse metas para los productos.<br><br>
+    <b>TF</b><br>
+    <u> Lucio Yen </u><br>
+    Coordiné el desarrollo general del proyecto. Encabecé a todo mi equipo a realizar tareas específicas para un desarrollo rápido y eficiente.<br><br>   
+    </td>
       <td>
       <b> TB1</b><br>
       <u> Fabrizio Sanchez </u><br>
@@ -908,6 +944,18 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
     <b>TF</b><br>
     <u>Luiggi Paredes</u><br>
     Me empapé de conocimiento en cuanto al nicho y recopilé información importante para entender y empatizar con nuestros segmentos objetivos, para que de esta manera podamos entregar un producto alineado a sus necesidades.<br><br>
+    <b>TF</b><br>
+    <u> Rubén Mallma </u><br>
+    Aprendí que lo más importante es saber planear y no irse directamente a la acción. Aprendí también a coordinar las tareas simultáneas y singulares cómo técnicas.<br><br>
+    <b>TF</b><br>
+    <u> Juan Pescoran </u><br>
+    Entendí el rol importante sobre el planeamiento y cumplimiento de metas. Saber más sobre a la par de entender también.<br><br>
+    <b>TF</b><br>
+    <u> Flavio Trigeros </u><br>
+    Entendí más sobre nuestros requerimientos como equipo, propuse ideas innovadoras y siempre estuve dispuesto a escuchar cualquier opinión de mi equipo.<br><br>
+    <b>TF</b><br>
+    <u> Lucio Yen </u><br>
+    Comprendí mejor a planificar e idear funciones para cada miembro de mi equipo. También he crecido en el ámbito personal al tener una mejor organización como líder..<br><br>    
     </td>
     </tr>
   </tbody>
