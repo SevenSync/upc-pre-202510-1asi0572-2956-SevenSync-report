@@ -294,17 +294,17 @@ A partir del modelo de dominio generado con EventStorming, el equipo explica y e
 
 _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
-| Paso	| Descripción	| Artefactos de Dominio / Evento Pivotal |
-|------|-------------|----------------------------------------|
-| 1	| Registro del usuario en la plataforma.	| Comando: RegisterUser, Evento: UserRegistered |
-| 2	| Creación de perfil con datos de contacto y preferencias.	|Comando: CreateProfile, Evento: ProfileCreated|
-| 3	| Autenticación del usuario, incluyendo verificación 2FA.	|Comando: AuthenticateUser, Evento: UserAuthenticated|
-| 4	| Pago de suscripción a Macetech (plan seleccionado).	|Comando: ProcessSubscriptionPayment, Evento: SubscriptionPaid|
-| 5	| Registro y configuración inicial de la maceta (Pot).	|Comando: RegisterPot, Evento: PotRegistered|
-| 6	| Definición de riego automático y programación de reportes periódicos.	|Comando: SelectWatering, Evento: AutomaticWateringProgrammed|
-| 7	| Identificación de la planta asociada a la maceta (catálogo de especies).	|Comando: AddNewPlant, Evento: NewPlantAdded|
-| 8	| Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API.	|SensorDataCollected + Evento: ExternalClimateDataFetched|
-| 9	| Generación de recomendaciones y notificaciones de alertas.	|Comando: SelectRecommendation, Evento: RecommendationDisplayed|
+| Paso	 | Descripción	                                                                                                   | Artefactos de Dominio / Evento Pivotal                         |
+|-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| 1     | Registro del usuario en la plataforma.	                                                                        | Comando: RegisterUser, Evento: UserRegistered                  |
+| 2	    | Creación de perfil con datos de contacto y preferencias.	                                                      | Comando: CreateProfile, Evento: ProfileCreated                 |
+| 3	    | Autenticación del usuario, incluyendo verificación 2FA.	                                                       | Comando: AuthenticateUser, Evento: UserAuthenticated           |
+| 4	    | Pago de suscripción a Macetech (plan seleccionado).	                                                           | Comando: ProcessSubscriptionPayment, Evento: SubscriptionPaid  |
+| 5	    | Registro y configuración inicial de la maceta (Pot).	                                                          | Comando: RegisterPot, Evento: PotRegistered                    |
+| 6	    | Definición de riego automático y programación de reportes periódicos.	                                         | Comando: SelectWatering, Evento: AutomaticWateringProgrammed   |
+| 7	    | Identificación de la planta asociada a la maceta (catálogo de especies).	                                      | Comando: AddNewPlant, Evento: NewPlantAdded                    |
+| 8	    | Captura de datos de sensores (humedad, temperatura, pH, salinidad) y obtención de contexto climático vía API.	 | SensorDataCollected + Evento: ExternalClimateDataFetched       |
+| 9	    | Generación de recomendaciones y notificaciones de alertas.	                                                    | Comando: SelectRecommendation, Evento: RecommendationDisplayed |
 
 4. **Técnica Look‑for‑Pivotal‑Events**
 
@@ -314,37 +314,37 @@ _Flujo de valor identificado en el proceso de EventStorming de Macetech_
 
 *Lista de transiciones identificadas en el proceso de EventStorming de Macetech*
 
-| Transición | Descripción |
-|--------------------|-------------|
-| UserRegistered	| Un usuario anónimo se convierte en un usuario registrado, creando una cuenta válida en el sistema. | 
-| UserProfileCreated	| Un usuario sin perfil asocia y configura su perfil con datos de contacto y preferencias personales. | 
-| UserProfileDeleted	| Un usuario con perfil configurado elimina su perfil, quedando sin datos personales asociados. | 
-| UserAuthenticated	| Una sesión no iniciada se valida exitosamente según los datos ingresados por el usuario | 
-| SubscriptionPaid	| Un usuario con plan inactivo activa su suscripción mediante el pago correspondiente, habilitando acceso a funcionalidades premium. | 
-| SubscriptionCancelled	| Un usuario con suscripción activa cancela su plan, desactivando el acceso a servicios asociados. | 
-| ExternalClimateDataFetched	| El sistema integra datos climáticos externos (vía API) según la ubicación del usuario, aportando contexto ambiental a los sensores. | 
-| PotRegistered	| Una maceta previamente no asociada se registra y vincula a un usuario, quedando disponible para su gestión. | 
-| PotSelected	| El usuario selecciona una maceta de la lista de macetas registradas, estableciéndola como activa para operaciones. | 
-| PotDeleted	| El usuario elimina una maceta registrada, desvinculándola completamente de su cuenta. | 
-| BluetoothDevicesPaired	| Se establece una conexión Bluetooth entre la maceta y la red del dispositivo, habilitando la comunicación inalámbrica. |
-| IrrigationConfigured	| Una maceta sin parámetros de riego definidos adquiere reglas y periodicidad de riego configuradas. |
-| PlantIdentified	| Se reconoce la especie de la planta en la maceta y se asignan rangos óptimos de riego, temperatura, pH y salinidad. |
-| PlantRegistered	| Una planta identificada en maceta se vincula formalmente al usuario, completando su registro en el sistema. |
-| PlantWatered	| Una planta con baja humedad recibe riego, aumentando su nivel de humedad a parámetros saludables. | 
-| PlantDeleted	| El usuario elimina la asociación de la planta en la maceta, quedando ésta vacía nuevamente. | 
-| WateringProgrammed	| Un sistema de riego manual se transforma en un programa de riego automático para la planta especificada. | 
-| NotificationDisplayed	| El sistema muestra una notificación en la bandeja del usuario sobre un evento relevante (alerta, recomendación). | 
-| NotificationChecked	| El usuario marca una notificación como leída, cambiando su estado a “checada” en la bandeja de notificaciones. | 
-| NotificationDeleted	| El usuario elimina una notificación leída, removiéndola de la bandeja de notificaciones. |
-| SensorDataCaptured	| Los sensores recaban datos brutos (humedad, temperatura, pH, salinidad) y los registran para su procesamiento. | 
-| SensorDataDelivered	| Los datos capturados por los sensores se envían al sistema de la aplicación, quedando disponibles para el usuario. | 
-| SensorDataCollected	| Un sensor pasa de no tener datos almacenados a disponer de registros de las métricas capturadas. |
-| SensorHistoryDisplayed	| El sistema presenta al usuario el historial de datos de sensores, permitiendo aplicar filtros y explorar tendencias a lo largo del tiempo. |
-| RecommendationGenerated	| Con los datos recopilados, el sistema elabora recomendaciones y alertas personalizadas para el usuario. |
-| RecommendationDisplayed	| El usuario visualiza en su bandeja de recomendaciones las acciones sugeridas para optimizar el cuidado de su planta. | 
-| ConsentDelivered	| El sistema muestra al usuario los documentos de términos y condiciones, dejando constancia de su presentación. |
-| ConsentAccepted	| El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema. |
-| ConsentRejected	| El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema. |
+| Transición                   | Descripción                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| UserRegistered	              | Un usuario anónimo se convierte en un usuario registrado, creando una cuenta válida en el sistema.                                         | 
+| UserProfileCreated	          | Un usuario sin perfil asocia y configura su perfil con datos de contacto y preferencias personales.                                        | 
+| UserProfileDeleted	          | Un usuario con perfil configurado elimina su perfil, quedando sin datos personales asociados.                                              | 
+| UserAuthenticated	           | Una sesión no iniciada se valida exitosamente según los datos ingresados por el usuario                                                    | 
+| SubscriptionPaid	            | Un usuario con plan inactivo activa su suscripción mediante el pago correspondiente, habilitando acceso a funcionalidades premium.         | 
+| SubscriptionCancelled	       | Un usuario con suscripción activa cancela su plan, desactivando el acceso a servicios asociados.                                           | 
+| ExternalClimateDataFetched	  | El sistema integra datos climáticos externos (vía API) según la ubicación del usuario, aportando contexto ambiental a los sensores.        | 
+| PotRegistered	               | Una maceta previamente no asociada se registra y vincula a un usuario, quedando disponible para su gestión.                                | 
+| PotSelected	                 | El usuario selecciona una maceta de la lista de macetas registradas, estableciéndola como activa para operaciones.                         | 
+| PotDeleted	                  | El usuario elimina una maceta registrada, desvinculándola completamente de su cuenta.                                                      | 
+| BluetoothDevicesPaired	      | Se establece una conexión Bluetooth entre la maceta y la red del dispositivo, habilitando la comunicación inalámbrica.                     |
+| IrrigationConfigured	        | Una maceta sin parámetros de riego definidos adquiere reglas y periodicidad de riego configuradas.                                         |
+| PlantIdentified	             | Se reconoce la especie de la planta en la maceta y se asignan rangos óptimos de riego, temperatura, pH y salinidad.                        |
+| PlantRegistered	             | Una planta identificada en maceta se vincula formalmente al usuario, completando su registro en el sistema.                                |
+| PlantWatered	                | Una planta con baja humedad recibe riego, aumentando su nivel de humedad a parámetros saludables.                                          | 
+| PlantDeleted	                | El usuario elimina la asociación de la planta en la maceta, quedando ésta vacía nuevamente.                                                | 
+| WateringProgrammed	          | Un sistema de riego manual se transforma en un programa de riego automático para la planta especificada.                                   | 
+| NotificationDisplayed	       | El sistema muestra una notificación en la bandeja del usuario sobre un evento relevante (alerta, recomendación).                           | 
+| NotificationChecked	         | El usuario marca una notificación como leída, cambiando su estado a “checada” en la bandeja de notificaciones.                             | 
+| NotificationDeleted	         | El usuario elimina una notificación leída, removiéndola de la bandeja de notificaciones.                                                   |
+| SensorDataCaptured	          | Los sensores recaban datos brutos (humedad, temperatura, pH, salinidad) y los registran para su procesamiento.                             | 
+| SensorDataDelivered	         | Los datos capturados por los sensores se envían al sistema de la aplicación, quedando disponibles para el usuario.                         | 
+| SensorDataCollected	         | Un sensor pasa de no tener datos almacenados a disponer de registros de las métricas capturadas.                                           |
+| SensorHistoryDisplayed	      | El sistema presenta al usuario el historial de datos de sensores, permitiendo aplicar filtros y explorar tendencias a lo largo del tiempo. |
+| RecommendationGenerated	     | Con los datos recopilados, el sistema elabora recomendaciones y alertas personalizadas para el usuario.                                    |
+| RecommendationDisplayed	     | El usuario visualiza en su bandeja de recomendaciones las acciones sugeridas para optimizar el cuidado de su planta.                       | 
+| ConsentDelivered	            | El sistema muestra al usuario los documentos de términos y condiciones, dejando constancia de su presentación.                             |
+| ConsentAccepted	             | El usuario otorga su consentimiento a los términos y condiciones, registrándose dicha aceptación en el sistema.                            |
+| ConsentRejected	             | El usuario rechaza los términos y condiciones, registrándose dicha negativa en el sistema.                                                 |
 
   * **Agrupación por afinidad de eventos**
 
@@ -380,21 +380,21 @@ A continuación presentamos la sección de Candidatos a Bounded Contexts, donde 
 
 _Lista de candidatos a Bounded Context identificados en el proceso de EventStorming de Macetech_
 
-| Contexto    | Responsabilidades clave    | ¿Pasa al diseño  |
-| ---------- | -----------| -------------------- |
-| IAM                         | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles. CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login Y emisión de tokens en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. También es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría.   |
-| Profile and Preferences    | Almacenamiento/actualización de datos de perfil, preferencias del usuario, integración Geo API, y normalización de direcciones del usuario  | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos dentro de la solución. Al abstraer el manejo de datos de perfil, contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. Esto involucra también preferencias de notificaciones, apariencia de la aplicación, etc. |
-| Asset & Resource Management | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica de los datos obtenidos | Este componente constituye la base de la capa IoT, ya que permite registrar las macetas junto con sus parámetros iniciales. Centralizar en este punto la configuración posibilita desacoplar la lógica de los sensores de la lógica del resto de la aplicación, lo que a su vez favorece la extensibilidad del sistema. De este modo, se pueden incorporar nuevos tipos de dispositivos sin generar impactos en los módulos de control ni en los procesos analíticos, asegurando una arquitectura más flexible y escalable.  |
-| Service Design and Planning | Catálogo de especies de plantas junto con sus rangos óptimos de pH, luminosidad, temperatura y salinidad, así como la validación de la correspondencia planta–maceta. Engloba el diseño y la planificación del servicio y de sus funcionalidades, desde la selección de la especie hasta la configuración de sus parámetros.  | **Consolidado:** Este enfoque posibilita la evolución del modelo botánico de manera autónoma respecto al hardware subyacente. Al aislar la lógica del servicio de las especies y sus rangos óptimos, se facilita la incorporación de nuevas variedades vegetales o la integración de proveedores de datos externos, sin que ello afecte a otras capas. De este modo, se mantiene la robustez y la coherencia arquitectónica del sistema. |
-| Subscriptions & Payments    | Definición y gestión de los planes de suscripción, del procesamiento seguro de las transacciones y de la administración integral de las facturas, así como de la integración con pasarelas de pago y webhooks con la API externa de Stripe. De este modo, se garantiza la trazabilidad de los cobros y la coherencia en la facturación..  | **Consolidado:** Este contexto soporta tanto el modelo de negocio freemium como las suscripciones de pago. Al mantener un dominio dedicado exclusivamente a la facturación, se aísla cualquier cambio en las pasarelas de pago, en los planes tarifarios o en los flujos de cobro, evitando impactos en la lógica de usuario o en los sistemas físicos. Esta separación otorga la flexibilidad necesaria para ajustar políticas de precios y métodos de pago con el mínimo esfuerzo y sin fricciones entre módulos.  |
+| Contexto                         | Responsabilidades clave                                                                                                                                                                                                                                                                                                                                                                                                                                                    | ¿Pasa al diseño                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IAM                              | Autenticación (login/logout, manejo de sesiones), emisión y validación de JWT y tokens de refresco, soporte 2FA, gestión de permisos y roles. CRUD de cuentas de usuario, eliminación, recuperación de contraseña, validación de datos de contacto                                                                                                                                                                                                                         | **Consolidado:** La seguridad y control de acceso son requisitos no negociables. Al agrupar login Y emisión de tokens en un único contexto, se garantiza la consistencia en la gestión de credenciales, la separación de responsabilidades y la escalabilidad de las políticas de acceso. También es el núcleo del ciclo de vida de cuentas de usuario. Centralizar creación, actualización y baja de cuentas asegura trazabilidad de eventos y facilita la auditoría.                                                                                                                                                                                                                                               |
+| Profile and Preferences          | Almacenamiento/actualización de datos de perfil, preferencias del usuario, integración Geo API, y normalización de direcciones del usuario                                                                                                                                                                                                                                                                                                                                 | **Consolidado:** Ofrece personalización y localización sin contaminar otros contextos dentro de la solución. Al abstraer el manejo de datos de perfil, contacto y preferencias, se optimiza la reutilización de la Geo API y se garantiza que las modificaciones de esquema o validaciones no afecten la lógica de negocio de autenticación ni de facturación. Esto involucra también preferencias de notificaciones, apariencia de la aplicación, etc.                                                                                                                                                                                                                                                              |
+| Asset & Resource Management      | CRUD de macetas, configuración de parámetros de riego (frecuencia, volumen, límites), metadatos (nombre, ID), persistencia histórica de los datos obtenidos                                                                                                                                                                                                                                                                                                                | Este componente constituye la base de la capa IoT, ya que permite registrar las macetas junto con sus parámetros iniciales. Centralizar en este punto la configuración posibilita desacoplar la lógica de los sensores de la lógica del resto de la aplicación, lo que a su vez favorece la extensibilidad del sistema. De este modo, se pueden incorporar nuevos tipos de dispositivos sin generar impactos en los módulos de control ni en los procesos analíticos, asegurando una arquitectura más flexible y escalable.                                                                                                                                                                                          |
+| Service Design and Planning      | Catálogo de especies de plantas junto con sus rangos óptimos de pH, luminosidad, temperatura y salinidad, así como la validación de la correspondencia planta–maceta. Engloba el diseño y la planificación del servicio y de sus funcionalidades, desde la selección de la especie hasta la configuración de sus parámetros.                                                                                                                                               | **Consolidado:** Este enfoque posibilita la evolución del modelo botánico de manera autónoma respecto al hardware subyacente. Al aislar la lógica del servicio de las especies y sus rangos óptimos, se facilita la incorporación de nuevas variedades vegetales o la integración de proveedores de datos externos, sin que ello afecte a otras capas. De este modo, se mantiene la robustez y la coherencia arquitectónica del sistema.                                                                                                                                                                                                                                                                             |
+| Subscriptions & Payments         | Definición y gestión de los planes de suscripción, del procesamiento seguro de las transacciones y de la administración integral de las facturas, así como de la integración con pasarelas de pago y webhooks con la API externa de Stripe. De este modo, se garantiza la trazabilidad de los cobros y la coherencia en la facturación..                                                                                                                                   | **Consolidado:** Este contexto soporta tanto el modelo de negocio freemium como las suscripciones de pago. Al mantener un dominio dedicado exclusivamente a la facturación, se aísla cualquier cambio en las pasarelas de pago, en los planes tarifarios o en los flujos de cobro, evitando impactos en la lógica de usuario o en los sistemas físicos. Esta separación otorga la flexibilidad necesaria para ajustar políticas de precios y métodos de pago con el mínimo esfuerzo y sin fricciones entre módulos.                                                                                                                                                                                                  |
 | Service Operation and Monitoring | Agrupa las funciones de verificación de estado (health checks), registro de logs críticos y generación y envío de alertas (push y e-mail), así como la visualización de un dashboard operativo. Además, ejecuta las operaciones de la maceta, incluyendo riego, notificaciones y recomendaciones, y supervisa el estado de la planta mediante la interacción de sensores y actuadores, integrando tanto la aplicación embebida (embedded app) como la de borde (edge app). | **Consolidado:** Este contexto centraliza la supervisión y la gestión de alertas en un único módulo, evitando la fragmentación de la lógica de notificaciones. Al consolidar la detección de fallos y su envío al usuario, se asegura la coherencia en los umbrales y en los canales de comunicación, además de facilitar la medición y optimización del uptime. Este componente constituye el núcleo del valor añadido de Macetech. Asimismo, al desacoplar el procesamiento de la ingesta de datos de las reglas de negocio, se posibilita la iteración continua en los modelos de decisión sin afectar los flujos de riego ni la analítica básica, favoreciendo la experimentación y el versionado de algoritmos. |
-| Data Analytics   | Este módulo gestiona la ingesta, normalización y almacenamiento de los registros de sensores (SensorRecord), soporta tanto el procesamiento por lotes (batch) como en tiempo real (streaming) y provee dashboards analíticos para la visualización de métricas y tendencias relevantes.| **Consolidado:** Este módulo ofrece una visibilidad completa de las operaciones y sus resultados. Al aislarlo de la capa de control, se posibilita la escalabilidad de los pipelines de datos y la configuración de políticas de retención sin afectar los servicios transaccionales, lo que facilita la incorporación de nuevas herramientas de análisis.  |
-| Caring Intelligence         | Este módulo integra un motor de recomendaciones que crea entidades Recommendation, soporta la generación de informes personalizados mediante plantillas (ReportTemplate) y emplea aprendizaje continuo para mejorar sus sugerencias de forma progresiva. | **Excluido:** En lugar de contar con un bounded context independiente para el motor de recomendaciones, se ha integrado completamente dentro del contexto de Service Operation and Monitoring. De este modo, las funciones de recomendación comparten la misma canalización de datos en tiempo real y los mecanismos de supervisión de dispositivos edge y embedded. Esta unificación reduce la latencia de la información y garantiza una única fuente para todas las reglas de negocio, facilitando al mismo tiempo el despliegue, la monitorización de desempeño y la iteración ágil de algoritmos sin impactar los flujos de riego ni los servicios de control. |
-| Watering Management         | El motor de decisión de riego integra el análisis de los datos de los sensores (SensorData) y la configuración de la maceta (PotConfiguration) para generar automáticamente los trabajos de riego (IrrigationJob), gestionar posibles excepciones y coordinar su ejecución con la capa IoT. | **Excluido:** En lugar de mantener un bounded context independiente para el riego, esta responsabilidad se ha trasladado al nuevo contexto Service Operation and Monitoring. De este modo, las funciones de control físico, supervisión y excepción se agrupan junto con el resto de operaciones IoT, mejorando la cohesión y la claridad de la arquitectura. Asimismo, se ha prescindido de la planificación de riego tradicional, dado que el sistema opera exclusivamente en función de lecturas en tiempo real de los sensores, lo que simplifica el flujo de datos y evita duplicidades en la lógica de control. |
-| Notifying System            | Este módulo se encarga del envío y la gestión de notificaciones genéricas, sin incluir información adicional ni vinculación con recomendaciones o alertas específicas. | **Excluido:** Su ámbito limitado, centrado exclusivamente en el envío de notificaciones genéricas, carecía de un modelo de datos sólido y presentaba solapamientos con las alertas críticas. Por ello, se ha integrado dentro del contexto de Service Operation and Monitoring, centralizando la supervisión y los canales de comunicación para eliminar la duplicación de lógica y reforzar la consistencia operativa. |
-| Critical Alert System       | Se encarga de detectar y disparar alertas críticas basadas en umbrales específicos para las métricas de las plantas, garantizando una respuesta inmediata ante cualquier desviación que pueda comprometer su salud. | **Excluido:** Este componente duplicaba responsabilidades con el contexto de supervisión general y carecía de un modelo de datos y reglas propio. Por ello, su lógica se consolidó en «Service Operation and Monitoring», que centraliza y armoniza todas las alertas, eliminando redundancias y asegurando una única fuente de verdad. |
-| AI Service | Servicio de inteligencia artificial orientado al procesamiento de datos, pero sin un enfoque claro en generar recomendaciones personalizadas para cada planta ni en la definición precisa de alertas, lo que limitaba su aplicabilidad directa dentro del flujo operativo. | **Excluido:** Este módulo resultaba excesivamente genérico y desalineado tanto de los casos de uso concretos como de los objetivos del proyecto. Se reemplazó por integraciones más focalizadas: la gestión de plantas recae ahora sobre la Plant API dentro del contexto de Service Design and Planning, mientras que la lógica de recomendaciones y el aprendizaje automático se integra por completo en Service Operation and Monitoring, asegurando un procesamiento de datos contextualizado, coherente y alineado con las necesidades operativas. |
-| SensorState | Se encarga de la gestión remota del ciclo de vida y estado físico de los sensores, incluyendo calibración, detección de fallos y mantenimiento preventivo, para garantizar su operatividad continua y fiabilidad. | **Excluido:** La gestión remota de calibraciones, fallos y ciclos de vida de los sensores implicaba un dominio especializado en ingeniería de hardware que excedía el alcance principal del proyecto. Por ello, se optó por excluir este bounded context y conservar el foco en el desarrollo del software y la operatividad del sistema IoT. |
+| Data Analytics                   | Este módulo gestiona la ingesta, normalización y almacenamiento de los registros de sensores (SensorRecord), soporta tanto el procesamiento por lotes (batch) como en tiempo real (streaming) y provee dashboards analíticos para la visualización de métricas y tendencias relevantes.                                                                                                                                                                                    | **Consolidado:** Este módulo ofrece una visibilidad completa de las operaciones y sus resultados. Al aislarlo de la capa de control, se posibilita la escalabilidad de los pipelines de datos y la configuración de políticas de retención sin afectar los servicios transaccionales, lo que facilita la incorporación de nuevas herramientas de análisis.                                                                                                                                                                                                                                                                                                                                                           |
+| Caring Intelligence              | Este módulo integra un motor de recomendaciones que crea entidades Recommendation, soporta la generación de informes personalizados mediante plantillas (ReportTemplate) y emplea aprendizaje continuo para mejorar sus sugerencias de forma progresiva.                                                                                                                                                                                                                   | **Excluido:** En lugar de contar con un bounded context independiente para el motor de recomendaciones, se ha integrado completamente dentro del contexto de Service Operation and Monitoring. De este modo, las funciones de recomendación comparten la misma canalización de datos en tiempo real y los mecanismos de supervisión de dispositivos edge y embedded. Esta unificación reduce la latencia de la información y garantiza una única fuente para todas las reglas de negocio, facilitando al mismo tiempo el despliegue, la monitorización de desempeño y la iteración ágil de algoritmos sin impactar los flujos de riego ni los servicios de control.                                                  |
+| Watering Management              | El motor de decisión de riego integra el análisis de los datos de los sensores (SensorData) y la configuración de la maceta (PotConfiguration) para generar automáticamente los trabajos de riego (IrrigationJob), gestionar posibles excepciones y coordinar su ejecución con la capa IoT.                                                                                                                                                                                | **Excluido:** En lugar de mantener un bounded context independiente para el riego, esta responsabilidad se ha trasladado al nuevo contexto Service Operation and Monitoring. De este modo, las funciones de control físico, supervisión y excepción se agrupan junto con el resto de operaciones IoT, mejorando la cohesión y la claridad de la arquitectura. Asimismo, se ha prescindido de la planificación de riego tradicional, dado que el sistema opera exclusivamente en función de lecturas en tiempo real de los sensores, lo que simplifica el flujo de datos y evita duplicidades en la lógica de control.                                                                                                |
+| Notifying System                 | Este módulo se encarga del envío y la gestión de notificaciones genéricas, sin incluir información adicional ni vinculación con recomendaciones o alertas específicas.                                                                                                                                                                                                                                                                                                     | **Excluido:** Su ámbito limitado, centrado exclusivamente en el envío de notificaciones genéricas, carecía de un modelo de datos sólido y presentaba solapamientos con las alertas críticas. Por ello, se ha integrado dentro del contexto de Service Operation and Monitoring, centralizando la supervisión y los canales de comunicación para eliminar la duplicación de lógica y reforzar la consistencia operativa.                                                                                                                                                                                                                                                                                              |
+| Critical Alert System            | Se encarga de detectar y disparar alertas críticas basadas en umbrales específicos para las métricas de las plantas, garantizando una respuesta inmediata ante cualquier desviación que pueda comprometer su salud.                                                                                                                                                                                                                                                        | **Excluido:** Este componente duplicaba responsabilidades con el contexto de supervisión general y carecía de un modelo de datos y reglas propio. Por ello, su lógica se consolidó en «Service Operation and Monitoring», que centraliza y armoniza todas las alertas, eliminando redundancias y asegurando una única fuente de verdad.                                                                                                                                                                                                                                                                                                                                                                              |
+| AI Service                       | Servicio de inteligencia artificial orientado al procesamiento de datos, pero sin un enfoque claro en generar recomendaciones personalizadas para cada planta ni en la definición precisa de alertas, lo que limitaba su aplicabilidad directa dentro del flujo operativo.                                                                                                                                                                                                 | **Excluido:** Este módulo resultaba excesivamente genérico y desalineado tanto de los casos de uso concretos como de los objetivos del proyecto. Se reemplazó por integraciones más focalizadas: la gestión de plantas recae ahora sobre la Plant API dentro del contexto de Service Design and Planning, mientras que la lógica de recomendaciones y el aprendizaje automático se integra por completo en Service Operation and Monitoring, asegurando un procesamiento de datos contextualizado, coherente y alineado con las necesidades operativas.                                                                                                                                                              |
+| SensorState                      | Se encarga de la gestión remota del ciclo de vida y estado físico de los sensores, incluyendo calibración, detección de fallos y mantenimiento preventivo, para garantizar su operatividad continua y fiabilidad.                                                                                                                                                                                                                                                          | **Excluido:** La gestión remota de calibraciones, fallos y ciclos de vida de los sensores implicaba un dominio especializado en ingeniería de hardware que excedía el alcance principal del proyecto. Por ello, se optó por excluir este bounded context y conservar el foco en el desarrollo del software y la operatividad del sistema IoT.                                                                                                                                                                                                                                                                                                                                                                        |
 
 **7. Bounded Contexts finales**
 
@@ -404,15 +404,15 @@ Como resultado de la sesión de Candidate Context Discovery y tras identificar l
 
 _Lista de Bounded Context finales identificados en el proceso de EventStorming de Macetech_
 
-| Contexto | Responsabilidades clave | Ubiquitous Language  |
-| ---------| ------------| -------- |
-| **1. IAM**                         | **- Autenticación de usuarios:** gestión de inicio y cierre de sesión, con control seguro de las credenciales. <br>**- Emisión y validación de tokens:** generación de JSON Web Tokens (JWT) y tokens de refresco para mantener sesiones seguras y persistentes. <br> **- Autenticación de dos factores (2FA):** envío y verificación de códigos para reforzar la seguridad de acceso. <br> **- Gestión de permisos y roles:** definición, asignación y verificación de privilegios de usuario según políticas establecidas. <br> **- Registro y administración de cuentas:** creación de usuarios, recuperación de contraseñas y mantenimiento de perfiles. | **- User:** Representa a la persona real o entidad que interactúa con el sistema, identificada de forma única por un conjunto de atributos. <br> **- Credentials** Conjunto de datos secretos que el usuario emplea para demostrar su identidad.<br> **- Session:** Período de interacción autorizado entre un usuario y el sistema, iniciado tras la autenticación y mantenido mediante un token válido hasta que el usuario cierre sesión o expire. <br> **- Access Token:** Token de corta duración que certifica las credenciales del usuario y autoriza el acceso a recursos protegidos durante la sesión activa. <br> **- Refresh Token:** Token de mayor duración que permite obtener nuevos Access Tokens sin necesidad de que el usuario vuelva a autenticarse con sus credenciales. <br> **-Two‑Factor Authentication (2FA):** Mecanismo de seguridad adicional que exige un segundo factor de verificación (p. ej., código enviado por SMS o app de autenticación) tras la introducción de las credenciales. |
-| **2. Profile & Personal Data**     | - **Gestión de perfil de usuario:** almacenamiento y actualización de datos personales (nombre, teléfono, dirección) con controles de integridad. <br> - **Configuración de preferencias:** personalización de idioma y modelo de notificaciones a recibir. <br> **- Integración con Geo API:** acceso a catálogos de países y ciudades para facilitar la selección y estandarización de ubicaciones. <br> - **Normalización y validación de direcciones:** aplicación de reglas y formatos estándar para asegurar la consistencia de los datos de ubicación. | - **User:** Representa al individuo registrado en el sistema, con una identidad única vinculada a su perfil y credenciales de acceso. <br> - **Profile:** Conjunto de datos personales y configuraciones asociadas a un usuario, incluyendo nombre, dirección, número de teléfono y preferencias. <br> - **Address:** Información estructurada sobre la ubicación física del usuario (país, ciudad, calle, código postal), sujeta a validación y normalización. <br> - **PhoneNumber:** Número de contacto del usuario, almacenado en formato internacional estandarizado y utilizado para verificación o notificaciones. <br> - **Preference:** Opciones personalizables elegidas por el usuario, como idioma, configuración de notificaciones, y tema de interfaz (modo claro/oscuro). <br> -**PasswordRecoveryToken:** Token temporal generado para permitir la recuperación segura de una cuenta en caso de pérdida de contraseña. - **GeoAPI:** Servicio externo que proporciona catálogos actualizados de países y ciudades para facilitar la selección geográfica y la validación de direcciones.      |
-| **3. Asset & Resource Management**              | - **Gestión de macetas (Pot):** operaciones de creación, lectura, actualización y eliminación de instancias de Pot, garantizando la integridad y consistencia de los datos. <br> - **Configuración de riego:** definición de parámetros clave, como frecuencia, volumen y umbrales de activación, para adaptar el riego a las necesidades de cada planta. <br>- **Administración de metadatos:** asignación de atributos descriptivos (nombre, identificador único y etiquetas) que facilitan la organización, búsqueda y categorización de las macetas. <br> -**Registro histórico de configuraciones:** persistencia de todos los ajustes realizados en cada maceta, permitiendo auditorías y análisis de evolución a lo largo del tiempo. | - **Pot:** Representa la maceta física asociada a una planta, identificada por un ID único y un conjunto de atributos básicos.<br> -**PotConfiguration:** Conjunto de parámetros de riego y operación asignados a una maceta determinada (frecuencia, volumen, umbrales), que define cómo debe actuarse sobre ella. <br> -**Threshold:** Valor límite que, al ser superado por una medida (humedad, temperatura, etc.), desencadena una acción automática de riego o alerta. <br> -**Metadata:** Atributos descriptivos de la maceta, como nombre, etiquetas, fecha de creación, destinados a facilitar la búsqueda y categorización. <br> - **HistoricalConfig:** Registro inmutable de las configuraciones previas de la maceta, utilizado para auditoría y análisis de evolución en el tiempo. <br> -**SensorBinding:** Asociación de la maceta con uno o varios sensores específicos, que permite la ingestión de datos ambientales para toma de decisiones. <br> -**IrrigationJob:** Tarea disparada en tiempo real que ejecuta el acto de riego sobre la maceta, según su PotConfiguration y Thresholds.                   |
-| **4. Service Design and Planning**  | -**Catálogo de especies vegetales (PlantSpecies):** Incluye los atributos técnicos de cada planta y sus rangos óptimos de pH, luminosidad, humedad, temperatura y salinidad, garantizando una base de datos exhaustiva para el cuidado botánico. <br> -**Validación de compatibilidad planta–maceta:** Comprueba que las características de la planta seleccionada se ajusten a las dimensiones y capacidades de la maceta, evitando errores de configuración y optimizando el desarrollo vegetal. <br> -**Sincronización con APIs externas:** Ejecuta actualizaciones periódicas para incorporar nuevas especies y refrescar parámetros existentes, asegurando que el catálogo se mantenga alineado con la información más reciente del sector. <br> -**Diseño y planificación del servicio:** Abarca desde la selección de la especie hasta la definición de sus parámetros personalizados,  incluyendo frecuencia y volumen de riego, y la programación de los horarios de riego, proporcionando un flujo de trabajo completo y coherente para la gestión automatizada de cada planta. | - **PlantSpecies:** Entidad que representa una especie vegetal, con atributos como nombre científico, nombre común y clasificación botánica. <br> - **OptimalRange:** Conjunto de valores óptimos para indicadores clave (pH, luminosidad, temperatura, salinidad, humedad) que definen el entorno ideal de crecimiento de una especie. <br> - **Compatibility:** Relación que valida la adecuación entre una especie y una maceta o ambiente determinado, asegurando que las condiciones físicas y de espacio sean apropiadas. <br> - **PlantAPI:** Servicio interno responsable de proporcionar catálogos de especies y actualizar parámetros botánicos de forma periódica. <br> - **PlantParameter:** Conjunto de parámetros personalizados vinculados a una instancia de PlantSpecies (por ejemplo, ajustes finos de frecuencia y volumen de riego). |
-| **5. Service Operation and Monitoring** | -**Motor de decisión de riego:** analiza en tiempo real los datos de los sensores (SensorData) junto con la configuración de la maceta (PotConfiguration), generando automáticamente los trabajos de riego (IrrigationJob) y disparando las válvulas correspondientes. <br> - **Supervisión continua:** a través de health checks, registro y almacenamiento de logs críticos, envía datos de métricas de disponibilidad y rendimiento. <br> -**Sistema de alertas:** envía notificaciones (push, correo electrónico) ante umbrales o errores, garantizando respuestas inmediatas a incidentes. <br> -**Monitoreo de dispositivo embebido y edge:** integra la aplicación embebida y edge para garantizar la trazabilidad de cada componente y operación de la maceta (riego, alertas, recomendaciones). <br> -**Motor de recomendaciones:** sistema basado en reglas sobre los sensores de Pot y los datos obtenidos con PlantAPI, que crea entidades Recommendation mapeadas a patrones de uso y genera reportes personalizados (ReportTemplate). | - **IrrigationJob:** Tarea disparada en tiempo real que ejecuta el riego de una maceta, a partir de la configuración y los datos sensoriales. <br> - **ValveCommand:** Instrucción enviada al actuador de riego (válvula) para abrir o cerrar el flujo de agua según el plan de riego. <br> -**SensorData:** Lectura cruda proveniente de los sensores (humedad, temperatura, luminosidad, pH, etc.) asociada a una maceta en un instante de tiempo. <br> -**Alert:** Evento generado cuando una métrica o condición supera un umbral crítico, disparando un flujo de notificación y posibles acciones de mitigación. <br> -**NotificationChannel:** Medio utilizado para enviar alertas o avisos al usuario o al equipo de operaciones (push, correo electrónico). <br> -**Recommendation:** Sugerencia generada por el sistema de recomendaciones que propone acciones de cuidado o ajustes personalizados para la planta. <br> -**ReportTemplate:** Estructura predefinida que define el formato y contenido de los informes personalizados que se entregan al usuario. |
-| **6. Subscriptions & Payments**    | **-Definición y gestión de planes de suscripción (SubscriptionPlan):** creación y parametrización de modalidades (freemium, premium mensual o anual), con reglas de acceso y beneficios asociados. <br> - **Procesamiento de pagos:** manejo de transacciones periódicas y cargos únicos, garantizando la fiabilidad y la seguridad en cada operación. <br> - **Administración de facturación (Invoice):** generación automática de facturas, seguimiento de su estado (pendiente, pagada, vencida) y emisión de recordatorios ante impagos. <br> -**Integración con pasarelas de pago y webhooks:** conexión con el proveedor externo de Stripe para la ejecución de pagos y recepción de notificaciones en tiempo real sobre eventos de cobro. | -**SubscriptionPlan:** Modelo que describe las modalidades de suscripción (freemium, premium mensual o anual), con sus características, precios y reglas de renovación. <br> -**Invoice:** Documento que detalla los cargos generados para un usuario, incluyendo desgloses de precio y fechas de vencimiento, así como su estado de pago. <br> -**PaymentTransaction:** Registro de cada intento de cobro o pago (recurrente o único), con información sobre el resultado y cualquier código de error. <br> -**Stripe API (PaymentGateway):** Servicio externo encargado de procesar los pagos, al que se envían las transacciones para su autorización y liquidación. <br> -**WebhookEvent:** Mensaje entrante desde la pasarela de pago que notifica al sistema sobre cambios en el estado de una transacción (aprobada, rechazada, reembolsada). <br> -**BillingCycle:** Periodo de facturación asociado a un SubscriptionPlan, que determina la cadencia de generación de Invoice y la programación de PaymentTransaction. |
-| **7. Data Analytics**   | -**Ingesta, normalización y almacenamiento de registros de sensores (SensorRecord):** captura masiva de datos crudos, aplicación de procesos de limpieza y estructuración, y persistencia segura en el repositorio de datos. <br> -**Procesamiento batch y en streaming:** cálculo de métricas agregadas en lotes programados y en tiempo real, garantizando la disponibilidad continua de indicadores. <br> -**Exposición de dashboards y endpoints de consulta:** provisión de interfaces gráficas y APIs REST para la visualización interactiva de tendencias y la obtención directa de datos. - **Interpretación de KPIs:** elaboración de indicadores clave de rendimiento derivados de los datos sensoriales, facilitando la toma de decisiones operativas y estratégicas.                                        | -**SensorRecord:** Registro individual de datos capturados por un sensor (humedad, temperatura, luminosidad, pH, etc.), almacenado con su marca de tiempo y metadatos de origen. <br> -**InsightReport:** Documento generado a partir del análisis de los datos sensoriales y KPIs, que presenta conclusiones, tendencias y recomendaciones operativas o estratégicas. <br> -**Dashboard:** Interfaz gráfica interactiva que muestra visualizaciones en tiempo real o históricas de métricas clave, permitiendo filtrar y profundizar en la información. <br> -**BatchProcess:** Flujo de trabajo periódico que procesa grandes volúmenes de SensorRecord para calcular métricas agregadas y generar nuevos InsightReport. <br> -**KPI (Key Performance Indicator):** Métrica derivada de los datos sensoriales que cuantifica el rendimiento o estado de las macetas y plantas, usada para la toma de decisiones.|
+| Contexto                                | Responsabilidades clave                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Ubiquitous Language                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. IAM**                              | **- Autenticación de usuarios:** gestión de inicio y cierre de sesión, con control seguro de las credenciales. <br>**- Emisión y validación de tokens:** generación de JSON Web Tokens (JWT) y tokens de refresco para mantener sesiones seguras y persistentes. <br> **- Autenticación de dos factores (2FA):** envío y verificación de códigos para reforzar la seguridad de acceso. <br> **- Gestión de permisos y roles:** definición, asignación y verificación de privilegios de usuario según políticas establecidas. <br> **- Registro y administración de cuentas:** creación de usuarios, recuperación de contraseñas y mantenimiento de perfiles.                                                                                                                                                                                                                                                                                                                                                                                                                              | **- User:** Representa a la persona real o entidad que interactúa con el sistema, identificada de forma única por un conjunto de atributos. <br> **- Credentials** Conjunto de datos secretos que el usuario emplea para demostrar su identidad.<br> **- Session:** Período de interacción autorizado entre un usuario y el sistema, iniciado tras la autenticación y mantenido mediante un token válido hasta que el usuario cierre sesión o expire. <br> **- Access Token:** Token de corta duración que certifica las credenciales del usuario y autoriza el acceso a recursos protegidos durante la sesión activa. <br> **- Refresh Token:** Token de mayor duración que permite obtener nuevos Access Tokens sin necesidad de que el usuario vuelva a autenticarse con sus credenciales. <br> **-Two‑Factor Authentication (2FA):** Mecanismo de seguridad adicional que exige un segundo factor de verificación (p. ej., código enviado por SMS o app de autenticación) tras la introducción de las credenciales.                                                                                        |
+| **2. Profile & Personal Data**          | - **Gestión de perfil de usuario:** almacenamiento y actualización de datos personales (nombre, teléfono, dirección) con controles de integridad. <br> - **Configuración de preferencias:** personalización de idioma y modelo de notificaciones a recibir. <br> **- Integración con Geo API:** acceso a catálogos de países y ciudades para facilitar la selección y estandarización de ubicaciones. <br> - **Normalización y validación de direcciones:** aplicación de reglas y formatos estándar para asegurar la consistencia de los datos de ubicación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | - **User:** Representa al individuo registrado en el sistema, con una identidad única vinculada a su perfil y credenciales de acceso. <br> - **Profile:** Conjunto de datos personales y configuraciones asociadas a un usuario, incluyendo nombre, dirección, número de teléfono y preferencias. <br> - **Address:** Información estructurada sobre la ubicación física del usuario (país, ciudad, calle, código postal), sujeta a validación y normalización. <br> - **PhoneNumber:** Número de contacto del usuario, almacenado en formato internacional estandarizado y utilizado para verificación o notificaciones. <br> - **Preference:** Opciones personalizables elegidas por el usuario, como idioma, configuración de notificaciones, y tema de interfaz (modo claro/oscuro). <br> -**PasswordRecoveryToken:** Token temporal generado para permitir la recuperación segura de una cuenta en caso de pérdida de contraseña. - **GeoAPI:** Servicio externo que proporciona catálogos actualizados de países y ciudades para facilitar la selección geográfica y la validación de direcciones.       |
+| **3. Asset & Resource Management**      | - **Gestión de macetas (Pot):** operaciones de creación, lectura, actualización y eliminación de instancias de Pot, garantizando la integridad y consistencia de los datos. <br> - **Configuración de riego:** definición de parámetros clave, como frecuencia, volumen y umbrales de activación, para adaptar el riego a las necesidades de cada planta. <br>- **Administración de metadatos:** asignación de atributos descriptivos (nombre, identificador único y etiquetas) que facilitan la organización, búsqueda y categorización de las macetas. <br> -**Registro histórico de configuraciones:** persistencia de todos los ajustes realizados en cada maceta, permitiendo auditorías y análisis de evolución a lo largo del tiempo.                                                                                                                                                                                                                                                                                                                                              | - **Pot:** Representa la maceta física asociada a una planta, identificada por un ID único y un conjunto de atributos básicos.<br> -**PotConfiguration:** Conjunto de parámetros de riego y operación asignados a una maceta determinada (frecuencia, volumen, umbrales), que define cómo debe actuarse sobre ella. <br> -**Threshold:** Valor límite que, al ser superado por una medida (humedad, temperatura, etc.), desencadena una acción automática de riego o alerta. <br> -**Metadata:** Atributos descriptivos de la maceta, como nombre, etiquetas, fecha de creación, destinados a facilitar la búsqueda y categorización. <br> - **HistoricalConfig:** Registro inmutable de las configuraciones previas de la maceta, utilizado para auditoría y análisis de evolución en el tiempo. <br> -**SensorBinding:** Asociación de la maceta con uno o varios sensores específicos, que permite la ingestión de datos ambientales para toma de decisiones. <br> -**IrrigationJob:** Tarea disparada en tiempo real que ejecuta el acto de riego sobre la maceta, según su PotConfiguration y Thresholds. |
+| **4. Service Design and Planning**      | -**Catálogo de especies vegetales (PlantSpecies):** Incluye los atributos técnicos de cada planta y sus rangos óptimos de pH, luminosidad, humedad, temperatura y salinidad, garantizando una base de datos exhaustiva para el cuidado botánico. <br> -**Validación de compatibilidad planta–maceta:** Comprueba que las características de la planta seleccionada se ajusten a las dimensiones y capacidades de la maceta, evitando errores de configuración y optimizando el desarrollo vegetal. <br> -**Sincronización con APIs externas:** Ejecuta actualizaciones periódicas para incorporar nuevas especies y refrescar parámetros existentes, asegurando que el catálogo se mantenga alineado con la información más reciente del sector. <br> -**Diseño y planificación del servicio:** Abarca desde la selección de la especie hasta la definición de sus parámetros personalizados,  incluyendo frecuencia y volumen de riego, y la programación de los horarios de riego, proporcionando un flujo de trabajo completo y coherente para la gestión automatizada de cada planta. | - **PlantSpecies:** Entidad que representa una especie vegetal, con atributos como nombre científico, nombre común y clasificación botánica. <br> - **OptimalRange:** Conjunto de valores óptimos para indicadores clave (pH, luminosidad, temperatura, salinidad, humedad) que definen el entorno ideal de crecimiento de una especie. <br> - **Compatibility:** Relación que valida la adecuación entre una especie y una maceta o ambiente determinado, asegurando que las condiciones físicas y de espacio sean apropiadas. <br> - **PlantAPI:** Servicio interno responsable de proporcionar catálogos de especies y actualizar parámetros botánicos de forma periódica. <br> - **PlantParameter:** Conjunto de parámetros personalizados vinculados a una instancia de PlantSpecies (por ejemplo, ajustes finos de frecuencia y volumen de riego).                                                                                                                                                                                                                                                       |
+| **5. Service Operation and Monitoring** | -**Motor de decisión de riego:** analiza en tiempo real los datos de los sensores (SensorData) junto con la configuración de la maceta (PotConfiguration), generando automáticamente los trabajos de riego (IrrigationJob) y disparando las válvulas correspondientes. <br> - **Supervisión continua:** a través de health checks, registro y almacenamiento de logs críticos, envía datos de métricas de disponibilidad y rendimiento. <br> -**Sistema de alertas:** envía notificaciones (push, correo electrónico) ante umbrales o errores, garantizando respuestas inmediatas a incidentes. <br> -**Monitoreo de dispositivo embebido y edge:** integra la aplicación embebida y edge para garantizar la trazabilidad de cada componente y operación de la maceta (riego, alertas, recomendaciones). <br> -**Motor de recomendaciones:** sistema basado en reglas sobre los sensores de Pot y los datos obtenidos con PlantAPI, que crea entidades Recommendation mapeadas a patrones de uso y genera reportes personalizados (ReportTemplate).                                       | - **IrrigationJob:** Tarea disparada en tiempo real que ejecuta el riego de una maceta, a partir de la configuración y los datos sensoriales. <br> - **ValveCommand:** Instrucción enviada al actuador de riego (válvula) para abrir o cerrar el flujo de agua según el plan de riego. <br> -**SensorData:** Lectura cruda proveniente de los sensores (humedad, temperatura, luminosidad, pH, etc.) asociada a una maceta en un instante de tiempo. <br> -**Alert:** Evento generado cuando una métrica o condición supera un umbral crítico, disparando un flujo de notificación y posibles acciones de mitigación. <br> -**NotificationChannel:** Medio utilizado para enviar alertas o avisos al usuario o al equipo de operaciones (push, correo electrónico). <br> -**Recommendation:** Sugerencia generada por el sistema de recomendaciones que propone acciones de cuidado o ajustes personalizados para la planta. <br> -**ReportTemplate:** Estructura predefinida que define el formato y contenido de los informes personalizados que se entregan al usuario.                                     |
+| **6. Subscriptions & Payments**         | **-Definición y gestión de planes de suscripción (SubscriptionPlan):** creación y parametrización de modalidades (freemium, premium mensual o anual), con reglas de acceso y beneficios asociados. <br> - **Procesamiento de pagos:** manejo de transacciones periódicas y cargos únicos, garantizando la fiabilidad y la seguridad en cada operación. <br> - **Administración de facturación (Invoice):** generación automática de facturas, seguimiento de su estado (pendiente, pagada, vencida) y emisión de recordatorios ante impagos. <br> -**Integración con pasarelas de pago y webhooks:** conexión con el proveedor externo de Stripe para la ejecución de pagos y recepción de notificaciones en tiempo real sobre eventos de cobro.                                                                                                                                                                                                                                                                                                                                          | -**SubscriptionPlan:** Modelo que describe las modalidades de suscripción (freemium, premium mensual o anual), con sus características, precios y reglas de renovación. <br> -**Invoice:** Documento que detalla los cargos generados para un usuario, incluyendo desgloses de precio y fechas de vencimiento, así como su estado de pago. <br> -**PaymentTransaction:** Registro de cada intento de cobro o pago (recurrente o único), con información sobre el resultado y cualquier código de error. <br> -**Stripe API (PaymentGateway):** Servicio externo encargado de procesar los pagos, al que se envían las transacciones para su autorización y liquidación. <br> -**WebhookEvent:** Mensaje entrante desde la pasarela de pago que notifica al sistema sobre cambios en el estado de una transacción (aprobada, rechazada, reembolsada). <br> -**BillingCycle:** Periodo de facturación asociado a un SubscriptionPlan, que determina la cadencia de generación de Invoice y la programación de PaymentTransaction.                                                                                |
+| **7. Data Analytics**                   | -**Ingesta, normalización y almacenamiento de registros de sensores (SensorRecord):** captura masiva de datos crudos, aplicación de procesos de limpieza y estructuración, y persistencia segura en el repositorio de datos. <br> -**Procesamiento batch y en streaming:** cálculo de métricas agregadas en lotes programados y en tiempo real, garantizando la disponibilidad continua de indicadores. <br> -**Exposición de dashboards y endpoints de consulta:** provisión de interfaces gráficas y APIs REST para la visualización interactiva de tendencias y la obtención directa de datos. - **Interpretación de KPIs:** elaboración de indicadores clave de rendimiento derivados de los datos sensoriales, facilitando la toma de decisiones operativas y estratégicas.                                                                                                                                                                                                                                                                                                          | -**SensorRecord:** Registro individual de datos capturados por un sensor (humedad, temperatura, luminosidad, pH, etc.), almacenado con su marca de tiempo y metadatos de origen. <br> -**InsightReport:** Documento generado a partir del análisis de los datos sensoriales y KPIs, que presenta conclusiones, tendencias y recomendaciones operativas o estratégicas. <br> -**Dashboard:** Interfaz gráfica interactiva que muestra visualizaciones en tiempo real o históricas de métricas clave, permitiendo filtrar y profundizar en la información. <br> -**BatchProcess:** Flujo de trabajo periódico que procesa grandes volúmenes de SensorRecord para calcular métricas agregadas y generar nuevos InsightReport. <br> -**KPI (Key Performance Indicator):** Métrica derivada de los datos sensoriales que cuantifica el rendimiento o estado de las macetas y plantas, usada para la toma de decisiones.                                                                                                                                                                                             |
 
 #### 4.1.1.2 Domain Message Flows Modeling
 
@@ -631,39 +631,39 @@ En la capa de dominio de IAM se definen las entidades y objetos de valor esencia
 
 _Tabla de User en el Domain Layer de IAM_
 
-| Propiedad   | Valor                         |
-|-------------|-------------------------------|
-| **Nombre**  | User                          |
-| **Categoría** | Aggregate Root             |
+| Propiedad     | Valor                                                                                                            |
+|---------------|------------------------------------------------------------------------------------------------------------------|
+| **Nombre**    | User                                                                                                             |
+| **Categoría** | Aggregate Root                                                                                                   |
 | **Propósito** | Representar a un usuario autenticado en el sistema, encapsulando su información personal, credenciales y estado. |
 
 ###### Tabla 18
 
 _Tabla de atributos de User en el Domain Layer de IAM_
 
-| Nombre       | Tipo de dato   | Visibilidad | Descripción                                  |
-|--------------|----------------|-------------|----------------------------------------------|
-| Id           | `unsigned long`| private     | Identificador único del usuario        |
-| FullName     | `FullName`     | private     | 	Nombre completo del usuario                          |
-| Email        | `Email`        | private     | 	Correo electrónico asociado al usuario               |
-| Password     | `PasswordHash` | private     | Hash seguro de la contraseña |
-| Role         | `List<Role>`   | private     | Lista de roles asignados al usuario                              |
-| CreatedDate  | `DateTime`     | private     | 	Fecha de creación del registro del usuario               |
-| Status       | `Status` (enum)| private     | Estado actual del usuario (activo, suspendido, eliminado)                           |
+| Nombre      | Tipo de dato    | Visibilidad | Descripción                                               |
+|-------------|-----------------|-------------|-----------------------------------------------------------|
+| Id          | `unsigned long` | private     | Identificador único del usuario                           |
+| FullName    | `FullName`      | private     | 	Nombre completo del usuario                              |
+| Email       | `Email`         | private     | 	Correo electrónico asociado al usuario                   |
+| Password    | `PasswordHash`  | private     | Hash seguro de la contraseña                              |
+| Role        | `List<Role>`    | private     | Lista de roles asignados al usuario                       |
+| CreatedDate | `DateTime`      | private     | 	Fecha de creación del registro del usuario               |
+| Status      | `Status` (enum) | private     | Estado actual del usuario (activo, suspendido, eliminado) |
 
 ###### Tabla 19
 
 _Tabla de métodos de User en el Domain Layer de IAM_
 
-| Nombre         | Tipo de retorno | Visibilidad | Descripción                            |
-|----------------|-----------------|-------------|----------------------------------------|
-| ChangeName     | `void`          | public      | 	Modifica el nombre completo del usuario             |
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                  |
+|----------------|-----------------|-------------|----------------------------------------------|
+| ChangeName     | `void`          | public      | 	Modifica el nombre completo del usuario     |
 | ChangeEmail    | `void`          | public      | 	Actualiza el correo electrónico del usuario |
-| ChangePassword | `void`          | public      | Cambia la contraseña del usuario         |
-| ChangeRole     | `void`          | public      | Asigna nuevos roles al usuario            |
-| Suspend        | `void`          | public      | 	Marca al usuario como suspendido                  |
-| Activate       | `void`          | public      | Reactiva a un usuario suspendido                    |
-| Delete         | `void`          | public      | Marca lógicamente al usuario como eliminado       |
+| ChangePassword | `void`          | public      | Cambia la contraseña del usuario             |
+| ChangeRole     | `void`          | public      | Asigna nuevos roles al usuario               |
+| Suspend        | `void`          | public      | 	Marca al usuario como suspendido            |
+| Activate       | `void`          | public      | Reactiva a un usuario suspendido             |
+| Delete         | `void`          | public      | Marca lógicamente al usuario como eliminado  |
 
 **UserId**
 
@@ -671,19 +671,19 @@ _Tabla de métodos de User en el Domain Layer de IAM_
 
 _Tabla de UserId en el Domain Layer de IAM_
 
-| Propiedad    | Valor                                         |
-|--------------|-----------------------------------------------|
-| **Nombre**   | UserId                                        |
-| **Categoría**| Value Object                                  |
-| **Propósito**| 	Encapsular el identificador único de usuario  |
+| Propiedad     | Valor                                        |
+|---------------|----------------------------------------------|
+| **Nombre**    | UserId                                       |
+| **Categoría** | Value Object                                 |
+| **Propósito** | Encapsular el identificador único de usuario |
 
 ###### Tabla 21
 
 _Tabla de atributos de UserId en el Domain Layer de IAM_
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                         |
-|--------|--------------|-------------|-------------------------------------|
-| Value  | `Long`       | private     | Valor numérico del identificador      |
+| Nombre | Tipo de dato | Visibilidad | Descripción                      |
+|--------|--------------|-------------|----------------------------------|
+| Value  | `Long`       | private     | Valor numérico del identificador |
 
 **FullName**
 
@@ -691,11 +691,11 @@ _Tabla de atributos de UserId en el Domain Layer de IAM_
 
 _Tabla de FullName en el Domain Layer de IAM_
 
-| Propiedad    | Valor                                   |
-|--------------|-----------------------------------------|
-| **Nombre**   | FullName                                |
-| **Categoría**| Value Object                            |
-| **Propósito**| 	Representar el nombre completo de un usuario            |
+| Propiedad     | Valor                                         |
+|---------------|-----------------------------------------------|
+| **Nombre**    | FullName                                      |
+| **Categoría** | Value Object                                  |
+| **Propósito** | 	Representar el nombre completo de un usuario |
 
 ###### Tabla 23
 
@@ -712,18 +712,18 @@ _Tabla de atributos de FullName en el Domain Layer de IAM_
 
 _Tabla de Email en el Domain Layer de IAM_
 
-| Propiedad    | Valor                                  |
-|--------------|----------------------------------------|
-| **Nombre**   | Email                                  |
-| **Categoría**| Value Object                           |
-| **Propósito**| 	Representar un correo electrónico válido |
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | Email                                     |
+| **Categoría** | Value Object                              |
+| **Propósito** | 	Representar un correo electrónico válido |
 
 ###### Tabla 25
 
 _Tabla de atributos de Email en el Domain Layer de IAM_
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                   |
-|--------|--------------|-------------|-------------------------------|
+| Nombre | Tipo de dato | Visibilidad | Descripción                     |
+|--------|--------------|-------------|---------------------------------|
 | Email  | `string`     | private     | Dirección de correo electrónico |
 
 **PasswordHash**
@@ -732,27 +732,27 @@ _Tabla de atributos de Email en el Domain Layer de IAM_
 
 _Tabla de PasswordHash en el Domain Layer de IAM_
 
-| Propiedad    | Valor                                              |
-|--------------|----------------------------------------------------|
-| **Nombre**   | PasswordHash                                       |
-| **Categoría**| Value Object                                       |
-| **Propósito**| 	Almacenar la versión en hash de la contraseña del usuario        |
+| Propiedad     | Valor                                                      |
+|---------------|------------------------------------------------------------|
+| **Nombre**    | PasswordHash                                               |
+| **Categoría** | Value Object                                               |
+| **Propósito** | 	Almacenar la versión en hash de la contraseña del usuario |
 
 ###### Tabla 27
 
 _Tabla de atributos de PasswordHash en el Domain Layer de IAM_
 
-| Nombre | Tipo de dato | Visibilidad | Descripción                         |
-|--------|--------------|-------------|-------------------------------------|
-| email  | `string`     | private     | Hash de la contraseña del usuario      |
+| Nombre | Tipo de dato | Visibilidad | Descripción                       |
+|--------|--------------|-------------|-----------------------------------|
+| email  | `string`     | private     | Hash de la contraseña del usuario |
 
 ###### Tabla 28
 
 _Tabla de métodos de PasswordHash en el Domain Layer de IAM_
 
-| Nombre  | Tipo de retorno | Visibilidad | Descripción                                       |
-|---------|-----------------|-------------|---------------------------------------------------|
-| Matches | `bool`          | public      | Verifica si una contraseña en texto plano coincide con el hash almacenado      |
+| Nombre  | Tipo de retorno | Visibilidad | Descripción                                                               |
+|---------|-----------------|-------------|---------------------------------------------------------------------------|
+| Matches | `bool`          | public      | Verifica si una contraseña en texto plano coincide con el hash almacenado |
 
 **UserFactory**
 
@@ -760,19 +760,19 @@ _Tabla de métodos de PasswordHash en el Domain Layer de IAM_
 
 _Tabla de UserFactory en el Domain Layer de IAM_
 
-| Propiedad    | Valor                                      |
-|--------------|--------------------------------------------|
-| **Nombre**   | UserFactory                                |
-| **Categoría**| Factory                                    |
-| **Propósito**| 	Crear instancias válidas de User          |
+| Propiedad     | Valor                             |
+|---------------|-----------------------------------|
+| **Nombre**    | UserFactory                       |
+| **Categoría** | Factory                           |
+| **Propósito** | 	Crear instancias válidas de User |
 
 ###### Tabla 30
 
 _Tabla de métodos de UserFactory en el Domain Layer de IAM_
 
-| Nombre | Tipo de retorno | Visibilidad | Descripción                      |
-|--------|-----------------|-------------|----------------------------------|
-| Create | `User`          | public      | Construye una nueva instancia de User    |
+| Nombre | Tipo de retorno | Visibilidad | Descripción                           |
+|--------|-----------------|-------------|---------------------------------------|
+| Create | `User`          | public      | Construye una nueva instancia de User |
 
 **IUserRepository**
 
@@ -780,25 +780,25 @@ _Tabla de métodos de UserFactory en el Domain Layer de IAM_
 
 _Tabla de IUserRepository en el Domain Layer de IAM_
 
-| Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
-| **Nombre**    | IUserRepository                           |
-| **Categoría** | Repository                                |
-| **Propósito** | Interfaz para persistencia de usuarios   |
+| Propiedad     | Valor                                  |
+|---------------|----------------------------------------|
+| **Nombre**    | IUserRepository                        |
+| **Categoría** | Repository                             |
+| **Propósito** | Interfaz para persistencia de usuarios |
 
 ###### Tabla 32
 
 _Tabla de métodos de IUserRepository en el Domain Layer de IAM_
 
-| Nombre               | Tipo de retorno | Visibilidad | Descripción                                                   |
-|----------------------|-----------------|-------------|---------------------------------------------------------------|
-| GetByIdAsync         | `User?`         | public      | Obtiene un usuario por su identificador                         |
-| FindByEmailAsync     | `User?`         | public      | Busca un usuario por su correo electrónico                                  |
-| ExistsByEmailAsync   | `bool`          | public      | Verifica si un usuario ya está registrado con un email determinado     |
-| FindAllAsync         | `List<User>`    | public      | Recupera todos los usuarios registrados (uso administrativo)             |
-| SaveAsync            | `User`          | public      | Persiste o actualiza un usuario |
-| DeleteLogicallyAsync | `bool`          | public      | Marca un usuario como eliminado lógicamente                                |
-| CountAsync           | `long`          | public      | Devuelve el total de usuarios registrados                                             |
+| Nombre               | Tipo de retorno | Visibilidad | Descripción                                                        |
+|----------------------|-----------------|-------------|--------------------------------------------------------------------|
+| GetByIdAsync         | `User?`         | public      | Obtiene un usuario por su identificador                            |
+| FindByEmailAsync     | `User?`         | public      | Busca un usuario por su correo electrónico                         |
+| ExistsByEmailAsync   | `bool`          | public      | Verifica si un usuario ya está registrado con un email determinado |
+| FindAllAsync         | `List<User>`    | public      | Recupera todos los usuarios registrados (uso administrativo)       |
+| SaveAsync            | `User`          | public      | Persiste o actualiza un usuario                                    |
+| DeleteLogicallyAsync | `bool`          | public      | Marca un usuario como eliminado lógicamente                        |
+| CountAsync           | `long`          | public      | Devuelve el total de usuarios registrados                          |
 
 **ISessionRepository**
 
@@ -806,22 +806,22 @@ _Tabla de métodos de IUserRepository en el Domain Layer de IAM_
 
 _Tabla de ISessionRepository en el Domain Layer de IAM_
 
-| Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
-| **Nombre**    | ISessionRepository                          |
-| **Categoría** | Repository                                  |
-| **Propósito** | Interfaz para gestionar sesiones activas     |
+| Propiedad     | Valor                                    |
+|---------------|------------------------------------------|
+| **Nombre**    | ISessionRepository                       |
+| **Categoría** | Repository                               |
+| **Propósito** | Interfaz para gestionar sesiones activas |
 
 ###### Tabla 34
 
 _Tabla de métodos de ISessionRepository en el Domain Layer de IAM_
 
-| Nombre                  | Tipo de retorno   | Visibilidad | Descripción                                      |
-|-------------------------|-------------------|-------------|--------------------------------------------------|
-| FindByTokenId           | `SessionToken?`   | public      | Recupera un token de sesión por su identificador        |
-| Store                   | `void`            | public      | Persiste un nuevo token de sesión                   |
-| Revoke                  | `void`            | public      | Revoca un token de sesión específico                                 |
-| RevokeAllSessionForUser | `void`            | public      | Revoca todas las sesiones activas de un usuario     |
+| Nombre                  | Tipo de retorno | Visibilidad | Descripción                                      |
+|-------------------------|-----------------|-------------|--------------------------------------------------|
+| FindByTokenId           | `SessionToken?` | public      | Recupera un token de sesión por su identificador |
+| Store                   | `void`          | public      | Persiste un nuevo token de sesión                |
+| Revoke                  | `void`          | public      | Revoca un token de sesión específico             |
+| RevokeAllSessionForUser | `void`          | public      | Revoca todas las sesiones activas de un usuario  |
 
 **Authenticator**
 
@@ -829,19 +829,19 @@ _Tabla de métodos de ISessionRepository en el Domain Layer de IAM_
 
 _Tabla de Authenticator en el Domain Layer de IAM_
 
-| Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
-| **Nombre**    | Authenticator                                |
-| **Categoría** | Domain Service                               |
-| **Propósito** | Validar credenciales y generar tokens de sesión     |
+| Propiedad     | Valor                                           |
+|---------------|-------------------------------------------------|
+| **Nombre**    | Authenticator                                   |
+| **Categoría** | Domain Service                                  |
+| **Propósito** | Validar credenciales y generar tokens de sesión |
 
 ###### Tabla 36
 
 _Tabla de métodos de Authenticator en el Domain Layer de IAM_
 
-| Nombre       | Tipo de retorno  | Visibilidad | Descripción                  |
-|--------------|------------------|-------------|------------------------------|
-| authenticate | `SessionToken`   | public      | Autentica a un usuario y emite un token de sesión válido |
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                              |
+|--------------|-----------------|-------------|----------------------------------------------------------|
+| authenticate | `SessionToken`  | public      | Autentica a un usuario y emite un token de sesión válido |
 
 **SessionToken**
 
@@ -849,23 +849,23 @@ _Tabla de métodos de Authenticator en el Domain Layer de IAM_
 
 _Tabla de SessionToken en el Domain Layer de IAM_
 
-| Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
-| **Nombre**    | SessionToken                                   |
-| **Categoría** | Entity                                         |
-| **Propósito** | Representar una sesión autenticada activa     |
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | SessionToken                              |
+| **Categoría** | Entity                                    |
+| **Propósito** | Representar una sesión autenticada activa |
 
 ###### Tabla 38
 
 _Tabla de métodos de SessionToken en el Domain Layer de IAM_
 
-| Nombre      | Tipo de dato | Visibilidad | Descripción                                 |
-|-------------|--------------|-------------|---------------------------------------------|
-| TokenId     | `string`     | private     | Identificador único del token               |
-| userId      | `UserId`     | private     | Identificador del usuario asociado                   |
-| createdAt   | `DateTime`   | private     | Fecha y hora de creación del token          |
-| expiresAt   | `DateTime`   | private     | Fecha y hora de expiración del token        |
-| revoked     | `bool`       | private     | Indica si el token ha sido revocado         |
+| Nombre    | Tipo de dato | Visibilidad | Descripción                          |
+|-----------|--------------|-------------|--------------------------------------|
+| TokenId   | `string`     | private     | Identificador único del token        |
+| userId    | `UserId`     | private     | Identificador del usuario asociado   |
+| createdAt | `DateTime`   | private     | Fecha y hora de creación del token   |
+| expiresAt | `DateTime`   | private     | Fecha y hora de expiración del token |
+| revoked   | `bool`       | private     | Indica si el token ha sido revocado  |
 
 #### 4.2.1.2. IAM Bounded Context Interface Layer
 
@@ -877,24 +877,24 @@ En la capa de interfaz del Bounded Context de IAM se exponen los endpoints neces
 
 _Tabla de SessionToken en el Interface Layer de IAM_
 
-| Propiedad     | Valor                   |
-|---------------|-------------------------|
-| **Nombre**    | UserController          |
-| **Categoría** | Controller              |
-| **Propósito** | Exponer endpoints para gestión de usuarios      |
-| **Ruta**      | `/api/users`            |
+| Propiedad     | Valor                                      |
+|---------------|--------------------------------------------|
+| **Nombre**    | UserController                             |
+| **Categoría** | Controller                                 |
+| **Propósito** | Exponer endpoints para gestión de usuarios |
+| **Ruta**      | `/api/users`                               |
 
 ###### Tabla 40
 
 _Tabla de métodos de SessionToken en el Interface Layer de IAM_
 
-| Nombre         | Ruta                    | Acción                      | Handle                                           |
-|----------------|-------------------------|-----------------------------|--------------------------------------------------|
-| GetById        | `/{userId}`             | Obtiene los datos de un usuario | `GetUserByIdQuery`                              |
-| ChangeName     | `/{userId}/name`        | Cambia `FullName`           | `ChangeUserNameCommand`                          |
-| ChangeEmail    | `/{userId}/email`       | Cambia `Email`              | `ChangeUserEmailCommand`                         |
-| ChangePassword | `/{userId}/password`    | Cambia `PasswordHash`       | `ChangeUserPasswordCommand`                      |
-| ChangeStatus   | `/{userId}/status`      | Cambia `Status`             | `ActivateUserCommand`, `SuspendUserCommand`, `DeleteUserCommand` |
+| Nombre         | Ruta                 | Acción                          | Handle                                                           |
+|----------------|----------------------|---------------------------------|------------------------------------------------------------------|
+| GetById        | `/{userId}`          | Obtiene los datos de un usuario | `GetUserByIdQuery`                                               |
+| ChangeName     | `/{userId}/name`     | Cambia `FullName`               | `ChangeUserNameCommand`                                          |
+| ChangeEmail    | `/{userId}/email`    | Cambia `Email`                  | `ChangeUserEmailCommand`                                         |
+| ChangePassword | `/{userId}/password` | Cambia `PasswordHash`           | `ChangeUserPasswordCommand`                                      |
+| ChangeStatus   | `/{userId}/status`   | Cambia `Status`                 | `ActivateUserCommand`, `SuspendUserCommand`, `DeleteUserCommand` |
 
 **AuthController**
 
@@ -930,12 +930,12 @@ La capa de aplicación del Bounded Context de IAM coordina el flujo de trabajo e
 
 _Tabla de UserRegisterCommandHandler en el Application Layer de IAM_
 
-| Propiedad     | Valor                        |
-|---------------|------------------------------|
-| **Nombre**    | UserRegisterCommandHandler   |
-| **Categoría** | Command Handler             |
-| **Propósito** | Registrar un usuario         |
-| **Comando**   | RegisterUserCommand          |
+| Propiedad     | Valor                      |
+|---------------|----------------------------|
+| **Nombre**    | UserRegisterCommandHandler |
+| **Categoría** | Command Handler            |
+| **Propósito** | Registrar un usuario       |
+| **Comando**   | RegisterUserCommand        |
 
 **UserLoginCommandHandler**
 
@@ -943,12 +943,12 @@ _Tabla de UserRegisterCommandHandler en el Application Layer de IAM_
 
 _Tabla de UserLoginCommandHandler en el Application Layer de IAM_
 
-| Propiedad     | Valor                      |
-|---------------|----------------------------|
-| **Nombre**    | UserLoginCommandHandler    |
-| **Categoría** | Command Handler           |
-| **Propósito** | Iniciar sesión a un usuario|
-| **Comando**   | LoginUserCommand           |
+| Propiedad     | Valor                       |
+|---------------|-----------------------------|
+| **Nombre**    | UserLoginCommandHandler     |
+| **Categoría** | Command Handler             |
+| **Propósito** | Iniciar sesión a un usuario |
+| **Comando**   | LoginUserCommand            |
 
 **UserLogoutCommandHandler**
 
@@ -959,7 +959,7 @@ _Tabla de UserLogoutCommandHandler en el Application Layer de IAM_
 | Propiedad     | Valor                       |
 |---------------|-----------------------------|
 | **Nombre**    | UserLogoutCommandHandler    |
-| **Categoría** | Command Handler            |
+| **Categoría** | Command Handler             |
 | **Propósito** | Cerrar sesión de un usuario |
 | **Comando**   | LogoutUserCommand           |
 
@@ -969,12 +969,12 @@ _Tabla de UserLogoutCommandHandler en el Application Layer de IAM_
 
 _Tabla de RegisteredUserEventHandler en el Application Layer de IAM_
 
-| Propiedad     | Valor                    |
-|---------------|--------------------------|
-| **Nombre**    | RegisteredUserEventHandler |
-| **Categoría** | Event Handler           |
+| Propiedad     | Valor                               |
+|---------------|-------------------------------------|
+| **Nombre**    | RegisteredUserEventHandler          |
+| **Categoría** | Event Handler                       |
 | **Propósito** | Gestionar el registro de un usuario |
-| **Evento**    | UserRegisteredEvent     |
+| **Evento**    | UserRegisteredEvent                 |
 
 **UserLoggedInEventHandler**
 
@@ -982,12 +982,12 @@ _Tabla de RegisteredUserEventHandler en el Application Layer de IAM_
 
 _Tabla de UserLoggedInEventHandler en el Application Layer de IAM_
 
-| Propiedad     | Valor                        |
-|---------------|------------------------------|
-| **Nombre**    | UserLoggedInEventHandler     |
-| **Categoría** | Event Handler              |
+| Propiedad     | Valor                               |
+|---------------|-------------------------------------|
+| **Nombre**    | UserLoggedInEventHandler            |
+| **Categoría** | Event Handler                       |
 | **Propósito** | Gestionar el registro de un usuario |
-| **Evento**    | UserLoggedInEvent           |
+| **Evento**    | UserLoggedInEvent                   |
 
 **UserLoggedOutEventHandler**
 
@@ -1019,7 +1019,7 @@ _Tabla de UserRepository en el Infraestructure Layer de IAM_
 | **Nombre**    | UserRepository                            |
 | **Categoría** | Repositorio                               |
 | **Propósito** | Persistir y consultar entidades de `User` |
-| **Interfaz**  | `IUserRepository`                        |
+| **Interfaz**  | `IUserRepository`                         |
 
 **SessionRepository**
 
@@ -1027,12 +1027,12 @@ _Tabla de UserRepository en el Infraestructure Layer de IAM_
 
 _Tabla de SessionRepository en el Infraestructure Layer de IAM_
 
-| Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
-| **Nombre**    | SessionRepository                           |
-| **Categoría** | Repositorio                                 |
-| **Propósito** | Persistir y consultar entidades de `User`   |
-| **Interfaz**  | `ISessionRepository`                       |
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | SessionRepository                         |
+| **Categoría** | Repositorio                               |
+| **Propósito** | Persistir y consultar entidades de `User` |
+| **Interfaz**  | `ISessionRepository`                      |
 
 **AppDbContext**
 
@@ -1114,7 +1114,7 @@ En la capa de dominio de Profiles and Preferences se modelan las entidades, obje
 _Tabla de Profile en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                              |
-| ------------- | ------------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------------|
 | **Nombre**    | Profile                                                            |
 | **Categoría** | Aggregate Root                                                     |
 | **Propósito** | Agrupar y gestionar los datos de perfil y personales de un usuario |
@@ -1124,7 +1124,7 @@ _Tabla de Profile en el Domain Layer de Profile and Preferences_
 _Tabla de atributos de Profile en el Domain Layer de Profile and Preferences_
 
 | Nombre           | Tipo de dato    | Visibilidad | Descripción                                         |
-| ---------------- | --------------- | ----------- | --------------------------------------------------- |
+|------------------|-----------------|-------------|-----------------------------------------------------|
 | userUid          | `String`        | private     | Identificador único del usuario                     |
 | name             | `FullName`      | private     | Nombre completo del usuario                         |
 | phoneNumber      | `PhoneNumber`   | private     | Número de teléfono del usuario                      |
@@ -1140,7 +1140,7 @@ _Tabla de atributos de Profile en el Domain Layer de Profile and Preferences_
 _Tabla de métodos de Profile en el Domain Layer de Profile and Preferences_
 
 | Nombre                  | Tipo de retorno | Visibilidad | Descripción                                             |
-| ----------------------- | --------------- | ----------- | ------------------------------------------------------- |
+|-------------------------|-----------------|-------------|---------------------------------------------------------|
 | changeName              | `void`          | public      | Actualiza el `name` y marca `updatedAt`                 |
 | changePhoneNumber       | `void`          | public      | Actualiza el `phoneNumber` y marca `updatedAt`          |
 | changeStreetAddress     | `void`          | public      | Actualiza el `streetAddress` y marca `updatedAt`        |
@@ -1155,7 +1155,7 @@ _Tabla de métodos de Profile en el Domain Layer de Profile and Preferences_
 _Tabla de FullName en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | FullName                                 |
 | **Categoría** | Value Object                             |
 | **Propósito** | Encapsular nombre y apellido del usuario |
@@ -1165,7 +1165,7 @@ _Tabla de FullName en el Domain Layer de Profile and Preferences_
 _Tabla de atributos de FullName en el Domain Layer de Profile and Preferences_
 
 | Nombre   | Tipo de dato | Visibilidad | Descripción           |
-| -------- | ------------ | ----------- | --------------------- |
+|----------|--------------|-------------|-----------------------|
 | name     | `String`     | private     | Nombre propio         |
 | lastName | `String`     | private     | Apellidos del usuario |
 
@@ -1173,9 +1173,9 @@ _Tabla de atributos de FullName en el Domain Layer de Profile and Preferences_
 
 _Tabla de métodos de FullName en el Domain Layer de Profile and Preferences_
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
-| --------------- | --------------- | ----------- | --------------------------------------- |
-| fullName        | `String`        | public      | Retorna `name + " " + lastName`         |
+| Nombre   | Tipo de retorno | Visibilidad | Descripción                     |
+|----------|-----------------|-------------|---------------------------------|
+| fullName | `String`        | public      | Retorna `name + " " + lastName` |
 
 **PhoneNumber**
 
@@ -1184,7 +1184,7 @@ _Tabla de métodos de FullName en el Domain Layer de Profile and Preferences_
 _Tabla de PhoneNumber en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                     |
-| ------------- | ----------------------------------------- |
+|---------------|-------------------------------------------|
 | **Nombre**    | PhoneNumber                               |
 | **Categoría** | Value Object                              |
 | **Propósito** | Validar y almacenar un número de teléfono |
@@ -1194,7 +1194,7 @@ _Tabla de PhoneNumber en el Domain Layer de Profile and Preferences_
 _Tabla de atributos de PhoneNumber en el Domain Layer de Profile and Preferences_
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                |
-| ----------- | ------------ | ----------- | -------------------------- |
+|-------------|--------------|-------------|----------------------------|
 | countryCode | `String`     | private     | Código de país (ej. "+51") |
 | number      | `String`     | private     | Número local del teléfono  |
 
@@ -1202,9 +1202,9 @@ _Tabla de atributos de PhoneNumber en el Domain Layer de Profile and Preferences
 
 _Tabla de métodos de PhoneNumber en el Domain Layer de Profile and Preferences_
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                             |
-| --------------- | --------------- | ----------- | --------------------------------------- |
-| formatted       | `String`        | public      | Devuelve `countryCode + number`         |
+| Nombre    | Tipo de retorno | Visibilidad | Descripción                     |
+|-----------|-----------------|-------------|---------------------------------|
+| formatted | `String`        | public      | Devuelve `countryCode + number` |
 
 **StreetAddress**
 
@@ -1213,7 +1213,7 @@ _Tabla de métodos de PhoneNumber en el Domain Layer de Profile and Preferences_
 _Tabla de StreetAddress en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                  |
-| ------------- | -------------------------------------- |
+|---------------|----------------------------------------|
 | **Nombre**    | StreetAddress                          |
 | **Categoría** | Value Object                           |
 | **Propósito** | Almacenar datos de la dirección física |
@@ -1223,7 +1223,7 @@ _Tabla de StreetAddress en el Domain Layer de Profile and Preferences_
 _Tabla de atributos de StreetAddress en el Domain Layer de Profile and Preferences_
 
 | Nombre       | Tipo de dato | Visibilidad | Descripción                        |
-| ------------ | ------------ | ----------- | ---------------------------------- |
+|--------------|--------------|-------------|------------------------------------|
 | street       | `String`     | private     | Nombre de la calle                 |
 | streetNumber | `String`     | private     | Número o identificador de la calle |
 | city         | `String`     | private     | Ciudad                             |
@@ -1234,9 +1234,9 @@ _Tabla de atributos de StreetAddress en el Domain Layer de Profile and Preferenc
 
 _Tabla de métodos de StreetAddress en el Domain Layer de Profile and Preferences_
 
-| Nombre          | Tipo de retorno | Visibilidad | Descripción                                               |
-| --------------- | --------------- | ----------- | --------------------------------------------------------- |
-| fullAddress     | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
+| Nombre      | Tipo de retorno | Visibilidad | Descripción                                               |
+|-------------|-----------------|-------------|-----------------------------------------------------------|
+| fullAddress | `String`        | public      | Retorna la concatenación de todos los campos de dirección |
 
 **ProfileRole**
 
@@ -1245,7 +1245,7 @@ _Tabla de métodos de StreetAddress en el Domain Layer de Profile and Preference
 _Tabla de ProfileRole en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
+|---------------|-----------------------------------------|
 | **Nombre**    | ProfileRole                             |
 | **Categoría** | Enum                                    |
 | **Propósito** | Definir los posibles roles de un perfil |
@@ -1255,7 +1255,7 @@ _Tabla de ProfileRole en el Domain Layer de Profile and Preferences_
 _Tabla de valores de ProfileRole en el Domain Layer de Profile and Preferences_
 
 | Valor    | Descripción                 |
-| -------- | --------------------------- |
+|----------|-----------------------------|
 | Amateur  | Perfil de usuario amateur   |
 | Gardener | Perfil de usuario jardinero |
 
@@ -1266,7 +1266,7 @@ _Tabla de valores de ProfileRole en el Domain Layer de Profile and Preferences_
 _Tabla de ProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                     |
-| ------------- | ----------------------------------------- |
+|---------------|-------------------------------------------|
 | **Nombre**    | ProfileFactory                            |
 | **Categoría** | Factory                                   |
 | **Propósito** | Construir instancias válidas de `Profile` |
@@ -1276,7 +1276,7 @@ _Tabla de ProfileFactory en el Domain Layer de Profile and Preferences_
 _Tabla de métodos de ProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                                                                                       |
-| ------ | --------------- | ----------- | ------------------------------------------------------------------------------------------------- |
+|--------|-----------------|-------------|---------------------------------------------------------------------------------------------------|
 | create | `Profile`       | public      | Crea un `Profile` a partir de datos primitivos, valida valores y asigna `createdAt` y `updatedAt` |
 
 ## IProfileRepository
@@ -1286,7 +1286,7 @@ _Tabla de métodos de ProfileFactory en el Domain Layer de Profile and Preferenc
 _Tabla de IProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                     |
-| ------------- | ----------------------------------------- |
+|---------------|-------------------------------------------|
 | **Nombre**    | IProfileRepository                        |
 | **Categoría** | Repository                                |
 | **Propósito** | Persistir y recuperar entidades `Profile` |
@@ -1296,7 +1296,7 @@ _Tabla de IProfileFactory en el Domain Layer de Profile and Preferences_
 _Tabla de métodos de IProfileFactory en el Domain Layer de Profile and Preferences_
 
 | Nombre        | Tipo de retorno | Visibilidad | Descripción                                       |
-| ------------- | --------------- | ----------- | ------------------------------------------------- |
+|---------------|-----------------|-------------|---------------------------------------------------|
 | findById      | `Profile?`      | public      | Recupera un perfil según su identificador interno |
 | findByUserUid | `Profile?`      | public      | Recupera un perfil según `userUid`                |
 | create        | `Unit`          | public      | Persiste un nuevo `Profile`                       |
@@ -1314,7 +1314,7 @@ En la capa de interfaz del Bounded Context de Profiles and Preferences se expone
 _Tabla de ProfileController en el Interface Layer de Profile and Preferences_
 
 | Propiedad     | Valor                             |
-| ------------- | --------------------------------- |
+|---------------|-----------------------------------|
 | **Nombre**    | ProfileController                 |
 | **Categoría** | Controller                        |
 | **Propósito** | Exponer servicios REST de Profile |
@@ -1325,7 +1325,7 @@ _Tabla de ProfileController en el Interface Layer de Profile and Preferences_
 _Tabla de métodos de ProfileController en el Interface Layer de Profile and Preferences_
 
 | Nombre                   | Ruta                 | Acción                     | Handle                            |
-| ------------------------ | -------------------- | -------------------------- | --------------------------------- |
+|--------------------------|----------------------|----------------------------|-----------------------------------|
 | getProfile               | `/{uid}`             | Obtener perfil             | `GetProfileQuery`                 |
 | updateProfile            | `/{uid}`             | Actualizar perfil completo | `UpdateProfileCommand`            |
 | deleteProfile            | `/{uid}`             | Eliminar perfil            | `DeleteProfileCommand`            |
@@ -1343,7 +1343,7 @@ La capa de aplicación del Bounded Context de Profiles and Preferences coordina 
 _Tabla de ProfileQueryHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | GetProfileQueryHandler                   |
 | **Categoría** | Query Handler                            |
 | **Propósito** | Manejar la lógica para `GetProfileQuery` |
@@ -1355,7 +1355,7 @@ _Tabla de ProfileQueryHandler en el Application Layer de Profile and Preferences
 _Tabla de CreateProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                      |
-| ------------- | ---------------------------------------------------------- |
+|---------------|------------------------------------------------------------|
 | **Nombre**    | CreateProfileCommandHandler                                |
 | **Categoría** | Command Handler                                            |
 | **Propósito** | Ejecutar la creación de un perfil (`CreateProfileCommand`) |
@@ -1367,7 +1367,7 @@ _Tabla de CreateProfileCommandHandler en el Application Layer de Profile and Pre
 _Tabla de UpdateProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                           |
-| ------------- | --------------------------------------------------------------- |
+|---------------|-----------------------------------------------------------------|
 | **Nombre**    | UpdateProfileCommandHandler                                     |
 | **Categoría** | Command Handler                                                 |
 | **Propósito** | Ejecutar la actualización de un perfil (`UpdateProfileCommand`) |
@@ -1379,7 +1379,7 @@ _Tabla de UpdateProfileCommandHandler en el Application Layer de Profile and Pre
 _Tabla de DeleteProfileCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                         |
-| ------------- | ------------------------------------------------------------- |
+|---------------|---------------------------------------------------------------|
 | **Nombre**    | DeleteProfileCommandHandler                                   |
 | **Categoría** | Command Handler                                               |
 | **Propósito** | Ejecutar la eliminación de un perfil (`DeleteProfileCommand`) |
@@ -1391,7 +1391,7 @@ _Tabla de DeleteProfileCommandHandler en el Application Layer de Profile and Pre
 _Tabla de UpdateProfilePreferencesCommandHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                                                   |
-| ------------- | --------------------------------------------------------------------------------------- |
+|---------------|-----------------------------------------------------------------------------------------|
 | **Nombre**    | UpdateProfilePreferencesCommandHandler                                                  |
 | **Categoría** | Command Handler                                                                         |
 | **Propósito** | Ejecutar la actualización de preferencias de perfil (`UpdateProfilePreferencesCommand`) |
@@ -1403,7 +1403,7 @@ _Tabla de UpdateProfilePreferencesCommandHandler en el Application Layer de Prof
 _Tabla de CreatedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
-| ------------- | ------------------------------------------------------- |
+|---------------|---------------------------------------------------------|
 | **Nombre**    | CreatedProfileEventHandler                              |
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileCreatedEvent` |
@@ -1415,7 +1415,7 @@ _Tabla de CreatedProfileEventHandler en el Application Layer de Profile and Pref
 _Tabla de UpdatedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
-| ------------- | ------------------------------------------------------- |
+|---------------|---------------------------------------------------------|
 | **Nombre**    | UpdatedProfileEventHandler                              |
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileUpdatedEvent` |
@@ -1427,7 +1427,7 @@ _Tabla de UpdatedProfileEventHandler en el Application Layer de Profile and Pref
 _Tabla de DeletedProfileEventHandler en el Application Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                   |
-| ------------- | ------------------------------------------------------- |
+|---------------|---------------------------------------------------------|
 | **Nombre**    | DeletedProfileEventHandler                              |
 | **Categoría** | Event Handler                                           |
 | **Propósito** | Procesar la lógica tras el evento `ProfileDeletedEvent` |
@@ -1445,7 +1445,7 @@ Esta capa materializa las abstracciones definidas en el dominio mediante la impl
 _Tabla de ProfileRepository en el Infraestructure Layer de Profile and Preferences_
 
 | Propiedad     | Valor                                                  |
-| ------------- | ------------------------------------------------------ |
+|---------------|--------------------------------------------------------|
 | **Nombre**    | ProfileRepository                                      |
 | **Categoría** | Repository Implementation                              |
 | **Propósito** | Implementar `IProfileRepository` usando ORM relacional |
@@ -1519,7 +1519,7 @@ En la capa de dominio de Asset & Resource Management se definen las entidades y 
 _Tabla de Pot en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                          |
-| ------------- | -------------------------------------------------------------- |
+|---------------|----------------------------------------------------------------|
 | **Nombre**    | Pot                                                            |
 | **Categoría** | Aggregate Root                                                 |
 | **Propósito** | Representar una maceta con su ciclo de vida, estado y sensores |
@@ -1529,7 +1529,7 @@ _Tabla de Pot en el Domain Layer de Asset & Resource Management_
 _Tabla de atributos de Pot en el Domain Layer de Asset & Resource Management_
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                             |
-| ----------- | ------------ | ----------- | --------------------------------------- |
+|-------------|--------------|-------------|-----------------------------------------|
 | id          | `Long`       | private     | Identificador único de la maceta        |
 | userUid     | `String`     | private     | Identificador del usuario dueño         |
 | tag         | `String`     | private     | Etiqueta o nombre amigable de la maceta |
@@ -1543,7 +1543,7 @@ _Tabla de atributos de Pot en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de Pot en el Domain Layer de Asset & Resource Management_
 
 | Nombre            | Tipo de retorno | Visibilidad | Descripción                                    |
-| ----------------- | --------------- | ----------- | ---------------------------------------------- |
+|-------------------|-----------------|-------------|------------------------------------------------|
 | changeTag         | `void`          | public      | Actualiza la `tag` de la maceta                |
 | changeStatus      | `void`          | public      | Actualiza el `status` de la maceta             |
 | recordHumidity    | `void`          | public      | Actualiza el valor del sensor de `humidity`    |
@@ -1557,7 +1557,7 @@ _Tabla de métodos de Pot en el Domain Layer de Asset & Resource Management_
 _Tabla de Group en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                       |
-| ------------- | ------------------------------------------- |
+|---------------|---------------------------------------------|
 | **Nombre**    | Group                                       |
 | **Categoría** | Entity                                      |
 | **Propósito** | Agrupar varias macetas bajo un nombre común |
@@ -1567,7 +1567,7 @@ _Tabla de Group en el Domain Layer de Asset & Resource Management_
 _Tabla de atributos de Group en el Domain Layer de Asset & Resource Management_
 
 | Nombre  | Tipo de dato | Visibilidad | Descripción                                     |
-| ------- | ------------ | ----------- | ----------------------------------------------- |
+|---------|--------------|-------------|-------------------------------------------------|
 | id      | `Long`       | private     | Identificador único del grupo                   |
 | name    | `String`     | private     | Nombre del grupo                                |
 | userUid | `String`     | private     | Identificador del usuario que creó el grupo     |
@@ -1578,7 +1578,7 @@ _Tabla de atributos de Group en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de Group en el Domain Layer de Asset & Resource Management_
 
 | Nombre      | Tipo de retorno | Visibilidad | Descripción                         |
-| ----------- | --------------- | ----------- | ----------------------------------- |
+|-------------|-----------------|-------------|-------------------------------------|
 | renameGroup | `void`          | public      | Cambia el nombre del grupo          |
 | addPot      | `void`          | public      | Añade un ID de maceta a `potUid`    |
 | removePot   | `void`          | public      | Elimina un ID de maceta de `potUid` |
@@ -1590,7 +1590,7 @@ _Tabla de métodos de Group en el Domain Layer de Asset & Resource Management_
 _Tabla de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                               |
-| ------------- | --------------------------------------------------- |
+|---------------|-----------------------------------------------------|
 | **Nombre**    | Sensor                                              |
 | **Categoría** | Value Object                                        |
 | **Propósito** | Representar la lectura y estado de un sensor físico |
@@ -1600,7 +1600,7 @@ _Tabla de Sensor en el Domain Layer de Asset & Resource Management_
 _Tabla de atributos de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Nombre           | Tipo de dato | Visibilidad | Descripción                                               |
-| ---------------- | ------------ | ----------- | --------------------------------------------------------- |
+|------------------|--------------|-------------|-----------------------------------------------------------|
 | value            | `Float`      | private     | Valor actual de la medición                               |
 | isMalfunctioning | `Boolean`    | private     | Indica si el sensor está fallando                         |
 | measurementType  | `String`     | private     | Tipo de medición (ej. "humidity", "temperature", "water") |
@@ -1610,7 +1610,7 @@ _Tabla de atributos de Sensor en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de Sensor en el Domain Layer de Asset & Resource Management_
 
 | Nombre           | Tipo de retorno | Visibilidad | Descripción                             |
-| ---------------- | --------------- | ----------- | --------------------------------------- |
+|------------------|-----------------|-------------|-----------------------------------------|
 | updateValue      | `void`          | public      | Asigna un nuevo `value`                 |
 | markMalfunction  | `void`          | public      | Marca el sensor como en fallo           |
 | clearMalfunction | `void`          | public      | Restablece `isMalfunctioning` a `false` |
@@ -1622,7 +1622,7 @@ _Tabla de métodos de Sensor en el Domain Layer de Asset & Resource Management_
 _Tabla de PotStatus en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                      |
-| ------------- | ------------------------------------------ |
+|---------------|--------------------------------------------|
 | **Nombre**    | PotStatus                                  |
 | **Categoría** | Enum                                       |
 | **Propósito** | Definir los posibles estados de una maceta |
@@ -1632,7 +1632,7 @@ _Tabla de PotStatus en el Domain Layer de Asset & Resource Management_
 _Tabla de valores de PotStatus en el Domain Layer de Asset & Resource Management_
 
 | Valor    | Descripción |
-| -------- | ----------- |
+|----------|-------------|
 | Free     | Disponible  |
 | InUse    | En uso      |
 | Inactive | Inactiva    |
@@ -1645,7 +1645,7 @@ _Tabla de valores de PotStatus en el Domain Layer de Asset & Resource Management
 _Tabla de PotFactory en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | PotFactory                               |
 | **Categoría** | Factory                                  |
 | **Propósito** | Crear nuevas instancias válidas de `Pot` |
@@ -1655,7 +1655,7 @@ _Tabla de PotFactory en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de PotFactory en el Domain Layer de Asset & Resource Management_
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                                                                         |
-| ------ | --------------- | ----------- | ----------------------------------------------------------------------------------- |
+|--------|-----------------|-------------|-------------------------------------------------------------------------------------|
 | create | `Pot`           | public      | Construye un `Pot` inicializando `id`, `userUid`, `tag`, `status` y sensores vacíos |
 
 **IPotRepository**
@@ -1665,7 +1665,7 @@ _Tabla de métodos de PotFactory en el Domain Layer de Asset & Resource Manageme
 _Tabla de IPotRepository en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                 |
-| ------------- | ------------------------------------- |
+|---------------|---------------------------------------|
 | **Nombre**    | IPotRepository                        |
 | **Categoría** | Repository                            |
 | **Propósito** | Persistir y recuperar entidades `Pot` |
@@ -1675,7 +1675,7 @@ _Tabla de IPotRepository en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de IPotRepository en el Domain Layer de Asset & Resource Management_
 
 | Nombre         | Tipo de retorno | Visibilidad | Descripción                                     |
-| -------------- | --------------- | ----------- | ----------------------------------------------- |
+|----------------|-----------------|-------------|-------------------------------------------------|
 | findById       | `Pot?`          | public      | Recupera un `Pot` por su `id`                   |
 | findByUserUid  | `List<Pot>`     | public      | Recupera todas las macetas de un usuario        |
 | findByGroupUid | `List<Pot>`     | public      | Recupera todas las macetas asociadas a un grupo |
@@ -1690,7 +1690,7 @@ _Tabla de métodos de IPotRepository en el Domain Layer de Asset & Resource Mana
 _Tabla de IGroupRepository en el Domain Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
+|---------------|-----------------------------------------|
 | **Nombre**    | IGroupRepository                        |
 | **Categoría** | Repository                              |
 | **Propósito** | Persistir y recuperar entidades `Group` |
@@ -1700,7 +1700,7 @@ _Tabla de IGroupRepository en el Domain Layer de Asset & Resource Management_
 _Tabla de métodos de IGroupRepository en el Domain Layer de Asset & Resource Management_
 
 | Nombre        | Tipo de retorno | Visibilidad | Descripción                                        |
-| ------------- | --------------- | ----------- | -------------------------------------------------- |
+|---------------|-----------------|-------------|----------------------------------------------------|
 | findById      | `Group?`        | public      | Recupera un `Group` por su `id`                    |
 | findByUserUid | `List<Group>`   | public      | Recupera todos los grupos de un usuario            |
 | findByPotUid  | `List<Group>`   | public      | Recupera todos los grupos que contienen una maceta |
@@ -1719,7 +1719,7 @@ En la capa de interfaz del Bounded Context de Asset & Resource Management se exp
 _Tabla de PotController en el Interface Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | PotController                            |
 | **Categoría** | Controller                               |
 | **Propósito** | Exponer API REST para gestión de macetas |
@@ -1730,7 +1730,7 @@ _Tabla de PotController en el Interface Layer de Asset & Resource Management_
 _Tabla de métodos de PotController en el Interface Layer de Asset & Resource Management_
 
 | Nombre            | Ruta                 | Acción                                  | Handle                   |
-| ----------------- | -------------------- | --------------------------------------- | ------------------------ |
+|-------------------|----------------------|-----------------------------------------|--------------------------|
 | getPot            | `/{id}`              | Obtener una maceta por ID               | `GetPotQuery`            |
 | getAllPots        | `/all/{userId}`      | Obtener todas las macetas de un usuario | `GetAllPotsQuery`        |
 | getAllPotsByGroup | `/group/{groupId}`   | Obtener macetas de un grupo             | `GetAllPotsByGroupQuery` |
@@ -1746,7 +1746,7 @@ _Tabla de métodos de PotController en el Interface Layer de Asset & Resource Ma
 _Tabla de GroupController en el Interface Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
+|---------------|-----------------------------------------|
 | **Nombre**    | GroupController                         |
 | **Categoría** | Controller                              |
 | **Propósito** | Exponer API REST para gestión de grupos |
@@ -1757,7 +1757,7 @@ _Tabla de GroupController en el Interface Layer de Asset & Resource Management_
 _Tabla de métodos de GroupController en el Interface Layer de Asset & Resource Management_
 
 | Nombre       | Ruta            | Acción                                 | Handle               |
-| ------------ | --------------- | -------------------------------------- | -------------------- |
+|--------------|-----------------|----------------------------------------|----------------------|
 | getGroup     | `/{id}`         | Obtener un grupo por ID                | `GetGroupQuery`      |
 | getAllGroups | `/all/{userId}` | Obtener todos los grupos de un usuario | `GetAllGroupsQuery`  |
 | updateGroup  | `/{id}`         | Actualizar datos de un grupo           | `UpdateGroupCommand` |
@@ -1775,7 +1775,7 @@ La capa de aplicación del Bounded Context de Asset & Resource Management coordi
 _Tabla de GetPotQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
+|---------------|-----------------------------------------------------------|
 | **Nombre**    | GetPotQueryHandler                                        |
 | **Categoría** | Query Handler                                             |
 | **Propósito** | Manejar la consulta `GetPotQuery` para obtener una maceta |
@@ -1787,7 +1787,7 @@ _Tabla de GetPotQueryHandler en el Application Layer de Asset & Resource Managem
 _Tabla de GetAllPotsQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                   |
-| ------------- | ----------------------------------------------------------------------- |
+|---------------|-------------------------------------------------------------------------|
 | **Nombre**    | GetAllPotsQueryHandler                                                  |
 | **Categoría** | Query Handler                                                           |
 | **Propósito** | Manejar la consulta `GetAllPotsQuery` para listar macetas de un usuario |
@@ -1799,7 +1799,7 @@ _Tabla de GetAllPotsQueryHandler en el Application Layer de Asset & Resource Man
 _Tabla de GetAllPotsByGroupQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                      |
-| ------------- | -------------------------------------------------------------------------- |
+|---------------|----------------------------------------------------------------------------|
 | **Nombre**    | GetAllPotsByGroupQueryHandler                                              |
 | **Categoría** | Query Handler                                                              |
 | **Propósito** | Manejar la consulta `GetAllPotsByGroupQuery` para listar macetas por grupo |
@@ -1811,7 +1811,7 @@ _Tabla de GetAllPotsByGroupQueryHandler en el Application Layer de Asset & Resou
 _Tabla de UpdatePotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                               |
-| ------------- | ------------------------------------------------------------------- |
+|---------------|---------------------------------------------------------------------|
 | **Nombre**    | UpdatePotCommandHandler                                             |
 | **Categoría** | Command Handler                                                     |
 | **Propósito** | Ejecutar la lógica de `UpdatePotCommand` para actualizar una maceta |
@@ -1823,7 +1823,7 @@ _Tabla de UpdatePotCommandHandler en el Application Layer de Asset & Resource Ma
 _Tabla de LinkPotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                       |
-| ------------- | --------------------------------------------------------------------------- |
+|---------------|-----------------------------------------------------------------------------|
 | **Nombre**    | LinkPotCommandHandler                                                       |
 | **Categoría** | Command Handler                                                             |
 | **Propósito** | Ejecutar la lógica de `LinkPotCommand` para enlazar una maceta a un usuario |
@@ -1835,7 +1835,7 @@ _Tabla de LinkPotCommandHandler en el Application Layer de Asset & Resource Mana
 _Tabla de UnlinkPotCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                             |
-| ------------- | --------------------------------------------------------------------------------- |
+|---------------|-----------------------------------------------------------------------------------|
 | **Nombre**    | UnlinkPotCommandHandler                                                           |
 | **Categoría** | Command Handler                                                                   |
 | **Propósito** | Ejecutar la lógica de `UnlinkPotCommand` para desenlazar una maceta de un usuario |
@@ -1847,7 +1847,7 @@ _Tabla de UnlinkPotCommandHandler en el Application Layer de Asset & Resource Ma
 _Tabla de PotUpdatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                               |
-| ------------- | --------------------------------------------------- |
+|---------------|-----------------------------------------------------|
 | **Nombre**    | PotUpdatedEventHandler                              |
 | **Categoría** | Event Handler                                       |
 | **Propósito** | Procesar la lógica tras el evento `PotUpdatedEvent` |
@@ -1859,7 +1859,7 @@ _Tabla de PotUpdatedEventHandler en el Application Layer de Asset & Resource Man
 _Tabla de PotLinkedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                              |
-| ------------- | -------------------------------------------------- |
+|---------------|----------------------------------------------------|
 | **Nombre**    | PotLinkedEventHandler                              |
 | **Categoría** | Event Handler                                      |
 | **Propósito** | Procesar la lógica tras el evento `PotLinkedEvent` |
@@ -1871,7 +1871,7 @@ _Tabla de PotLinkedEventHandler en el Application Layer de Asset & Resource Mana
 _Tabla de PotUnlinkedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                |
-| ------------- | ---------------------------------------------------- |
+|---------------|------------------------------------------------------|
 | **Nombre**    | PotUnlinkedEventHandler                              |
 | **Categoría** | Event Handler                                        |
 | **Propósito** | Procesar la lógica tras el evento `PotUnlinkedEvent` |
@@ -1883,7 +1883,7 @@ _Tabla de PotUnlinkedEventHandler en el Application Layer de Asset & Resource Ma
 _Tabla de PotAssignedPlantEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
+|---------------|-----------------------------------------------------------|
 | **Nombre**    | PotAssignedPlantEventHandler                              |
 | **Categoría** | Event Handler                                             |
 | **Propósito** | Procesar la lógica tras el evento `PotAssignedPlantEvent` |
@@ -1895,7 +1895,7 @@ _Tabla de PotAssignedPlantEventHandler en el Application Layer de Asset & Resour
 _Tabla de GetGroupQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
+|---------------|-----------------------------------------------------------|
 | **Nombre**    | GetGroupQueryHandler                                      |
 | **Categoría** | Query Handler                                             |
 | **Propósito** | Manejar la consulta `GetGroupQuery` para obtener un grupo |
@@ -1907,7 +1907,7 @@ _Tabla de GetGroupQueryHandler en el Application Layer de Asset & Resource Manag
 _Tabla de GetAllGroupsQueryHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                                              |
-| ------------- | ---------------------------------------------------------------------------------- |
+|---------------|------------------------------------------------------------------------------------|
 | **Nombre**    | GetAllGroupsQueryHandler                                                           |
 | **Categoría** | Query Handler                                                                      |
 | **Propósito** | Manejar la consulta `GetAllGroupsQuery` para listar todos los grupos de un usuario |
@@ -1919,7 +1919,7 @@ _Tabla de GetAllGroupsQueryHandler en el Application Layer de Asset & Resource M
 _Tabla de UpdateGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                               |
-| ------------- | ------------------------------------------------------------------- |
+|---------------|---------------------------------------------------------------------|
 | **Nombre**    | UpdateGroupCommandHandler                                           |
 | **Categoría** | Command Handler                                                     |
 | **Propósito** | Ejecutar la lógica de `UpdateGroupCommand` para actualizar un grupo |
@@ -1931,7 +1931,7 @@ _Tabla de UpdateGroupCommandHandler en el Application Layer de Asset & Resource 
 _Tabla de CreateGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                          |
-| ------------- | -------------------------------------------------------------- |
+|---------------|----------------------------------------------------------------|
 | **Nombre**    | CreateGroupCommandHandler                                      |
 | **Categoría** | Command Handler                                                |
 | **Propósito** | Ejecutar la lógica de `CreateGroupCommand` para crear un grupo |
@@ -1943,7 +1943,7 @@ _Tabla de CreateGroupCommandHandler en el Application Layer de Asset & Resource 
 _Tabla de DeleteGroupCommandHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                             |
-| ------------- | ----------------------------------------------------------------- |
+|---------------|-------------------------------------------------------------------|
 | **Nombre**    | DeleteGroupCommandHandler                                         |
 | **Categoría** | Command Handler                                                   |
 | **Propósito** | Ejecutar la lógica de `DeleteGroupCommand` para eliminar un grupo |
@@ -1955,7 +1955,7 @@ _Tabla de DeleteGroupCommandHandler en el Application Layer de Asset & Resource 
 _Tabla de GroupUpdatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
+|---------------|-------------------------------------------------------|
 | **Nombre**    | GroupUpdatedEventHandler                              |
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupUpdatedEvent` |
@@ -1967,7 +1967,7 @@ _Tabla de GroupUpdatedEventHandler en el Application Layer de Asset & Resource M
 _Tabla de GroupCreatedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
+|---------------|-------------------------------------------------------|
 | **Nombre**    | GroupCreatedEventHandler                              |
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupCreatedEvent` |
@@ -1979,7 +1979,7 @@ _Tabla de GroupCreatedEventHandler en el Application Layer de Asset & Resource M
 _Tabla de GroupDeletedEventHandler en el Application Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
+|---------------|-------------------------------------------------------|
 | **Nombre**    | GroupDeletedEventHandler                              |
 | **Categoría** | Event Handler                                         |
 | **Propósito** | Procesar la lógica tras el evento `GroupDeletedEvent` |
@@ -1997,7 +1997,7 @@ Esta capa concreta las abstracciones del dominio a través de implementaciones d
 _Tabla de PotRepository en el Infraestructure Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                            |
-| ------------- | ---------------------------------------------------------------- |
+|---------------|------------------------------------------------------------------|
 | **Nombre**    | PotRepository                                                    |
 | **Categoría** | Repository Implementation                                        |
 | **Propósito** | Implementar `IPotRepository` usando un mecanismo de persistencia |
@@ -2009,7 +2009,7 @@ _Tabla de PotRepository en el Infraestructure Layer de Asset & Resource Manageme
 _Tabla de GroupRepository en el Infraestructure Layer de Asset & Resource Management_
 
 | Propiedad     | Valor                                                              |
-| ------------- | ------------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------------|
 | **Nombre**    | GroupRepository                                                    |
 | **Categoría** | Repository Implementation                                          |
 | **Propósito** | Implementar `IGroupRepository` usando un mecanismo de persistencia |
@@ -2067,14 +2067,270 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 
 <image src="../assets/img/capitulo-4/bounded-context-pot-management/database-diagram-pot-management.png"></image>
 
-### 4.2.4. Bounded Context: Service Planning
+### 4.2.4. Bounded Context: Subscriptions & Payments
 
 #### 4.2.4.1. Domain Layer.
+
+## Subscription
+
+| Propiedad     | Valor                                              |
+|---------------|----------------------------------------------------|
+| **Nombre**    | Subscription                                       |
+| **Categoría** | Aggregate Root                                     |
+| **Propósito** | Representar una suscripción activa para un usuario |
+
+### Atributos
+
+| Nombre    | Tipo de dato | Visibilidad | Descripción                                  |
+|-----------|--------------|-------------|----------------------------------------------|
+| userId    | `Long`       | private     | Identificador único del usuario              |
+| planId    | `Long`       | private     | Identificador del plan de suscripción        |
+| status    | `String`     | private     | Estado de la suscripción (activa, cancelada) |
+| startDate | `DateTime`   | private     | Fecha de inicio de la suscripción            |
+| endDate   | `DateTime`   | private     | Fecha de expiración de la suscripción        |
+| createdAt | `DateTime`   | private     | Fecha de creación de la suscripción          |
+| updatedAt | `DateTime`   | private     | Fecha de última actualización                |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                 |
+|--------------|-----------------|-------------|---------------------------------------------|
+| activate     | `void`          | public      | Activa la suscripción                       |
+| cancel       | `void`          | public      | Cancela la suscripción                      |
+| updateStatus | `void`          | public      | Actualiza el estado de la suscripción       |
+| markUpdated  | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## SubscriptionPlan
+
+| Propiedad     | Valor                                                         |
+|---------------|---------------------------------------------------------------|
+| **Nombre**    | SubscriptionPlan                                              |
+| **Categoría** | Value Object                                                  |
+| **Propósito** | Representar los detalles de un plan de suscripción disponible |
+
+### Atributos
+
+| Nombre    | Tipo de dato   | Visibilidad | Descripción                              |
+|-----------|----------------|-------------|------------------------------------------|
+| name      | `String`       | public      | Nombre del plan (p.ej., Básico, Premium) |
+| price     | `Decimal`      | public      | Precio mensual del plan                  |
+| duration  | `Int`          | public      | Duración del plan en meses               |
+| features  | `List<String>` | public      | Características que ofrece el plan       |
+| createdAt | `DateTime`     | private     | Fecha de creación del plan               |
+
+## PaymentTransaction
+
+| Propiedad     | Valor                                                                  |
+|---------------|------------------------------------------------------------------------|
+| **Nombre**    | PaymentTransaction                                                     |
+| **Categoría** | Entity                                                                 |
+| **Propósito** | Representar los pagos realizados por un usuario para sus suscripciones |
+
+### Atributos
+
+| Nombre         | Tipo de dato | Visibilidad | Descripción                                    |
+|----------------|--------------|-------------|------------------------------------------------|
+| transactionId  | `String`     | private     | Identificador único de la transacción          |
+| subscriptionId | `Long`       | private     | Identificador de la suscripción                |
+| amount         | `Decimal`    | private     | Monto de la transacción                        |
+| status         | `String`     | private     | Estado de la transacción (completada, fallida) |
+| createdAt      | `DateTime`   | private     | Fecha de la transacción                        |
+
+### Métodos
+
+| Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
+|----------------|-----------------|-------------|---------------------------------------------|
+| processPayment | `void`          | public      | Procesa el pago para una suscripción        |
+| updateStatus   | `void`          | public      | Actualiza el estado de la transacción       |
+| markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
+
+## ISubscriptionRepository
+
+| Propiedad     | Valor                                          |
+|---------------|------------------------------------------------|
+| **Nombre**    | ISubscriptionRepository                        |
+| **Categoría** | Repository                                     |
+| **Propósito** | Persistir y recuperar entidades `Subscription` |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                                  |
+|--------------|-----------------|-------------|----------------------------------------------|
+| findByUserId | `Subscription?` | public      | Recupera la suscripción activa de un usuario |
+| create       | `Unit`          | public      | Crea una nueva suscripción                   |
+| update       | `Unit`          | public      | Actualiza una suscripción existente          |
+| delete       | `Unit`          | public      | Elimina una suscripción por `userId`         |
+
+## IPaymentTransactionRepository
+
+| Propiedad     | Valor                                       |
+|---------------|---------------------------------------------|
+| **Nombre**    | IPaymentTransactionRepository               |
+| **Categoría** | Repository                                  |
+| **Propósito** | Persistir y recuperar transacciones de pago |
+
+### Métodos
+
+| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
+|----------|-----------------------|-------------|----------------------------------------------|
+| create   | `Unit`                | public      | Crea una nueva transacción de pago           |
+| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
+| update   | `Unit`                | public      | Actualiza una transacción existente          |
+| delete   | `Unit`                | public      | Elimina una transacción                      |
+
+---
+
+#### 4.2.4.2. Interface Layer.
+
+## SubscriptionController
+
+| Propiedad     | Valor                                                              |
+|---------------|--------------------------------------------------------------------|
+| **Nombre**    | SubscriptionController                                             |
+| **Categoría** | Controller                                                         |
+| **Propósito** | Exponer los servicios REST para gestionar suscripciones de usuario |
+| **Ruta**      | `/api/subscriptions/`                                              |
+
+### Métodos
+
+| Nombre             | Ruta             | Acción                               | Handle                      |
+|--------------------|------------------|--------------------------------------|-----------------------------|
+| getSubscription    | `/{userId:long}` | Obtener la suscripción de un usuario | `GetSubscriptionQuery`      |
+| createSubscription | `/create`        | Crear nueva suscripción              | `CreateSubscriptionCommand` |
+| updateSubscription | `/update`        | Actualizar suscripción               | `UpdateSubscriptionCommand` |
+| cancelSubscription | `/cancel`        | Cancelar suscripción                 | `CancelSubscriptionCommand` |
+
+## PaymentTransactionController
+
+| Propiedad     | Valor                                                           |
+|---------------|-----------------------------------------------------------------|
+| **Nombre**    | PaymentTransactionController                                    |
+| **Categoría** | Controller                                                      |
+| **Propósito** | Exponer los servicios REST para gestionar transacciones de pago |
+| **Ruta**      | `/api/payment-transactions/`                                    |
+
+### Métodos
+
+| Nombre            | Ruta                    | Acción                                        | Handle                            |
+|-------------------|-------------------------|-----------------------------------------------|-----------------------------------|
+| getPayment        | `/{transactionId:long}` | Obtener transacción por ID                    | `GetPaymentTransactionQuery`      |
+| createPayment     | `/create`               | Crear una nueva transacción                   | `CreatePaymentTransactionCommand` |
+| updatePayment     | `/update`               | Actualizar estado de la transacción           | `UpdatePaymentTransactionCommand` |
+| getPaymentsByUser | `/user/{userId:long}`   | Obtener todas las transacciones de un usuario | `GetPaymentsByUserQuery`          |
+
+---
+
+#### 4.2.4.3. Application Layer.
+
+## GetSubscriptionQueryHandler
+
+| Propiedad     | Valor                                                         |
+|---------------|---------------------------------------------------------------|
+| **Nombre**    | GetSubscriptionQueryHandler                                   |
+| **Categoría** | Query Handler                                                 |
+| **Propósito** | Manejar la consulta para obtener una suscripción por `userId` |
+
+## CreateSubscriptionCommandHandler
+
+| Propiedad     | Valor                                        |
+|---------------|----------------------------------------------|
+| **Nombre**    | CreateSubscriptionCommandHandler             |
+| **Categoría** | Command Handler                              |
+| **Propósito** | Manejar la creación de una nueva suscripción |
+
+## UpdateSubscriptionCommandHandler
+
+| Propiedad     | Valor                                                 |
+|---------------|-------------------------------------------------------|
+| **Nombre**    | UpdateSubscriptionCommandHandler                      |
+| **Categoría** | Command Handler                                       |
+| **Propósito** | Manejar la actualización de una suscripción existente |
+
+## CancelSubscriptionCommandHandler
+
+| Propiedad     | Valor                                     |
+|---------------|-------------------------------------------|
+| **Nombre**    | CancelSubscriptionCommandHandler          |
+| **Categoría** | Command Handler                           |
+| **Propósito** | Manejar la cancelación de una suscripción |
+
+## GetPaymentTransactionQueryHandler
+
+| Propiedad     | Valor                                                    |
+|---------------|----------------------------------------------------------|
+| **Nombre**    | GetPaymentTransactionQueryHandler                        |
+| **Categoría** | Query Handler                                            |
+| **Propósito** | Manejar la consulta para obtener una transacción de pago |
+
+## GetPaymentsByUserQueryHandler
+
+| Propiedad     | Valor                                                            |
+|---------------|------------------------------------------------------------------|
+| **Nombre**    | GetPaymentsByUserQueryHandler                                    |
+| **Categoría** | Query Handler                                                    |
+| **Propósito** | Manejar la consulta para obtener las transacciones de un usuario |
+
+---
+
+#### 4.2.4.4. Infrastructure Layer.
+
+## SubscriptionRepository
+
+| Propiedad     | Valor                                                                     |
+|---------------|---------------------------------------------------------------------------|
+| **Nombre**    | SubscriptionRepository                                                    |
+| **Categoría** | Repository Implementation                                                 |
+| **Propósito** | Implementar `ISubscriptionRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre       | Tipo de retorno | Visibilidad | Descripción                           |
+|--------------|-----------------|-------------|---------------------------------------|
+| findByUserId | `Subscription?` | public      | Recupera la suscripción de un usuario |
+| create       | `Unit`          | public      | Persistir una nueva suscripción       |
+| update       | `Unit`          | public      | Actualiza una suscripción existente   |
+| delete       | `Unit`          | public      | Elimina la suscripción por `userId`   |
+
+## PaymentTransactionRepository
+
+| Propiedad     | Valor                                                                           |
+|---------------|---------------------------------------------------------------------------------|
+| **Nombre**    | PaymentTransactionRepository                                                    |
+| **Categoría** | Repository Implementation                                                       |
+| **Propósito** | Implementar `IPaymentTransactionRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
+|----------|-----------------------|-------------|----------------------------------------------|
+| create   | `Unit`                | public      | Persistir una nueva transacción de pago      |
+| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
+| update   | `Unit`                | public      | Actualiza una transacción existente          |
+| delete   | `Unit`                | public      | Elimina una transacción                      |
+
+---
+
+#### 4.2.4.5. Subscriptions & Payments Bounded Context Software Architecture Component Level Diagrams.
+
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-subscription--component.png"></image>
+
+#### 4.2.4.6. Subscriptions & Payments Bounded Context Software Architecture Code Level Diagrams.
+
+##### 4.2.4.6.1. Subscriptions & Payments Bounded Context Domain Layer Class Diagrams.
+
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscription&PaymentsClassDiagram.png"></image>
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
+
+### 4.2.5. Bounded Context: Service Design and Planning
+
+#### 4.2.5.1. Domain Layer.
 
 ## Plant
 
 | Propiedad     | Valor                                                      |
-| ------------- | ---------------------------------------------------------- |
+|---------------|------------------------------------------------------------|
 | **Nombre**    | Plant                                                      |
 | **Categoría** | Aggregate Root                                             |
 | **Propósito** | Representar la relación planta–maceta con marcas de tiempo |
@@ -2082,7 +2338,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Atributos
 
 | Nombre            | Tipo de dato        | Visibilidad | Descripción                         |
-| ----------------- | ------------------- | ----------- | ----------------------------------- |
+|-------------------|---------------------|-------------|-------------------------------------|
 | id                | `Long`              | private     | Identificador único de la planta    |
 | potId             | `Long`              | private     | Identificador de la maceta asociada |
 | bestPlantSettings | `BestPlantSettings` | private     | Entorno óptimo para la planta       |
@@ -2093,14 +2349,14 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Métodos
 
 | Nombre      | Tipo de retorno | Visibilidad | Descripción                                    |
-| ----------- | --------------- | ----------- | ---------------------------------------------- |
+|-------------|-----------------|-------------|------------------------------------------------|
 | changePot   | `void`          | public      | Reasigna a otra maceta y actualiza `updatedAt` |
 | markUpdated | `void`          | private     | Actualiza internamente el campo `updatedAt`    |
 
 ## BestPlantSettings
 
 | Propiedad     | Valor                                                     |
-| ------------- | --------------------------------------------------------- |
+|---------------|-----------------------------------------------------------|
 | **Nombre**    | BestPlantSettings                                         |
 | **Categoría** | Value Object                                              |
 | **Propósito** | Representar la información de entorno óptimo de la planta |
@@ -2108,7 +2364,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Atributos
 
 | Nombre                 | Tipo de dato | Visibilidad | Descripción                                    |
-| ---------------------- | ------------ | ----------- | ---------------------------------------------- |
+|------------------------|--------------|-------------|------------------------------------------------|
 | humidity               | `Float`      | public      | Nivel de humedad óptimo                        |
 | temperature            | `Float`      | public      | Temperatura óptima                             |
 | waterIntervalInMinutes | `Int`        | public      | Recomendación de riego por intervalo de tiempo |
@@ -2116,7 +2372,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantInformation
 
 | Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
+|---------------|-----------------------------------------|
 | **Nombre**    | PlantInformation                        |
 | **Categoría** | Value Object                            |
 | **Propósito** | Representar la información de la planta |
@@ -2124,7 +2380,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Atributos
 
 | Nombre      | Tipo de dato | Visibilidad | Descripción                     |
-| ----------- | ------------ | ----------- | ------------------------------- |
+|-------------|--------------|-------------|---------------------------------|
 | name        | `String`     | public      | Nombre de la planta             |
 | description | `String`     | public      | Descripción de la planta        |
 | imageUrl    | `String`     | public      | Imagen referencial de la planta |
@@ -2135,7 +2391,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantFactory
 
 | Propiedad     | Valor                                  |
-| ------------- | -------------------------------------- |
+|---------------|----------------------------------------|
 | **Nombre**    | PlantFactory                           |
 | **Categoría** | Factory                                |
 | **Propósito** | Construir nuevas instancias de `Plant` |
@@ -2143,30 +2399,30 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Métodos
 
 | Nombre | Tipo de retorno | Visibilidad | Descripción                                                        |
-| ------ | --------------- | ----------- | ------------------------------------------------------------------ |
+|--------|-----------------|-------------|--------------------------------------------------------------------|
 | create | `Plant`         | public      | Crea un `Plant` dado `potId`, inicializa `createdAt` y `updatedAt` |
 
 ## IPlantRepository
 
 | Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
+|---------------|-----------------------------------------|
 | **Nombre**    | IPlantRepository                        |
 | **Categoría** | Repository                              |
 | **Propósito** | Persistir y recuperar entidades `Plant` |
 
 ### Métodos
 
-| Nombre        | Tipo de retorno | Visibilidad | Descripción                          |
-| ------------- | --------------- | ----------- | ------------------------------------ |
-| findById      | `Plant?`        | public      | Busca una planta por su ID           |
-| create        | `Unit`          | public      | Persiste una nueva planta            |
-| update        | `Unit`          | public      | Actualiza una planta existente       |
-| delete        | `Unit`          | public      | Elimina una planta por su ID         |
+| Nombre   | Tipo de retorno | Visibilidad | Descripción                    |
+|----------|-----------------|-------------|--------------------------------|
+| findById | `Plant?`        | public      | Busca una planta por su ID     |
+| create   | `Unit`          | public      | Persiste una nueva planta      |
+| update   | `Unit`          | public      | Actualiza una planta existente |
+| delete   | `Unit`          | public      | Elimina una planta por su ID   |
 
 ## IPlantRecommendationService
 
 | Propiedad     | Valor                                               |
-| ------------- | --------------------------------------------------- |
+|---------------|-----------------------------------------------------|
 | **Nombre**    | IPlantRecommendationService                         |
 | **Categoría** | Domain Service                                      |
 | **Propósito** | Proveer la mejor configuración para una planta dada |
@@ -2174,23 +2430,23 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Métodos
 
 | Nombre               | Tipo de retorno | Visibilidad | Descripción                            |
-| -------------------- | --------------- | ----------- | -------------------------------------- |
+|----------------------|-----------------|-------------|----------------------------------------|
 | getBestPlantSettings | `String?`       | public      | Retorna ajustes óptimos para la planta |
 
 ## PlantRecommendationService
 
 | Propiedad     | Valor                                                   |
-| ------------- | ------------------------------------------------------- |
+|---------------|---------------------------------------------------------|
 | **Nombre**    | PlantRecommendationService                              |
 | **Categoría** | Domain Service Implementation                           |
 | **Propósito** | Implementar la lógica de recomendación de configuración |
 
-#### 4.2.4.2. Interface Layer.
+#### 4.2.5.2. Interface Layer.
 
 ## PlantController
 
 | Propiedad     | Valor                                          |
-| ------------- | ---------------------------------------------- |
+|---------------|------------------------------------------------|
 | **Nombre**    | PlantController                                |
 | **Categoría** | Controller                                     |
 | **Propósito** | Exponer endpoints REST para gestión de plantas |
@@ -2199,18 +2455,18 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## Métodos
 
 | Nombre      | Ruta            | Acción                         | Handle               |
-| ----------- | --------------- | ------------------------------ | -------------------- |
+|-------------|-----------------|--------------------------------|----------------------|
 | getPlant    | `/{id:long}`    | Obtener detalles de una planta | `GetPlantQuery`      |
 | createPlant | `/create`       | Crear nueva planta             | `CreatePlantCommand` |
 | updatePlant | `/update`       | Actualizar planta existente    | `UpdatePlantCommand` |
 | deletePlant | `/delete-plant` | Eliminar planta por su ID      | `DeletePlantCommand` |
 
-#### 4.2.4.3. Application Layer.
+#### 4.2.5.3. Application Layer.
 
 ## GetPlantQueryHandler
 
 | Propiedad     | Valor                                      |
-| ------------- | ------------------------------------------ |
+|---------------|--------------------------------------------|
 | **Nombre**    | GetPlantQueryHandler                       |
 | **Categoría** | Query Handler                              |
 | **Propósito** | Manejar la consulta de obtención de planta |
@@ -2218,7 +2474,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## CreatePlantCommandHandler
 
 | Propiedad     | Valor                                 |
-| ------------- | ------------------------------------- |
+|---------------|---------------------------------------|
 | **Nombre**    | CreatePlantCommandHandler             |
 | **Categoría** | Command Handler                       |
 | **Propósito** | Ejecutar lógica de creación de planta |
@@ -2226,7 +2482,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## UpdatePlantCommandHandler
 
 | Propiedad     | Valor                                      |
-| ------------- | ------------------------------------------ |
+|---------------|--------------------------------------------|
 | **Nombre**    | UpdatePlantCommandHandler                  |
 | **Categoría** | Command Handler                            |
 | **Propósito** | Ejecutar lógica de actualización de planta |
@@ -2234,7 +2490,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## DeletePlantCommandHandler
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | DeletePlantCommandHandler                |
 | **Categoría** | Command Handler                          |
 | **Propósito** | Ejecutar lógica de eliminación de planta |
@@ -2242,7 +2498,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantCreatedEventHandler
 
 | Propiedad     | Valor                                 |
-| ------------- | ------------------------------------- |
+|---------------|---------------------------------------|
 | **Nombre**    | PlantCreatedEventHandler              |
 | **Categoría** | Event Handler                         |
 | **Propósito** | Reaccionar al evento de planta creada |
@@ -2250,7 +2506,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantUpdatedEventHandler
 
 | Propiedad     | Valor                                      |
-| ------------- | ------------------------------------------ |
+|---------------|--------------------------------------------|
 | **Nombre**    | PlantUpdatedEventHandler                   |
 | **Categoría** | Event Handler                              |
 | **Propósito** | Reaccionar al evento de planta actualizada |
@@ -2258,7 +2514,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantDeletedEventHandler
 
 | Propiedad     | Valor                                    |
-| ------------- | ---------------------------------------- |
+|---------------|------------------------------------------|
 | **Nombre**    | PlantDeletedEventHandler                 |
 | **Categoría** | Event Handler                            |
 | **Propósito** | Reaccionar al evento de planta eliminada |
@@ -2266,17 +2522,17 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## IPlantInfoProvider
 
 | Propiedad     | Valor                                                        |
-| ------------- | ------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------|
 | **Nombre**    | IPlantInfoProvider                                           |
 | **Categoría** | Interface (Application Service)                              |
 | **Propósito** | Obtener especificaciones de planta desde un servicio externo |
 
-#### 4.2.4.4. Infrastructure Layer.
+#### 4.2.5.4. Infrastructure Layer.
 
 ## PlantRepository
 
 | Propiedad     | Valor                                  |
-| ------------- | -------------------------------------- |
+|---------------|----------------------------------------|
 | **Nombre**    | PlantRepository                        |
 | **Categoría** | Repository Implementation              |
 | **Propósito** | Implementar `IPlantRepository` con ORM |
@@ -2284,7 +2540,7 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ### Métodos
 
 | Nombre        | Tipo de retorno | Visibilidad | Descripción                 |
-| ------------- | --------------- | ----------- | --------------------------- |
+|---------------|-----------------|-------------|-----------------------------|
 | findById      | `Plant?`        | public      | Busca planta por su ID      |
 | findByPotId   | `List<Plant>`   | public      | Lista plantas de una maceta |
 | findByUserUid | `List<Plant>`   | public      | Lista plantas de un usuario |
@@ -2295,341 +2551,25 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ## PlantInfoProvider
 
 | Propiedad     | Valor                                                         |
-| ------------- | ------------------------------------------------------------- |
+|---------------|---------------------------------------------------------------|
 | **Nombre**    | PlantInfoProvider                                             |
 | **Categoría** | External Service Implementation                               |
 | **Propósito** | Implementar `IPlantInfoProvider` para obtener specs de planta |
 
-#### 4.2.4.5. Plant Management Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.5.5. Plant Management Bounded Context Software Architecture Component Level Diagrams.
  
 <image src="../assets/img/capitulo-4/c4-model/structurizr-102464-plant-component.png"></image>
 
-#### 4.2.4.6. Plant Management Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.5.6. Plant Management Bounded Context Software Architecture Code Level Diagrams.
 
-##### 4.2.4.6.1. Plant Management Bounded Context Domain Layer Class Diagrams.
+##### 4.2.5.6.1. Plant Management Bounded Context Domain Layer Class Diagrams.
 
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/class-diagram-plant-management.png"></image>
 
-##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+##### 4.2.5.6.2. Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-plant-management/database-diagram-plant-management.png"></image>
 
-### 4.2.5. Bounded Context: System Monitoring & Control
-
-#### 4.2.5.1. Domain Layer.
-
-## Alert
-
-| Propiedad     | Valor                                                              |
-| ------------- | ------------------------------------------------------------------ |
-| **Nombre**    | Alert                                                              |
-| **Categoría** | Aggregate Root                                                     |
-| **Propósito** | Representar una alerta crítica generada por sensores de una maceta |
-
-### Atributos
-
-| Nombre   | Tipo de dato   | Visibilidad | Descripción                                        |
-| -------- | -------------- | ----------- | -------------------------------------------------- |
-| id       | `Long`         | private     | Identificador único de la alerta                   |
-| potId    | `Long`         | private     | UID de la maceta asociada                          |
-| content  | `AlertContent` | private     | Detalles de lecturas de sensores y dispositivo IoT |
-| issuedAt | `DateTime`     | private     | Fecha y hora de emisión de la alerta               |
-| resolved | `Boolean`      | private     | Indica si la alerta ha sido resuelta               |
-
-### Métodos
-
-| Nombre        | Tipo de retorno | Visibilidad | Descripción                               |
-| ------------- | --------------- | ----------- | ----------------------------------------- |
-| markResolved  | `void`          | public      | Marca la alerta como resuelta             |
-| updateContent | `void`          | public      | Reemplaza el `content` y actualiza estado |
-
-## AlertContent
-
-| Propiedad     | Valor                                                         |
-| ------------- | ------------------------------------------------------------- |
-| **Nombre**    | AlertContent                                                  |
-| **Categoría** | Value Object                                                  |
-| **Propósito** | Agrupar las lecturas de sensores y estado del dispositivo IoT |
-
-### Atributos
-
-| Nombre      | Tipo de dato     | Visibilidad | Descripción                                      |
-| ----------- | ---------------- | ----------- | ------------------------------------------------ |
-| humidity    | `SensorAlert`    | private     | Lectura y estado del sensor de humedad           |
-| temperature | `SensorAlert`    | private     | Lectura y estado del sensor de temperatura       |
-| water       | `SensorAlert`    | private     | Lectura y estado del sensor de nivel de agua     |
-| iotDevice   | `IotDeviceAlert` | private     | Estado del dispositivo IoT (por ejemplo batería) |
-
-## SensorAlert
-
-| Propiedad     | Valor                                                  |
-| ------------- | ------------------------------------------------------ |
-| **Nombre**    | SensorAlert                                            |
-| **Categoría** | Value Object                                           |
-| **Propósito** | Encapsular una medición de sensor y su nivel de alerta |
-
-### Atributos
-
-| Nombre | Tipo de dato   | Visibilidad | Descripción                               |
-| ------ | -------------- | ----------- | ----------------------------------------- |
-| value  | `Float`        | private     | Valor de la medición                      |
-| status | `SensorStatus` | private     | Nivel de alerta (`Low`, `Normal`, `High`) |
-
-### Métodos
-
-| Nombre     | Tipo de retorno | Visibilidad | Descripción                                   |
-| ---------- | --------------- | ----------- | --------------------------------------------- |
-| isCritical | `Boolean`       | public      | Devuelve `true` si `status` es `Low` o `High` |
-
-## SensorStatus
-
-| Propiedad     | Valor                                  |
-| ------------- | -------------------------------------- |
-| **Nombre**    | SensorStatus                           |
-| **Categoría** | Enum                                   |
-| **Propósito** | Definir los posibles estados de alerta |
-
-
-### Valores
-
-| Valor  | Descripción                       |
-| ------ | --------------------------------- |
-| Low    | Nivel por debajo del rango normal |
-| Normal | Dentro del rango esperado         |
-| High   | Nivel por encima del rango normal |
-
-## IotDeviceAlert
-
-| Propiedad     | Valor                                                            |
-| ------------- | ---------------------------------------------------------------- |
-| **Nombre**    | IotDeviceAlert                                                   |
-| **Categoría** | Value Object                                                     |
-| **Propósito** | Representar el estado de un dispositivo IoT asociado a la maceta |
-
-### Atributos
-
-| Nombre       | Tipo de dato | Visibilidad | Descripción                                    |
-| ------------ | ------------ | ----------- | ---------------------------------------------- |
-| batteryLevel | `Float`      | private     | Porcentaje de batería restante del dispositivo |
-
-### Métodos
-
-| Nombre       | Tipo de retorno | Visibilidad | Descripción                                     |
-| ------------ | --------------- | ----------- | ----------------------------------------------- |
-| isBatteryLow | `Boolean`       | public      | `true` si `batteryLevel` está por debajo de 15% |
-
-## IAlertRepository
-
-| Propiedad     | Valor                                   |
-| ------------- | --------------------------------------- |
-| **Nombre**    | IAlertRepository                        |
-| **Categoría** | Repository                              |
-| **Propósito** | Persistir y recuperar entidades `Alert` |
-
-### Métodos
-
-| Nombre   | Tipo de retorno | Visibilidad | Descripción                    |
-| -------- | --------------- | ----------- | ------------------------------ |
-| findById | `Alert?`        | public      | Recupera una alerta por su ID  |
-| create   | `Unit`          | public      | Persiste una nueva alerta      |
-| update   | `Unit`          | public      | Actualiza una alerta existente |
-| delete   | `Unit`          | public      | Elimina una alerta por su ID   |
-
-## AlertFactory
-
-| Propiedad     | Valor                               |
-| ------------- | ----------------------------------- |
-| **Nombre**    | AlertFactory                        |
-| **Categoría** | Factory                             |
-| **Propósito** | Crear instancias válidas de `Alert` |
-
-### Métodos
-
-| Nombre | Tipo de retorno | Visibilidad | Descripción                                        |
-| ------ | --------------- | ----------- | -------------------------------------------------- |
-| create | `Alert`         | public      | Construye un `Alert` dado `potId` y `AlertContent` |
-
-## IAlertReportNotePolicy
-
-| Propiedad     | Valor                                                   |
-| ------------- | ------------------------------------------------------- |
-| **Nombre**    | IAlertReportNotePolicy                                  |
-| **Categoría** | Domain Service                                          |
-| **Propósito** | Generar una nota contextual para un conjunto de alertas |
-
-### Métodos
-
-| Nombre  | Tipo de retorno | Visibilidad | Descripción                                         |
-| ------- | --------------- | ----------- | --------------------------------------------------- |
-| noteFor | `String?`       | public      | Devuelve texto explicativo para la lista de alertas |
-
-## AlertReportNotePolicy
-
-| Propiedad     | Valor                                                      |
-| ------------- | ---------------------------------------------------------- |
-| **Nombre**    | AlertReportNotePolicy                                      |
-| **Categoría** | Domain Service Implementation                              |
-| **Propósito** | Implementar la lógica de generación de notas para reportes |
-
-#### 4.2.5.2. Interface Layer.
-
-## AlertController
-
-| Propiedad     | Valor                                          |
-| ------------- | ---------------------------------------------- |
-| **Nombre**    | AlertController                                |
-| **Categoría** | Controller                                     |
-| **Propósito** | Exponer endpoints REST para gestión de alertas |
-| **Ruta**      | `/api/alerts/`                                 |
-
-### Métodos
-
-| Nombre      | Ruta               | Acción                              | Handle                |
-| ----------- | ------------------ | ----------------------------------- | --------------------- |
-| getAlert    | `/{id:long}`       | Obtener alerta por ID               | `GetAlertQuery`       |
-| createAlert | `/create`          | Crear nueva alerta                  | `CreateAlertCommand`  |
-| updateAlert | `/resolved`        | Marcar alerta como resuelta         | `UpdateAlertCommand`  |
-| updateAlert | `/generate-report` | Genera un reporte en base a alertas | `CreateReportCommand` |
-
-#### 4.2.5.3. Application Layer.
-
-## GetAlertQueryHandler
-
-| Propiedad     | Valor                               |
-| ------------- | ----------------------------------- |
-| **Nombre**    | GetAlertQueryHandler                |
-| **Categoría** | Query Handler                       |
-| **Propósito** | Manejar la consulta `GetAlertQuery` |
-
-## CreateAlertCommandHandler
-
-| Propiedad     | Valor                         |
-| ------------- | ----------------------------- |
-| **Nombre**    | CreateAlertCommandHandler     |
-| **Categoría** | Command Handler               |
-| **Propósito** | Ejecutar `CreateAlertCommand` |
-
-## UpdateAlertCommandHandler
-
-| Propiedad     | Valor                         |
-| ------------- | ----------------------------- |
-| **Nombre**    | UpdateAlertCommandHandler     |
-| **Categoría** | Command Handler               |
-| **Propósito** | Ejecutar `UpdateAlertCommand` |
-
-## CreateReportCommandHandler
-
-| Propiedad     | Valor                          |
-| ------------- | ------------------------------ |
-| **Nombre**    | CreateReportCommandHandler     |
-| **Categoría** | Command Handler                |
-| **Propósito** | Ejecutar `CreateReportCommand` |
-
-## AlertCreatedEventHandler
-
-| Propiedad     | Valor                                  |
-| ------------- | -------------------------------------- |
-| **Nombre**    | AlertCreatedEventHandler               |
-| **Categoría** | Event Handler                          |
-| **Propósito** | Reaccionar tras creación de una alerta |
-
-## AlertUpdatedEventHandler
-
-| Propiedad     | Valor                                |
-| ------------- | ------------------------------------ |
-| **Nombre**    | AlertUpdatedEventHandler             |
-| **Categoría** | Event Handler                        |
-| **Propósito** | Reaccionar tras resolución de alerta |
-
-## IAlertService
-
-| Propiedad     | Valor                                              |
-| ------------- | -------------------------------------------------- |
-| **Nombre**    | IAlertService                                      |
-| **Categoría** | Application Service                                |
-| **Propósito** | Definir acciones de notificación según tipo alerta |
-
-### Métodos
-
-| Nombre            | Tipo de retorno | Visibilidad | Descripción                                        |
-| ----------------- | --------------- | ----------- | -------------------------------------------------- |
-| lowBatteryAlert   | `Unit`          | public      | Lógica para alertas de batería baja                |
-| disconnectedAlert | `Unit`          | public      | Lógica para alertas de desconexión del dispositivo |
-
-## AlertService
-
-| Propiedad     | Valor                              |
-| ------------- | ---------------------------------- |
-| **Nombre**    | AlertService                       |
-| **Categoría** | Application Service Implementation |
-| **Propósito** | Implementar `IAlertService`        |
-
-## IAlertReportGenerationService
-
-| Propiedad     | Valor                                     |
-| ------------- | ----------------------------------------- |
-| **Nombre**    | IAlertReportGenerationService             |
-| **Categoría** | Application Service                       |
-| **Propósito** | Definir generación de reportes de alertas |
-
-### Métodos
-
-| Nombre         | Tipo de retorno | Visibilidad | Descripción                                       |
-| -------------- | --------------- | ----------- | ------------------------------------------------- |
-| generateReport | `String?`       | public      | Compila y devuelve un reporte a partir de alertas |
-
-## IEmailService
-
-| Propiedad     | Valor                    |
-| ------------- | ------------------------ |
-| **Nombre**    | IEmailService            |
-| **Categoría** | Application Service      |
-| **Propósito** | Definir envío de correos |
-
-### Métodos
-
-| Nombre    | Tipo de retorno | Visibilidad | Descripción                         |
-| --------- | --------------- | ----------- | ----------------------------------- |
-| sendEmail | `Unit`          | public      | Envía un correo con asunto y cuerpo |
-
-#### 4.2.5.4. Infrastructure Layer.
-
-## AlertReportGenerationService
-
-| Propiedad     | Valor                                       |
-| ------------- | ------------------------------------------- |
-| **Nombre**    | AlertReportGenerationService                |
-| **Categoría** | Service Implementation                      |
-| **Propósito** | Implementar `IAlertReportGenerationService` |
-
-## SendGridService
-
-| Propiedad     | Valor                                       |
-| ------------- | ------------------------------------------- |
-| **Nombre**    | SendGridService                             |
-| **Categoría** | Service Implementation                      |
-| **Propósito** | Implementar `IEmailService` usando SendGrid |
-
-## AlertRepository
-
-| Propiedad     | Valor                                                 |
-| ------------- | ----------------------------------------------------- |
-| **Nombre**    | AlertRepository                                       |
-| **Categoría** | Repository Implementation                             |
-| **Propósito** | Implementar `IAlertRepository` con persistencia en BD |
-
-#### 4.2.5.5. System Monitoring & Control Bounded Context Software Architecture Component Level Diagrams.
-
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-monitoring-component.png"></image>
-
-#### 4.2.5.6. System Monitoring & Control Bounded Context Software Architecture Code Level Diagrams.
-
-##### 4.2.5.6.1. System Monitoring & Control Bounded Context Domain Layer Class Diagrams.
-<image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/class-diagram-system-monitoring-and-control.png"></image>
-
-##### 4.2.5.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-system-monitoring-and-control/database-diagram-system-monitoring-and-control.png"></image>
-
-### 4.2.6. Bounded Context: Watering Management
+### 4.2.6. Bounded Context: Service Monitoring & Operations
 
 #### 4.2.6.1. Domain Layer.
 
@@ -2645,11 +2585,11 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 
 | Nombre    | Tipo de dato | Visibilidad | Descripción                                 |
 |-----------|--------------|-------------|---------------------------------------------|
-| potId     | `Long`       | private     | Identificador de la maceta                  |
+| potId     | `long`       | private     | Identificador de la maceta                  |
 | startTime | `DateTime`   | private     | Hora de inicio del riego                    |
-| frequency | `String`     | private     | Frecuencia (diaria, semanal, personalizada) |
-| duration  | `Int`        | private     | Duración en minutos                         |
-| isActive  | `Boolean`    | private     | Si la programación está activa o suspendida |
+| frequency | `string`     | private     | Frecuencia (diaria, semanal, personalizada) |
+| duration  | `int`        | private     | Duración en minutos                         |
+| isActive  | `bool`       | private     | Si la programación está activa o suspendida |
 | createdAt | `DateTime`   | private     | Fecha de creación                           |
 | updatedAt | `DateTime`   | private     | Última fecha de actualización               |
 
@@ -2860,268 +2800,9 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram.
 <image src="../assets/img/capitulo-4/bounded-context-watering-management/WateringManagementDbDiagram.png"></image>
 
-
-
-### 4.2.7. Bounded Context: Subscriptions & Payments
+### 4.2.7. Bounded Context: Data Analytics
 
 #### 4.2.7.1. Domain Layer.
-
-## Subscription
-
-| Propiedad     | Valor                                              |
-|---------------|----------------------------------------------------|
-| **Nombre**    | Subscription                                       |
-| **Categoría** | Aggregate Root                                     |
-| **Propósito** | Representar una suscripción activa para un usuario |
-
-### Atributos
-
-| Nombre    | Tipo de dato | Visibilidad | Descripción                                  |
-|-----------|--------------|-------------|----------------------------------------------|
-| userId    | `Long`       | private     | Identificador único del usuario              |
-| planId    | `Long`       | private     | Identificador del plan de suscripción        |
-| status    | `String`     | private     | Estado de la suscripción (activa, cancelada) |
-| startDate | `DateTime`   | private     | Fecha de inicio de la suscripción            |
-| endDate   | `DateTime`   | private     | Fecha de expiración de la suscripción        |
-| createdAt | `DateTime`   | private     | Fecha de creación de la suscripción          |
-| updatedAt | `DateTime`   | private     | Fecha de última actualización                |
-
-### Métodos
-
-| Nombre       | Tipo de retorno | Visibilidad | Descripción                                 |
-|--------------|-----------------|-------------|---------------------------------------------|
-| activate     | `void`          | public      | Activa la suscripción                       |
-| cancel       | `void`          | public      | Cancela la suscripción                      |
-| updateStatus | `void`          | public      | Actualiza el estado de la suscripción       |
-| markUpdated  | `void`          | private     | Actualiza internamente el campo `updatedAt` |
-
-## SubscriptionPlan
-
-| Propiedad     | Valor                                                         |
-|---------------|---------------------------------------------------------------|
-| **Nombre**    | SubscriptionPlan                                              |
-| **Categoría** | Value Object                                                  |
-| **Propósito** | Representar los detalles de un plan de suscripción disponible |
-
-### Atributos
-
-| Nombre    | Tipo de dato   | Visibilidad | Descripción                              |
-|-----------|----------------|-------------|------------------------------------------|
-| name      | `String`       | public      | Nombre del plan (p.ej., Básico, Premium) |
-| price     | `Decimal`      | public      | Precio mensual del plan                  |
-| duration  | `Int`          | public      | Duración del plan en meses               |
-| features  | `List<String>` | public      | Características que ofrece el plan       |
-| createdAt | `DateTime`     | private     | Fecha de creación del plan               |
-
-## PaymentTransaction
-
-| Propiedad     | Valor                                                                  |
-|---------------|------------------------------------------------------------------------|
-| **Nombre**    | PaymentTransaction                                                     |
-| **Categoría** | Entity                                                                 |
-| **Propósito** | Representar los pagos realizados por un usuario para sus suscripciones |
-
-### Atributos
-
-| Nombre         | Tipo de dato | Visibilidad | Descripción                                    |
-|----------------|--------------|-------------|------------------------------------------------|
-| transactionId  | `String`     | private     | Identificador único de la transacción          |
-| subscriptionId | `Long`       | private     | Identificador de la suscripción                |
-| amount         | `Decimal`    | private     | Monto de la transacción                        |
-| status         | `String`     | private     | Estado de la transacción (completada, fallida) |
-| createdAt      | `DateTime`   | private     | Fecha de la transacción                        |
-
-### Métodos
-
-| Nombre         | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------|-----------------|-------------|---------------------------------------------|
-| processPayment | `void`          | public      | Procesa el pago para una suscripción        |
-| updateStatus   | `void`          | public      | Actualiza el estado de la transacción       |
-| markUpdated    | `void`          | private     | Actualiza internamente el campo `updatedAt` |
-
-## ISubscriptionRepository
-
-| Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
-| **Nombre**    | ISubscriptionRepository                        |
-| **Categoría** | Repository                                     |
-| **Propósito** | Persistir y recuperar entidades `Subscription` |
-
-### Métodos
-
-| Nombre       | Tipo de retorno | Visibilidad | Descripción                                  |
-|--------------|-----------------|-------------|----------------------------------------------|
-| findByUserId | `Subscription?` | public      | Recupera la suscripción activa de un usuario |
-| create       | `Unit`          | public      | Crea una nueva suscripción                   |
-| update       | `Unit`          | public      | Actualiza una suscripción existente          |
-| delete       | `Unit`          | public      | Elimina una suscripción por `userId`         |
-
-## IPaymentTransactionRepository
-
-| Propiedad     | Valor                                       |
-|---------------|---------------------------------------------|
-| **Nombre**    | IPaymentTransactionRepository               |
-| **Categoría** | Repository                                  |
-| **Propósito** | Persistir y recuperar transacciones de pago |
-
-### Métodos
-
-| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
-|----------|-----------------------|-------------|----------------------------------------------|
-| create   | `Unit`                | public      | Crea una nueva transacción de pago           |
-| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
-| update   | `Unit`                | public      | Actualiza una transacción existente          |
-| delete   | `Unit`                | public      | Elimina una transacción                      |
-
----
-
-#### 4.2.7.2. Interface Layer.
-
-## SubscriptionController
-
-| Propiedad     | Valor                                                              |
-|---------------|--------------------------------------------------------------------|
-| **Nombre**    | SubscriptionController                                             |
-| **Categoría** | Controller                                                         |
-| **Propósito** | Exponer los servicios REST para gestionar suscripciones de usuario |
-| **Ruta**      | `/api/subscriptions/`                                              |
-
-### Métodos
-
-| Nombre             | Ruta             | Acción                               | Handle                      |
-|--------------------|------------------|--------------------------------------|-----------------------------|
-| getSubscription    | `/{userId:long}` | Obtener la suscripción de un usuario | `GetSubscriptionQuery`      |
-| createSubscription | `/create`        | Crear nueva suscripción              | `CreateSubscriptionCommand` |
-| updateSubscription | `/update`        | Actualizar suscripción               | `UpdateSubscriptionCommand` |
-| cancelSubscription | `/cancel`        | Cancelar suscripción                 | `CancelSubscriptionCommand` |
-
-## PaymentTransactionController
-
-| Propiedad     | Valor                                                           |
-|---------------|-----------------------------------------------------------------|
-| **Nombre**    | PaymentTransactionController                                    |
-| **Categoría** | Controller                                                      |
-| **Propósito** | Exponer los servicios REST para gestionar transacciones de pago |
-| **Ruta**      | `/api/payment-transactions/`                                    |
-
-### Métodos
-
-| Nombre            | Ruta                    | Acción                                        | Handle                            |
-|-------------------|-------------------------|-----------------------------------------------|-----------------------------------|
-| getPayment        | `/{transactionId:long}` | Obtener transacción por ID                    | `GetPaymentTransactionQuery`      |
-| createPayment     | `/create`               | Crear una nueva transacción                   | `CreatePaymentTransactionCommand` |
-| updatePayment     | `/update`               | Actualizar estado de la transacción           | `UpdatePaymentTransactionCommand` |
-| getPaymentsByUser | `/user/{userId:long}`   | Obtener todas las transacciones de un usuario | `GetPaymentsByUserQuery`          |
-
----
-
-#### 4.2.7.3. Application Layer.
-
-## GetSubscriptionQueryHandler
-
-| Propiedad     | Valor                                                         |
-|---------------|---------------------------------------------------------------|
-| **Nombre**    | GetSubscriptionQueryHandler                                   |
-| **Categoría** | Query Handler                                                 |
-| **Propósito** | Manejar la consulta para obtener una suscripción por `userId` |
-
-## CreateSubscriptionCommandHandler
-
-| Propiedad     | Valor                                        |
-|---------------|----------------------------------------------|
-| **Nombre**    | CreateSubscriptionCommandHandler             |
-| **Categoría** | Command Handler                              |
-| **Propósito** | Manejar la creación de una nueva suscripción |
-
-## UpdateSubscriptionCommandHandler
-
-| Propiedad     | Valor                                                 |
-|---------------|-------------------------------------------------------|
-| **Nombre**    | UpdateSubscriptionCommandHandler                      |
-| **Categoría** | Command Handler                                       |
-| **Propósito** | Manejar la actualización de una suscripción existente |
-
-## CancelSubscriptionCommandHandler
-
-| Propiedad     | Valor                                     |
-|---------------|-------------------------------------------|
-| **Nombre**    | CancelSubscriptionCommandHandler          |
-| **Categoría** | Command Handler                           |
-| **Propósito** | Manejar la cancelación de una suscripción |
-
-## GetPaymentTransactionQueryHandler
-
-| Propiedad     | Valor                                                    |
-|---------------|----------------------------------------------------------|
-| **Nombre**    | GetPaymentTransactionQueryHandler                        |
-| **Categoría** | Query Handler                                            |
-| **Propósito** | Manejar la consulta para obtener una transacción de pago |
-
-## GetPaymentsByUserQueryHandler
-
-| Propiedad     | Valor                                                            |
-|---------------|------------------------------------------------------------------|
-| **Nombre**    | GetPaymentsByUserQueryHandler                                    |
-| **Categoría** | Query Handler                                                    |
-| **Propósito** | Manejar la consulta para obtener las transacciones de un usuario |
-
----
-
-#### 4.2.7.4. Infrastructure Layer.
-
-## SubscriptionRepository
-
-| Propiedad     | Valor                                                                     |
-|---------------|---------------------------------------------------------------------------|
-| **Nombre**    | SubscriptionRepository                                                    |
-| **Categoría** | Repository Implementation                                                 |
-| **Propósito** | Implementar `ISubscriptionRepository` usando un mecanismo de persistencia |
-
-### Métodos
-
-| Nombre       | Tipo de retorno | Visibilidad | Descripción                           |
-|--------------|-----------------|-------------|---------------------------------------|
-| findByUserId | `Subscription?` | public      | Recupera la suscripción de un usuario |
-| create       | `Unit`          | public      | Persistir una nueva suscripción       |
-| update       | `Unit`          | public      | Actualiza una suscripción existente   |
-| delete       | `Unit`          | public      | Elimina la suscripción por `userId`   |
-
-## PaymentTransactionRepository
-
-| Propiedad     | Valor                                                                           |
-|---------------|---------------------------------------------------------------------------------|
-| **Nombre**    | PaymentTransactionRepository                                                    |
-| **Categoría** | Repository Implementation                                                       |
-| **Propósito** | Implementar `IPaymentTransactionRepository` usando un mecanismo de persistencia |
-
-### Métodos
-
-| Nombre   | Tipo de retorno       | Visibilidad | Descripción                                  |
-|----------|-----------------------|-------------|----------------------------------------------|
-| create   | `Unit`                | public      | Persistir una nueva transacción de pago      |
-| findById | `PaymentTransaction?` | public      | Recupera una transacción por `transactionId` |
-| update   | `Unit`                | public      | Actualiza una transacción existente          |
-| delete   | `Unit`                | public      | Elimina una transacción                      |
-
----
-
-#### 4.2.7.5. Subscriptions & Payments Bounded Context Software Architecture Component Level Diagrams.
-
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-subscription--component.png"></image>
-
-#### 4.2.7.6. Subscriptions & Payments Bounded Context Software Architecture Code Level Diagrams.
-
-##### 4.2.7.6.1. Subscriptions & Payments Bounded Context Domain Layer Class Diagrams.
-
-<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscription&PaymentsClassDiagram.png"></image>
-
-##### 4.2.7.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-subscriptions-and-payments/Subscriptions&PaymentsDbDiagram.png"></image>
-
-
-### 4.2.8. Bounded Context: Caring Intelligence
-
-#### 4.2.8.1. Domain Layer.
 
 ## Recommendation
 
@@ -3166,94 +2847,6 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 | water       | `String`     | public      | Recomendación de riego       |
 | temperature | `String`     | public      | Recomendación de temperatura |
 
----
-#### 4.2.8.2. Interface Layer.
-
-## RecommendationController
-
-| Propiedad     | Valor                                                     |
-|---------------|-----------------------------------------------------------|
-| **Nombre**    | RecommendationController                                  |
-| **Categoría** | Controller                                                |
-| **Propósito** | Exponer los servicios REST para gestionar recomendaciones |
-| **Ruta**      | `/api/recommendations/`                                   |
-
-### Métodos
-
-| Nombre               | Ruta                            | Acción                            | Handle                        |
-|----------------------|---------------------------------|-----------------------------------|-------------------------------|
-| getRecommendation    | `/{userId:long}/{plantId:long}` | Obtener recomendación para planta | `GetRecommendationQuery`      |
-| createRecommendation | `/create`                       | Crear nueva recomendación         | `CreateRecommendationCommand` |
-| updateRecommendation | `/update`                       | Actualizar recomendación          | `UpdateRecommendationCommand` |
-
----
-
-#### 4.2.8.3. Application Layer.
-
-## GetRecommendationQueryHandler
-
-| Propiedad     | Valor                                                            |
-|---------------|------------------------------------------------------------------|
-| **Nombre**    | GetRecommendationQueryHandler                                    |
-| **Categoría** | Query Handler                                                    |
-| **Propósito** | Manejar la consulta para obtener una recomendación personalizada |
-
-## CreateRecommendationCommandHandler
-
-| Propiedad     | Valor                                          |
-|---------------|------------------------------------------------|
-| **Nombre**    | CreateRecommendationCommandHandler             |
-| **Categoría** | Command Handler                                |
-| **Propósito** | Manejar la creación de una nueva recomendación |
-
-## UpdateRecommendationCommandHandler
-
-| Propiedad     | Valor                                                   |
-|---------------|---------------------------------------------------------|
-| **Nombre**    | UpdateRecommendationCommandHandler                      |
-| **Categoría** | Command Handler                                         |
-| **Propósito** | Manejar la actualización de una recomendación existente |
-
----
-
-#### 4.2.8.4. Infrastructure Layer.
-
-## RecommendationRepository
-
-| Propiedad     | Valor                                                                       |
-|---------------|-----------------------------------------------------------------------------|
-| **Nombre**    | RecommendationRepository                                                    |
-| **Categoría** | Repository Implementation                                                   |
-| **Propósito** | Implementar `IRecommendationRepository` usando un mecanismo de persistencia |
-
-### Métodos
-
-| Nombre       | Tipo de retorno   | Visibilidad | Descripción                            |
-|--------------|-------------------|-------------|----------------------------------------|
-| findByUserId | `Recommendation?` | public      | Obtener la recomendación por `userId`  |
-| create       | `Unit`            | public      | Crear una nueva recomendación          |
-| update       | `Unit`            | public      | Actualizar una recomendación existente |
-| delete       | `Unit`            | public      | Eliminar la recomendación              |
-
----
-#### 4.2.8.5. Caring Intelligence Bounded Context Software Architecture Component Level Diagrams.
-
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-recommendation-component.png"></image>
-
-#### 4.2.8.6. Caring Intelligence Bounded Context Software Architecture Code Level Diagrams.
-
-##### 4.2.8.6.1. Caring Intelligence Bounded Context Domain Layer Class Diagrams.
-
-<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
-
-##### 4.2.8.6.2. Bounded Context Database Design Diagram.
-<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
-
-
-### 4.2.9. Bounded Context: Data Insights & Reporting
-
-#### 4.2.9.1. Domain Layer.
-
 ## DataReport
 
 | Propiedad     | Valor                                                  |
@@ -3297,8 +2890,26 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 | dataType        | `String`     | private     | Tipo de los datos (e.g., sensor, usuario, etc.) |
 | dataDescription | `String`     | private     | Descripción de los datos                        |
 | createdAt       | `DateTime`   | private     | Fecha de creación                               |
+
 ---
-#### 4.2.9.2. Interface Layer.
+#### 4.2.7.2. Interface Layer.
+
+## RecommendationController
+
+| Propiedad     | Valor                                                     |
+|---------------|-----------------------------------------------------------|
+| **Nombre**    | RecommendationController                                  |
+| **Categoría** | Controller                                                |
+| **Propósito** | Exponer los servicios REST para gestionar recomendaciones |
+| **Ruta**      | `/api/recommendations/`                                   |
+
+### Métodos
+
+| Nombre               | Ruta                            | Acción                            | Handle                        |
+|----------------------|---------------------------------|-----------------------------------|-------------------------------|
+| getRecommendation    | `/{userId:long}/{plantId:long}` | Obtener recomendación para planta | `GetRecommendationQuery`      |
+| createRecommendation | `/create`                       | Crear nueva recomendación         | `CreateRecommendationCommand` |
+| updateRecommendation | `/update`                       | Actualizar recomendación          | `UpdateRecommendationCommand` |
 
 ## DataReportController
 
@@ -3317,8 +2928,34 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 | createReport     | `/create`                        | Crear nuevo reporte                         | `CreateDataReportCommand` |
 | updateReport     | `/update`                        | Actualizar reporte existente                | `UpdateDataReportCommand` |
 | getReportsByUser | `/user/{userId:long}`            | Obtener todos los reportes de un usuario    | `GetReportsByUserQuery`   |
+
 ---
-#### 4.2.9.3. Application Layer.
+
+#### 4.2.7.3. Application Layer.
+
+## GetRecommendationQueryHandler
+
+| Propiedad     | Valor                                                            |
+|---------------|------------------------------------------------------------------|
+| **Nombre**    | GetRecommendationQueryHandler                                    |
+| **Categoría** | Query Handler                                                    |
+| **Propósito** | Manejar la consulta para obtener una recomendación personalizada |
+
+## CreateRecommendationCommandHandler
+
+| Propiedad     | Valor                                          |
+|---------------|------------------------------------------------|
+| **Nombre**    | CreateRecommendationCommandHandler             |
+| **Categoría** | Command Handler                                |
+| **Propósito** | Manejar la creación de una nueva recomendación |
+
+## UpdateRecommendationCommandHandler
+
+| Propiedad     | Valor                                                   |
+|---------------|---------------------------------------------------------|
+| **Nombre**    | UpdateRecommendationCommandHandler                      |
+| **Categoría** | Command Handler                                         |
+| **Propósito** | Manejar la actualización de una recomendación existente |
 
 ## GetDataReportQueryHandler
 
@@ -3345,7 +2982,25 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 | **Propósito** | Manejar la actualización de un reporte de datos |
 
 ---
-#### 4.2.9.4. Infrastructure Layer.
+
+#### 4.2.7.4. Infrastructure Layer.
+
+## RecommendationRepository
+
+| Propiedad     | Valor                                                                       |
+|---------------|-----------------------------------------------------------------------------|
+| **Nombre**    | RecommendationRepository                                                    |
+| **Categoría** | Repository Implementation                                                   |
+| **Propósito** | Implementar `IRecommendationRepository` usando un mecanismo de persistencia |
+
+### Métodos
+
+| Nombre       | Tipo de retorno   | Visibilidad | Descripción                            |
+|--------------|-------------------|-------------|----------------------------------------|
+| findByUserId | `Recommendation?` | public      | Obtener la recomendación por `userId`  |
+| create       | `Unit`            | public      | Crear una nueva recomendación          |
+| update       | `Unit`            | public      | Actualizar una recomendación existente |
+| delete       | `Unit`            | public      | Eliminar la recomendación              |
 
 ## DataReportRepository
 
@@ -3382,16 +3037,15 @@ Esta visualización detallada contribuye significativamente a la comprensión co
 | delete         | `Unit`          | public      | Elimina una fuente de datos                |
 
 ---
-#### 4.2.9.5. Data Insights & Reporting Bounded Context Software Architecture Component Level Diagrams.
+#### 4.2.7.5. Data Analytics Bounded Context Software Architecture Component Level Diagrams.
 
-<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-reporting-component.png"></image>
+<image src="../assets/img/capitulo-4/c4-model/structurizr-102464-recommendation-component.png"></image>
 
-#### 4.2.9.6. Data Insights & Reporting Bounded Context Software Architecture Code Level Diagrams.
+#### 4.2.7.6. Data Analytics Bounded Context Software Architecture Code Level Diagrams.
 
-##### 4.2.9.6.1. Data Insights & Reporting Bounded Context Domain Layer Class Diagrams.
+##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
 
-<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingClassDiagram.png"></image>
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceClassDiagram.png"></image>
 
-##### 4.2.9.6.2. Bounded Context Database Design Diagram.
-
-<image src="../assets/img/capitulo-4/bounded-context-data-insights-and-reporting/DataInsights&ReportingDbDiagram.png"></image>
+##### 4.2.7.6.2. Bounded Context Database Design Diagram.
+<image src="../assets/img/capitulo-4/bounded-context-caring-intelligence/CaringIntelligenceDbDiagram.png"></image>
