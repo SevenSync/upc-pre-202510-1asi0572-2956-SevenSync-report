@@ -2251,17 +2251,150 @@ Teóricamente, la elaboración de wireframes para aplicaciones web actúa como u
 
 ###### Figura 139
 
-_Grupo de Wireframes desarrollados para el diseño de la Web Application de Macetech_
+_Grupo de Wireframes desarrollados para las pantallas de Sign-In, Sign-Up y Recover Password de la Web Application de Macetech_
 
-<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-bounded-context-wireframes.png" alt="MockUp" width="1000" height="550"> 
-
-<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-bounded-context-wireframes2.png" alt="MockUp" width="1000" height="550"> 
-
-<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-bounded-context-wireframes3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-1.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-2.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-3.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-4.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-5.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-6.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-7.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-8.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-9.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-10.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-11.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-12.png" alt="Wireframe" width="1000" height="550"> 
 
 ###### Figura 140
 
-_Grupo de Wireframes desarrollados para el diseño de la Web Application de Macetech_
+_Grupo de Wireframes desarrollados para las pantallas de Subscriptions and Payments de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/subscriptions-and-payments-wireframe-1.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/subscriptions-and-payments-wireframe-2.png" alt="Wireframe" width="550" height="1000"> 
+
+
+###### Figura 141
+
+_Grupo de Wireframes desarrollados para las pantallas de Notifications de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 142
+
+_Grupo de Wireframes desarrollados para las pantallas de Home de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 143
+
+_Grupo de Wireframes desarrollados para las pantallas de Profile de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-7.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-8.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-9.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 144
+
+_Grupo de Wireframes desarrollados para las pantallas de Plat Selection de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 145
+
+_Grupo de Wireframes desarrollados para las pantallas de Plat Edit de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-edit-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-edit-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 146
+
+_Grupo de Wireframes desarrollados para las pantallas de Checkout de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 147
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Graphics de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-6.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-7.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-8.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 147
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Alerts de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-alerts-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-alerts-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 148
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Recommendations de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-recommendations-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-recommendations-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 149
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Reports de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-1.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-3.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-4.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-5.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-6.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-7.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 150
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-History de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-history-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-history-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 151
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Restrictions de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-2.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-3.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-4.png" alt="MockUp" width="1000" height="550">
 
 #### 5.4.1.2. Mobile Applications Wireframes
 
@@ -2269,14 +2402,39 @@ En esta subsección se presentan y describen los wireframes correspondientes a l
 
 Desde una perspectiva teórica, la creación de wireframes móviles permite validar la organización de contenido y la jerarquía visual en pantallas de menor tamaño antes de avanzar a prototipos de alta fidelidad, identificando tempranamente posibles dificultades de navegación y gestos táctiles (Uzayr, 2022). Esta metodología asegura que el espaciado, los controles interactivos y los patrones de desplazamiento se diseñen de manera coherente, accesible y alineada con las expectativas de los usuarios, optimizando la experiencia en dispositivos móviles.
 
-###### Figura 140
+###### Figura 152
 
-_Grupo de Wireframes desarrollados para el diseño de la Mobile Application de Macetech_
+_Grupo de Wireframes desarrollados para las pantallas de Sign-In, Sign-up y Recover Password de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/iam-wireframes.png" alt="MockUp" width="600" height="900">
+
+###### Figura 153
+
+_Grupo de Wireframes desarrollados para las pantallas de Notifications de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/notifications-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 154
+
+_Grupo de Wireframes desarrollados para las pantallas de Profile de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/profile-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 155
+
+_Grupo de Wireframes desarrollados para las pantallas de Home de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/home-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 156
+
+_Grupo de Wireframes desarrollados para las pantallas de Pot Management de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/pot-wireframes.png" alt="MockUp" width="500" height="1000">
 
 ### 5.4.2. Applications Wireflow Diagrams
 
 #### 5.4.2.1. Web Applications Wireflow Diagrams
-
 
 - **1. Registro e Inicio de Sesión del Usuario**
   Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
@@ -2321,6 +2479,35 @@ Los siguientes mockups representan las interfaces clave de una plataforma de ges
 
 #### 5.4.3.2. Mobile Applications Mock-ups
 
+###### Figura 157
+
+_Grupo de Mockups desarrollados para las pantallas de Sign-In, Sign-up y Recover Password de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/iam-mockup.png" alt="MockUp" width="600" height="900">
+
+###### Figura 158
+
+_Grupo de Mockups desarrollados para las pantallas de Notifications de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/notifications-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 159
+
+_Grupo de Mockups desarrollados para las pantallas de Profile de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/profile-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 160
+
+_Grupo de Mockups desarrollados para las pantallas de Home de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/home-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 161
+
+_Grupo de Mockups desarrollados para las pantallas de Pot Management de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/pot-mockup.png" alt="MockUp" width="500" height="1000">
 
 ### 5.4.4. Applications User Flow Diagrams
 Los siguientes User Flows representan los principales recorridos que un usuario puede seguir dentro de la aplicación, desde el acceso inicial hasta la personalización de su experiencia. Cada flujo responde a un objetivo específico del usuario (User Goal) y está basado en los mockups desarrollados. Se abordan procesos clave como el registro e inicio de sesión, la interacción con macetas inteligentes, la actualización de membresía, y la configuración de cuenta y notificaciones, asegurando una experiencia intuitiva, eficiente y centrada en las necesidades del usuario.
@@ -2354,7 +2541,6 @@ Los siguientes User Flows representan los principales recorridos que un usuario 
 - **4. Configuración de Cuenta y Preferencias de Notificación**
   Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
   <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_2_mobile.png"  alt="MockUp" width="1000" height="700"> <br>
-
 
 ## 5.5. Applications Prototyping
 
