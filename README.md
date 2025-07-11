@@ -467,18 +467,8 @@ En esta entrega se han utilizado pull requests para la entrega de artefactos en 
 **TF1 Project Report Collaboration Insights**
 
 _Vista general de las contribuciones del equipo_
-<img src="/assets/img/portada/team-contributions-tf.png" width= "400px" alt="contribuciones del equipo para el tf">
-_Contribuciones por miembro del equipo_
-<img src="/assets/img/portada/contributions-tf-per-team-member-1.png" width= "400px" alt="contribuciones de cada miembro del equipo para el tf">
-<img src="/assets/img/portada/contributions-tf-per-team-member-2.png" width= "400px" alt="contribuciones de cada miembro del equipo para para el tf">
+<img src="/assets/img/portada/tf1contributors.png" width= "400px" alt="contribuciones del equipo para el tf">
 
-_Commits_
-
-<img src="/assets/img/portada/commits-tf.png" width= "400px" alt="commits del equipo para el tf">
-
-_Network Graph_
-
-<img src="/assets/img/portada/network-graph-tf.png" width= "400px" alt="gráfico de red de ramas del equipo para el tf">
 
 De las contribuciones del equipo y commits se concluye lo siguiente:
 
