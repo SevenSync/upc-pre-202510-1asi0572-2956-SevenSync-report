@@ -2240,3 +2240,31 @@ La presente sección incluye los prototipos interactivos desarrollados para repr
   <img src="/assets/img/capitulo-5/ux-ui-design/prototyping/Web_Prototyping.png"  alt="MockUp" width="1000" height="700"> <br>
 - **Enlace al video de navegación en Microsoft Stream:**
   [Prototyping_Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213652_upc_edu_pe/EQ1iceHxaeNPlHG_Tx5M8-cBXeJxztrmdvh0jbH8akaVrA?e=YMGrHy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+  ## 5.5.2 Mobile Applications Prototyping
+
+La presente sección incluye los prototipos interactivos desarrollados para representar el comportamiento funcional de la aplicación móvil en sus principales vistas. Estos prototipos permiten simular la navegación entre pantallas, validar la lógica de interacción y evaluar la experiencia del usuario antes del desarrollo final. Se han construido a partir de los mockups previamente diseñados, asegurando coherencia visual y funcional con los User Flows definidos.
+
+- **Criterios de interacción seleccionados:**
+  - Se utilizó un sistema de navegación lateral persistente que permite moverse fácilmente entre secciones clave como Dashboard, Perfil, Membresías y Notificaciones.
+  - Las interacciones siguen un enfoque secuencial y jerárquico, facilitando tareas críticas como registrar una cuenta, revisar el estado de una maceta o actualizar el plan de membresía.
+  - Se priorizó la claridad visual con botones de acción directa (“Regar ahora”, “Actualizar plan”, “Guardar cambios”) que reducen la fricción del usuario.
+- **Relación con la arquitectura de información:**
+
+  - **Sistema de navegación:** jerárquico en versión escritorio con íconos y etiquetas claras en un menú lateral.
+  - **Organización visual:** disposición de contenido en tarjetas, uso de títulos, subtítulos y agrupaciones para mejorar la escaneabilidad.
+  - **Tipos de categorización:** por tópicos (Macetas, Membresías, Perfil) y por audiencia (usuarios registrados o premium).
+
+- **Pantallas incluidas en el prototipo:**
+  - Registro y Login
+  - Dashboard de macetas
+  - Detalle de maceta inteligente
+  - Sección de perfil y notificaciones
+- **Screenshot representativo del prototipo en acción:**
+  <img src="/assets/img/capitulo-5/ux-ui-design/prototyping/Prototyping_mobile.png"  alt="MockUp" width="1000" height="700"> <br>
+- **Enlace al video de navegación en Microsoft Stream:**
+  [Prototyping_Video](https://www.youtube.com/watch?v=QvU8tuRCMdg)
+
+
+
