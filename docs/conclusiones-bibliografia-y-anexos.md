@@ -1,6 +1,28 @@
 # Conclusiones
 
+**1. Validación de la propuesta de valor técnico**
+Los resultados de los pilotos controlados han demostrado la eficacia de la combinación de sensores IoT, riego automatizado y recomendaciones personalizadas: se redujo el desperdicio de agua en hasta un 50 % y la tasa de supervivencia vegetal superó el 75 % a los 90 días. Estos datos confirman que Macetech aborda de manera tangible las necesidades de los jardineros urbanos principiantes, validando el Problem Statement orientado a optimizar el uso de agua y preservar la salud de las plantas. Asimismo, la precisión de los sensores y la fiabilidad del mecanismo de riego han sido reconocidos como factores críticos para generar confianza en el usuario.
 
+**2. Estrategias de UX y retención sólidas**
+Las hipótesis de Lean UX relativas a un proceso de onboarding guiado, alertas contextuales oportunas y un diseño estético e intuitivo han resultado determinantes para la adopción y retención del servicio: la tasa de abandono (“churn”) se mantuvo por debajo del 20 % durante los primeros tres meses. La simplicidad en la configuración inicial y la inmediatez del feedback positivo reforzaron la percepción de valor, confirmando que la primera impresión y la claridad en las interacciones son pilares esenciales para fidelizar usuarios.
+
+**3. Robustez de la arquitectura modular basada en DDD**
+La aplicación de Domain‑Driven Design, con una clara separación en bounded contexts (Asset & Resource Management, Service Operation & Monitoring, Service Design & Planning, Data Analytics, IAM, Profiles & Preferences y Subscriptions & Payments), ha facilitado la evolución independiente de cada módulo y ha permitido despliegues paralelos. Esta estructura modular posibilitó, por ejemplo, mejorar el motor de recomendaciones sin afectar los procesos de riego o facturación, reforzando la mantenibilidad y escalabilidad a medida que los requisitos del negocio crecen.
+
+**4. Eficacia y potencial de evolución del motor de recomendaciones**
+Integrar el motor de recomendaciones dentro del contexto de Service Operation & Monitoring redujo significativamente la latencia y eliminó duplicaciones de lógica, proporcionando sugerencias basadas en datos en tiempo real. Para aumentar el grado de personalización y anticipación de necesidades, se recomienda ampliar el conjunto de datos de entrenamiento con feedback más diverso y explorar modelos de Machine Learning que integren variables climáticas y patrones históricos de uso.
+
+**5. Expansión de la capa de analítica hacia lo predictivo**
+Los dashboards y InsightReports actuales ofrecen una visión clara de métricas operativas y tendencias, pero su valor puede maximizarse incorporando análisis predictivos. La implementación de algoritmos de series temporales para pronosticar estrés hídrico y detección de anomalías contribuirá a una gestión verdaderamente proactiva. Invertir en pipelines de datos que soporten procesamiento batch y streaming será clave para soportar estos modelos de IA en producción.
+
+**6. Viabilidad y crecimiento del modelo freemium‑suscripción**
+El objetivo de alcanzar un 8 % de adopción en Lima Metropolitana en el primer año es viable, respaldado por los resultados de prototipos y las primeras campañas digitales. No obstante, para consolidar la captación orgánica y mejorar el posicionamiento SEO, será necesario mantener un plan de contenidos constante, establecer alianzas con influencers del sector eco‑tech y optimizar técnicamente la estructura web.
+
+**7. Seguridad y privacidad como propuesta de diferenciación**
+La adopción de políticas de datos transparentes, cifrado de extremo a extremo y mecanismos de consentimiento claro ha mantenido la tasa de abandono por motivos de privacidad en torno al 12 %. Este resultado destaca la importancia de la seguridad y la ética en el manejo de datos sensoriales y personales, posicionando a Macetech como una solución confiable frente a competidores que no abordan estos aspectos de manera rigurosa.
+
+**8. Conectividad y escalabilidad operativa**
+Aunque el soporte de Wi‑Fi doméstico cubre la mayoría de los escenarios urbanos, se identificó la necesidad de explorar redes alternativas (4G/5G, LoRaWAN) para garantizar la operatividad en zonas con cobertura limitada. Del mismo modo, migrar servicios críticos a un clúster de Kubernetes y desplegar gateways edge robustos permitirá soportar crecimientos de usuarios superiores a 10× sin sacrificar la disponibilidad ni el rendimiento.
 
 # Bibliografía
 

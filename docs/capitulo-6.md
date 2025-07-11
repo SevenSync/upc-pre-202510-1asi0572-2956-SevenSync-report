@@ -513,42 +513,52 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 		</tr>
          <tr>
 			<td colspan="1">Sprint 1 – 1 Review Summary </td>
-            <td colspan="1">El sprint 1 se enfocó en establecer las bases iniciales de la plataforma web. Durante este periodo fundacional, el equipo logró completar la página de aterrizaje, implementar las funcionalidades esenciales de registro e inicio de sesión integradas con un fake API en Beeceptor, asegurar que el diseño fuera adaptable a diversos dispositivos y desarrollar las primeras pantallas para interactuar con la maceta inteligente. Los miembros del equipo encontraron el sprint productivo y motivador al ver el progreso inicial, mientras que el Team Leader (Prooduct Owner) se mostró muy satisfecho con los resultados, destacando la solidez de la base construida y la efectividad del enfoque adoptado para este inicio de proyecto.</td>
+            <td colspan="1">El sprint 1 concluyó con el desarrollo de la página web de negocio. Los integrantes del equipo finalizaron este producto y comenzaron a preparar el ambiente de desarrollo para los siguientes productos. El profesor observó que el formulario de contacto no debe estar ubicado al final de la página, además, sostenió que se debe contar con i18n para realizar el cambio de lenguaje. 
+            </td>
 		</tr>
          <tr>
 			<td colspan="1">Sprint 1 – 1 Retrospective Summary </td>
-            <td colspan="1">Tras completar el primer Sprint, el equipo sintió que colaboraron bien y se adaptaron a los desafíos iniciales del proyecto, lo cual fue un comienzo coomplicado pero con buen descenlace. Sin embargo, también identificaron áreas clave para mejorar la forma de trabajar en el futuro, como organizar mejor los tiempos, coordinar las tareas compartidas de manera más eficiente, asegurar que siempre se enfoquen en entregar lo más valioso para el producto, y tener más reuniones cortas para mantenerse mejor comunicados y alineados en los próximos sprints.</td>
+            <td colspan="1">Tras completar el primer Sprint, el equipo identificó varios puntos de mejora como la gestión del tiempo y la responsabilidad en el cumplimiento de tareas. Como reflexión, no se cumplió el objetivo debido a que el sprint 1 debió cubrir la página web de negocio y la plataforma web. Sim embargo, por falta de tiempo no se pudo contemplar el desarrollo del segundo producto. El equipo encara este obstáculo con optimismo para cumplir en el siguiente entregable.</td>
 		</tr>
          <tr>
 			<td colspan="2">Sprint Goal & User Stories </td>
 		</tr>
          <tr>
 			<td>Sprint 1 Goal</td>
-            <td><strong>Nuestro enfoque es</strong> entregar una experiencia digital unificada que comunique efectivamente el valor de Macetech desde el primer contacto hasta la interacción inicial con la plataforma. <strong>Creemos que esto proporciona</strong> claridad inmediata sobre los beneficios del producto a través de una Landing Page persuasiva, y empodera a los usuarios mediante dashboards funcionales con datos simulados que generan confianza en la solución. <strong>Esto se confirmará cuando</strong> los visitantes completen acciones clave en la Landing Page (registro o descarga), los usuarios registrados naveguen intuitivamente entre los dashboards de macetas y métricas simuladas, y las pruebas de usuario demuestren comprensión del valor propuesto y capacidad para interpretar los datos presentados.
+            <td><strong>Nuestro enfoque es</strong> convertir a los visitantes interesados en jardinería y tecnología para el cuidado de plantas en clientes potenciales, mediante el desarrollo y publicación de la primera versión de la página web de negocio de Macetech. Esta página presentará, de forma clara y visualmente atractiva, el valor diferencial de nuestra maceta inteligente: un sistema automatizado de riego combinado con un algoritmo que adapta el cuidado según el tipo de planta, las condiciones ambientales y los hábitos del usuario. Para generar confianza, incluiremos testimonios reales de los primeros testers, junto a un video donde el equipo fundador explica la visión de Macetech y demuestra el funcionamiento del producto.
+Asimismo, la página mostrará una comparación accesible entre las funcionalidades estándar —como el monitoreo básico de humedad, alertas de riego y recomendaciones genéricas— y las funcionalidades premium —como sugerencias personalizadas por especie, programación avanzada de riego y acceso al historial inteligente de crecimiento— con el propósito de despertar la curiosidad por futuras suscripciones.
+<br>
+<strong>Creemos que esto proporciona</strong> validación temprana del atractivo comercial de Macetech, posicionándonos como una solución tecnológica confiable y deseable dentro del ecosistema de jardinería inteligente. También permite evaluar el interés real de usuarios tempranos y orientar los siguientes pasos de producto y marketing con datos objetivos.
+
+<strong>Esto se confirmará</strong> cuando al menos el 40 % de los visitantes interactúe con la sección de funcionamiento inteligente, el tiempo promedio de permanencia supere los 90 segundos, y recibamos al menos 30 mensajes a través del formulario de contacto solicitando más información o demostraciones del producto.
 </td>
 		</tr>
         <tr>
 			<td colspan="1">Sprint 1 Velocity </td>
-            <td colspan="1">79</td>
+            <td colspan="1">19</td>
 		</tr>
         <tr>
 			<td colspan="1">Sum of Story Points </td>
-            <td colspan="1">79</td>
+            <td colspan="1">19</td>
 		</tr>
 </tbody>
 </table>
 
 #### 6.2.1.2. Aspects Leaders and Collaborators
 
+La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|---|---|
+| Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
+| Paredes, Luiggi | DevLuiggi | - | C | - | L | - | C | - |
+| Pescorán, Juan | JuanPescoran | - | - | - | C | C | L | L |
+| Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
+| Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
+| Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 #### 6.2.1.3.Sprint Backlog 1.
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
-A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
-
-Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9)
-
-<img src="/assets/img/capitulo-6/evidence/sprint-backlog-1.png" alt="Evidencia de Sprint Backlog para sprint 1">
-
 <table>
 	<tbody>
 		<tr>
@@ -780,575 +790,48 @@ Enlace para ingresar al Sprint Backlog para el Sprint 1: [Enlace de Jira](https:
         <td>Juan Pescorán</td>
         <td>Done</td>
     </tr>
-    <tr>
-      <td>US014</td>
-      <td>Registrar cuenta</td>
-      <td>T014</td>
-      <td>Formulario registro</td>
-      <td><strong>Como</strong> usuario nuevo, <strong>quiero</strong> registrar una cuenta <strong>para</strong> acceder a los servicios </td>
-      <td>6</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T014.1</td>
-        <td>Estructura formulario</td>
-        <td>Crear la estructura HTML y estilos básicos para el formulario de registro.</td>
-        <td>2</td>
-        <td>Lucio Yen</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T014.2</td>
-        <td>Implementar validación</td>
-        <td>Añadir validaciones de entrada del usuario en el cliente (JavaScript).</td>
-        <td>2</td>
-        <td>Lucio Yen</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T014.3</td>
-        <td>Integrar con API</td>
-        <td>Conectar el formulario con el endpoint de registro del fake API en Beeceptor.</td>
-        <td>2</td>
-        <td>Lucio Yen</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US015</td>
-      <td>Iniciar sesión</td>
-      <td>T015</td>
-      <td>Formulario login</td>
-      <td><strong>Como</strong> usuario registrado, <strong>quiero</strong> iniciar sesión con mis credenciales <strong>para</strong> acceder a mi cuenta </td>
-      <td>5</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T015.1</td>
-        <td>Estructura formulario</td>
-        <td>Crear la estructura HTML y estilos básicos para el formulario de inicio de sesión.</td>
-        <td>1</td>
-        <td>Flavio Trigueros</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T015.2</td>
-        <td>Implementar validación</td>
-        <td>Añadir validaciones de entrada del usuario en el cliente (JavaScript).</td>
-        <td>2</td>
-        <td>Flavio Trigueros</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T015.3</td>
-        <td>Integrar con API</td>
-        <td>Conectar el formulario con el endpoint de inicio de sesión del fake API en Beeceptor.</td>
-        <td>2</td>
-        <td>Flavio Trigueros</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US018</td>
-      <td>Cerrar sesión</td>
-      <td>T016</td>
-      <td>Implementar funcionalidad de cerrar sesión</td>
-      <td><strong>Como</strong> usuario autenticado, <strong>quiero</strong> cerrar sesión <strong>para</strong> proteger mi cuenta </td>
-      <td>3</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T016.1</td>
-      <td>Implementar lógica frontend para cerrar sesión</td>
-      <td>Añadir la lógica en el cliente para manejar el evento de cerrar sesión.</td>
-      <td>1</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T016.2</td>
-      <td>Limpiar sesión local</td>
-      <td>Remover tokens o información de sesión almacenada en el navegador.</td>
-      <td>1</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T016.3</td>
-      <td>Redirigir al usuario</td>
-      <td>Navegar al usuario a la página de inicio o login después de cerrar sesión.</td>
-      <td>1</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US036</td>
-      <td>Vincular nueva maceta</td>
-      <td>T017</td>
-      <td>Implementar proceso de vinculación Bluetooth</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> registrar maceta vía Bluetooth <strong>para</strong> monitorear plantas </td>
-      <td>8</td>
-      <td>Fabrizio Sanchez</td>
-      <td>To-Do</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T017.1</td>
-      <td>Implementar búsqueda Bluetooth</td>
-      <td>Desarrollar la funcionalidad para escanear dispositivos Bluetooth cercanos.</td>
-      <td>2</td>
-      <td>Fabrizio Sanchez</td>
-      <td>To-Do</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T017.2</td>
-      <td>Implementar conexión a maceta</td>
-      <td>Establecer la conexión Bluetooth con la maceta inteligente identificada.</td>
-      <td>2</td>
-      <td>Fabrizio Sanchez</td>
-      <td>To-Do</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T017.3</td>
-      <td>Enviar credenciales WiFi</td>
-      <td>Desarrollar la función para enviar la configuración de red a la maceta.</td>
-      <td>2</td>
-      <td>Fabrizio Sanchez</td>
-      <td>To-Do</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T017.4</td>
-      <td>Confirmar vinculación</td>
-      <td>Mostrar feedback al usuario sobre el éxito o fallo de la vinculación.</td>
-      <td>2</td>
-      <td>Fabrizio Sanchez</td>
-      <td>To-Do</td>
-    </tr>
-    <tr>
-      <td>US039</td>
-      <td>Eliminar maceta</td>
-      <td>T018</td>
-      <td>Implementar función eliminar maceta</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> desvincular maceta <strong>para</strong> dejar de recibir notificaciones </td>
-      <td>5</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T018.1</td>
-      <td>Crear interfaz de confirmación</td>
-      <td>Diseñar y desarrollar el modal o pantalla para confirmar la eliminación.</td>
-      <td>1</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T018.2</td>
-      <td>Implementar llamada API eliminar</td>
-      <td>Configurar la llamada al API para solicitar la eliminación de la maceta.</td>
-      <td>2</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T018.3</td>
-      <td>Actualizar lista de macetas</td>
-      <td>Remover la maceta eliminada de la vista del usuario.</td>
-      <td>2</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US040</td>
-      <td>Reordenar macetas</td>
-      <td>T019</td>
-      <td>Implementar lógica reordenar macetas</td>
-      <td><strong>Como</strong> usuario con múltiples macetas, <strong>quiero</strong> reorganizarlas <strong>para</strong> acceder rápido a importantes </td>
-      <td>6</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T019.1</td>
-      <td>Implementar UI de arrastrar y soltar</td>
-      <td>Desarrollar la interfaz que permita reorganizar las macetas visualmente.</td>
-      <td>2</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T019.2</td>
-      <td>Implementar lógica para actualizar orden</td>
-      <td>Añadir el código para procesar el nuevo orden de las macetas.</td>
-      <td>2</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T019.3</td>
-      <td>Guardar nuevo orden via API</td>
-      <td>Configurar la llamada al API para persistir el nuevo orden de las macetas.</td>
-      <td>2</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US054</td>
-      <td>Registrar planta en maceta</td>
-      <td>T020</td>
-      <td>Selector plantas</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> asignar planta a maceta <strong>para</strong> recibir recomendaciones </td>
-      <td>6</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T020.1</td>
-        <td>Obtener lista plantas</td>
-        <td>Obtener la lista de plantas disponibles desde el API.</td>
-        <td>3</td>
-        <td>Ruben Mallma</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T020.2</td>
-        <td>Implementar selector</td>
-        <td>Crear la interfaz para seleccionar una planta de la lista.</td>
-        <td>3</td>
-        <td>Ruben Mallma</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US055</td>
-      <td>Eliminar planta de maceta</td>
-      <td>T021</td>
-      <td>Implementar función eliminar planta</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> remover planta <strong>para</strong> liberar maceta </td>
-      <td>5</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T021.1</td>
-      <td>Crear interfaz de confirmación</td>
-      <td>Diseñar y desarrollar el modal o pantalla para confirmar la eliminación de la planta.</td>
-      <td>1</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T021.2</td>
-      <td>Implementar llamada API eliminar planta</td>
-      <td>Configurar la llamada al API para solicitar la eliminación de la planta de la maceta.</td>
-      <td>2</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T021.3</td>
-      <td>Actualizar info de maceta</td>
-      <td>Reflejar la eliminación de la planta en la interfaz de información de la maceta.</td>
-      <td>2</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US056</td>
-      <td>Ver parámetros óptimos de planta</td>
-      <td>T022</td>
-      <td>Mostrar parámetros óptimos de planta</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> consultar rangos ideales <strong>para</strong> comparar con sensores </td>
-      <td>6</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T022.1</td>
-      <td>Obtener datos parámetros óptimos</td>
-      <td>Recuperar los rangos ideales de parámetros para la planta via API en Beeceptor.</td>
-      <td>2</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T022.2</td>
-      <td>Diseñar sección parámetros</td>
-      <td>Crear la sección de la interfaz donde se mostrarán los parámetros óptimos.</td>
-      <td>2</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T022.3</td>
-      <td>Renderizar datos</td>
-      <td>Mostrar los rangos de parámetros óptimos en la interfaz de usuario.</td>
-      <td>2</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US038</td>
-      <td>Ver estado de parámetros de sensores</td>
-      <td>T023</td>
-      <td>Dashboard sensores</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> consultar parámetros de sensor <strong>para</strong> saber si planta necesita atención </td>
-      <td>7</td>
-      <td>Fabrizio Sanchez</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T023.1</td>
-        <td>Obtener datos sensores</td>
-        <td>Obtener los datos de los sensores desde el API del fake API en Beeceptor.</td>
-        <td>3</td>
-        <td>Fabrizio Sanchez</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T023.2</td>
-        <td>Mostrar datos</td>
-        <td>Renderizar los datos de los sensores en el dashboard (tabla o gráfico).</td>
-        <td>4</td>
-        <td>Fabrizio Sanchez</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US037</td>
-      <td>Personalizar nombre de maceta</td>
-      <td>T024</td>
-      <td>Editar nombre</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> asignar nombre único <strong>para</strong> identificar fácilmente </td>
-      <td>5</td>
-      <td>Flavio Trigueros</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T024.1</td>
-        <td>Crear campo entrada</td>
-        <td>Añadir un campo de texto para editar el nombre de la maceta.</td>
-        <td>2</td>
-        <td>Flavio Trigueros</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T024.2</td>
-        <td>Implementar guardar</td>
-        <td>Añadir la funcionalidad para guardar el nuevo nombre via API FAKE.</td>
-        <td>3</td>
-        <td>Flavio Trigueros</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US069</td>
-      <td>Recibir alertas prioritarias</td>
-      <td>T025</td>
-      <td>Implementar visualización de alertas prioritarias</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> que distinga urgencias <strong>para</strong> atender lo crítico </td>
-      <td>7</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td>T025.1</td>
-      <td>Definir lógica de priorización</td>
-      <td>Establecer los criterios para categorizar las alertas por prioridad en el frontend.</td>
-      <td>2</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T025.2</td>
-      <td>Diseñar componentes de alerta</td>
-      <td>Crear los elementos visuales para mostrar las alertas de forma clara y distintiva.</td>
-      <td>2</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>T025.3</td>
-      <td>Mostrar alertas en UI</td>
-      <td>Integrar los componentes de alerta en la interfaz de usuario principal.</td>
-      <td>3</td>
-      <td>Ruben Mallma</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US075</td>
-      <td>Recibir recomendaciones de riego personalizadas</td>
-      <td>T026</td>
-      <td>Panel recomendaciones</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> sugerencias ajustadas <strong>para</strong> optimizar consumo de agua </td>
-      <td>6</td>
-      <td>Luiggi Paredes</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T026.1</td>
-        <td>Obtener recomendaciones</td>
-        <td>Obtener las recomendaciones de riego desde el fake API en Beeceptor.</td>
-        <td>3</td>
-        <td>Luiggi Paredes</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T026.2</td>
-        <td>Mostrar recomendaciones</td>
-        <td>Mostrar las recomendaciones de manera clara en la interfaz.</td>
-        <td>3</td>
-        <td>Luiggi Paredes</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US060</td>
-      <td>Programar riegos recurrentes</td>
-      <td>T027</td>
-      <td>Programador riegos</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> horarios fijos <strong>para</strong> plantas con necesidades predecibles </td>
-      <td>7</td>
-      <td>Lucio Yen</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T027.1</td>
-        <td>Construir UI programación</td>
-        <td>Crear los selectores de día y hora para programar riegos.</td>
-        <td>3</td>
-        <td>Lucio Yen</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-         <td>T027.2</td>
-        <td>Implementar guardar programación</td>
-        <td>Añadir la funcionalidad para guardar los horarios programados via API.</td>
-        <td>4</td>
-        <td>Lucio Yen</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-      <td>US063</td>
-      <td>Riego manual</td>
-      <td>T028</td>
-      <td>Botón riego manual</td>
-      <td><strong>Como</strong> usuario, <strong>quiero</strong> activar riego inmediato <strong>para</strong> necesidades puntuales </td>
-      <td>5</td>
-      <td>Juan Pescorán</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T028.1</td>
-        <td>Crear botón</td>
-        <td>Añadir el botón para activar el riego manual en la interfaz.</td>
-        <td>2</td>
-        <td>Juan Pescorán</td>
-        <td>Done</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>T028.2</td>
-        <td>Implementar llamada API</td>
-        <td>Configurar la llamada al API FAKE para enviar la solicitud de riego.</td>
-        <td>3</td>
-        <td>Juan Pescorán</td>
-        <td>Done</td>
-    </tr>
     <tbody>
 </table>
 
+A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
+
+Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9)
+
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-1-macetech.png" alt="Evidencia de Sprint Backlog para sprint 1">
+
 #### 6.2.1.4.Development Evidence for Sprint Review.
 
-En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page, Web Applications, Web Services.
+En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint. En esta iteración, se implementó la Landing Page en su totalidad con todas las secciones Hero Section, funcionalidades clave y beneficios, about-the-team, about-the-product, benchmark de membresías, formulario de contacto, acceso a la platforma de descarga, i18n y diseño responsivo. 
 
 Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+|DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|main|a6a5d97|Initial commit|-|09/05/2025|
+|DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|main|fba81eb|feat: add initial HTML structure for landing page|-|09/05/2025|
+|DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|main|641c995|feat: add JavaScript functionality for landing page interactions|-|09/05/2025|
+|DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|main|e352c30|feat: add CSS styles for responsive landing page|-|09/05/2025|
+|DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|main|e65d1c5|feat: add assets (images, videos, icons) for landing page|-|09/05/2025|
 
 #### 6.2.1.5.Testing Suite Evidence for Sprint Review.
+Para realiza las pruebas, se decidió utilizar 'jest' el cual permite correr pruebas con 'npm test' en scripts de javascript. Para este caso, se probó si el formulario de contacto seguía el flujo sin errores. 
 
-Para front es Specs de angular
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+|LucioY250/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|develop|b73525f|test: add landing page testing suite|-|08/07/2025|
 
 #### 6.2.1.6.Execution Evidence for Sprint Review.
 
-<img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page ">
+Para este sprint, se pudo implementar la aplicación y desplegarla a producción cumpliendo con el diseño y los requerimientos de la página web de negocio planteada. A continuación, se visualizan las capturas con las vistas implementadas. 
+
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page " width="600px">
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence-2.png" alt="Evidencia Landing page " width="600px">
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence-3.png" alt="Evidencia Landing page " width="600px">
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence-4.png" alt="Evidencia Landing page " width="600px">
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence-5.png" alt="Evidencia Landing page " width="600px">
+<img src="/assets/img/capitulo-6/evidence/landing-page-evidence-6.png" alt="Evidencia Landing page " width="600px">
+
+Video de demostración: (Ver Anexo X)
 
 #### 6.2.1.7.Services Documentation Evidence for Sprint Review.
 
@@ -1362,51 +845,307 @@ En el alcance de este sprint, no se realizó un web service, sin embargo, a modo
 
 #### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
-Enlace de Landing Page: https://sevensync.github.io/macetech-landing/
+Para realizar el despligue de la landing page, se utilizó la herramienta Github Pages el cuál permite desplegar páginas estáticas de forma sencilla y veloz. Además, proporciona un pipeline de CI/CD que permite desplegar a producción cada vez que se realiza un commit en la rama 'main'.
+Landing Page: Ver Anexo X
 <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia Landing page ">
 
 #### 6.2.1.9.Team Collaboration Insights during Sprint.
 
+La colaboración del equipo se llevó a cabo en la organización de SevenSync, el cúal contiene el repositorio de la Landing Page. En este repositorio, se trabajo en la rama 'develop' y 'main'
+
+<img src="/assets/img/capitulo-6/evidence/landing-page-contributors.png" alt="Evidencia Landing page ">
+
 <img src="/assets/img/capitulo-6/evidence/landing-page-commits-evidence.jpeg" alt="Evidencia Landing page ">
+
+Para este producto, solo una persona logró realizar toda la página web de negocio como se demuestra en la imagen. Se llevó a a cabo de esa manera debido a que era la decisión más eficiente. Los demás integrantes se centraron en la documentación del proyecto y la preparación del ambiente de desarrollo para los siguientes productos.
 
 ### 6.2.2. Sprint 2
 
 #### 6.2.2.1. Sprint Planning 2
+El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+<table  style="text-align: center;">
+    <tbody>
+        <tr>
+			<td colspan="1">Sprint #</td>
+            <td colspan="1"> Sprint 2  </td>
+		</tr>
+        <tr>
+			<td colspan="2">Sprint Planning Background </td>
+		</tr>
+        <tr>
+			<td colspan="1">Date</td>
+            <td colspan="1"> 2025-06-18 </td>
+		</tr>
+        <tr>
+			<td colspan="1">Time</td>
+            <td colspan="1"> 01:00 PM </td>
+		</tr>
+        <tr>
+			<td colspan="1">Location</td>
+            <td colspan="1">Discord (Reunion virtual)</td>
+		</tr>
+        <tr>
+			<td colspan="1">Prepared By</td>
+            <td colspan="1"> Yen Cerna, Lucio Heli - Team Leader</td>
+		</tr>
+        <tr>
+			<td colspan="1"> Attendees (to planning meeting)</td>
+            <td colspan="1">Mallma Quispe, Rubén Elías; Pescorán Ángulo, Juan Fabritzzio; Paredes Zapata, Luiggi Gianfranco; Sanchez Zamora,
+Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
+ </td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 2 – 2 Review Summary </td>
+            <td colspan="1">El sprint 2 concluyó con el desarrollo de la plataforma web, servicio web y aplicativo móvil. Los integrantes del equipo finalizaron este producto y comenzaron a preparar el ambiente de desarrollo para los siguientes productos (edge y embedded). El profesor observó que el formulario de contacto no debe estar ubicado al final de la página, además, sostenió que se debe contar con i18n para realizar el cambio de lenguaje.</td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 2 – 2 Retrospective Summary </td>
+            <td colspan="1">Tras completar el segundo Sprint, el equipo identificó varios puntos de mejora como la gestión del tiempo y la responsabilidad en el cumplimiento de tareas. Como reflexión, no se cumplió el objetivo debido a que el sprint 1 debió cubrir la página web de negocio y la plataforma web. Sim embargo, por falta de tiempo no se pudo contemplar el desarrollo del segundo producto. El equipo encara este obstáculo con optimismo para cumplir en el siguiente entregable. </td>
+		</tr>
+         <tr>
+			<td colspan="2">Sprint Goal & User Stories </td>
+		</tr>
+         <tr>
+			<td>Sprint 2 Goal</td>
+            <td><strong>Nuestro enfoque está</strong> en entregar la propuesta de valor central del sistema de jardinería inteligente de SevenSync, mediante la implementación de la aplicación web para configurar los servicios, el servicio web que permite el monitoreo y cuidado automatizado de las plantas, y la aplicación móvil que habilita el acceso remoto.
+
+<strong>Creemos que esto proporciona</strong> una primera experiencia funcional completa al usuario, permitiéndole interactuar con el sistema desde múltiples interfaces, generando confianza en la solución, facilitando la adopción del producto y validando nuestra arquitectura tecnológica.
+
+<strong>Esto se confirma cuando</strong> los usuarios pueden registrar sus plantas y configuraciones desde la app web, el sistema responde a condiciones del entorno a través del servicio web, y la app móvil permite visualizar parámetros y controlar remotamente el riego automático, sin errores críticos detectados en las pruebas de integración y aceptación.
+</td>
+		</tr>
+        <tr>
+			<td colspan="1">Sprint 2 Velocity </td>
+            <td colspan="1">42</td>
+		</tr>
+        <tr>
+			<td colspan="1">Sum of Story Points </td>
+            <td colspan="1">61</td>
+		</tr>
+</tbody>
+</table>
 
 #### 6.2.2.2. Aspects Leaders and Collaborators
+La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|---|---|
+| Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
+| Paredes, Luiggi | DevLuiggi | - | C | - | L | - | C | - |
+| Pescorán, Juan | JuanPescoran | - | - | - | C | C | L | L |
+| Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
+| Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
+| Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 
 #### 6.2.2.3. Sprint Backlog 2
 
+El sprint backlog 2 abarcó la implemetnación inicial de todos los productos. En este caso se contempló desarrollar la aplicación web, el servicio en la nube, la aplicación, móvil, la aplicación edge y la aplicación embedida. Se tomó en cuenta el orden de implementación según el valor que aportaba.
+
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-2-macetech.png" alt="Sprint Backlog 2 " width="600px">
+
 #### 6.2.2.4. Development Evidence for Sprint Review
+
+En esta sección, se documentarán las evidencias de desarrollo más importantes por producto. Para el desarrollo, cada producto se aloja en su propio repositorio.
+
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ------ | --------- | -------------- | ------------------- |------------------ |
+| DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 4e32efe | feat(pot-details): add features: recommendations, history and alerts | - | 15/07/2025 |
+| LucioY250/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 889d5f6 | feat: add plant-catalog component implementation | - | 14/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | 24c8503 | feat: add membership and payment routes | - | 22/05/2025 |
+| DevLuiggi/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-pots | f76c05b | feat(pots): add pots and route | - | 30/05/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-feat-memberships | 24c8503 | feat: add membership and payment routes | - | 22/05/2025 |
+| RubDaShen/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop | b0710cc | feat: Add or update the Azure App Service build and deployment workflow config | - | 16/05/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd) | develop-feat-login-register | ed2d780 | feat: routing and global styles; implement login and register components | - | 14/05/2025 |
+
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
+Se desarrollaron archivos .feature en formato gherkin para especificar el comportamiento de nuestras user stories.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 6a6bd51 | Add feature files for managing macetas via Bluetooth, UUID, and web interface | - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 4021a24 | Add feature files for subscription management scenarios in web and mobile applications| - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 5db13aa | Add feature files for user data management in web and mobile applications | - | 8/07/2025 |
+
 #### 6.2.2.6. Execution Evidence for Sprint Review
+Para el alcance de este sprint se desarrollaron las vistas principales de la aplicación web y móvil.
+
+En la aplicación web se contempló el desarrollo del IAM, la vista de perfil, la págian principal donde está la interfaz de macetas y la interfaz de cada maceta. 
+
+<img src="/assets/img/capitulo-6/evidence/web-evidence-1.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-2.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-3.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-4.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-5.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-6.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-evidence-7.png" alt="Web Service Evidence" width="600px">
+
+Para la aplicación móvil se contempló el desarrollo inicial del IAM y la vista de perfil de usuario.
+
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-1.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-2.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-3.jpeg" alt="Web Service Evidence" width="400px">
+<img src="/assets/img/capitulo-6/evidence/mobile-evidence-4.jpeg" alt="Web Service Evidence" width="400px">
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
+El servicio web fue documentado por la dependencia OpenAPI el cuál permite mostrar los endpoints en Swagguer UI. 
+
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-evidence-4.jpeg" alt="Web Service Evidence" width="600px">
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
+Se hizo el despliegue del cloud api en azure web service. 
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-4.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-5.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-deploy-6.jpeg" alt="Web Service Evidence" width="600px">
+
+En el caso de la aplicación web, se hizo el despliegue en firebase.
+
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-4.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-deploy-5.jpeg" alt="Web Service Evidence" width="600px">
+
 #### 6.2.2.9. Team Collaboration Insights during Sprint
+
+La colaboración del equipo en los produtos se llevó a cabo gracias a la organización del Aspects Leaders and Collaborators. Sin embargo, también delegamos tareas por afinidad y habilidades.
+
+Contribuciones y commits de la aplicación web:
+
+<img src="/assets/img/capitulo-6/evidence/web-app-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
+Contribuciones y commits del servicio web:
+<img src="/assets/img/capitulo-6/evidence/web-service-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
+
+Contribuciones y commits de la aplicación móvil:
+
+<img src="/assets/img/capitulo-6/evidence/mobile-app-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/mobile-app-commits.png" alt="Web Service Evidence" width="600px">
 
 ### 6.2.3. Sprint 3
 
 #### 6.2.3.1. Sprint Planning 3
+El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+<table  style="text-align: center;">
+    <tbody>
+        <tr>
+			<td colspan="1">Sprint #</td>
+            <td colspan="1"> Sprint 3  </td>
+		</tr>
+        <tr>
+			<td colspan="2">Sprint Planning Background </td>
+		</tr>
+        <tr>
+			<td colspan="1">Date</td>
+            <td colspan="1"> 2025-06-18 </td>
+		</tr>
+        <tr>
+			<td colspan="1">Time</td>
+            <td colspan="1"> 01:00 PM </td>
+		</tr>
+        <tr>
+			<td colspan="1">Location</td>
+            <td colspan="1">Discord (Reunion virtual)</td>
+		</tr>
+        <tr>
+			<td colspan="1">Prepared By</td>
+            <td colspan="1"> Yen Cerna, Lucio Heli - Team Leader</td>
+		</tr>
+        <tr>
+			<td colspan="1"> Attendees (to planning meeting)</td>
+            <td colspan="1">Mallma Quispe, Rubén Elías; Pescorán Ángulo, Juan Fabritzzio; Paredes Zapata, Luiggi Gianfranco; Sanchez Zamora,
+Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
+ </td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 3 – 3 Review Summary </td>
+            <td colspan="1">Tras completar el tercer Sprint, el equipo identificó varios puntos de mejora como la gestión del tiempo y la responsabilidad en el cumplimiento de tareas. .</td>
+		</tr>
+         <tr>
+			<td colspan="1">Sprint 3 – 3 Retrospective Summary </td>
+            <td colspan="1">El sprint 3 concluyó con el desarrollo de la aplicación edge y embedded. Además, se finalizó el desarrollo de los otros productos.</td>
+		</tr>
+         <tr>
+			<td colspan="2">Sprint Goal & User Stories </td>
+		</tr>
+         <tr>
+			<td>Sprint 3 Goal</td>
+            <td><strong>Nuestro enfoque está en </strong> completar la solución integral de Macetech integrando la aplicación embebida y el componente Edge, que permiten la conexión directa entre los sensores físicos y el sistema inteligente de monitoreo y riego automático, además de finalizar los desarrollos pendientes de la app web, servicio web y app móvil.
+
+<strong>Creemos que esto proporciona</strong> la capacidad completa del sistema IoT para operar de manera autónoma y en tiempo real, fortaleciendo la propuesta de valor de Macetech como un sistema inteligente y automatizado de cuidado de plantas, y asegurando que todas las plataformas del ecosistema estén listas para su despliegue.
+
+<strong>Esto se confirma cuando</strong> el dispositivo embebido se comunica correctamente con el servicio web al detectar condiciones ambientales (temperatura, humedad, luz), ejecutando decisiones de riego a través del edge, y se registra una tasa de éxito del 90 % en las pruebas de integración entre hardware y software, junto con la validación del 100 % de los criterios de aceptación funcionales pendientes de los productos anteriores. 
+</td>
+		</tr>
+        <tr>
+			<td colspan="1">Sprint 3 Velocity </td>
+            <td colspan="1">56</td>
+		</tr>
+        <tr>
+			<td colspan="1">Sum of Story Points </td>
+            <td colspan="1">107</td>
+		</tr>
+</tbody>
+</table>
 
 #### 6.2.3.2. Aspects Leaders and Collaborators
+La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|---|---|
+| Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
+| Paredes, Luiggi | DevLuiggi | - | C | - | L | - | C | - |
+| Pescorán, Juan | JuanPescoran | - | - | - | C | C | L | L |
+| Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
+| Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
+| Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 
 #### 6.2.3.3. Sprint Backlog 3
+<img src="/assets/img/capitulo-6/evidence/sprint-backlog-3.png" alt="sprint backlog 3" width="600px">
+
 #### 6.2.3.4. Development Evidence for Sprint Review
+<img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 6a6bd51 | Add feature files for managing macetas via Bluetooth, UUID, and web interface | - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 4021a24 | Add feature files for subscription management scenarios in web and mobile applications| - | 8/07/2025 |
+| Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 5db13aa | Add feature files for user data management in web and mobile applications | - | 8/07/2025 |
+
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+<img src="/assets/img/capitulo-6/evidence/embedded-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/embedded-2.jpeg" alt="Web Service Evidence" width="600px">
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+<img src="/assets/img/capitulo-6/evidence/edge-1.jpeg" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-2.jpeg" alt="Web Service Evidence" width="600px">
+
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
+<img src="/assets/img/capitulo-6/evidence/edge-contributors.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
+<img src="/assets/img/capitulo-6/evidence/embedded-contributos.png" alt="Web Service Evidence" width="600px">
 
 ### 6.3. Validation Interviews.
 

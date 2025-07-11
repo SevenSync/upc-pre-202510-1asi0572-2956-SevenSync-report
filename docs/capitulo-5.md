@@ -1,5 +1,7 @@
 # Capítulo V: Solution UI/UX Design
 
+En esta sección se presenta la propuesta integral de Diseño UX/UI destinada a optimizar la experiencia de los usuarios en todos los productos digitales que componen la solución. Se adoptará un enfoque centrado en las personas, partiendo del análisis detallado de los User Stories previamente identificados y del Impact Map, con el objetivo de garantizar que cada interacción responda de manera intuitiva y eficiente a las necesidades reales de nuestros usuarios. A través de una metodología basada en principios de usabilidad, accesibilidad y consistencia visual, se delinearán los lineamientos de navegación, estructura de contenidos y estilo gráfico que regirán tanto la interfaz de usuario como los flujos de interacción. De este modo, se busca no solo mejorar la satisfacción y el compromiso de los usuarios, sino también facilitar la consecución de los objetivos de negocio, asegurando una experiencia coherente, atractiva y alineada con la visión estratégica del proyecto.
+
 ## 5.1. Style Guidelines
 
 El Diseño de Producto representa un proceso integral y multidisciplinario que abarca desde la concepción inicial hasta la implementación y comercialización de una solución, combinando principios de ingeniería, diseño centrado en el usuario y estrategia de negocio. Su finalidad es desarrollar productos que no solo sean técnicamente robustos y comercialmente sostenibles, sino también profundamente alineados con las expectativas, hábitos y contextos reales de los usuarios. Este enfoque comienza con un análisis detallado de los problemas, motivaciones y puntos críticos en la experiencia del usuario, y avanza hacia la formulación de soluciones que equilibren funcionalidad, estética, viabilidad técnica y valor percibido. Se diseñan arquitecturas lógicas que conectan requerimientos funcionales con patrones de uso reales, definiendo experiencias intuitivas y eficientes.
@@ -26,18 +28,18 @@ A continuación, se detallan los colores primarios, secundarios y terciarios def
 
 **Color primario:**
 
-###### Figura 30 y algo
+###### Figura 110
 
 _Listado de colores primarios que se usaran en las aplicaciones de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/primary-color-light-mode.png" alt="Listado de todos los colores primarios que se usaran en las aplicaciones de Macetech en general" width="800" height="250
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/primary-color-light-mode.png" alt="Listado de todos los colores primarios que se usaran en las aplicaciones de Macetech en general" width="600" height="200
 "> <br>
 
 El verde es la piedra angular de Macetech porque conecta directamente con la naturaleza, el crecimiento y la salud de las plantas, al mismo tiempo que sugiere innovación tecnológica. Desde el punto de la experiencia del usuario y su percepción, el verde equilibra la respuesta emocional, puesto que relaja la corteza visual y facilita la concentración en los datos de los sensores, reduciendo la fatiga ocular en entornos de uso prolongado (Wang et al., 2025). Asimismo, al seguir las recomendaciones de accesibilidad WCAG 2.1, los tonos escogidos garantizan contraste suficiente para usuarios con baja visión sin sacrificar la riqueza del matiz verde primario (World Wide Web Consortium, 2025). Estos colores no deberían ocupar más del 45% de la pantalla del usuario.
 
 Para mantener coherencia y jerarquía visual, cada tono cumple un rol bien definido. A continuación se describe dónde y por qué se usa cada uno:
 
-###### Tabla 30 y algo
+###### Tabla 211
 
 _Descripción de usos y justificación para cada uno de los tonos del color primario de Macetech_
 
@@ -55,17 +57,17 @@ _Descripción de usos y justificación para cada uno de los tonos del color prim
 
 **Color secundario:**
 
-###### Figura 30 y algo
+###### Figura 111
 
 _Listado de colores secundarios que se usaran en las aplicaciones de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/secondary-color-light-mode.png" alt="Listado de todos los colores secundarios que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/secondary-color-light-mode.png" alt="Listado de todos los colores secundarios que se usaran en las aplicaciones de Macetech en general" width="600" height="200"> <br>
 
 Los colores secundarios en Macetech cumplen la función de “lienzo” y soporte de contenido, al ofrecer un fondo neutro que potencia la legibilidad de los elementos primarios (verdes) y de los indicadores de estado, sin competir visualmente con ellos. El blanco puro garantiza máximo contraste y limpieza, mientras que los tonos grises aportan confort visual y mantienen jerarquía respecto a las barras de navegación y componentes verdes (Westland y Maggio, 2025).
 
 Además, estos tonos neutros facilitan el enfocado en los datos y reducen la fatiga ocular durante sesiones prolongadas, cumpliendo las recomendaciones de accesibilidad WCAG 2.1 (World Wide Web Consortium, 2025). Estos colores secundarios no deberían ocupar más del 40% de la pantalla del usuario.
 
-###### Tabla 30 y algo
+###### Tabla 212
 
 _Descripción de usos y justificación para cada uno de los tonos del color secundario de Macetech_
 
@@ -84,17 +86,17 @@ _Descripción de usos y justificación para cada uno de los tonos del color secu
 
 **Color terciario:**
 
-###### Figura 30 y algo
+###### Figura 112
 
 _Listado de colores terciarios que se usaran en las aplicaciones de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/tertiary-color-light-mode.png" alt="Listado de todos los colores terciarios que se usaran en las aplicaciones de Macetech en general" width="600" height="500"> <br>
+<img src="/assets/img/capitulo-5/style-guidelines/colors/light-mode/tertiary-color-light-mode.png" alt="Listado de todos los colores terciarios que se usaran en las aplicaciones de Macetech en general" width="500" height="500"> <br>
 
 Para asegurar que los datos de nuestros sensores IoT sean fáciles de interpretar de un vistazo, definimos una paleta de colores terciarios específicamente orientada a la visualización de métricas. Cada tono ha sido elegido no solo por su carácter semántico (asociación intuitiva con humedad, luz, temperatura, pH y salinidad), sino también por su rendimiento en términos de contraste y accesibilidad, tanto en entornos de alta luminosidad como en ambientes oscuros. Esta estrategia refuerza la consistencia de la interfaz y facilita la rápida identificación de cada variable sin necesidad de etiquetas adicionales (Westland y Maggio, 2023).
 
 Su objetivo es garantizar que cada variable sea inmediatamente reconocible, con contrastes validados según WCAG 2.1 y una temperatura de color coherente con nuestros verdes primarios. Aseguramos que las gráficas, barras e indicadores destaquen con claridad, mejorando la experiencia de usuario y la precisión en la lectura de datos. Estos colores terciarios no deberían ocupar más del 10% de la pantalla del usuario.
 
-###### Tabla 30 y algo
+###### Tabla 213
 
 _Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech_
 
@@ -107,15 +109,6 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 | pH                             | Tallo    | #2ECC71 | Utilizado como medidor de acidez/alcalinidad (pH)                                                                                                                                          | Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.                                                            |
 | Salinidad                      | Neblina  | #1ABC9C | Utilizado como medidor de salinidad                                                                                                                                                        | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores.                                                                  |
 
-| Métrica                    | Nombre   | Hex     | Uso                                                                                                                                                                                        | Justificación técnica                                                                                                                             |
-| -------------------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Humedad y Temperatura Frío | Azul Mar | #3498DB | Utilizado en barras/áreas de visualización de humedad y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Sigue una base de paleta categórica: azul es convencional para humedad, alto contraste con fondo y consistente con dashboards de las métricas IoT |
-| Luz                        | Mostaza  | #F1C40F | Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas                                                          | El amarillo brillante remite al sol, además de ser legible sobre gris oscuro y blanco                                                             |
-| Temperatura Medio          | Brasas   | #E67E22 | Utilizado para mostrar el rango medio de temperatura                                                                                                                                       | Naranja medio comunica calor moderado, siendo una diferenciación clara entre rangos                                                               |
-| Temperatura Alto           | Tomate   | #E74C3C | Utilizado para mostrar el rango alto de temperatura                                                                                                                                        | Rojo intenso para alertas de calor, puesto que es una semántica cultural de peligro. Asimismo, tiene un contraste AAA con colores blancos         |
-| pH                         | Tallo    | #2ECC71 | Utilizado como medidor de acidez/alcalinidad (pH)                                                                                                                                          | Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.                                                            |
-| Salinidad                  | Neblina  | #1ABC9C | Utilizado como medidor de salinidad                                                                                                                                                        | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores.                                                                  |
-
 - **Jerarquía visual:** Los neutrales crean un lienzo donde los verdes primarios destacan con claridad, evitando distracciones y enfocando la atención en la información clave.
 
 - **Consistencia:** Todos los secundarios comparten matices grises con la misma temperatura de color, garantizando que la transición entre light y dark sea fluida y predecible.
@@ -126,11 +119,15 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 
 En Dark‑Mode adaptamos cada tono para asegurar contraste, confort visual y consistencia con el fondo gris suave #343541 al que cambiara la pantalla. Siguiendo WCAG 2.1 y prácticas de accesibilidad, evitamos blancos o negros puros y saturaciones excesivas que fatiguen la vista.
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/primary-color-dark-mode.png" alt="Listado de todos los colores primarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+###### Figura 113
 
-###### Tabla 30 y algo
+_Listado de colores primarios en modo oscuro que se usaran en las aplicaciones de Macetech_
 
-_Descripción de usos y justificación para cada uno de los tonos del color primario de Macetech en Modo Dark_
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/primary-color-dark-mode.png" alt="Listado de todos los colores primarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="200"> <br>
+
+###### Tabla 214
+
+_Descripción de usos y justificación para cada uno de los tonos del color primario de Macetech en modo oscuro_
 
 | Light‑Mode   | Light-Mode Hex | Dark‑Mode    | Dark-Mode Hex | Uso en Dark‑Mode                                                 | Justificación                                                                                                                            |
 | ------------ | -------------- | ------------ | ------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -138,11 +135,15 @@ _Descripción de usos y justificación para cada uno de los tonos del color prim
 | Verde Hoja   | #2A8050        | Verde Casa   | #1E513B       | Utilizado en los botones principales y en los enlaces destacados | Oscurecido aproximadamente en un 25 % para garantizar contraste AAA y evitar problemas de visibilidad en texto blanco, sin perder viveza |
 | Verde Brote  | #38865D        | Verde Tierra | #27674A       | Utilizado en iconos y en estados hover/activo                    | Matiz verde profundo que resalta sobre la barra de navegación y el fondo. Presenta un contraste AAA (> 7:1) para feedback claro.         |
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/secondary-color-dark-mode.png" alt="Listado de todos los colores secundarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+###### Figura 114
 
-###### Tabla 30 y algo
+_Listado de colores secundarios en modo oscuro que se usaran en las aplicaciones de Macetech_
 
-_Descripción de usos y justificación para cada uno de los tonos del color secundario de Macetech en Modo Dark_
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/secondary-color-dark-mode.png" alt="Listado de todos los colores secundarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="200"> <br>
+
+###### Tabla 215
+
+_Descripción de usos y justificación para cada uno de los tonos del color secundario de Macetech en modo oscuro_
 
 | Light‑Mode    | Light-Mode Hex | Dark‑Mode    | Dark-Mode Hex | Uso en Dark‑Mode                                        | Justificación                                                                                                                                                                                                                       |
 | ------------- | -------------- | ------------ | ------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -151,11 +152,15 @@ _Descripción de usos y justificación para cada uno de los tonos del color secu
 | Blanco Frío   | #E4E4E7        | Gris Fuerte  | #3B3C45       | Utilizado en líneas de separación y contornos de inputs | Tono cercano a superficie, define límites sin crear “rayas blancas” que distraigan al usuario                                                                                                                                       |
 | Gris Suave    | #6B7280        | Plata        | #9CA3AF       | Labels, descripciones                                   | Gris medio para legibilidad confortable sobre fondos oscuros. Presenta un contraste mayor a 8.2:1, respetando AAA                                                                                                                   |
 
-<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/tertiary-color-dark-mode.png" alt="Listado de todos los colores terciarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="600" height="300"> <br>
+###### Figura 115
 
-###### Tabla 30 y algo
+_Listado de colores terciarios en modo oscuro que se usaran en las aplicaciones de Macetech_
 
-_Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en Modo Dark_
+<img src="/assets/img/capitulo-5/style-guidelines/colors/dark-mode/tertiary-color-dark-mode.png" alt="Listado de todos los colores terciarios en modo dark que se usaran en las aplicaciones de Macetech en general" width="500" height="500"> <br>
+
+###### Tabla 216
+
+_Descripción de usos y justificación para cada uno de los tonos del color terciario de Macetech en modo oscuro_
 
 | Métrica                        | Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode                                                                                                                                                                           | Justificación                                                                                                                                                   |
 | ------------------------------ | ---------- | -------------- | --------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -166,15 +171,6 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 | pH                             | #2ECC71    | Tallo          | #27AE60   | Llanura       | Utilizado como medidor de acidez/alcalinidad (pH)                                                                                                                                          | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco                                  |
 | Salinidad                      | #1ABC9C    | Neblina        | #16A085   | Turquesa      | Medidor de salinidad                                                                                                                                                                       | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro                                         |
 
-| Métrica                    | Light‑Mode | Light-Mode Hex | Dark‑Mode | Dark-Mode Hex | Uso en Dark‑Mode                                                                                                                                                                           | Justificación                                                                                                                                                   |
-| -------------------------- | ---------- | -------------- | --------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Humedad y Temperatura Frío | Azul Mar   | #3498DB        | Azul Lago | #2980B9       | Utilizado en barras/áreas de visualización de humedad y botones de riego o iconos relacionados a la humedad de la planta. Asimismo, se utiliza para mostrar una barra con baja temperatura | Es un azul moderado, menos saturado para evitar fatiga ocular en los usuarios. Tiene un contraste AAA sobre el color #343541. Mantiene una semántica de frescor |
-| Luz                        | Mostaza    | #F1C40F        | Dorado    | #F39C12       | Utilizado en indicadores de nivel de luz y para resaltar plantas que necesitan ser revisadas porque sus métricas no son adecuadas                                                          | Se utiliza un amarillo ligeramente atenuado para no deslumbrar ante el cambio de colores. Tiene un contraste AAA contra un fondo oscuro                         |
-| Temperatura Medio          | Brasas     | #E67E22        | Zanahoria | #D35400       | Utilizado para mostrar el rango medio de temperatura                                                                                                                                       | Se utiliza un naranja oscuro que sigue diferenciando niveles de temperatura. Tiene un contraste AA/AAA con texto blanco y fondos oscuros                        |
-| Temperatura Alto           | Tomate     | #E74C3C        | Cereza    | #C0392B       | Utilizado para mostrar el rango alto de temperatura                                                                                                                                        | El uso de un rojo menos brillante suaviza el impacto, sin perder señal de alerta. Presenta un buen contraste AAA                                                |
-| pH                         | #2ECC71    | Tallo          | #27AE60   | Llanura       | Utilizado como medidor de acidez/alcalinidad (pH)                                                                                                                                          | Un verde más oscuro que el primario para no confundirse con elementos estáticos. Presenta un contraste AAA con el color blanco                                  |
-| Salinidad                  | #1ABC9C    | Neblina        | #16A085   | Turquesa      | Medidor de salinidad                                                                                                                                                                       | Se usa el color turquesa profundo que evoca agua salada nocturna. Tiene un contraste AAA contra el fondo en modo oscuro                                         |
-
 - **Contraste accesible:** Oscurecer cada tono Light‑Mode garantiza que el texto blanco y los iconos mantengan un ratio mayor a 4.5:1 (AA). Asimismo, cuando la tipografía en ciertos colores cambia a negro, el contraste pasa a ser mayor a 7:1 (AAA) frente a los nuevos fondos (World Wide Web Consortium 2025).
 
 - **Confort visual:** Evitamos negros y blancos puros para reducir brillos incómodos o bordes luminosos y disminuir la fatiga ocular en entornos de baja luz. Asimismo, se promueve la visibilidad en cualquier momento del día, siendo indiferente a la luz solar o nocturna (World Wide Web Consortium 2025).
@@ -183,7 +179,7 @@ _Descripción de usos y justificación para cada uno de los tonos del color terc
 
 - **Jerarquía clara:** Al mantener proporciones de uso (50/25/25 % para primarios), el usuario percibe la misma estructura de importancia y navegación tanto en Modo Light como en Modo Dark (Westland y Maggio, 2023).
 
-#### 5.1.1.2. Tipografía:
+#### 5.1.1.2. Tipografía
 
 En Macetech, la tipografía no es solo una herramienta de lectura: es una extensión visual de nuestra identidad. Como señalan estudios como Jay y Lupton (2024), la selección tipográfica genera una respuesta psicológica directa en el usuario, influenciando su percepción de la marca incluso antes de interactuar con el contenido. En nuestro caso, esta elección cumple una función doble: debe comunicar innovación tecnológica con cercanía humana, al tiempo que refuerza el vínculo emocional con quienes utilizan la plataforma.
 
@@ -195,79 +191,79 @@ En el mundo del diseño tipográfico, dos grandes familias destacan: serif y san
 
 - **Serif:**
 
-  Las tipografías serif se distinguen por sus terminaciones ornamentales, conocidas como serifas, en los extremos de los trazos. Estos pequeños detalles, tradicionalmente asociados con elegancia y formalidad, han sido durante décadas una opción predilecta para textos impresos, como libros o publicaciones académicas. Su estructura facilita el seguimiento visual de una letra a otra, lo que favorece la lectura fluida en cuerpos de texto extensos (Jay & Lupton, 2024).
+  Las tipografías serif se distinguen por sus terminaciones ornamentales, conocidas como serifas, en los extremos de los trazos. Estos pequeños detalles, tradicionalmente asociados con elegancia y formalidad, han sido durante décadas una opción predilecta para textos impresos, como libros o publicaciones académicas. Su estructura facilita el seguimiento visual de una letra a otra, lo que favorece la lectura fluida en cuerpos de texto extensos (Jay & Lupton, 2024).<br><br>
 
   Aunque su presencia se ha mantenido en entornos digitales, en el caso de Macetech no son recomendadas como tipografía principal, ya que su estilo clásico puede entrar en conflicto con la estética tecnológica y limpia que buscamos transmitir. Ejemplos destacados de este estilo incluyen _Times New Roman_ y _Georgia_, tipografías que siguen siendo altamente valoradas por su equilibrio entre legibilidad y tradición.
 
 - **Sans-serif:**
 
-  En contraste, las tipografías sans-serif, carentes de adornos o remates, ofrecen una apariencia más moderna, funcional y accesible. Su trazo uniforme y minimalista mejora significativamente la lectura en pantalla, especialmente en interfaces digitales donde la claridad visual y la distribución de formas son fundamentales para la usabilidad (Jay & Lupton, 2024).
+  En contraste, las tipografías sans-serif, carentes de adornos o remates, ofrecen una apariencia más moderna, funcional y accesible. Su trazo uniforme y minimalista mejora significativamente la lectura en pantalla, especialmente en interfaces digitales donde la claridad visual y la distribución de formas son fundamentales para la usabilidad (Jay & Lupton, 2024).<br><br>
 
   Dado que Macetech está concebido como un sistema tecnológico de uso cotidiano, con múltiples datos y métricas en pantalla, las tipografías sans-serif constituyen la elección natural. Estas fuentes favorecen una lectura rápida, cómoda y visualmente coherente en contextos digitales. Ejemplos ampliamente reconocidos de esta categoría incluyen _Arial_, _Helvetica_ y _Roboto_, siendo esta última una excelente opción por su diseño optimizado para pantallas y sistemas de interfaz moderna.
 
-###### Figura 32
+###### Figura 116
 
-Comparación entre los tipos de tipografía serif, utilizando Roboto Slab, y sans-serif, utilizando Roboto
+*Comparación entre los tipos de tipografía serif, utilizando Roboto Slab, y sans-serif, utilizando Roboto*
 
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/roboto-font-example.png" alt="
-The Roboto font compared to the Roboto Slab font, showing how different they are." width="1000" height="580">
+The Roboto font compared to the Roboto Slab font, showing how different they are." width="500" height="250">
 
 En el diseño de interfaces digitales, tanto en aplicaciones móviles como en aplicaciones web, la elección tipográfica juega un rol decisivo en la usabilidad, legibilidad y percepción estética del sistema. En este contexto, las tipografías sans-serif representan la opción más funcional y versátil, especialmente cuando se busca optimizar la experiencia en pantallas pequeñas y variadas resoluciones de visualización. Esta preferencia se fundamenta tanto en principios de diseño centrado en el usuario como en criterios técnicos de rendimiento visual. A continuación, se detallan los principales factores que sustentan esta elección:
 
-1. Legibilidad optimizada en pantallas pequeñas
+**1. Legibilidad optimizada en pantallas pequeñas**
 
    Las aplicaciones móviles operan en dispositivos con espacio limitado para el contenido visual. Las fuentes sans-serif, al carecer de adornos o serifas, poseen un trazo uniforme y directo que facilita la lectura incluso en cuerpos tipográficos reducidos. Esto minimiza el esfuerzo visual requerido para interpretar información crítica, mejorando la retención y comprensión del contenido en entornos móviles exigentes (Minakata & Beier, 2022).
 
-2. Claridad y consistencia en múltiples resoluciones y densidades de píxeles
+**2. Claridad y consistencia en múltiples resoluciones y densidades de píxeles**
 
    Uno de los desafíos técnicos en el diseño digital contemporáneo es garantizar que los elementos tipográficos mantengan su nitidez en pantallas con diferentes densidades de píxeles (DPI). Como han señalado González-Rodríguez et al. (2024), las tipografías sans-serif presentan una geometría que se rasteriza de forma eficiente, permitiendo una presentación consistente y legible tanto en pantallas de baja resolución como en dispositivos de gama alta, incluidos smartphones 4K y monitores Retina.
 
-3. Estética alineada con principios de diseño moderno
+**3. Estética alineada con principios de diseño moderno**
 
    La estética visual de interfaces modernas, especialmente en productos tecnológicos como Macetech, privilegia la simplicidad, el orden y la limpieza visual. Las fuentes sans-serif refuerzan estos principios gracias a su estructura sobria y neutral, lo que contribuye a crear interfaces contemporáneas, eficientes y centradas en la funcionalidad, tanto para web y móvil. Su estilo atemporal permite que la identidad visual se mantenga vigente en el tiempo, alineándose con las expectativas del usuario digital actual (Minakata & Beier, 2022).
 
-4. Mejor rendimiento en interfaces dinámicas y responsivas
+**4. Mejor rendimiento en interfaces dinámicas y responsivas**
 
    En interfaces digitales donde los contenidos cambian constantemente, ya sea por scroll, transiciones animadas o componentes interactivos como sliders o tarjetas, las tipografías sans-serif responden mejor al movimiento, ofreciendo mayor estabilidad visual. Esto evita el desenfoque perceptivo y reduce la fatiga cognitiva, facilitando una navegación continua y fluida (Bhanarkar et al., 2023). Además, su estructura modular mejora la carga y renderización del contenido en sistemas de diseño responsivo tanto móviles como de escritorio.
 
-5. Coherencia entre plataformas móviles y web
+**5. Coherencia entre plataformas móviles y web**
 
    Una aplicación como Macetech, concebida como plataforma multiplataforma, debe mantener una identidad visual coherente tanto en su versión móvil como en su versión web. Las fuentes sans-serif aseguran esta unidad visual sin comprometer la legibilidad ni el rendimiento. Gracias a su versatilidad, pueden ser implementadas fácilmente en frameworks modernos como Vue.js, React o Flutter, sin perder consistencia entre navegadores, sistemas operativos o tamaños de pantalla.
 
-**Tipo de Letra Primaria:**
+#### Tipo de Letra Primaria:
 
 En el marco del desarrollo de Macetech, una solución tecnológica centrada en la automatización del cuidado de plantas a través de IoT, la elección de una tipografía adecuada resulta esencial para consolidar la identidad visual de la marca y garantizar una experiencia de usuario accesible, moderna y coherente en todos los puntos de contacto. Ya se ha fundamentado previamente la decisión de utilizar una familia sans-serif, debido a su claridad, legibilidad en múltiples resoluciones y alineación con los principios del diseño contemporáneo. A partir de este criterio base, se ha seleccionado la tipografía Rubik como fuente principal del sistema.
 
 Rubik es una fuente sans-serif geométrica con terminaciones suaves y proporciones equilibradas, diseñada originalmente por Philipp Hubert y Sebastian Fischer. Esta fuente se caracteriza por una estética moderna, amigable y ligeramente tecnológica, lo que la convierte en una excelente elección para una marca como Macetech, que busca transmitir simultáneamente confiabilidad, innovación y conexión con la naturaleza (Google, 2025).
 
-1. Geometría funcional y personalidad balanceada
+**1. Geometría funcional y personalidad balanceada**
 
    Rubik presenta una estructura geométrica con ligeras curvas en sus vértices y terminales, lo que le confiere un aspecto visual cálido y accesible, sin sacrificar orden y precisión. Esta combinación de racionalidad visual con suavidad emocional permite que la interfaz de Macetech no resulte ni excesivamente técnica ni completamente informal (Gonzalez-Rodrigueza et al., 2024).
 
-2. Alto rendimiento en pantallas y sistemas responsivos
+**2. Alto rendimiento en pantallas y sistemas responsivos**
 
    Rubik está optimizada para su uso en plataformas digitales. Sus proporciones abiertas y espaciado generoso aseguran una legibilidad sobresaliente incluso en dispositivos móviles de baja resolución. Esto la convierte en una fuente ideal para interfaces donde conviven dashboards, datos de sensores, etiquetas y botones, sin generar ruido visual ni comprometer la accesibilidad (Google, 2025).
 
-3. Compatibilidad multiplataforma y optimización web
+**3. Compatibilidad multiplataforma y optimización web**
 
    Al formar parte de Google Fonts, Rubik cuenta con carga rápida desde CDN, amplia compatibilidad entre navegadores y excelente renderizado tanto en Windows como en sistemas basados en UNIX/macOS. Además, su arquitectura tipográfica admite múltiples pesos (light, regular, medium, bold, extra bold), lo que facilita la creación de una jerarquía visual clara y coherente en todas las secciones de la interfaz (Bhanarkar et al., 2023).
 
-4. Coherencia con la identidad visual de Macetech
+**4. Coherencia con la identidad visual de Macetech**
 
    La forma suave pero precisa de Rubik se alinea perfectamente con los valores que Macetech busca proyectar, siendo cuidado, inteligencia y armonía. Frente a otras alternativas sans-serif más neutras (como Open Sans o Lato), Rubik añade un matiz distintivo que refuerza la unicidad de la marca sin caer en lo ornamental (Google, 2025).
 
-5. Soporte multilingüe y cobertura técnica
+**5. Soporte multilingüe y cobertura técnica**
 
    Rubik ofrece soporte completo para caracteres latinos extendidos, lo cual es relevante para su despliegue en el mercado hispanohablante, y su estructura modular permite adaptarla fácilmente a sistemas tipográficos escalables dentro de frameworks modernos como Tailwind, Bootstrap, Vue.js o React (Google, 2025).
 
-###### Figura 33
+###### Figura 117
 
-Modelos de grosor para el tipo de letra principal de Macetech, Rubik
+*Modelos de grosor para el tipo de letra principal de Macetech, Rubik*
 
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/rubik-font-thickness.png"  alt="
-Rubik font thickness models" width="1000" height="580">
+Rubik font thickness models" width="600" height="350">
 
-**Tipo de Letra Secundaria:**
+#### Tipo de Letra Secundaria:
 
 En su compromiso por garantizar una experiencia de usuario verdaderamente inclusiva y adaptada a un público global, Macetech ha integrado Noto Sans como tipografía secundaria especializada para entornos multilingües. Esta familia tipográfica, resultado de la colaboración entre Google y Monotype, ha sido diseñada bajo estándares rigurosos de calidad tipográfica y cobertura Unicode, permitiendo soportar más de 110 000 glifos y 800 idiomas en más de 100 sistemas de escritura (Google, 2025).
 
@@ -281,11 +277,11 @@ El desarrollo de Noto Sans se fundamenta en dos pilares técnicos clave:
 
   Con interletrajes y alturas de línea coherentes en toda la familia y en sus diferentes pesos (Light, Regular, Bold), Noto Sans facilita la implementación de sistemas de cuadrícula (CSS Grid/Flex) y bibliotecas de componentes, asegurando que el diseño responsivo se mantenga predecible y sin solapamientos de texto (Jay y Lupton, 2024).
 
-###### Figura 34
+###### Figura 118
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-font-thickness.png"  alt="
-Noto Sans font thickness models" width="1000" height="580">
+Noto Sans font thickness models" width="600" height="350">
 
 Gracias a esta profundidad de cobertura y precisión técnica, Noto Sans no solo evita problemas de sustitución de caracteres, sino que también permite a Macetech presentar contenido con total consistencia visual y legibilidad, sin importar la configuración regional y/o lingüística del usuario.
 
@@ -301,37 +297,37 @@ Gracias a esta profundidad de cobertura y precisión técnica, Noto Sans no solo
 
   Aunque Rubik es la tipografía principal de Macetech, Noto Sans se integra de manera armoniosa en situaciones donde se requiere soporte multilingüe, asegurando que la identidad visual de la marca se mantenga coherente y profesional en todos los contextos.
 
-###### Figura 35
+###### Figura 119
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Tradicional
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Tradicional*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-traditional-chinese.png"  alt="
-Noto Sans font thickness models in Traditional Chinese" width="1000" height="580">
+Noto Sans font thickness models in Traditional Chinese" width="600" height="250">
 
-###### Figura 36
+###### Figura 120
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Simplificado
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Chino Simplificado*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-simplified-chinese.png"  alt="
-Noto Sans font thickness models in Simplified Chinese" width="1000" height="580">
+Noto Sans font thickness models in Simplified Chinese" width="600" height="250">
 
-###### Figura 37
+###### Figura 121
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Coreano
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Coreano*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-korean.png"  alt="
-Noto Sans font thickness models in Korean" width="1000" height="580">
+Noto Sans font thickness models in Korean" width="600" height="250">
 
-###### Figura 38
+###### Figura 122
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Tailandés
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Tailandés*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-thai.png"  alt="
-Noto Sans font thickness models in Thai" width="1000" height="580">
+Noto Sans font thickness models in Thai" width="600" height="250">
 
-###### Figura 39
+###### Figura 123
 
-Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Japonés
+*Modelos de grosor para el tipo de letra secundaria de Macetech, Noto Sans, en Japonés*
 <img src="/assets/img/capitulo-5/style-guidelines/general/typography/noto-sans-japanese.png"  alt="
-Noto Sans font thickness models in Japanese" width="1000" height="580">
+Noto Sans font thickness models in Japanese" width="600" height="250">
 
-**Tipo de Letra Complementaria:**
+#### Tipo de Letra Complementaria:
 
 En aquellos escenarios en los que dependemos exclusivamente de las fuentes instaladas en los dispositivos de los usuarios, por ejemplo, en campañas de correo electrónico, notificaciones SMS o documentos generados localmente, hemos optado por Arial como tipografía complementaria. Arial es una fuente sans-serif de sistema ampliamente disponible en Windows, macOS, Linux y la mayoría de clientes de correo, lo que garantiza que nuestro contenido se renderice de manera uniforme y coherente sin necesidad de descargas adicionales (Jay y Lupton, 2024).
 
@@ -349,11 +345,11 @@ En aquellos escenarios en los que dependemos exclusivamente de las fuentes insta
 
 Con esta elección, aseguramos que nuestras comunicaciones críticas lleguen siempre con la máxima fiabilidad tipográfica, sin comprometer la estética ni la claridad del mensaje.
 
-###### Figura 40
+###### Figura 124
 
 _Modelos de grosor para el tipo de letra complementaria de Macetech, Arial_
 
-<img src="/assets/img/capitulo-5/style-guidelines/general/typography/arial-font-thickness.png"  alt=" Arial font thickness models" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/general/typography/arial-font-thickness.png"  alt=" Arial font thickness models" width="600" height="400">
 
 #### 5.1.1.3. Espaciado
 
@@ -393,6 +389,10 @@ Macetech logra una experiencia visualmente equilibrada y técnicamente robusta, 
 
 A continuación se presenta la pauta de espaciado para los distintos elementos de texto en Macetech, optimizada para legibilidad, jerarquía y mantenibilidad. Además del line-height interno, se indica que el espaciado entre bloques de texto (márgenes inferiores) debe ser equivalente a un doble interlineado, garantizando una separación clara y uniforme.
 
+###### Tabla 217
+
+_Lista de tipos de espaciado para distintos elementos de texto en la interfaz de Macetech_
+
 | Elemento              | Tamaño de fuente | Altura de línea | Espacio entre letras | Margen inferior (2× altura de línea) |
 | --------------------- | ---------------- | --------------- | -------------------- | ------------------------------------ |
 | H1 (Título principal) | 32 px            | 40 px (1.25×)   | –0.5 px              | 80 px                                |
@@ -401,12 +401,12 @@ A continuación se presenta la pauta de espaciado para los distintos elementos d
 | Párrafo (cuerpo)      | 16 px            | 24 px (1.5×)    | 0 px                 | 48 px                                |
 | Texto auxiliar        | 14 px            | 20 px (1.43×)   | 0 px                 | 40 px                                |
 
-###### Figura 41
+###### Figura 125
 
 _Distribución de las alturas de línea con el margen inferior para la tipografía de Macetech_
 
 <img src="/assets/img/capitulo-5/style-guidelines/general/spacing/line-heights-distribution-with-bottom-spacing.png"  alt="
-Line heights distribution with the bottom spacing" width="1000" height="580">
+Line heights distribution with the bottom spacing" width="600" height="350">
 
 - **Altura de línea interna (1.5–2.0x)**
 
@@ -432,6 +432,10 @@ Con estas directrices, Macetech consigue una estructuración tipográfica técni
 
 En Macetech, el espaciado de los componentes de interfaz se define para garantizar usabilidad, legibilidad y coherencia visual. A continuación se detallan las métricas de padding interno, margen externo vertical y gutter horizontal, así como su justificación:
 
+###### Tabla 218
+
+_Lista de tipos de espaciado para distintos componentes en la interfaz de Macetech_
+
 | Componente               | Padding Interno                       | Margen Externo Vertical | Gutter Horizontal | Justificación                                                                                                                                                                                    |
 | ------------------------ | ------------------------------------- | ----------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Botón                    | 12 px (vertical) × 24 px (horizontal) | 8 px                    | -                 | Proveé un área táctil confortable (mínimo 44 × 44 px recomendado por accesibilidad) y otorga una separación adecuada con elementos vecinos para clics precisos (World Wide Web Consortium, 2025) |
@@ -440,12 +444,12 @@ En Macetech, el espaciado de los componentes de interfaz se define para garantiz
 | Grid / Container         | -                                     | -                       | 16 px             | Otorga una separación uniforme entre columnas en layouts de varias columnas, mantiene consistencia con el gutter de tarjetas y favorece la lectura escaneable                                    |
 | Navbar / Sidebar         | 24 px                                 | -                       | -                 | Otorga un relleno amplio para iconos y etiquetas, además asegura zonas de interacción espaciosas y otorga claridad en la navegación                                                              |
 
-###### Figura 42
+###### Figura 126
 
 _Distribución de los componentes funcionales utilizados en la interfaz de Macetech_
 
 <img src="/assets/img/capitulo-5/style-guidelines/general/spacing/components-distribution-with-padding.png" alt="
-Components distribution with padding" width="1000" height="580">
+Components distribution with padding" width="800" height="600">
 
 - **Padding interno:** Brindamos un espacio mínimo alrededor del contenido dentro de cada componente, lo que es esencial para que los componentes “respiren” sin comprometer el alineamiento (Zeldman, 2024).
 
@@ -459,7 +463,7 @@ Este sistema de espaciado promueve una interfaz equilibrada, accesible y fácil 
 
 Para maximizar la coherencia visual y la eficiencia en la interpretación de la interfaz de Macetech, se establecen las siguientes pautas de espaciado general, basadas en principios de diseño de sistemas escalables y prácticas de interacción centradas en el usuario.
 
-- **Agrupamiento Semántico:** El agrupamiento semántico consiste en utilizar el espaciado como mecanismo de señalización para definir relaciones lógicas entre elementos:
+- **Agrupamiento Semántico:** El agrupamiento semántico consiste en utilizar el espaciado como mecanismo de señalización para definir relaciones lógicas entre elementos:<br><br>
 
   - **Márgenes internos reducidos (8 px)**
 
@@ -467,25 +471,25 @@ Para maximizar la coherencia visual y la eficiencia en la interpretación de la 
 
   - **Márgenes externos ampliados (24–32 px)**
 
-    Se reservan para separar secciones independientes (bloques de contenido, paneles de navegación, áreas de análisis de datos), creando zonas abiertas que ayudan al usuario a identificar claramente el inicio y el fin de cada módulo de información.
+    Se reservan para separar secciones independientes (bloques de contenido, paneles de navegación, áreas de análisis de datos), creando zonas abiertas que ayudan al usuario a identificar claramente el inicio y el fin de cada módulo de información.<br><br>
 
-  El contraste de espacios facilita el agrupamiento perceptivo (Principio de proximidad de Gestalt), reduciendo la carga cognitiva al segmentar visualmente la pantalla en áreas de interés (Zeldman, 2024).
+  El contraste de espacios facilita el agrupamiento perceptivo (Principio de proximidad de Gestalt), reduciendo la carga cognitiva al segmentar visualmente la pantalla en áreas de interés (Zeldman, 2024).<br><br>
 
-- **Alineación Consistente:** La alineación de todos los elementos de la interfaz se fundamenta en una cuadrícula modular de 8 px, aplicada tanto en ejes verticales(eje y) como horizontales(eje x):
+- **Alineación Consistente:** La alineación de todos los elementos de la interfaz se fundamenta en una cuadrícula modular de 8 px, aplicada tanto en ejes verticales(eje y) como horizontales(eje x):<br><br>
 
   - **Ejes verticales:** márgenes superiores e inferiores, altura de línea y gutters de contenedores siguen múltiplos de 8 px para asegurar un flujo de lectura fluido.
 
-  - **Ejes horizontales:** gutters entre columnas y padding lateral de contenedores se ajustan a la misma unidad, manteniendo una división homogénea.
+  - **Ejes horizontales:** gutters entre columnas y padding lateral de contenedores se ajustan a la misma unidad, manteniendo una división homogénea.<br><br>
 
-  El empleo de un grid consistente optimiza la formalización de CSS Grid, facilita alineaciones responsivas y reduce las discrepancias derivadas de cálculos manuales, mejorando la mantenibilidad del código (Budarina, 2023).
+  El empleo de un grid consistente optimiza la formalización de CSS Grid, facilita alineaciones responsivas y reduce las discrepancias derivadas de cálculos manuales, mejorando la mantenibilidad del código (Budarina, 2023).<br><br>
 
-- **Escalado Responsivo:** Para garantizar una experiencia óptima en distintos dispositivos y tamaños de pantalla, el espaciado se adapta mediante breakpoints manteniendo siempre la base de 8 px. Según Zeldman(2024), los breakpoints son los puntos donde el diseño cambia para adaptarse a diferentes tamaños de pantalla y dispositivos. Son las medidas de ancho de pantalla en las que se aplican estilos CSS específicos, creando diferentes layouts para diferentes dispositivos, como móviles, tablets y escritorios:
+- **Escalado Responsivo:** Para garantizar una experiencia óptima en distintos dispositivos y tamaños de pantalla, el espaciado se adapta mediante breakpoints manteniendo siempre la base de 8 px. Según Zeldman(2024), los breakpoints son los puntos donde el diseño cambia para adaptarse a diferentes tamaños de pantalla y dispositivos. Son las medidas de ancho de pantalla en las que se aplican estilos CSS específicos, creando diferentes layouts para diferentes dispositivos, como móviles, tablets y escritorios:<br><br>
 
   - **Móviles (En promedio, menor a 768 px):** se conserva la unidad base de 8 px y sus primeros múltiplos (8, 16, 24 px), optimizando la densidad de información sin sacrificar la claridad.
 
-  - **Tablets y Escritorio (Mayor a 768 px):** se introducen múltiplos superiores (32, 40, 48 px) para incrementar zonas de descanso visual y aprovechar el espacio adicional de forma equitativa para los usuarios. No se invalidan o modifican las reglas de espaciado indicadas en este guía.
+  - **Tablets y Escritorio (Mayor a 768 px):** se introducen múltiplos superiores (32, 40, 48 px) para incrementar zonas de descanso visual y aprovechar el espacio adicional de forma equitativa para los usuarios. No se invalidan o modifican las reglas de espaciado indicadas en este guía.<br><br>
 
-  Este enfoque en el que planteamos el diseño principal para móviles primero, aseguramos que la interfaz escale de forma progresiva, evitando saltos abruptos en el layout y manteniendo un ritmo visual coherente a través de los breakpoints definidos.
+  Este enfoque en el que planteamos el diseño principal para móviles primero, aseguramos que la interfaz escale de forma progresiva, evitando saltos abruptos en el layout y manteniendo un ritmo visual coherente a través de los breakpoints definidos.<br><br>
 
 - **Beneficios del Sistema de Espaciado Modular**
 
@@ -505,9 +509,9 @@ De acuerdo con Smith y Zook (2024), el tono de comunicación es un componente es
 
 En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, diseñadas para asegurar una comunicación coherente, efectiva y alineada con nuestra identidad de marca en todos los puntos de contacto. Aquí encontrarás la descripción de nuestra voz de marca y los tonos contextuales que adaptan esa voz a situaciones específicas, desde mensajes de bienvenida hasta alertas críticas y notificaciones rutinarias. Además, incluiremos pautas prácticas sobre vocabulario preferido, estilo gramatical y adaptaciones multicanal, de modo que todos los equipos de contenido y diseño puedan aplicar un lenguaje claro, accesible y emocionalmente resonante para fortalecer la experiencia del usuario en Macetech.
 
-- **Tono y voz:**
+**Tono y voz:**
 
-  En esta sección vamos a establecer la personalidad y las variaciones de nuestro lenguaje para que cada interacción refuerce la identidad de Macetech, genere confianza y mejore la experiencia de cuidado de plantas.
+En esta sección vamos a establecer la personalidad y las variaciones de nuestro lenguaje para que cada interacción refuerce la identidad de Macetech, genere confianza y mejore la experiencia de cuidado de plantas.
 
   La voz de Macetech es la forma consistente en que nos comunicamos en todos los canales. Nuestra voz es:
 
@@ -523,20 +527,24 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     Celebramos cada logro, desde un riego correcto hasta un brote nuevo, para mantener al usuario comprometido.
 
-  El tono adapta nuestra voz al escenario de uso, modulando la energía y formalidad del mensaje:
+El tono adapta nuestra voz al escenario de uso, modulando la energía y formalidad del mensaje:
 
-  | Contexto                  | Objetivo                       | Tono principal          | Tono alternativo |
-  | ------------------------- | ------------------------------ | ----------------------- | ---------------- |
-  | Onboarding y Bienvenida   | Generar vínculo inicial        | Entusiasta y acogedor   | -                |
-  | Éxitos y Recompensas      | Reforzar logros y motivar      | Celebratorio            | -                |
-  | Alertas preventivas       | Avisar con urgencia moderada   | Claro y directo         | Empático breve   |
-  | Errores críticos          | Informar y guiar solución      | Sobrio y tranquilizador | -                |
-  | Consejos                  | Educar y acompañar paso a paso | Amigable y didáctico    | -                |
-  | Notificaciones rutinarias | Recordar sin invadir           | Respetuoso & breve      | Cordial breve    |
+###### Tabla 219
 
-  Esta estructura de voz y tono garantiza que, sin importar el punto de contacto, ya sea aplicación móvil, correo o aplicación web, Macetech hable con una personalidad única, coherente y alineada a los valores de sostenibilidad, innovación y proximidad que caracterizan nuestra marca.
+_Lista de tonos a utilizar en el lenguaje de la interfaz de Macetech según distintos contextos_
 
-- **Principios Fundamentales de Comunicación:**
+| Contexto                  | Objetivo                       | Tono principal          | Tono alternativo |
+| ------------------------- | ------------------------------ | ----------------------- | ---------------- |
+| Onboarding y Bienvenida   | Generar vínculo inicial        | Entusiasta y acogedor   | -                |
+| Éxitos y Recompensas      | Reforzar logros y motivar      | Celebratorio            | -                |
+| Alertas preventivas       | Avisar con urgencia moderada   | Claro y directo         | Empático breve   |
+| Errores críticos          | Informar y guiar solución      | Sobrio y tranquilizador | -                |
+| Consejos                  | Educar y acompañar paso a paso | Amigable y didáctico    | -                |
+| Notificaciones rutinarias | Recordar sin invadir           | Respetuoso & breve      | Cordial breve    |
+
+Esta estructura de voz y tono garantiza que, sin importar el punto de contacto, ya sea aplicación móvil, correo o aplicación web, Macetech hable con una personalidad única, coherente y alineada a los valores de sostenibilidad, innovación y proximidad que caracterizan nuestra marca.
+
+**Principios Fundamentales de Comunicación:**
 
   Estos principios guían cada texto e interacción dentro de Macetech, garantizando claridad, consistencia y conexión emocional:
 
@@ -570,9 +578,13 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     Asegúrate de que el contraste de texto y color cumpla con las pautas de accesibilidad y que las instrucciones sean claras para todos.
 
-- **Patrones de Uso:**
+**Patrones de Uso:**
 
-  A continuación se presentan ejemplos de mensajes antes y después de aplicar nuestro modelo de Voz y Tono, según distintos contextos de interacción:
+A continuación se presentan ejemplos de mensajes antes y después de aplicar nuestro modelo de Voz y Tono, según distintos contextos de interacción:
+
+###### Tabla 220
+
+_Comparación de mensajes antes y después de usar el modelo de voz y tono específico de Macetech_
 
   | Contexto               | Cuándo usarlo                                 | Ejemplo(antes)                  | Ejemplo(después)                                                                      |
   | ---------------------- | --------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------- |
@@ -583,25 +595,29 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
   | Consejo educativo      | Sugerencia de mantenimiento o fertilización   | “Fertiliza tu planta cada mes.” | “Para un crecimiento óptimo, aplica fertilizante ligero una vez al mes.”              |
   | Notificación rutinaria | Recordatorios diarios o semanales de cuidado  | “Recordatorio de cuidado.”      | “¡Hola! No olvides revisar el nivel de humedad de tu planta hoy.”                     |
 
-- **Vocabulario y estilo:**
+**Vocabulario y estilo:**
 
-  Esta sección define las palabras, expresiones y convenciones que refuerzan la identidad de Macetech y aseguran coherencia en todos los textos.
+Esta sección define las palabras, expresiones y convenciones que refuerzan la identidad de Macetech y aseguran coherencia en todos los textos.
 
-  - **Palabras clave y términos recomendados:**
+- **Palabras clave y términos recomendados:**
 
-    Selecciona siempre términos que conecten con el propósito de Macetech y eviten ambigüedades:
+  Selecciona siempre términos que conecten con el propósito de Macetech y eviten ambigüedades:
 
-    | Categoría            | Términos recomendados                                                                                                    | Por qué                                               |
-    | -------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
-    | Acciones principales | "Regar", "Monitorear", "Nutrir"                                                                                          | Verboes directos, centran al usuario en la tarea.     |
-    | Estados de planta    | “Saludable”, “Sedienta”, “En crecimiento”                                                                                | Palabras concretas que reflejan condiciones reales.   |
-    | Logros y motivación  | “¡Perfecto!”, “¡Excelente!”, “Logrado”                                                                                   | Tono positivo que celebra el éxito.                   |
-    | Consejos y guías     | “Para optimizar…”, “Te recomendamos…”, “Prueba a…”                                                                       | Introducen recomendaciones de forma suave y empática. |
-    | Advertencias         | “Atención:”, “Importante:”, “Precaución:” Llamadas de alerta claras sin incentivar la preocupación excesiva o el pánico. |
+###### Tabla 221
+
+_Listado de términos recomendados a utilizar según los distintos contextos presentados en la interfaz de Macetech_
+
+| Categoría            | Términos recomendados                                                                                                    | Por qué                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| Acciones principales | "Regar", "Monitorear", "Nutrir"                                                                                          | Verboes directos, centran al usuario en la tarea.     |
+| Estados de planta    | “Saludable”, “Sedienta”, “En crecimiento”                                                                                | Palabras concretas que reflejan condiciones reales.   |
+| Logros y motivación  | “¡Perfecto!”, “¡Excelente!”, “Logrado”                                                                                   | Tono positivo que celebra el éxito.                   |
+| Consejos y guías     | “Para optimizar…”, “Te recomendamos…”, “Prueba a…”                                                                       | Introducen recomendaciones de forma suave y empática. |
+| Advertencias         | “Atención:”, “Importante:”, “Precaución:” Llamadas de alerta claras sin incentivar la preocupación excesiva o el pánico. |
 
   - **Palabras prohibidas:**
 
-    Evita jergas técnicas, modismos regionales o vocabulario que pueda resultar confuso:
+    Evita jergas técnicas, modismos regionales o vocabulario que pueda resultar confuso:<br><br>
 
     - **Términos excesivamente técnicos:**
 
@@ -621,9 +637,9 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     - **Frases largas y pasivas:**
 
-      Prefiere la voz activa con oraciones de máximo 30 palabras en los mensajes o textos que tenga la aplicación, a menos que estos sean descriptivos o explicativos.
+      Prefiere la voz activa con oraciones de máximo 30 palabras en los mensajes o textos que tenga la aplicación, a menos que estos sean descriptivos o explicativos.<br><br>
 
-  - **Convenciones de gramática y puntuación:**
+  - **Convenciones de gramática y puntuación:**<br><br>
 
     - **Voz activa:**
 
@@ -643,9 +659,9 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     - **Uso de comillas:**
 
-      Se deben utilizar comillas angulares (« ») o latinas (“ ”) para fragmentos textuales que requieran su uso. Se debe evitar el uso de comillas simples (‘ ’).
+      Se deben utilizar comillas angulares (« ») o latinas (“ ”) para fragmentos textuales que requieran su uso. Se debe evitar el uso de comillas simples (‘ ’).<br><br>
 
-  - **Formato y énfasis:**
+  - **Formato y énfasis:**<br><br>
 
     - **Negrita:**
 
@@ -663,9 +679,9 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
       El uso de emojis esta permitido solo en notificaciones informales y mensajes de éxito para reforzar cercanía, como (“¡Listo! 🌱”).
 
-      Los emojis están prohibidos en textos formales (alertas críticas, documentación legal).
+      Los emojis están prohibidos en textos formales (alertas críticas, documentación legal).<br><br>
 
-  - **Lenguaje accesible:**
+  - **Lenguaje accesible:**<br><br>
 
     - **Género neutro:**
 
@@ -673,15 +689,15 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     - **Claridad:**
 
-      Se debe evitar dobles negaciones y construcciones complejas.
+      Se debe evitar dobles negaciones y construcciones complejas.<br><br>
 
   - **Accesibilidad:**
 
-    Se debe asegurar de que las etiquetas de botones y enlaces describan claramente la acción (“Ver historial de riego” vs. “Ver más”).
+    Se debe asegurar de que las etiquetas de botones y enlaces describan claramente la acción (“Ver historial de riego” vs. “Ver más”).<br><br>
 
 - **Adaptaciones Multicanal:**
 
-  Para asegurar que la voz y el tono de Macetech se mantengan consistentes y efectivos, adaptamos ligeramente el estilo según el canal de interacción:
+  Para asegurar que la voz y el tono de Macetech se mantengan consistentes y efectivos, adaptamos ligeramente el estilo según el canal de interacción:<br><br>
 
   - **Aplicación Móvil:**
 
@@ -701,7 +717,7 @@ En esta sección detallamos las directrices de Lenguaje Utilizado de Macetech, d
 
     - **Errores y alertas:**
 
-      Debe utilizar texto mínimo para describir lo que es el problema y la posible solución en dos líneas. Asimismo, se deben agregar botones de acción ("Reintentar", "Ajustar sensor").
+      Debe utilizar texto mínimo para describir lo que es el problema y la posible solución en dos líneas. Asimismo, se deben agregar botones de acción ("Reintentar", "Ajustar sensor").<br><br>
 
   - **Plataforma Web:**
 
@@ -727,15 +743,15 @@ En esta sección se establecen las directrices detalladas para el uso, las varia
 
 La versión principal del logo de Macetech combina un símbolo icónico con la denominación de la marca, garantizando reconocimiento inmediato y coherencia visual.
 
-- **Composición:** Para comprender la esencia de nuestro producto Macetech, cada elemento del logotipo ha sido concebido con un propósito simbólico y funcional:
+- **Composición:** Para comprender la esencia de nuestro producto Macetech, cada elemento del logotipo ha sido concebido con un propósito simbólico y funcional:<br><br>
 
   - **Símbolo**
 
     - **Forma:** Una maceta minimalista de líneas suaves que contiene un brote naciente, aludiendo directamente al crecimiento vegetal que obtendran las plantas por usar nuestro producto.
 
-    - **Corazón interno:** Integrado sutilmente en la base del brote, representa el compromiso humano y emocional con el cuidado de las plantas. Su presencia simboliza tanto la pasión de nuestros usuarios como la “inteligencia” tecnológica que Macetech aporta.
+    - **Corazón interno:** Integrado sutilmente en la base del brote, representa el compromiso humano y emocional con el cuidado de las plantas. Su presencia simboliza tanto la pasión de nuestros usuarios como la “inteligencia” tecnológica que Macetech aporta.<br><br>
 
-    La superposición de naturaleza y tecnología sintetiza la propuesta de valor de Macetech: facilitar un cuidado preciso y afectivo de de las plantas mediante nuestras macetas inteligentes.
+    La superposición de naturaleza y tecnología sintetiza la propuesta de valor de Macetech: facilitar un cuidado preciso y afectivo de de las plantas mediante nuestras macetas inteligentes.<br><br>
 
   - **Logotipo textual (Wordmark)**
 
@@ -747,7 +763,7 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     - **Coherencia visual:** Combina modernidad y accesibilidad, reflejando la dualidad de Macetech: tecnología avanzada al servicio de la vida vegetal (Zeldman, 2024).
 
-    - **Posicionamiento:** La palabra “MaceTech” se sitúa debajo del símbolo, con un espacio horizontal equivalente al 40 % de la altura del ícono.
+    - **Posicionamiento:** La palabra “MaceTech” se sitúa debajo del símbolo, con un espacio horizontal equivalente al 40 % de la altura del ícono.<br><br>
 
   - **Función del espacio**
 
@@ -757,19 +773,19 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     - **Alineación:** La línea de base de la palabra “MaceTech” queda perfectamente alineada con el centro geométrico del símbolo, generando un eje horizontal de equilibrio. Esta alineación transmite estabilidad y unidad, reforzando la confianza del usuario en la marca y su solución tecnológica.
 
-    ###### Figura 43
+###### Figura 127
 
-    _Presentación del logotipo de Macetech_
+_Presentación del logotipo de Macetech junto a su distribución_
 
-    <img src="/assets/img/capitulo-5/style-guidelines/general/logo/logo-model-macetech.png" alt="Macetech's Logo" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/general/logo/logo-model-macetech.png" alt="Macetech's Logo" width="650" height="300">
 
-- **Proporciones:** Las proporciones del logo tienen una distribución que debe respetarse en todo momento, sin excepción. Las proporciones utilizadas en el logo se ven en el siguiente apartado.
+- **Proporciones:** Las proporciones del logo tienen una distribución que debe respetarse en todo momento, sin excepción. Las proporciones utilizadas en el logo se ven en el siguiente apartado.<br><br>
 
   - **Relación de aspecto:** Relación con respecto a "Altura del ícono : Anchura total", lo que es igual a "1 : 1.2". La configuración del símbolo y la tipografía en relación 1:1.2 promueve una estructura visual equilibrada que refuerza el impacto de marca en cualquier tamaño (Bhanarkar et al., 2023).
 
-  - **Escalado:** Al redimensionar, siempre se debe mantener esta proporción para evitar distorsiones y preservar la legibilidad de la tipografía en todo momento, sin importar el tamaño de la pantalla del dispositivo en el que se presenta.
+  - **Escalado:** Al redimensionar, siempre se debe mantener esta proporción para evitar distorsiones y preservar la legibilidad de la tipografía en todo momento, sin importar el tamaño de la pantalla del dispositivo en el que se presenta.<br><br>
 
-- **Paleta de Color Autorizada** Usamos un modelo de paleta de color único que se guía de nuestro modelo de colores mencionados anteriormente en esta guía de diseño.
+- **Paleta de Color Autorizada** Usamos un modelo de paleta de color único que se guía de nuestro modelo de colores mencionados anteriormente en esta guía de diseño.<br><br>
 
   - **Full Color (predeterminada)**
 
@@ -781,7 +797,7 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     - **Uso:**
 
-      Sitios web, presentaciones, materiales de marketing y cualquier superficie de marca donde se disponga de color completo de tonalidad verdosa clara.
+      Sitios web, presentaciones, materiales de marketing y cualquier superficie de marca donde se disponga de color completo de tonalidad verdosa clara.<br><br>
 
   - **Versión en Blanco**
 
@@ -789,7 +805,7 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     - **Uso:**
 
-      Sobre fondos oscuros o fotografías de alta complejidad, siempre que el contraste cumpla con WCAG 2.1 AA (mínimo 4.5:1) para garantizar visibilidad (World Wide Web Consortium, 2025).
+      Sobre fondos oscuros o fotografías de alta complejidad, siempre que el contraste cumpla con WCAG 2.1 AA (mínimo 4.5:1) para garantizar visibilidad (World Wide Web Consortium, 2025).<br><br>
 
   - **Versión en Negro**
 
@@ -797,19 +813,21 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     - **Uso:**
 
-      Aplicaciones monocromas en documentos impresos, grabados o interiores de menor colorido, siempre sobre fondos claros que aseguren legibilidad (World Wide Web Consortium, 2025).
+      Aplicaciones monocromas en documentos impresos, grabados o interiores de menor colorido, siempre sobre fondos claros que aseguren legibilidad (World Wide Web Consortium, 2025).<br><br>
 
-  Las versiones blanca y negra aseguran flexibilidad de uso en contextos de contraste limitado, manteniendo la coherencia y el reconocimiento de la marca.
+  Las versiones blanca y negra aseguran flexibilidad de uso en contextos de contraste limitado, manteniendo la coherencia y el reconocimiento de la marca.<br><br>
 
-- **Zona de Protección (Clear Space):** Para preservar la integridad visual y la legibilidad del logotipo de Macetech en cualquier entorno, es imprescindible respetar un área libre de interferencias alrededor de su contorno.
+- **Zona de Protección (Clear Space):** 
+  
+  Para preservar la integridad visual y la legibilidad del logotipo de Macetech en cualquier entorno, es imprescindible respetar un área libre de interferencias alrededor de su contorno.<br><br>
 
-  La zona de protección es el área mínima libre de texto, gráficos, bordes o cualquier otro elemento que pueda competir por la atención del espectador o dificultar la percepción del logotipo. Este espacio garantiza que el logotipo “respire” y mantenga su presencia y jerarquía visual (Zeldman, 2024).
+  La zona de protección es el área mínima libre de texto, gráficos, bordes o cualquier otro elemento que pueda competir por la atención del espectador o dificultar la percepción del logotipo. Este espacio garantiza que el logotipo “respire” y mantenga su presencia y jerarquía visual (Zeldman, 2024).<br><br>
 
-  El valor de la zona de protección se define como el doble de la altura de la letra “M” en la palabra “MaceTech” del logotipo. La “M” es el carácter de mayor ancho y altura dentro de la palabra “MaceTech” y, por tanto, representa la dimensión más restrictiva para asegurar espacio libre. Al basar la distancia en esta medida interna, el área de protección se ajusta automáticamente a cualquier escala del logo sin requerir cálculos adicionales. Dado que la “M” forma parte del propio logotipo, este método funciona con la misma unidad (px, mm, pt) en la que se reproduzca y se puede referenciar con facilidad en CSS para el diseño (Kuleszo, 2024).
+  El valor de la zona de protección se define como el doble de la altura de la letra “M” en la palabra “MaceTech” del logotipo. La “M” es el carácter de mayor ancho y altura dentro de la palabra “MaceTech” y, por tanto, representa la dimensión más restrictiva para asegurar espacio libre. Al basar la distancia en esta medida interna, el área de protección se ajusta automáticamente a cualquier escala del logo sin requerir cálculos adicionales. Dado que la “M” forma parte del propio logotipo, este método funciona con la misma unidad (px, mm, pt) en la que se reproduzca y se puede referenciar con facilidad en CSS para el diseño (Kuleszo, 2024).<br><br>
 
-  Este valor se aplica uniformemente a los cuatro costados (superior, inferior, izquierdo y derecho). Si la “M” mide h (en mm, px o la unidad correspondiente), la zona de protección será un cuadrado de lado 2h adyacente a cada borde del logotipo.
+  Este valor se aplica uniformemente a los cuatro costados (superior, inferior, izquierdo y derecho). Si la “M” mide h (en mm, px o la unidad correspondiente), la zona de protección será un cuadrado de lado 2h adyacente a cada borde del logotipo.<br><br>
 
-  Esto nos otorga distintos beneficios, como:
+  Esto nos otorga distintos beneficios, como:<br><br>
 
   - **Visibilidad y legibilidad:** Evita que elementos gráficos o tipográficos cercanos distraigan la vista o distorsionen la silueta del logotipo.
 
@@ -817,29 +835,29 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
   - **Adaptabilidad:** Al basar la medición en la propia geometría del logotipo, la zona de protección escala de forma consistente en todos los usos y formatos.
 
-  ###### Figura 43
+###### Figura 128
 
-  \*Presentación del área de protección indicada para la buena distribución del logo
+_Área de protección para la buena distribución del logo de Macetech_
 
-  <img src="/assets/img/capitulo-5/style-guidelines/general/logo/protection-area-for-logo.png" alt="Macetech's Logo Protection Area" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/general/logo/protection-area-for-logo.png" alt="Macetech's Logo Protection Area" width="600" height="560">
 
-- **Tamaño Mínimo:** Establecer dimensiones mínimas para el logotipo garantiza que sus detalles, tanto en el símbolo como en la tipografía, se reproduzcan con fidelidad en distintos medios y resoluciones.
+- **Tamaño Mínimo:** Establecer dimensiones mínimas para el logotipo garantiza que sus detalles, tanto en el símbolo como en la tipografía, se reproduzcan con fidelidad en distintos medios y resoluciones.<br><br>
 
-  - **Ancho mínimo recomendado: 100 px**
+  - **Ancho mínimo recomendado: 100 px**<br><br>
 
-  - Optimizado para pantallas de baja densidad (72 ppi) y alta densidad (Retina).
+  - Optimizado para pantallas de baja densidad (72 ppi) y alta densidad (Retina).<br><br>
 
-  - Asegura un espaciado mínimo de píxeles para las líneas del ícono y los contornos de la tipografía, evitando el “pixel snapping” que degrada la forma (Kuleszo, 2024). Por debajo de este umbral, los contornos de la fuente pueden perderse, afectando la legibilidad en dispositivos móviles y navegadores de escritorio.
+  - Asegura un espaciado mínimo de píxeles para las líneas del ícono y los contornos de la tipografía, evitando el “pixel snapping” que degrada la forma (Kuleszo, 2024). Por debajo de este umbral, los contornos de la fuente pueden perderse, afectando la legibilidad en dispositivos móviles y navegadores de escritorio.<br><br>
 
-  - Para tamaños superiores a los mínimos, mantenga la proporción 1:1.2 (altura : anchura) y la zona de protección predeterminada, escalándolas de manera proporcional.
+  - Para tamaños superiores a los mínimos, mantenga la proporción 1:1.2 (altura : anchura) y la zona de protección predeterminada, escalándolas de manera proporcional.<br><br>
 
-  - En entornos de baja resolución (por ejemplo, pantallas 1×), verifique en mockups reales que el logotipo se perciba con claridad antes de su despliegue masivo.
+  - En entornos de baja resolución (por ejemplo, pantallas 1×), verifique en mockups reales que el logotipo se perciba con claridad antes de su despliegue masivo.<br><br>
 
-  Con estas directrices formales y técnicas, se asegura que el logotipo de Macetech conserve su fuerza gráfica y su capacidad de comunicación en cualquier soporte, sin perder legibilidad ni detalle.
+  Con estas directrices formales y técnicas, se asegura que el logotipo de Macetech conserve su fuerza gráfica y su capacidad de comunicación en cualquier soporte, sin perder legibilidad ni detalle.<br><br>
 
 - **Usos Incorrectos del Logotipo**
 
-  Para garantizar la integridad visual, coherencia de marca y reconocimiento consistente del logotipo de Macetech, es imprescindible evitar cualquier alteración que comprometa su estructura, colorimetría o legibilidad. A continuación se detallan los usos que están estrictamente prohibidos:
+  Para garantizar la integridad visual, coherencia de marca y reconocimiento consistente del logotipo de Macetech, es imprescindible evitar cualquier alteración que comprometa su estructura, colorimetría o legibilidad. A continuación se detallan los usos que están estrictamente prohibidos:<br><br>
 
   - **Alteraciones de forma o proporción**
 
@@ -863,25 +881,25 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
     Está prohibido rotar, inclinar, recortar, animar parcialmente o reemplazar elementos del logotipo, ya sea el ícono, la tipografía o ambos. No deben integrarse frases, eslóganes ni elementos externos dentro del área de seguridad definida.
 
-    ###### Figura 44
+###### Figura 129
 
-    _Presentación de los usos incorrects del logotipo de Macetech_
+_Listado de usos incorrectos del logotipo de Macetech_
 
-    <img src="/assets/img/capitulo-5/style-guidelines/general/logo/logo-incorrect-uses.png" alt="Macetech's Logo Incorrect Uses" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/general/logo/logo-incorrect-uses.png" alt="Macetech's Logo Incorrect Uses" width="1000" height="580">
 
 - **Formatos de Archivo del Logotipo**
 
-  Para asegurar su correcta implementación en distintos medios y soportes, el logotipo de Macetech se distribuye en formatos optimizados según el tipo de uso. A continuación se especifican los formatos oficiales autorizados:
+  Para asegurar su correcta implementación en distintos medios y soportes, el logotipo de Macetech se distribuye en formatos optimizados según el tipo de uso. A continuación se especifican los formatos oficiales autorizados:<br><br>
 
   - **Formatos vectoriales (uso escalable y profesional)**
 
-    - **.SVG (Scalable Vector Graphics):** Uso recomendado para entornos digitales responsivos como sitios web, aplicaciones móviles o interfaces UI. Ofrece alta escalabilidad sin pérdida de calidad. Es de peso liviano y es editable por código (Budarina, 2023).
+    - **.SVG (Scalable Vector Graphics):** Uso recomendado para entornos digitales responsivos como sitios web, aplicaciones móviles o interfaces UI. Ofrece alta escalabilidad sin pérdida de calidad. Es de peso liviano y es editable por código (Budarina, 2023).<br><br>
 
   - **Formatos rasterizados (uso fijo en pantalla o documentos)**
 
     - **.PNG (Portable Network Graphics):** Formato ideal para presentaciones, interfaces digitales o recursos web. Ofrece un fondo transparente, buena resolución, y tiene un peso moderado (Budarina, 2023).
 
-    - **.PDF (Portable Document Format):** Recomendado para documentación oficial, entregables corporativos, presentaciones o reportes. Es un formato universal con alta fidelidad de reproducción. Proveé una alta integridad gráfica en todos los dispositivos (Budarina, 2023).
+    - **.PDF (Portable Document Format):** Recomendado para documentación oficial, entregables corporativos, presentaciones o reportes. Es un formato universal con alta fidelidad de reproducción. Proveé una alta integridad gráfica en todos los dispositivos (Budarina, 2023).<br><br>
 
   - **Consideraciones generales**
 
@@ -895,7 +913,9 @@ La versión principal del logo de Macetech combina un símbolo icónico con la d
 
 La iconografía de Macetech es fundamental para transmitir estados, acciones y atributos de forma visual, clara y accesible a todos nuestros usuarios sin excepción. No solo deben ser visualmente atrayentes, sino también rápidamente identificables, intuitivos y correctamente distribuidos. La consistencia en el uso de íconos refuerza la identidad visual de la aplicación y mejora la experiencia del usuario en plataformas Web, iOS y Android (Zeldman, 2024).
 
-**Principios Generales de Iconografía**
+###### Tabla 222
+
+_Listado de principios generales de iconografía de la interfaz de Macetech_
 
 | Principio     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -908,7 +928,7 @@ La iconografía de Macetech es fundamental para transmitir estados, acciones y a
 
 Los siguientes detalles siempre deben ser aplicados antes de agregar un ícono en el programa por parte del diseño de experiencia de usuario e interfaz de usuario:
 
-- **Formato:**
+- **Formato:**<br><br>
 
   **SVG:** Se recomienda el uso de SVG como formato principal para todos los íconos, exportados sin metadatos innecesarios y optimizados con herramientas como SVGO (v2+) para minimizar peso de archivo.
 
@@ -929,39 +949,39 @@ Los siguientes detalles siempre deben ser aplicados antes de agregar un ícono e
 **Estilo de Íconos**
 El sistema de iconografía de Macetech adopta un enfoque visual coherente y funcional, fundamentado en principios de diseño minimalista, jerarquía cromática y semiótica contextual. A continuación se describen los elementos fundamentales que definen su estilo gráfico:
 
-- **Estilo Gráfico**
+- **Estilo Gráfico**<br><br>
 
   - **Trazado:**
 
     Se emplea un estilo lineal (outline) con trazos de grosor uniforme (2 px), lo que facilita la escalabilidad y la consistencia visual en todos los tamaños.
-    <br>
+
     Los extremos de línea (stroke caps) deben ser redondeados para transmitir una estética amigable, alineada con los valores de sostenibilidad y bienestar de la marca.
-    <br>
+
     Las uniones (stroke-linejoin) también deben ser redondeadas para evitar vértices agresivos.
 
   - **Simplicidad formal:**
 
-    Las figuras deben construirse a partir de formas geométricas básicas y evitar ornamentos o detalles superfluos. Se prioriza la silueta reconocible y la armonía visual con otros elementos de interfaz.
+    Las figuras deben construirse a partir de formas geométricas básicas y evitar ornamentos o detalles superfluos. Se prioriza la silueta reconocible y la armonía visual con otros elementos de interfaz.<br><br>
 
 - **Uso de Relleno**
 
   - **Relleno contextual (semifilled icons):**
 
-    En casos específicos de señalización o alertas, se permite el uso de relleno plano parcial o total para aumentar la notoriedad del ícono y reforzar su carga semántica. Ejemplos incluyen:
+    En casos específicos de señalización o alertas, se permite el uso de relleno plano parcial o total para aumentar la notoriedad del ícono y reforzar su carga semántica. Ejemplos incluyen:<br><br>
 
     - Íconos de advertencia o estados críticos (por ejemplo, alerta, advertencia de riego) con relleno rojo si es una alerta grave o amarillo si es moderado. Recuerde utilizar los colores asignados según la guía de colores.
 
-    - Indicadores de condición (necesita agua, exceso de luz) con uso combinado de contorno y relleno según el nivel de urgencia.
+    - Indicadores de condición (necesita agua, exceso de luz) con uso combinado de contorno y relleno según el nivel de urgencia.<br><br>
 
-    El relleno debe seguir el mismo esquema de color institucional y estar limitado a un máximo del 60% del área del ícono, para mantener la legibilidad del contorno principal.
+    El relleno debe seguir el mismo esquema de color institucional y estar limitado a un máximo del 60% del área del ícono, para mantener la legibilidad del contorno principal.<br><br>
 
 - **Paleta Cromática**
 
   El color cumple una función semántica y jerárquica, guiando al usuario en la interpretación rápida del estado o función del ícono. La paleta ha sido seleccionada con base en criterios de contraste, accesibilidad (WCAG AA mínimo) y coherencia con la identidad visual de Macetech:
 
-  ###### Tabla 30 y algo
+###### Tabla 223
 
-  _Descripción de usos de colores para los íconos de Macetech en modo light_
+_Paleta cromática de iconografía en modo light para la interfaz de Macetech_
 
   | Métrica                        | Nombre   | Hex     | Uso                                                                                                                                                                                        | Justificación técnica                                                                                                                             |
   | ------------------------------ | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -972,9 +992,10 @@ El sistema de iconografía de Macetech adopta un enfoque visual coherente y func
   | pH                             | Tallo    | #2ECC71 | Utilizado como medidor de acidez/alcalinidad (pH)                                                                                                                                          | Verde para pH neutro/seguro, lo que armoniza con primarios y tiene un contraste 4.5:1.                                                            |
   | Salinidad                      | Neblina  | #1ABC9C | Utilizado como medidor de salinidad                                                                                                                                                        | Tonos turquesa evocan agua salada, lo que es distintivo frente a otros sensores.                                                                  |
 
-  ###### Tabla 30 y algo
+###### Tabla 224
 
-  _Descripción de usos de colores para los íconos de Macetech en modo Dark_
+_Paleta cromática de iconografía en modo dark para la interfaz de Macetech_
+
 
   | Métrica                        | Nombre    | Hex      | Uso                                                                                                                                                                                        | Justificación                                                                                                                                                   |
   | ------------------------------ | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -997,7 +1018,7 @@ La iconografía implementada en el dashboard de Macetech cumple una función cla
 
 A continuación se detalla el conjunto base de íconos con su función específica, estilo requerido y consideraciones de implementación. Primero se mostraran emojis de ejemplo y después se mostrara la hoja con todos los íconos respectivos:
 
-###### Tabla 30 y algo
+###### Tabla 225
 
 _Listado de íconos de estado de planta y sensores ambientales utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji_
 
@@ -1011,7 +1032,7 @@ _Listado de íconos de estado de planta y sensores ambientales utilizados en la 
 | 🧂 Salinidad      | Nivel de sales en el suelo                         | Ícono representando un cristal o salero simplificado. Asociado a valores de conductividad eléctrica                                                                       |
 | ♻️ Proceso activo | Activación de procesos automáticos (como el riego) | Ícono de carga circular o animación de progreso. Se muestra durante la ejecución de tareas automáticas del sistema IoT                                                    |
 
-###### Tabla 30 y algo
+###### Tabla 226
 
 _Listado de íconos de alerta utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji_
 
@@ -1020,7 +1041,7 @@ _Listado de íconos de alerta utilizados en la aplicación de Macetech, junto a 
 | 🔴 ❗ (Círculo rojo con exclamación)     | Crítica         | Se utiliza cuando múltiples variables de la planta están fuera de los rangos óptimos. Prioriza acción inmediata del usuario |
 | 🟡 ❗ (Círculo amarillo con exclamación) | Media           | Indica una sola condición anómala o en advertencia. Permite intervención preventiva                                         |
 
-###### Tabla 30 y algo
+###### Tabla 227
 
 _Listado de íconos de interacción y navegación utilizados en la aplicación de Macetech, junto a un ejemplo en forma de emoji_
 
@@ -1033,53 +1054,53 @@ _Listado de íconos de interacción y navegación utilizados en la aplicación d
 | 👑               | Membresía          | Corona minimalista de tres puntas. Utilizada para representar planes avanzados del sistema                            |
 | ⬅️➡️             | Movimiento         | Flechas dobles horizontales o verticales para representar acciones de navegación o desplazamiento entre vistas        |
 
-###### Figura 45
+###### Figura 130
 
 _Listado de íconos utilizados en las plataformas de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/general/icons/macetech-icons.png" alt="Macetech's Icon List" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/general/icons/macetech-icons.png" alt="Macetech's Icon List" width="1000" height="500">
 
 **Adaptaciones a distintos dispositivos**
 
 La iconografía debe adaptarse cuidadosamente a las convenciones de diseño, comportamientos esperados y características técnicas de cada plataforma objetivo. Esto garantiza una experiencia de usuario coherente, accesible y optimizada tanto en entornos móviles como web.
 
-- **Plataforma Móvil (Android / iOS):**
+- **Plataforma Móvil (Android / iOS):** <br><br>
 
   - **Estándares de diseño por sistema operativo:**
 
     - **Android:** Se recomienda utilizar la familia de íconos Material Symbols, siguiendo las guías de Material Design 3 (Google, 2025).
 
-    - **iOS:** Para interfaces desarrolladas en entornos Apple, emplear íconos del sistema SF Symbols (versión 4 o superior), respetando las pautas de uso definidas por Human Interface Guidelines (Apple Inc., 2025).
+    - **iOS:** Para interfaces desarrolladas en entornos Apple, emplear íconos del sistema SF Symbols (versión 4 o superior), respetando las pautas de uso definidas por Human Interface Guidelines (Apple Inc., 2025).<br><br>
 
-  - **Compatibilidad con modo oscuro:**
+  - **Compatibilidad con modo oscuro:**<br><br>
 
-    Los íconos deben ser vectoriales y adaptarse automáticamente al modo claro u oscuro, empleando tonos neutros o variantes automáticas (dynamic system colors) en cada sistema. Recordar los colores dark mode revisados en el apartado de colores del Style Guidelines.
+    Los íconos deben ser vectoriales y adaptarse automáticamente al modo claro u oscuro, empleando tonos neutros o variantes automáticas (dynamic system colors) en cada sistema. Recordar los colores dark mode revisados en el apartado de colores del Style Guidelines.<br><br>
 
-  - **Tamaños sugeridos:**
+  - **Tamaños sugeridos:**<br><br>
 
     - **Navegación y barra de herramientas:** 24 px
 
-    - **Íconos destacados o interactivos principales:** 32 px
+    - **Íconos destacados o interactivos principales:** 32 px<br><br>
 
   - **Ubicación y jerarquía:**
 
-    Acciones primarias (como "Añadir Maceta") deben implementarse como Floating Action Button (FAB), centradas en la parte inferior de la pantalla según patrón de diseño de la plataforma. Se debe asegurar un mínimo de 48×48 dp como área táctil efectiva por ícono interactivo, incluso si el ícono visual mide menos.
+    Acciones primarias (como "Añadir Maceta") deben implementarse como Floating Action Button (FAB), centradas en la parte inferior de la pantalla según patrón de diseño de la plataforma. Se debe asegurar un mínimo de 48×48 dp como área táctil efectiva por ícono interactivo, incluso si el ícono visual mide menos.<br><br>
 
-- **Plataforma Web:**
+- **Plataforma Web:**<br><br>
 
   - **Estándares y recursos recomendados:**
 
-    Utilizar íconos vectoriales en formato SVG, optimizados para escalabilidad, contraste y compatibilidad con navegadores modernos. Se debe emplear la biblioteca Angular Material para todo tipo de diseño (Google, 2025).
+    Utilizar íconos vectoriales en formato SVG, optimizados para escalabilidad, contraste y compatibilidad con navegadores modernos. Se debe emplear la biblioteca Angular Material para todo tipo de diseño (Google, 2025).<br><br>
 
   - **Tamaños sugeridos:**
 
     - **Menús de navegación lateral o superior:** 24 px
 
-    - **Paneles principales, tarjetas de contenido o widgets:** 32 px
+    - **Paneles principales, tarjetas de contenido o widgets:** 32 px<br><br>
 
   - **Tooltips y accesibilidad:**
 
-    Todo ícono interactivo debe mostrar un tooltip contextual al pasar el cursor (hover). Implementar atributos aria-label para garantizar el cumplimiento de pautas WCAG 2.1 y facilitar el acceso mediante lectores de pantalla (World Wide Web Consortium, 2025)
+    Todo ícono interactivo debe mostrar un tooltip contextual al pasar el cursor (hover). Implementar atributos aria-label para garantizar el cumplimiento de pautas WCAG 2.1 y facilitar el acceso mediante lectores de pantalla (World Wide Web Consortium, 2025)<br><br>
 
   - **Modo oscuro:**
 
@@ -1113,6 +1134,8 @@ Cada subapartado aborda de forma específica los principios, estilos y restricci
 
 #### 5.1.2.1. Web Style Guidelines
 
+En esta subsección se establecen las directrices fundamentales de estilo para la plataforma web, definiendo criterios de tipografía, paleta de colores, espaciado, iconografía y componentes visuales. Estas pautas garantizan coherencia y armonía en la presentación de la interfaz, facilitando una experiencia de navegación clara, accesible y alineada con la identidad de marca.
+
 ##### 5.1.2.1.1. Sistema de cuadrícula y espaciado
 
 A continuación se detalla de forma exhaustiva el Sistema de cuadrícula y espaciado para la Web Application de Macetech, con definición de columnas, márgenes, gutters y puntos de quiebre basados en estándares de la industria y mejores prácticas.
@@ -1139,7 +1162,7 @@ El sistema emplea un grid de 12 columnas fluido, márgenes laterales adaptados y
 
   - **Ancho máximo de contenedor:**
 
-    Para pantallas muy anchas, el contenedor principal se limita a 1366 px, centrado mediante márgenes automáticos, evitando que el contenido se extienda en exceso y pierda legibilidad.
+    Para pantallas muy anchas, el contenedor principal se limita a 1366 px, centrado mediante márgenes automáticos, evitando que el contenido se extienda en exceso y pierda legibilidad.<br><br>
 
   La unidad de medida interna emplea _grid-template-columns_, con "repeat(12, 1fr)" en CSS Grid, facilitando la asignación de spans variables a los elementos contenidos. Para diseños centrados, se limita el contenedor principal a un ancho máximo (max-width) de 1366 px, con laterales rellenos (padding-inline) proporcionales para mantener el contenido centrado en pantallas muy anchas.
 
@@ -1169,7 +1192,11 @@ Tanto gutters como márgenes deben definirse mediante la propiedad CSS gap y var
 
 **Breakpoints**
 
-El sistema admite tres rangos de anchura, ajustándose en cada caso el número de columnas, gutters y márgenes:
+La plataforma contempla tres rangos de anchura, ajustando automáticamente el número de columnas, el espacio entre ellas (gutters) y los márgenes en cada caso para garantizar una composición visual equilibrada y una legibilidad óptima.
+
+###### Tabla 228
+
+_Listado de breakpoints con sus rangos de anchura, márgenes y columnas_
 
 | Rango      | Ancho de pantalla | Columnas | Gutters | Márgenes laterales | Comentario                                                                         |
 | ---------- | ----------------- | -------- | ------- | ------------------ | ---------------------------------------------------------------------------------- |
@@ -1179,15 +1206,19 @@ El sistema admite tres rangos de anchura, ajustándose en cada caso el número d
 
 Cada punto de quiebre se define mediante media queries para adaptar la cuadrícula y mantener el ritmo visual en todas las resoluciones.
 
-###### Figura 46?
+###### Figura 131
 
 _Modelo de cuadrícula con columnas, gutters y márgenes laterales utilizados por la aplicación web y su relación en distintos dispositivos_
 
-<img src="/assets/img/capitulo-5/style-guidelines/web/grid/grid-and-spacing-system-for-app.png" alt="Grid and spacing system used for the web app interface" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/web/grid/grid-and-spacing-system-for-app.png" alt="Grid and spacing system used for the web app interface" width="800" height="250">
 
 ##### 5.1.2.1.2. Responsividad y Adaptabilidad
 
-**Rangos de Anchura y Puntos de Quiebre**
+En esta subsección se detallan los principios y recomendaciones para asegurar que la interfaz se adapte de manera óptima a distintos dispositivos y tamaños de pantalla. Se definirá la estrategia de diseño responsivo, incluyendo puntos de quiebre, rejillas flexibles y patrones de reordenamiento de contenidos, de modo que la experiencia de usuario sea uniforme y funcional tanto en desktop, tabletas y smartphones.
+
+###### Tabla 229
+
+_Rangos de anchura y puntos de quiebre con columnas efectivas y gutters_
 
 | Dispositivo     | Ancho de ventana  | Columnas efectivas      | Márgenes | Gutters |
 | --------------- | ----------------- | ----------------------- | -------- | ------- |
@@ -1215,7 +1246,7 @@ _Modelo de cuadrícula con columnas, gutters y márgenes laterales utilizados po
 
         ((100% − 2×24 px)/2)
 
-    Usa un gutter de 16 px y padding interno de 16 px.
+    Usa un gutter de 16 px y padding interno de 16 px.<br><br>
 
   - **MD–LG:** tarjetas configurables en grids de 3–4 columnas (span de 2–3 fracciones), con gutter de 24 px en LG. Altura mínima uniforme de 200 px para consistencia.
 
@@ -1233,11 +1264,11 @@ _Modelo de cuadrícula con columnas, gutters y márgenes laterales utilizados po
 
 - **Botones de formulario:** ancho 100% en XS, fit‑content en SM–LG con padding 12 px × 24 px, margen superior de 24 px.
 
-###### Figura 47?
+###### Figura 132
 
 _Modelo de responsividad y adaptabilidad distribuida a las cuadrículas y los puntos de quiebre identificados en la aplicación web_
 
-<img src="/assets/img/capitulo-5/style-guidelines/web/responsibility/responsibility-and-adaptability-grids-and-breakpoints-for-app.png" alt="Responsibility and adaptability gris with breakpoints for Macetech's web app" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/web/responsibility/responsibility-and-adaptability-grids-and-breakpoints-for-app.png" alt="Responsibility and adaptability gris with breakpoints for Macetech's web app" width="800" height="400">
 
 ##### 5.1.2.1.3. Tipografía Adaptativa
 
@@ -1277,17 +1308,17 @@ Las unidades relativas permiten que todos los tamaños de fuente se comporten de
   - Un ideal (valor intermedio que crece con la pantalla)
   - Un máximo (evitando tipografías excesivamente grandes).
 
-  ###### Tabla 40 y algo
+###### Tabla 230
 
-  _Modelo de valores de la función clamp() asignados a cada uno de nuestros tipos de texto y encabezados_
+_Modelo de valores de la función clamp() asignados a cada uno de nuestros tipos de texto y encabezados_
 
-  | Nivel tipográfico | Mínimo           | Ideal (fórmula)   | Máximo            |
-  | ----------------- | ---------------- | ----------------- | ----------------- |
-  | Texto auxiliar    | 0.75 rem (12 px) | 0.75 rem + 0.2 vw | 0.875 rem (14 px) |
-  | Cuerpo de texto   | 1 rem (16 px)    | 1 rem + 0.5 vw    | 1.125 rem (18 px) |
-  | H3                | 1.25 rem (20 px) | 1.25 rem + 1 vw   | 1.375 rem (22 px) |
-  | H2                | 1.5 rem (24 px)  | 1.5 rem + 1.5 vw  | 1.75 rem (28 px)  |
-  | H1                | 2 rem (32 px)    | 2 rem + 2 vw 2.25 |  rem (36 px)      |
+| Nivel tipográfico | Mínimo           | Ideal (fórmula)   | Máximo            |
+| ----------------- | ---------------- | ----------------- | ----------------- |
+| Texto auxiliar    | 0.75 rem (12 px) | 0.75 rem + 0.2 vw | 0.875 rem (14 px) |
+| Cuerpo de texto   | 1 rem (16 px)    | 1 rem + 0.5 vw    | 1.125 rem (18 px) |
+| H3                | 1.25 rem (20 px) | 1.25 rem + 1 vw   | 1.375 rem (22 px) |
+| H2                | 1.5 rem (24 px)  | 1.5 rem + 1.5 vw  | 1.75 rem (28 px)  |
+| H1                | 2 rem (32 px)    | 2 rem + 2 vw 2.25 |  rem (36 px)      |
 
 - **Texto auxiliar (caption)**
 
@@ -1313,11 +1344,11 @@ Las unidades relativas permiten que todos los tamaños de fuente se comporten de
 
   - **Legibilidad garantizada:** Los valores mínimos y máximos están dentro de rangos óptimos para lectura continua según estudios de usabilidad tipográfica.
 
-  ###### Figura 48
+###### Figura 133
 
-  _Modelo de responsividad y adaptabilidad distribuida a las cuadrículas y los puntos de quiebre identificados en la aplicación web_
+_Modelo de responsividad y adaptabilidad distribuida a las cuadrículas y los puntos de quiebre identificados en la aplicación web_
 
-  <img src="/assets/img/capitulo-5/style-guidelines/web/adaptive-typography/adaptive-typography-with-clamp.png" alt="Model of adaptive typography with the clamp() function" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/web/adaptive-typography/adaptive-typography-with-clamp.png" alt="Model of adaptive typography with the clamp() function" width="800" height="400">
 
 **Líneas base y altura de línea**
 
@@ -1345,14 +1376,14 @@ Para garantizar que la Web Application de Macetech sea plenamente utilizable por
 
 El contraste cromático es esencial para la percepción nítida del contenido en pantalla. Se establecen los siguientes umbrales:
 
-###### Tabla 40
+###### Tabla 231
 
 _Modelo de contraste crómatico para la percepción nítida de las pantallas de los usuarios de Macetech_
 
 | Tipo de elemento                            | Ratio mínimo                                                                          | Justificación técnica                                                                          |
 | ------------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Texto y elementos interactivos pequeños     | 4.5 : 1                                                                               | Asegura legibilidad de letras de hasta 18 pt y componentes táctiles pequeños (≥ 44×44 px).     |
-| Texto grande (≥ 18 pt o ≥ 14 pt en negrita) | 3 : 1 Permite que títulos y encabezados destacados sean legibles con menor contraste. |
+| Texto grande (≥ 18 pt o ≥ 14 pt en negrita) | 3 : 1 | Permite que títulos y encabezados destacados sean legibles con menor contraste. |
 | Iconografía y bordes                        | 3 : 1                                                                                 | Garantiza que íconos de estado y contornos de cajas se distingan del fondo sin ser intrusivos. |
 | Estados de foco                             | 3 : 1                                                                                 | El anillo de foco debe destacarse sobre el fondo y el elemento subyacente para no perderse.    |
 
@@ -1368,7 +1399,7 @@ _Modelo de contraste crómatico para la percepción nítida de las pantallas de 
 
 El empleo de roles y atributos ARIA dota a la interfaz de una estructura semántica comprensible por lectores de pantalla:
 
-###### Tabla 40
+###### Tabla 232
 
 _Listado de atributos ARIA con distintas funciones utilizadas en el proyecto de Macetech_
 
@@ -1382,7 +1413,7 @@ _Listado de atributos ARIA con distintas funciones utilizadas en el proyecto de 
 
 - **Texto alternativo:** todos los iconos que transmiten información o acción deben llevar un _aria-label_ claro (por ejemplo: “Añadir nueva maceta”).
 
-- **Agrupaciones lógicas:** emplear contenedores semánticos (<main>, <aside>, <header>, <footer>) junto con roles ARIA para reforzar jerarquías de contenido.
+- **Agrupaciones lógicas:** emplear contenedores semánticos (main, aside, header, footer) junto con roles ARIA para reforzar jerarquías de contenido.
 
 **Navegación con teclado**
 
@@ -1406,6 +1437,8 @@ Si bien el apartado de tipografía adaptativa, ya visto en la sección anterior,
 
 #### 5.1.2.2. Mobile Style Guidelines
 
+En esta subsección se definen las pautas de estilo específicas para la versión móvil de la plataforma, abarcando criterios de diseño adaptativo, tipografía, paleta de colores, espaciado y elementos táctiles. Estas directrices aseguran una experiencia de usuario coherente, accesible y optimizada para dispositivos móviles, manteniendo la identidad de marca y facilitando la usabilidad en entornos de interacción táctil.
+
 ##### 5.1.2.2.1 Principios Generales de Interacción Móvil
 
 La aplicación móvil de Macetech debe ofrecer interacciones táctiles naturales, rápidas y predecibles. Para ello, se incorporan métricas precisas de dimensiones de toque y patrones gestuales coherentes con las convenciones de plataforma, garantizando una experiencia cómoda y accesible.
@@ -1414,7 +1447,7 @@ La aplicación móvil de Macetech debe ofrecer interacciones táctiles naturales
 
 - **Dimensiones mínimas y áreas seguras:**
 
-  48 × 48 dp es el área de toque mínima recomendada para botones, íconos interactivos y elementos de control. Esta dimensión asegura una zona táctil suficiente para la mayoría de usuarios, incluyendo aquellos con movilidad reducida o dedos de mayor tamaño.
+  48 × 48 dp es el área de toque mínima recomendada para botones, íconos interactivos y elementos de control. Esta dimensión asegura una zona táctil suficiente para la mayoría de usuarios, incluyendo aquellos con movilidad reducida o dedos de mayor tamaño.<br><br>
 
   Siempre que sea posible, ampliar el área activa a 56 × 56 dp o 64 × 64 dp en elementos primarios (por ejemplo, botones de acción flotante, íconos clave del dashboard), aumentando la precisión y reduciendo errores de selección.
 
@@ -1424,17 +1457,17 @@ La aplicación móvil de Macetech debe ofrecer interacciones táctiles naturales
 
 - **Espaciado entre elementos**
 
-  Mantener un espacio mínimo de 8 dp entre touch targets adyacentes para evitar activaciones accidentales.
+  Mantener un espacio mínimo de 8 dp entre touch targets adyacentes para evitar activaciones accidentales.<br><br>
 
-  En listas o tarjetas, dejar un margen vertical de 16 dp entre filas, de modo que el usuario perciba claramente cada elemento como una unidad independiente.
+  En listas o tarjetas, dejar un margen vertical de 16 dp entre filas, de modo que el usuario perciba claramente cada elemento como una unidad independiente.<br><br>
 
   Los elementos críticos (como “Regar ahora” o “Añadir Maceta”) deben situarse en zonas “thumb‑friendly” de la pantalla (esquinas inferiores), considerando un radio de accesibilidad de al menos 90 dp desde los bordes.
 
-###### Figura 30?
+###### Figura 134
 
 _Modelo de áreas de toque y espacios seguros asignados a los distintos elementos de la aplicación móvil de Macetech_
 
-  <img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/touch-areas-for-mobile-and-safe-space.png" alt="Touch areas and safe space for components in mobile application" width="1000" height="580">
+  <img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/touch-areas-for-mobile-and-safe-space.png" alt="Touch areas and safe space for components in mobile application" width="600" height="500">
 
 **Gestos y Patrones de Interacción**
 
@@ -1466,11 +1499,11 @@ _Modelo de áreas de toque y espacios seguros asignados a los distintos elemento
 
   Uso puntual para reordenar listas de programación de riego o recomendaciones. Elemento arrastrado debe seguir el dedo con un shadow sutil y un scale de 1.05× para indicar estado activo.
 
-###### Figura 30?
+###### Figura 135
 
 _Listado de patrones gestuales disponibles junto a sus directrices para el uso de la aplicación móvil de Macetech_
 
-<img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/gesture-patterns-and-animations-in-mobile.png" alt="Gesture patterns and animations in Macetech's mobile application" width="1000" height="580">
+<img src="/assets/img/capitulo-5/style-guidelines/mobile/gestures/gesture-patterns-and-animations-in-mobile.png" alt="Gesture patterns and animations in Macetech's mobile application" width="800" height="500">
 
 **Transiciones y Animaciones**
 
@@ -1478,11 +1511,11 @@ _Listado de patrones gestuales disponibles junto a sus directrices para el uso d
 
   - 200 ms – 300 ms para transiciones de pantalla (push/pull de vistas).
 
-  - 150 ms – 200 ms para microinteracciones (botones, íconos).
+  - 150 ms – 200 ms para microinteracciones (botones, íconos).<br><br>
 
 - **Curvas de easing:**
 
-  - Material Design recomienda el uso de Cubic‑Bezier(0.4, 0.0, 0.2, 1). Es una función de tiempo de animación CSS que define un ritmo específico para una transición o animación. En este caso, representa una curva de Bézier cúbica que se acelera lentamente al principio y luego acelera rápidamente, dando la impresión de un movimiento que se acelera gradualmente (Google, 2025).
+  - Material Design recomienda el uso de Cubic‑Bezier(0.4, 0.0, 0.2, 1). Es una función de tiempo de animación CSS que define un ritmo específico para una transición o animación. En este caso, representa una curva de Bézier cúbica que se acelera lentamente al principio y luego acelera rápidamente, dando la impresión de un movimiento que se acelera gradualmente (Google, 2025).<br><br>
 
 - **Tipos de transiciones**
 
@@ -1490,7 +1523,7 @@ _Listado de patrones gestuales disponibles junto a sus directrices para el uso d
 
     - **iOS:** Animación deslizante horizontal (“push” y “pop”) conforme a las Human Interface Guidelines, que simula el apilamiento y desempilamiento de vistas en una navegación jerárquica, reforzando la pila de pantallas (Apple Inc., 2025).
 
-    - **Android:** Animación de “slide-in/out” vertical, característico de Material Design, que otorga una sensación de continuidad desde la parte inferior de la pantalla, acorde a la dirección natural del pulgar en dispositivos móviles (Google, 2025).
+    - **Android:** Animación de “slide-in/out” vertical, característico de Material Design, que otorga una sensación de continuidad desde la parte inferior de la pantalla, acorde a la dirección natural del pulgar en dispositivos móviles (Google, 2025).<br><br>
 
   - **Visibilidad de contexto**
 
@@ -1500,19 +1533,19 @@ _Listado de patrones gestuales disponibles junto a sus directrices para el uso d
 
     - **Consistencia cognitiva:** Facilita el seguimiento mental del flujo de navegación, reforzando la relación entre las pantallas en términos de progresión de tareas.
 
-    - **Duración recomendada:** 250 ms – 300 ms. Este intervalo se sitúa en el “sweet spot” de las transiciones fluidas (200 ms – 350 ms) identificado por investigaciones en experiencia de usuario, que equilibran rapidez y claridad sin generar sensación de lentitud ni brusquedad (Apple Inc., 2025)
+    - **Duración recomendada:** 250 ms – 300 ms. Este intervalo se sitúa en el “sweet spot” de las transiciones fluidas (200 ms – 350 ms) identificado por investigaciones en experiencia de usuario, que equilibran rapidez y claridad sin generar sensación de lentitud ni brusquedad (Apple Inc., 2025)<br><br>
 
   - **Bottom Sheets**
 
     - **Desplazamiento inicial:** 30 px de avance antes de soltar el elemento (threshold), siguiendo Material Design, para que el sistema distinga entre un gesto involuntario y la intención de abrir el panel (Google, 2025).
 
-    - **Animación completa:** Deslizamiento hasta cubrir el 100 % de la altura de la zona designada (parcial o total) en 250 ms, optimizando la sensación de ligereza y respuesta inmediata. Esto mejora la relevancia de la información secundaria (programación de riego, historial) sin abandonar la vista subyacente.
+    - **Animación completa:** Deslizamiento hasta cubrir el 100 % de la altura de la zona designada (parcial o total) en 250 ms, optimizando la sensación de ligereza y respuesta inmediata. Esto mejora la relevancia de la información secundaria (programación de riego, historial) sin abandonar la vista subyacente.<br><br>
 
   - **Modales centrados**
 
     - **Efecto de escala:** Crecimiento de 0.95× a 1.0× en 200 ms, complementado con un fade-in de opacidad desde 0 % a 100 %. El ligero “zoom” apela a la percepción táctil de enfoque, atrayendo la atención hacia el contenido modal sin desconectar bruscamente de la pantalla de fondo.
 
-    - **Duración:** 180 ms – 220 ms, rango óptimo para indicar prioridad alta del modal y permitir a la interfaz reaccionar sin demoras perceptibles (Apple Inc., 2025).
+    - **Duración:** 180 ms – 220 ms, rango óptimo para indicar prioridad alta del modal y permitir a la interfaz reaccionar sin demoras perceptibles (Apple Inc., 2025).<br><br>
 
   - **Feedback en acciones**
 
@@ -1554,7 +1587,7 @@ La navegación en dispositivos móviles debe organizarse de forma clara, predeci
 
     - Ideal para accesos frecuentes: “Mis Macetas”, “Alertas” y “Programación”.
 
-    Según la ley de Fitts, los objetivos cercanos al borde inferior requieren menos tiempo de selección y ofrecen mayor precisión en un pulgar centrado o desviado ligeramente hacia un lado.
+    Según la ley de Fitts, los objetivos cercanos al borde inferior requieren menos tiempo de selección y ofrecen mayor precisión en un pulgar centrado o desviado ligeramente hacia un lado.<br><br>
 
 - **Navigation Drawer (Hamburger Menu)**
 
@@ -1620,11 +1653,11 @@ Son encabezados flexibles que responden a cambios de contexto, scroll y jerarqu�
 
   - **Collapsing Toolbar:** en pantallas de detalle, el header puede ampliarse para mostrar información adicional (imagen de la planta, nombre científico) antes de contraerse.
 
-###### Figura 30?
+###### Figura 136
 
 _Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la aplicación móvil de Macetech_
 
-  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="1000" height="580">
+  <img src="/assets/img/capitulo-5/style-guidelines/mobile/hierarchy/visual-hierarchy-and-navigation-in-mobile.png" alt="Visual hierarchy and navigation in Macetech's Mobile Application" width="800" height="700">
 
 **Principios Generales**
 
@@ -1638,13 +1671,15 @@ _Modelo de jerarquía de componentes aplicados en la interfaz de usuario de la a
 
 - **Accesibilidad**
 
-  Todos los elementos de navegación deben tener un modelo de focus y cumplir con las áreas de toque mínimas.Se deben proveer etiquetas descriptivas (aria-label, accessibilityLabel) para lectores de pantalla.
+  Todos los elementos de navegación deben tener un modelo de focus y cumplir con las áreas de toque mínimas. Se deben proveer etiquetas descriptivas (aria-label, accessibilityLabel) para lectores de pantalla.
 
 - **Pruebas de usabilidad**
 
   Realizar tests con usuarios en dispositivos reales, evaluando la facilidad para alcanzar elementos y comprender la jerarquía.
 
 ##### 5.1.2.2.1. Android Style Guidelines
+
+En esta sección se detallan las directrices de estilo específicas para la plataforma Android, incluyendo patrones de navegación Material Design, tamaños y pesos tipográficos recomendados, paleta de colores adaptada al ecosistema Android, espaciados y márgenes, así como estilos de botones, componentes y animaciones. Estas pautas buscan aprovechar las convenciones nativas del sistema operativo para ofrecer una experiencia intuitiva, coherente y accesible, al tiempo que se mantiene la identidad visual de la solución.
 
 ###### 5.1.2.2.1.1. Uso de Material Components (MDC)
 
@@ -1706,7 +1741,7 @@ El TopAppBar funciona para la navegación principal y contexto por pantalla. La 
 
 - **Elevación dinámica:** de 0dp a 4dp en scroll para reforzar jerarquía.
 
-###### Tabla 35
+###### Tabla 233
 
 _Modelo de Métricas UI/UX recomendadas para los Material Components de Android_
 
@@ -1730,6 +1765,11 @@ SF Symbols es el sistema oficial de iconos vectoriales de Apple, integrado en iO
 - Incluye variantes multicolor (palette, hierarchical, multicolor) para distintos modos visuales (claro/oscuro).
 
 - Fácil integración en UIKit y SwiftUI con un systemName.
+
+###### Tabla 233
+
+_Listado de propiedades distintas a utilizar para la iconografía de dispositivos iOS para Macetech_
+
   | Propiedad | Recomendación para iOS | Justificación UX |
   |-------------------|---------------------------------------------------------|--------------------------------------------------|
   | Tamaño base (icono) | 20–28 pt | Claridad en pantallas Retina |
@@ -1795,49 +1835,64 @@ La arquitectura de información de Macetech se ha diseñado para ofrecer una exp
 
 Macetech organiza el contenido de manera que los usuarios ya aficionados o profesionales de la jardinería puedan acceder fácilmente a la información y funcionalidades que necesitan. A continuación se describen los sistemas de organización visual y esquemas de categorización aplicados por plataforma:
 
-- **Landing Page**
-  | Sistema de Organización Visual | Aplicación Específica |
-  | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-  | Jerárquica | La información se presenta de lo general a lo específico: _Propuesta de valor_, _Beneficios_, _Funcionalidades_, _Planes_. |
-  | Secuencial | En secciones como _¿Cómo funciona?_ se guía al usuario paso a paso en el uso de Macetech. |
+###### Tabla 234
 
-- **Web Application**
+_Sistema de organización de la Landing Page de Macetech_
 
-  | Sistema de Organización Visual | Aplicación Específica                                                                       |
-  | ------------------------------ | ------------------------------------------------------------------------------------------- |
-  | Jerárquica                     | Panel principal muestra alertas, macetas activas y métricas, seguidas de vistas detalladas. |
-  | Matricial                      | Permite al usuario comparar macetas y plantas en tablas y gráficos paralelos.               |
+| Sistema de Organización Visual | Aplicación Específica |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Jerárquica | La información se presenta de lo general a lo específico: _Propuesta de valor_, _Beneficios_, _Funcionalidades_, _Planes_. |
+| Secuencial | En secciones como _¿Cómo funciona?_ se guía al usuario paso a paso en el uso de Macetech. |
 
-  | Esquema de Categorización | Aplicación Específica                                                            |
-  | ------------------------- | -------------------------------------------------------------------------------- |
-  | Cronológico               | Historial de riego, alertas y cambios se presentan por fecha descendente.        |
-  | Por tópicos               | Macetas, plantas, sensores, configuraciones y reportes se agrupan temáticamente. |
+###### Tabla 235
 
-- **App Mobile**
+_Sistema de organización de la Web Application de Macetech_
 
-  | Sistema de Organización Visual | Aplicación Específica                                                          |
-  | ------------------------------ | ------------------------------------------------------------------------------ |
-  | Jerárquica                     | Navegación desde el _Dashboard_ a detalles de cada planta, alerta o historial. |
-  | Secuencial                     | Flujo de registro de macetas y configuración de alertas paso a paso.           |
+| Sistema de Organización Visual | Aplicación Específica                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------- |
+| Jerárquica                     | Panel principal muestra alertas, macetas activas y métricas, seguidas de vistas detalladas. |
+| Matricial                      | Permite al usuario comparar macetas y plantas en tablas y gráficos paralelos.               |
+
+###### Tabla 236
+
+_Esquema de categorízación de la Web Application de Macetech_
+
+| Esquema de Categorización | Aplicación Específica                                                            |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Cronológico               | Historial de riego, alertas y cambios se presentan por fecha descendente.        |
+| Por tópicos               | Macetas, plantas, sensores, configuraciones y reportes se agrupan temáticamente. |
+
+###### Tabla 237
+
+_Sistema de organización de la Mobile Application de Macetech_
+
+| Sistema de Organización Visual | Aplicación Específica                                                          |
+| ------------------------------ | ------------------------------------------------------------------------------ |
+| Jerárquica                     | Navegación desde el _Dashboard_ a detalles de cada planta, alerta o historial. |
+| Secuencial                     | Flujo de registro de macetas y configuración de alertas paso a paso.           |
 
 ### 5.2.2. Labeling Systems
 
 En esta sección se definen los principios y decisiones de etiquetado que guían la forma en que los usuarios interpretan e interactúan con el contenido en la Landing Page, la App Web y la App Móvil. Se prioriza el uso de un lenguaje claro, consistente y orientado a la acción para facilitar la comprensión inmediata, reducir la carga cognitiva y mejorar la experiencia general de navegación. Las etiquetas han sido adaptadas al perfil de cada tipo de usuario, asegurando coherencia entre plataformas y facilidad de localización de funciones clave.
 
-- **Landing Page**
+###### Tabla 238
 
-  | **Conjunto de información**  | **Etiqueta usada**    | **Razonamiento**                                             |
-  | ---------------------------- | --------------------- | ------------------------------------------------------------ |
-  | Presentación general         | **Inicio**            | Término tradicional y esperado en sitios web.                |
-  | Qué es Macetech              | **¿Qué es Macetech?** | Pregunta directa que despierta interés.                      |
-  | Funcionalidades del producto | **Funciones**         | Más corto que “funcionalidades”, mantiene claridad.          |
-  | Comparación de membresías    | **Planes**            | Término breve y claro que transmite opciones de suscripción. |
-  | Información del equipo       | **Equipo**            | Aporta transparencia sin rodeos.                             |
-  | Contacto                     | **Contáctanos**       | Familiar y directo.                                          |
-  | Descarga de app              | **Descargar App**     | Acción clara que guía la conversión.                         |
-  | Soporte / Ayuda              | **FAQs**              | Convención internacional fácil de identificar.               |
+_Sistema de etiquetado de la Landing Page de Macetech_
 
-- **Web Application**
+| **Conjunto de información**  | **Etiqueta usada**    | **Razonamiento**                                             |
+| ---------------------------- | --------------------- | ------------------------------------------------------------ |
+| Presentación general         | **Inicio**            | Término tradicional y esperado en sitios web.                |
+| Qué es Macetech              | **¿Qué es Macetech?** | Pregunta directa que despierta interés.                      |
+| Funcionalidades del producto | **Funciones**         | Más corto que “funcionalidades”, mantiene claridad.          |
+| Comparación de membresías    | **Planes**            | Término breve y claro que transmite opciones de suscripción. |
+| Información del equipo       | **Equipo**            | Aporta transparencia sin rodeos.                             |
+| Contacto                     | **Contáctanos**       | Familiar y directo.                                          |
+| Descarga de app              | **Descargar App**     | Acción clara que guía la conversión.                         |
+| Soporte / Ayuda              | **FAQs**              | Convención internacional fácil de identificar.               |
+
+###### Tabla 239
+
+_Sistema de etiquetado del Web Application de Macetech_
 
   | **Conjunto de información** | **Etiqueta usada** | **Razonamiento**                                                              |
   | --------------------------- | ------------------ | ----------------------------------------------------------------------------- |
@@ -1850,7 +1905,10 @@ En esta sección se definen los principios y decisiones de etiquetado que guían
   | Perfil del usuario          | **Perfil**         | Identificación directa del usuario con su información.                        |
   | Membresías                  | **Plan**           | Más corto y directo que “membresía”, común en plataformas digitales.          |
 
-- **App Mobile**
+###### Tabla 240
+
+_Sistema de etiquetado del Mobile Application de Macetech_
+
   | **Conjunto de información** | **Etiqueta usada** | **Razonamiento** |
   | --------------------------- | ------------------ | -------------------------------------------------------------------------- |
   | Pantalla principal | **Inicio** | Aporta familiaridad; preferido sobre “Dashboard” en apps móviles. |
@@ -1864,7 +1922,9 @@ En esta sección se definen los principios y decisiones de etiquetado que guían
 
 Las meta etiquetas nos permiten codificar y especificar metadatos en una página web. Aunque no son visibles para los usuarios, los navegadores y rastreadores web las leen. Estas etiquetas facilitan el análisis de archivos HTML y ayudan en el mantenimiento del contenido. Además, influyen en el posicionamiento de nuestra página en los motores de búsqueda.
 
-- **Landing Page**
+###### Tabla 241
+
+_SEO Tags y Meta Tags de la Landing Page de Macetech_
 
   <table>
     <thead>
@@ -1942,7 +2002,9 @@ Las meta etiquetas nos permiten codificar y especificar metadatos en una página
     </tbody>
   </table>
 
-- **Web Application**
+###### Tabla 242
+
+_SEO Tags y Meta Tags del Web Application de Macetech_
 
   <table>
     <thead>
@@ -1998,7 +2060,10 @@ Las meta etiquetas nos permiten codificar y especificar metadatos en una página
     </tbody>
   </table>
 
-- **App Mobile**
+###### Tabla 243
+
+_SEO Tags y Meta Tags del Mobile Application de Macetech_
+
   | Elemento | Valor | Descripción |
   | ------------------ | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
   | App Title | **Macetech Móvil – Jardinería inteligente** | Título visible en App Store / Google Play, centrado en el beneficio principal del usuario. |
@@ -2012,24 +2077,33 @@ Las meta etiquetas nos permiten codificar y especificar metadatos en una página
 
 Macetech implementa sistemas de búsqueda diseñados para brindar asistencia activa al usuario en la localización de datos clave dentro del producto digital. Estas decisiones buscan evitar que los usuarios se sientan desorientados o saturados por el volumen de información, permitiéndoles encontrar lo que necesitan de manera rápida, intuitiva y contextual. A continuación, se detallan las opciones de búsqueda, filtros disponibles y comportamiento visual de los resultados para cada entorno:
 
-- **Landing Page**
+###### Tabla 244
+
+_Sistemas de búsqueda de la Landing Page de Macetech_
+
   | Medio de búsqueda | Filtros disponibles | Representación de resultados |
   | ---------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------ |
   | Navegación por anclas (scroll-spy) | Por tópicos como “Servicios”, “Precios”, “Contacto”. | Resalta el bloque activo y ancla visualmente la vista a esa sección automáticamente. |
 
-- **Web Application**
+###### Tabla 245
+
+_Sistemas de búsqueda del Web Application de Macetech_
+
   | Medio de búsqueda | Filtros disponibles | Representación de resultados |
   | ----------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
   | Barra superior persistente | Tipo de planta, nivel de humedad, estado de sensores, nombre de la maceta. | Tabla dinámica o cards con badges visuales de estado y color de prioridad. |
   | Filtros por columna en tablas | Columnas de “Estado”, “Última actualización”, “Ubicación” permiten búsqueda rápida. | Se actualiza el contenido de la tabla según los criterios elegidos. |
 
-- **App Mobile**
+###### Tabla 246
+
+_Sistemas de búsqueda del Mobile Application de Macetech_
+
   | Medio de búsqueda | Filtros disponibles | Representación de resultados |
   | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------ |
   | Barra de búsqueda local | Secciones específicas como “Macetas”, “Alertas” o “Plantas”. | Lista con tarjetas filtradas en tiempo real según relevancia. |
   | Chips de filtros rápidos | “Críticas”, “Humedad baja”, “Macetas activas”, “Favoritas”. | Resaltado visual de los resultados que coinciden con cada filtro seleccionado. |
 
-Reglas comunes en todos los productos
+**Reglas comunes en todos los productos**
 
 - Las búsquedas son tolerantes a errores tipográficos (ej. “humedá” devuelve “humedad”).
 
@@ -2045,7 +2119,9 @@ Estos sistemas están orientados a reducir la carga cognitiva del usuario, permi
 
 Macetech emplea un conjunto coherente de patrones de navegación que permiten a los usuarios—tanto domésticos como profesionales—explorar el sistema sin fricción, facilitando tareas como monitorear plantas, registrar macetas, configurar alertas o descargar la app. A continuación, se presentan las decisiones principales divididas por producto:
 
-- **Navegación Global**
+###### Tabla 247
+
+_Patrón de Navegación Global en la plataforma de Macetech_
 
   | Plataforma       | Patrón                   | Detalles                                                                                      |
   | ---------------- | ------------------------ | --------------------------------------------------------------------------------------------- |
@@ -2053,14 +2129,18 @@ Macetech emplea un conjunto coherente de patrones de navegación que permiten a 
   | **App Web**      | Barra superior + sidebar | En escritorio, barra superior con navegación lateral para secciones clave del dashboard.      |
   | **App Móvil**    | Bottom Tab Bar           | Íconos + texto para secciones principales: Dashboard, Macetas, Alertas, Perfil, Ajustes, etc. |
 
-- **Navegación contextual**
+###### Tabla 248
+
+_Patrón de Navegación Contextual en la plataforma de Macetech_
 
   | Aplicación    | Implementación                                                                 |
   | ------------- | ------------------------------------------------------------------------------ |
   | **App Web**   | Migas de pan visibles en secciones internas (_Dashboard > Macetas > Config._). |
   | **App Móvil** | Enlaces rápidos entre secciones relacionadas                                   |
 
-- **Desplazamiento anclado y scroll-spy**
+###### Tabla 249
+
+_Patrón de desplazamiento anclado y scroll-spy en la plataforma de Macetech_
 
   | Página           | Técnica aplicada            | Detalle                                                                     |
   | ---------------- | --------------------------- | --------------------------------------------------------------------------- |
@@ -2081,14 +2161,18 @@ Macetech emplea un conjunto coherente de patrones de navegación que permiten a 
     - Verbos en infinitivo
     - Adaptados para móvil con diseño táctil
 
-- **Selector de idioma**
+###### Tabla 250
+
+_Modelo de selección de idioma en la plataforma de Macetech_
 
   | Ubicación | Funcionalidad                                                              |
   | --------- | -------------------------------------------------------------------------- |
   | Header    | Botón ES/EN visible en todas las páginas.                                  |
   | Resultado | Traducción instantánea de menús, botones y CTAs según idioma seleccionado. |
 
-- **Navegación secundaria**
+###### Tabla 251
+
+_Modelo de navegación secundaria en la plataforma de Macetech_
 
   | Ubicación | Contenido agrupado                                                                                            |
   | --------- | ------------------------------------------------------------------------------------------------------------- |
@@ -2098,43 +2182,259 @@ Con este sistema unificado, los usuarios pueden cumplir sus objetivos como monit
 
 ## 5.3. Landing Page UI Design
 
+En esta sección, el equipo presenta la propuesta de diseño de interfaz de usuario para la Landing Page, detallando cómo se han traducido las decisiones de diseño y la arquitectura de la información en elementos visuales coherentes y funcionales. Se explica el proceso seguido para estructurar los contenidos, jerarquizar la información y seleccionar patrones de interacción que faciliten la captación de la atención del usuario y guíen su recorrido hacia los objetivos clave de la plataforma.
+
+Desde una perspectiva teórica, esta propuesta se sustenta en los principios de diseño de interfaces que promueven la claridad, la consistencia y la usabilidad. Se adoptan patrones de organización de contenidos así como recomendaciones sobre el uso efectivo del espacio en blanco y la composición visual para mejorar la legibilidad y la orientación del usuario (Tidwell et al., 2019). Estas directrices aseguran que cada componente de la Landing Page, desde los encabezados y llamadas a la acción hasta la disposición de imágenes y textos, contribuya a una experiencia fluida y atractiva, alineada con las mejores prácticas de diseño.
+
+Se apelan al uso de rejillas modulares para organizar contenidos, al principio de consistencia para uniformizar estilos y comportamientos, y a la regla de proximidad para agrupar visualmente elementos relacionados. Además, se incorporan pautas de interacción que aseguren que la disposición y el énfasis de cada componente faciliten la comprensión rápida y la toma de decisiones por parte del usuario.
+
+El prototipo interactivo de la interfaz se encuentra alojado en Figma. Allí podrás explorar en detalle la estructura de pantallas, revisar los componentes diseñados (botones, formularios, menús, etc.) y navegar por los flujos de usuario previstos tanto para escritorio como para dispositivos móviles. Accede al proyecto completo en:
+[Proyecto de Figma de la Landing Page de Macetech](https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Design?node-id=7-2&t=9QnRawZyBzKLNDDq-1)
+
 ### 5.3.1. Landing Page Wireframe
 
-Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Design?node-id=7-2&t=9QnRawZyBzKLNDDq-1
+En esta subsección se presentan y explican los wireframes diseñados para el Landing Page en sus versiones para Desktop Web Browser y Mobile Web Browser. Cada wireframe está acompañado de una descripción detallada que ilustra cómo se han dispuesto los bloques de contenido, los puntos de interacción clave y la jerarquía visual. Asimismo, se destaca de manera explícita la aplicación de los principios de diseño, como la simplicidad, consistencia y retroalimentación, así como la incorporación de prácticas de diseño inclusivo para garantizar accesibilidad y usabilidad a un amplio espectro de usuarios.
 
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding1.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding2.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding3.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding4.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding5.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding6.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding7.png" alt="WireFrame" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding8.png" alt="WireFrame" width="600" height="300"> <br>
+Desde el punto de vista teórico, la elaboración de estos wireframes se fundamenta en los conceptos de arquitectura de información y en la metodología de creación de mockups como paso intermedio entre el boceto conceptual y el prototipo de alta fidelidad. La correcta estructuración de la interfaz, el uso adecuado de rejillas y puntos focales, y la consideración de patrones de navegación responsiva permiten anticipar y resolver posibles fricciones en la experiencia de usuario (Uzayr, 2022). De este modo, los wireframes no solo definen la disposición visual, sino que también actúan como una guía clara para el desarrollo y las posteriores fases de prueba de usabilidad.
+
+###### Figura 137
+
+_Grupo de Wireframes desarrollados para el diseño de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding1.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding2.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding3.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding4.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding5.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding6.png" alt="WireFrame" width="600" height="400"> 
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding7.png" alt="WireFrame" width="600" height="400">
+<img src="/assets/img/capitulo-5/landing-page/wireframes/WireFramesLanding8.png" alt="WireFrame" width="600" height="400"> 
 
 ### 5.3.2. Landing Page Mock-up
 
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding1.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding2.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding3.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding4.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding5.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding6.png" alt="MockUp" width="600" height="300"> <br>
-<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding7.png" alt="MockUp" width="600" height="300"> <br>
+En esta subsección se presentan los mock‑ups detallados del Landing Page en sus versiones para Desktop Web Browser y Mobile Web Browser. Cada mock‑up muestra la disposición definitiva de los elementos visuales, la tipografía, los componentes interactivos y la navegación, reflejando fielmente el Design System establecido para los productos digitales. A través de la explicación de cada pantalla, se evidencia la aplicación de los principios de consistencia, legibilidad y jerarquía visual, así como la incorporación de prácticas de diseño inclusivo y una arquitectura de información optimizada para guiar al usuario de forma intuitiva y accesible.
+
+Desde una perspectiva teórica, la creación de mock‑ups constituye una fase crítica que traduce los wireframes de baja fidelidad en representaciones visuales realistas, permitiendo validar la coherencia estética y funcional del interfaz antes de la implementación (Uzayr, 2022). Este proceso garantiza que los patrones diseñados, la paleta de colores, la iconografía y los estilos de interacción se apliquen de manera uniforme, respetando las pautas del Design System y asegurando una experiencia de usuario sólida y alineada con los objetivos del proyecto.
+
+###### Figura 138
+
+_Grupo de Mock-Ups desarrollados para el diseño de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding1.png" alt="MockUp" width="600" height="450"> 
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding2.png" alt="MockUp" width="600" height="450"> 
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding3.png" alt="MockUp" width="600" height="450">
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding4.png" alt="MockUp" width="600" height="450"> 
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding5.png" alt="MockUp" width="600" height="450"> 
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding6.png" alt="MockUp" width="600" height="450"> 
+<img src="/assets/img/capitulo-5/landing-page/mockups/MockUpLanding7.png" alt="MockUp" width="600" height="450"> 
 
 ## 5.4. Applications UX/UI Design
 
-Link de figma: https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Design?node-id=7-2&t=9QnRawZyBzKLNDDq-1
+En esta sección se desglosan las propuestas visuales y de interacción destinadas a cada una de las aplicaciones que conforman la experiencia de usuario de la solución. A través de diversos subapartados, se presentan las interfaces específicas, sus patrones de navegación, la disposición de componentes y la dinámica de interacción prevista para cada plataforma. El objetivo es mostrar de manera clara cómo cada elemento gráfico y de comportamiento colabora en la cohesión y la fluidez de la experiencia global.
+
+Desde una perspectiva conceptual, las propuestas parten de los principios del diseño centrado en el usuario, poniendo especial énfasis en la consistencia visual, la retroalimentación inmediata y la adaptabilidad a distintos contextos de uso. Se incorporan patrones de interacción reconocibles y prácticas de diseño inclusivo para garantizar accesibilidad y usabilidad. Además, se respeta el Design System establecido, asegurando que tipografía, iconografía, paleta de colores y componentes interactivos mantengan coherencia y refuercen la identidad de marca en todas las aplicaciones.
+
+El prototipo interactivo de la interfaz se encuentra alojado en Figma. Allí podrás explorar en detalle la estructura de pantallas, revisar los componentes diseñados (botones, formularios, menús, etc.) y navegar por los flujos de usuario previstos tanto para escritorio como para dispositivos móviles. Accede al proyecto completo en:
+[Proyecto de Figma de la Aplicación Web y Aplicación Móvil de Macetech](https://www.figma.com/design/xFU95RuqCScZF1lac0c4fk/Macetech-Design?node-id=7-2&t=9QnRawZyBzKLNDDq-1)
 
 ### 5.4.1. Applications Wireframes
 
+En esta subsección se presentan y describen los wireframes de las aplicaciones web y móvil que integran la experiencia de usuario de la solución. Cada wireframe incluye la disposición de los elementos de interfaz, los flujos de navegación y los puntos de interacción principales, con el fin de ilustrar cómo se articularán las pantallas y funcionalidades clave en dispositivo móvil. La explicación de cada diseño pone de relieve la aplicación de los principios de simplicidad, consistencia visual y claridad en la jerarquía de contenidos, así como la integración de prácticas de diseño inclusivo para asegurar accesibilidad y confort de uso.
+
+Desde un enfoque teórico, la elaboración de wireframes constituye una etapa esencial que permite traducir los requerimientos de usuario y la arquitectura de información en esquemas visuales de baja fidelidad, facilitando la identificación temprana de posibles mejoras y la validación de conceptos antes de pasar a prototipos de alta fidelidad (Uzayr, 2022). Al utilizar las herramientas recomendadas para wireframing, se garantiza precisión en la representación de componentes, modularidad en el diseño y una base sólida para la creación de interfaces móviles cohesivas y alineadas con el Design System establecido.
+
 #### 5.4.1.1. Web Applications Wireframes
+
+En esta subsección se presentan y describen los wireframes correspondientes a la aplicación web, mostrando de manera detallada la disposición de los elementos de interfaz, los flujos de navegación y los puntos de interacción clave. Se explicará cómo cada diseño preliminar incorpora los principios fundamentales de usabilidad, los elementos visuales definidos en el Design System, prácticas de diseño inclusivo y una arquitectura de información optimizada para garantizar que los usuarios encuentren de forma rápida y natural las funcionalidades esenciales.
+
+Teóricamente, la elaboración de wireframes para aplicaciones web actúa como un puente entre el concepto y la implementación, permitiendo validar la estructura de contenido y la jerarquía visual antes de invertir en prototipos de alta fidelidad (Uzayr, 2022). Esta metodología facilita la detección temprana de posibles problemas de navegación, la optimización del espaciado y la organización de componentes, y asegura que la experiencia resultante sea coherente, accesible y alineada con los objetivos del proyecto y las expectativas de los usuarios.
+
+###### Figura 139
+
+_Grupo de Wireframes desarrollados para las pantallas de Sign-In, Sign-Up y Recover Password de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-1.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-2.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-3.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-4.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-5.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-6.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-7.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-8.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-9.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-10.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-11.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/iam-wireframe-12.png" alt="Wireframe" width="1000" height="550"> 
+
+###### Figura 140
+
+_Grupo de Wireframes desarrollados para las pantallas de Subscriptions and Payments de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/subscriptions-and-payments-wireframe-1.png" alt="Wireframe" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/subscriptions-and-payments-wireframe-2.png" alt="Wireframe" width="550" height="1000"> 
+
+
+###### Figura 141
+
+_Grupo de Wireframes desarrollados para las pantallas de Notifications de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/notifications-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 142
+
+_Grupo de Wireframes desarrollados para las pantallas de Home de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/home-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 143
+
+_Grupo de Wireframes desarrollados para las pantallas de Profile de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-7.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-8.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/profile-wireframe-9.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 144
+
+_Grupo de Wireframes desarrollados para las pantallas de Plat Selection de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-selection-wireframe-6.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 145
+
+_Grupo de Wireframes desarrollados para las pantallas de Plat Edit de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-edit-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/plant-edit-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 146
+
+_Grupo de Wireframes desarrollados para las pantallas de Checkout de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/checkout-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 147
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Graphics de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-3.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-4.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-5.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-6.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-7.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-graphic-wireframe-8.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 147
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Alerts de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-alerts-wireframe-1.png" alt="MockUp" width="1000" height="550"> 
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-alerts-wireframe-2.png" alt="MockUp" width="1000" height="550"> 
+
+###### Figura 148
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Recommendations de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-recommendations-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-recommendations-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 149
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Reports de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-1.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-3.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-4.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-5.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-6.png" alt="MockUp" width="1000" height="550">
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-reports-wireframe-7.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 150
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-History de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-history-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-history-wireframe-2.png" alt="MockUp" width="1000" height="550">
+
+###### Figura 151
+
+_Grupo de Wireframes desarrollados para las pantallas de Dashboard-Restrictions de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-1.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-2.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-3.png" alt="MockUp" width="1000" height="550">
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/web-app/dashboard-restrictions-wireframe-4.png" alt="MockUp" width="1000" height="550">
+
 #### 5.4.1.2. Mobile Applications Wireframes
 
+En esta subsección se presentan y describen los wireframes correspondientes a la aplicación móvil, mostrando de manera detallada la disposición de los elementos de interfaz, los flujos de navegación y los puntos de interacción clave adaptados a pantallas táctiles. Se explicará cómo cada diseño preliminar incorpora los principios fundamentales de usabilidad móvil, los componentes definidos en el Design System, prácticas de diseño inclusivo y una arquitectura de información optimizada, garantizando que los usuarios puedan acceder de forma rápida e intuitiva a las funcionalidades esenciales en cualquier contexto de uso.
+
+Desde una perspectiva teórica, la creación de wireframes móviles permite validar la organización de contenido y la jerarquía visual en pantallas de menor tamaño antes de avanzar a prototipos de alta fidelidad, identificando tempranamente posibles dificultades de navegación y gestos táctiles (Uzayr, 2022). Esta metodología asegura que el espaciado, los controles interactivos y los patrones de desplazamiento se diseñen de manera coherente, accesible y alineada con las expectativas de los usuarios, optimizando la experiencia en dispositivos móviles.
+
+###### Figura 152
+
+_Grupo de Wireframes desarrollados para las pantallas de Sign-In, Sign-up y Recover Password de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/iam-wireframes.png" alt="MockUp" width="600" height="900">
+
+###### Figura 153
+
+_Grupo de Wireframes desarrollados para las pantallas de Notifications de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/notifications-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 154
+
+_Grupo de Wireframes desarrollados para las pantallas de Profile de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/profile-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 155
+
+_Grupo de Wireframes desarrollados para las pantallas de Home de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/home-wireframes.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 156
+
+_Grupo de Wireframes desarrollados para las pantallas de Pot Management de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/wireframes/mobile-app/pot-wireframes.png" alt="MockUp" width="500" height="1000">
 
 ### 5.4.2. Applications Wireflow Diagrams
 
 #### 5.4.2.1. Web Applications Wireflow Diagrams
-
 
 - **1. Registro e Inicio de Sesión del Usuario**
   Este flujo describe el proceso que permite a nuevos usuarios registrarse en la plataforma y posteriormente iniciar sesión para acceder a sus funcionalidades. Incluye pasos como completar el formulario de registro, validación de credenciales e ingreso exitoso al sistema.
@@ -2179,6 +2479,35 @@ Los siguientes mockups representan las interfaces clave de una plataforma de ges
 
 #### 5.4.3.2. Mobile Applications Mock-ups
 
+###### Figura 157
+
+_Grupo de Mockups desarrollados para las pantallas de Sign-In, Sign-up y Recover Password de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/iam-mockup.png" alt="MockUp" width="600" height="900">
+
+###### Figura 158
+
+_Grupo de Mockups desarrollados para las pantallas de Notifications de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/notifications-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 159
+
+_Grupo de Mockups desarrollados para las pantallas de Profile de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/profile-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 160
+
+_Grupo de Mockups desarrollados para las pantallas de Home de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/home-mockup.png" alt="MockUp" width="1000" height="600">
+
+###### Figura 161
+
+_Grupo de Mockups desarrollados para las pantallas de Pot Management de la Mobile Application de Macetech_
+
+<img src="/assets/img/capitulo-5/ux-ui-design/mock-ups/mobile-app/pot-mockup.png" alt="MockUp" width="500" height="1000">
 
 ### 5.4.4. Applications User Flow Diagrams
 Los siguientes User Flows representan los principales recorridos que un usuario puede seguir dentro de la aplicación, desde el acceso inicial hasta la personalización de su experiencia. Cada flujo responde a un objetivo específico del usuario (User Goal) y está basado en los mockups desarrollados. Se abordan procesos clave como el registro e inicio de sesión, la interacción con macetas inteligentes, la actualización de membresía, y la configuración de cuenta y notificaciones, asegurando una experiencia intuitiva, eficiente y centrada en las necesidades del usuario.
@@ -2212,7 +2541,6 @@ Los siguientes User Flows representan los principales recorridos que un usuario 
 - **4. Configuración de Cuenta y Preferencias de Notificación**
   Este flujo muestra cómo el usuario puede gestionar su perfil, actualizar sus datos personales y modificar las preferencias de notificación desde la sección de configuración, personalizando la experiencia de uso según sus necesidades.
   <img src="/assets/img/capitulo-5/ux-ui-design/user-flow/userflow_2_mobile.png"  alt="MockUp" width="1000" height="700"> <br>
-
 
 ## 5.5. Applications Prototyping
 
