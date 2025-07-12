@@ -68,6 +68,8 @@ La presente sección ofrece una mirada integral al trabajo colaborativo detrás 
 
 El contenido del video se organiza en secciones temporizadas, detallando el minuto y segundo de inicio de cada bloque temático para facilitar su navegación. Asimismo, se incluye una captura representativa del video y los enlaces a las versiones publicadas en Microsoft Stream y YouTube. Esta última fue utilizada también para su integración en el Landing Page del producto. En conjunto, esta pieza audiovisual complementa el informe técnico al destacar el compromiso, esfuerzo y aprendizaje continuo del equipo de desarrollo.
 
+Enlace directo al vídeo About-The-Team de Macetech: [About-The-Team](https://www.youtube.com/watch?v=giQ17bSSdpc)
+
 - Testimonio de Pescorán Angulo, Juan Fabritzzio: 0:00 - 3:25 minutos
 - Testimonio de Trigueros Chumacero, Flavio Eduardo: 3:26 - 4:41 minutos
 - Testimonio de Paredes Zapata, Luiggi Gianfranco: 4:42 - 6:23 minutos
@@ -75,11 +77,11 @@ El contenido del video se organiza en secciones temporizadas, detallando el minu
 - Testimonio de Mallma Quispe, Rubén Elías: 8:11 - 9:49 minutos
 - Testimonio de Yen Cerna, Lucio Heli: 9:50 - 14:10 minutos
 
-###### Figura 187
+###### Figura 205
 
-_Presentación de los endpoints del Back-End de Macetech desplegado mediante la plataforma de Azure_
+_Evidencia del desarrollo del vídeo About-The-Team de Macetech_
 
-<img src="/assets/img/capitulo-6/deployment/back-end-deployment-6.png" alt="Evidencia de despliegue en Azure">
+<img src="/assets/img/capitulo-6/videos/about-the-team/about-the-team-evidence.png" alt="Evidencia de desarrollo del vídeo About-The-Team">
 
 El video profundiza en la participación activa de cada integrante a lo largo de las múltiples áreas que conformaron el trabajo final, tales como el diseño de la solución digital, la implementación de funcionalidades clave, la validación de hipótesis mediante Lean UX, la elaboración de artefactos ágiles, la integración de componentes tecnológicos (IoT, edge computing, backend, frontend), y la documentación técnica. Se presentan escenas de sesiones reales de trabajo colaborativo, mostrando momentos de análisis, codificación, revisión de avances, planificación de sprints, pruebas de usabilidad y toma de decisiones estratégicas.
 

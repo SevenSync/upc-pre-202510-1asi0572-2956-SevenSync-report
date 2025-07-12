@@ -1651,6 +1651,10 @@ _Software Deployment del primer sprint backlog de Macetech_
 
 La colaboración del equipo se llevó a cabo en la organización de SevenSync, el cúal contiene el repositorio de la Landing Page. En este repositorio, se trabajo en la rama 'develop' y 'main'
 
+###### Figura 192
+
+_Team Collaboration Insights del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/landing-page-contributors.png" alt="Evidencia Landing page ">
 
 <img src="/assets/img/capitulo-6/evidence/landing-page-commits-evidence.jpeg" alt="Evidencia Landing page ">
@@ -1660,6 +1664,7 @@ Para este producto, solo una persona logró realizar toda la página web de nego
 ### 6.2.2. Sprint 2
 
 #### 6.2.2.1. Sprint Planning 2
+
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
 
 ###### Tabla 259
@@ -1746,6 +1751,10 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 
 El sprint backlog 2 abarcó la implemetnación inicial de todos los productos. En este caso se contempló desarrollar la aplicación web, el servicio en la nube, la aplicación, móvil, la aplicación edge y la aplicación embedida. Se tomó en cuenta el orden de implementación según el valor que aportaba.
 
+###### Figura 193
+
+_Sprint Backlog del segundo sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-2-macetech.png" alt="Sprint Backlog 2 " width="600px">
 
 #### 6.2.2.4. Development Evidence for Sprint Review
@@ -1784,6 +1793,10 @@ Para el alcance de este sprint se desarrollaron las vistas principales de la apl
 
 En la aplicación web se contempló el desarrollo del IAM, la vista de perfil, la págian principal donde está la interfaz de macetas y la interfaz de cada maceta. 
 
+###### Figura 194
+
+_Execution Evidence del segundo sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/web-evidence-1.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-evidence-2.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-evidence-3.png" alt="Web Service Evidence" width="600px">
@@ -1802,6 +1815,10 @@ Para la aplicación móvil se contempló el desarrollo inicial del IAM y la vist
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 El servicio web fue documentado por la dependencia OpenAPI el cuál permite mostrar los endpoints en Swagguer UI. 
 
+###### Figura 195
+
+_Services Documentation Evidence del segundo sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-2.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-3.jpeg" alt="Web Service Evidence" width="600px">
@@ -1810,6 +1827,11 @@ El servicio web fue documentado por la dependencia OpenAPI el cuál permite most
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 Se hizo el despliegue del cloud api en azure web service. 
+
+###### Figura 196
+
+_Software Deployment Evidence del segundo sprint de Macetech por parte del Cloud API_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
@@ -1818,6 +1840,10 @@ Se hizo el despliegue del cloud api en azure web service.
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-6.jpeg" alt="Web Service Evidence" width="600px">
 
 En el caso de la aplicación web, se hizo el despliegue en firebase.
+
+###### Figura 197
+
+_Software Deployment Evidence del segundo sprint de Macetech por parte del Web Application_
 
 <img src="/assets/img/capitulo-6/evidence/web-app-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
@@ -1830,6 +1856,10 @@ En el caso de la aplicación web, se hizo el despliegue en firebase.
 La colaboración del equipo en los produtos se llevó a cabo gracias a la organización del Aspects Leaders and Collaborators. Sin embargo, también delegamos tareas por afinidad y habilidades.
 
 Contribuciones y commits de la aplicación web:
+
+###### Figura 198
+
+_Team Collaboration Insights del segundo sprint de Macetech_
 
 <img src="/assets/img/capitulo-6/evidence/web-app-contributors.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
@@ -1928,9 +1958,19 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 | Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 
 #### 6.2.3.3. Sprint Backlog 3
+
+###### Figura 199
+
+_Sprint backlog del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-3.png" alt="sprint backlog 3" width="600px">
 
 #### 6.2.3.4. Development Evidence for Sprint Review
+
+###### Figura 200
+
+_Development Evidence del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
@@ -1948,18 +1988,29 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+###### Figura 201
+
+_Execution Evidence del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/embedded-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/embedded-2.jpeg" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
+###### Figura 202
+
+_Services Documentation del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/edge-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-2.jpeg" alt="Web Service Evidence" width="600px">
-
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
+###### Figura 203
+
+_Team Collaboration Insights del tercer sprint de Macetech_
 
 <img src="/assets/img/capitulo-6/evidence/edge-contributors.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
@@ -2322,9 +2373,20 @@ Utilizar colores de fondo o bordes más llamativos para alertas críticas y most
 
 ## 6.4. Video About-the-Product
 
+El Video About-the-Product constituye una pieza audiovisual diseñada estratégicamente para comunicar, de manera clara y atractiva, el valor diferencial de la solución digital desarrollada. Orientado principalmente a dos públicos objetivos, los visitantes del Landing Page interesados en el modelo de negocio, y los usuarios finales de las aplicaciones que desean comprender mejor sus funcionalidades, este video sintetiza los aspectos clave del producto desde una perspectiva funcional, técnica y experiencial.
 
+En un lenguaje accesible y alineado con el tono comunicacional de la marca, el video presenta las características principales de cada uno de los componentes desarrollados (Embedded Application, Edge Application, Backend, y versiones preliminares de la Web y Mobile App), destacando cómo la solución aborda los principales pain points de los jardineros urbanos, tales como el uso ineficiente del agua, la falta de conocimiento técnico y la limitada disponibilidad de tiempo para el cuidado vegetal.
 
+El contenido incluye una descripción breve del modelo de negocio freemium-suscripción, la forma en que se integran los sensores IoT con la automatización del riego y las recomendaciones inteligentes, y las tareas principales que el usuario puede realizar desde las interfaces disponibles. Complementando esta explicación, se incorpora al menos un testimonio real de usuario participante en las entrevistas de validación, quien destaca la utilidad de la solución con la siguiente afirmación: “Poder ver en tiempo real cómo está mi planta y recibir recomendaciones automáticas me hace sentir que la estoy cuidando bien, incluso cuando estoy fuera de casa”.
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Esta sección también especifica los enlaces oficiales al video, tanto en su versión publicada en Microsoft Stream como en YouTube, esta última utilizada para su incrustación en el Landing Page. Asimismo, se detalla su duración total y se incluye un screenshot representativo del contenido audiovisual, asegurando su adecuada contextualización dentro del ecosistema digital del proyecto.
+
+[Vídeo About-The-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Duración: 8:25 minutos
+
+###### Figura 204
+
+_Evidencia del desarrollo del vídeo About-The-Product de Macetech_
 
 <img src="/assets/img/portada/about-the-product.png" alt="Video About The Product">
