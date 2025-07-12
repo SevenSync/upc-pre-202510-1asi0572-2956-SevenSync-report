@@ -1247,6 +1247,9 @@ El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. D
 
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
 
+###### Tabla 254
+*Sprint Planning del primer sprint de desarrollo de Macetech*
+
 <table  style="text-align: center;">
     <tbody>
         <tr>
@@ -1315,6 +1318,9 @@ Asimismo, la página mostrará una comparación accesible entre las funcionalida
 
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 255
+*Aspects Leaders and Collaborators del primer sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -1323,9 +1329,13 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 | Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
 | Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
 | Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
-#### 6.2.1.3.Sprint Backlog 1.
+
+#### 6.2.1.3.Sprint Backlog 1
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
+
+###### Tabla 256
+*Sprint Backlog del primer sprint de desarrollo de Macetech*
 <table>
 	<tbody>
 		<tr>
@@ -1560,9 +1570,13 @@ En este primer sprint, nos enfocamos en la implementación de las funcionalidade
     <tbody>
 </table>
 
-A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
+A continuación el sprint backlog 1 y el Jira Software donde se repartieron los trabajos:
 
-Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9)
+[Sprint Backlog en Jira Software](https://sevensync.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline?selectedIssue=SCRUM-4)
+
+###### Figura 188
+
+_Evidencia de desarrollo del Sprint Backlog 1 en Jira Software_
 
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-1-macetech.png" alt="Evidencia de Sprint Backlog para sprint 1">
 
@@ -1571,6 +1585,9 @@ Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.a
 En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint. En esta iteración, se implementó la Landing Page en su totalidad con todas las secciones Hero Section, funcionalidades clave y beneficios, about-the-team, about-the-product, benchmark de membresías, formulario de contacto, acceso a la platforma de descarga, i18n y diseño responsivo. 
 
 Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
+
+###### Tabla 257
+*Development Evidence del primer sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
@@ -1583,6 +1600,9 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 #### 6.2.1.5.Testing Suite Evidence for Sprint Review.
 Para realiza las pruebas, se decidió utilizar 'jest' el cual permite correr pruebas con 'npm test' en scripts de javascript. Para este caso, se probó si el formulario de contacto seguía el flujo sin errores. 
 
+###### Tabla 258
+*Testing Suite Evidence del primer sprint de desarrollo de Macetech*
+
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
 |LucioY250/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|develop|b73525f|test: add landing page testing suite|-|08/07/2025|
@@ -1591,6 +1611,10 @@ Para realiza las pruebas, se decidió utilizar 'jest' el cual permite correr pru
 
 Para este sprint, se pudo implementar la aplicación y desplegarla a producción cumpliendo con el diseño y los requerimientos de la página web de negocio planteada. A continuación, se visualizan las capturas con las vistas implementadas. 
 
+###### Figura 189
+
+_Execution Evidence del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-2.png" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-3.png" alt="Evidencia Landing page " width="600px">
@@ -1598,11 +1622,14 @@ Para este sprint, se pudo implementar la aplicación y desplegarla a producción
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-5.png" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-6.png" alt="Evidencia Landing page " width="600px">
 
-Video de demostración: (Ver Anexo X)
-
-#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.1.7.Services Documentation Evidence for Sprint Review
 
 En el alcance de este sprint, no se realizó un web service, sin embargo, a modo de simulación de datos, desplegamos una FAKE API en Beeceptor con los siguientes endpoints:
+
+###### Figura 190
+
+_Services documentation del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia Landing page ">
 <img src="/assets/img/capitulo-6/evidence/service-fake-1.jpeg" alt="Evidencia Landing page ">
 <img src="/assets/img/capitulo-6/evidence/service-fake-2.jpeg" alt="Evidencia Landing page ">
@@ -1613,7 +1640,11 @@ En el alcance de este sprint, no se realizó un web service, sin embargo, a modo
 #### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
 Para realizar el despligue de la landing page, se utilizó la herramienta Github Pages el cuál permite desplegar páginas estáticas de forma sencilla y veloz. Además, proporciona un pipeline de CI/CD que permite desplegar a producción cada vez que se realiza un commit en la rama 'main'.
-Landing Page: Ver Anexo X
+
+###### Figura 191
+
+_Software Deployment del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia Landing page ">
 
 #### 6.2.1.9.Team Collaboration Insights during Sprint.
@@ -1630,6 +1661,9 @@ Para este producto, solo una persona logró realizar toda la página web de nego
 
 #### 6.2.2.1. Sprint Planning 2
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+###### Tabla 259
+*Sprint Planning del segundo sprint de desarrollo de Macetech*
 
 <table  style="text-align: center;">
     <tbody>
@@ -1696,6 +1730,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 #### 6.2.2.2. Aspects Leaders and Collaborators
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 260
+*Aspects leaders and Collaborators del segundo sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -1715,6 +1752,8 @@ El sprint backlog 2 abarcó la implemetnación inicial de todos los productos. E
 
 En esta sección, se documentarán las evidencias de desarrollo más importantes por producto. Para el desarrollo, cada producto se aloja en su propio repositorio.
 
+###### Tabla 261
+*Development Evidence del segundo sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- |------------------ |
@@ -1730,6 +1769,9 @@ En esta sección, se documentarán las evidencias de desarrollo más importantes
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
 Se desarrollaron archivos .feature en formato gherkin para especificar el comportamiento de nuestras user stories.
+
+###### Tabla 262
+*Testing Suite Evidence del segundo sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
@@ -1805,6 +1847,9 @@ Contribuciones y commits de la aplicación móvil:
 #### 6.2.3.1. Sprint Planning 3
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
 
+###### Tabla 263
+*Sprint Planning del tercer sprint de desarrollo de Macetech*
+
 <table  style="text-align: center;">
     <tbody>
         <tr>
@@ -1870,6 +1915,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 #### 6.2.3.2. Aspects Leaders and Collaborators
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 264
+*Aspects Leaders and Collaborators del tercer sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -1888,6 +1936,9 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+###### Tabla 265
+*Testing Suite Evidence del tercer sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
@@ -1914,11 +1965,11 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/embedded-contributos.png" alt="Web Service Evidence" width="600px">
 
-### 6.3. Validation Interviews.
+### 6.3. Validation Interviews
 
 Con el objetivo de validar las funcionalidades, beneficios y nivel de adopción potencial de la solución Macetech, se realizaron entrevistas con personas que representan a nuestros segmentos objetivo. Estas entrevistas permitieron recopilar percepciones reales sobre la utilidad, facilidad de uso y valor percibido de la solución, así como identificar oportunidades de mejora. Las respuestas obtenidas ayudaron a confirmar hipótesis clave del producto y a ajustar el diseño en función de las necesidades y expectativas de los usuarios.
 
-#### 6.3.1. Diseño de Entrevistas.
+#### 6.3.1. Diseño de Entrevistas
 
 - **Información general del participante**
 
@@ -2000,6 +2051,10 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
+###### Tabla 266
+*Escala de severidad de la evaluación de heurísticas de Macetech*
+
+
 | **Nivel** | **Descripción**                                                                                                                                                     |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1**     | Problema superficial: puede ser fácilmente superado o hasta ignorado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado de forma inmediata. |
@@ -2009,7 +2064,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-##### TABLA RESUMEN
+###### Tabla 267
+*Tabla de resumen de la evaluación de heurísticas de Macetech*
 
 | #   | Problema                                                                              | Escala de severidad | Heurística/Principio violado                                     |
 | --- | ------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------- |
@@ -2265,6 +2321,9 @@ En la lista principal, las macetas que presentan alertas no se destacan lo sufic
 Utilizar colores de fondo o bordes más llamativos para alertas críticas y mostrar un resumen de advertencia al inicio de la pantalla.
 
 ## 6.4. Video About-the-Product
+
+
+
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
