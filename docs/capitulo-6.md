@@ -321,21 +321,26 @@ Para organizar el flujo de trabajo en Git, se implementará el modelo GitFlow pr
 **Integrantes de la organización**:
 En esta sección, se presentarán todos los usuarios que forman parte de la organización de GitHub del proyecto WHAI, junto con sus nombres de usuario correspondientes. El objetivo es evitar confusiones sobre los autores de los commits en GitHub y facilitar la identificación de los colaboradores al revisar y analizar el reporte y el código desarrollado por nuestro equipo.
 
-###### Tabla 23
+###### Tabla 252
 
-*Modelo de integrantes del equipo dentro de la página de organización de Github*
+*Modelo de integrantes del equipo de SevenSync dentro de la página de organización de Github*
 
 |**Nombre de Usuario**|**Imagen de Perfil**|**Nombre del Integrante del Equipo**|
 | ----- | ------ | ----- |
-| JuanPescoran | <img src="/assets/img/capitulo-4/profiles/Juan-github.PNG" alt="Pescorán Angulo, Juan Fabritzzio">| Pescorán Angulo, Juan Fabritzzio - U20221C936 |
-| FlavioTrigueros | <img src="/assets/img/capitulo-4/profiles/Flavio-github.PNG" alt="Trigueros Chumacero, Flavio Eduardo"> | Trigueros Chumacero, Flavio Eduardo - U202210190 |
-| AldhaValenzuelaH | <img src="/assets/img/capitulo-4/profiles/Aldhair-github.PNG" alt="Valenzuela Huillcaya, Aldhair Johan Juan"> | Valenzuela Huillcaya, Aldhair Johan Juan - U20201F572 |
-| LucioY250 | <img src="/assets/img/capitulo-4/profiles/Lucio-github.PNG" alt="Yen Cerna, Lucio Heli"> | Yen Cerna, Lucio Heli - U202213143 |
+| RubDaShen | <img src="/assets/img/capitulo-6/profile-pictures/ruben-mallma-github-profile-picture.png" alt="Mallma Quispe, Rubén Elías"> | Mallma Quispe, Rubén Elías - u202214234 |
+| Luiggi Paredes - DevLuiggi |  <img src="/assets/img/capitulo-6/profile-pictures/luiggi-paredes-github-profile-picture.png" alt="Paredes Zapata, Luiggi Gianfranco"> | Paredes Zapata, Luiggi Gianfranco - u202218996|
+| JuanPescoran | <img src="/assets/img/capitulo-6/profile-pictures/juan-pescoran-github-profile-picture.png" alt="Pescorán Angulo, Juan Fabritzzio">| Pescorán Angulo, Juan Fabritzzio - u20221C936 |
+| FlavioTrigueros | <img src="/assets/img/capitulo-6/profile-pictures/flavio-trigueros-github-profile-picture.png" alt="Trigueros Chumacero, Flavio Eduardo"> | Trigueros Chumacero, Flavio Eduardo - u202210190 |
+| Fabrizio0711 | <img src="/assets/img/capitulo-6/profile-pictures/fabrizio-sanchez-github-profile-picture.png" alt="Sanchez Zamora, Fabrizio Alessandro"> |  Sanchez Zamora, Fabrizio Alessandro - u202213652 |
+| LucioY250 | <img src="/assets/img/capitulo-6/profile-pictures/lucio-yen-github-profile-picture.png" alt="Yen Cerna, Lucio Heli"> | Yen Cerna, Lucio Heli - u202213143 |
 
 **GitFlow Workflow**:
 
+En nuestro proyecto adoptamos el modelo GitFlow para estructurar el control de versiones mediante ramas primarias y secundarias. Las ramas primarias consisten en main, que alberga la versión estable actualmente en producción, y develop, donde se integran de forma continua todas las funcionalidades y correcciones antes de preparar un nuevo lanzamiento (Driessen, 2010).
 
-- **GitFlow Implementation:**
+También presentamos ramas secundarias de feature, hotfix o release. Cada rama secundaria termina fusionándose de vuelta a develop mediante pull requests que el equipo revisa para garantizar calidad y coherencia. Este flujo promueve una colaboración ordenada, un historial de cambios claro y minimiza riesgos al pasar a producción.
+
+**GitFlow Implementation:**
 
   Para implementar el flujo de trabajo Gitflow utilizando Git como nuestra herramienta de control de versiones, nos basamos en la entrada de blog "A successful Git branching model" de Vincent Driessen. Esta referencia nos permitió establecer las convenciones detalladas que serán aplicadas en nuestro proyecto (Driessen, 2010).
 
@@ -365,6 +370,20 @@ En esta sección, se presentarán todos los usuarios que forman parte de la orga
 
       Ejemplo: feature/iam
 
+- **Hotfix branch**
+Las ramas de corrección urgente (hotfix/*) se crean a partir de la rama main para resolver errores críticos en producción que requieren atención inmediata. Su objetivo es aislar y corregir fallos sin interrumpir el flujo de desarrollo de nuevas funcionalidades. Una vez validada la solución mediante pruebas unitarias y, de ser necesario, pruebas de integración, la rama hotfix se fusiona tanto en main (para desplegar la corrección) como en develop (para asegurar que el arreglo se incorpore al ciclo de desarrollo continuo).
+
+      Notación: hotfix/
+
+      Ejemplo: hotfix/login-error
+
+- **Release branch**
+Las ramas de preparación de versión (release/*) se generan a partir de develop cuando el conjunto de funcionalidades y correcciones está listo para liberarse. En esta rama se realizan los últimos ajustes, pruebas de aceptación y actualizaciones de documentación o metadatos (número de versión, cambios en el changelog). Tras completar estas tareas, la rama release se fusiona en main (puesta en producción) y en develop (para recoger posibles ajustes realizados durante la preparación).
+
+      Notación: release/
+
+      Ejemplo: release/1.2.0
+
 **Conventional Commits**
 
 Conventional Commits es un estándar para formatear los mensajes de confirmación en Git de manera consistente y semántica. Al aplicar esta convención, cada commit comunica de forma precisa la naturaleza del cambio, lo que facilita la revisión del historial, la generación automática de registros de cambios y la integración con herramientas de automatización de versiones (Conventional Commits, 2020).
@@ -374,8 +393,14 @@ La especificación establece un esquema estructurado, compuesto por un encabezad
 La estructura de un commit debe seguir las siguientes pautas:
 
 ```
-git commit -m “<type>[optional scope]: <title>“ -m “<description”
+git commit -m “<type>[optional scope]: <title>“ -m “<description>”
+
+con
+
+feat(branch): verb + brief description in English
 ```
+
+En este formato, "branch" debe indicar la rama en la que se han realizado los cambios propuestos para una nueva funcionalidad de la plataforma. La descripción debe estar escrita en inglés y comenzar con un verbo que refleje claramente la naturaleza del cambio implementado. A continuación, se presenta una lista de distintos tipos de conventional commits y una tabla con verbos recomendados para los mensajes de commit:
 
 **Tipos De Conventional Commits**
 
@@ -390,141 +415,825 @@ git commit -m “<type>[optional scope]: <title>“ -m “<description”
 8. perf: Describes performance improvements in the code.
 ```
 
-### 6.1.3. Source Code Style Guide & Conventions.
+###### Tabla 253
+*Modelo de escritura de verbos para todos los commits realizados en el proyecto de Github*
 
-Como norma general, se espera que todo el código desarrollado por los miembros del equipo esté completamente redactado en inglés.
+| Verbo | Traducción | Uso en el proyecto de programación |
+|-------|------------|------------------------------------|
+|Add  |Añadir  | Utilizado para añadir nuevas funcionalidades, componentes o módulos al frontend. Ideal para commits en los que se implementan nuevas vistas, estilos o scripts, incrementando la capacidad del sistema sin afectar las funcionalidades existentes.  |
+|Create  |Crear  | Empleado para la creación de nuevos componentes, estilos o rutas en la aplicación frontend. Este verbo se usa cuando se inicia el desarrollo de una nueva característica o diseño dentro del sistema, estableciendo la base técnica sobre la cual se expandirá la funcionalidad. |
+|Update  |Actualizar  | Usado para realizar modificaciones menores en las funcionalidades existentes del frontend, como la actualización de estilos, optimización de scripts o ajustes en la lógica de interacción. Se aplica en casos donde los cambios no alteran significativamente la estructura, pero mejoran el rendimiento o corrigen comportamientos. |
+|Modify  |Modificar  | Aplicado cuando se realizan cambios significativos en la lógica del frontend, como la reestructuración de componentes o la implementación de nuevas políticas de diseño en la capa de presentación. Esto incluye cambios que afectan la arquitectura general o que impactan directamente en la interacción entre componentes. |
+|Correct  | Corregir  | Utilizado para corregir errores menores en la implementación del frontend, como ajustes en las validaciones de formularios, corrección de rutas de navegación, o fallos en configuraciones que afectan el correcto funcionamiento de la interfaz. Este verbo se reserva para pequeñas correcciones sin grandes implicaciones. |
+|Fix  |Arreglar  | Usado para solucionar bugs críticos o problemas que afectan directamente la funcionalidad del frontend. Esto puede incluir arreglar errores en la lógica de interacción, problemas de visualización o fallos en la autenticación de usuarios. También es comúnmente utilizado para resolver errores en la integración continua o el despliegue automático. |
+|Delete  |Borrar  | Aplicado para la eliminación de componentes, estilos o recursos que ya no son necesarios en el frontend. Debe utilizarse cuando se elimina código obsoleto o componentes que han sido reemplazados por implementaciones más eficientes o actualizadas. |
+|Drop  |Tirar  | Exclusivo para la eliminación de rutas, estilos o configuraciones en el frontend. Debe ser utilizado con precaución, ya que este tipo de cambios puede tener implicaciones críticas en la presentación de datos y la estructura general de la interfaz. Suele aplicarse cuando se reorganiza o limpia el sistema de archivos en el proceso de migración o refactorización. |
 
-- ### HTML
-  - #### Use Lowercase Element Names:
-    Es recomendable utilizar minúsculas o lowercase para los nombres de los elementos HTML.
-    ```
-    <body>
-        <p>This is a paragraph</p>
-    <body>
-    ```
-  - #### Close All HTML Elements:
-    Es recomendable cerrar todos los elementos HTML correctamente.
-    ```
-    <body>
-        <p>This is a paragraph</p>
-        <p>This is another paragraph</p>
-    <body>
-    ```
-  - #### Use Lowercase Attribute Names:
-    Es recomendable utilizar minúsculas para los nombres de los atributos HTML.
-    ```
-    <a href="https://www.w3schools.com/html/">Visit our HTMLtutorial</a>
-    ```
-  - #### Always Specify alt, width, and height for Images:
-    Es recomendable seguir estas convenciones en caso de que la imagen no se pueda mostrar, lo que ayuda a mejorar la accesibilidad del contenido.
-    ```
-    <img src="html5.gif" alt="HTML5"
-    style="width:128px;height:128px">
-    ```
-  - #### Spaces and Equal Signs:
-    Se recomienda no utilizar espacios en blanco entre las entidades para mejorar la legibilidad.
-    ```
-    <link rel="stylesheet" href="styles.css">
-    ```
-- ### CSS
-  - #### ID and Class Naming
-    Es recomendable utilizar nombres de clases e id's significativos que expresen claramente el propósito del elemento.
-    ```
-    #gallery {}
-    #login {}
-    .video {}
-    ```
-  - #### ID and Class Name Style
-    Se recomienda utilizar nombres cortos para nombrar ids o clases, pero lo suficientemente descriptivos para entender su propósito.
-    ```
-    #nav {}
-    .author {}
-    ```
-  - #### Shorthand Properties
-    Se recomienda utilizar propiedades CSS de forma abreviada siempre que sea posible para hacer el código más eficiente y comprensible.
-    ```
-    border-top: 0;
-    font: 100%/1.6 palatino, georgia, serif;
-    padding: 0 1em 2em;
-    ```
-  - #### 0 and Units
-    Es recomendable evitar especificar la unidad después del valor 0 en propiedades que lo permitan, ya que esto ayuda a reducir el tamaño del código y mejora su legibilidad.
-    ```
-    margin: 0;
+Esta norma sigue los principios de Conventional Commits, una convención ligera para estructurar y nombrar los commits. Esta convención proporciona un conjunto claro de reglas para crear un historial de cambios detallado y coherente, lo que facilita la automatización de procesos como el versionado semántico y el seguimiento de características, correcciones y modificaciones críticas. Su implementación mejora la trazabilidad del desarrollo, simplifica las revisiones y asegura una mayor transparencia en el control de versiones (Conventional Commits, 2020).
+
+**Estructura del Mensaje de Commit:**
+
+|type: description|
+|-----------------|
+
+**Versionado Semántico:**
+
+Para garantizar una gestión clara y predecible de las versiones de lanzamiento, nuestro proyecto adoptará el esquema de versionado semántico 2.0.0. Este estándar define una convención de tres números, mayor, menor y parche, que refleja el grado de cambio introducido en cada lanzamiento:
+
+* **Major (X.0.0):** incrementa cuando se realizan cambios incompatibles con versiones anteriores.
+
+* **Minor (0.Y.0):** incrementa al añadir nuevas funcionalidades de manera retrocompatible (que son compatibles con versiones anteriores).
+
+* **Patch (0.0.Z):** incrementa al corregir errores compatibles y realizar mejoras menores.
+
+|Major.Minor.Patch|
+|-----------------|
+
+Al aplicar Semantic Versioning, cada número comunicará de manera inequívoca la naturaleza y el alcance de las modificaciones, facilitando la coordinación entre equipos, la automatización de despliegues y la generación de documentación de cambios (Preston‑Werner, 2013).
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+En esta sección describiremos las convenciones y buenas prácticas que guiarán la escritura, organización y estructuración del código frontend de nuestra solución. Nos centraremos en los lenguajes y frameworks clave —Flutter, Dart, HTML, CSS, JavaScript, Angular, TypeScript— así como en tecnologías de backend y pruebas —C#, ASP NET Core, C++, Python, RESTful API, Wokwi y xUnit— para asegurar un desarrollo coherente, mantenible y escalable, y facilitar la colaboración entre todos los miembros del equipo.
+
+Asimismo, presentaremos las pautas específicas para optimizar la experiencia de usuario, incluyendo la gestión de componentes visuales, la mejora del rendimiento en la renderización y el manejo fluido de las interacciones. Para ello, nos apoyaremos en las siguientes referencias oficiales y guías de estilo:
+
+HTML5 Syntax (W3Schools)
+https://www.w3schools.com/html/html5_syntax.asp
+
+Google HTML/CSS Style Guide
+https://google.github.io/styleguide/htmlcssguide.html
+
+Angular Style Guide
+https://angular.io/guide/styleguide
+
+JavaScript Style Guide (Google)
+https://google.github.io/styleguide/jsguide.html
+
+Mozilla Developer Network JavaScript Code Style Guide
+https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
+
+JavaScript Conventions (W3Schools)
+https://www.w3schools.com/js/js_conventions.asp
+
+TypeScript Handbook: Style Guide
+https://www.typescriptlang.org/docs/handbook/declaration-files/style-guide.html
+
+Flutter Official Documentation
+https://docs.flutter.dev/get-started/learn-flutter
+
+Flutterverso: Recursos de Aprendizaje
+https://github.com/rafathefull/flutterverso
+
+Dart Language Tour
+https://dart.dev/language
+
+Dart Libraries Catalog
+https://dart.dev/libraries
+
+Angular Style Guide
+https://angular.dev/style-guide
+
+C# Coding Conventions
+https://docs.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions
+
+ASP NET Core Guidelines
+https://docs.microsoft.com/aspnet/core/fundamentals/?view=aspnetcore-6.0
+
+RESTful API Design Best Practices
+https://restfulapi.net/
+
+C++ Core Guidelines
+https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+
+PEP 8 – Python Style Guide
+https://peps.python.org/pep-0008/
+
+Wokwi Documentation
+https://docs.wokwi.com/
+
+xUnit Documentation
+https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-csharp-with-xunit 
+
+#### Convenciones que usaremos:
+
+**HTML**
+
+**1. Etiquetas en minúsculas**
+
+Todas las etiquetas deben ir en lowercase para cumplir con el estándar HTML5 y garantizar compatibilidad entre navegadores.
+
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="utf-8">
+        <title>Título de la página</title>
+      </head>
+      <body>
+        <header>…</header>
+      </body>
+    </html>
+
+**2. Cierre explícito de todos los elementos**
+
+Asegurar que cada etiqueta de apertura <tag> tenga su correspondiente </tag>, incluso en elementos semánticos.
+
+    <section>
+      <article>
+        <p>Texto del artículo.</p>
+      </article>
+    </section>
+
+**3. Atributos en minúsculas y comillas dobles**
+
+Todos los nombres de atributos deben ir en lowercase. Los valores siempre entre comillas dobles. 
+
+Orden recomendado: 
+- id
+- class
+- src/href
+- alt
+- atributos de accesibilidad (aria-…).
+
+      <img
+        id="logo"
+        class="site-logo"
+        src="logo.svg"
+        alt="Logotipo de la empresa"
+        width="150"
+        height="60"
+        loading="lazy"
+        aria-hidden="true"
+      >
+
+**4. Textos alternativos y dimensiones en imágenes**
+
+Incluir siempre "alt" descriptivo para accesibilidad.
+
+Definir width y height (o usar CSS) para evitar cambios de layout en carga.
+
+Emplear loading="lazy" para optimizar rendimiento en imágenes fuera de pantalla.
+
+**5. Indentación y espaciado limpio**
+
+Usar 2 espacios por nivel de anidado.
+
+No dejar espacios antes ni después del signo "="" en atributos.
+
+Insertar líneas en blanco para separar bloques lógicos (head, header, main, footer).
+
+---
+
+**CSS**
+
+**1. Nomenclatura clara (BEM opcional)**
+
+Clases y IDs descriptivos que reflejen el componente y su estado.
+
+Ejemplo BEM:
+
+    .card { … }
+    .card__header { … }
+    .card__header--collapsed { … }
+
+
+**2. Agrupación de selectores relacionados**
+
+Agrupar selectores que comparten propiedad para evitar duplicación.
+
+    .btn,
+    .link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+**3. Shorthand siempre que sea posible**
+
+Reducir líneas usando propiedades abreviadas.
+
+    margin: 0 auto;
+    border: none;
+
+**4. Unidades en cero sin sufijos**
+
+Evitar 0px, usar directamente 0.
+
     padding: 0;
-    ```
-  - #### Declaration Order
-    Se recomienda ordenar las declaraciones en orden alfabético para facilitar el mantenimiento y la recordación del código.
-    ```
-     background: fuchsia;
-     border: 1px solid;
-     border-radius: 4px;
-     color: black;
-     text-align: center;
-     text-indent: 2em;
-    ```
-- ### Typescript
-  - #### Use expanded syntax
-    Cada línea de TypeScript debería estar en una nueva línea, con la llave de apertura en la misma línea de su declaración y la llave de cierre en una nueva línea al final.
-    ```
-    function myFunc() {
-     console.log('Hello!');
-    };
-    ```
-  - #### Variable naming
-    Para el nombre de las variables, se recomienda utilizar lowerCamelCase.
-    ```
-    let playerScore = 0;
-    let speed = distance / time;
-    ```
-  - #### Declaring variables
-    Para la declaración de variables, es recomendable utilizar las palabras reservadas let y const en lugar de var.
-    ```
-    const myName = 'Chris';
-    console.log(myName);
-    let myAge = '40';
-    myAge++;
-    console.log('Happy birthday!');
-    ```
-  - #### Function naming
-    Para el nombre de las funciones, se recomienda utilizar lowerCamelCase.
-    ```
-    function sayHello() {
-    alert('Hello!');
-    };
-    ```
-- ### C#
-  #### Nomenclatura:
-  PascalCase: Tipos (Clases, Enums, Interfaces I), Miembros Públicos/Internos (Propiedades, Métodos, Eventos), Namespaces, Constantes.
-  camelCase: Variables locales, Parámetros de método, Campos privados (sin \_).
-  Nombres de archivo: Coincidir con el tipo público principal.
-  Formato:
-  #### Indentación: 4 espacios (no tabuladores).
-  Llaves {}: En nueva línea (estilo Allman o similar).
-  Espaciado: Un espacio alrededor de operadores, después de comas, antes de { en control de flujo. No espacios después de ( o antes de ).
-  Líneas en blanco: Para separar secciones lógicas.
-  Longitud de línea: Idealmente <= 120 caracteres.
-  ##### Comentarios:
-  ///: Documentación XML para tipos y miembros públicos/internos.
-  //: Aclarar lógica compleja.
-  ##### Organización:
-  using: Arriba, fuera del namespace, ordenadas alfabéticamente.
-  Miembros de tipo: Campos -> Constructores -> Propiedades -> Métodos -> Eventos (ordenar por visibilidad dentro de cada grupo).
-  #### Buenas Prácticas:
-  Usar var apropiadamente, interpolación $"", LINQ, manejo de excepciones, async/await, operadores ?. y ??.
-  Herramientas: Usar .editorconfig y Analizadores Roslyn (ej. StyleCop) para automatizar y verificar el estilo.
 
-### 6.1.4. Software Deployment Configuration.
+**5. Orden alfabético de declaraciones**
 
-- Despliegue Landing Page:<br>
-  <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
+Facilita encontrar y agregar propiedades.
 
-- Despliegue Front End App:<br> Microsoft azure
+    .modal {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #fff;
+      display: flex;
+      padding: 1rem;
+    }
 
-- Despligue de FAKE API:
-  <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia de Beeceptor API ">
+**6. Breakpoints y media queries al final**
 
-Enlace: https://macetech.free.beeceptor.com
+Mantener todas las media queries al final del bloque del componente.
+
+    .container { … }
+    @media (max-width: 600px) {
+      .container { … }
+    }
+
+---
+
+**TypeScript**
+
+**1. Estructura de archivos y nomenclatura**
+
+Archivos: kebab-case.ts para módulos; directorios en kebab-case.
+
+Clases e interfaces en PascalCase.
+
+Funciones y variables en lowerCamelCase.
+
+**2. Bloques y llaves**
+
+Cada declaración y llave debe ir en su propia línea.
+
+    export class UserService {
+      constructor(private http: HttpClient) {}
+
+      fetchUsers(): Observable<User[]> {
+        return this.http.get<User[]>('/api/users');
+      }
+    }
+
+**3. Imports ordenados y agrupados**
+
+1. Módulos de Angular/terceros
+
+2. Módulos internos de la aplicación
+
+3. Importaciones de estilos y activos
+
+        import { Component } from '@angular/core';
+        import { UserService } from './user.service';
+        import './styles.css';
+
+**4. Uso de const y let**
+
+"const" por defecto; "let" solo cuando la variable cambia.
+
+Nunca usar "var" porque tiene alcance de función, no de bloque, y puede causar problemas en redeclaración.
+
+**5. Tipos explícitos y genéricos**
+
+Definir tipos de parámetros y retornos.
+
+Utilizar genéricos para colecciones y promesas.
+
+    function getItem<T>(id: string): Promise<T> { … }
+
+**6. Decoradores y metadatos (Angular)**
+
+Siempre incluir "selector", "templateUrl/template", "styleUrls".
+
+Orden en componentes: 
+
+1. Propiedades públicas
+2. Constructor
+3. Ciclos de vida
+4. Métodos privados
+
+---
+
+**C#**
+
+**1. Nomenclatura**
+
+PascalCase para clases, interfaces (IService), métodos públicos, propiedades, eventos.
+
+camelCase para campos privados (_logger opcional), variables locales, parámetros.
+
+**2. Estructura de archivo**
+
+Nombre del archivo = nombre de la clase pública.
+
+"using" statements fuera del "namespace" y ordenados alfabéticamente.
+
+**3. Indentación y estilo de llaves**
+
+Tabuladores claros por nivel. Llaves en línea nueva (Allman style).
+
+    namespace MyApp.Services
+    {
+        public class OrderService
+        {
+            public async Task ProcessAsync(Order order)
+            {
+                // …
+            }
+        }
+    }
+
+**4. Organización de miembros**
+
+1. Constantes
+2. Campos 
+3. Constructores
+4. Propiedades
+5. Métodos
+6. Eventos
+
+Separar bloques con línea en blanco.
+
+**5. Comentarios y documentación**
+
+"///" summary para documentar APIs públicas.
+
+"//" para aclarar lógica compleja o decisiones de diseño.
+
+**6. Buenas prácticas**
+
+Uso de async/await para operaciones I/O.
+
+Expresiones LINQ para manipulación de colecciones.
+
+Operadores null-safe (?., ??).
+
+Interpolación de cadenas ($"Usuario: {user.Name}").
+
+**7. Verificación de estilo**
+
+Configurar un ".editorconfig" con reglas de indentación y espacios.
+
+Emplear analizadores Roslyn (StyleCop, SonarLint) en el pipeline de CI para garantizar cumplimiento.
+
+---
+
+**Angular**
+
+**1. Estructura de módulos y carpetas**
+
+Agrupar por funcionalidad (feature modules), no por tipo de archivo.
+
+    src/
+      app/
+        core/           ← servicios y singleton providers
+        shared/         ← componentes, directivas y pipes reutilizables
+        features/
+          users/
+            users.module.ts
+            users-routing.module.ts
+            components/
+            services/
+
+**2. Nomenclatura de archivos y clases**
+
+**Componentes:** kebab-case.component, **clase:** PascalCaseComponent
+
+**Módulos:** kebab-case.module.ts, **clase:** PascalCaseModule.
+
+**Servicios:** kebab-case.service.ts, **clase:** PascalCaseService.
+
+**Rutas:** kebab-case-routing.module.ts.
+
+**3. Decoradores y metadatos**
+
+Orden dentro de un componente:
+
+    @Component({ … })
+    export class UserProfileComponent implements OnInit {
+      // 1. Propiedades públicas
+      @Input() userId!: string;
+
+      // 2. Inyección de dependencias en el constructor
+      constructor(private userService: UserService) {}
+
+      // 3. Ciclos de vida (ngOnInit, ngOnDestroy, …)
+      ngOnInit(): void { … }
+
+      // 4. Métodos públicos
+      onEdit(): void { … }
+
+      // 5. Métodos privados
+      private loadData(): void { … }
+    }
+
+**4. Imports ordenados**
+
+1. Angular core
+2. Angular modules
+3. Servicios y componentes propios
+4. Estilos y activos
+
+        import { Component, OnInit } from '@angular/core';
+        import { RouterModule } from '@angular/router';
+
+        import { UserService } from '../services/user.service';
+
+        import './user-profile.component.css';
+
+**5. Plantillas y estilos**
+
+Evitar lógica compleja en el template; delegar a métodos del componente.
+
+Usar OnPush para detección de cambios cuando sea posible.
+
+Encapsulación de estilos: "ViewEncapsulation.Emulated" (por defecto).
+
+---
+
+**ASP NET Core**
+
+**1. Arquitectura y estructura de proyecto**
+
+    src/
+      MyApp.Api/           <- proyecto principal: controladores y configuración HTTP
+      MyApp.Core/          <- entidades de dominio e interfaces
+      MyApp.Infrastructure/ <- implementaciones de repositorios y contextos de datos
+      MyApp.Tests/         <- pruebas unitarias e integración
+
+**2. Program.cs y Startup.cs**
+
+Configurar servicios (builder.Services.AddScoped<…>()) antes de app.Build().
+
+Definir middleware en orden lógico: seguridad, enrutamiento, CORS, logs.
+
+**3. Controladores y rutas**
+
+Decorar con [ApiController] y [Route("api/[controller]")].
+
+Acciones: verbos HTTP explícitos ([HttpGet], [HttpPost]).
+
+Devolver ActionResult<T> o IActionResult para flexibilidad de status codes.
+
+**4. Inyección de dependencias**
+
+Registrar interfaces y clases en ConfigureServices.
+
+No usar "new" dentro de controladores; siempre pedir dependencias por constructor.
+
+**5. Configuración y secretos**
+
+Variables de configuración en appsettings.json y appsettings.{Environment}.json.
+
+Secretos locales con Secret Manager (dotnet user-secrets).
+
+No guardar credenciales en código.
+
+---
+
+**RESTful API**
+
+**1. URI y estructura de endpoints**
+
+Sustantivos en plural: /api/users, /api/orders/{id}/items.
+
+No incluir verbo: el método HTTP determina la acción.
+
+**2. Verbos HTTP**
+
+GET para lectura, POST para creación, PUT para actualización completa, PATCH para actualización parcial, DELETE para eliminación.
+
+**3. Códigos de estado**
+
+200 OK, 201 Created (+ Location), 204 No Content,
+
+400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.
+
+**4. Versionado**
+
+Versionar en la ruta: /api/v1/users.
+
+Mantener compatibilidad hacia atrás mientras se publique v2.
+
+**5. Hateoas y DTOs**
+
+Incluir enlaces de navegación cuando aplique.
+
+No exponer directamente entidades de base de datos; usar DTOs.
+
+---
+
+**C++**
+
+**1. Extensiones y organización de archivos**
+
+.hpp/.h para encabezados, .cpp para implementación.
+
+Un directorio include/ y otro src/.
+
+**2. Guards y #pragma once**
+
+    #pragma once
+
+    namespace MyApp {
+      class MyClass { … };
+    }
+
+**3. Nombres y espacios de nombres**
+
+Clases en PascalCase, funciones y variables en snake_case.
+
+Evitar using namespace std; en headers.
+
+**4. Orden de includes**
+
+1. Encabezado correspondiente
+2. Bibliotecas estándar <…>
+3. Dependencias de terceros
+4. Encabezados propios
+
+        #include "my_class.hpp"
+
+        #include <vector>
+        #include <string>
+
+        #include "third_party/lib.hpp"
+
+**5. Memoria y punteros**
+
+Preferir "std::unique_ptr" y "std::shared_ptr" sobre punteros crudos.
+
+Evitar fugas de memoria y condiciones de carrera.
+
+**6. Estilo**
+
+Sangría de 2 o 4 espacios (consistente).
+
+Línea máxima ~100 caracteres.
+
+Comentarios // para breves aclaraciones, /** … */ para documentación.
+
+---
+
+**Python**
+
+**1. PEP 8: Estilo de código**
+
+Indentación de 4 espacios (no tabuladores).
+
+Longitud de línea menor o igual 79 caracteres.
+
+Líneas en blanco para separar funciones y clases.
+
+**2. Nomenclatura**
+
+Funciones y variables: snake_case.
+
+Clases: PascalCase.
+
+Constantes: UPPER_SNAKE_CASE.
+
+**3. Imports ordenados**
+
+1. Librerías estándar
+2. Librerías de terceros
+3. Módulos locales
+
+Separados por línea en blanco.
+
+    import os
+    import sys
+
+    import requests
+
+    from myapp.utils import helper
+
+**4. Docstrings**
+
+Triple comilla ("""…""") para módulos, funciones y clases.
+
+Seguir formato Google o NumPy style.
+
+**5. Tipado estático (opcional)**
+
+Utilizar hints en funciones y variables.
+
+    def fetch_data(url: str) -> dict[str, Any]:
+        """Obtiene datos de la URL dada."""
+        ...
+
+---
+
+**Wokwi**
+
+**1. Archivos de simulación**
+
+Extensión .wkw.json o .wokwi.json.
+
+Incluir metadatos: nombre, descripción, dependencias de hardware.
+
+**2. Estructura interna**
+
+"parts": lista de componentes (microcontroladores, sensores).
+
+"sketch": código fuente embebido (Arduino/C++ o MicroPython).
+
+**3. Comentarios y pruebas**
+
+Comentar secciones críticas del firmware.
+
+Definir escenarios de simulación en archivos separados.
+
+**4. Compartir y versionar**
+
+Cada simulación debe incluir una URL pública en la documentación del repositorio.
+
+Incluir en CI un paso que valide que el JSON esté bien formado.
+
+---
+
+**xUnit (.NET)**
+
+**1. Nomenclatura de pruebas**
+
+Método de prueba: MethodName_StateUnderTest_ExpectedBehavior.
+
+    [Fact]
+    public void CalculateTotal_WhenNoItems_ReturnsZero() { … }
+
+**2. Atributos**
+
+[Fact] para casos de prueba sin parámetros.
+
+[Theory] + [InlineData] para casos parametrizados.
+
+**3. Configuración y fixtures**
+
+Usar clases fixture para compartir contexto de prueba.
+
+Implementar IClassFixture<T> y ICollectionFixture<T> según alcance.
+
+**4. Asserts claros**
+
+Preferir Assert.Equal(expected, actual) y mensajes personalizados.
+
+Evitar lógica compleja dentro de las aserciones.
+
+**5. Organización**
+
+Cada clase de prueba corresponde a una clase de producción.
+
+Agrupar proyectos de test en una carpeta tests/ o MyApp.Tests/.
+
+### 6.1.4. Software Deployment Configuration
+
+En esta sección, procederemos a detallar de manera exhaustiva la configuración necesaria para implementar y desplegar nuestra solución. A lo largo de este análisis, enfatizaremos las mejores prácticas que deben seguirse, así como las herramientas más adecuadas a utilizar y los flujos de trabajo recomendados para garantizar una implementación eficaz y coordinada de ambas partes de nuestra solución. Además, discutiremos cómo cada decisión técnica impacta en la funcionalidad y la experiencia del usuario, proporcionando así un enfoque integral para el desarrollo de nuestras aplicaciones.
+
+**Landing Page:**
+
+**1. Creación del repositorio en GitHub:**
+Abrir GitHub, crear un nuevo repositorio público con un nombre claro y descriptivo para el Landing Page, y subir todos los archivos HTML, CSS, JavaScript y recursos asociados. Esta base organizará el flujo de trabajo y facilitará la colaboración del equipo.
+
+###### Figura 173
+
+_Repositorio de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-1.png" alt="Evidencia de Uso de Github Pages">
+
+**2. Habilitación de GitHub Pages:**
+En la sección Settings -> Pages, activar GitHub Pages para el repositorio. Ahí se puede elegir la rama de despliegue y, opcionalmente, un dominio personalizado, siguiendo la interfaz guiada que ofrece GitHub.
+
+###### Figura 174
+
+_Habilitación de Github Pages de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
+
+**3. Configuración de la rama y directorio de publicación:**
+Dentro de Settings -> Pages, seleccionar la rama main y el directorio raíz desde el que se servirán los archivos estáticos. Esto define exactamente qué contenido se publicará en el sitio.
+
+**4. Selección definitiva de la rama de despliegue:**
+Confirmar en el apartado Branch que la rama elegida (main) contiene la versión actualizada del Landing Page. Mantener las demás opciones en valores predeterminados salvo requisitos especiales.
+
+**5. Verificación del enlace público:**
+Tras guardar la configuración, GitHub generará automáticamente la URL de acceso al sitio. Cualquier push a la rama main actualizará en tiempo real la página desplegada.
+
+###### Figura 175
+
+_Verificación del enlace público de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-2.png" alt="Evidencia de Uso de Github Pages">
+
+**6. Pruebas finales y acceso al sitio:**
+Acceder al enlace generado (https://sevensync.github.io/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page/), comprobar funcionamiento y apariencia en distintos navegadores y dispositivos, y corregir posibles desviaciones de forma inmediata para garantizar una experiencia óptima.
+
+###### Figura 176
+
+_Versión final del encabezado de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-3.png" alt="Evidencia de Uso de Github Pages">
+
+---
+
+**Web Application**
+
+**1. Creación y configuración del proyecto en Firebase**
+Accede a Firebase Console, crea un nuevo proyecto o selecciona el existente asociado a la Web Application. En el menú lateral, habilita App Distribution y registra tu aplicación web, vinculándola al dominio que servirá los archivos estáticos.
+
+En tu entorno local, instala la herramienta de línea de comandos de Firebase y autentícate con firebase login. Asegúrate de haber seleccionado el proyecto correcto con firebase use.
+
+###### Figura 177
+
+_Selección y configuración del proyecto de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-1.png" alt="Evidencia de despliegue en Firebase">
+
+**2. Construcción de la aplicación**
+Ejecuta el comando de build de tu framework para generar los archivos estáticos listos para producción en la carpeta de salida designada.
+
+###### Figura 178
+
+_Construcción de la aplicación para el proyecto de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-2.png" alt="Evidencia de despliegue en Firebase">
+
+**3. Configuración de Firebase Hosting**
+Inicializa Firebase Hosting con firebase init, selecciona el proyecto y la carpeta de salida generada en el paso anterior. Cuando se te pregunte si deseas sobrescribir archivos de configuración, confirma solo los necesarios.
+
+###### Figura 179
+
+_Configuración de Firebase Hosting para el despliegue de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-3.png" alt="Evidencia de despliegue en Firebase">
+
+**4. Despliegue en App Distribution**
+Utilizar comandos (firebase deploy) de despliegue en Firebase para subir el paquete de la Web Application a App Distribution. Este comando empaqueta automáticamente el build y lo hace disponible para el grupo de desarrolladores configurado.
+
+###### Figura 180
+
+_Despliegue de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-4.png" alt="Evidencia de despliegue en Firebase">
+
+**5. Obtención del enlace de distribución**
+Una vez completada la subida, Firebase mostrará en consola la URL de App Distribution. Comparte este enlace con los desarrolladores o stakeholders para que puedan acceder y descargar la última versión de la Web Application directamente desde Firebase App Distribution.
+
+###### Figura 181
+
+_Página de Firebase Distribution de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-5.png" alt="Evidencia de despliegue en Firebase">
+
+###### Figura 182
+
+_Página de inicio de sesión de la Web Application de Macetech ya desplegada_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-6.png" alt="Evidencia de despliegue en Firebase">
+
+---
+
+**Back-End Platform**
+
+**1. Clonación y gestión del repositorio con GitHub Desktop**
+Abrir GitHub Desktop, clonar el repositorio del backend y crear la rama de despliegue (release/*). Confirmar que el código local está actualizado y hacer commit de cualquier ajuste de configuración antes de proceder.
+
+###### Figura 183
+
+_Gestión del Back-End de Macetech antes de su despliegue mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-1.png" alt="Evidencia de despliegue en Azure">
+
+**2. Configuración del proyecto y variables de entorno**
+En el archivo de configuración (appsettings.json o variables de entorno), definir cadenas de conexión a bases de datos, claves de servicios externos y parámetros de la aplicación. Guardar estos cambios en la rama de despliegue y sincronizarlos con el repositorio remoto mediante GitHub Desktop.
+
+###### Figura 184
+
+_Configuración del proyecto Back-End de Macetech antes de su despliegue mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-2.png" alt="Evidencia de despliegue en Azure">
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-3.png" alt="Evidencia de despliegue en Azure">
+
+**3. Compilación y publicación desde línea de comandos**
+Abrir la terminal o cmd en la carpeta raíz del proyecto ASP NET Core y ejecutar dotnet publish -c Release -o ./publish para generar los artefactos de producción en la carpeta publish.
+
+###### Figura 185
+
+_Compilación y publicación del proyecto Back-End a la plataforma de Azure mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-4.png" alt="Evidencia de despliegue en Azure">
+
+**4. Despliegue en Azure App Service**
+
+Autenticarse con login, seleccionar el suscriptor con account set --subscription <ID> y desplegar mediante la consola de comandos, indicando el grupo y la aplicación del proyecto en específico. Después, dar a publish directamente.
+
+**5. Verificación del despliegue y configuración de dominio**
+Una vez completado el push a Azure, abrir la URL asignada al App Service para confirmar que la API se ha publicado. Si se requiere, ajustar los dominios personalizados y certificados SSL en TLS/SSL Settings.
+
+###### Figura 186
+
+_Revisión y verificación del proyecto Back-End en la plataforma de Azure_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-5.png" alt="Evidencia de despliegue en Azure">
+
+**6. Acceso y presentación de Swagger UI**
+Con la API en línea, navegar a https://<mi-app>.azurewebsites.net/swagger para visualizar automáticamente la documentación interactiva de los endpoints generada por Swashbuckle. Allí se podrá inspeccionar rutas, esquemas de request/response y probar llamadas desde el navegador.
+
+###### Figura 187
+
+_Presentación de los endpoints del Back-End de Macetech desplegado mediante la plataforma de Azure_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-6.png" alt="Evidencia de despliegue en Azure">
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
@@ -534,7 +1243,7 @@ La implementación de la página estática de negocio, los servicios y las aplic
 
 El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. Durante este período, nos enfocamos en la implementación de las características y funcionalidades prioritarias identificadas en la planificación inicial. Esto implica traducir los requisitos y especificaciones en código funcional, desarrollando las bases de nuestro producto de manera iterativa.
 
-#### 6.2.1.1.Sprint Planning 1.
+#### 6.2.1.1.Sprint Planning 1
 
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
 
