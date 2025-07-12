@@ -1,8 +1,8 @@
-# Capítulo VI: Product Implementation, Validation & Deployment.
+# Capítulo VI: Product Implementation, Validation & Deployment
 
 La implementación, validación y despliegue del producto constituyen fases críticas en el proceso de desarrollo, ya que garantizan que la visión conceptual inicialmente planteada se materialice en una solución funcional, confiable y accesible para los usuarios finales. A través de estas etapas, no solo se concreta el diseño teórico en una aplicación tangible y operativa, sino que también se evalúa su desempeño en condiciones reales, permitiendo identificar posibles deficiencias, corregir errores y optimizar su funcionamiento. Además, este proceso resulta fundamental para verificar la viabilidad técnica del producto, validar las hipótesis del equipo de desarrollo y asegurar que la experiencia del usuario cumpla con los estándares de calidad esperados, fortaleciendo así la propuesta de valor de la solución tecnológica.
 
-## 6.1. Software Configuration Management.
+## 6.1. Software Configuration Management
 
 Con el propósito de asegurar un ciclo de vida robusto, eficiente y sostenible para el desarrollo de Macetech, hemos adoptado un conjunto integral de herramientas tecnológicas y metodológicas que respaldan cada una de las etapas clave del proyecto. Estas herramientas nos permiten gestionar el proyecto de manera estructurada, especificar los requerimientos de forma precisa y organizada, diseñar interfaces coherentes y responsivas centradas en la experiencia del usuario, y llevar a cabo un desarrollo colaborativo siguiendo buenas prácticas de ingeniería de software.
 
@@ -10,7 +10,7 @@ En esta sección, se detallarán y justificarán las herramientas seleccionadas 
 
 Asimismo, se explicarán las tecnologías empleadas para la implementación y gestión de la base de datos, que aseguran el almacenamiento eficiente, seguro y escalable de la información; y las herramientas utilizadas en el desarrollo de la aplicación embebida (embedded application) que controla el funcionamiento del dispositivo físico. También se presentarán las herramientas adoptadas para la aplicación en el borde (edge application), y la aplicación móvil, y, finalmente, la landing page.
 
-### 6.1.1. Software Development Environment Configuration.
+### 6.1.1. Software Development Environment Configuration
 
 A continuación, se presentan y fundamentan las herramientas adoptadas para el desarrollo de Macetech, clasificadas según su función en las distintas áreas del ecosistema tecnológico de la solución: gestión y organización del proyecto, diseño de interfaces, desarrollo frontend y backend, gestión de base de datos, implementación de la aplicación embebida, desarrollo de la aplicación edge, construcción de la aplicación móvil y diseño de la landing page. Cada una de estas herramientas cumple un rol clave en la arquitectura del sistema y contribuye al cumplimiento de los objetivos funcionales y no funcionales del producto. Para las herramientas basadas en SaaS (Software como Servicio), se proporcionará la URL de acceso a sus respectivas páginas web, mientras que para aquellas que requieren instalación local, se indicará la ruta de descarga adecuada.
 
@@ -20,49 +20,49 @@ Esta sección se enfoca en la planificación estratégica y supervisión operati
 
 - **Reuniones de trabajo - Discord**
 
-  Para la coordinación general del equipo de desarrollo, incluyendo tanto al equipo de frontend como al resto de las áreas técnicas y organizativas, utilizamos Discord como nuestra plataforma principal de comunicación. Discord es una herramienta de comunicación en tiempo real diseñada originalmente para comunidades de videojuegos, pero que ha sido ampliamente adoptada por equipos de trabajo técnico debido a su versatilidad, baja latencia en llamadas, interfaz intuitiva y capacidades de organización mediante canales temáticos y roles personalizados. Estas características la convierten en una solución idónea para Macetech, desarrollado por el equipo de SevenSync, al facilitar una comunicación fluida, continua y sin restricciones de tiempo para reuniones técnicas, sesiones de planificación, revisiones de código, discusiones de diseño, resolución de incidencias y coordinación general del proyecto.
+  Para la coordinación general del equipo de desarrollo, incluyendo tanto al equipo de frontend como al resto de las áreas técnicas y organizativas, utilizamos Discord como nuestra plataforma principal de comunicación. Discord es una herramienta de comunicación en tiempo real diseñada originalmente para comunidades de videojuegos, pero que ha sido ampliamente adoptada por equipos de trabajo técnico debido a su versatilidad, baja latencia en llamadas, interfaz intuitiva y capacidades de organización mediante canales temáticos y roles personalizados. Estas características la convierten en una solución idónea para Macetech, desarrollado por el equipo de SevenSync, al facilitar una comunicación fluida, continua y sin restricciones de tiempo para reuniones técnicas, sesiones de planificación, revisiones de código, discusiones de diseño, resolución de incidencias y coordinación general del proyecto.<br><br>
 
-  En Discord, se establecieron distintos canales organizados por bounded contexts y áreas funcionales del proyecto (frontend, backend, base de datos, IoT/embedded, diseño, testing, etc.), lo cual permitió segmentar las conversaciones y asignar tareas de forma clara y estructurada. Además, se habilitaron canales de texto y voz para distintos tipos de reuniones (diarias, retrospectivas, planificación, diseño), optimizando la colaboración sincrónica y asincrónica del equipo. Se definieron también roles específicos dentro del servidor (como líder técnico, coordinador de diseño, responsable de base de datos), lo cual facilitó la asignación de responsabilidades y el flujo de trabajo colaborativo. Gracias a esta infraestructura comunicacional, se logró mantener una gestión eficiente del proyecto y un seguimiento preciso de las actividades durante todo el ciclo de vida del desarrollo de Macetech.
+  En Discord, se establecieron distintos canales organizados por bounded contexts y áreas funcionales del proyecto (frontend, backend, base de datos, IoT/embedded, diseño, testing, etc.), lo cual permitió segmentar las conversaciones y asignar tareas de forma clara y estructurada. Además, se habilitaron canales de texto y voz para distintos tipos de reuniones (diarias, retrospectivas, planificación, diseño), optimizando la colaboración sincrónica y asincrónica del equipo. Se definieron también roles específicos dentro del servidor (como líder técnico, coordinador de diseño, responsable de base de datos), lo cual facilitó la asignación de responsabilidades y el flujo de trabajo colaborativo. Gracias a esta infraestructura comunicacional, se logró mantener una gestión eficiente del proyecto y un seguimiento preciso de las actividades durante todo el ciclo de vida del desarrollo de Macetech.<br><br>
 
-  - Página oficial de Discord: https://discord.com/
+  - Página oficial de Discord: https://discord.com/<br><br>
 
 - **Comunicación sincrónica y asincrónica - WhatsApp**
 
-  Para la gestión de la comunicación sincrónica y asincrónica de todo el equipo de Macetech se emplea WhatsApp como plataforma principal de mensajería instantánea. WhatsApp, con su amplia adopción y soporte multiplataforma (Android, iOS y escritorio), ofrece un canal confiable para el intercambio de mensajes de texto, notas de voz, llamadas de voz y videollamadas, garantizando comunicación continua y cifrada de extremo a extremo entre los miembros del proyecto. Esta elección se fundamenta en la familiaridad del grupo con la interfaz de usuario, la disponibilidad constante en dispositivos móviles y la posibilidad de compartir rápidamente archivos multimedia y documentos, lo que agiliza la resolución de consultas técnicas y la coordinación de actividades diarias.
+  Para la gestión de la comunicación sincrónica y asincrónica de todo el equipo de Macetech se emplea WhatsApp como plataforma principal de mensajería instantánea. WhatsApp, con su amplia adopción y soporte multiplataforma (Android, iOS y escritorio), ofrece un canal confiable para el intercambio de mensajes de texto, notas de voz, llamadas de voz y videollamadas, garantizando comunicación continua y cifrada de extremo a extremo entre los miembros del proyecto. Esta elección se fundamenta en la familiaridad del grupo con la interfaz de usuario, la disponibilidad constante en dispositivos móviles y la posibilidad de compartir rápidamente archivos multimedia y documentos, lo que agiliza la resolución de consultas técnicas y la coordinación de actividades diarias.<br><br>
 
-  En esta plataforma, se ha configurado un chat grupal donde participan todos los integrantes del equipo, lo que facilita la difusión de información global, la asignación de tareas y el seguimiento de hitos o incidentes en tiempo real. Paralelamente, cada colaborador cuenta con la capacidad de establecer comunicación directa con el líder del equipo o con compañeros asignados a tareas específicas, posibilitando interacciones más enfocadas y oportunas para resolver dudas puntuales o recibir retroalimentación inmediata. Gracias a la versatilidad de WhatsApp, se logran establecer flujos de comunicación efectivos tanto para discusiones de alto nivel (mediante videoconferencias grupales) como para consultas rápidas (a través de mensajes o audios), fortaleciendo la cohesión del equipo y asegurando una coordinación eficiente del proyecto Macetech.
+  En esta plataforma, se ha configurado un chat grupal donde participan todos los integrantes del equipo, lo que facilita la difusión de información global, la asignación de tareas y el seguimiento de hitos o incidentes en tiempo real. Paralelamente, cada colaborador cuenta con la capacidad de establecer comunicación directa con el líder del equipo o con compañeros asignados a tareas específicas, posibilitando interacciones más enfocadas y oportunas para resolver dudas puntuales o recibir retroalimentación inmediata. Gracias a la versatilidad de WhatsApp, se logran establecer flujos de comunicación efectivos tanto para discusiones de alto nivel (mediante videoconferencias grupales) como para consultas rápidas (a través de mensajes o audios), fortaleciendo la cohesión del equipo y asegurando una coordinación eficiente del proyecto Macetech.<br><br>
 
-  - Página oficial de WhatsApp: https://www.whatsapp.com/?lang=es_LA
+  - Página oficial de WhatsApp: https://www.whatsapp.com/?lang=es_LA<br><br>
 
 - **Sesiones de Brainstorming y colaboración en tiempo real - Excalidraw**
 
-  Para la facilitación de la ideación visual y la colaboración en tiempo real entre todos los miembros del equipo de Macetech, se emplea Excalidraw como plataforma principal de pizarra digital colaborativa. Excalidraw es una herramienta de código abierto y uso gratuito que proporciona un lienzo virtual ilimitado, permitiendo a los participantes esbozar diagramas, flujos de trabajo y prototipos de manera libre y espontánea. Su interfaz minimalista y basada en vectores ofrece herramientas esenciales (líneas, formas, texto y colores básicos) para representar conceptos técnicos, arquitecturas de sistema, procesos de interacción y esquemas de integración de componentes sin necesidad de conocimientos avanzados en software de diseño. Además, Excalidraw garantiza un entorno orientado a la privacidad y seguridad, ya que no requiere registros complejos ni almacena información sensible de manera persistente.
+  Para la facilitación de la ideación visual y la colaboración en tiempo real entre todos los miembros del equipo de Macetech, se emplea Excalidraw como plataforma principal de pizarra digital colaborativa. Excalidraw es una herramienta de código abierto y uso gratuito que proporciona un lienzo virtual ilimitado, permitiendo a los participantes esbozar diagramas, flujos de trabajo y prototipos de manera libre y espontánea. Su interfaz minimalista y basada en vectores ofrece herramientas esenciales (líneas, formas, texto y colores básicos) para representar conceptos técnicos, arquitecturas de sistema, procesos de interacción y esquemas de integración de componentes sin necesidad de conocimientos avanzados en software de diseño. Además, Excalidraw garantiza un entorno orientado a la privacidad y seguridad, ya que no requiere registros complejos ni almacena información sensible de manera persistente.<br><br>
 
-  Dentro del proyecto Macetech, Excalidraw se empleó para sesiones de brainstorming y talleres de diseño, en los cuales se definieron tanto la arquitectura general del sistema (frontend, backend, bases de datos, comunicación con módulos embebidos y lógica de la aplicación móvil) como los flujos de usuarios y la interacción entre los distintos bounded contexts de forma rápida, sencilla y directa. De igual modo, se utilizaron sus capacidades de colaboración en tiempo real para la elaboración de diagramas Kanban simplificados, facilitando la asignación y visualización de tareas durante los sprints. Esta metodología visual permitió al equipo desglosar de manera clara y ordenada las actividades asociadas a cada componente, optimizando la comunicación interfuncional y acelerando la toma de decisiones en torno a la estructuración del proyecto.
+  Dentro del proyecto Macetech, Excalidraw se empleó para sesiones de brainstorming y talleres de diseño, en los cuales se definieron tanto la arquitectura general del sistema (frontend, backend, bases de datos, comunicación con módulos embebidos y lógica de la aplicación móvil) como los flujos de usuarios y la interacción entre los distintos bounded contexts de forma rápida, sencilla y directa. De igual modo, se utilizaron sus capacidades de colaboración en tiempo real para la elaboración de diagramas Kanban simplificados, facilitando la asignación y visualización de tareas durante los sprints. Esta metodología visual permitió al equipo desglosar de manera clara y ordenada las actividades asociadas a cada componente, optimizando la comunicación interfuncional y acelerando la toma de decisiones en torno a la estructuración del proyecto.<br><br>
 
-  - Página oficial de Excalidraw: https://excalidraw.com/
+  - Página oficial de Excalidraw: https://excalidraw.com/<br><br>
 
 - **Desarrollo de documentos de participación - Google Docs**
 
-  Google Docs es un procesador de texto basado en la nube que habilita la creación, edición y almacenamiento de documentos en tiempo real, utilizando Google Drive como repositorio central. La plataforma ofrece un conjunto completo de funcionalidades dirigidas a entornos colaborativos y administrativos: edición simultánea con actualización en tiempo real, control de versiones automático con historial, comentarios y sugerencias, herramientas avanzadas de formato de texto y párrafo (estilos, plantillas, numeración y listas), inserción de objetos multimedia (imágenes, tablas, gráficos vinculados) y enlaces externos, además de correctores ortográfico y gramatical, y soporte para trabajo sin conexión mediante sincronización automática. Su arquitectura en la nube garantiza alta disponibilidad, escalabilidad en el almacenamiento y compatibilidad multiplataforma, lo que facilita tanto la accesibilidad remota como la integración con otros servicios de Google.
+  Google Docs es un procesador de texto basado en la nube que habilita la creación, edición y almacenamiento de documentos en tiempo real, utilizando Google Drive como repositorio central. La plataforma ofrece un conjunto completo de funcionalidades dirigidas a entornos colaborativos y administrativos: edición simultánea con actualización en tiempo real, control de versiones automático con historial, comentarios y sugerencias, herramientas avanzadas de formato de texto y párrafo (estilos, plantillas, numeración y listas), inserción de objetos multimedia (imágenes, tablas, gráficos vinculados) y enlaces externos, además de correctores ortográfico y gramatical, y soporte para trabajo sin conexión mediante sincronización automática. Su arquitectura en la nube garantiza alta disponibilidad, escalabilidad en el almacenamiento y compatibilidad multiplataforma, lo que facilita tanto la accesibilidad remota como la integración con otros servicios de Google.<br><br>
 
-  En el contexto del proyecto Macetech, Google Docs se ha empleado como herramienta principal para la gestión y seguimiento de responsabilidades del equipo, permitiendo asignar y documentar tareas específicas, definir criterios de evaluación basados en la puntualidad de las entregas, la colaboración continua y la calidad de los entregables. Además, Google Docs ha servido como espacio para la redacción rápida de ideas textuales, la elaboración de reportes de incidencias (bugs, fallos de diseño o inconsistencias en el flujo de la aplicación) y la propuesta de cambios significativos en el alcance o la arquitectura, beneficiándose del control de cambios y del historial de versiones para mantener trazabilidad de las modificaciones. Gracias a estas capacidades, el equipo de Macetech ha optimizado la comunicación documental y ha establecido un registro transparente de la evolución de cada actividad hasta la finalización del proyecto.
+  En el contexto del proyecto Macetech, Google Docs se ha empleado como herramienta principal para la gestión y seguimiento de responsabilidades del equipo, permitiendo asignar y documentar tareas específicas, definir criterios de evaluación basados en la puntualidad de las entregas, la colaboración continua y la calidad de los entregables. Además, Google Docs ha servido como espacio para la redacción rápida de ideas textuales, la elaboración de reportes de incidencias (bugs, fallos de diseño o inconsistencias en el flujo de la aplicación) y la propuesta de cambios significativos en el alcance o la arquitectura, beneficiándose del control de cambios y del historial de versiones para mantener trazabilidad de las modificaciones. Gracias a estas capacidades, el equipo de Macetech ha optimizado la comunicación documental y ha establecido un registro transparente de la evolución de cada actividad hasta la finalización del proyecto.<br><br>
 
-  - Página oficial de Google Docs: https://docs.google.com/document/u/0/
+  - Página oficial de Google Docs: https://docs.google.com/document/u/0/<br><br>
 
 - **Presentaciones de alto impacto a stakeholders - Canva**
 
-  Canva es una plataforma de diseño gráfico basada en la nube que facilita la creación de presentaciones de alto impacto orientadas a audiencias técnicas y no técnicas. Su entorno de trabajo proporciona una amplia variedad de plantillas profesionales, elementos visuales (gráficos, diagramas, iconografía) y herramientas de edición colaborativa, permitiendo al equipo de Macetech construir diapositivas coherentes con la identidad visual del proyecto y adaptadas a distintos públicos, como inversionistas, aliados estratégicos y usuarios finales. Además, su capacidad para exportar presentaciones en formatos livianos (PDF, PPTX, vídeo) garantiza una distribución rápida y confiable de los contenidos, optimizando tanto la transferencia de archivos como la visualización en dispositivos con limitaciones de ancho de banda.
+  Canva es una plataforma de diseño gráfico basada en la nube que facilita la creación de presentaciones de alto impacto orientadas a audiencias técnicas y no técnicas. Su entorno de trabajo proporciona una amplia variedad de plantillas profesionales, elementos visuales (gráficos, diagramas, iconografía) y herramientas de edición colaborativa, permitiendo al equipo de Macetech construir diapositivas coherentes con la identidad visual del proyecto y adaptadas a distintos públicos, como inversionistas, aliados estratégicos y usuarios finales. Además, su capacidad para exportar presentaciones en formatos livianos (PDF, PPTX, vídeo) garantiza una distribución rápida y confiable de los contenidos, optimizando tanto la transferencia de archivos como la visualización en dispositivos con limitaciones de ancho de banda.<br><br>
 
-  En el marco de las entregas parciales y auditorías internas, utilizamos Canva no solo para el diseño de las exposiciones, sino también para grabar vídeos narrados directamente dentro de la plataforma, diapositiva por diapositiva. Esta funcionalidad permite generar presentaciones en formato multimedia que combinan voz, vídeo, animaciones de entrada y salida de elementos gráficos, así como transiciones personalizadas, de manera que la revisión periódica del avance se realiza con rapidez y calidad profesional. Los vídeos generados facilitan la auditoría técnica y la retroalimentación de los stakeholders, ya que integran el contexto visual de la interfaz de usuario, diagramas de arquitectura y métricas de desarrollo en un único recurso descargable junto al documento final de la presentación.
+  En el marco de las entregas parciales y auditorías internas, utilizamos Canva no solo para el diseño de las exposiciones, sino también para grabar vídeos narrados directamente dentro de la plataforma, diapositiva por diapositiva. Esta funcionalidad permite generar presentaciones en formato multimedia que combinan voz, vídeo, animaciones de entrada y salida de elementos gráficos, así como transiciones personalizadas, de manera que la revisión periódica del avance se realiza con rapidez y calidad profesional. Los vídeos generados facilitan la auditoría técnica y la retroalimentación de los stakeholders, ya que integran el contexto visual de la interfaz de usuario, diagramas de arquitectura y métricas de desarrollo en un único recurso descargable junto al documento final de la presentación.<br><br>
 
-  - Página oficial de Canva: https://www.canva.com/
+  - Página oficial de Canva: https://www.canva.com/<br><br>
 
 - **Gestión del desarrollo del proyecto, de Product Backlog y Sprint Backlogs - Jira Software**
 
-  Jira Software es una plataforma de gestión de proyectos orientada a equipos de desarrollo ágil, que facilita la planificación, seguimiento y control de todas las actividades relacionadas con el ciclo de vida del software. Basada en la metodología Scrum, Jira permite configurar Product Backlogs y Sprint Backlogs de forma granular, definiendo historias de usuario, tareas técnicas y criterios de aceptación para cada funcionalidad o componente del sistema. Gracias a su flexibilidad, es posible parametrizar flujos de trabajo personalizados (workflows) que reflejen el proceso interno de revisión, aprobación y entrega de cada ítem. Además, Jira ofrece mecanismos de gestión de versiones, seguimiento de incidencias y generación de informes de progreso, lo cual garantiza una transparencia total sobre el estado de avance del proyecto y la identificación temprana de desviaciones con respecto a los plazos establecidos.
+  Jira Software es una plataforma de gestión de proyectos orientada a equipos de desarrollo ágil, que facilita la planificación, seguimiento y control de todas las actividades relacionadas con el ciclo de vida del software. Basada en la metodología Scrum, Jira permite configurar Product Backlogs y Sprint Backlogs de forma granular, definiendo historias de usuario, tareas técnicas y criterios de aceptación para cada funcionalidad o componente del sistema. Gracias a su flexibilidad, es posible parametrizar flujos de trabajo personalizados (workflows) que reflejen el proceso interno de revisión, aprobación y entrega de cada ítem. Además, Jira ofrece mecanismos de gestión de versiones, seguimiento de incidencias y generación de informes de progreso, lo cual garantiza una transparencia total sobre el estado de avance del proyecto y la identificación temprana de desviaciones con respecto a los plazos establecidos.<br><br>
 
-  Dentro de Macetech, hemos configurado tableros Scrum que contienen los Product Backlogs y Sprint Backlogs correspondientes a cada iteración planificada. Cada miembro del equipo recibe asignaciones específicas con fechas límite claras para asegurar el cumplimiento de los objetivos de cada sprint, abarcando tareas de desarrollo de frontend, backend, base de datos, aplicación embebida y aplicación móvil. Los epics, historias de usuario y tareas técnicas se vinculan entre sí para visualizar dependencias y priorizar entregables críticos en cada ciclo de trabajo. A lo largo del sprint, se realizan reuniones diarias (daily stand-ups) y revisiones de sprint (sprint reviews) dentro de Jira, empleando tableros y filtros personalizados para validar el cumplimiento de los criterios de aceptación y detectar bloqueos.
+  Dentro de Macetech, hemos configurado tableros Scrum que contienen los Product Backlogs y Sprint Backlogs correspondientes a cada iteración planificada. Cada miembro del equipo recibe asignaciones específicas con fechas límite claras para asegurar el cumplimiento de los objetivos de cada sprint, abarcando tareas de desarrollo de frontend, backend, base de datos, aplicación embebida y aplicación móvil. Los epics, historias de usuario y tareas técnicas se vinculan entre sí para visualizar dependencias y priorizar entregables críticos en cada ciclo de trabajo. A lo largo del sprint, se realizan reuniones diarias (daily stand-ups) y revisiones de sprint (sprint reviews) dentro de Jira, empleando tableros y filtros personalizados para validar el cumplimiento de los criterios de aceptación y detectar bloqueos.<br><br>
 
   - Página oficial de Jira: https://www.atlassian.com/software/jira
 
@@ -72,37 +72,37 @@ Esta sección se centra en la gestión integral de requisitos mediante el uso de
 
 - **Desarrollo de diagramas de Needfinding con el enfoque UX (User Experience) - UXPressia**
 
-  UXPressia es una plataforma especializada en la creación y gestión de artefactos de experiencia de usuario, orientada a la definición profunda de User Personas, Empathy Maps, Journey Maps e Impact Maps. Esta herramienta basada en la nube permite diseñar perfiles de usuarios detallados, describiendo atributos demográficos, comportamentales y motivacionales, lo cual resulta esencial para alinear los requisitos del producto con las necesidades reales de los usuarios finales. Además, UXPressia proporciona plantillas estandarizadas y capacidades de colaboración en tiempo real, garantizando que todo el equipo de Macetech pueda contribuir simultáneamente a la codificación de insights de usuario, la identificación de _pain points_ y la definición de oportunidades de mejora en cada etapa del ciclo de interacción.
+  UXPressia es una plataforma especializada en la creación y gestión de artefactos de experiencia de usuario, orientada a la definición profunda de User Personas, Empathy Maps, Journey Maps e Impact Maps. Esta herramienta basada en la nube permite diseñar perfiles de usuarios detallados, describiendo atributos demográficos, comportamentales y motivacionales, lo cual resulta esencial para alinear los requisitos del producto con las necesidades reales de los usuarios finales. Además, UXPressia proporciona plantillas estandarizadas y capacidades de colaboración en tiempo real, garantizando que todo el equipo de Macetech pueda contribuir simultáneamente a la codificación de insights de usuario, la identificación de _pain points_ y la definición de oportunidades de mejora en cada etapa del ciclo de interacción.<br><br>
 
-  En el contexto de Macetech, UXPressia se emplea para construir User Personas basados en investigaciones de mercado y datos de usuario, definiendo segmentos clave con objetivos y comportamientos específicos. A partir de estos perfiles, se generan Empathy Maps que detallan las emociones, pensamientos, acciones y frustraciones de cada segmento, permitiendo priorizar funcionalidades y diseñar flujos de interacción más empáticos. Asimismo, con Journey Maps, se mapean los puntos críticos del recorrido del usuario, desde la adquisición de una planta hasta el monitoreo constante con Macetech, identificando momentos de valor y posibles fricciones en la experiencia. Finalmente, los Impact Maps facilitan la vinculación entre objetivos de negocio y actividades concretas de diseño e implementación, asegurando que todas las decisiones de desarrollo estén justificadas en métricas de impacto. Gracias a la trazabilidad y la interoperabilidad de UXPressia, el equipo multidisciplinario de SevenSync logra un alineamiento exhaustivo entre investigación UX, diseño de producto y desarrollo técnico, cimentando una experiencia de usuario sólida y validada.
+  En el contexto de Macetech, UXPressia se emplea para construir User Personas basados en investigaciones de mercado y datos de usuario, definiendo segmentos clave con objetivos y comportamientos específicos. A partir de estos perfiles, se generan Empathy Maps que detallan las emociones, pensamientos, acciones y frustraciones de cada segmento, permitiendo priorizar funcionalidades y diseñar flujos de interacción más empáticos. Asimismo, con Journey Maps, se mapean los puntos críticos del recorrido del usuario, desde la adquisición de una planta hasta el monitoreo constante con Macetech, identificando momentos de valor y posibles fricciones en la experiencia. Finalmente, los Impact Maps facilitan la vinculación entre objetivos de negocio y actividades concretas de diseño e implementación, asegurando que todas las decisiones de desarrollo estén justificadas en métricas de impacto. Gracias a la trazabilidad y la interoperabilidad de UXPressia, el equipo multidisciplinario de SevenSync logra un alineamiento exhaustivo entre investigación UX, diseño de producto y desarrollo técnico, cimentando una experiencia de usuario sólida y validada.<br><br>
 
-  - Página oficial de UXPressia: https://uxpressia.com/
+  - Página oficial de UXPressia: https://uxpressia.com/<br><br>
 
 - **EventStorming, Flows, Canvases y Mapeo As-Is y To-Be - Miro**
 
-  Miro se configura como una plataforma colaborativa basada en un lienzo digital flexible que facilita la visualización y modelado de procesos complejos, integrando funcionalidades avanzadas para la creación de As-Is y To-Be Scenario Maps, así como para la realización de sesiones de EventStorming. Su infraestructura permite trabajar simultáneamente en un espacio infinito, soportando elementos gráficos como sticky notes, diagramas de flujo, plantillas personalizadas y conexiones semánticas entre objetos. Gracias a su compatibilidad con metodologías ágiles y técnicas de modelado de dominios, Miro resulta idóneo para la representación de artefactos de arquitecturas basadas en Bounded Contexts, ya que posibilita la creación de tableros especializados donde se delimita visualmente cada contexto, se establecen fronteras claras de responsabilidad y se documentan relaciones entre servicios, eventos y actores del sistema.
+  Miro se configura como una plataforma colaborativa basada en un lienzo digital flexible que facilita la visualización y modelado de procesos complejos, integrando funcionalidades avanzadas para la creación de As-Is y To-Be Scenario Maps, así como para la realización de sesiones de EventStorming. Su infraestructura permite trabajar simultáneamente en un espacio infinito, soportando elementos gráficos como sticky notes, diagramas de flujo, plantillas personalizadas y conexiones semánticas entre objetos. Gracias a su compatibilidad con metodologías ágiles y técnicas de modelado de dominios, Miro resulta idóneo para la representación de artefactos de arquitecturas basadas en Bounded Contexts, ya que posibilita la creación de tableros especializados donde se delimita visualmente cada contexto, se establecen fronteras claras de responsabilidad y se documentan relaciones entre servicios, eventos y actores del sistema.<br><br>
 
-  En el marco del desarrollo de Macetech, Miro se emplea para elaborar detallados As-Is Scenario Maps, que describen los flujos actuales de interacción del usuario y del dispositivo, así como To-Be Scenario Maps que muestran la evolución prevista tras la implementación de nuevas funcionalidades. Asimismo, se usó durante el desarrollo del EventStorming. En las sesiones de EventStorming, los participantes generan un mapa de eventos de dominio, identificando comandos, aggregates y resultados relevantes para los distintos módulos identificados. A continuación, estos eventos se agrupan en Bounded Contexts, diferenciando claramente los ámbitos de frontend, backend, base de datos y sistemas embebidos. Con los Flows y Canvases resultantes, se definen diagramas de secuencia y estructuras lógicas que guían la implementación técnica. Además, se realizan sesiones de brainstorming centradas exclusivamente en la profundización de cada Bounded Context, permitiendo asignar responsabilidades específicas y optimizar la cohesión interna.
+  En el marco del desarrollo de Macetech, Miro se emplea para elaborar detallados As-Is Scenario Maps, que describen los flujos actuales de interacción del usuario y del dispositivo, así como To-Be Scenario Maps que muestran la evolución prevista tras la implementación de nuevas funcionalidades. Asimismo, se usó durante el desarrollo del EventStorming. En las sesiones de EventStorming, los participantes generan un mapa de eventos de dominio, identificando comandos, aggregates y resultados relevantes para los distintos módulos identificados. A continuación, estos eventos se agrupan en Bounded Contexts, diferenciando claramente los ámbitos de frontend, backend, base de datos y sistemas embebidos. Con los Flows y Canvases resultantes, se definen diagramas de secuencia y estructuras lógicas que guían la implementación técnica. Además, se realizan sesiones de brainstorming centradas exclusivamente en la profundización de cada Bounded Context, permitiendo asignar responsabilidades específicas y optimizar la cohesión interna.<br><br>
 
   - Página oficial de Miro: https://miro.com/es/
 
 #### Product UX/UI Design
 
-Esta sección se orienta al diseño UX/UI mediante el aprovechamiento de herramientas especializadas para la definición de Style Guidelines, la creación de wireframes, mockups, wireflows, user flows y prototipos interactivos. En este sentido, usamos plataformas que actuan como eje central para la composición de sistemas de diseño escalables, gestión de bibliotecas de componentes, especificación de tokens de estilo y colaboración en tiempo real entre diseñadores y desarrolladores. También estructuramos diagramas de wireflows y userflows detallados que documentan la navegación y jerarquía de información, garantizando la coherencia entre la estructura de contenido y la experiencia interactiva, así como la iteración continua de prototipos navegables que permiten pruebas de usabilidad y refinamiento basado en métricas cualitativas y cuantitativas durante todo el ciclo de desarrollo.
+Esta sección se orienta al diseño UX/UI mediante el aprovechamiento de herramientas especializadas para la definición de Style Guidelines, la creación de wireframes, mockups, wireflows, user flows y prototipos interactivos. En este sentido, usamos plataformas que actuan como eje central para la composición de sistemas de diseño escalables, gestión de bibliotecas de componentes, especificación de tokens de estilo y colaboración en tiempo real entre diseñadores y desarrolladores. También estructuramos diagramas de wireflows y userflows detallados que documentan la navegación y jerarquía de información, garantizando la coherencia entre la estructura de contenido y la experiencia interactiva, así como la iteración continua de prototipos navegables que permiten pruebas de usabilidad y refinamiento basado en métricas cualitativas y cuantitativas durante todo el ciclo de desarrollo.<br><br>
 
 - **UX/UI Design y Prototyping - Figma**
 
-  Figma se emplea como la plataforma principal para el diseño visual y la elaboración de prototipos interactivos en Macetech, abarcando desde la creación de wireframes iniciales hasta mock-ups de alta fidelidad y prototipos navegables. Gracias a su entorno colaborativo en tiempo real, los diseñadores pueden esbozar rápidamente la estructura básica de la interfaz, definiendo la colocación de componentes, jerarquías de contenido y flujos de navegación, y, de manera simultánea, recibir retroalimentación de desarrolladores frontend, backend y diseñadores. Figma soporta la parametrización de componentes reutilizables, lo que permite establecer sistemas de diseño consistentes, fáciles de mantener y escalables a lo largo de todo el proyecto. Asimismo, sus herramientas de prototipado incorporadas facilitan la simulación de interacciones, transiciones y estados dinámicos sin necesidad de codificación, posibilitando ensayos de usabilidad temprana y validación con usuarios reales antes de la implementación.
+  Figma se emplea como la plataforma principal para el diseño visual y la elaboración de prototipos interactivos en Macetech, abarcando desde la creación de wireframes iniciales hasta mock-ups de alta fidelidad y prototipos navegables. Gracias a su entorno colaborativo en tiempo real, los diseñadores pueden esbozar rápidamente la estructura básica de la interfaz, definiendo la colocación de componentes, jerarquías de contenido y flujos de navegación, y, de manera simultánea, recibir retroalimentación de desarrolladores frontend, backend y diseñadores. Figma soporta la parametrización de componentes reutilizables, lo que permite establecer sistemas de diseño consistentes, fáciles de mantener y escalables a lo largo de todo el proyecto. Asimismo, sus herramientas de prototipado incorporadas facilitan la simulación de interacciones, transiciones y estados dinámicos sin necesidad de codificación, posibilitando ensayos de usabilidad temprana y validación con usuarios reales antes de la implementación.<br><br>
 
-  Además, Figma se utiliza para definir y documentar las Style Guidelines o pautas de estilo de Macetech, garantizando la coherencia visual y la uniformidad de la marca. Dentro de estas guías se especifican tipografías, paletas de colores, reglas de espaciado, estilos de íconos y comportamientos de interacción (por ejemplo, estados de hover, focus y active), de modo que todos los componentes gráficos se alineen con los estándares de accesibilidad y usabilidad. Las librerías de estilos compartidas facilitan la adopción de estas pautas por parte de los desarrolladores frontend y móvil, asegurando que los elementos de interfaz se implementen según las especificaciones establecidas. De esta manera, Figma no solo actúa como una herramienta de diseño, sino también como un repositorio central de la identidad visual de Macetech, promoviendo la colaboración multidisciplinaria y acelerando el ciclo de diseño-implementación.
+  Además, Figma se utiliza para definir y documentar las Style Guidelines o pautas de estilo de Macetech, garantizando la coherencia visual y la uniformidad de la marca. Dentro de estas guías se especifican tipografías, paletas de colores, reglas de espaciado, estilos de íconos y comportamientos de interacción (por ejemplo, estados de hover, focus y active), de modo que todos los componentes gráficos se alineen con los estándares de accesibilidad y usabilidad. Las librerías de estilos compartidas facilitan la adopción de estas pautas por parte de los desarrolladores frontend y móvil, asegurando que los elementos de interfaz se implementen según las especificaciones establecidas. De esta manera, Figma no solo actúa como una herramienta de diseño, sino también como un repositorio central de la identidad visual de Macetech, promoviendo la colaboración multidisciplinaria y acelerando el ciclo de diseño-implementación.<br><br>
 
-  - Página oficial de Figma: https://figma.com/
+  - Página oficial de Figma: https://figma.com/<br><br>
 
 - **Wireflows y User flows - LucidChart**
 
-  Lucidchart se emplea como herramienta principal para la creación de Wireflows y User Flows en el proyecto Macetech, aprovechando su capacidad para generar diagramas de flujo de alta calidad y su compatibilidad con múltiples tipos de modelado (UML, C4, BPMN, entre otros). A través de Lucidchart, el equipo de diseño y desarrollo puede esbozar de manera estructurada cómo interactúan los usuarios con la interfaz en cada paso del proceso, incorporando componentes visuales de alta fidelidad que permiten visualizar transiciones, estados de pantalla y puntos de decisión dentro de los flujos de interacción. Las plantillas prediseñadas y la biblioteca de formas personalizables facilitan la representación de íconos, botones, campos de entrada y elementos de navegación, garantizando que los Wireflows reflejen con precisión la estructura de las pantallas y que los User Flows documenten de forma detallada las rutas críticas de uso, desde la autenticación hasta las acciones de configuración.
+  Lucidchart se emplea como herramienta principal para la creación de Wireflows y User Flows en el proyecto Macetech, aprovechando su capacidad para generar diagramas de flujo de alta calidad y su compatibilidad con múltiples tipos de modelado (UML, C4, BPMN, entre otros). A través de Lucidchart, el equipo de diseño y desarrollo puede esbozar de manera estructurada cómo interactúan los usuarios con la interfaz en cada paso del proceso, incorporando componentes visuales de alta fidelidad que permiten visualizar transiciones, estados de pantalla y puntos de decisión dentro de los flujos de interacción. Las plantillas prediseñadas y la biblioteca de formas personalizables facilitan la representación de íconos, botones, campos de entrada y elementos de navegación, garantizando que los Wireflows reflejen con precisión la estructura de las pantallas y que los User Flows documenten de forma detallada las rutas críticas de uso, desde la autenticación hasta las acciones de configuración.<br><br>
 
-  Además, Lucidchart ofrece funcionalidades de colaboración en tiempo real, lo que permite que varios miembros del equipo, diseñadores de UX, desarrolladores de frontend y backend, editen simultáneamente los diagramas, agreguen comentarios y realicen actualizaciones instantáneas sin necesidad de consolidar archivos estáticos. Gracias a las opciones de exportación en formatos SVG, PNG y PDF, así como a la capacidad de insertar enlaces interactivos dentro de los diagramas, Lucidchart se convierte en un repositorio completo de referencia para validar la usabilidad, optimizar rutas de navegación y asegurar que las implementaciones técnicas correspondan fielmente a los diseños planeados.
+  Además, Lucidchart ofrece funcionalidades de colaboración en tiempo real, lo que permite que varios miembros del equipo, diseñadores de UX, desarrolladores de frontend y backend, editen simultáneamente los diagramas, agreguen comentarios y realicen actualizaciones instantáneas sin necesidad de consolidar archivos estáticos. Gracias a las opciones de exportación en formatos SVG, PNG y PDF, así como a la capacidad de insertar enlaces interactivos dentro de los diagramas, Lucidchart se convierte en un repositorio completo de referencia para validar la usabilidad, optimizar rutas de navegación y asegurar que las implementaciones técnicas correspondan fielmente a los diseños planeados.<br><br>
 
   - Página oficial de Lucidchart: https://lucidchart.com
 
@@ -112,50 +112,50 @@ Esta sección se dedica al diseño de la arquitectura de producto a través de l
 
 - **Diagramas UML - LucidChart**
 
-  Lucidchart se emplea para la generación de diagramas de clases UML que representan la estructura y relaciones de las entidades dentro de cada Bounded Context de Macetech. Gracias a su soporte nativo para el modelado UML, la herramienta permite definir clases con atributos, métodos y visibilidades, así como establecer relaciones de herencia, asociación, agregación y composición. Cada diagrama de clases refleja los conceptos clave del dominio y muestra cómo interactúan entre sí dentro de un contexto delimitado. La interfaz de arrastrar y soltar de Lucidchart facilita la creación y modificación de estas estructuras, mientras que las bibliotecas de formas UML garantizan el uso de notaciones estándar.
+  Lucidchart se emplea para la generación de diagramas de clases UML que representan la estructura y relaciones de las entidades dentro de cada Bounded Context de Macetech. Gracias a su soporte nativo para el modelado UML, la herramienta permite definir clases con atributos, métodos y visibilidades, así como establecer relaciones de herencia, asociación, agregación y composición. Cada diagrama de clases refleja los conceptos clave del dominio y muestra cómo interactúan entre sí dentro de un contexto delimitado. La interfaz de arrastrar y soltar de Lucidchart facilita la creación y modificación de estas estructuras, mientras que las bibliotecas de formas UML garantizan el uso de notaciones estándar.<br><br>
 
-  Dentro de SevenSync, se crearon diagramas de clases específicos para cada Bounded Context identificado mediante sesiones de EventStorming y mapeo en Miro. Estos diagramas, disponibles en Lucidchart, se mantienen versionados y accesibles para todo el equipo, facilitando la coherencia entre la arquitectura lógica y la capa de código en cada módulo del sistema.
+  Dentro de SevenSync, se crearon diagramas de clases específicos para cada Bounded Context identificado mediante sesiones de EventStorming y mapeo en Miro. Estos diagramas, disponibles en Lucidchart, se mantienen versionados y accesibles para todo el equipo, facilitando la coherencia entre la arquitectura lógica y la capa de código en cada módulo del sistema.<br><br>
 
-  - Página oficial de Lucidchart: https://lucidchart.com
+  - Página oficial de Lucidchart: https://lucidchart.com<br><br>
 
 - **Diagramas C4 - Structurizr DSL**
 
   Structurizr DSL es un lenguaje específico de dominio basado en texto que facilita la creación y el versionado de diagramas C4 (Contexto, Contenedores y Componentes) de manera reproducible y colaborativa. A través de su sintaxis declarativa, permite definir elementos del sistema, como personas, sistemas externos y límites de contexto, en diagramas de Contexto; detallar las containers que componen la arquitectura en diagramas de Contenedores, y desglosar cada contenedor en sus componentes internos en diagramas de Componentes. Structurizr DSL incorpora convenciones para nombrar, etiquetar y ensamblar relaciones, así como la capacidad de generar vistas específicas basadas en filtros de etiquetas, lo que optimiza la trazabilidad de cambios y la comunicación de la arquitectura entre todos los miembros del equipo.
 
-  En el contexto de Macetech, Structurizr DSL se utilizó para documentar exhaustivamente la arquitectura modular del sistema siguiendo el modelo C4. Primero, se definió un diagrama de Contexto que situó a los usuarios frente a Macetech, dejando claro qué sistemas externos interactúan con la solución. A continuación, en el diagrama de Contenedores, se representaron contenedores clave de toda la plataforma. Cada contenedor se etiquetó según su responsabilidad funcional y se describieron sus protocolos de comunicación. Finalmente, se generaron diagramas de Componentes para cada contenedor no trivial, especificando componentes de alto impacto y relevancia. Gracias a Structurizr DSL, estos diagramas se mantienen sincronizados con el repositorio de código, permitiendo actualizar la arquitectura textualmente y regenerar las vistas, lo que garantiza una documentación arquitectónica coherente y actualizada en todo momento.
+  En el contexto de Macetech, Structurizr DSL se utilizó para documentar exhaustivamente la arquitectura modular del sistema siguiendo el modelo C4. Primero, se definió un diagrama de Contexto que situó a los usuarios frente a Macetech, dejando claro qué sistemas externos interactúan con la solución. A continuación, en el diagrama de Contenedores, se representaron contenedores clave de toda la plataforma. Cada contenedor se etiquetó según su responsabilidad funcional y se describieron sus protocolos de comunicación. Finalmente, se generaron diagramas de Componentes para cada contenedor no trivial, especificando componentes de alto impacto y relevancia. Gracias a Structurizr DSL, estos diagramas se mantienen sincronizados con el repositorio de código, permitiendo actualizar la arquitectura textualmente y regenerar las vistas, lo que garantiza una documentación arquitectónica coherente y actualizada en todo momento.<br><br>
 
-  - Página oficial de Structurizr DSL: https://structurizr.com/dsl
+  - Página oficial de Structurizr DSL: https://structurizr.com/dsl<br><br>
 
 - **Diagramas de base de datos - Vertabelo**
 
-  Vertabelo es una herramienta de modelado de datos relacional basada en la nube que permite diseñar, visualizar y versionar esquemas de bases de datos de manera colaborativa y rigurosa. Emplea una interfaz gráfica intuitiva para la creación de entidades, atributos, relaciones (incluyendo claves primarias y foráneas), índices y restricciones, soportando diversos motores de bases de datos (PostgreSQL, MySQL, SQL Server, entre otros). Vertabelo facilita la generación automática de scripts DDL (Data Definition Language) exportables, que aseguran la coherencia entre el modelo lógico y la implementación física. Además, su sistema de versionado integrado permite mantener un historial de cambios detallado, realizar comparaciones entre distintas versiones del modelo y colaborar en tiempo real con diversos miembros del equipo, garantizando trazabilidad y control de modificaciones en el diseño de la base de datos.
+  Vertabelo es una herramienta de modelado de datos relacional basada en la nube que permite diseñar, visualizar y versionar esquemas de bases de datos de manera colaborativa y rigurosa. Emplea una interfaz gráfica intuitiva para la creación de entidades, atributos, relaciones (incluyendo claves primarias y foráneas), índices y restricciones, soportando diversos motores de bases de datos (PostgreSQL, MySQL, SQL Server, entre otros). Vertabelo facilita la generación automática de scripts DDL (Data Definition Language) exportables, que aseguran la coherencia entre el modelo lógico y la implementación física. Además, su sistema de versionado integrado permite mantener un historial de cambios detallado, realizar comparaciones entre distintas versiones del modelo y colaborar en tiempo real con diversos miembros del equipo, garantizando trazabilidad y control de modificaciones en el diseño de la base de datos.<br><br>
 
-  En el proyecto Macetech, Vertabelo se utilizó para modelar de forma estructurada las distintas áreas de datos correspondientes a los Bounded Contexts identificados previamente. El equipo pudo generar el script DDL correspondiente, garantizar que los modelos respondieran a los requerimientos de escalabilidad y consultar la documentación embebida para consultas rápidas. Asimismo, el versionado de los modelos permitió comparar iteraciones, revertir cambios en caso de inconsistencias y coordinar revisiones entre desarrolladores backend y especialistas en base de datos, asegurando que la implementación de la capa de almacenamiento de Macetech estuviera alineada con la visión arquitectónica y los criterios de rendimiento definidos.
+  En el proyecto Macetech, Vertabelo se utilizó para modelar de forma estructurada las distintas áreas de datos correspondientes a los Bounded Contexts identificados previamente. El equipo pudo generar el script DDL correspondiente, garantizar que los modelos respondieran a los requerimientos de escalabilidad y consultar la documentación embebida para consultas rápidas. Asimismo, el versionado de los modelos permitió comparar iteraciones, revertir cambios en caso de inconsistencias y coordinar revisiones entre desarrolladores backend y especialistas en base de datos, asegurando que la implementación de la capa de almacenamiento de Macetech estuviera alineada con la visión arquitectónica y los criterios de rendimiento definidos.<br><br>
 
   - Página oficial de Vertabelo: https://vertabelo.com/
 
 #### Software Development
 
-Esta sección contempla la definición estratégica del stack tecnológico y la configuración de los entornos de desarrollo requeridos para la implementación integral de cada uno de los componentes que conforman la solución digital, los cuales incluyen la Landing Page, la aplicación móvil (Mobile App), la aplicación web (Web App), los servicios web (Web Services), la aplicación embebida (Embedded App), la aplicación Edge (Edge App) y los mecanismos de pruebas (Testing). Se establecerán los lineamientos técnicos y operativos que orientarán la selección de frameworks, arquitecturas y metodologías de codificación, con el objetivo de asegurar la coherencia tecnológica, la eficiencia en el desarrollo, la escalabilidad de las soluciones y su alineamiento con los principios de mantenibilidad, seguridad y rendimiento. Asimismo, se garantizará la integración fluida entre los distintos entornos de desarrollo y pruebas, permitiendo una colaboración efectiva entre equipos multidisciplinarios, una gestión eficiente del ciclo de vida del software y una trazabilidad completa desde la codificación inicial hasta el despliegue en producción.
+Esta sección contempla la definición estratégica del stack tecnológico y la configuración de los entornos de desarrollo requeridos para la implementación integral de cada uno de los componentes que conforman la solución digital, los cuales incluyen la Landing Page, la aplicación móvil (Mobile App), la aplicación web (Web App), los servicios web (Web Services), la aplicación embebida (Embedded App), la aplicación Edge (Edge App) y los mecanismos de pruebas (Testing). Se establecerán los lineamientos técnicos y operativos que orientarán la selección de frameworks, arquitecturas y metodologías de codificación, con el objetivo de asegurar la coherencia tecnológica, la eficiencia en el desarrollo, la escalabilidad de las soluciones y su alineamiento con los principios de mantenibilidad, seguridad y rendimiento. Asimismo, se garantizará la integración fluida entre los distintos entornos de desarrollo y pruebas, permitiendo una colaboración efectiva entre equipos multidisciplinarios, una gestión eficiente del ciclo de vida del software y una trazabilidad completa desde la codificación inicial hasta el despliegue en producción.<br><br>
 
 - **Lenguajes de etiqueta y estilo - HTML5 & CSS3**
 
-  HTML5 y CSS constituyen las tecnologías fundamentales para la construcción de la Landing Page de Macetech y para la implementación de los aspectos estáticos de las plantillas en la aplicación web. Con HTML5, se define una estructura semántica robusta que facilita tanto la accesibilidad como el SEO. Se emplean etiquetas específicas para organizar el contenido de la Landing Page, asegurando claridad en la jerarquía de información y compatibilidad con estándares modernos de navegadores.
+  HTML5 y CSS constituyen las tecnologías fundamentales para la construcción de la Landing Page de Macetech y para la implementación de los aspectos estáticos de las plantillas en la aplicación web. Con HTML5, se define una estructura semántica robusta que facilita tanto la accesibilidad como el SEO. Se emplean etiquetas específicas para organizar el contenido de la Landing Page, asegurando claridad en la jerarquía de información y compatibilidad con estándares modernos de navegadores.<br><br>
 
-  Por su parte, CSS se encarga de la presentación visual y del comportamiento responsivo tanto de la Landing Page como de las plantillas estáticas de la aplicación web. Se aplican sistemas de diseño basados en CSS Grid para garantizar adaptabilidad en múltiples tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio. Asimismo, se definen variables CSS para mantener coherencia en la paleta de colores y estilos tipográficos acordes con las Style Guidelines acordadas en Figma, permitiendo cambios globales de forma centralizada. Gracias a esta combinación de HTML5 y CSS, la Landing Page y las plantillas de Macetech presentan un rendimiento óptimo, una experiencia de usuario uniforme y una base sólida para futuras iteraciones de diseño.
+  Por su parte, CSS se encarga de la presentación visual y del comportamiento responsivo tanto de la Landing Page como de las plantillas estáticas de la aplicación web. Se aplican sistemas de diseño basados en CSS Grid para garantizar adaptabilidad en múltiples tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio. Asimismo, se definen variables CSS para mantener coherencia en la paleta de colores y estilos tipográficos acordes con las Style Guidelines acordadas en Figma, permitiendo cambios globales de forma centralizada. Gracias a esta combinación de HTML5 y CSS, la Landing Page y las plantillas de Macetech presentan un rendimiento óptimo, una experiencia de usuario uniforme y una base sólida para futuras iteraciones de diseño.<br><br>
 
   - Página de guía de HTML5 de W3C (World Wide Web Consortium): https://dev.w3.org/html5/spec-LC/
   - Página de guía de HTML5 de W3Schools: https://www.w3schools.com/html/
   - Página de guía de CSS3 de Mozilla Developer Network: https://developer.mozilla.org/es/docs/Web/CSS
-  - Página de guía de CSS3 de W3Schools: https://www.w3schools.com/css/default.asp
+  - Página de guía de CSS3 de W3Schools: https://www.w3schools.com/css/default.asp<br><br>
 
 - **Herramientas para la programación del Web Application (Front-End) - JavaScript & TypeScript, con Angular Framework**
 
-  JavaScript es un lenguaje de programación interpretado, dinámico y orientado a prototipos, que se ejecuta directamente en el navegador y posibilita la creación de interfaces interactivas y reactivas. Gracias a su capacidad de manipular el Document Object Model (DOM) en tiempo real, JavaScript permite actualizar el contenido de páginas web sin necesidad de recargas completas, gestionar eventos de usuario (clics, desplazamientos) y realizar peticiones asíncronas a APIs. En el contexto de Macetech, JavaScript sirve como base para la lógica de interacción en el frontend, gestionando comportamientos dinámicos y operaciones en tiempo real que mejoran la experiencia del usuario, como validaciones de formularios, animaciones y consumo de servicios REST.
+  JavaScript es un lenguaje de programación interpretado, dinámico y orientado a prototipos, que se ejecuta directamente en el navegador y posibilita la creación de interfaces interactivas y reactivas. Gracias a su capacidad de manipular el Document Object Model (DOM) en tiempo real, JavaScript permite actualizar el contenido de páginas web sin necesidad de recargas completas, gestionar eventos de usuario (clics, desplazamientos) y realizar peticiones asíncronas a APIs. En el contexto de Macetech, JavaScript sirve como base para la lógica de interacción en el frontend, gestionando comportamientos dinámicos y operaciones en tiempo real que mejoran la experiencia del usuario, como validaciones de formularios, animaciones y consumo de servicios REST.<br><br>
 
-  TypeScript es un superset tipado de JavaScript, desarrollado por Microsoft, que incorpora un sistema de tipos estáticos opcionales, clases, interfaces y módulos. Al compilarse a JavaScript estándar, TypeScript añade una capa de verificación en tiempo de compilación que detecta errores de sintaxis y de tipo antes de que el código se ejecute en el navegador, lo cual incrementa la robustez y mantenibilidad. En el desarrollo de Macetech, TypeScript facilita la detección temprana de inconsistencias, permitiendo refactorizaciones más seguras y documentación implícita mediante anotaciones de tipo. Su integración con entornos de desarrollo modernos ofrece autocompletado y refactorización asistida, lo que acelera la productividad del equipo y minimiza errores.
+  TypeScript es un superset tipado de JavaScript, desarrollado por Microsoft, que incorpora un sistema de tipos estáticos opcionales, clases, interfaces y módulos. Al compilarse a JavaScript estándar, TypeScript añade una capa de verificación en tiempo de compilación que detecta errores de sintaxis y de tipo antes de que el código se ejecute en el navegador, lo cual incrementa la robustez y mantenibilidad. En el desarrollo de Macetech, TypeScript facilita la detección temprana de inconsistencias, permitiendo refactorizaciones más seguras y documentación implícita mediante anotaciones de tipo. Su integración con entornos de desarrollo modernos ofrece autocompletado y refactorización asistida, lo que acelera la productividad del equipo y minimiza errores.<br><br>
 
-  El Framework Angular es una plataforma de desarrollo frontend basada en TypeScript que sigue una arquitectura basada en componentes, inyección de dependencias y un sistema modular. Angular organiza la aplicación en módulos que agrupan componentes, directivas, servicios y pipes de manera coherente, facilitando la escalabilidad y la separación de responsabilidades. Los componentes en Angular encapsulan la lógica de presentación, el estilo y el comportamiento, promoviendo la reutilización y la cohesión. Angular también proporciona un sistema de enrutamiento integrado que permite definir rutas y parámetros. Para la interfaz de usuario, se utiliza Angular Material, una colección de componentes UI que implementa las pautas de Material Design de Google. Angular Material ofrece una amplia variedad de elementos preconstruidos, como botones, barras de navegación, tarjetas, menús desplegables, diálogos y tablas, optimizados para accesibilidad y rendimiento. Al emplear Angular con JavaScript y TypeScript, junto con Angular Material, el equipo de Macetech puede desarrollar un frontend consistente, modular y mantenible, con componentes estandarizados que garantizan coherencia visual, comportamiento uniforme y experiencias de usuario responsivas en múltiples dispositivos.
+  El Framework Angular es una plataforma de desarrollo frontend basada en TypeScript que sigue una arquitectura basada en componentes, inyección de dependencias y un sistema modular. Angular organiza la aplicación en módulos que agrupan componentes, directivas, servicios y pipes de manera coherente, facilitando la escalabilidad y la separación de responsabilidades. Los componentes en Angular encapsulan la lógica de presentación, el estilo y el comportamiento, promoviendo la reutilización y la cohesión. Angular también proporciona un sistema de enrutamiento integrado que permite definir rutas y parámetros. Para la interfaz de usuario, se utiliza Angular Material, una colección de componentes UI que implementa las pautas de Material Design de Google. Angular Material ofrece una amplia variedad de elementos preconstruidos, como botones, barras de navegación, tarjetas, menús desplegables, diálogos y tablas, optimizados para accesibilidad y rendimiento. Al emplear Angular con JavaScript y TypeScript, junto con Angular Material, el equipo de Macetech puede desarrollar un frontend consistente, modular y mantenible, con componentes estandarizados que garantizan coherencia visual, comportamiento uniforme y experiencias de usuario responsivas en múltiples dispositivos.<br><br>
 
   - Página oficial de Angular: https://angular.dev/
   - Página de documentación oficial de Angular: https://docs.angular.lat/docs
@@ -163,15 +163,15 @@ Esta sección contempla la definición estratégica del stack tecnológico y la 
   - Página oficial de TypeScript: https://www.typescriptlang.org/
   - Página de guía de TypeScript de W3Schools: https://www.w3schools.com/typescript/typescript_intro.php
   - Página oficial de Material Design: https://m3.material.io/
-  - Página oficial de Angular Material: https://material.angular.dev/
+  - Página oficial de Angular Material: https://material.angular.dev/<br><br>
 
 - **Herramientas para la programación del Web Services (Back-End) - RESTful API con C# y con ASP .NET Core Framework**
 
-  C# es un lenguaje de programación multiparadigma, desarrollado por Microsoft, que combina características de tipado estático, orientación a objetos y programación funcional. Su sintaxis clara y su compatibilidad con el Common Language Runtime (CLR) permiten compilar código seguro y altamente optimizado para entornos de producción. En el contexto de Macetech, C# se utiliza para implementar la lógica de negocio del backend con precisión y robustez, aprovechando su sistema de tipos para definir modelos de datos estrictos y facilitar la detección temprana de errores durante la compilación. Además, el ecosistema de C# incluye un amplio conjunto de bibliotecas de .NET, lo que permite reutilizar componentes probados para manejo de excepciones, serialización JSON y acceso a servicios externos.
+  C# es un lenguaje de programación multiparadigma, desarrollado por Microsoft, que combina características de tipado estático, orientación a objetos y programación funcional. Su sintaxis clara y su compatibilidad con el Common Language Runtime (CLR) permiten compilar código seguro y altamente optimizado para entornos de producción. En el contexto de Macetech, C# se utiliza para implementar la lógica de negocio del backend con precisión y robustez, aprovechando su sistema de tipos para definir modelos de datos estrictos y facilitar la detección temprana de errores durante la compilación. Además, el ecosistema de C# incluye un amplio conjunto de bibliotecas de .NET, lo que permite reutilizar componentes probados para manejo de excepciones, serialización JSON y acceso a servicios externos.<br><br>
 
-  El Framework ASP .NET Core es una plataforma de desarrollo de aplicaciones web de alto rendimiento, multiplataforma y de código abierto, diseñada para construir servicios y aplicaciones modernas en C#. Su arquitectura modular basada en middlewares posibilita configurar canales de procesamiento HTTP de manera granular, gestionando solicitudes de forma eficiente. En Macetech, ASP .NET Core se emplea para hospedar el servidor de API RESTful, gestionando tareas como enrutamiento de endpoints, autenticación y autorización, interacción con la base de datos (mediante Entity Framework Core) y registro estructurado de eventos.
+  El Framework ASP .NET Core es una plataforma de desarrollo de aplicaciones web de alto rendimiento, multiplataforma y de código abierto, diseñada para construir servicios y aplicaciones modernas en C#. Su arquitectura modular basada en middlewares posibilita configurar canales de procesamiento HTTP de manera granular, gestionando solicitudes de forma eficiente. En Macetech, ASP .NET Core se emplea para hospedar el servidor de API RESTful, gestionando tareas como enrutamiento de endpoints, autenticación y autorización, interacción con la base de datos (mediante Entity Framework Core) y registro estructurado de eventos.<br><br>
 
-  El Diseño de Arquitectura RESTful API se basa en principios de uniformidad, recursos identificables y operaciones basadas en verbos HTTP (GET, POST, PUT, DELETE). Este enfoque promueve una separación clara entre cliente y servidor, fomentando la reutilización y la escalabilidad del sistema. En el caso de Macetech, la API RESTful define múltiples recursos que exponen operaciones CRUD y acciones específicas. Cada endpoint retorna respuestas en formato JSON, incluyendo códigos HTTP adecuados y encabezados para control de caché o paginación. Al adoptar RESTful API con ASP .NET Core y C#, se logra un backend que puede atender solicitudes simultáneas provenientes de la aplicación web, la aplicación móvil y el dispositivo embebido, garantizando coherencia en la representación de datos, facilidad para versionar la API y compatibilidad con estándares de seguridad como JWT (JSON Web Tokens) en la capa de autenticación.
+  El Diseño de Arquitectura RESTful API se basa en principios de uniformidad, recursos identificables y operaciones basadas en verbos HTTP (GET, POST, PUT, DELETE). Este enfoque promueve una separación clara entre cliente y servidor, fomentando la reutilización y la escalabilidad del sistema. En el caso de Macetech, la API RESTful define múltiples recursos que exponen operaciones CRUD y acciones específicas. Cada endpoint retorna respuestas en formato JSON, incluyendo códigos HTTP adecuados y encabezados para control de caché o paginación. Al adoptar RESTful API con ASP .NET Core y C#, se logra un backend que puede atender solicitudes simultáneas provenientes de la aplicación web, la aplicación móvil y el dispositivo embebido, garantizando coherencia en la representación de datos, facilidad para versionar la API y compatibilidad con estándares de seguridad como JWT (JSON Web Tokens) en la capa de autenticación.<br><br>
 
   - Página oficial de C#: https://dotnet.microsoft.com/es-es/languages/csharp
   - Página de guía de C# de Microsoft: https://learn.microsoft.com/es-es/dotnet/csharp/
@@ -182,43 +182,50 @@ Esta sección contempla la definición estratégica del stack tecnológico y la 
 
 - **Herramientas para la programación del Mobile Application - Dart con Flutter Framework**
 
-  Dart es un lenguaje de programación de propósito general, desarrollado por Google, que está optimizado para crear aplicaciones de alto rendimiento en cliente. Con sintaxis moderna, tipado estático opcional y recolección de basura, Dart permite desarrollar código eficiente tanto para compilación anticipada (AOT) como para compilación just-in-time (JIT). Estas características hacen de Dart una opción idónea para aplicaciones móviles, donde la rapidez en el arranque y la fluidez en la interacción son cruciales. Además, su compatibilidad con la arquitectura de Flutter facilita la construcción de interfaces reactivas y la gestión de estado, utilizando un modelo de widgets declarativo que simplifica la creación de componentes reutilizables.
+  Dart es un lenguaje de programación de propósito general, desarrollado por Google, que está optimizado para crear aplicaciones de alto rendimiento en cliente. Con sintaxis moderna, tipado estático opcional y recolección de basura, Dart permite desarrollar código eficiente tanto para compilación anticipada (AOT) como para compilación just-in-time (JIT). Estas características hacen de Dart una opción idónea para aplicaciones móviles, donde la rapidez en el arranque y la fluidez en la interacción son cruciales. Además, su compatibilidad con la arquitectura de Flutter facilita la construcción de interfaces reactivas y la gestión de estado, utilizando un modelo de widgets declarativo que simplifica la creación de componentes reutilizables.<br><br>
 
-  El framework Flutter, también creado por Google, se apoya en Dart para proporcionar un kit de herramientas UI (UI toolkit) que compila de manera nativa tanto en iOS como en Android, asegurando un rendimiento cercano al código nativo. Flutter incluye un motor de renderizado propio, lo que permite dibujar cada elemento de la interfaz, animaciones y transiciones, con control total sobre los píxeles, sin depender de componentes nativos específicos de cada plataforma. Esto resulta en una experiencia visual y de interacción consistente en dispositivos diversos. En el contexto de Macetech, Flutter y Dart se utilizan para desarrollar la aplicación móvil multiplataforma que complementa la funcionalidad del dispositivo IoT y la plataforma web. El equipo ha estructurado la aplicación en módulos claros, separando la capa de presentación, la capa de lógica de negocio y la capa de datos.
+  El framework Flutter, también creado por Google, se apoya en Dart para proporcionar un kit de herramientas UI (UI toolkit) que compila de manera nativa tanto en iOS como en Android, asegurando un rendimiento cercano al código nativo. Flutter incluye un motor de renderizado propio, lo que permite dibujar cada elemento de la interfaz, animaciones y transiciones, con control total sobre los píxeles, sin depender de componentes nativos específicos de cada plataforma. Esto resulta en una experiencia visual y de interacción consistente en dispositivos diversos. En el contexto de Macetech, Flutter y Dart se utilizan para desarrollar la aplicación móvil multiplataforma que complementa la funcionalidad del dispositivo IoT y la plataforma web. El equipo ha estructurado la aplicación en módulos claros, separando la capa de presentación, la capa de lógica de negocio y la capa de datos.<br><br>
 
   - Página oficial de Flutter: https://flutter.dev/
-    - Página de guía de Flutter: https://docs.flutter.dev/
+  - Página de guía de Flutter: https://docs.flutter.dev/
   - Página oficial de Dart: https://dart.dev/
   - Página de guía de Dart: https://dart.dev/docs
-  - Página de guía y seguimiento para el modelo del Material Design: https://m3.material.io/
+  - Página de guía y seguimiento para el modelo del Material Design: https://m3.material.io/<br><br>
 
 - **Herramientas para la programación del Embedded Application - C++**
 
-  C++ es un lenguaje de programación de propósito general que combina características de alto nivel (orientación a objetos, abstracción, plantillas genéricas) con un control de bajo nivel sobre recursos de hardware (manejo explícito de memoria, acceso directo a periféricos). Su naturaleza compilada y tipado estático permite generar binarios altamente optimizados para arquitecturas embebidas con recursos limitados, lo que lo convierte en la opción idónea para el desarrollo de firmware en dispositivos IoT. Adicionalmente, la disponibilidad de bibliotecas de C++ específicas para microcontroladores y la compatibilidad con sistemas operativos en tiempo real facilitan la implementación de bucles de control predictibles, gestión de interrupciones y protocolos de comunicación (MQTT).
+  C++ es un lenguaje de programación de propósito general que combina características de alto nivel (orientación a objetos, abstracción, plantillas genéricas) con un control de bajo nivel sobre recursos de hardware (manejo explícito de memoria, acceso directo a periféricos). Su naturaleza compilada y tipado estático permite generar binarios altamente optimizados para arquitecturas embebidas con recursos limitados, lo que lo convierte en la opción idónea para el desarrollo de firmware en dispositivos IoT. Adicionalmente, la disponibilidad de bibliotecas de C++ específicas para microcontroladores y la compatibilidad con sistemas operativos en tiempo real facilitan la implementación de bucles de control predictibles, gestión de interrupciones y protocolos de comunicación (MQTT).<br><br>
 
-  En el contexto de Macetech, el IoT Embedded Application se implementa en C++ para garantizar un control preciso de los sensores (medición de humedad, temperatura, luminosidad, pH y salinidad), la lógica de riego automático y la comunicación bidireccional con el backend. El firmware se organiza en módulos C++ que encapsulan la inicialización de periféricos, el muestreo periódico de lecturas y el algoritmo de decisión que activa los actuadores de riego según umbrales configurables. Gracias a la capacidad de C++ para manejar interrupciones de hardware y realizar operaciones de alta frecuencia con ciclos de CPU reducidos, se logra un tiempo de respuesta alto.
+  En el contexto de Macetech, el IoT Embedded Application se implementa en C++ para garantizar un control preciso de los sensores (medición de humedad, temperatura, luminosidad, pH y salinidad), la lógica de riego automático y la comunicación bidireccional con el backend. El firmware se organiza en módulos C++ que encapsulan la inicialización de periféricos, el muestreo periódico de lecturas y el algoritmo de decisión que activa los actuadores de riego según umbrales configurables. Gracias a la capacidad de C++ para manejar interrupciones de hardware y realizar operaciones de alta frecuencia con ciclos de CPU reducidos, se logra un tiempo de respuesta alto.<br><br>
 
   - Página oficial de C++ : https://isocpp.org/
-  - Página de guía de C con programas IoT: https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-device
+  - Página de guía de C con programas IoT: https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-device<br><br>
 
-- **Entornos de Desarrollo Integrado - Webstorm, Rider, Android Studio y Visual Studio Code**
+- **Entornos de Desarrollo Integrado - Webstorm, Rider, Android Studio, PyCharm, Wokwi y Visual Studio Code**
 
-  Las Entornos de Desarrollo Integrados (IDEs) constituyen herramientas fundamentales para optimizar la productividad y la calidad del código en cada área del proyecto Macetech. En función del lenguaje y la tecnología utilizada, se han seleccionado entornos especializados que ofrecen características avanzadas de análisis estático, depuración, refactorización y soporte de frameworks específicos:
+  Las Entornos de Desarrollo Integrados (IDEs) constituyen herramientas fundamentales para optimizar la productividad y la calidad del código en cada área del proyecto Macetech. En función del lenguaje y la tecnología utilizada, se han seleccionado entornos especializados que ofrecen características avanzadas de análisis estático, depuración, refactorización y soporte de frameworks específicos:<br><br>
 
-  - WebStorm se emplea como el IDE principal para el desarrollo de JavaScript, TypeScript y el framework Angular. WebStorm ofrece inspecciones inteligentes de código, autocompletado contextual, navegación rápida entre símbolos y soporte nativo para Angular CLI, lo que permite generar componentes y servicios. Asimismo, facilita la configuración de tareas de compilación mediante archivos de configuración integrados. Su depurador integrado permite establecer puntos de interrupción en tiempo real, evaluando expresiones de JavaScript/TypeScript y trazando el flujo de ejecución del frontend, lo que resulta esencial para detectar problemas de rendimiento.
+  - Android Studio se utiliza para el desarrollo de la aplicación móvil en Dart con Flutter, gracias a su integración nativa con SDKs de Android y emuladores. Android Studio incluye un editor Visual UI para diseñar interfaces de Flutter, un depurador con visualización de la jerarquía de widgets y herramientas de perfilado que miden el rendimiento en tiempo real (CPU, memoria, GPU). Su sistema de gestión de paquetes y el acceso directo al Flutter Inspector permiten inspeccionar y modificar la estructura de la UI sobre la marcha, ajustando propiedades de widgets, temas y estilos con retroalimentación instantánea.<br><br>
 
-  - Rider se ha elegido para el desarrollo del backend con C# y ASP.NET Core, debido a su integración profunda con el ecosistema de .NET. Rider proporciona análisis estático de código C#, refactorizaciones seguras (reorganización de namespaces, renombrado de símbolos, extracción de métodos), así como un depurador avanzado que permite adjuntar el proceso de ASP.NET Core en ejecución, inspeccionar objetos en memoria y analizar llamadas asíncronas.
+  - PyCharm se ha adoptado como el IDE de referencia para el desarrollo en Python, principalmente en el desarrollo de la aplicación edge. PyCharm ofrece inspección de código basada en PEP8, autocompletado inteligente, análisis de dependencias y detección temprana de errores. Su integración con entornos virtuales (venv, Conda) facilita la gestión de librerías, y el depurador permite establecer puntos de interrupción tanto en código local como remoto (SSH), junto con la visualización de variables en tiempo real.<br><br>
 
-  - Android Studio se utiliza para el desarrollo de la aplicación móvil en Dart con Flutter, gracias a su integración nativa con SDKs de Android y emuladores. Android Studio incluye un editor Visual UI para diseñar interfaces de Flutter, un depurador con visualización de la jerarquía de widgets y herramientas de perfilado que miden el rendimiento en tiempo real (CPU, memoria, GPU). Su sistema de gestión de paquetes y el acceso directo al Flutter Inspector permiten inspeccionar y modificar la estructura de la UI sobre la marcha, ajustando propiedades de widgets, temas y estilos con retroalimentación instantánea.
+  - Rider se ha elegido para el desarrollo del backend con C# y ASP.NET Core, debido a su integración profunda con el ecosistema de .NET. Rider proporciona análisis estático de código C#, refactorizaciones seguras (reorganización de namespaces, renombrado de símbolos, extracción de métodos), así como un depurador avanzado que permite adjuntar el proceso de ASP.NET Core en ejecución, inspeccionar objetos en memoria y analizar llamadas asíncronas.<br><br>
 
-  - Visual Studio Code (VS Code) se configura como alternativa para aquellos miembros del equipo que no dispongan de acceso a WebStorm o Rider, o para el desarrollo en C++ de la aplicación embebida. VS Code soporta extensiones específicas, como C# for Visual Studio Code, C/C++ (Microsoft), Dart & Flutter, Angular Language Service y Prettier, que dotan al editor de capacidades de autocompletado, linting, depuración y tareas de construcción. Su arquitectura ligera y multiplataforma permite a los desarrolladores trabajar en entornos diversos con una configuración unificada.
+  - Visual Studio Code (VS Code) se configura como alternativa para aquellos miembros del equipo que no dispongan de acceso a WebStorm o Rider, o para el desarrollo en C++ de la aplicación embebida. VS Code soporta extensiones específicas, como C# for Visual Studio Code, C/C++ (Microsoft), Dart & Flutter, Angular Language Service y Prettier, que dotan al editor de capacidades de autocompletado, linting, depuración y tareas de construcción. Su arquitectura ligera y multiplataforma permite a los desarrolladores trabajar en entornos diversos con una configuración unificada.<br><br>
 
-  Con esta selección de IDEs, el equipo de Macetech garantiza que cada desarrollador disponga de un entorno adaptado a las necesidades de su área de trabajo, promoviendo un flujo de desarrollo ágil, coherente y alineado con las mejores prácticas de cada tecnología empleada.
+  - WebStorm se emplea como el IDE principal para el desarrollo de JavaScript, TypeScript y el framework Angular. WebStorm ofrece inspecciones inteligentes de código, autocompletado contextual, navegación rápida entre símbolos y soporte nativo para Angular CLI, lo que permite generar componentes y servicios. Asimismo, facilita la configuración de tareas de compilación mediante archivos de configuración integrados. Su depurador integrado permite establecer puntos de interrupción en tiempo real, evaluando expresiones de JavaScript/TypeScript y trazando el flujo de ejecución del frontend, lo que resulta esencial para detectar problemas de rendimiento.<br><br>
 
-  - Página oficial de Visual Studio Code: https://code.visualstudio.com/
-    - Página oficial de Android Studio: https://developer.android.com/studio?hl=es-419
-    - Página oficial de Webstorm: https://www.jetbrains.com/es-es/webstorm/
+  - Wokwi es la plataforma online elegida para la simulación y validación inicial de los circuitos y firmware en los microcontroladores utilizados por Macetech en su aplicación embebida. Con Wokwi podemos cargar esquemáticos de Arduino, ESP32 y otros chips compatibles, emular periféricos (sensores de humedad, temperatura, pH) y observar la ejecución paso a paso del código en un entorno sandbox sin necesidad de hardware físico. Su editor integrado de código, consola serial virtual y capacidad de compartir proyectos mediante URL pública aceleran la colaboración del equipo de firmware y electrónica.<br><br>
+
+  Con esta selección de IDEs, el equipo de Macetech garantiza que cada desarrollador disponga de un entorno adaptado a las necesidades de su área de trabajo, promoviendo un flujo de desarrollo ágil, coherente y alineado con las mejores prácticas de cada tecnología empleada.<br><br>
+
+  - Página oficial de Android Studio: https://developer.android.com/studio?hl=es-419
+  - Página oficial de PyCharm: https://www.jetbrains.com/es-es/pycharm/# 
   - Página oficial de Rider: https://www.jetbrains.com/es-es/rider/
+  - Página oficial de Visual Studio Code: https://code.visualstudio.com/
+  - Página oficial de Webstorm: https://www.jetbrains.com/es-es/webstorm/
+  - Página oficial de Wokwi: https://wokwi.com/ 
+
 
 #### Software Testing
 
@@ -226,18 +233,18 @@ Esta sección aborda la estrategia integral de aseguramiento de la calidad del s
 
 - **Behavior-Driven Development - Cucumber**
 
-  Cucumber es una herramienta de Behavior-Driven Development (BDD) que permite la definición de criterios de aceptación en formato legible tanto para desarrolladores como para stakeholders, utilizando la sintaxis natural de Gherkin. Cada archivo de características (.feature) contiene escenarios estructurados en pasos que describen comportamientos esperados (“Given–When–Then”), facilitando la comunicación entre el equipo técnico y el equipo de producto.
+  Cucumber es una herramienta de Behavior-Driven Development (BDD) que permite la definición de criterios de aceptación en formato legible tanto para desarrolladores como para stakeholders, utilizando la sintaxis natural de Gherkin. Cada archivo de características (.feature) contiene escenarios estructurados en pasos que describen comportamientos esperados (“Given–When–Then”), facilitando la comunicación entre el equipo técnico y el equipo de producto.<br><br>
 
-  Para la edición y ejecución de pruebas con Cucumber, empleamos Visual Studio Code junto con extensiones específicas. Estas extensiones habilitan resaltado de sintaxis, completado automático de palabras clave Gherkin, generación de definiciones de pasos, ejecución de escenarios directamente desde el editor y depuración de tests paso a paso. Con esta extensión garantizamos que las pruebas de aceptación sean siempre ejecutables, repetibles y estén enlazadas a los requisitos del negocio, permitiendo validar funcionalidades completas desde el nivel de API hasta la capa de presentación de forma integrada.
+  Para la edición y ejecución de pruebas con Cucumber, empleamos Visual Studio Code junto con extensiones específicas. Estas extensiones habilitan resaltado de sintaxis, completado automático de palabras clave Gherkin, generación de definiciones de pasos, ejecución de escenarios directamente desde el editor y depuración de tests paso a paso. Con esta extensión garantizamos que las pruebas de aceptación sean siempre ejecutables, repetibles y estén enlazadas a los requisitos del negocio, permitiendo validar funcionalidades completas desde el nivel de API hasta la capa de presentación de forma integrada.<br><br>
 
   - Página oficial de Cucumber: https://cucumber.io/
-    - Página de guía de Cucumber: https://cucumber.io/docs/cucumber/
+  - Página de guía de Cucumber: https://cucumber.io/docs/cucumber/<br><br>
 
 - **Unit-Testing con C# - XUnit.net**
 
-  xUnit.net es un framework de pruebas unitarias para C# que sigue las mejores prácticas de diseño de tests y está estrechamente integrado con el ecosistema de .NET Core. xUnit utiliza convenciones de nomenclatura que detectan métodos de prueba mediante atributos como [Fact] y [Theory], lo que simplifica la escritura de tests individuales y de pruebas parametrizadas. En la implementación de Macetech, xUnit se emplea para desarrollar pruebas exhaustivas de la lógica de negocio en el backend, cubriendo servicios, controladores y repositorios del API RESTful.
+  xUnit.net es un framework de pruebas unitarias para C# que sigue las mejores prácticas de diseño de tests y está estrechamente integrado con el ecosistema de .NET Core. xUnit utiliza convenciones de nomenclatura que detectan métodos de prueba mediante atributos como [Fact] y [Theory], lo que simplifica la escritura de tests individuales y de pruebas parametrizadas. En la implementación de Macetech, xUnit se emplea para desarrollar pruebas exhaustivas de la lógica de negocio en el backend, cubriendo servicios, controladores y repositorios del API RESTful.<br><br>
 
-  Gracias a la integración con herramientas de inyección de dependencias, es posible aislar componentes mediante mocks o stubs, lo que facilita la verificación de comportamientos en escenarios unitarios sin recurrir a bases de datos reales. Cada proyecto de prueba xUnit se configura con un archivo de proyecto .csproj que define referencias a los proyectos de producción, bibliotecas de aislamiento y adaptadores de test. Con el uso de XUnit, garantizamos la calidad y la confiabilidad de la solución Macetech.
+  Gracias a la integración con herramientas de inyección de dependencias, es posible aislar componentes mediante mocks o stubs, lo que facilita la verificación de comportamientos en escenarios unitarios sin recurrir a bases de datos reales. Cada proyecto de prueba xUnit se configura con un archivo de proyecto .csproj que define referencias a los proyectos de producción, bibliotecas de aislamiento y adaptadores de test. Con el uso de XUnit, garantizamos la calidad y la confiabilidad de la solución Macetech.<br><br>
 
   - Página oficial de XUnit: https://xunit.net/
   - Página de guía de XUnit de Microsoft: https://learn.microsoft.com/es-es/dotnet/core/testing/unit-testing-csharp-with-xunit
@@ -248,17 +255,17 @@ Esta sección se enfoca en la planificación y ejecución del proceso de desplie
 
 - **Despliegue de la Landing Page - Github Pages**
 
-  GitHub Pages es un servicio de hosting estático que permite publicar sitios web y páginas de documentación directamente desde un repositorio de GitHub. Mediante la creación de una rama específica, se puede automatizar el despliegue de archivos HTML, CSS, JavaScript y activos estáticos cada vez que se realicen cambios en el repositorio. Al no requerir servidores backend ni bases de datos, ofrece una solución de hosting de bajo costo, con SSL/TLS automático y tiempos de despliegue rápidos, ideal para páginas informativas, blogs, documentación de proyectos y, en este caso, la Landing Page de Macetech.
+  GitHub Pages es un servicio de hosting estático que permite publicar sitios web y páginas de documentación directamente desde un repositorio de GitHub. Mediante la creación de una rama específica, se puede automatizar el despliegue de archivos HTML, CSS, JavaScript y activos estáticos cada vez que se realicen cambios en el repositorio. Al no requerir servidores backend ni bases de datos, ofrece una solución de hosting de bajo costo, con SSL/TLS automático y tiempos de despliegue rápidos, ideal para páginas informativas, blogs, documentación de proyectos y, en este caso, la Landing Page de Macetech.<br><br>
 
-  Para la Landing Page de Macetech, cuya implementación se basa en HTML5, CSS y JavaScript, se ha configurado un workflow que compila y verifica el sitio estático al realizar un push en la rama principal. Una vez aprobados los cambios, el contenido se despliega automáticamente en GitHub Pages, asegurando que los usuarios externos accedan a la versión más reciente sin tiempos de inactividad. Además, se aprovechan las capacidades de GitHub Pages para personalizar el dominio, habilitar HTTPS y gestionar versiones históricas del sitio.
+  Para la Landing Page de Macetech, cuya implementación se basa en HTML5, CSS y JavaScript, se ha configurado un workflow que compila y verifica el sitio estático al realizar un push en la rama principal. Una vez aprobados los cambios, el contenido se despliega automáticamente en GitHub Pages, asegurando que los usuarios externos accedan a la versión más reciente sin tiempos de inactividad. Además, se aprovechan las capacidades de GitHub Pages para personalizar el dominio, habilitar HTTPS y gestionar versiones históricas del sitio.<br><br>
 
-  - Página oficial de Github Pages: https://pages.github.com/
+  - Página oficial de Github Pages: https://pages.github.com/ <br><br>
 
 - **Despliegue de Aplicaciones Móviles - Firebase App Distribution**
 
-  Firebase App Distribution es un servicio de Google diseñado para facilitar la entrega de aplicaciones móviles a probadores internos y externos antes de su publicación en tiendas oficiales. Funciona como una plataforma centralizada que permite subir paquetes compilados (APK para Android e IPA para iOS), gestionar versiones de prueba y distribuirlas a grupos de testers mediante invitaciones por correo electrónico o enlaces únicos. Entre sus ventajas destacan la facilidad para recopilar retroalimentación temprana, identificar errores en condiciones de uso reales y administrar diferentes canales de prueba sin necesidad de depender de procesos de publicación en Google Play Console o App Store Connect.
+  Firebase App Distribution es un servicio de Google diseñado para facilitar la entrega de aplicaciones móviles a probadores internos y externos antes de su publicación en tiendas oficiales. Funciona como una plataforma centralizada que permite subir paquetes compilados (APK para Android e IPA para iOS), gestionar versiones de prueba y distribuirlas a grupos de testers mediante invitaciones por correo electrónico o enlaces únicos. Entre sus ventajas destacan la facilidad para recopilar retroalimentación temprana, identificar errores en condiciones de uso reales y administrar diferentes canales de prueba sin necesidad de depender de procesos de publicación en Google Play Console o App Store Connect.<br><br>
 
-  En el proyecto Macetech, Firebase App Distribution se utiliza para el despliegue de la aplicación móvil desarrollada en Flutter/Dart, permitiendo que los miembros del equipo y los testers seleccionados instalen compilaciones preelaboradas en sus dispositivos físicos (tanto Android como iOS) de manera ágil y segura. Cada nueva versión del APK o IPA se carga automáticamente desde el proceso de integración continua, se etiqueta con un número de versión semántica y se comparte con los probadores a través de la consola de Firebase. Una vez enviada la invitación, los testers pueden instalar la aplicación en sus dispositivos móviles, ejecutar pruebas de funcionalidad, validar flujos críticos y proporcionar feedback directamente en la plataforma.
+  En el proyecto Macetech, Firebase App Distribution se utiliza para el despliegue de la aplicación móvil desarrollada en Flutter/Dart, permitiendo que los miembros del equipo y los testers seleccionados instalen compilaciones preelaboradas en sus dispositivos físicos (tanto Android como iOS) de manera ágil y segura. Cada nueva versión del APK o IPA se carga automáticamente desde el proceso de integración continua, se etiqueta con un número de versión semántica y se comparte con los probadores a través de la consola de Firebase. Una vez enviada la invitación, los testers pueden instalar la aplicación en sus dispositivos móviles, ejecutar pruebas de funcionalidad, validar flujos críticos y proporcionar feedback directamente en la plataforma.<br><br>
 
   - Página oficial de Firebase App Distribution: https://firebase.google.com/docs/app-distribution?hl=es-419
 
@@ -268,56 +275,132 @@ Esta sección contempla la elaboración, estructuración y mantenimiento de la d
 
 - **Control de versiones y repositorios - Github**
 
-  GitHub sirve como plataforma centralizada de control de versiones para todo el ecosistema de Macetech, gestionando el repositorio remotos. En cada repositorio se aplica el GitFlow Workflow, que organiza el trabajo en ramas estables (main/master), ramas de desarrollo (develop), ramas de características (feature), ramas de corrección de errores (hotfix) y ramas de liberación (release). Este enfoque estructurado permite coordinar el avance paralelo de múltiples funcionalidades sin comprometer la estabilidad de las versiones en producción. Adicionalmente, se emplean Conventional Commits para escribir commits uniformes y legibles, lo que facilita la generación automática de changelogs y la trazabilidad de los cambios. Para la numeración de versiones, se sigue el Semantic Versioning (SemVer), etiquetando cada liberación con un esquema Major.Minor.Patch.
+  GitHub sirve como plataforma centralizada de control de versiones para todo el ecosistema de Macetech, gestionando el repositorio remotos. En cada repositorio se aplica el GitFlow Workflow, que organiza el trabajo en ramas estables (main/master), ramas de desarrollo (develop), ramas de características (feature), ramas de corrección de errores (hotfix) y ramas de liberación (release). Este enfoque estructurado permite coordinar el avance paralelo de múltiples funcionalidades sin comprometer la estabilidad de las versiones en producción. Adicionalmente, se emplean Conventional Commits para escribir commits uniformes y legibles, lo que facilita la generación automática de changelogs y la trazabilidad de los cambios. Para la numeración de versiones, se sigue el Semantic Versioning (SemVer), etiquetando cada liberación con un esquema Major.Minor.Patch.<br><br>
 
-  Con el fin de aislar responsabilidades y optimizar la mantenibilidad, el código fuente de Macetech se organiza en repositorios separados por aplicación y ramas separadas por Bounded Context. Esta separación garantiza que cada equipo trabaje con su respectivo conjunto de dependencias y políticas de acceso específicos, reduciendo el riesgo de conflictos entre módulos. Asimismo, se usa un repositorio separado para el desarrollo de reportes con respecto a la introducción del producto, sus procesos de definición de requisitos y requerimientos, su listado de product backlog, diagramas, estructuras, arquitecturas, y uso del código en el producto.
+  Con el fin de aislar responsabilidades y optimizar la mantenibilidad, el código fuente de Macetech se organiza en repositorios separados por aplicación y ramas separadas por Bounded Context. Esta separación garantiza que cada equipo trabaje con su respectivo conjunto de dependencias y políticas de acceso específicos, reduciendo el riesgo de conflictos entre módulos. Asimismo, se usa un repositorio separado para el desarrollo de reportes con respecto a la introducción del producto, sus procesos de definición de requisitos y requerimientos, su listado de product backlog, diagramas, estructuras, arquitecturas, y uso del código en el producto.<br><br>
 
   - Página oficial de Github: https://github.com/
+  - Página de guía de Markdown: https://www.markdownguide.org/<br><br>
 
 - **Documentación de Endpoints - Swagger**
 
-  Swagger (OpenAPI) es un estándar para la documentación interactiva de APIs RESTful que permite describir de manera detallada los endpoints, parámetros, esquemas de datos, códigos de respuesta y modelos de autenticación de un servicio web. A través los modelos de especificación, Swagger genera una interfaz web (Swagger UI) que permite a los desarrolladores explorar cada ruta, probar peticiones en tiempo real y validar esquemas de solicitudes y respuestas sin necesidad de implementar clientes adicionales.
+  Swagger (OpenAPI) es un estándar para la documentación interactiva de APIs RESTful que permite describir de manera detallada los endpoints, parámetros, esquemas de datos, códigos de respuesta y modelos de autenticación de un servicio web. A través los modelos de especificación, Swagger genera una interfaz web (Swagger UI) que permite a los desarrolladores explorar cada ruta, probar peticiones en tiempo real y validar esquemas de solicitudes y respuestas sin necesidad de implementar clientes adicionales.<br><br>
 
-  En Macetech, Swagger se configura como parte del backend, de modo que con cada compilación de ASP .NET Core se actualiza la documentación de los recursos disponibles. Esto garantiza que los equipos de frontend (Angular), mobile (Flutter) e incluso el firmware embebido (C++) cuenten con una fuente confiable y siempre sincronizada de los contratos de la API. Además, Swagger permite exportar el documento OpenAPI a formatos como JSON o YAML para integrarlo en herramientas de generación de código. Gracias a esta implementación, la colaboración entre los diferentes contextos bounded de Macetech se fortalece: cada equipo puede consultar, probar y consumir los endpoints de forma rápida y sin ambigüedades, reduciendo errores de integración y acelerando los ciclos de desarrollo.
+  En Macetech, Swagger se configura como parte del backend, de modo que con cada compilación de ASP .NET Core se actualiza la documentación de los recursos disponibles. Esto garantiza que los equipos de frontend (Angular), mobile (Flutter) e incluso el firmware embebido (C++) cuenten con una fuente confiable y siempre sincronizada de los contratos de la API. Además, Swagger permite exportar el documento OpenAPI a formatos como JSON o YAML para integrarlo en herramientas de generación de código. Gracias a esta implementación, la colaboración entre los diferentes contextos bounded de Macetech se fortalece: cada equipo puede consultar, probar y consumir los endpoints de forma rápida y sin ambigüedades, reduciendo errores de integración y acelerando los ciclos de desarrollo.<br><br>
 
   - Página oficial de Swagger: https://swagger.io/
 
-### 6.1.2. Source Code Management.
+### 6.1.2. Source Code Management
 
-- #### GitFlow Implementation:
+Para garantizar la trazabilidad y la coherencia en el desarrollo de todos los componentes de Macetech, el equipo adoptará una estrategia de gestión de código fuente basada en GitHub. Este entorno centralizado no solo servirá como repositorio único para la Landing Page, los Web Services y las aplicaciones frontend, edge y embedded, sino también como plataforma de colaboración, revisión de cambios y despliegue continuo. Cada repositorio dispondrá de su propia URL, que se detallará en esta sección, y contendrá tanto el código de producción como las pruebas unitarias y de integración/aceptación, garantizando así un ciclo de desarrollo transparente y fácilmente verificable.
 
-  Para implementar el flujo de trabajo Gitflow utilizando Git como nuestra herramienta de control de versiones, nos basamos en la entrada de blog "A successful Git branching model" de Vincent Driessen. Esta referencia nos permitió establecer las convenciones detalladas que serán aplicadas en nuestro proyecto
+Para organizar el flujo de trabajo en Git, se implementará el modelo GitFlow propuesto por Driessen (2010), definiendo ramas específicas para desarrollo (develop), producción (main), nuevas funcionalidades (feature/), preparaciones de lanzamiento (release/) y correcciones críticas (hotfix/). Las convenciones de nombrado para los lanzamientos seguirán las pautas de Semantic Versioning 2.0.0, de modo que cada versión refleje con claridad cambios importantes, características nuevas y correcciones de errores según su impacto semántico (Preston‑Werner, 2013). Asimismo, los mensajes de commit emplearán el estándar Conventional Commits, facilitando la generación automatizada de changelogs y mejorando la legibilidad del historial de cambios (Conventional Commits, 2020).
+
+**Repositorios en GitHub:**
+
+- Organization: https://github.com/SevenSync 
+
+- Report: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-report 
+
+- Landing Page: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page 
+
+- Web Application: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-FrontEnd 
+  
+- Mobile Application: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Mobile-Application 
+
+- Back-End Platform: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-BackEnd 
+
+- Edge Application: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Edge-Application 
+  
+- Embedded Application: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Embedded-Application
+
+- Acceptance Test: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest
+
+- Architecture as Code Structure: https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-dsl
+
+**Integrantes de la organización**:
+En esta sección, se presentarán todos los usuarios que forman parte de la organización de GitHub del proyecto WHAI, junto con sus nombres de usuario correspondientes. El objetivo es evitar confusiones sobre los autores de los commits en GitHub y facilitar la identificación de los colaboradores al revisar y analizar el reporte y el código desarrollado por nuestro equipo.
+
+###### Tabla 252
+
+*Modelo de integrantes del equipo de SevenSync dentro de la página de organización de Github*
+
+|**Nombre de Usuario**|**Imagen de Perfil**|**Nombre del Integrante del Equipo**|
+| ----- | ------ | ----- |
+| RubDaShen | <img src="/assets/img/capitulo-6/profile-pictures/ruben-mallma-github-profile-picture.png" alt="Mallma Quispe, Rubén Elías"> | Mallma Quispe, Rubén Elías - u202214234 |
+| Luiggi Paredes - DevLuiggi |  <img src="/assets/img/capitulo-6/profile-pictures/luiggi-paredes-github-profile-picture.png" alt="Paredes Zapata, Luiggi Gianfranco"> | Paredes Zapata, Luiggi Gianfranco - u202218996|
+| JuanPescoran | <img src="/assets/img/capitulo-6/profile-pictures/juan-pescoran-github-profile-picture.png" alt="Pescorán Angulo, Juan Fabritzzio">| Pescorán Angulo, Juan Fabritzzio - u20221C936 |
+| FlavioTrigueros | <img src="/assets/img/capitulo-6/profile-pictures/flavio-trigueros-github-profile-picture.png" alt="Trigueros Chumacero, Flavio Eduardo"> | Trigueros Chumacero, Flavio Eduardo - u202210190 |
+| Fabrizio0711 | <img src="/assets/img/capitulo-6/profile-pictures/fabrizio-sanchez-github-profile-picture.png" alt="Sanchez Zamora, Fabrizio Alessandro"> |  Sanchez Zamora, Fabrizio Alessandro - u202213652 |
+| LucioY250 | <img src="/assets/img/capitulo-6/profile-pictures/lucio-yen-github-profile-picture.png" alt="Yen Cerna, Lucio Heli"> | Yen Cerna, Lucio Heli - u202213143 |
+
+**GitFlow Workflow**:
+
+En nuestro proyecto adoptamos el modelo GitFlow para estructurar el control de versiones mediante ramas primarias y secundarias. Las ramas primarias consisten en main, que alberga la versión estable actualmente en producción, y develop, donde se integran de forma continua todas las funcionalidades y correcciones antes de preparar un nuevo lanzamiento (Driessen, 2010).
+
+También presentamos ramas secundarias de feature, hotfix o release. Cada rama secundaria termina fusionándose de vuelta a develop mediante pull requests que el equipo revisa para garantizar calidad y coherencia. Este flujo promueve una colaboración ordenada, un historial de cambios claro y minimiza riesgos al pasar a producción.
+
+**GitFlow Implementation:**
+
+  Para implementar el flujo de trabajo Gitflow utilizando Git como nuestra herramienta de control de versiones, nos basamos en la entrada de blog "A successful Git branching model" de Vincent Driessen. Esta referencia nos permitió establecer las convenciones detalladas que serán aplicadas en nuestro proyecto (Driessen, 2010).
+
+  ###### Figura 172
+
+  _Evidencia del uso de Gitflow para el desarrollo en los repositorios de Macetech_
+
   <img src="/assets/img/capitulo-6/evidence/gitflow-evidence.png" alt="Evidencia de GitFlow">
 
-- ### **Master o Main branch**
+- **Master o Main branch**
 
-  La rama principal de desarrollo del proyecto es la Master branch. En esta rama reside el código que actualmente se encuentra en producción.
+  La rama principal constituye la versión estable y desplegada en producción de nuestro proyecto. En ella reside el código que se encuentra actualmente operativo, garantizando que cualquier commit en esta rama represente una versión lista para producción. Para mantener su integridad, solo se fusionarán cambios procedentes de ramas de “release” o “hotfix” correctamente validadas.
 
-  - #### Notación: master o main
+      Notación: main o master
 
-- ### **Develop branch**
+- **Develop branch**
 
-  La rama "Develop" albergará las más recientes actualizaciones y cambios agregados que serán incluidos en la próxima versión del proyecto. Esta rama sirve como un espacio para la integración y prueba continua de los cambios antes de ser fusionados con la rama principal "Master" para su despliegue en producción.
+  La rama de desarrollo aglutina todas las nuevas implementaciones y correcciones aprobadas, que serán parte de la siguiente versión. Actúa como un entorno de integración continua donde se integran y prueban de forma colectiva las contribuciones de las distintas “feature branches”. Una vez que la develop branch alcanza la estabilidad requerida, se crea una rama de “release” y, tras las validaciones finales, sus cambios se fusionan de vuelta tanto a main como a develop para sincronizar el historial. <br><br>
 
-  - #### Notación: develop
+      Notación: develop
 
-- ### **Feature branch**
+- **Feature branch**
 
-  Las ramas de características (Feature branches) serán empleadas para desarrollar nuevas funcionalidades o características del producto que se agregarán en la siguiente versión o en versiones futuras. Estas funcionalidades deberán fusionarse eventualmente con la rama Develop.
-  <br>Debe derivarse de la rama Develop.
-  <br>Debe fusionarse de vuelta a la rama Develop.
+  Cada nueva característica o mejora se desarrolla de forma aislada en una rama específica, derivada de develop. Esto facilita el trabajo concurrente de varios desarrolladores sin interferir con el código de otros equipos. Al finalizar el desarrollo y las pruebas unitarias de la funcionalidad, la “feature branch” se fusiona de nuevo en develop, aportando la nueva capacidad al conjunto de funcionalidades en preparación para el próximo lanzamiento.<br><br>
 
-  - #### Notación: release
+      Notación: feature/
 
-### **Conventional Commits**
+      Ejemplo: feature/iam
 
-"Conventional Commits" es una convención para estructurar los mensajes de confirmación (commits) en un formato estándar y semántico. Este formato ayuda a comunicar claramente los cambios realizados en el código y facilita la generación de registros de cambios automáticos. Los "Conventional Commits" suelen seguir un formato que incluye un encabezado, un cuerpo opcional y un pie de página opcional, y se utilizan para describir de manera sucinta y clara los cambios realizados en el código, lo que facilita su seguimiento y comprensión por parte de los desarrolladores y otros miembros del equipo.
-<br>
+- **Hotfix branch**
+Las ramas de corrección urgente (hotfix/*) se crean a partir de la rama main para resolver errores críticos en producción que requieren atención inmediata. Su objetivo es aislar y corregir fallos sin interrumpir el flujo de desarrollo de nuevas funcionalidades. Una vez validada la solución mediante pruebas unitarias y, de ser necesario, pruebas de integración, la rama hotfix se fusiona tanto en main (para desplegar la corrección) como en develop (para asegurar que el arreglo se incorpore al ciclo de desarrollo continuo).
+
+      Notación: hotfix/
+
+      Ejemplo: hotfix/login-error
+
+- **Release branch**
+Las ramas de preparación de versión (release/*) se generan a partir de develop cuando el conjunto de funcionalidades y correcciones está listo para liberarse. En esta rama se realizan los últimos ajustes, pruebas de aceptación y actualizaciones de documentación o metadatos (número de versión, cambios en el changelog). Tras completar estas tareas, la rama release se fusiona en main (puesta en producción) y en develop (para recoger posibles ajustes realizados durante la preparación).
+
+      Notación: release/
+
+      Ejemplo: release/1.2.0
+
+**Conventional Commits**
+
+Conventional Commits es un estándar para formatear los mensajes de confirmación en Git de manera consistente y semántica. Al aplicar esta convención, cada commit comunica de forma precisa la naturaleza del cambio, lo que facilita la revisión del historial, la generación automática de registros de cambios y la integración con herramientas de automatización de versiones (Conventional Commits, 2020).
+
+La especificación establece un esquema estructurado, compuesto por un encabezado y un cuerpo, que promueve la claridad y uniformidad en los mensajes, de modo que cualquier miembro del equipo pueda entender rápidamente el propósito y alcance de cada cambio.
+
 La estructura de un commit debe seguir las siguientes pautas:
 
 ```
-git commit -m “<type>[optional scope]: <title>“ -m “<description”
+git commit -m “<type>[optional scope]: <title>“ -m “<description>”
+
+con
+
+feat(branch): verb + brief description in English
 ```
+
+En este formato, "branch" debe indicar la rama en la que se han realizado los cambios propuestos para una nueva funcionalidad de la plataforma. La descripción debe estar escrita en inglés y comenzar con un verbo que refleje claramente la naturaleza del cambio implementado. A continuación, se presenta una lista de distintos tipos de conventional commits y una tabla con verbos recomendados para los mensajes de commit:
 
 **Tipos De Conventional Commits**
 
@@ -332,141 +415,825 @@ git commit -m “<type>[optional scope]: <title>“ -m “<description”
 8. perf: Describes performance improvements in the code.
 ```
 
-### 6.1.3. Source Code Style Guide & Conventions.
+###### Tabla 253
+*Modelo de escritura de verbos para todos los commits realizados en el proyecto de Github*
 
-Como norma general, se espera que todo el código desarrollado por los miembros del equipo esté completamente redactado en inglés.
+| Verbo | Traducción | Uso en el proyecto de programación |
+|-------|------------|------------------------------------|
+|Add  |Añadir  | Utilizado para añadir nuevas funcionalidades, componentes o módulos al frontend. Ideal para commits en los que se implementan nuevas vistas, estilos o scripts, incrementando la capacidad del sistema sin afectar las funcionalidades existentes.  |
+|Create  |Crear  | Empleado para la creación de nuevos componentes, estilos o rutas en la aplicación frontend. Este verbo se usa cuando se inicia el desarrollo de una nueva característica o diseño dentro del sistema, estableciendo la base técnica sobre la cual se expandirá la funcionalidad. |
+|Update  |Actualizar  | Usado para realizar modificaciones menores en las funcionalidades existentes del frontend, como la actualización de estilos, optimización de scripts o ajustes en la lógica de interacción. Se aplica en casos donde los cambios no alteran significativamente la estructura, pero mejoran el rendimiento o corrigen comportamientos. |
+|Modify  |Modificar  | Aplicado cuando se realizan cambios significativos en la lógica del frontend, como la reestructuración de componentes o la implementación de nuevas políticas de diseño en la capa de presentación. Esto incluye cambios que afectan la arquitectura general o que impactan directamente en la interacción entre componentes. |
+|Correct  | Corregir  | Utilizado para corregir errores menores en la implementación del frontend, como ajustes en las validaciones de formularios, corrección de rutas de navegación, o fallos en configuraciones que afectan el correcto funcionamiento de la interfaz. Este verbo se reserva para pequeñas correcciones sin grandes implicaciones. |
+|Fix  |Arreglar  | Usado para solucionar bugs críticos o problemas que afectan directamente la funcionalidad del frontend. Esto puede incluir arreglar errores en la lógica de interacción, problemas de visualización o fallos en la autenticación de usuarios. También es comúnmente utilizado para resolver errores en la integración continua o el despliegue automático. |
+|Delete  |Borrar  | Aplicado para la eliminación de componentes, estilos o recursos que ya no son necesarios en el frontend. Debe utilizarse cuando se elimina código obsoleto o componentes que han sido reemplazados por implementaciones más eficientes o actualizadas. |
+|Drop  |Tirar  | Exclusivo para la eliminación de rutas, estilos o configuraciones en el frontend. Debe ser utilizado con precaución, ya que este tipo de cambios puede tener implicaciones críticas en la presentación de datos y la estructura general de la interfaz. Suele aplicarse cuando se reorganiza o limpia el sistema de archivos en el proceso de migración o refactorización. |
 
-- ### HTML
-  - #### Use Lowercase Element Names:
-    Es recomendable utilizar minúsculas o lowercase para los nombres de los elementos HTML.
-    ```
-    <body>
-        <p>This is a paragraph</p>
-    <body>
-    ```
-  - #### Close All HTML Elements:
-    Es recomendable cerrar todos los elementos HTML correctamente.
-    ```
-    <body>
-        <p>This is a paragraph</p>
-        <p>This is another paragraph</p>
-    <body>
-    ```
-  - #### Use Lowercase Attribute Names:
-    Es recomendable utilizar minúsculas para los nombres de los atributos HTML.
-    ```
-    <a href="https://www.w3schools.com/html/">Visit our HTMLtutorial</a>
-    ```
-  - #### Always Specify alt, width, and height for Images:
-    Es recomendable seguir estas convenciones en caso de que la imagen no se pueda mostrar, lo que ayuda a mejorar la accesibilidad del contenido.
-    ```
-    <img src="html5.gif" alt="HTML5"
-    style="width:128px;height:128px">
-    ```
-  - #### Spaces and Equal Signs:
-    Se recomienda no utilizar espacios en blanco entre las entidades para mejorar la legibilidad.
-    ```
-    <link rel="stylesheet" href="styles.css">
-    ```
-- ### CSS
-  - #### ID and Class Naming
-    Es recomendable utilizar nombres de clases e id's significativos que expresen claramente el propósito del elemento.
-    ```
-    #gallery {}
-    #login {}
-    .video {}
-    ```
-  - #### ID and Class Name Style
-    Se recomienda utilizar nombres cortos para nombrar ids o clases, pero lo suficientemente descriptivos para entender su propósito.
-    ```
-    #nav {}
-    .author {}
-    ```
-  - #### Shorthand Properties
-    Se recomienda utilizar propiedades CSS de forma abreviada siempre que sea posible para hacer el código más eficiente y comprensible.
-    ```
-    border-top: 0;
-    font: 100%/1.6 palatino, georgia, serif;
-    padding: 0 1em 2em;
-    ```
-  - #### 0 and Units
-    Es recomendable evitar especificar la unidad después del valor 0 en propiedades que lo permitan, ya que esto ayuda a reducir el tamaño del código y mejora su legibilidad.
-    ```
-    margin: 0;
+Esta norma sigue los principios de Conventional Commits, una convención ligera para estructurar y nombrar los commits. Esta convención proporciona un conjunto claro de reglas para crear un historial de cambios detallado y coherente, lo que facilita la automatización de procesos como el versionado semántico y el seguimiento de características, correcciones y modificaciones críticas. Su implementación mejora la trazabilidad del desarrollo, simplifica las revisiones y asegura una mayor transparencia en el control de versiones (Conventional Commits, 2020).
+
+**Estructura del Mensaje de Commit:**
+
+|type: description|
+|-----------------|
+
+**Versionado Semántico:**
+
+Para garantizar una gestión clara y predecible de las versiones de lanzamiento, nuestro proyecto adoptará el esquema de versionado semántico 2.0.0. Este estándar define una convención de tres números, mayor, menor y parche, que refleja el grado de cambio introducido en cada lanzamiento:
+
+* **Major (X.0.0):** incrementa cuando se realizan cambios incompatibles con versiones anteriores.
+
+* **Minor (0.Y.0):** incrementa al añadir nuevas funcionalidades de manera retrocompatible (que son compatibles con versiones anteriores).
+
+* **Patch (0.0.Z):** incrementa al corregir errores compatibles y realizar mejoras menores.
+
+|Major.Minor.Patch|
+|-----------------|
+
+Al aplicar Semantic Versioning, cada número comunicará de manera inequívoca la naturaleza y el alcance de las modificaciones, facilitando la coordinación entre equipos, la automatización de despliegues y la generación de documentación de cambios (Preston‑Werner, 2013).
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+En esta sección describiremos las convenciones y buenas prácticas que guiarán la escritura, organización y estructuración del código frontend de nuestra solución. Nos centraremos en los lenguajes y frameworks clave —Flutter, Dart, HTML, CSS, JavaScript, Angular, TypeScript— así como en tecnologías de backend y pruebas —C#, ASP NET Core, C++, Python, RESTful API, Wokwi y xUnit— para asegurar un desarrollo coherente, mantenible y escalable, y facilitar la colaboración entre todos los miembros del equipo.
+
+Asimismo, presentaremos las pautas específicas para optimizar la experiencia de usuario, incluyendo la gestión de componentes visuales, la mejora del rendimiento en la renderización y el manejo fluido de las interacciones. Para ello, nos apoyaremos en las siguientes referencias oficiales y guías de estilo:
+
+HTML5 Syntax (W3Schools)
+https://www.w3schools.com/html/html5_syntax.asp
+
+Google HTML/CSS Style Guide
+https://google.github.io/styleguide/htmlcssguide.html
+
+Angular Style Guide
+https://angular.io/guide/styleguide
+
+JavaScript Style Guide (Google)
+https://google.github.io/styleguide/jsguide.html
+
+Mozilla Developer Network JavaScript Code Style Guide
+https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
+
+JavaScript Conventions (W3Schools)
+https://www.w3schools.com/js/js_conventions.asp
+
+TypeScript Handbook: Style Guide
+https://www.typescriptlang.org/docs/handbook/declaration-files/style-guide.html
+
+Flutter Official Documentation
+https://docs.flutter.dev/get-started/learn-flutter
+
+Flutterverso: Recursos de Aprendizaje
+https://github.com/rafathefull/flutterverso
+
+Dart Language Tour
+https://dart.dev/language
+
+Dart Libraries Catalog
+https://dart.dev/libraries
+
+Angular Style Guide
+https://angular.dev/style-guide
+
+C# Coding Conventions
+https://docs.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions
+
+ASP NET Core Guidelines
+https://docs.microsoft.com/aspnet/core/fundamentals/?view=aspnetcore-6.0
+
+RESTful API Design Best Practices
+https://restfulapi.net/
+
+C++ Core Guidelines
+https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+
+PEP 8 – Python Style Guide
+https://peps.python.org/pep-0008/
+
+Wokwi Documentation
+https://docs.wokwi.com/
+
+xUnit Documentation
+https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-csharp-with-xunit 
+
+#### Convenciones que usaremos:
+
+**HTML**
+
+**1. Etiquetas en minúsculas**
+
+Todas las etiquetas deben ir en lowercase para cumplir con el estándar HTML5 y garantizar compatibilidad entre navegadores.
+
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="utf-8">
+        <title>Título de la página</title>
+      </head>
+      <body>
+        <header>…</header>
+      </body>
+    </html>
+
+**2. Cierre explícito de todos los elementos**
+
+Asegurar que cada etiqueta de apertura <tag> tenga su correspondiente </tag>, incluso en elementos semánticos.
+
+    <section>
+      <article>
+        <p>Texto del artículo.</p>
+      </article>
+    </section>
+
+**3. Atributos en minúsculas y comillas dobles**
+
+Todos los nombres de atributos deben ir en lowercase. Los valores siempre entre comillas dobles. 
+
+Orden recomendado: 
+- id
+- class
+- src/href
+- alt
+- atributos de accesibilidad (aria-…).
+
+      <img
+        id="logo"
+        class="site-logo"
+        src="logo.svg"
+        alt="Logotipo de la empresa"
+        width="150"
+        height="60"
+        loading="lazy"
+        aria-hidden="true"
+      >
+
+**4. Textos alternativos y dimensiones en imágenes**
+
+Incluir siempre "alt" descriptivo para accesibilidad.
+
+Definir width y height (o usar CSS) para evitar cambios de layout en carga.
+
+Emplear loading="lazy" para optimizar rendimiento en imágenes fuera de pantalla.
+
+**5. Indentación y espaciado limpio**
+
+Usar 2 espacios por nivel de anidado.
+
+No dejar espacios antes ni después del signo "="" en atributos.
+
+Insertar líneas en blanco para separar bloques lógicos (head, header, main, footer).
+
+---
+
+**CSS**
+
+**1. Nomenclatura clara (BEM opcional)**
+
+Clases y IDs descriptivos que reflejen el componente y su estado.
+
+Ejemplo BEM:
+
+    .card { … }
+    .card__header { … }
+    .card__header--collapsed { … }
+
+
+**2. Agrupación de selectores relacionados**
+
+Agrupar selectores que comparten propiedad para evitar duplicación.
+
+    .btn,
+    .link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+**3. Shorthand siempre que sea posible**
+
+Reducir líneas usando propiedades abreviadas.
+
+    margin: 0 auto;
+    border: none;
+
+**4. Unidades en cero sin sufijos**
+
+Evitar 0px, usar directamente 0.
+
     padding: 0;
-    ```
-  - #### Declaration Order
-    Se recomienda ordenar las declaraciones en orden alfabético para facilitar el mantenimiento y la recordación del código.
-    ```
-     background: fuchsia;
-     border: 1px solid;
-     border-radius: 4px;
-     color: black;
-     text-align: center;
-     text-indent: 2em;
-    ```
-- ### Typescript
-  - #### Use expanded syntax
-    Cada línea de TypeScript debería estar en una nueva línea, con la llave de apertura en la misma línea de su declaración y la llave de cierre en una nueva línea al final.
-    ```
-    function myFunc() {
-     console.log('Hello!');
-    };
-    ```
-  - #### Variable naming
-    Para el nombre de las variables, se recomienda utilizar lowerCamelCase.
-    ```
-    let playerScore = 0;
-    let speed = distance / time;
-    ```
-  - #### Declaring variables
-    Para la declaración de variables, es recomendable utilizar las palabras reservadas let y const en lugar de var.
-    ```
-    const myName = 'Chris';
-    console.log(myName);
-    let myAge = '40';
-    myAge++;
-    console.log('Happy birthday!');
-    ```
-  - #### Function naming
-    Para el nombre de las funciones, se recomienda utilizar lowerCamelCase.
-    ```
-    function sayHello() {
-    alert('Hello!');
-    };
-    ```
-- ### C#
-  #### Nomenclatura:
-  PascalCase: Tipos (Clases, Enums, Interfaces I), Miembros Públicos/Internos (Propiedades, Métodos, Eventos), Namespaces, Constantes.
-  camelCase: Variables locales, Parámetros de método, Campos privados (sin \_).
-  Nombres de archivo: Coincidir con el tipo público principal.
-  Formato:
-  #### Indentación: 4 espacios (no tabuladores).
-  Llaves {}: En nueva línea (estilo Allman o similar).
-  Espaciado: Un espacio alrededor de operadores, después de comas, antes de { en control de flujo. No espacios después de ( o antes de ).
-  Líneas en blanco: Para separar secciones lógicas.
-  Longitud de línea: Idealmente <= 120 caracteres.
-  ##### Comentarios:
-  ///: Documentación XML para tipos y miembros públicos/internos.
-  //: Aclarar lógica compleja.
-  ##### Organización:
-  using: Arriba, fuera del namespace, ordenadas alfabéticamente.
-  Miembros de tipo: Campos -> Constructores -> Propiedades -> Métodos -> Eventos (ordenar por visibilidad dentro de cada grupo).
-  #### Buenas Prácticas:
-  Usar var apropiadamente, interpolación $"", LINQ, manejo de excepciones, async/await, operadores ?. y ??.
-  Herramientas: Usar .editorconfig y Analizadores Roslyn (ej. StyleCop) para automatizar y verificar el estilo.
 
-### 6.1.4. Software Deployment Configuration.
+**5. Orden alfabético de declaraciones**
 
-- Despliegue Landing Page:<br>
-  <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
+Facilita encontrar y agregar propiedades.
 
-- Despliegue Front End App:<br> Microsoft azure
+    .modal {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #fff;
+      display: flex;
+      padding: 1rem;
+    }
 
-- Despligue de FAKE API:
-  <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia de Beeceptor API ">
+**6. Breakpoints y media queries al final**
 
-Enlace: https://macetech.free.beeceptor.com
+Mantener todas las media queries al final del bloque del componente.
+
+    .container { … }
+    @media (max-width: 600px) {
+      .container { … }
+    }
+
+---
+
+**TypeScript**
+
+**1. Estructura de archivos y nomenclatura**
+
+Archivos: kebab-case.ts para módulos; directorios en kebab-case.
+
+Clases e interfaces en PascalCase.
+
+Funciones y variables en lowerCamelCase.
+
+**2. Bloques y llaves**
+
+Cada declaración y llave debe ir en su propia línea.
+
+    export class UserService {
+      constructor(private http: HttpClient) {}
+
+      fetchUsers(): Observable<User[]> {
+        return this.http.get<User[]>('/api/users');
+      }
+    }
+
+**3. Imports ordenados y agrupados**
+
+1. Módulos de Angular/terceros
+
+2. Módulos internos de la aplicación
+
+3. Importaciones de estilos y activos
+
+        import { Component } from '@angular/core';
+        import { UserService } from './user.service';
+        import './styles.css';
+
+**4. Uso de const y let**
+
+"const" por defecto; "let" solo cuando la variable cambia.
+
+Nunca usar "var" porque tiene alcance de función, no de bloque, y puede causar problemas en redeclaración.
+
+**5. Tipos explícitos y genéricos**
+
+Definir tipos de parámetros y retornos.
+
+Utilizar genéricos para colecciones y promesas.
+
+    function getItem<T>(id: string): Promise<T> { … }
+
+**6. Decoradores y metadatos (Angular)**
+
+Siempre incluir "selector", "templateUrl/template", "styleUrls".
+
+Orden en componentes: 
+
+1. Propiedades públicas
+2. Constructor
+3. Ciclos de vida
+4. Métodos privados
+
+---
+
+**C#**
+
+**1. Nomenclatura**
+
+PascalCase para clases, interfaces (IService), métodos públicos, propiedades, eventos.
+
+camelCase para campos privados (_logger opcional), variables locales, parámetros.
+
+**2. Estructura de archivo**
+
+Nombre del archivo = nombre de la clase pública.
+
+"using" statements fuera del "namespace" y ordenados alfabéticamente.
+
+**3. Indentación y estilo de llaves**
+
+Tabuladores claros por nivel. Llaves en línea nueva (Allman style).
+
+    namespace MyApp.Services
+    {
+        public class OrderService
+        {
+            public async Task ProcessAsync(Order order)
+            {
+                // …
+            }
+        }
+    }
+
+**4. Organización de miembros**
+
+1. Constantes
+2. Campos 
+3. Constructores
+4. Propiedades
+5. Métodos
+6. Eventos
+
+Separar bloques con línea en blanco.
+
+**5. Comentarios y documentación**
+
+"///" summary para documentar APIs públicas.
+
+"//" para aclarar lógica compleja o decisiones de diseño.
+
+**6. Buenas prácticas**
+
+Uso de async/await para operaciones I/O.
+
+Expresiones LINQ para manipulación de colecciones.
+
+Operadores null-safe (?., ??).
+
+Interpolación de cadenas ($"Usuario: {user.Name}").
+
+**7. Verificación de estilo**
+
+Configurar un ".editorconfig" con reglas de indentación y espacios.
+
+Emplear analizadores Roslyn (StyleCop, SonarLint) en el pipeline de CI para garantizar cumplimiento.
+
+---
+
+**Angular**
+
+**1. Estructura de módulos y carpetas**
+
+Agrupar por funcionalidad (feature modules), no por tipo de archivo.
+
+    src/
+      app/
+        core/           ← servicios y singleton providers
+        shared/         ← componentes, directivas y pipes reutilizables
+        features/
+          users/
+            users.module.ts
+            users-routing.module.ts
+            components/
+            services/
+
+**2. Nomenclatura de archivos y clases**
+
+**Componentes:** kebab-case.component, **clase:** PascalCaseComponent
+
+**Módulos:** kebab-case.module.ts, **clase:** PascalCaseModule.
+
+**Servicios:** kebab-case.service.ts, **clase:** PascalCaseService.
+
+**Rutas:** kebab-case-routing.module.ts.
+
+**3. Decoradores y metadatos**
+
+Orden dentro de un componente:
+
+    @Component({ … })
+    export class UserProfileComponent implements OnInit {
+      // 1. Propiedades públicas
+      @Input() userId!: string;
+
+      // 2. Inyección de dependencias en el constructor
+      constructor(private userService: UserService) {}
+
+      // 3. Ciclos de vida (ngOnInit, ngOnDestroy, …)
+      ngOnInit(): void { … }
+
+      // 4. Métodos públicos
+      onEdit(): void { … }
+
+      // 5. Métodos privados
+      private loadData(): void { … }
+    }
+
+**4. Imports ordenados**
+
+1. Angular core
+2. Angular modules
+3. Servicios y componentes propios
+4. Estilos y activos
+
+        import { Component, OnInit } from '@angular/core';
+        import { RouterModule } from '@angular/router';
+
+        import { UserService } from '../services/user.service';
+
+        import './user-profile.component.css';
+
+**5. Plantillas y estilos**
+
+Evitar lógica compleja en el template; delegar a métodos del componente.
+
+Usar OnPush para detección de cambios cuando sea posible.
+
+Encapsulación de estilos: "ViewEncapsulation.Emulated" (por defecto).
+
+---
+
+**ASP NET Core**
+
+**1. Arquitectura y estructura de proyecto**
+
+    src/
+      MyApp.Api/           <- proyecto principal: controladores y configuración HTTP
+      MyApp.Core/          <- entidades de dominio e interfaces
+      MyApp.Infrastructure/ <- implementaciones de repositorios y contextos de datos
+      MyApp.Tests/         <- pruebas unitarias e integración
+
+**2. Program.cs y Startup.cs**
+
+Configurar servicios (builder.Services.AddScoped<…>()) antes de app.Build().
+
+Definir middleware en orden lógico: seguridad, enrutamiento, CORS, logs.
+
+**3. Controladores y rutas**
+
+Decorar con [ApiController] y [Route("api/[controller]")].
+
+Acciones: verbos HTTP explícitos ([HttpGet], [HttpPost]).
+
+Devolver ActionResult<T> o IActionResult para flexibilidad de status codes.
+
+**4. Inyección de dependencias**
+
+Registrar interfaces y clases en ConfigureServices.
+
+No usar "new" dentro de controladores; siempre pedir dependencias por constructor.
+
+**5. Configuración y secretos**
+
+Variables de configuración en appsettings.json y appsettings.{Environment}.json.
+
+Secretos locales con Secret Manager (dotnet user-secrets).
+
+No guardar credenciales en código.
+
+---
+
+**RESTful API**
+
+**1. URI y estructura de endpoints**
+
+Sustantivos en plural: /api/users, /api/orders/{id}/items.
+
+No incluir verbo: el método HTTP determina la acción.
+
+**2. Verbos HTTP**
+
+GET para lectura, POST para creación, PUT para actualización completa, PATCH para actualización parcial, DELETE para eliminación.
+
+**3. Códigos de estado**
+
+200 OK, 201 Created (+ Location), 204 No Content,
+
+400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.
+
+**4. Versionado**
+
+Versionar en la ruta: /api/v1/users.
+
+Mantener compatibilidad hacia atrás mientras se publique v2.
+
+**5. Hateoas y DTOs**
+
+Incluir enlaces de navegación cuando aplique.
+
+No exponer directamente entidades de base de datos; usar DTOs.
+
+---
+
+**C++**
+
+**1. Extensiones y organización de archivos**
+
+.hpp/.h para encabezados, .cpp para implementación.
+
+Un directorio include/ y otro src/.
+
+**2. Guards y #pragma once**
+
+    #pragma once
+
+    namespace MyApp {
+      class MyClass { … };
+    }
+
+**3. Nombres y espacios de nombres**
+
+Clases en PascalCase, funciones y variables en snake_case.
+
+Evitar using namespace std; en headers.
+
+**4. Orden de includes**
+
+1. Encabezado correspondiente
+2. Bibliotecas estándar <…>
+3. Dependencias de terceros
+4. Encabezados propios
+
+        #include "my_class.hpp"
+
+        #include <vector>
+        #include <string>
+
+        #include "third_party/lib.hpp"
+
+**5. Memoria y punteros**
+
+Preferir "std::unique_ptr" y "std::shared_ptr" sobre punteros crudos.
+
+Evitar fugas de memoria y condiciones de carrera.
+
+**6. Estilo**
+
+Sangría de 2 o 4 espacios (consistente).
+
+Línea máxima ~100 caracteres.
+
+Comentarios // para breves aclaraciones, /** … */ para documentación.
+
+---
+
+**Python**
+
+**1. PEP 8: Estilo de código**
+
+Indentación de 4 espacios (no tabuladores).
+
+Longitud de línea menor o igual 79 caracteres.
+
+Líneas en blanco para separar funciones y clases.
+
+**2. Nomenclatura**
+
+Funciones y variables: snake_case.
+
+Clases: PascalCase.
+
+Constantes: UPPER_SNAKE_CASE.
+
+**3. Imports ordenados**
+
+1. Librerías estándar
+2. Librerías de terceros
+3. Módulos locales
+
+Separados por línea en blanco.
+
+    import os
+    import sys
+
+    import requests
+
+    from myapp.utils import helper
+
+**4. Docstrings**
+
+Triple comilla ("""…""") para módulos, funciones y clases.
+
+Seguir formato Google o NumPy style.
+
+**5. Tipado estático (opcional)**
+
+Utilizar hints en funciones y variables.
+
+    def fetch_data(url: str) -> dict[str, Any]:
+        """Obtiene datos de la URL dada."""
+        ...
+
+---
+
+**Wokwi**
+
+**1. Archivos de simulación**
+
+Extensión .wkw.json o .wokwi.json.
+
+Incluir metadatos: nombre, descripción, dependencias de hardware.
+
+**2. Estructura interna**
+
+"parts": lista de componentes (microcontroladores, sensores).
+
+"sketch": código fuente embebido (Arduino/C++ o MicroPython).
+
+**3. Comentarios y pruebas**
+
+Comentar secciones críticas del firmware.
+
+Definir escenarios de simulación en archivos separados.
+
+**4. Compartir y versionar**
+
+Cada simulación debe incluir una URL pública en la documentación del repositorio.
+
+Incluir en CI un paso que valide que el JSON esté bien formado.
+
+---
+
+**xUnit (.NET)**
+
+**1. Nomenclatura de pruebas**
+
+Método de prueba: MethodName_StateUnderTest_ExpectedBehavior.
+
+    [Fact]
+    public void CalculateTotal_WhenNoItems_ReturnsZero() { … }
+
+**2. Atributos**
+
+[Fact] para casos de prueba sin parámetros.
+
+[Theory] + [InlineData] para casos parametrizados.
+
+**3. Configuración y fixtures**
+
+Usar clases fixture para compartir contexto de prueba.
+
+Implementar IClassFixture<T> y ICollectionFixture<T> según alcance.
+
+**4. Asserts claros**
+
+Preferir Assert.Equal(expected, actual) y mensajes personalizados.
+
+Evitar lógica compleja dentro de las aserciones.
+
+**5. Organización**
+
+Cada clase de prueba corresponde a una clase de producción.
+
+Agrupar proyectos de test en una carpeta tests/ o MyApp.Tests/.
+
+### 6.1.4. Software Deployment Configuration
+
+En esta sección, procederemos a detallar de manera exhaustiva la configuración necesaria para implementar y desplegar nuestra solución. A lo largo de este análisis, enfatizaremos las mejores prácticas que deben seguirse, así como las herramientas más adecuadas a utilizar y los flujos de trabajo recomendados para garantizar una implementación eficaz y coordinada de ambas partes de nuestra solución. Además, discutiremos cómo cada decisión técnica impacta en la funcionalidad y la experiencia del usuario, proporcionando así un enfoque integral para el desarrollo de nuestras aplicaciones.
+
+**Landing Page:**
+
+**1. Creación del repositorio en GitHub:**
+Abrir GitHub, crear un nuevo repositorio público con un nombre claro y descriptivo para el Landing Page, y subir todos los archivos HTML, CSS, JavaScript y recursos asociados. Esta base organizará el flujo de trabajo y facilitará la colaboración del equipo.
+
+###### Figura 173
+
+_Repositorio de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-1.png" alt="Evidencia de Uso de Github Pages">
+
+**2. Habilitación de GitHub Pages:**
+En la sección Settings -> Pages, activar GitHub Pages para el repositorio. Ahí se puede elegir la rama de despliegue y, opcionalmente, un dominio personalizado, siguiendo la interfaz guiada que ofrece GitHub.
+
+###### Figura 174
+
+_Habilitación de Github Pages de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia de Uso de Github Pages">
+
+**3. Configuración de la rama y directorio de publicación:**
+Dentro de Settings -> Pages, seleccionar la rama main y el directorio raíz desde el que se servirán los archivos estáticos. Esto define exactamente qué contenido se publicará en el sitio.
+
+**4. Selección definitiva de la rama de despliegue:**
+Confirmar en el apartado Branch que la rama elegida (main) contiene la versión actualizada del Landing Page. Mantener las demás opciones en valores predeterminados salvo requisitos especiales.
+
+**5. Verificación del enlace público:**
+Tras guardar la configuración, GitHub generará automáticamente la URL de acceso al sitio. Cualquier push a la rama main actualizará en tiempo real la página desplegada.
+
+###### Figura 175
+
+_Verificación del enlace público de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-2.png" alt="Evidencia de Uso de Github Pages">
+
+**6. Pruebas finales y acceso al sitio:**
+Acceder al enlace generado (https://sevensync.github.io/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page/), comprobar funcionamiento y apariencia en distintos navegadores y dispositivos, y corregir posibles desviaciones de forma inmediata para garantizar una experiencia óptima.
+
+###### Figura 176
+
+_Versión final del encabezado de la Landing Page de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/landing-page-deployment-3.png" alt="Evidencia de Uso de Github Pages">
+
+---
+
+**Web Application**
+
+**1. Creación y configuración del proyecto en Firebase**
+Accede a Firebase Console, crea un nuevo proyecto o selecciona el existente asociado a la Web Application. En el menú lateral, habilita App Distribution y registra tu aplicación web, vinculándola al dominio que servirá los archivos estáticos.
+
+En tu entorno local, instala la herramienta de línea de comandos de Firebase y autentícate con firebase login. Asegúrate de haber seleccionado el proyecto correcto con firebase use.
+
+###### Figura 177
+
+_Selección y configuración del proyecto de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-1.png" alt="Evidencia de despliegue en Firebase">
+
+**2. Construcción de la aplicación**
+Ejecuta el comando de build de tu framework para generar los archivos estáticos listos para producción en la carpeta de salida designada.
+
+###### Figura 178
+
+_Construcción de la aplicación para el proyecto de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-2.png" alt="Evidencia de despliegue en Firebase">
+
+**3. Configuración de Firebase Hosting**
+Inicializa Firebase Hosting con firebase init, selecciona el proyecto y la carpeta de salida generada en el paso anterior. Cuando se te pregunte si deseas sobrescribir archivos de configuración, confirma solo los necesarios.
+
+###### Figura 179
+
+_Configuración de Firebase Hosting para el despliegue de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-3.png" alt="Evidencia de despliegue en Firebase">
+
+**4. Despliegue en App Distribution**
+Utilizar comandos (firebase deploy) de despliegue en Firebase para subir el paquete de la Web Application a App Distribution. Este comando empaqueta automáticamente el build y lo hace disponible para el grupo de desarrolladores configurado.
+
+###### Figura 180
+
+_Despliegue de la Web Application de Macetech en Firebase_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-4.png" alt="Evidencia de despliegue en Firebase">
+
+**5. Obtención del enlace de distribución**
+Una vez completada la subida, Firebase mostrará en consola la URL de App Distribution. Comparte este enlace con los desarrolladores o stakeholders para que puedan acceder y descargar la última versión de la Web Application directamente desde Firebase App Distribution.
+
+###### Figura 181
+
+_Página de Firebase Distribution de la Web Application de Macetech_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-5.png" alt="Evidencia de despliegue en Firebase">
+
+###### Figura 182
+
+_Página de inicio de sesión de la Web Application de Macetech ya desplegada_
+
+<img src="/assets/img/capitulo-6/deployment/web-app-deployment-6.png" alt="Evidencia de despliegue en Firebase">
+
+---
+
+**Back-End Platform**
+
+**1. Clonación y gestión del repositorio con GitHub Desktop**
+Abrir GitHub Desktop, clonar el repositorio del backend y crear la rama de despliegue (release/*). Confirmar que el código local está actualizado y hacer commit de cualquier ajuste de configuración antes de proceder.
+
+###### Figura 183
+
+_Gestión del Back-End de Macetech antes de su despliegue mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-1.png" alt="Evidencia de despliegue en Azure">
+
+**2. Configuración del proyecto y variables de entorno**
+En el archivo de configuración (appsettings.json o variables de entorno), definir cadenas de conexión a bases de datos, claves de servicios externos y parámetros de la aplicación. Guardar estos cambios en la rama de despliegue y sincronizarlos con el repositorio remoto mediante GitHub Desktop.
+
+###### Figura 184
+
+_Configuración del proyecto Back-End de Macetech antes de su despliegue mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-2.png" alt="Evidencia de despliegue en Azure">
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-3.png" alt="Evidencia de despliegue en Azure">
+
+**3. Compilación y publicación desde línea de comandos**
+Abrir la terminal o cmd en la carpeta raíz del proyecto ASP NET Core y ejecutar dotnet publish -c Release -o ./publish para generar los artefactos de producción en la carpeta publish.
+
+###### Figura 185
+
+_Compilación y publicación del proyecto Back-End a la plataforma de Azure mediante Github Desktop_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-4.png" alt="Evidencia de despliegue en Azure">
+
+**4. Despliegue en Azure App Service**
+
+Autenticarse con login, seleccionar el suscriptor con account set --subscription <ID> y desplegar mediante la consola de comandos, indicando el grupo y la aplicación del proyecto en específico. Después, dar a publish directamente.
+
+**5. Verificación del despliegue y configuración de dominio**
+Una vez completado el push a Azure, abrir la URL asignada al App Service para confirmar que la API se ha publicado. Si se requiere, ajustar los dominios personalizados y certificados SSL en TLS/SSL Settings.
+
+###### Figura 186
+
+_Revisión y verificación del proyecto Back-End en la plataforma de Azure_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-5.png" alt="Evidencia de despliegue en Azure">
+
+**6. Acceso y presentación de Swagger UI**
+Con la API en línea, navegar a https://<mi-app>.azurewebsites.net/swagger para visualizar automáticamente la documentación interactiva de los endpoints generada por Swashbuckle. Allí se podrá inspeccionar rutas, esquemas de request/response y probar llamadas desde el navegador.
+
+###### Figura 187
+
+_Presentación de los endpoints del Back-End de Macetech desplegado mediante la plataforma de Azure_
+
+<img src="/assets/img/capitulo-6/deployment/back-end-deployment-6.png" alt="Evidencia de despliegue en Azure">
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
@@ -476,9 +1243,12 @@ La implementación de la página estática de negocio, los servicios y las aplic
 
 El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. Durante este período, nos enfocamos en la implementación de las características y funcionalidades prioritarias identificadas en la planificación inicial. Esto implica traducir los requisitos y especificaciones en código funcional, desarrollando las bases de nuestro producto de manera iterativa.
 
-#### 6.2.1.1.Sprint Planning 1.
+#### 6.2.1.1.Sprint Planning 1
 
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+###### Tabla 254
+*Sprint Planning del primer sprint de desarrollo de Macetech*
 
 <table  style="text-align: center;">
     <tbody>
@@ -548,6 +1318,9 @@ Asimismo, la página mostrará una comparación accesible entre las funcionalida
 
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 255
+*Aspects Leaders and Collaborators del primer sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -556,9 +1329,13 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 | Sanchez, Fabrizio | Fabrizio0711 | L | - | - | C | C | - | - |
 | Trigueros, Flavio | FlavioTrigueros | - |- | L | - | C | - | C |
 | Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
-#### 6.2.1.3.Sprint Backlog 1.
+
+#### 6.2.1.3.Sprint Backlog 1
 
 En este primer sprint, nos enfocamos en la implementación de las funcionalidades básicas de la Landing Page, incluyendo la estructura general, el diseño visual y la navegación básica, también se ha creado un reporte que muestra el ciclo de vida de todo nuestro proyecto de software. Estas características son fundamentales para establecer las bases de nuestro producto y proporcionar una experiencia de usuario sólida y coherente.
+
+###### Tabla 256
+*Sprint Backlog del primer sprint de desarrollo de Macetech*
 <table>
 	<tbody>
 		<tr>
@@ -793,9 +1570,13 @@ En este primer sprint, nos enfocamos en la implementación de las funcionalidade
     <tbody>
 </table>
 
-A continuación el sprint backlog 1 y el Trello donde se repartieron los trabajos:
+A continuación el sprint backlog 1 y el Jira Software donde se repartieron los trabajos:
 
-Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.atlassian.net/jira/software/projects/SPB/list?filter=statusCategory+%3D+Done+AND+statusCategoryChangedDate+%3E%3D+-1w&atlOrigin=eyJpIjoiMGYzM2ZmYmI4MTc1NDZlODgzNjkwYmQ0NDRjZmVjNDUiLCJwIjoiaiJ9)
+[Sprint Backlog en Jira Software](https://sevensync.atlassian.net/jira/software/projects/SCRUM/boards/1/timeline?selectedIssue=SCRUM-4)
+
+###### Figura 188
+
+_Evidencia de desarrollo del Sprint Backlog 1 en Jira Software_
 
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-1-macetech.png" alt="Evidencia de Sprint Backlog para sprint 1">
 
@@ -804,6 +1585,9 @@ Sprint Backlog para el Sprint 1: [Ver Anexo X](https://lucioyen1-1743965307909.a
 En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint. En esta iteración, se implementó la Landing Page en su totalidad con todas las secciones Hero Section, funcionalidades clave y beneficios, about-the-team, about-the-product, benchmark de membresías, formulario de contacto, acceso a la platforma de descarga, i18n y diseño responsivo. 
 
 Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
+
+###### Tabla 257
+*Development Evidence del primer sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
@@ -816,6 +1600,9 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 #### 6.2.1.5.Testing Suite Evidence for Sprint Review.
 Para realiza las pruebas, se decidió utilizar 'jest' el cual permite correr pruebas con 'npm test' en scripts de javascript. Para este caso, se probó si el formulario de contacto seguía el flujo sin errores. 
 
+###### Tabla 258
+*Testing Suite Evidence del primer sprint de desarrollo de Macetech*
+
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
 |LucioY250/[upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-Landing-Page)|develop|b73525f|test: add landing page testing suite|-|08/07/2025|
@@ -824,6 +1611,10 @@ Para realiza las pruebas, se decidió utilizar 'jest' el cual permite correr pru
 
 Para este sprint, se pudo implementar la aplicación y desplegarla a producción cumpliendo con el diseño y los requerimientos de la página web de negocio planteada. A continuación, se visualizan las capturas con las vistas implementadas. 
 
+###### Figura 189
+
+_Execution Evidence del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence.jpeg" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-2.png" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-3.png" alt="Evidencia Landing page " width="600px">
@@ -831,11 +1622,14 @@ Para este sprint, se pudo implementar la aplicación y desplegarla a producción
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-5.png" alt="Evidencia Landing page " width="600px">
 <img src="/assets/img/capitulo-6/evidence/landing-page-evidence-6.png" alt="Evidencia Landing page " width="600px">
 
-Video de demostración: (Ver Anexo X)
-
-#### 6.2.1.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.1.7.Services Documentation Evidence for Sprint Review
 
 En el alcance de este sprint, no se realizó un web service, sin embargo, a modo de simulación de datos, desplegamos una FAKE API en Beeceptor con los siguientes endpoints:
+
+###### Figura 190
+
+_Services documentation del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/beeceptor-api-evicende.jpeg" alt="Evidencia Landing page ">
 <img src="/assets/img/capitulo-6/evidence/service-fake-1.jpeg" alt="Evidencia Landing page ">
 <img src="/assets/img/capitulo-6/evidence/service-fake-2.jpeg" alt="Evidencia Landing page ">
@@ -846,12 +1640,20 @@ En el alcance de este sprint, no se realizó un web service, sin embargo, a modo
 #### 6.2.1.8.Software Deployment Evidence for Sprint Review.
 
 Para realizar el despligue de la landing page, se utilizó la herramienta Github Pages el cuál permite desplegar páginas estáticas de forma sencilla y veloz. Además, proporciona un pipeline de CI/CD que permite desplegar a producción cada vez que se realiza un commit en la rama 'main'.
-Landing Page: Ver Anexo X
+
+###### Figura 191
+
+_Software Deployment del primer sprint backlog de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/github-pages-evidence.png" alt="Evidencia Landing page ">
 
 #### 6.2.1.9.Team Collaboration Insights during Sprint.
 
 La colaboración del equipo se llevó a cabo en la organización de SevenSync, el cúal contiene el repositorio de la Landing Page. En este repositorio, se trabajo en la rama 'develop' y 'main'
+
+###### Figura 192
+
+_Team Collaboration Insights del primer sprint backlog de Macetech_
 
 <img src="/assets/img/capitulo-6/evidence/landing-page-contributors.png" alt="Evidencia Landing page ">
 
@@ -862,7 +1664,11 @@ Para este producto, solo una persona logró realizar toda la página web de nego
 ### 6.2.2. Sprint 2
 
 #### 6.2.2.1. Sprint Planning 2
+
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+###### Tabla 259
+*Sprint Planning del segundo sprint de desarrollo de Macetech*
 
 <table  style="text-align: center;">
     <tbody>
@@ -929,6 +1735,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 #### 6.2.2.2. Aspects Leaders and Collaborators
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 260
+*Aspects leaders and Collaborators del segundo sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -942,12 +1751,18 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 
 El sprint backlog 2 abarcó la implemetnación inicial de todos los productos. En este caso se contempló desarrollar la aplicación web, el servicio en la nube, la aplicación, móvil, la aplicación edge y la aplicación embedida. Se tomó en cuenta el orden de implementación según el valor que aportaba.
 
+###### Figura 193
+
+_Sprint Backlog del segundo sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-2-macetech.png" alt="Sprint Backlog 2 " width="600px">
 
 #### 6.2.2.4. Development Evidence for Sprint Review
 
 En esta sección, se documentarán las evidencias de desarrollo más importantes por producto. Para el desarrollo, cada producto se aloja en su propio repositorio.
 
+###### Tabla 261
+*Development Evidence del segundo sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- |------------------ |
@@ -964,6 +1779,9 @@ En esta sección, se documentarán las evidencias de desarrollo más importantes
 
 Se desarrollaron archivos .feature en formato gherkin para especificar el comportamiento de nuestras user stories.
 
+###### Tabla 262
+*Testing Suite Evidence del segundo sprint de desarrollo de Macetech*
+
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
 | Fasz0711/[upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest](https://github.com/SevenSync/upc-pre-202510-1asi0572-2956-SevenSync-AcceptanceTest) | main | 6a6bd51 | Add feature files for managing macetas via Bluetooth, UUID, and web interface | - | 8/07/2025 |
@@ -974,6 +1792,10 @@ Se desarrollaron archivos .feature en formato gherkin para especificar el compor
 Para el alcance de este sprint se desarrollaron las vistas principales de la aplicación web y móvil.
 
 En la aplicación web se contempló el desarrollo del IAM, la vista de perfil, la págian principal donde está la interfaz de macetas y la interfaz de cada maceta. 
+
+###### Figura 194
+
+_Execution Evidence del segundo sprint de Macetech_
 
 <img src="/assets/img/capitulo-6/evidence/web-evidence-1.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-evidence-2.png" alt="Web Service Evidence" width="600px">
@@ -993,6 +1815,10 @@ Para la aplicación móvil se contempló el desarrollo inicial del IAM y la vist
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 El servicio web fue documentado por la dependencia OpenAPI el cuál permite mostrar los endpoints en Swagguer UI. 
 
+###### Figura 195
+
+_Services Documentation Evidence del segundo sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-2.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-evidence-3.jpeg" alt="Web Service Evidence" width="600px">
@@ -1001,6 +1827,11 @@ El servicio web fue documentado por la dependencia OpenAPI el cuál permite most
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
 Se hizo el despliegue del cloud api en azure web service. 
+
+###### Figura 196
+
+_Software Deployment Evidence del segundo sprint de Macetech por parte del Cloud API_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-3.jpeg" alt="Web Service Evidence" width="600px">
@@ -1009,6 +1840,10 @@ Se hizo el despliegue del cloud api en azure web service.
 <img src="/assets/img/capitulo-6/evidence/web-service-deploy-6.jpeg" alt="Web Service Evidence" width="600px">
 
 En el caso de la aplicación web, se hizo el despliegue en firebase.
+
+###### Figura 197
+
+_Software Deployment Evidence del segundo sprint de Macetech por parte del Web Application_
 
 <img src="/assets/img/capitulo-6/evidence/web-app-deploy-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-deploy-2.jpeg" alt="Web Service Evidence" width="600px">
@@ -1021,6 +1856,10 @@ En el caso de la aplicación web, se hizo el despliegue en firebase.
 La colaboración del equipo en los produtos se llevó a cabo gracias a la organización del Aspects Leaders and Collaborators. Sin embargo, también delegamos tareas por afinidad y habilidades.
 
 Contribuciones y commits de la aplicación web:
+
+###### Figura 198
+
+_Team Collaboration Insights del segundo sprint de Macetech_
 
 <img src="/assets/img/capitulo-6/evidence/web-app-contributors.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
@@ -1037,6 +1876,9 @@ Contribuciones y commits de la aplicación móvil:
 
 #### 6.2.3.1. Sprint Planning 3
 El sprint planning es una reunión en la metodología ágil donde el equipo planifica las actividades del próximo sprint. Define qué trabajo se hará, cuánto tiempo tomará y quién será responsable. El objetivo es establecer un plan claro y alcanzable para el equipo, fomentando la colaboración y asegurando que todos estén alineados en cuanto a objetivos y prioridades.
+
+###### Tabla 263
+*Sprint Planning del tercer sprint de desarrollo de Macetech*
 
 <table  style="text-align: center;">
     <tbody>
@@ -1103,6 +1945,9 @@ Fabrizio Alessandro; Trigueros Chumacero, Flavio Eduardo; Yen Cerna, Lucio Heli
 #### 6.2.3.2. Aspects Leaders and Collaborators
 La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencial que proporciona una visión clara y concisa de las responsabilidades individuales dentro del equipo en relación con los diversos aspectos del Sprint. Para el equipo SevenSync, un aspecto fundamental que consideramos son los **Bounded Contexts**. Estos nos permiten delimitar claramente las responsabilidades y el alcance de cada módulo o componente del sistema, lo que facilita el desarrollo, la comprensión y el mantenimiento. Para asegurar una coordinación óptima, especialmente en escenarios donde la colaboración cross-team es vital, es esencial tener claridad sobre quién lidera y quién colabora en cada uno de estos contextos o aspectos clave del proyecto. Esta tabla es particularmente útil para fomentar y gestionar la colaboración cross-team, ya que permite identificar rápidamente a los puntos de contacto para cada área, los líderes de cada bounded context y sus respectivos colaboradores.
 
+###### Tabla 264
+*Aspects Leaders and Collaborators del tercer sprint de desarrollo de Macetech*
+
 | Team Member (Last Name, First Name) | GitHub Username | IAM - Leader (L) / Collaborator (C) | Profile and Preferences - Leader (L) / Collaborator (C) | Subscriptions & Payments - Leader (L) / Collaborator (C) | Asset & Resource Management - Leader (L) / Collaborator (C) | Service Design and Planning - Leader (L) / Collaborator (C) | Service Operation and Monitoring - Leader (L) / Collaborator (C) | Data Analytics - Leader (L) / Collaborator (C) |
 |---|---|---|---|---|---|---|---|---|
 | Mallma, Ruben | RubDaShen | C | L | C | - | - | C | C |
@@ -1113,14 +1958,27 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 | Yen, Lucio | LucioY250 | - | - | - | - | L | C | C |
 
 #### 6.2.3.3. Sprint Backlog 3
+
+###### Figura 199
+
+_Sprint backlog del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/sprint-backlog-3.png" alt="sprint backlog 3" width="600px">
 
 #### 6.2.3.4. Development Evidence for Sprint Review
+
+###### Figura 200
+
+_Development Evidence del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/web-service-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/web-app-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+###### Tabla 265
+*Testing Suite Evidence del tercer sprint de desarrollo de Macetech*
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Commited on (Date) |
 | ---------- | ------ | --------- | -------------- | ------------------- | ------------------ |
@@ -1130,28 +1988,39 @@ La tabla Aspect Leaders and Collaborators es una herramienta de gestión esencia
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+###### Figura 201
+
+_Execution Evidence del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/embedded-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/embedded-2.jpeg" alt="Web Service Evidence" width="600px">
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
+###### Figura 202
+
+_Services Documentation del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/edge-1.jpeg" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-2.jpeg" alt="Web Service Evidence" width="600px">
-
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
+###### Figura 203
+
+_Team Collaboration Insights del tercer sprint de Macetech_
+
 <img src="/assets/img/capitulo-6/evidence/edge-contributors.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/edge-commits.png" alt="Web Service Evidence" width="600px">
 <img src="/assets/img/capitulo-6/evidence/embedded-contributos.png" alt="Web Service Evidence" width="600px">
 
-### 6.3. Validation Interviews.
+### 6.3. Validation Interviews
 
 Con el objetivo de validar las funcionalidades, beneficios y nivel de adopción potencial de la solución Macetech, se realizaron entrevistas con personas que representan a nuestros segmentos objetivo. Estas entrevistas permitieron recopilar percepciones reales sobre la utilidad, facilidad de uso y valor percibido de la solución, así como identificar oportunidades de mejora. Las respuestas obtenidas ayudaron a confirmar hipótesis clave del producto y a ajustar el diseño en función de las necesidades y expectativas de los usuarios.
 
-#### 6.3.1. Diseño de Entrevistas.
+#### 6.3.1. Diseño de Entrevistas
 
 - **Información general del participante**
 
@@ -1233,6 +2102,10 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
+###### Tabla 266
+*Escala de severidad de la evaluación de heurísticas de Macetech*
+
+
 | **Nivel** | **Descripción**                                                                                                                                                     |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1**     | Problema superficial: puede ser fácilmente superado o hasta ignorado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado de forma inmediata. |
@@ -1242,7 +2115,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-##### TABLA RESUMEN
+###### Tabla 267
+*Tabla de resumen de la evaluación de heurísticas de Macetech*
 
 | #   | Problema                                                                              | Escala de severidad | Heurística/Principio violado                                     |
 | --- | ------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------- |
@@ -1497,8 +2371,22 @@ En la lista principal, las macetas que presentan alertas no se destacan lo sufic
 **Recomendación:**  
 Utilizar colores de fondo o bordes más llamativos para alertas críticas y mostrar un resumen de advertencia al inicio de la pantalla.
 
-## 6.4. Video About-the-Product.
+## 6.4. Video About-the-Product
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+El Video About-the-Product constituye una pieza audiovisual diseñada estratégicamente para comunicar, de manera clara y atractiva, el valor diferencial de la solución digital desarrollada. Orientado principalmente a dos públicos objetivos, los visitantes del Landing Page interesados en el modelo de negocio, y los usuarios finales de las aplicaciones que desean comprender mejor sus funcionalidades, este video sintetiza los aspectos clave del producto desde una perspectiva funcional, técnica y experiencial.
+
+En un lenguaje accesible y alineado con el tono comunicacional de la marca, el video presenta las características principales de cada uno de los componentes desarrollados (Embedded Application, Edge Application, Backend, y versiones preliminares de la Web y Mobile App), destacando cómo la solución aborda los principales pain points de los jardineros urbanos, tales como el uso ineficiente del agua, la falta de conocimiento técnico y la limitada disponibilidad de tiempo para el cuidado vegetal.
+
+El contenido incluye una descripción breve del modelo de negocio freemium-suscripción, la forma en que se integran los sensores IoT con la automatización del riego y las recomendaciones inteligentes, y las tareas principales que el usuario puede realizar desde las interfaces disponibles. Complementando esta explicación, se incorpora al menos un testimonio real de usuario participante en las entrevistas de validación, quien destaca la utilidad de la solución con la siguiente afirmación: “Poder ver en tiempo real cómo está mi planta y recibir recomendaciones automáticas me hace sentir que la estoy cuidando bien, incluso cuando estoy fuera de casa”.
+
+Esta sección también especifica los enlaces oficiales al video, tanto en su versión publicada en Microsoft Stream como en YouTube, esta última utilizada para su incrustación en el Landing Page. Asimismo, se detalla su duración total y se incluye un screenshot representativo del contenido audiovisual, asegurando su adecuada contextualización dentro del ecosistema digital del proyecto.
+
+[Vídeo About-The-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c936_upc_edu_pe/EYt5t29wDrRIqEZH6AY51DQBYhJAELOTRAhf5K_BY8VG0w?e=kgwfNZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Duración: 8:25 minutos
+
+###### Figura 204
+
+_Evidencia del desarrollo del vídeo About-The-Product de Macetech_
 
 <img src="/assets/img/portada/about-the-product.png" alt="Video About The Product">

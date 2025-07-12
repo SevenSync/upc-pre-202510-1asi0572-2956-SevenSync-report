@@ -26,16 +26,16 @@
       </thead>
       <tbody>
         <tr>
+          <td>u202214234</td>
+          <td>Mallma Quispe, Rubén Elías</td>
+        </tr>
+        <tr>
           <td>u202218996</td>
           <td>Paredes Zapata, Luiggi Gianfranco</td>
         </tr>
         <tr>
           <td>u20221C936</td>
           <td>Pescorán Angulo, Juan Fabritzzio</td>
-        </tr>
-        <tr>
-          <td>u202214234</td>
-          <td>Mallma Quispe, Rubén Elías</td>
         </tr>
         <tr>
           <td>u202213652</td>
